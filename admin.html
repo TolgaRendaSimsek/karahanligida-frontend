@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karahanlı Gıda Yönetim Paneli</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  
+  <!-- Yetkilendirme Koruması (Yalnızca Admin erişebilir) -->
+  <script>
+    (function() {
+      try {
+        const user = JSON.parse(localStorage.getItem('karahanliUser'));
+        if (!user) {
+          window.location.href = 'register.html';
+        } else if (user.role !== 'admin') {
+          window.location.href = 'account.html';
+        }
+      } catch (e) {
+        localStorage.removeItem('karahanliUser');
+        window.location.href = 'register.html';
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="admin-brand" href="index.html"><img src="logo.png" alt="Karahanlı Gıda Logo" class="admin-logo"><div><strong>KARAHANLI GIDA</strong><small>YÖNETİM PANELİ</small></div></a>
+    <nav><a class="active" href="#products">▦ Ürünler</a><a href="index.html">↗ Mağazayı Gör</a><a href="#" id="logoutBtn" style="color:var(--danger)">⎋ Çıkış Yap</a></nav>
+    <div class="sidebar-note"><strong>Demo yönetim paneli</strong><p>Veriler bu tarayıcıdaki LocalStorage alanında saklanır.</p></div>
+  </aside>
+
+  <main class="admin-main">
+    <header class="admin-header"><div><p class="eyebrow">YÖNETİM</p><h1>Ürün Yönetimi</h1><p>Mağazadaki ürünleri ekleyin, güncelleyin veya kaldırın.</p></div><button class="primary-btn" id="newProductBtn">+ Yeni Ürün</button></header>
+
+    <section class="stats" id="stats"></section>
+
+    <section class="panel" id="products">
+      <div class="panel-tools"><div><h2>Ürünler</h2><span id="productCount"></span></div><div class="tool-actions"><input id="adminSearch" type="search" placeholder="Ürün veya marka ara"><select id="categoryFilter"><option value="all">Tüm kategoriler</option><option value="gida">Gıda</option><option value="ekipman">Ekipman</option><option value="hizmet">Hizmet</option></select><button class="outline-btn" id="exportBtn">JSON İndir</button><label class="outline-btn file-label">JSON Yükle<input type="file" id="importInput" accept="application/json"></label></div></div>
+      <div class="table-wrap"><table><thead><tr><th>Ürün</th><th>Kategori</th><th>Fiyat</th><th>Stok</th><th>Rozet</th><th></th></tr></thead><tbody id="productTable"></tbody></table></div>
+      <div class="panel-footer"><button class="danger-link" id="resetBtn">Varsayılan ürünlere dön</button></div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head"><div><p class="eyebrow">ÜRÜN FORMU</p><h2 id="modalTitle">Yeni Ürün</h2></div><button id="closeModal" aria-label="Kapat">×</button></div>
+      <form id="productForm">
+        <input type="hidden" id="productId">
+        <div class="form-grid">
+          <label class="wide">Ürün adı<input id="name" required maxlength="100"></label>
+          <label>Marka<input id="brand" required maxlength="40"></label>
+          <label>Kategori<select id="category" required><option value="gida">Gıda</option><option value="ekipman">Ekipman</option><option value="hizmet">Hizmet</option></select></label>
+          <label>Satış fiyatı (₺)<input id="price" type="number" min="0" step="0.01" required></label>
+          <label>Eski fiyat (₺)<input id="oldPrice" type="number" min="0" step="0.01"></label>
+          <label>Stok<input id="stock" type="number" min="0" step="1" required value="0"></label>
+          <label>Rozet<input id="badge" maxlength="24" placeholder="Yeni, Fırsat, %10..."></label>
+          <label>Ürün rengi<input id="color" type="color" value="#72462f"></label>
+          <label class="wide">Görsel URL'si<input id="image" type="url" placeholder="https://... (isteğe bağlı)"></label>
+        </div>
+        <div class="form-actions"><button type="button" class="outline-btn" id="cancelBtn">Vazgeç</button><button type="submit" class="primary-btn">Ürünü Kaydet</button></div>
+      </form>
+    </section>
+  </div>
+  <div class="toast" id="adminToast"></div>
+  <script src="admin.js"></script>
+</body>
+</html>

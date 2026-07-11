@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Karahanlı Gıda müşteri hesabı paneli. Siparişlerinizi ve üyelik bilgilerinizi yönetin.">
+  <title>Karahanlı Gıda - Hesabım</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Kimlik Doğrulama Koruması (Sayfa yüklenmeden önce çalışır) -->
+  <script>
+    (function() {
+      try {
+        const user = JSON.parse(localStorage.getItem('karahanliUser'));
+        if (!user) {
+          window.location.href = 'register.html';
+        } else if (user.role === 'admin') {
+          // Admin ise admin paneline yönlendir
+          window.location.href = 'admin.html';
+        }
+      } catch (e) {
+        localStorage.removeItem('karahanliUser');
+        window.location.href = 'register.html';
+      }
+    })();
+  </script>
+
+  <style>
+    .account-main {
+      padding: 60px 0 90px;
+      background: #fcfbfa;
+      min-height: calc(100vh - 280px);
+    }
+    .account-grid {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .profile-sidebar {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+      text-align: center;
+    }
+    .avatar-circle {
+      width: 80px;
+      height: 80px;
+      background: var(--cream);
+      color: var(--accent-dark);
+      font-size: 32px;
+      font-weight: 700;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 18px;
+      box-shadow: 0 4px 10px rgba(182, 106, 60, 0.1);
+    }
+    .profile-sidebar h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 20px;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    .profile-sidebar p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .sidebar-menu {
+      border-top: 1px solid var(--line);
+      padding-top: 20px;
+      text-align: left;
+    }
+    .sidebar-menu-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--muted);
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .sidebar-menu-item.active,
+    .sidebar-menu-item:hover {
+      background: var(--cream);
+      color: var(--accent-dark);
+    }
+    .sidebar-menu-item.logout {
+      color: var(--accent);
+      margin-top: 15px;
+    }
+    .sidebar-menu-item.logout:hover {
+      background: #fff5f0;
+      color: var(--accent-dark);
+    }
+    
+    .profile-content {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    }
+    .profile-content h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .profile-content > p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    .info-group-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px 30px;
+      margin-bottom: 30px;
+    }
+    .info-card {
+      background: #fafaf8;
+      border: 1px solid rgba(231, 225, 215, 0.6);
+      border-radius: 10px;
+      padding: 16px 20px;
+    }
+    .info-card label {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .info-card span {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .business-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background: var(--green);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 99px;
+    }
+
+    @media (max-width: 980px) {
+      .account-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .account-main {
+        padding: 40px 0 60px;
+      }
+    }
+    @media (max-width: 600px) {
+      .info-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .profile-content {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-main container">
+      <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Menüyü aç">☰</button>
+      <a class="brand" href="index.html" aria-label="Ana sayfa">
+        <img src="logo.png" alt="Karahanlı Gıda Logo" class="brand-logo" />
+        <span class="brand-copy"><strong>KARAHANLI GIDA</strong><small>HORECA DAĞITIM</small></span>
+      </a>
+
+      <form class="search" id="searchForm" style="visibility: hidden;">
+        <input type="search" placeholder="Ara..." disabled />
+      </form>
+
+      <div class="header-actions">
+        <a href="index.html" class="action-link"><span>⌂</span><small>Mağaza</small></a>
+        <button class="action-link" id="logoutHeaderBtn"><span>⎋</span><small>Çıkış Yap</small></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="account-main">
+    <div class="container account-grid">
+      <!-- Sol Sidebar -->
+      <aside class="profile-sidebar">
+        <div class="avatar-circle" id="profileInitials">K</div>
+        <h3 id="sidebarName">Müşteri</h3>
+        <p id="sidebarEmail">musteri@karahanli.com</p>
+        
+        <nav class="sidebar-menu">
+          <a href="#" class="sidebar-menu-item active">👤 Üyelik Bilgilerim</a>
+          <a href="index.html" class="sidebar-menu-item">🛍 Alışverişe Dön</a>
+          <a href="#" class="sidebar-menu-item logout" id="logoutSidebarBtn">⎋ Güvenli Çıkış</a>
+        </nav>
+      </aside>
+
+      <!-- Sağ Profil İçeriği -->
+      <section class="profile-content">
+        <h2>Hesap Bilgileriniz</h2>
+        <p>Hesabınızın detaylarını ve dağıtım üyeliği tipinizi buradan kontrol edebilirsiniz.</p>
+        
+        <div class="info-group-title">Kişisel Bilgiler</div>
+        <div class="info-grid">
+          <div class="info-card">
+            <label>Ad Soyad</label>
+            <span id="infoName">—</span>
+          </div>
+          <div class="info-card">
+            <label>E-posta Adresi</label>
+            <span id="infoEmail">—</span>
+          </div>
+          <div class="info-card">
+            <label>Telefon Numarası</label>
+            <span id="infoPhone">—</span>
+          </div>
+          <div class="info-card">
+            <label>Hesap Rolü</label>
+            <span class="business-badge" style="background:#555;">Müşteri</span>
+          </div>
+        </div>
+
+        <div class="info-group-title">Dağıtım ve Kurumsal Bilgiler</div>
+        <div class="info-grid">
+          <div class="info-card">
+            <label>Firma / İşletme Adı</label>
+            <span id="infoCompany">Bireysel Müşteri</span>
+          </div>
+          <div class="info-card">
+            <label>İşletme Türü</label>
+            <span id="infoBusinessType" class="business-badge">—</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom" style="border: 0; margin: 0; padding: 0;">
+      <span>© 2026 Karahanlı Gıda. Tüm hakları saklıdır.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const user = JSON.parse(localStorage.getItem('karahanliUser'));
+      if (!user) return;
+
+      // Populate user info
+      const name = user.fullName || 'Müşteri';
+      document.getElementById('sidebarName').textContent = name;
+      document.getElementById('infoName').textContent = name;
+      document.getElementById('sidebarEmail').textContent = user.email || 'musteri@karahanli.com';
+      document.getElementById('infoEmail').textContent = user.email || 'musteri@karahanli.com';
+      document.getElementById('infoPhone').textContent = user.phone || '—';
+      
+      const company = user.companyName ? user.companyName.trim() : '';
+      document.getElementById('infoCompany').textContent = company || 'Belirtilmedi (Bireysel)';
+
+      // Initials for avatar
+      const initials = name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+      document.getElementById('profileInitials').textContent = initials || 'K';
+
+      // Business Type formatting
+      const typeLabels = {
+        cafe: 'Kafe / Restoran / Bar',
+        hotel: 'Otel / Pansiyon',
+        office: 'Ofis / Kurumsal',
+        catering: 'Yemek Firması / Catering',
+        individual: 'Bireysel Alışveriş'
+      };
+      document.getElementById('infoBusinessType').textContent = typeLabels[user.businessType] || 'Belirtilmedi';
+
+      // Logout handler
+      function handleLogout(e) {
+        e.preventDefault();
+        if (confirm('Hesabınızdan çıkış yapmak istediğinize emin misiniz?')) {
+          localStorage.removeItem('karahanliUser');
+          window.location.href = 'index.html';
+        }
+      }
+
+      document.getElementById('logoutHeaderBtn').onclick = handleLogout;
+      document.getElementById('logoutSidebarBtn').onclick = handleLogout;
+    });
+  </script>
+</body>
+</html>
