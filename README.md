@@ -1,4 +1,4 @@
-# Roastery Market Frontend + Admin Panel
+# Karahanlı Gıda Frontend + Admin Panel
 
 ## Çalıştırma
 Klasörü VS Code ile açın ve `index.html` dosyasını **Live Server** ile başlatın.
