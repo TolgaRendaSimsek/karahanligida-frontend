@@ -214,30 +214,33 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.textContent = 'Kaydediliyor...';
 
-      setTimeout(() => {
-        // Save user state in LocalStorage as Customer role
-        const userData = {
-          fullName,
-          email,
-          phone,
-          businessType,
-          companyName: document.getElementById('companyName').value.trim(),
-          password: password, // Store password to verify during mock login
-          role: 'customer',   // Explicitly customer role
-          registeredAt: new Date().toISOString()
-        };
+      const companyName = document.getElementById('companyName').value.trim();
+
+      fetch('/api/auth/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password, fullName, phone, companyName, businessType })
+      })
+      .then(res => res.json().then(data => ({ status: res.status, data })))
+      .then(({ status, data }) => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Kaydı Tamamla';
         
-        localStorage.setItem('karahanliUser', JSON.stringify(userData));
-
-        // Show Success Modal
-        successModal.removeAttribute('hidden');
-
-        // Redirect after delay
-        window.redirectTimer = setTimeout(() => {
-          window.location.href = 'account.html';
-        }, 3200);
-
-      }, 1200);
+        if (status === 201) {
+          localStorage.setItem('karahanliUser', JSON.stringify(data.user));
+          successModal.removeAttribute('hidden');
+          window.redirectTimer = setTimeout(() => {
+            window.location.href = 'account.html';
+          }, 3200);
+        } else {
+          showToast(data.message || 'Kayıt sırasında bir hata oluştu.');
+        }
+      })
+      .catch(err => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Kaydı Tamamla';
+        showToast('Sunucu ile iletişim kurulamadı.');
+      });
     }
   });
 
@@ -271,43 +274,35 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.textContent = 'Giriş Yapılıyor...';
 
-      setTimeout(() => {
+      fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: loginEmail, password: loginPassword })
+      })
+      .then(res => res.json().then(data => ({ status: res.status, data })))
+      .then(({ status, data }) => {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Giriş Yap';
-
-        // Check Admin Credentials
-        if (loginEmail === 'admin@karahanli.com' && loginPassword === 'admin123') {
-          const adminData = {
-            fullName: 'Yönetici (Admin)',
-            email: 'admin@karahanli.com',
-            role: 'admin',
-            isLoggedIn: true
-          };
-          localStorage.setItem('karahanliUser', JSON.stringify(adminData));
-          showToast('Yönetici girişi başarılı. Yönlendiriliyorsunuz...');
+        
+        if (status === 200) {
+          localStorage.setItem('karahanliUser', JSON.stringify(data.user));
+          showToast('Giriş başarılı. Yönlendiriliyorsunuz...');
           setTimeout(() => {
-            window.location.href = 'admin.html';
-          }, 1000);
-          return;
-        }
-
-        // Check Customer Credentials from LocalStorage
-        const savedUser = JSON.parse(localStorage.getItem('karahanliUser'));
-        if (savedUser && savedUser.email === loginEmail) {
-          if (savedUser.password === loginPassword) {
-            // Success Login
-            showToast('Giriş başarılı. Yönlendiriliyorsunuz...');
-            setTimeout(() => {
+            if (data.user.role === 'admin') {
+              window.location.href = 'admin.html';
+            } else {
               window.location.href = 'account.html';
-            }, 1000);
-          } else {
-            showError('loginPassword', 'Hatalı şifre girdiniz.');
-          }
+            }
+          }, 1000);
         } else {
-          showError('loginEmail', 'Bu e-posta adresiyle kayıtlı bir kullanıcı bulunamadı.');
+          showToast(data.message || 'E-posta veya şifre hatalı.');
         }
-
-      }, 1000);
+      })
+      .catch(err => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Giriş Yap';
+        showToast('Sunucu ile iletişim kurulamadı.');
+      });
     }
   });
 });

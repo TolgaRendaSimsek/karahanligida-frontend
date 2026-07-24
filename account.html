@@ -273,40 +273,60 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const user = JSON.parse(localStorage.getItem('karahanliUser'));
-      if (!user) return;
+      // Validate session with backend
+      fetch('/api/auth/me')
+        .then(res => {
+          if (res.status !== 200) {
+            localStorage.removeItem('karahanliUser');
+            window.location.href = 'register.html';
+            throw new Error('Unauthenticated');
+          }
+          return res.json();
+        })
+        .then(data => {
+          const user = data.user;
+          localStorage.setItem('karahanliUser', JSON.stringify(user));
+          populateUser(user);
+        })
+        .catch(err => {
+          console.error(err);
+        });
 
-      // Populate user info
-      const name = user.fullName || 'Müşteri';
-      document.getElementById('sidebarName').textContent = name;
-      document.getElementById('infoName').textContent = name;
-      document.getElementById('sidebarEmail').textContent = user.email || 'musteri@karahanli.com';
-      document.getElementById('infoEmail').textContent = user.email || 'musteri@karahanli.com';
-      document.getElementById('infoPhone').textContent = user.phone || '—';
-      
-      const company = user.companyName ? user.companyName.trim() : '';
-      document.getElementById('infoCompany').textContent = company || 'Belirtilmedi (Bireysel)';
+      function populateUser(user) {
+        const name = user.fullName || 'Müşteri';
+        document.getElementById('sidebarName').textContent = name;
+        document.getElementById('infoName').textContent = name;
+        document.getElementById('sidebarEmail').textContent = user.email || 'musteri@karahanli.com';
+        document.getElementById('infoEmail').textContent = user.email || 'musteri@karahanli.com';
+        document.getElementById('infoPhone').textContent = user.phone || '—';
+        
+        const company = user.companyName ? user.companyName.trim() : '';
+        document.getElementById('infoCompany').textContent = company || 'Belirtilmedi (Bireysel)';
 
-      // Initials for avatar
-      const initials = name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
-      document.getElementById('profileInitials').textContent = initials || 'K';
+        // Initials for avatar
+        const initials = name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+        document.getElementById('profileInitials').textContent = initials || 'K';
 
-      // Business Type formatting
-      const typeLabels = {
-        cafe: 'Kafe / Restoran / Bar',
-        hotel: 'Otel / Pansiyon',
-        office: 'Ofis / Kurumsal',
-        catering: 'Yemek Firması / Catering',
-        individual: 'Bireysel Alışveriş'
-      };
-      document.getElementById('infoBusinessType').textContent = typeLabels[user.businessType] || 'Belirtilmedi';
+        // Business Type formatting
+        const typeLabels = {
+          cafe: 'Kafe / Restoran / Bar',
+          hotel: 'Otel / Pansiyon',
+          office: 'Ofis / Kurumsal',
+          catering: 'Yemek Firması / Catering',
+          individual: 'Bireysel Alışveriş'
+        };
+        document.getElementById('infoBusinessType').textContent = typeLabels[user.businessType] || 'Belirtilmedi';
+      }
 
       // Logout handler
       function handleLogout(e) {
         e.preventDefault();
         if (confirm('Hesabınızdan çıkış yapmak istediğinize emin misiniz?')) {
-          localStorage.removeItem('karahanliUser');
-          window.location.href = 'index.html';
+          fetch('/api/auth/logout', { method: 'POST' })
+            .finally(() => {
+              localStorage.removeItem('karahanliUser');
+              window.location.href = 'index.html';
+            });
         }
       }
 
