@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { publishedProducts } from "@/lib/catalog-repository";
 import { queryCatalog } from "@/lib/catalog-query";
+import { toCatalogCard } from "@/lib/catalog-schema";
 
 export const dynamic = "force-dynamic";
 
@@ -15,7 +16,7 @@ export async function GET(request: NextRequest) {
     cursor: params.get("cursor") || "",
     limit: Number(params.get("limit")) || 24,
   });
-  return NextResponse.json(result, {
+  return NextResponse.json({ ...result, items: result.items.map(toCatalogCard) }, {
     headers: {
       "Cache-Control": "private, no-store",
       "X-Content-Type-Options": "nosniff",

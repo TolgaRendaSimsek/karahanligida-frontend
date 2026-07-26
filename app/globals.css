@@ -5,9 +5,9 @@
   --sage: #dfe8df;
   --cream: #f6f3ed;
   --paper: #fff;
-  --gold: #c5945d;
+  --gold: #875827;
   --gold-soft: #ead6bd;
-  --muted: #68736c;
+  --muted: #5f6a63;
   --line: #e4e1d9;
   --danger: #a7453d;
   --shadow: 0 18px 48px rgba(24, 37, 30, .09);
@@ -238,6 +238,7 @@ button { color: inherit; }
 .footer-grid > div:not(.footer-brand) { display: grid; align-content: start; gap: 9px; }
 .footer-grid h3 { margin: 0 0 6px; color: white; font-family: Georgia, serif; font-size: 16px; }
 .footer-grid a, .footer-grid span { color: #aab8af; font-size: 11px; }
+.footer-grid a { min-height: 28px; display: flex; align-items: center; }
 .footer-brand { display: flex; align-items: center; gap: 12px; }
 .footer-brand img { border-radius: 50%; }
 .footer-brand div { display: grid; gap: 4px; }

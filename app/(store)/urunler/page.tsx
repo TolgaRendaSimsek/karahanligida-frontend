@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CatalogBrowser } from "@/components/catalog-browser";
 import { catalogFacets, publishedProducts } from "@/lib/catalog-repository";
 import { queryCatalog } from "@/lib/catalog-query";
+import { toCatalogCard } from "@/lib/catalog-schema";
 
 export const metadata: Metadata = {
   title: "Ürün Kataloğu",
@@ -20,7 +21,8 @@ export default async function ProductsPage({
   const category = typeof params.category === "string" ? params.category : "";
   const products = await publishedProducts();
   const facets = await catalogFacets();
-  const initial = queryCatalog(products, { q, brand, category, limit: 24 });
+  const queried = queryCatalog(products, { q, brand, category, limit: 24 });
+  const initial = { ...queried, items: queried.items.map(toCatalogCard) };
 
   return (
     <main>

@@ -3,16 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { publicAssetPath, type ProductFamily } from "@/lib/catalog-schema";
+import { publicAssetPath, type CatalogCard } from "@/lib/catalog-schema";
 import { useStore } from "./store-provider";
 
-export function ProductCard({ product }: { product: ProductFamily }) {
+export function ProductCard({ product }: { product: CatalogCard }) {
   const [imageIndex, setImageIndex] = useState(0);
   const { favorites, toggleFavorite, addToCart } = useStore();
   const images = product.images;
   const image = images[imageIndex] || images[0];
   const favorite = favorites.includes(product.id);
-  const firstVariant = product.variants[0];
 
   function moveImage(direction: number) {
     setImageIndex((current) => (current + direction + images.length) % images.length);
@@ -52,12 +51,12 @@ export function ProductCard({ product }: { product: ProductFamily }) {
         <Link href={`/urunler/${product.slug}`}><h3>{product.name}</h3></Link>
         <p>{product.summary}</p>
         <div className="card-meta">
-          <span>{product.variants.length} varyant / model</span>
+          <span>{product.variantCount} varyant / model</span>
           <span>Fiyat için teklif alın</span>
         </div>
         <div className="card-actions">
           <Link className="button secondary" href={`/urunler/${product.slug}`}>İncele</Link>
-          <button className="button primary" type="button" onClick={() => addToCart(product, firstVariant)}>
+          <button className="button primary" type="button" onClick={() => addToCart(product, product.firstVariant)}>
             Teklife Ekle
           </button>
         </div>

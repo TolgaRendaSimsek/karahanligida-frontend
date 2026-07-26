@@ -27,7 +27,11 @@ type StoreValue = {
   cartOpen: boolean;
   setCartOpen: (open: boolean) => void;
   toggleFavorite: (id: string) => void;
-  addToCart: (product: ProductFamily, variant: ProductVariant, quantity?: number) => void;
+  addToCart: (
+    product: Pick<ProductFamily, "id" | "slug" | "brand" | "name" | "images">,
+    variant: ProductVariant,
+    quantity?: number,
+  ) => void;
   updateQuantity: (key: string, quantity: number) => void;
   removeFromCart: (key: string) => void;
   requestQuote: () => void;
@@ -80,7 +84,11 @@ export function StoreProvider({
   }, []);
 
   const addToCart = useCallback(
-    (product: ProductFamily, variant: ProductVariant, quantity = 1) => {
+    (
+      product: Pick<ProductFamily, "id" | "slug" | "brand" | "name" | "images">,
+      variant: ProductVariant,
+      quantity = 1,
+    ) => {
       const key = `${product.id}:${variant.id}`;
       setCart((current) => {
         const existing = current.find((item) => item.key === key);

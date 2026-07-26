@@ -67,17 +67,23 @@ export function SiteHeader() {
             <button type="submit" aria-label="Ara">⌕</button>
           </form>
           <div className="header-actions">
-            <Link className="header-action contact-action" href="/iletisim">
+            <Link className="header-action contact-action" href="/iletisim" aria-label="İletişim">
               <span aria-hidden>↗</span><small>İletişim</small>
             </Link>
             <Link
               className={`header-action${pathname === "/favoriler" ? " active" : ""}`}
               href="/favoriler"
+              aria-label="Favoriler"
             >
               <span aria-hidden>♡</span><small>Favoriler</small>
               {favorites.length > 0 && <b>{favorites.length}</b>}
             </Link>
-            <button className="header-action" type="button" onClick={() => setCartOpen(true)}>
+            <button
+              className="header-action"
+              type="button"
+              onClick={() => setCartOpen(true)}
+              aria-label="Teklif sepetini aç"
+            >
               <span aria-hidden>▱</span><small>Teklif Sepeti</small>
               {cart.length > 0 && <b>{cart.reduce((sum, item) => sum + item.quantity, 0)}</b>}
             </button>

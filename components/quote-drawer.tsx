@@ -22,7 +22,11 @@ export function QuoteDrawer() {
         onClick={() => setCartOpen(false)}
         aria-hidden
       />
-      <aside className={`quote-drawer${cartOpen ? " open" : ""}`} aria-hidden={!cartOpen}>
+      <aside
+        className={`quote-drawer${cartOpen ? " open" : ""}`}
+        aria-hidden={!cartOpen}
+        inert={!cartOpen}
+      >
         <div className="drawer-header">
           <div><span>TEKLİF LİSTENİZ</span><h2>Teklif Sepeti</h2></div>
           <button type="button" onClick={() => setCartOpen(false)} aria-label="Sepeti kapat">×</button>

@@ -2,13 +2,13 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import type { ProductFamily } from "@/lib/catalog-schema";
+import type { CatalogCard } from "@/lib/catalog-schema";
 import { useStore } from "./store-provider";
 import { ProductCard } from "./product-card";
 
 export function FavoritesClient() {
   const { favorites, ready } = useStore();
-  const [products, setProducts] = useState<ProductFamily[]>([]);
+  const [products, setProducts] = useState<CatalogCard[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

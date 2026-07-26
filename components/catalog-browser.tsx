@@ -2,11 +2,11 @@
 
 import { useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import type { ProductFamily } from "@/lib/catalog-schema";
+import type { CatalogCard } from "@/lib/catalog-schema";
 import { ProductCard } from "./product-card";
 
 type CatalogResponse = {
-  items: ProductFamily[];
+  items: CatalogCard[];
   total: number;
   nextCursor: string | null;
 };

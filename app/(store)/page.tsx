@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ProductCard } from "@/components/product-card";
 import { publishedProducts } from "@/lib/catalog-repository";
+import { toCatalogCard } from "@/lib/catalog-schema";
 
 export default async function HomePage() {
   const products = await publishedProducts();
@@ -67,7 +68,7 @@ export default async function HomePage() {
           <Link href="/urunler">Tüm kataloğu gör →</Link>
         </div>
         <div className="product-grid">
-          {featured.map((product) => <ProductCard product={product} key={product.id} />)}
+          {featured.map((product) => <ProductCard product={toCatalogCard(product)} key={product.id} />)}
         </div>
       </section>
 

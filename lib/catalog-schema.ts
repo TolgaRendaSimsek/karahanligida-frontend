@@ -55,8 +55,26 @@ export type CatalogPayload = z.infer<typeof catalogPayloadSchema>;
 
 export type CatalogCard = Pick<
   ProductFamily,
-  "id" | "slug" | "brand" | "name" | "category" | "subcategory" | "summary" | "images" | "variants"
->;
+  "id" | "slug" | "brand" | "name" | "category" | "subcategory" | "summary" | "images"
+> & {
+  variantCount: number;
+  firstVariant: ProductVariant;
+};
+
+export function toCatalogCard(product: ProductFamily): CatalogCard {
+  return {
+    id: product.id,
+    slug: product.slug,
+    brand: product.brand,
+    name: product.name,
+    category: product.category,
+    subcategory: product.subcategory,
+    summary: product.summary,
+    images: product.images,
+    variantCount: product.variants.length,
+    firstVariant: product.variants[0],
+  };
+}
 
 export function publicAssetPath(path: string): string {
   if (!path || /^https?:\/\//.test(path) || path.startsWith("/")) return path;
