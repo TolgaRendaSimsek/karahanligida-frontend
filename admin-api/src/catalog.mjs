@@ -1,0 +1,110 @@
+const REQUIRED_FIELDS = [
+  "id",
+  "slug",
+  "brand",
+  "name",
+  "category",
+  "subcategory",
+  "summary",
+  "description",
+  "features",
+  "specifications",
+  "images",
+  "variants",
+  "source",
+  "featured",
+  "status",
+];
+
+const FORBIDDEN_KEYS = new Set([
+  "price",
+  "unitPrice",
+  "subtotal",
+  "total",
+  "payment",
+  "customer",
+  "customerPhone",
+  "whatsappMessage",
+]);
+
+export function slugify(value) {
+  return String(value ?? "")
+    .toLocaleLowerCase("tr-TR")
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .replace(/ı/g, "i")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 96);
+}
+
+function findForbiddenKey(value, path = "product") {
+  if (!value || typeof value !== "object") return null;
+  for (const [key, child] of Object.entries(value)) {
+    if (FORBIDDEN_KEYS.has(key)) return `${path}.${key}`;
+    const nested = findForbiddenKey(child, `${path}.${key}`);
+    if (nested) return nested;
+  }
+  return null;
+}
+
+export function validateProduct(input) {
+  const errors = [];
+  const product = structuredClone(input ?? {});
+  for (const field of REQUIRED_FIELDS) {
+    if (!(field in product)) errors.push(`Eksik alan: ${field}`);
+  }
+  if (!/^family-[a-z0-9-]{3,80}$/.test(product.id ?? "")) errors.push("Geçersiz ürün kimliği.");
+  if (slugify(product.slug) !== product.slug) errors.push("Geçersiz ürün slug değeri.");
+  for (const field of ["brand", "name", "category", "summary", "description"]) {
+    if (!String(product[field] ?? "").trim()) errors.push(`${field} boş bırakılamaz.`);
+  }
+  if (!Array.isArray(product.variants) || product.variants.length === 0) {
+    errors.push("En az bir varyant/model gereklidir.");
+  }
+  if (!Array.isArray(product.images) || product.images.length === 0) {
+    errors.push("En az bir ürün görseli gereklidir.");
+  }
+  const forbidden = findForbiddenKey(product);
+  if (forbidden) errors.push(`Yasaklı veri alanı: ${forbidden}`);
+
+  const variantIds = new Set();
+  for (const variant of product.variants ?? []) {
+    if (!variant.id || variantIds.has(variant.id)) errors.push("Varyant kimlikleri benzersiz olmalıdır.");
+    variantIds.add(variant.id);
+  }
+  const imageIds = new Set();
+  for (const [index, image] of (product.images ?? []).entries()) {
+    if (!image.id || imageIds.has(image.id)) errors.push("Görsel kimlikleri benzersiz olmalıdır.");
+    imageIds.add(image.id);
+    if (!image.src || !image.thumbnailSrc) errors.push(`${image.id || "Görsel"} dosya yolları eksik.`);
+    image.order = index + 1;
+    image.variantIds = Array.isArray(image.variantIds)
+      ? image.variantIds.filter((id) => variantIds.has(id))
+      : [];
+  }
+  for (const variant of product.variants ?? []) {
+    if (variant.imageId && !imageIds.has(variant.imageId)) {
+      errors.push(`${variant.id}: eşleşen görsel bulunamadı.`);
+    }
+  }
+  if (errors.length) {
+    const error = new Error(errors.join(" "));
+    error.status = 422;
+    throw error;
+  }
+  product.status = product.status === "archived" ? "archived" : "published";
+  return product;
+}
+
+export function publicProduct(product) {
+  const {
+    revision,
+    updatedAt,
+    updatedBy,
+    createdAt,
+    createdBy,
+    ...publicFields
+  } = product;
+  return publicFields;
+}

@@ -1,156 +1,157 @@
-const DRAFT_KEY = "karahanliCatalogDraftV1";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+import {
+  getAuth,
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  signOut,
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+const config = window.KARAHANLI_FIREBASE_CONFIG || {};
+const configured = Boolean(config.apiKey && config.authDomain && config.projectId && config.appId);
+const firebaseApp = configured ? initializeApp(config) : null;
+const auth = firebaseApp ? getAuth(firebaseApp) : null;
 const $ = (id) => document.getElementById(id);
-const escapeHtml = (value) =>
-  String(value ?? "").replace(/[&<>'"]/g, (character) => ({
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    "'": "&#39;",
-    '"': "&quot;",
-  })[character]);
-let basePayload;
-let products = [];
+const state = { products: [], drafts: [], current: null, images: [], user: null };
+
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>'"]/g, (character) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" })[character]);
+}
 
 function slugify(value) {
-  return value
-    .toLocaleLowerCase("tr-TR")
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
+  return String(value ?? "").toLocaleLowerCase("tr-TR").normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "").replace(/ı/g, "i").replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "").slice(0, 96);
 }
 
-function loadDraft() {
-  try {
-    const draft = JSON.parse(localStorage.getItem(DRAFT_KEY));
-    return Array.isArray(draft?.products) ? draft.products : null;
-  } catch {
-    return null;
+function toast(message) {
+  $("toast").textContent = message;
+  $("toast").classList.add("show");
+  clearTimeout(toast.timer);
+  toast.timer = setTimeout(() => $("toast").classList.remove("show"), 2600);
+}
+
+async function api(path, options = {}) {
+  const token = await state.user.getIdToken();
+  const response = await fetch(`/api/admin${path}`, {
+    ...options,
+    headers: {
+      ...(options.body instanceof FormData ? {} : { "Content-Type": "application/json" }),
+      Authorization: `Bearer ${token}`,
+      ...options.headers,
+    },
+  });
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    const error = new Error(payload.error || "İşlem tamamlanamadı.");
+    error.status = response.status;
+    error.code = payload.code;
+    throw error;
   }
+  return payload;
 }
 
-function saveDraft() {
-  localStorage.setItem(
-    DRAFT_KEY,
-    JSON.stringify({ schemaVersion: 1, editedAt: new Date().toISOString(), products }),
-  );
-  render();
-}
-
-function showToast(message) {
-  const toast = $("adminToast");
-  toast.textContent = message;
-  toast.classList.add("show");
-  clearTimeout(showToast.timer);
-  showToast.timer = setTimeout(() => toast.classList.remove("show"), 1800);
-}
-
-function searchable(product) {
-  return [
-    product.name,
-    product.brand,
-    product.category,
-    product.subcategory,
-    ...product.variants.flatMap((variant) => [variant.name, variant.code]),
-  ].join(" ").toLocaleLowerCase("tr-TR");
+function effectiveProducts() {
+  const byId = new Map(state.products.map((product) => [product.id, { ...product, displayStatus: "published" }]));
+  state.drafts.forEach((draft) => byId.set(draft.id, { ...draft, displayStatus: "draft" }));
+  return [...byId.values()];
 }
 
 function render() {
   const query = $("adminSearch").value.toLocaleLowerCase("tr-TR");
-  const category = $("categoryFilter").value;
-  const filtered = products.filter(
-    (product) =>
-      (category === "all" || product.category === category) &&
-      (!query || searchable(product).includes(query)),
-  );
-  $("productCount").textContent = `${products.length} ürün ailesi`;
-  $("stats").innerHTML = `
-    <article class="stat"><span>Ürün ailesi</span><strong>${products.length}</strong></article>
-    <article class="stat"><span>Varyant/model</span><strong>${products.reduce((sum, product) => sum + product.variants.length, 0)}</strong></article>
-    <article class="stat"><span>Marka</span><strong>${new Set(products.map((product) => product.brand)).size}</strong></article>
-    <article class="stat"><span>Yerel taslak</span><strong>${localStorage.getItem(DRAFT_KEY) ? "Var" : "Yok"}</strong></article>`;
-  $("productTable").innerHTML = filtered.length
-    ? filtered.map((product) => `
-      <tr>
-        <td><div class="product-cell"><div class="thumb" style="background-image:url('${escapeHtml(product.images[1]?.src || product.images[0]?.src)}')"></div><div><strong>${escapeHtml(product.name)}</strong><small>${escapeHtml(product.brand)} · ${escapeHtml(product.slug)}</small></div></div></td>
-        <td><span class="category-pill">${escapeHtml(product.category)}</span><br><small>${escapeHtml(product.subcategory)}</small></td>
-        <td><strong>${product.variants.length}</strong></td>
-        <td><span class="stock-pill ${product.status === "draft" ? "low" : ""}">${product.status === "published" ? "Yayında" : "Taslak"}</span></td>
-        <td><small>${escapeHtml(product.source?.catalog || "Yerel taslak")} ${product.source?.pages?.length ? `s. ${product.source.pages.join(", ")}` : ""}</small></td>
-        <td><div class="row-actions"><button class="icon-action" data-edit="${escapeHtml(product.id)}">Düzenle</button><button class="icon-action delete" data-delete="${escapeHtml(product.id)}">Sil</button></div></td>
-      </tr>`).join("")
-    : '<tr><td colspan="6" class="empty-row">Eşleşen ürün ailesi bulunamadı.</td></tr>';
-}
-
-function parseRows(value, mapper) {
-  return value.split("\n").map((line) => line.trim()).filter(Boolean).map(mapper);
-}
-
-function openModal(product) {
-  $("productForm").reset();
-  $("productId").value = product?.id || "";
-  $("modalTitle").textContent = product ? "Ürün Ailesini Düzenle" : "Yeni Ürün Ailesi";
-  $("name").value = product?.name || "";
-  $("slug").value = product?.slug || "";
-  $("brand").value = product?.brand || "";
-  $("category").value = product?.category || "";
-  $("subcategory").value = product?.subcategory || "";
-  $("status").value = product?.status || "draft";
-  $("featured").checked = Boolean(product?.featured);
-  $("summary").value = product?.summary || "";
-  $("description").value = product?.description || "";
-  $("features").value = (product?.features || []).join("\n");
-  $("variants").value = (product?.variants || [])
-    .map((variant) => `${variant.code || variant.id} | ${variant.name}`)
-    .join("\n");
-  $("specifications").value = Object.entries(product?.specifications || {})
-    .map(([label, value]) => `${label} | ${value}`)
-    .join("\n");
-  $("image").value = product?.images?.[0]?.src || "";
-  $("modalBackdrop").hidden = false;
-  $("name").focus();
-}
-
-function closeModal() {
-  $("modalBackdrop").hidden = true;
-}
-
-$("name").addEventListener("input", () => {
-  if (!$("productId").value) $("slug").value = slugify($("name").value);
-});
-$("newProductBtn").addEventListener("click", () => openModal());
-$("closeModal").addEventListener("click", closeModal);
-$("cancelBtn").addEventListener("click", closeModal);
-$("modalBackdrop").addEventListener("click", (event) => {
-  if (event.target === $("modalBackdrop")) closeModal();
-});
-
-$("productForm").addEventListener("submit", (event) => {
-  event.preventDefault();
-  const currentId = $("productId").value;
-  const variants = parseRows($("variants").value, (line, index) => {
-    const [code, ...nameParts] = line.split("|").map((part) => part.trim());
-    return {
-      id: slugify(code || `varyant-${index + 1}`),
-      code: code || "",
-      name: nameParts.join(" | ") || code,
-      attributes: {},
-    };
+  const status = $("adminStatus").value;
+  const products = effectiveProducts();
+  $("publishedCount").textContent = state.products.filter((product) => product.status === "published").length;
+  $("draftCount").textContent = state.drafts.length;
+  $("imageCount").textContent = products.reduce((sum, product) => sum + (product.images?.length || 0), 0);
+  $("variantCount").textContent = products.reduce((sum, product) => sum + (product.variants?.length || 0), 0);
+  const filtered = products.filter((product) => {
+    const text = [product.brand, product.name, product.category, ...(product.variants || []).flatMap((variant) => [variant.name, variant.code])].join(" ").toLocaleLowerCase("tr-TR");
+    return (!query || text.includes(query)) && (!status || product.displayStatus === status);
   });
-  if (!variants.length) {
-    showToast("En az bir varyant veya model ekleyin.");
-    return;
-  }
-  const specifications = Object.fromEntries(
-    parseRows($("specifications").value, (line) => {
-      const [label, ...valueParts] = line.split("|").map((part) => part.trim());
-      return [label, valueParts.join(" | ")];
-    }).filter(([label, value]) => label && value),
-  );
-  const imagePath = $("image").value.trim();
-  const previous = products.find((product) => product.id === currentId);
-  const item = {
-    id: currentId || `draft-${Date.now()}`,
+  $("productTable").innerHTML = filtered.length ? filtered.map((product) => `
+    <tr>
+      <td><div class="product-cell"><img src="${escapeHtml(product.images?.[0]?.thumbnailSrc || product.images?.[0]?.src || "logo.png")}" alt=""><span><strong>${escapeHtml(product.name)}</strong><small>${escapeHtml(product.brand)} · ${escapeHtml(product.slug)}</small></span></div></td>
+      <td>${escapeHtml(product.category)}</td><td>${product.variants?.length || 0}</td><td>${product.images?.length || 0}</td>
+      <td><span class="status-pill ${product.displayStatus}">${product.displayStatus === "draft" ? "Taslak" : "Yayında"}</span></td>
+      <td><button class="edit-button" type="button" data-edit="${escapeHtml(product.id)}">Düzenle</button></td>
+    </tr>`).join("") : '<tr><td colspan="6">Eşleşen ürün bulunamadı.</td></tr>';
+}
+
+async function loadCatalog() {
+  const payload = await api("/catalog");
+  state.products = payload.products || [];
+  state.drafts = payload.drafts || [];
+  render();
+}
+
+function parseSpecifications(value) {
+  return Object.fromEntries(value.split("\n").map((line) => line.trim()).filter(Boolean).map((line) => {
+    const separator = line.indexOf(":");
+    return separator < 0 ? [line, ""] : [line.slice(0, separator).trim(), line.slice(separator + 1).trim()];
+  }));
+}
+
+function parseVariants(value) {
+  const used = new Set();
+  return value.split("\n").map((line) => line.trim()).filter(Boolean).map((line, index) => {
+    const [name, code = "", imageId = ""] = line.split("|").map((part) => part.trim());
+    let id = slugify(code || name) || `variant-${index + 1}`;
+    while (used.has(id)) id = `${id}-${index + 1}`;
+    used.add(id);
+    return { id, name, code, attributes: {}, ...(imageId ? { imageId } : {}) };
+  });
+}
+
+function renderMedia() {
+  $("mediaList").innerHTML = state.images.length ? state.images.map((image, index) => `
+    <article class="media-row" data-image="${escapeHtml(image.id)}">
+      <img src="${escapeHtml(image.thumbnailSrc || image.src)}" alt="">
+      <div class="media-fields">
+        <input data-image-alt value="${escapeHtml(image.alt || "")}" aria-label="Görsel açıklaması" placeholder="Görsel açıklaması">
+        <input data-image-variants value="${escapeHtml((image.variantIds || []).join(", "))}" aria-label="Varyant kimlikleri" placeholder="Varyant ID: a, b">
+        <small>${escapeHtml(image.id)}</small><small>${index + 1}. sıra</small>
+      </div>
+      <div class="media-actions"><button type="button" data-move="-1" ${index === 0 ? "disabled" : ""}>↑</button><button type="button" data-move="1" ${index === state.images.length - 1 ? "disabled" : ""}>↓</button><button type="button" data-remove>×</button></div>
+    </article>`).join("") : "<p>Henüz görsel eklenmedi.</p>";
+}
+
+function syncMediaFields() {
+  $("mediaList").querySelectorAll(".media-row").forEach((row) => {
+    const image = state.images.find((item) => item.id === row.dataset.image);
+    if (!image) return;
+    image.alt = row.querySelector("[data-image-alt]").value.trim();
+    image.variantIds = row.querySelector("[data-image-variants]").value.split(",").map((value) => value.trim()).filter(Boolean);
+  });
+}
+
+function openEditor(product = null) {
+  const draft = product ? state.drafts.find((item) => item.id === product.id) : null;
+  const value = draft || product || {
+    id: `family-${crypto.randomUUID().slice(0, 8)}`,
+    slug: "", brand: "", name: "", category: "", subcategory: "", summary: "", description: "",
+    features: [], specifications: {}, images: [], variants: [], source: { type: "admin", catalog: "Admin paneli", pages: [] },
+    featured: false, status: "published", revision: 0,
+  };
+  state.current = structuredClone(value);
+  state.images = structuredClone(value.images || []);
+  $("productId").value = value.id;
+  $("revision").value = value.revision || 0;
+  for (const field of ["brand", "name", "slug", "category", "subcategory", "summary", "description"]) $(field).value = value[field] || "";
+  $("featured").checked = Boolean(value.featured);
+  $("features").value = (value.features || []).join("\n");
+  $("specifications").value = Object.entries(value.specifications || {}).map(([key, item]) => `${key}: ${item}`).join("\n");
+  $("variants").value = (value.variants || []).map((variant) => `${variant.name} | ${variant.code || ""} | ${variant.imageId || ""}`).join("\n");
+  $("editorTitle").textContent = product ? value.name : "Yeni ürün ailesi";
+  $("archiveBtn").hidden = !product;
+  renderMedia();
+  $("editorOverlay").hidden = false;
+}
+
+function productFromForm() {
+  syncMediaFields();
+  return {
+    id: $("productId").value,
     slug: $("slug").value.trim(),
     brand: $("brand").value.trim(),
     name: $("name").value.trim(),
@@ -158,94 +159,121 @@ $("productForm").addEventListener("submit", (event) => {
     subcategory: $("subcategory").value.trim(),
     summary: $("summary").value.trim(),
     description: $("description").value.trim(),
-    features: parseRows($("features").value, (line) => line),
-    specifications,
-    images: [
-      { src: imagePath, role: "detail", alt: `${$("brand").value.trim()} ${$("name").value.trim()}` },
-      { src: imagePath.replace(/hero\.webp$/, "thumb.webp"), role: "thumbnail", alt: `${$("brand").value.trim()} ${$("name").value.trim()}` },
-    ],
-    variants,
-    source: previous?.source || { type: "local-draft", catalog: "", pages: [] },
+    features: $("features").value.split("\n").map((line) => line.trim()).filter(Boolean),
+    specifications: parseSpecifications($("specifications").value),
+    images: state.images.map((image, index) => ({ ...image, order: index + 1 })),
+    variants: parseVariants($("variants").value),
+    source: state.current.source || { type: "admin", catalog: "Admin paneli", pages: [] },
     featured: $("featured").checked,
-    status: $("status").value,
+    status: "published",
   };
-  if (products.some((product) => product.slug === item.slug && product.id !== item.id)) {
-    showToast("Bu slug başka bir ürün ailesinde kullanılıyor.");
+}
+
+async function saveDraft() {
+  const product = productFromForm();
+  const result = await api(`/products/${encodeURIComponent(product.id)}/draft`, {
+    method: "PUT",
+    body: JSON.stringify({ product, expectedRevision: Number($("revision").value || 0) }),
+  });
+  $("revision").value = result.revision;
+  state.current = { ...product, revision: result.revision };
+  toast("Taslak Firestore'a kaydedildi.");
+  await loadCatalog();
+  return product;
+}
+
+$("loginForm").addEventListener("submit", async (event) => {
+  event.preventDefault();
+  if (!configured) {
+    $("loginMessage").textContent = "Önce firebase-config.js dosyasını Firebase Web App değerleriyle doldurun.";
     return;
   }
-  if (currentId) products = products.map((product) => product.id === currentId ? item : product);
-  else products.unshift(item);
-  saveDraft();
-  closeModal();
-  showToast(currentId ? "Ürün ailesi güncellendi." : "Yeni ürün ailesi eklendi.");
-});
-
-$("productTable").addEventListener("click", (event) => {
-  const edit = event.target.closest("[data-edit]");
-  const remove = event.target.closest("[data-delete]");
-  if (edit) openModal(products.find((product) => product.id === edit.dataset.edit));
-  if (remove) {
-    const product = products.find((item) => item.id === remove.dataset.delete);
-    if (product && confirm(`“${product.name}” yerel taslaktan silinsin mi?`)) {
-      products = products.filter((item) => item.id !== product.id);
-      saveDraft();
-      showToast("Ürün ailesi yerel taslaktan silindi.");
-    }
-  }
-});
-
-$("adminSearch").addEventListener("input", render);
-$("categoryFilter").addEventListener("change", render);
-$("resetBtn").addEventListener("click", () => {
-  if (confirm("Yerel değişiklikler silinip yayımlanmış katalog verisine dönülsün mü?")) {
-    localStorage.removeItem(DRAFT_KEY);
-    products = structuredClone(basePayload.products);
-    render();
-    showToast("Yerel taslak sıfırlandı.");
-  }
-});
-$("exportBtn").addEventListener("click", () => {
-  const payload = { schemaVersion: 1, exportedAt: new Date().toISOString(), products };
-  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
-  const link = document.createElement("a");
-  link.href = URL.createObjectURL(blob);
-  link.download = "karahanli-products-draft.json";
-  link.click();
-  URL.revokeObjectURL(link.href);
-});
-$("importInput").addEventListener("change", async (event) => {
-  const file = event.target.files[0];
-  if (!file) return;
+  $("loginMessage").textContent = "";
   try {
-    const payload = JSON.parse(await file.text());
-    const imported = Array.isArray(payload) ? payload : payload.products;
-    if (!Array.isArray(imported) || imported.some((product) => !product.id || !product.slug || !product.variants?.length || "price" in product)) {
-      throw new Error();
-    }
-    products = imported;
-    saveDraft();
-    showToast("JSON taslağı yüklendi.");
+    await signInWithEmailAndPassword(auth, $("loginEmail").value, $("loginPassword").value);
   } catch {
-    alert("Geçersiz katalog JSON dosyası. Fiyat alanı içermediğinden ve varyantların bulunduğundan emin olun.");
+    $("loginMessage").textContent = "E-posta, şifre veya Firebase yapılandırması geçersiz.";
   }
+});
+
+if (auth) {
+  onAuthStateChanged(auth, async (user) => {
+    if (!user) {
+      state.user = null; $("loginView").hidden = false; $("adminView").hidden = true; return;
+    }
+    const token = await user.getIdTokenResult(true);
+    if (token.claims.admin !== true) {
+      $("loginMessage").textContent = "Bu hesabın admin yetkisi bulunmuyor.";
+      await signOut(auth); return;
+    }
+    state.user = user;
+    $("adminEmail").textContent = user.email;
+    $("loginView").hidden = true;
+    $("adminView").hidden = false;
+    try { await loadCatalog(); } catch (error) {
+      $("statusBar").hidden = false;
+      $("statusBar").textContent = `Admin API bağlantısı kurulamadı: ${error.message}`;
+    }
+  });
+}
+
+$("logoutBtn").addEventListener("click", () => signOut(auth));
+$("newProductBtn").addEventListener("click", () => openEditor());
+$("closeEditor").addEventListener("click", () => $("editorOverlay").hidden = true);
+$("name").addEventListener("input", () => { if (!state.current?.slug) $("slug").value = slugify($("name").value); });
+$("adminSearch").addEventListener("input", render);
+$("adminStatus").addEventListener("change", render);
+$("productTable").addEventListener("click", (event) => {
+  const button = event.target.closest("[data-edit]");
+  if (button) openEditor(effectiveProducts().find((product) => product.id === button.dataset.edit));
+});
+$("mediaList").addEventListener("click", (event) => {
+  const row = event.target.closest(".media-row");
+  if (!row) return;
+  syncMediaFields();
+  const index = state.images.findIndex((image) => image.id === row.dataset.image);
+  if (event.target.closest("[data-remove]")) state.images.splice(index, 1);
+  const move = event.target.closest("[data-move]");
+  if (move) {
+    const target = index + Number(move.dataset.move);
+    [state.images[index], state.images[target]] = [state.images[target], state.images[index]];
+  }
+  renderMedia();
+});
+$("mediaInput").addEventListener("change", async (event) => {
+  if (!event.target.files.length) return;
+  const data = new FormData();
+  data.append("productId", $("productId").value);
+  [...event.target.files].forEach((file) => data.append("images", file));
+  try {
+    const payload = await api("/media", { method: "POST", body: data });
+    state.images.push(...payload.images);
+    renderMedia();
+    toast(`${payload.images.length} görsel Linux medya dizinine yüklendi.`);
+  } catch (error) { toast(error.message); }
   event.target.value = "";
 });
-$("logoutBtn").addEventListener("click", (event) => {
+$("productForm").addEventListener("submit", async (event) => {
   event.preventDefault();
-  localStorage.removeItem("karahanliUser");
-  location.href = "index.html";
+  try { await saveDraft(); } catch (error) {
+    toast(error.status === 409 ? "Revizyon çakışması: ürünü yeniden açın." : error.message);
+  }
 });
-
-fetch("data/products.json?v=20260726")
-  .then((response) => response.json())
-  .then((payload) => {
-    basePayload = payload;
-    products = loadDraft() || structuredClone(payload.products);
-    [...new Set(products.map((product) => product.category))]
-      .sort((a, b) => a.localeCompare(b, "tr"))
-      .forEach((category) => $("categoryFilter").add(new Option(category, category)));
-    render();
-  })
-  .catch(() => {
-    $("productTable").innerHTML = '<tr><td colspan="6" class="empty-row">Katalog JSON dosyası yüklenemedi.</td></tr>';
-  });
+$("publishBtn").addEventListener("click", async () => {
+  try {
+    const product = await saveDraft();
+    await api(`/products/${encodeURIComponent(product.id)}/publish`, { method: "POST" });
+    $("editorOverlay").hidden = true;
+    await loadCatalog();
+    toast("Ürün yayımlandı ve katalog snapshot'ı yenilendi.");
+  } catch (error) { toast(error.message); }
+});
+$("archiveBtn").addEventListener("click", async () => {
+  if (!confirm("Bu ürün ailesini canlı katalogdan kaldırmak istiyor musunuz?")) return;
+  try {
+    await api(`/products/${encodeURIComponent($("productId").value)}/archive`, { method: "POST" });
+    $("editorOverlay").hidden = true;
+    await loadCatalog();
+    toast("Ürün arşivlendi.");
+  } catch (error) { toast(error.message); }
+});

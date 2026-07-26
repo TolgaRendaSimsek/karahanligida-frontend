@@ -2,34 +2,9 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    function isAdmin() {
-      return request.auth != null && request.auth.token.admin == true;
-    }
-
-    function familyIsPublished(familyId) {
-      return get(/databases/$(database)/documents/productFamilies/$(familyId)).data.status == "published";
-    }
-
-    match /brands/{brandId} {
-      allow read: if true;
-      allow write: if isAdmin();
-    }
-
-    match /categories/{categoryId} {
-      allow read: if true;
-      allow write: if isAdmin();
-    }
-
-    match /productFamilies/{familyId} {
-      allow read: if resource.data.status == "published" || isAdmin();
-      allow create, update, delete: if isAdmin();
-
-      match /{subcollection}/{documentId} {
-        allow read: if familyIsPublished(familyId) || isAdmin();
-        allow create, update, delete: if isAdmin();
-      }
-    }
-
+    // Ziyaretçiler Linux üzerinde üretilen statik products.json dosyasını
+    // okur. Admin işlemleri kimlik doğrulayan Linux API ve Admin SDK üzerinden
+    // yapılır; Admin SDK bu istemci kurallarını kullanmaz.
     match /{document=**} {
       allow read, write: if false;
     }
