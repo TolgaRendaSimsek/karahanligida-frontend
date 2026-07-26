@@ -1,47 +1,60 @@
-# Karahanlı Gıda Katalog ve Teklif Sitesi
+# Karahanlı Gıda
 
-Statik HTML/CSS/JavaScript ile çalışan, fiyat göstermeyen ürün kataloğu, çoklu ürün galerileri, WhatsApp teklif sepeti ve Firebase destekli yönetim sistemi.
+Next.js App Router ile çalışan, fiyat göstermeyen HORECA ürün kataloğu ve Firebase destekli katalog yönetim sistemi.
 
-## Yerel çalıştırma
+## Yerel geliştirme
 
-Dosyalar `fetch()` kullandığı için projeyi doğrudan dosya olarak açmak yerine yerel bir web sunucusuyla başlatın:
+Node.js 22 ve pnpm 11 gereklidir:
 
-```powershell
-python -m http.server 4173 --bind 127.0.0.1
+```bash
+pnpm install
+pnpm dev
 ```
 
-Ardından `http://127.0.0.1:4173` adresini açın.
+Site `http://127.0.0.1:3000` adresinde açılır.
 
-- Ana sayfa: `index.html`
-- Tüm katalog: `products.html`
-- Ürün detayları: `urunler/<slug>.html`
-- Firebase admin paneli: `admin.html`
-- Ana ürün verisi: `data/products.json`
+- Ana sayfa: `/`
+- Ürün kataloğu: `/urunler`
+- Ürün detayı: `/urunler/<slug>`
+- Favoriler: `/favoriler`
+- İletişim: `/iletisim`
+- Yönetim: `/admin`
 
-## Katalog verisini yeniden üretme
+Ürünler varsayılan olarak `data/products.json` dosyasından okunur. Üretimde `CATALOG_PATH` Linux üzerindeki kalıcı snapshot dosyasını gösterir.
 
-PDF kataloglar frontend deposuna kopyalanmaz. Kaynak dosyaların projenin üst klasöründeki `Ürünler` dizininde bulunması gerekir.
+## Yapı
 
-```powershell
-python tools/build_catalog.py --clean
-node tools/sanitize_public_catalog.mjs
-node tools/generate_product_pages.mjs
+- Next.js web/SSR servisi: `127.0.0.1:3000`
+- Firebase admin API: `127.0.0.1:3100`
+- Caddy: HTTPS, güvenlik başlıkları, `/media`, `/assets` ve reverse proxy
+- Firestore: yalnızca admin içerik yönetimi
+- Linux diski: katalog snapshot’ları ve yüklenen WebP görseller
+
+Ziyaretçi sayfaları Firestore’a doğrudan bağlanmaz. Admin yayınlama işlemi atomik `products.json` snapshot’ı oluşturur; Next.js dosya değişikliğini otomatik algılar.
+
+## Ortam değişkenleri
+
+`.env.example` dosyasını Git dışında tutulan `.env` dosyasına kopyalayın. Firebase servis hesabını yalnızca Docker secret olarak bağlayın.
+
+WhatsApp numarası ülke koduyla ve yalnızca rakamlardan oluşmalıdır:
+
+```text
+WHATSAPP_NUMBER=905xxxxxxxxx
+```
+
+## Doğrulama
+
+```bash
+pnpm typecheck
+pnpm lint
+pnpm test
+pnpm build
+pnpm test:e2e
 python tools/validate_catalog.py
-node tools/test_quote_message.mjs
+node tools/validate_next_routes.mjs http://127.0.0.1:3000
+pnpm --dir admin-api test
 ```
 
-İlk komut PDF içindeki ürün görsellerini ayrı tam/küçük WebP galerileri olarak ayıklar, aile/varyant verisini üretir ve kaynak manifestini günceller. İkinci komut paylaşılabilir ürün detay sayfalarını oluşturur.
+## Linux yayını
 
-## WhatsApp ayarı
-
-İşletme numarasını `config.js` içindeki `whatsappNumber` alanına ülke koduyla ve yalnızca rakam kullanarak yazın. Canlı alan adı belli olduğunda `siteUrl` alanını da doldurun. Mesaj ürün ailesi, varyant/model, ürün kodu, adet ve detay sayfası bağlantısını içerir.
-
-## Admin, Firebase ve Linux
-
-Firestore ürün içeriklerinin ana kaynağıdır; Firebase Authentication birden fazla admin hesabını doğrular. Görseller Firebase Storage yerine Linux diskine yüklenir. Docker içindeki admin API her yayında statik `products.json` snapshot'ını ve ürün sayfasını yeniler.
-
-Caddy doğrudan Git deposunu sunmaz. `deploy/linux/build-public.sh` yalnızca gerekli HTML, CSS, JavaScript, katalog ve görsellerden ayrı bir `public/current` sürümü oluşturur.
-
-Kurulum sırası, Docker Compose, Caddy yönlendirmeleri, servis hesabı ve admin yetkileri için [Firebase/Linux rehberine](docs/FIREBASE_TR.md) bakın.
-
-Firebase projesi oluşturulmamış, gerçek servis hesabı eklenmemiş ve sunucuya yayın yapılmamıştır.
+Kurulum, Firebase ve Caddy adımları için `docs/FIREBASE_TR.md` dosyasına bakın. Next.js üretimde standalone Docker imajı olarak çalışır; Caddy kaynak kodları doğrudan yayınlamaz.

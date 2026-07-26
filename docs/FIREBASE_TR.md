@@ -1,188 +1,114 @@
-# Karahanlı Gıda - Ücretsiz Firebase ve Linux Kurulum Rehberi
+# Karahanlı Gıda: Firebase, Next.js ve Linux İşletim Rehberi
 
-Bu mimaride Firebase Spark planı yalnızca Authentication ve Firestore için kullanılır. Ürün görselleri Firebase Storage'a gönderilmez; Caddy'nin sunduğu Linux diskinde tutulur. Ziyaretçiler Firestore'u doğrudan okumaz, admin API'nin ürettiği statik `products.json` dosyasını okur.
+Firebase Spark planı yalnızca Email/Password Authentication ve Firestore yönetim verisi için kullanılır. Firebase Storage, Hosting ve Functions kullanılmaz. Ziyaretçi trafiği Firestore'a gitmez.
 
 ## Mimari
 
 ```text
-Ziyaretçi -> Caddy -> statik site + products.json + /media
-Admin -> Firebase Auth -> Caddy /api/admin -> Docker admin-api
-admin-api -> Firestore + /srv/karahanli/data
+Ziyaretçi -> Caddy -> Next.js (127.0.0.1:3000)
+                         |
+                         +-> /data/products.json snapshot
+
+Admin -> Firebase Auth -> Caddy /api/admin/* -> admin-api (127.0.0.1:3100)
+                                                   |
+                                                   +-> Firestore
+                                                   +-> Linux medya ve snapshot diski
 ```
 
-Firestore koleksiyonları:
+Next.js katalog dosyasını `CATALOG_PATH` üzerinden okur, Zod ile doğrular ve dosyanın değiştirilme zamanı değişince belleğini yeniler. Hatalı bir snapshot yazılırsa son geçerli katalog bellekte kalır. Servis geçerli katalog olmadan hazır sayılmaz.
 
-- `productFamilies`: yayımlanmış ürün aileleri
-- `productDrafts`: admin taslakları
-- `brands`, `categories`
-- `auditLogs`: admin işlem kayıtları
-- `catalogReleases`: yayın işlemlerinin durumu
+## Sunucu dizinleri
 
-Firestore istemci kuralları bütün doğrudan okuma ve yazmaları kapatır. Linux API, Firebase Admin SDK ile çalıştığı için bu kuralları kullanmaz.
-
-## 1. Firebase projesini oluşturma
-
-1. Firebase Console'dan yeni bir proje oluşturun. Blaze'e geçmeyin ve ödeme hesabı bağlamayın.
-2. Project Settings > Your apps bölümünden Web App oluşturun.
-3. Web App config değerlerini projenin `firebase-config.js` dosyasına yazın. Bu değerler web istemcisi tarafından görülür; servis hesabı anahtarı değildir.
-4. Build > Authentication > Sign-in method bölümünden Email/Password girişini açın.
-5. Build > Firestore Database bölümünden tek bir Standard veritabanı oluşturun. Avrupa bölgesi seçin.
-6. Authentication > Users bölümünden admin hesaplarını oluşturun.
-
-`firebase-config.js` örneği:
-
-```js
-window.KARAHANLI_FIREBASE_CONFIG = {
-  apiKey: "firebase-web-api-key",
-  authDomain: "proje-id.firebaseapp.com",
-  projectId: "proje-id",
-  appId: "firebase-web-app-id",
-};
-```
-
-## 2. Firebase CLI ve ilk veriyi yükleme
-
-Bilgisayarınızda Firebase CLI ile giriş yapın:
-
-```bash
-npm install -g firebase-tools
-firebase login
-cp .firebaserc.example .firebaserc
-```
-
-`.firebaserc` içindeki proje kimliğini Firebase Console'daki gerçek `projectId` ile değiştirin. Ardından kuralları yayınlayın:
-
-```bash
-firebase deploy --only firestore:rules,firestore:indexes
-```
-
-Project Settings > Service accounts bölümünden Linux API için yeni bir özel anahtar üretin. Bu JSON dosyasını Git deposuna koymayın.
-
-Yerel seed işlemi için:
-
-```bash
-cd firebase
-npm install
-export FIREBASE_PROJECT_ID="gercek-proje-id"
-export GOOGLE_APPLICATION_CREDENTIALS="/guvenli/yol/firebase-service-account.json"
-npm run seed
-```
-
-Seed işlemi 230 ürün ailesini, marka ve kategorileri Firestore'a yazar. Tekrar çalıştırılabilir; mevcut belgeleri aynı kimlikle günceller.
-
-## 3. Admin yetkileri
-
-Authentication ekranında oluşturduğunuz her admin hesabına custom claim verin:
-
-```bash
-cd firebase
-export FIREBASE_PROJECT_ID="gercek-proje-id"
-export GOOGLE_APPLICATION_CREDENTIALS="/guvenli/yol/firebase-service-account.json"
-npm run set-admin -- admin@alanadi.com
-```
-
-Kullanıcı claim verildikten sonra çıkış yapıp tekrar giriş yapmalıdır. Admin paneli hem Firebase ID tokenini hem `admin: true` claim'ini kontrol eder. Admin olmayan hesap API'den `403` alır.
-
-## 4. Linux dizinleri ve ilk snapshot
-
-Önerilen sunucu düzeni:
+Önerilen yerleşim:
 
 ```text
-/srv/karahanli/app/current             Git kaynak kodu; web üzerinden sunulmaz
-/srv/karahanli/public/current          yalnızca yayımlanabilir frontend dosyaları
-/srv/karahanli/data/media              admin görselleri
-/srv/karahanli/data/catalog            products.json
-/srv/karahanli/data/catalog/releases   son 30 başarılı katalog snapshot'ı
-/srv/karahanli/data/generated/urunler  üretilen detay sayfaları
-/srv/karahanli/secrets                 servis hesabı
-/srv/karahanli/backups                 30 günlük yerel yedek
+/srv/karahanli/app/current       Git çalışma kopyası
+/srv/karahanli/data/catalog      canlı products.json ve son 30 snapshot
+/srv/karahanli/data/media        yönetim panelinden yüklenen görseller
+/srv/karahanli/secrets           Firebase servis hesabı
+/srv/karahanli/.env              çalışma zamanı ayarları
 ```
 
-Projeyi `/srv/karahanli/app/current` altına aldıktan sonra:
+Gerçek kurulum başka bir kök kullanıyorsa `KARAHANLI_BASE_DIR` ile değiştirilir. Veri, medya, secret ve `.env` Git'e eklenmez.
+
+## Firebase kurulumu
+
+1. Firebase Console'da Spark planında bir proje oluşturun.
+2. Authentication > Sign-in method altında Email/Password yöntemini açın.
+3. Firestore Standard veritabanını uygun Avrupa bölgesinde oluşturun.
+4. Web App config değerlerini sunucudaki `.env` dosyasına yazın:
+
+```dotenv
+FIREBASE_WEB_API_KEY=
+FIREBASE_AUTH_DOMAIN=
+FIREBASE_PROJECT_ID=
+FIREBASE_WEB_APP_ID=
+```
+
+Bu web değerleri tarayıcıda görünür ve servis hesabı sırrı değildir; yine de ortama özel ayar olarak Git dışında tutulur.
+
+5. Project Settings > Service accounts üzerinden admin API için JSON anahtarını indirin ve yalnızca sunucuda `/srv/karahanli/secrets/firebase-service-account.json` olarak, `chmod 600` ile saklayın.
+6. Admin kullanıcılarını Authentication ekranında oluşturun ve `firebase/set-admin-claim.mjs` ile `admin: true` custom claim verin.
+7. `firestore.rules` ve `firestore.indexes.json` dosyalarını Firebase CLI ile yayınlayın.
+
+Firestore istemci kuralları doğrudan katalog okuma/yazmasını kapatır. Yetkili yazma işlemleri, ID token'ı doğrulayan admin API üzerinden geçer.
+
+## Çalışma zamanı ayarları
+
+Sunucu `.env` örneği:
+
+```dotenv
+KARAHANLI_BASE_DIR=/srv/karahanli
+CATALOG_PATH=/srv/karahanli/data/catalog/products.json
+SITE_URL=https://karahanligida.com
+WHATSAPP_NUMBER=
+FIREBASE_WEB_API_KEY=
+FIREBASE_AUTH_DOMAIN=
+FIREBASE_PROJECT_ID=
+FIREBASE_WEB_APP_ID=
+FIREBASE_SERVICE_ACCOUNT_FILE=/srv/karahanli/secrets/firebase-service-account.json
+```
+
+WhatsApp numarası ülke koduyla ve yalnızca rakam olarak yazılır. Fiyat, ödeme veya müşteri bilgisi Firestore'a kaydedilmez.
+
+## Docker ve Caddy
+
+İlk hazırlık:
 
 ```bash
-cd /srv/karahanli/app/current
-sudo sh deploy/linux/prepare.sh /srv/karahanli/app/current
-sudo cp /guvenli/kaynak/firebase-service-account.json /srv/karahanli/secrets/
-sudo chmod 600 /srv/karahanli/secrets/firebase-service-account.json
-sudo cp .env.example /srv/karahanli/.env
-sudo chmod 600 /srv/karahanli/.env
+KARAHANLI_BASE_DIR=/srv/karahanli sh deploy/linux/prepare.sh
+docker compose --env-file /srv/karahanli/.env build web
+docker compose --env-file /srv/karahanli/.env up -d web
+curl --fail http://127.0.0.1:3000/api/health
 ```
 
-`/srv/karahanli/.env` içindeki `FIREBASE_PROJECT_ID`, `ADMIN_ORIGIN` ve servis hesabı yolunu gerçek değerlerle değiştirin. `.env`, servis hesabı, Git deposu ve API kaynak kodları hiçbir zaman Caddy web kökünde bulunmaz.
-
-## 5. Docker admin API
+Firebase servis hesabı henüz yoksa yalnızca `web` servisi başlatılır. Admin API hazır olduğunda:
 
 ```bash
-cd /srv/karahanli
-docker compose -f app/current/docker-compose.yml --env-file .env build admin-api
-docker compose -f app/current/docker-compose.yml --env-file .env up -d admin-api
-docker compose -f app/current/docker-compose.yml --env-file .env ps
-curl http://127.0.0.1:3100/health
+docker compose --profile admin --env-file /srv/karahanli/.env build admin-api
+docker compose --profile admin --env-file /srv/karahanli/.env up -d admin-api
+curl -i http://127.0.0.1:3100/health
 ```
 
-API host üzerinde yalnızca `127.0.0.1:3100` adresine açılır. Dış dünya API'ye Caddy üzerinden ve HTTPS ile ulaşır.
+Caddy yönlendirmeleri:
 
-Kalıcı dizinler bind mount olduğu için container silinse veya yeniden oluşturulsa bile görseller ve katalog snapshot'ı korunur.
+- `/api/admin/*` -> `127.0.0.1:3100`
+- `/media/*` -> kalıcı medya dizini
+- `/assets/*` -> ürün varlıkları
+- diğer bütün yollar -> `127.0.0.1:3000`
 
-## 6. Caddy
+`deploy/linux/Caddyfile.example` örneği kullanılmadan önce gerçek dizinlerle uyarlanmalı, `caddy validate` çalıştırılmalı ve mevcut Caddy dosyası yedeklenmelidir.
 
-`deploy/linux/Caddyfile.example` içindeki alan adını kendi Caddyfile dosyanıza uyarlayın. Caddy yalnızca `public/current` dizinini sunar; `app/current`, `.git`, `.env`, backend kaynakları ve servis hesabı web kökü dışındadır:
+## Yayınlama ve geri alma
 
-```caddyfile
-@adminApi path /api/admin/*
-handle @adminApi {
-  reverse_proxy 127.0.0.1:3100
-}
-```
+Admin panelindeki “Yayınla” işlemi Firestore belgesini günceller, yeni `products.json` dosyasını geçici konumda doğrular ve atomik olarak canlı konuma taşır. Artık ürün başına HTML üretmez. Son 30 snapshot korunur.
 
-Örnek ayrıca şu yolları tanımlar:
+Next.js imajı güncellenirken önce localhost healthcheck yapılır. Sonra Caddy trafiği yeni servise aktarılır. Smoke test başarısız olursa Caddy önceki yapılandırmasına döndürülür; katalog ve medya volume'larına dokunulmaz.
 
-- `/media/*` -> Linux medya dizini
-- `/data/products.json` -> güncel katalog snapshot'ı
-- `/urunler/*` -> admin API tarafından üretilen detay HTML'leri
-- diğer yollar -> statik frontend
-
-Caddyfile değişikliğinden sonra:
+Yedek:
 
 ```bash
-caddy validate --config /etc/caddy/Caddyfile
-sudo systemctl reload caddy
+KARAHANLI_BASE_DIR=/srv/karahanli sh deploy/linux/backup.sh
 ```
 
-## 7. Admin yayın akışı
-
-1. Admin `admin.html` üzerinden Firebase hesabıyla giriş yapar.
-2. Ürünü düzenler ve görselleri seçer.
-3. Görseller API tarafından doğrulanır, WebP tam/küçük sürüme dönüştürülür ve Linux diske yazılır.
-4. “Taslağı Kaydet” veriyi `productDrafts` koleksiyonuna yazar.
-5. “Yayınla” taslağı `productFamilies` koleksiyonuna taşır.
-6. API yeni `products.json` ve ürün HTML sayfasını atomik olarak oluşturur.
-7. İşlem `auditLogs` ve `catalogReleases` koleksiyonlarına kaydedilir.
-
-İki admin aynı revizyonu düzenlerse ikinci kayıt `409 revision-conflict` alır ve ilk adminin değişikliği ezilmez.
-Dosya üretimi tamamlanamazsa yayımlanmış Firestore belgesi geri alınır, taslak korunur ve sürüm `retry-required` durumuna geçer. Başarılı kataloglardan son 30 JSON snapshot'ı `data/catalog/releases` altında tutulur. Artık bir üründe kullanılmayan admin görselleri fiziksel olarak silinmez; `data/media/.trash` altına taşınır.
-
-## 8. Yedekleme
-
-Elle yedek almak için:
-
-```bash
-sudo sh /srv/karahanli/app/current/deploy/linux/backup.sh
-```
-
-Günlük çalıştırmak için root cron örneği:
-
-```cron
-20 3 * * * /bin/sh /srv/karahanli/app/current/deploy/linux/backup.sh
-```
-
-Betik medya, katalog ve üretilmiş sayfaları arşivler; 30 günden eski kendi arşivlerini siler. Kritik kullanımda ayrıca sunucu dışı yedek önerilir.
-
-## Ücretsiz plan sınırları
-
-- Firebase Storage, Firebase Hosting ve Cloud Functions kullanılmaz.
-- Firestore ücretsiz kotası yalnızca seed ve admin işlemlerinde tüketilir.
-- Ziyaretçi trafiği Linux/Caddy üzerinden hizmet alır.
-- Spark kotası aşılırsa Firebase hizmeti dönem sonuna kadar durabilir; otomatik ücret oluşmaz.
-- WhatsApp mesajı ve müşteri verileri Firestore'a kaydedilmez.
+Container yeniden oluşturulsa bile `data/catalog`, `data/media`, `secrets` ve `.env` bind mount/disk üzerinde kalır.

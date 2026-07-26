@@ -1,5 +1,38 @@
 services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      NODE_ENV: "production"
+      PORT: "3000"
+      HOSTNAME: "0.0.0.0"
+      CATALOG_PATH: "/data/catalog/products.json"
+      SITE_URL: "${SITE_URL:-https://karahanligida.com}"
+      WHATSAPP_NUMBER: "${WHATSAPP_NUMBER:-}"
+      FIREBASE_WEB_API_KEY: "${FIREBASE_WEB_API_KEY:-}"
+      FIREBASE_AUTH_DOMAIN: "${FIREBASE_AUTH_DOMAIN:-}"
+      FIREBASE_PROJECT_ID: "${FIREBASE_PROJECT_ID:-}"
+      FIREBASE_WEB_APP_ID: "${FIREBASE_WEB_APP_ID:-}"
+      APP_RELEASE: "${APP_RELEASE:-local}"
+    volumes:
+      - ${KARAHANLI_BASE_DIR:-/srv/karahanli}/data/catalog:/data/catalog:ro
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:3000/api/health').then(r=>{if(!r.ok)process.exit(1)})"
+      interval: 20s
+      timeout: 5s
+      retries: 5
+      start_period: 25s
+
   admin-api:
+    profiles: ["admin"]
     build:
       context: .
       dockerfile: admin-api/Dockerfile
@@ -13,11 +46,9 @@ services:
       ADMIN_ORIGIN: "${ADMIN_ORIGIN}"
       MEDIA_ROOT: "/data/media"
       CATALOG_PATH: "/data/catalog/products.json"
-      GENERATED_PAGES_ROOT: "/data/generated/urunler"
     volumes:
       - ${KARAHANLI_BASE_DIR:-/srv/karahanli}/data/media:/data/media
       - ${KARAHANLI_BASE_DIR:-/srv/karahanli}/data/catalog:/data/catalog
-      - ${KARAHANLI_BASE_DIR:-/srv/karahanli}/data/generated:/data/generated
     secrets:
       - firebase_service_account
     healthcheck:
@@ -33,4 +64,4 @@ services:
 
 secrets:
   firebase_service_account:
-    file: "${FIREBASE_SERVICE_ACCOUNT_FILE}"
+    file: "${FIREBASE_SERVICE_ACCOUNT_FILE:-./secrets/firebase-service-account.unconfigured.json}"

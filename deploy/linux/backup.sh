@@ -12,6 +12,6 @@ case "$BACKUP_DIR" in
 esac
 
 install -d -m 0750 "$BACKUP_DIR"
-tar -C "$DATA_DIR" -czf "$BACKUP_DIR/catalog-$STAMP.tar.gz" media catalog generated
+tar -C "$DATA_DIR" -czf "$BACKUP_DIR/catalog-$STAMP.tar.gz" media catalog
 find "$BACKUP_DIR" -maxdepth 1 -type f -name 'catalog-*.tar.gz' -mtime +30 -delete
 echo "$BACKUP_DIR/catalog-$STAMP.tar.gz oluşturuldu."
