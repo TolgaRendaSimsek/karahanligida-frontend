@@ -1,0 +1,5141 @@
+{
+  "catalogs": [
+    "FO HORECA 37 .yıl.pdf",
+    "KROOM MUTFAK .pdf",
+    "Kimbo 2025 New Katalog.pdf",
+    "OCHAY TANITIM.pdf",
+    "Toschi 2025 New Katalog.pdf",
+    "YOOK_Brochure.pdf",
+    "favori1.pdf"
+  ],
+  "items": [
+    {
+      "productId": "family-0001",
+      "slug": "favori-fresh-donuk-meyve-sulari-ve-limonatalar",
+      "catalog": "favori1.pdf",
+      "pages": [
+        8
+      ],
+      "assets": [
+        "assets/products/favori-fresh/favori-fresh-donuk-meyve-sulari-ve-limonatalar/hero.webp",
+        "assets/products/favori-fresh/favori-fresh-donuk-meyve-sulari-ve-limonatalar/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "X28.png",
+          "page": 8
+        },
+        {
+          "pdfObject": "X19.png",
+          "page": 8
+        },
+        {
+          "pdfObject": "X4.png",
+          "page": 8
+        },
+        {
+          "pdfObject": "X13.png",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "productId": "family-0002",
+      "slug": "fo-kokteyl-suruplari",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        5,
+        6
+      ],
+      "assets": [
+        "assets/products/fo/fo-kokteyl-suruplari/hero.webp",
+        "assets/products/fo/fo-kokteyl-suruplari/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 5
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 5
+        },
+        {
+          "pdfObject": "Im9.jp2",
+          "page": 6
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "productId": "family-0003",
+      "slug": "fo-meyveli-suruplar",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        7
+      ],
+      "assets": [
+        "assets/products/fo/fo-meyveli-suruplar/hero.webp",
+        "assets/products/fo/fo-meyveli-suruplar/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "productId": "family-0004",
+      "slug": "fo-soguk-cay-suruplari",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        8,
+        10,
+        14
+      ],
+      "assets": [
+        "assets/products/fo/fo-soguk-cay-suruplari/hero.webp",
+        "assets/products/fo/fo-soguk-cay-suruplari/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 14
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 10
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 14
+        },
+        {
+          "pdfObject": "Im4.jp2",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "productId": "family-0005",
+      "slug": "fo-aromali-kokteyl-bazlari",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        9
+      ],
+      "assets": [
+        "assets/products/fo/fo-aromali-kokteyl-bazlari/hero.webp",
+        "assets/products/fo/fo-aromali-kokteyl-bazlari/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 9
+        },
+        {
+          "pdfObject": "Im4.jpg",
+          "page": 9
+        },
+        {
+          "pdfObject": "Im3.jp2",
+          "page": 9
+        },
+        {
+          "pdfObject": "Im7.jp2",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "productId": "family-0006",
+      "slug": "fo-simli-suruplar",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "assets": [
+        "assets/products/fo/fo-simli-suruplar/hero.webp",
+        "assets/products/fo/fo-simli-suruplar/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im3.jp2",
+          "page": 11
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 11
+        },
+        {
+          "pdfObject": "Im7.jpg",
+          "page": 11
+        },
+        {
+          "pdfObject": "Im4.jpg",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "productId": "family-0007",
+      "slug": "fo-botanical-cordial-serisi",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        15
+      ],
+      "assets": [
+        "assets/products/fo/fo-botanical-cordial-serisi/hero.webp",
+        "assets/products/fo/fo-botanical-cordial-serisi/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 15
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "productId": "family-0008",
+      "slug": "fo-aromatik-bitter-sos",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        16
+      ],
+      "assets": [
+        "assets/products/fo/fo-aromatik-bitter-sos/hero.webp",
+        "assets/products/fo/fo-aromatik-bitter-sos/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "productId": "family-0009",
+      "slug": "fo-vegan-kokteyl-kopurtucu",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        17
+      ],
+      "assets": [
+        "assets/products/fo/fo-vegan-kokteyl-kopurtucu/hero.webp",
+        "assets/products/fo/fo-vegan-kokteyl-kopurtucu/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 17
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 17
+        },
+        {
+          "pdfObject": "Im4.jp2",
+          "page": 17
+        },
+        {
+          "pdfObject": "Im3.jp2",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "productId": "family-0010",
+      "slug": "fo-profesyonel-soslar",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        19,
+        20
+      ],
+      "assets": [
+        "assets/products/fo/fo-profesyonel-soslar/hero.webp",
+        "assets/products/fo/fo-profesyonel-soslar/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 19
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 19
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 20
+        },
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "productId": "family-0011",
+      "slug": "fo-premium-soslar",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        21
+      ],
+      "assets": [
+        "assets/products/fo/fo-premium-soslar/hero.webp",
+        "assets/products/fo/fo-premium-soslar/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "productId": "family-0012",
+      "slug": "fo-ozel-soslar",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        23,
+        27
+      ],
+      "assets": [
+        "assets/products/fo/fo-ozel-soslar/hero.webp",
+        "assets/products/fo/fo-ozel-soslar/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 27
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 23
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 23
+        },
+        {
+          "pdfObject": "Im4.png",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "productId": "family-0013",
+      "slug": "fo-meyve-pureleri",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        24,
+        25
+      ],
+      "assets": [
+        "assets/products/fo/fo-meyve-pureleri/hero.webp",
+        "assets/products/fo/fo-meyve-pureleri/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 24
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "productId": "family-0014",
+      "slug": "fo-topping-soslari",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        26
+      ],
+      "assets": [
+        "assets/products/fo/fo-topping-soslari/hero.webp",
+        "assets/products/fo/fo-topping-soslari/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 26
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "productId": "family-0015",
+      "slug": "fo-mocktail-karisimlari",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        28
+      ],
+      "assets": [
+        "assets/products/fo/fo-mocktail-karisimlari/hero.webp",
+        "assets/products/fo/fo-mocktail-karisimlari/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 28
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 28
+        }
+      ]
+    },
+    {
+      "productId": "family-0016",
+      "slug": "fo-meyveli-suruplar-serisi",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        29
+      ],
+      "assets": [
+        "assets/products/fo/fo-meyveli-suruplar-serisi/hero.webp",
+        "assets/products/fo/fo-meyveli-suruplar-serisi/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im5.jpg",
+          "page": 29
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 29
+        },
+        {
+          "pdfObject": "Im4.jp2",
+          "page": 29
+        },
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 29
+        }
+      ]
+    },
+    {
+      "productId": "family-0017",
+      "slug": "fo-aromali-icecek-tozlari",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        30
+      ],
+      "assets": [
+        "assets/products/fo/fo-aromali-icecek-tozlari/hero.webp",
+        "assets/products/fo/fo-aromali-icecek-tozlari/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im10.jpg",
+          "page": 30
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 30
+        },
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 30
+        }
+      ]
+    },
+    {
+      "productId": "family-0018",
+      "slug": "fo-donuk-meyveli-icecekler",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        31
+      ],
+      "assets": [
+        "assets/products/fo/fo-donuk-meyveli-icecekler/hero.webp",
+        "assets/products/fo/fo-donuk-meyveli-icecekler/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 31
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 31
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 31
+        }
+      ]
+    },
+    {
+      "productId": "family-0019",
+      "slug": "fo-aromali-icecek-bazlari",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        32,
+        33
+      ],
+      "assets": [
+        "assets/products/fo/fo-aromali-icecek-bazlari/hero.webp",
+        "assets/products/fo/fo-aromali-icecek-bazlari/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 33
+        },
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 32
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 32
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 32
+        }
+      ]
+    },
+    {
+      "productId": "family-0020",
+      "slug": "fo-surulebilir-kremalar",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        34,
+        35
+      ],
+      "assets": [
+        "assets/products/fo/fo-surulebilir-kremalar/hero.webp",
+        "assets/products/fo/fo-surulebilir-kremalar/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 34
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 35
+        },
+        {
+          "pdfObject": "Im1.png",
+          "page": 34
+        }
+      ]
+    },
+    {
+      "productId": "family-0021",
+      "slug": "fo-eclipse-sos",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        36,
+        37
+      ],
+      "assets": [
+        "assets/products/fo/fo-eclipse-sos/hero.webp",
+        "assets/products/fo/fo-eclipse-sos/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 36
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 36
+        }
+      ]
+    },
+    {
+      "productId": "family-0022",
+      "slug": "fo-yogunlastirilmis-sut",
+      "catalog": "FO HORECA 37 .yıl.pdf",
+      "pages": [
+        38
+      ],
+      "assets": [
+        "assets/products/fo/fo-yogunlastirilmis-sut/hero.webp",
+        "assets/products/fo/fo-yogunlastirilmis-sut/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "productId": "family-0023",
+      "slug": "kimbo-horeca-cekirdek-kahveler",
+      "catalog": "Kimbo 2025 New Katalog.pdf",
+      "pages": [
+        5,
+        6
+      ],
+      "assets": [
+        "assets/products/kimbo/kimbo-horeca-cekirdek-kahveler/hero.webp",
+        "assets/products/kimbo/kimbo-horeca-cekirdek-kahveler/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Image54.jpg",
+          "page": 5
+        },
+        {
+          "pdfObject": "Image63.jp2",
+          "page": 6
+        },
+        {
+          "pdfObject": "Image46.jpg",
+          "page": 5
+        },
+        {
+          "pdfObject": "Image58.jpg",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "productId": "family-0024",
+      "slug": "kimbo-horeca-filtre-kahveler",
+      "catalog": "Kimbo 2025 New Katalog.pdf",
+      "pages": [
+        8
+      ],
+      "assets": [
+        "assets/products/kimbo/kimbo-horeca-filtre-kahveler/hero.webp",
+        "assets/products/kimbo/kimbo-horeca-filtre-kahveler/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Image75.jpg",
+          "page": 8
+        },
+        {
+          "pdfObject": "Image70.jpg",
+          "page": 8
+        },
+        {
+          "pdfObject": "Image71.jpg",
+          "page": 8
+        },
+        {
+          "pdfObject": "Image51.jpg",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "productId": "family-0025",
+      "slug": "kimbo-nespresso-uyumlu-kapsuller",
+      "catalog": "Kimbo 2025 New Katalog.pdf",
+      "pages": [
+        10
+      ],
+      "assets": [
+        "assets/products/kimbo/kimbo-nespresso-uyumlu-kapsuller/hero.webp",
+        "assets/products/kimbo/kimbo-nespresso-uyumlu-kapsuller/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Image87.jpg",
+          "page": 10
+        },
+        {
+          "pdfObject": "Image51.jpg",
+          "page": 10
+        },
+        {
+          "pdfObject": "Image81.jp2",
+          "page": 10
+        },
+        {
+          "pdfObject": "Image85.jp2",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "productId": "family-0026",
+      "slug": "kimbo-blue-uyumlu-kapsuller",
+      "catalog": "Kimbo 2025 New Katalog.pdf",
+      "pages": [
+        11
+      ],
+      "assets": [
+        "assets/products/kimbo/kimbo-blue-uyumlu-kapsuller/hero.webp",
+        "assets/products/kimbo/kimbo-blue-uyumlu-kapsuller/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Image93.jpg",
+          "page": 11
+        },
+        {
+          "pdfObject": "Image90.jpg",
+          "page": 11
+        },
+        {
+          "pdfObject": "Image91.jpg",
+          "page": 11
+        },
+        {
+          "pdfObject": "Image92.jpg",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "productId": "family-0027",
+      "slug": "kimbo-retail-cekirdek-kahveler",
+      "catalog": "Kimbo 2025 New Katalog.pdf",
+      "pages": [
+        12
+      ],
+      "assets": [
+        "assets/products/kimbo/kimbo-retail-cekirdek-kahveler/hero.webp",
+        "assets/products/kimbo/kimbo-retail-cekirdek-kahveler/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Image98.jpg",
+          "page": 12
+        },
+        {
+          "pdfObject": "Image96.jpg",
+          "page": 12
+        },
+        {
+          "pdfObject": "Image97.jpg",
+          "page": 12
+        },
+        {
+          "pdfObject": "Image51.jpg",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "productId": "family-0028",
+      "slug": "kimbo-retail-filtre-kahveler",
+      "catalog": "Kimbo 2025 New Katalog.pdf",
+      "pages": [
+        13
+      ],
+      "assets": [
+        "assets/products/kimbo/kimbo-retail-filtre-kahveler/hero.webp",
+        "assets/products/kimbo/kimbo-retail-filtre-kahveler/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Image101.jpg",
+          "page": 13
+        },
+        {
+          "pdfObject": "Image103.jpg",
+          "page": 13
+        },
+        {
+          "pdfObject": "Image102.jpg",
+          "page": 13
+        },
+        {
+          "pdfObject": "Image104.jpg",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "productId": "family-0029",
+      "slug": "ocay-klasik-bitki-caylari",
+      "catalog": "OCHAY TANITIM.pdf",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "assets": [
+        "assets/products/ocay/ocay-klasik-bitki-caylari/hero.webp",
+        "assets/products/ocay/ocay-klasik-bitki-caylari/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "X7.png",
+          "page": 5
+        },
+        {
+          "pdfObject": "X5.jpg",
+          "page": 2
+        },
+        {
+          "pdfObject": "X9.jpg",
+          "page": 4
+        },
+        {
+          "pdfObject": "X8.jpg",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "productId": "family-0030",
+      "slug": "ocay-fonksiyonel-caylar",
+      "catalog": "OCHAY TANITIM.pdf",
+      "pages": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "assets": [
+        "assets/products/ocay/ocay-fonksiyonel-caylar/hero.webp",
+        "assets/products/ocay/ocay-fonksiyonel-caylar/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "X8.png",
+          "page": 10
+        },
+        {
+          "pdfObject": "X8.png",
+          "page": 9
+        },
+        {
+          "pdfObject": "X7.png",
+          "page": 8
+        },
+        {
+          "pdfObject": "X4.png",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "productId": "family-0031",
+      "slug": "ocay-rooibos-caylari",
+      "catalog": "OCHAY TANITIM.pdf",
+      "pages": [
+        13,
+        14,
+        15
+      ],
+      "assets": [
+        "assets/products/ocay/ocay-rooibos-caylari/hero.webp",
+        "assets/products/ocay/ocay-rooibos-caylari/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "X17.png",
+          "page": 14
+        },
+        {
+          "pdfObject": "X9.png",
+          "page": 13
+        },
+        {
+          "pdfObject": "X7.png",
+          "page": 13
+        },
+        {
+          "pdfObject": "X4.png",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "productId": "family-0032",
+      "slug": "ocay-matcha-caylari",
+      "catalog": "OCHAY TANITIM.pdf",
+      "pages": [
+        16,
+        17,
+        18
+      ],
+      "assets": [
+        "assets/products/ocay/ocay-matcha-caylari/hero.webp",
+        "assets/products/ocay/ocay-matcha-caylari/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "X7.png",
+          "page": 16
+        },
+        {
+          "pdfObject": "X9.png",
+          "page": 16
+        },
+        {
+          "pdfObject": "X4.png",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "productId": "family-0033",
+      "slug": "toschi-suruplar-1-l",
+      "catalog": "Toschi 2025 New Katalog.pdf",
+      "pages": [
+        9,
+        10,
+        11
+      ],
+      "assets": [
+        "assets/products/toschi/toschi-suruplar-1-l/hero.webp",
+        "assets/products/toschi/toschi-suruplar-1-l/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Image112.jpg",
+          "page": 11
+        },
+        {
+          "pdfObject": "Image125.png",
+          "page": 11
+        },
+        {
+          "pdfObject": "Image122.jp2",
+          "page": 11
+        },
+        {
+          "pdfObject": "Image74.png",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "productId": "family-0034",
+      "slug": "toschi-soslar-1-kg",
+      "catalog": "Toschi 2025 New Katalog.pdf",
+      "pages": [
+        15
+      ],
+      "assets": [
+        "assets/products/toschi/toschi-soslar-1-kg/hero.webp",
+        "assets/products/toschi/toschi-soslar-1-kg/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Image163.jp2",
+          "page": 15
+        },
+        {
+          "pdfObject": "Image74.png",
+          "page": 15
+        },
+        {
+          "pdfObject": "Image156.jpg",
+          "page": 15
+        },
+        {
+          "pdfObject": "Image150.jpg",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "productId": "family-0035",
+      "slug": "toschi-barista-sos-2-kg",
+      "catalog": "Toschi 2025 New Katalog.pdf",
+      "pages": [
+        16
+      ],
+      "assets": [
+        "assets/products/toschi/toschi-barista-sos-2-kg/hero.webp",
+        "assets/products/toschi/toschi-barista-sos-2-kg/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Image170.png",
+          "page": 16
+        },
+        {
+          "pdfObject": "Image168.jp2",
+          "page": 16
+        },
+        {
+          "pdfObject": "Image167.jpg",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "productId": "family-0036",
+      "slug": "toschi-barista-sos-500-g",
+      "catalog": "Toschi 2025 New Katalog.pdf",
+      "pages": [
+        17
+      ],
+      "assets": [
+        "assets/products/toschi/toschi-barista-sos-500-g/hero.webp",
+        "assets/products/toschi/toschi-barista-sos-500-g/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Image175.jpg",
+          "page": 17
+        },
+        {
+          "pdfObject": "Image146.png",
+          "page": 17
+        },
+        {
+          "pdfObject": "Image174.jpg",
+          "page": 17
+        },
+        {
+          "pdfObject": "Image178.jp2",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "productId": "family-0037",
+      "slug": "toschi-pureler-1-3-kg",
+      "catalog": "Toschi 2025 New Katalog.pdf",
+      "pages": [
+        19
+      ],
+      "assets": [
+        "assets/products/toschi/toschi-pureler-1-3-kg/hero.webp",
+        "assets/products/toschi/toschi-pureler-1-3-kg/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Image74.png",
+          "page": 19
+        },
+        {
+          "pdfObject": "Image190.jpg",
+          "page": 19
+        },
+        {
+          "pdfObject": "Image187.jpg",
+          "page": 19
+        },
+        {
+          "pdfObject": "Image192.jpg",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "productId": "family-0038",
+      "slug": "yook-barista-yulaf-icecekleri",
+      "catalog": "YOOK_Brochure.pdf",
+      "pages": [
+        4,
+        5
+      ],
+      "assets": [
+        "assets/products/yook/yook-barista-yulaf-icecekleri/hero.webp",
+        "assets/products/yook/yook-barista-yulaf-icecekleri/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im9.jpg",
+          "page": 5
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 5
+        },
+        {
+          "pdfObject": "Im18.tif",
+          "page": 4
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "productId": "family-0039",
+      "slug": "yook-vitamin-ve-kalsiyumlu-yulaf-icecegi",
+      "catalog": "YOOK_Brochure.pdf",
+      "pages": [
+        6
+      ],
+      "assets": [
+        "assets/products/yook/yook-vitamin-ve-kalsiyumlu-yulaf-icecegi/hero.webp",
+        "assets/products/yook/yook-vitamin-ve-kalsiyumlu-yulaf-icecegi/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 6
+        },
+        {
+          "pdfObject": "Im28.jpg",
+          "page": 6
+        },
+        {
+          "pdfObject": "Im46.jpg",
+          "page": 6
+        },
+        {
+          "pdfObject": "Im19.jpg",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "productId": "family-0040",
+      "slug": "yook-aromali-yulaf-icecekleri",
+      "catalog": "YOOK_Brochure.pdf",
+      "pages": [
+        7
+      ],
+      "assets": [
+        "assets/products/yook/yook-aromali-yulaf-icecekleri/hero.webp",
+        "assets/products/yook/yook-aromali-yulaf-icecekleri/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 7
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 7
+        },
+        {
+          "pdfObject": "Im34.jpg",
+          "page": 7
+        },
+        {
+          "pdfObject": "Im14.jpg",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "productId": "family-0041",
+      "slug": "kroom-cb-184-a-hc-23-kg-gun-kup-buz-makinesi-sayfa-6",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        6
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-cb-184-a-hc-23-kg-gun-kup-buz-makinesi-sayfa-6/hero.webp",
+        "assets/products/kroom/kroom-cb-184-a-hc-23-kg-gun-kup-buz-makinesi-sayfa-6/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 6
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 6
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "productId": "family-0042",
+      "slug": "kroom-cb-955-a-hc-97-kg-gun-kup-buz-makinesi-sayfa-7",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        7
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-cb-955-a-hc-97-kg-gun-kup-buz-makinesi-sayfa-7/hero.webp",
+        "assets/products/kroom/kroom-cb-955-a-hc-97-kg-gun-kup-buz-makinesi-sayfa-7/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 7
+        },
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 7
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 7
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "productId": "family-0043",
+      "slug": "kroom-cb249-a-hc-b-qube-32-kg-gun-b-kup-buz-makinesi-sayfa-8",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        8
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-cb249-a-hc-b-qube-32-kg-gun-b-kup-buz-makinesi-sayfa-8/hero.webp",
+        "assets/products/kroom/kroom-cb249-a-hc-b-qube-32-kg-gun-b-kup-buz-makinesi-sayfa-8/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 8
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "productId": "family-0044",
+      "slug": "kroom-cb840-a-hc-b-qube-82-kg-gun-b-kup-buz-makinesi-sayfa-9",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        9
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-cb840-a-hc-b-qube-82-kg-gun-b-kup-buz-makinesi-sayfa-9/hero.webp",
+        "assets/products/kroom/kroom-cb840-a-hc-b-qube-82-kg-gun-b-kup-buz-makinesi-sayfa-9/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im3.jp2",
+          "page": 9
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 9
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "productId": "family-0045",
+      "slug": "kroom-vm-350-a-140-kg-gun-hizli-kup-buz-makinesi-sayfa-10",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        10
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-vm-350-a-140-kg-gun-hizli-kup-buz-makinesi-sayfa-10/hero.webp",
+        "assets/products/kroom/kroom-vm-350-a-140-kg-gun-hizli-kup-buz-makinesi-sayfa-10/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im4.jpg",
+          "page": 10
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "productId": "family-0046",
+      "slug": "kroom-gb-902-a-hc-125-kg-gun-kar-buz-makinesi-sayfa-11",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        11
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-gb-902-a-hc-125-kg-gun-kar-buz-makinesi-sayfa-11/hero.webp",
+        "assets/products/kroom/kroom-gb-902-a-hc-125-kg-gun-kar-buz-makinesi-sayfa-11/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im4.jpg",
+          "page": 11
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "productId": "family-0047",
+      "slug": "kroom-tb-1404-a-hc-153-kg-gun-granul-buz-makinesi-sayfa-12",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        12
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-tb-1404-a-hc-153-kg-gun-granul-buz-makinesi-sayfa-12/hero.webp",
+        "assets/products/kroom/kroom-tb-1404-a-hc-153-kg-gun-granul-buz-makinesi-sayfa-12/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "productId": "family-0048",
+      "slug": "kroom-bsf-a-105-kg-gun-granul-buz-makinesi-dispenseri-sayfa-13",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        13
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-bsf-a-105-kg-gun-granul-buz-makinesi-dispenseri-sayfa-13/hero.webp",
+        "assets/products/kroom/kroom-bsf-a-105-kg-gun-granul-buz-makinesi-dispenseri-sayfa-13/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 13
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "productId": "family-0049",
+      "slug": "kroom-bin-200-buz-haznesi-sayfa-14",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        14
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-bin-200-buz-haznesi-sayfa-14/hero.webp",
+        "assets/products/kroom/kroom-bin-200-buz-haznesi-sayfa-14/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 14
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 14
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "productId": "family-0050",
+      "slug": "kroom-rb-100-buz-haznesi-sayfa-15",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        15
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-rb-100-buz-haznesi-sayfa-15/hero.webp",
+        "assets/products/kroom/kroom-rb-100-buz-haznesi-sayfa-15/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 15
+        }
+      ]
+    },
+    {
+      "productId": "family-0051",
+      "slug": "kroom-grubu-isitma-sistemi-sayfa-17",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        17
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-grubu-isitma-sistemi-sayfa-17/hero.webp",
+        "assets/products/kroom/kroom-grubu-isitma-sistemi-sayfa-17/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 17
+        },
+        {
+          "pdfObject": "Im3.png",
+          "page": 17
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "productId": "family-0052",
+      "slug": "kroom-ng-c-2-gruplu-dozaj-ayarli-espresso-makinesi-sayfa-18",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        18
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-ng-c-2-gruplu-dozaj-ayarli-espresso-makinesi-sayfa-18/hero.webp",
+        "assets/products/kroom/kroom-ng-c-2-gruplu-dozaj-ayarli-espresso-makinesi-sayfa-18/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 18
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 18
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 18
+        }
+      ]
+    },
+    {
+      "productId": "family-0053",
+      "slug": "kroom-x-one-tci-tc-evo-3-gruplu-dozaj-ayarli-espresso-makinesi-sayfa-19",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        19
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-x-one-tci-tc-evo-3-gruplu-dozaj-ayarli-espresso-makinesi-sayfa-19/hero.webp",
+        "assets/products/kroom/kroom-x-one-tci-tc-evo-3-gruplu-dozaj-ayarli-espresso-makinesi-sayfa-19/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 19
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 19
+        },
+        {
+          "pdfObject": "Im3.jp2",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "productId": "family-0054",
+      "slug": "kroom-mc-ultima-2-gruplu-dozaj-ayarli-espresso-makinesi-sayfa-20",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        20
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mc-ultima-2-gruplu-dozaj-ayarli-espresso-makinesi-sayfa-20/hero.webp",
+        "assets/products/kroom/kroom-mc-ultima-2-gruplu-dozaj-ayarli-espresso-makinesi-sayfa-20/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 20
+        }
+      ]
+    },
+    {
+      "productId": "family-0055",
+      "slug": "kroom-cg-200-od-espresso-degirmeni-sayfa-21",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        21
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-cg-200-od-espresso-degirmeni-sayfa-21/hero.webp",
+        "assets/products/kroom/kroom-cg-200-od-espresso-degirmeni-sayfa-21/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 21
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 21
+        }
+      ]
+    },
+    {
+      "productId": "family-0056",
+      "slug": "kroom-mini-filter-kahve-degirmeni-sayfa-23",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        23
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mini-filter-kahve-degirmeni-sayfa-23/hero.webp",
+        "assets/products/kroom/kroom-mini-filter-kahve-degirmeni-sayfa-23/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 23
+        }
+      ]
+    },
+    {
+      "productId": "family-0057",
+      "slug": "kroom-lux-manuel-espresso-degirmeni-sayfa-24",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        24
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-lux-manuel-espresso-degirmeni-sayfa-24/hero.webp",
+        "assets/products/kroom/kroom-lux-manuel-espresso-degirmeni-sayfa-24/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 24
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 24
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 24
+        },
+        {
+          "pdfObject": "Im3.jp2",
+          "page": 24
+        }
+      ]
+    },
+    {
+      "productId": "family-0058",
+      "slug": "kroom-super-jolly-v-up-manuel-espresso-degirmeni-sayfa-25",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        25
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-super-jolly-v-up-manuel-espresso-degirmeni-sayfa-25/hero.webp",
+        "assets/products/kroom/kroom-super-jolly-v-up-manuel-espresso-degirmeni-sayfa-25/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "productId": "family-0059",
+      "slug": "kroom-super-jolly-v-pro-electronic-espresso-degirmeni-sayfa-26",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        26
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-super-jolly-v-pro-electronic-espresso-degirmeni-sayfa-26/hero.webp",
+        "assets/products/kroom/kroom-super-jolly-v-pro-electronic-espresso-degirmeni-sayfa-26/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "productId": "family-0060",
+      "slug": "kroom-major-v-electronic-espresso-degirmeni-sayfa-27",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        27
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-major-v-electronic-espresso-degirmeni-sayfa-27/hero.webp",
+        "assets/products/kroom/kroom-major-v-electronic-espresso-degirmeni-sayfa-27/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "productId": "family-0061",
+      "slug": "kroom-kold-s-electronic-espresso-degirmeni-sayfa-28",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        28
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-kold-s-electronic-espresso-degirmeni-sayfa-28/hero.webp",
+        "assets/products/kroom/kroom-kold-s-electronic-espresso-degirmeni-sayfa-28/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 28
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 28
+        }
+      ]
+    },
+    {
+      "productId": "family-0062",
+      "slug": "kroom-philos-tek-doz-kahve-degirmeni-sayfa-29",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        29
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-philos-tek-doz-kahve-degirmeni-sayfa-29/hero.webp",
+        "assets/products/kroom/kroom-philos-tek-doz-kahve-degirmeni-sayfa-29/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 29
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 29
+        }
+      ]
+    },
+    {
+      "productId": "family-0063",
+      "slug": "kroom-omega-el-degirmeni-sayfa-30",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        30
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-omega-el-degirmeni-sayfa-30/hero.webp",
+        "assets/products/kroom/kroom-omega-el-degirmeni-sayfa-30/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 30
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 30
+        }
+      ]
+    },
+    {
+      "productId": "family-0064",
+      "slug": "kroom-cameo-classic-c2-s-1-gruplu-super-otomatik-espresso-makinesi-sayfa-32",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        32
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-cameo-classic-c2-s-1-gruplu-super-otomatik-espresso-makinesi-sayfa-32/hero.webp",
+        "assets/products/kroom/kroom-cameo-classic-c2-s-1-gruplu-super-otomatik-espresso-makinesi-sayfa-32/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 32
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 32
+        }
+      ]
+    },
+    {
+      "productId": "family-0065",
+      "slug": "kroom-cameo-st-c2-s-1-gruplu-super-otomatik-espresso-makinesi-sayfa-33",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        33
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-cameo-st-c2-s-1-gruplu-super-otomatik-espresso-makinesi-sayfa-33/hero.webp",
+        "assets/products/kroom/kroom-cameo-st-c2-s-1-gruplu-super-otomatik-espresso-makinesi-sayfa-33/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 33
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 33
+        }
+      ]
+    },
+    {
+      "productId": "family-0066",
+      "slug": "kroom-enigma-classic-e2-s-1-gruplu-super-otomatik-espresso-makinesi-sayfa-34",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        34
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-enigma-classic-e2-s-1-gruplu-super-otomatik-espresso-makinesi-sayfa-34/hero.webp",
+        "assets/products/kroom/kroom-enigma-classic-e2-s-1-gruplu-super-otomatik-espresso-makinesi-sayfa-34/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 34
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 34
+        }
+      ]
+    },
+    {
+      "productId": "family-0067",
+      "slug": "kroom-enigma-classic-e4-s-2-gruplu-super-otomatik-espresso-makinesi-sayfa-35",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        35
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-enigma-classic-e4-s-2-gruplu-super-otomatik-espresso-makinesi-sayfa-35/hero.webp",
+        "assets/products/kroom/kroom-enigma-classic-e4-s-2-gruplu-super-otomatik-espresso-makinesi-sayfa-35/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 35
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 35
+        }
+      ]
+    },
+    {
+      "productId": "family-0068",
+      "slug": "kroom-enigma-classic-e4-s-x-wide-2-gruplu-super-otomatik-espresso-makinesi-buhar-sayfa-36",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        36
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-enigma-classic-e4-s-x-wide-2-gruplu-super-otomatik-espresso-makinesi-buhar-sayfa-36/hero.webp",
+        "assets/products/kroom/kroom-enigma-classic-e4-s-x-wide-2-gruplu-super-otomatik-espresso-makinesi-buhar-sayfa-36/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 36
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 36
+        }
+      ]
+    },
+    {
+      "productId": "family-0069",
+      "slug": "kroom-enigma-classic-e6-s-3-gruplu-super-otomatik-espresso-makinesi-sayfa-37",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        37
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-enigma-classic-e6-s-3-gruplu-super-otomatik-espresso-makinesi-sayfa-37/hero.webp",
+        "assets/products/kroom/kroom-enigma-classic-e6-s-3-gruplu-super-otomatik-espresso-makinesi-sayfa-37/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 37
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 37
+        }
+      ]
+    },
+    {
+      "productId": "family-0070",
+      "slug": "kroom-shotmaster-s-pro-st-4-gruplu-super-otomatik-espresso-makinesi-sayfa-38",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        38
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-shotmaster-s-pro-st-4-gruplu-super-otomatik-espresso-makinesi-sayfa-38/hero.webp",
+        "assets/products/kroom/kroom-shotmaster-s-pro-st-4-gruplu-super-otomatik-espresso-makinesi-sayfa-38/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 38
+        }
+      ]
+    },
+    {
+      "productId": "family-0071",
+      "slug": "kroom-legacy-l2-m-1-gruplu-super-otomatik-espresso-makinesi-sayfa-39",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        39
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-legacy-l2-m-1-gruplu-super-otomatik-espresso-makinesi-sayfa-39/hero.webp",
+        "assets/products/kroom/kroom-legacy-l2-m-1-gruplu-super-otomatik-espresso-makinesi-sayfa-39/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "productId": "family-0072",
+      "slug": "kroom-fg10i-dgt-sut-sogutucu-dolap-sayfa-41",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        41
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-fg10i-dgt-sut-sogutucu-dolap-sayfa-41/hero.webp",
+        "assets/products/kroom/kroom-fg10i-dgt-sut-sogutucu-dolap-sayfa-41/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 41
+        }
+      ]
+    },
+    {
+      "productId": "family-0073",
+      "slug": "kroom-novo-filtre-kahve-makinesi-sayfa-43",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        43
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-novo-filtre-kahve-makinesi-sayfa-43/hero.webp",
+        "assets/products/kroom/kroom-novo-filtre-kahve-makinesi-sayfa-43/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 43
+        },
+        {
+          "pdfObject": "Im4.jpg",
+          "page": 43
+        }
+      ]
+    },
+    {
+      "productId": "family-0074",
+      "slug": "kroom-th-filtre-kahve-makinesi-sayfa-44",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        44
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-th-filtre-kahve-makinesi-sayfa-44/hero.webp",
+        "assets/products/kroom/kroom-th-filtre-kahve-makinesi-sayfa-44/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 44
+        }
+      ]
+    },
+    {
+      "productId": "family-0075",
+      "slug": "kroom-rlx-5-filtre-kahve-makinesi-sayfa-45",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        45
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-rlx-5-filtre-kahve-makinesi-sayfa-45/hero.webp",
+        "assets/products/kroom/kroom-rlx-5-filtre-kahve-makinesi-sayfa-45/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 45
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 45
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 45
+        }
+      ]
+    },
+    {
+      "productId": "family-0076",
+      "slug": "kroom-aurora-single-high-sgh-filtre-kahve-makinesi-ve-su-isitici-sayfa-46",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        46
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-aurora-single-high-sgh-filtre-kahve-makinesi-ve-su-isitici-sayfa-46/hero.webp",
+        "assets/products/kroom/kroom-aurora-single-high-sgh-filtre-kahve-makinesi-ve-su-isitici-sayfa-46/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 46
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 46
+        }
+      ]
+    },
+    {
+      "productId": "family-0077",
+      "slug": "kroom-b10-filtre-kahve-makinesi-sayfa-47",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        47
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-b10-filtre-kahve-makinesi-sayfa-47/hero.webp",
+        "assets/products/kroom/kroom-b10-filtre-kahve-makinesi-sayfa-47/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 47
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 47
+        }
+      ]
+    },
+    {
+      "productId": "family-0078",
+      "slug": "kroom-b40-filtre-kahve-makinesi-sayfa-48",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        48
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-b40-filtre-kahve-makinesi-sayfa-48/hero.webp",
+        "assets/products/kroom/kroom-b40-filtre-kahve-makinesi-sayfa-48/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 48
+        },
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 48
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 48
+        }
+      ]
+    },
+    {
+      "productId": "family-0079",
+      "slug": "kroom-hwa-14d-su-isitici-sayfa-49",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        49
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-hwa-14d-su-isitici-sayfa-49/hero.webp",
+        "assets/products/kroom/kroom-hwa-14d-su-isitici-sayfa-49/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 49
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 49
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 49
+        }
+      ]
+    },
+    {
+      "productId": "family-0080",
+      "slug": "kroom-airpot-termos-sayfa-50",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        50
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-airpot-termos-sayfa-50/hero.webp",
+        "assets/products/kroom/kroom-airpot-termos-sayfa-50/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 50
+        }
+      ]
+    },
+    {
+      "productId": "family-0081",
+      "slug": "kroom-vhg-5-konteyner-sayfa-51",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        51
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-vhg-5-konteyner-sayfa-51/hero.webp",
+        "assets/products/kroom/kroom-vhg-5-konteyner-sayfa-51/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 51
+        },
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 51
+        }
+      ]
+    },
+    {
+      "productId": "family-0082",
+      "slug": "kroom-cam-demlik-tekli-sayfa-52",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        52
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-cam-demlik-tekli-sayfa-52/hero.webp",
+        "assets/products/kroom/kroom-cam-demlik-tekli-sayfa-52/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 52
+        }
+      ]
+    },
+    {
+      "productId": "family-0083",
+      "slug": "kroom-152-437-mm-filtre-kagidi-sayfa-53",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        53
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-152-437-mm-filtre-kagidi-sayfa-53/hero.webp",
+        "assets/products/kroom/kroom-152-437-mm-filtre-kagidi-sayfa-53/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 53
+        }
+      ]
+    },
+    {
+      "productId": "family-0084",
+      "slug": "kroom-cleaner-225-gr-sayfa-54",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        54
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-cleaner-225-gr-sayfa-54/hero.webp",
+        "assets/products/kroom/kroom-cleaner-225-gr-sayfa-54/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 54
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 54
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 54
+        }
+      ]
+    },
+    {
+      "productId": "family-0085",
+      "slug": "kroom-no-10-kollu-narenciye-sikma-makinesi-sayfa-56",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        56
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-no-10-kollu-narenciye-sikma-makinesi-sayfa-56/hero.webp",
+        "assets/products/kroom/kroom-no-10-kollu-narenciye-sikma-makinesi-sayfa-56/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 56
+        }
+      ]
+    },
+    {
+      "productId": "family-0086",
+      "slug": "kroom-no-50-kati-meyve-sikma-makinesi-sayfa-57",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        57
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-no-50-kati-meyve-sikma-makinesi-sayfa-57/hero.webp",
+        "assets/products/kroom/kroom-no-50-kati-meyve-sikma-makinesi-sayfa-57/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 57
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 57
+        }
+      ]
+    },
+    {
+      "productId": "family-0087",
+      "slug": "kroom-no-66-bar-blender-1-4-litre-sayfa-58",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        58
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-no-66-bar-blender-1-4-litre-sayfa-58/hero.webp",
+        "assets/products/kroom/kroom-no-66-bar-blender-1-4-litre-sayfa-58/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 58
+        }
+      ]
+    },
+    {
+      "productId": "family-0088",
+      "slug": "kroom-no-54-nem-bar-mikser-sayfa-59",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        59
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-no-54-nem-bar-mikser-sayfa-59/hero.webp",
+        "assets/products/kroom/kroom-no-54-nem-bar-mikser-sayfa-59/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 59
+        }
+      ]
+    },
+    {
+      "productId": "family-0089",
+      "slug": "kroom-no-59-espresso-degirmeni-sayfa-60",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        60
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-no-59-espresso-degirmeni-sayfa-60/hero.webp",
+        "assets/products/kroom/kroom-no-59-espresso-degirmeni-sayfa-60/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.png",
+          "page": 60
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 60
+        }
+      ]
+    },
+    {
+      "productId": "family-0090",
+      "slug": "kroom-no-01-bar-kahve-degirmeni-sayfa-61",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        61
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-no-01-bar-kahve-degirmeni-sayfa-61/hero.webp",
+        "assets/products/kroom/kroom-no-01-bar-kahve-degirmeni-sayfa-61/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 61
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 61
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 61
+        }
+      ]
+    },
+    {
+      "productId": "family-0091",
+      "slug": "kroom-kahve-cekmecesi-sayfa-63",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        63
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-kahve-cekmecesi-sayfa-63/hero.webp",
+        "assets/products/kroom/kroom-kahve-cekmecesi-sayfa-63/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im7.jpg",
+          "page": 63
+        },
+        {
+          "pdfObject": "Im5.jpg",
+          "page": 63
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 63
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 63
+        }
+      ]
+    },
+    {
+      "productId": "family-0092",
+      "slug": "kroom-rms510ds2-mikrodalga-firin-sayfa-65",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        65
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-rms510ds2-mikrodalga-firin-sayfa-65/hero.webp",
+        "assets/products/kroom/kroom-rms510ds2-mikrodalga-firin-sayfa-65/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 65
+        },
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 65
+        }
+      ]
+    },
+    {
+      "productId": "family-0093",
+      "slug": "kroom-rfs518ts-mikrodalga-firin-sayfa-66",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        66
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-rfs518ts-mikrodalga-firin-sayfa-66/hero.webp",
+        "assets/products/kroom/kroom-rfs518ts-mikrodalga-firin-sayfa-66/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 66
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 66
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 66
+        }
+      ]
+    },
+    {
+      "productId": "family-0094",
+      "slug": "kroom-xpresscheftm-mrx51-hizli-firin-sayfa-67",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        67
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-xpresscheftm-mrx51-hizli-firin-sayfa-67/hero.webp",
+        "assets/products/kroom/kroom-xpresscheftm-mrx51-hizli-firin-sayfa-67/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 67
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 67
+        }
+      ]
+    },
+    {
+      "productId": "family-0095",
+      "slug": "kroom-seri-s-100e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-69",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        69
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-seri-s-100e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-69/hero.webp",
+        "assets/products/kroom/kroom-seri-s-100e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-69/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im3.png",
+          "page": 69
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 69
+        }
+      ]
+    },
+    {
+      "productId": "family-0096",
+      "slug": "kroom-seri-s-105e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-70",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        70
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-seri-s-105e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-70/hero.webp",
+        "assets/products/kroom/kroom-seri-s-105e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-70/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.png",
+          "page": 70
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 70
+        }
+      ]
+    },
+    {
+      "productId": "family-0097",
+      "slug": "kroom-seri-s-120e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-71",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        71
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-seri-s-120e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-71/hero.webp",
+        "assets/products/kroom/kroom-seri-s-120e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-71/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.png",
+          "page": 71
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 71
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 71
+        }
+      ]
+    },
+    {
+      "productId": "family-0098",
+      "slug": "kroom-seri-s-125e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-72",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        72
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-seri-s-125e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-72/hero.webp",
+        "assets/products/kroom/kroom-seri-s-125e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-72/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.png",
+          "page": 72
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 72
+        },
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 72
+        }
+      ]
+    },
+    {
+      "productId": "family-0099",
+      "slug": "kroom-seri-s-140e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-73",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        73
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-seri-s-140e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-73/hero.webp",
+        "assets/products/kroom/kroom-seri-s-140e-moduler-elektrikli-cok-amacli-katli-firin-sayfa-73/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.png",
+          "page": 73
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 73
+        }
+      ]
+    },
+    {
+      "productId": "family-0100",
+      "slug": "kroom-s-serisi-moduler-elektrikli-katli-pizza-firini-sayfa-74",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        74
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-s-serisi-moduler-elektrikli-katli-pizza-firini-sayfa-74/hero.webp",
+        "assets/products/kroom/kroom-s-serisi-moduler-elektrikli-katli-pizza-firini-sayfa-74/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.png",
+          "page": 74
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 74
+        }
+      ]
+    },
+    {
+      "productId": "family-0101",
+      "slug": "kroom-neapolis-tas-tabanli-kubbeli-pizza-firini-sayfa-75",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        75
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-neapolis-tas-tabanli-kubbeli-pizza-firini-sayfa-75/hero.webp",
+        "assets/products/kroom/kroom-neapolis-tas-tabanli-kubbeli-pizza-firini-sayfa-75/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 75
+        },
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 75
+        }
+      ]
+    },
+    {
+      "productId": "family-0102",
+      "slug": "kroom-ideck-elektronik-kontrollu-pizza-firini-sayfa-76",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        76
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-ideck-elektronik-kontrollu-pizza-firini-sayfa-76/hero.webp",
+        "assets/products/kroom/kroom-ideck-elektronik-kontrollu-pizza-firini-sayfa-76/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 76
+        }
+      ]
+    },
+    {
+      "productId": "family-0103",
+      "slug": "kroom-mkf-464-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-78",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        78
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkf-464-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-78/hero.webp",
+        "assets/products/kroom/kroom-mkf-464-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-78/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 78
+        }
+      ]
+    },
+    {
+      "productId": "family-0104",
+      "slug": "kroom-mkf-664-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-79",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        79
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkf-664-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-79/hero.webp",
+        "assets/products/kroom/kroom-mkf-664-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-79/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 79
+        }
+      ]
+    },
+    {
+      "productId": "family-0105",
+      "slug": "kroom-mkf-1064-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-80",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        80
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkf-1064-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-80/hero.webp",
+        "assets/products/kroom/kroom-mkf-1064-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-80/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 80
+        }
+      ]
+    },
+    {
+      "productId": "family-0106",
+      "slug": "kroom-mkf-1664-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-81",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        81
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkf-1664-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-81/hero.webp",
+        "assets/products/kroom/kroom-mkf-1664-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-81/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 81
+        }
+      ]
+    },
+    {
+      "productId": "family-0107",
+      "slug": "kroom-mkf-d1t-elektrikli-tas-tabanli-nemlendirmeli-elektronik-firin-sayfa-82",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        82
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkf-d1t-elektrikli-tas-tabanli-nemlendirmeli-elektronik-firin-sayfa-82/hero.webp",
+        "assets/products/kroom/kroom-mkf-d1t-elektrikli-tas-tabanli-nemlendirmeli-elektronik-firin-sayfa-82/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 82
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 82
+        }
+      ]
+    },
+    {
+      "productId": "family-0108",
+      "slug": "kroom-mkl-1064-s-mayalandirma-kabini-sayfa-83",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        83
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkl-1064-s-mayalandirma-kabini-sayfa-83/hero.webp",
+        "assets/products/kroom/kroom-mkl-1064-s-mayalandirma-kabini-sayfa-83/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 83
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 83
+        }
+      ]
+    },
+    {
+      "productId": "family-0109",
+      "slug": "kroom-firin-tepsi-arabasi-sayfa-84",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        84
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-firin-tepsi-arabasi-sayfa-84/hero.webp",
+        "assets/products/kroom/kroom-firin-tepsi-arabasi-sayfa-84/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 84
+        }
+      ]
+    },
+    {
+      "productId": "family-0110",
+      "slug": "kroom-deterjan-parlatici-etkili-sayfa-85",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        85
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-deterjan-parlatici-etkili-sayfa-85/hero.webp",
+        "assets/products/kroom/kroom-deterjan-parlatici-etkili-sayfa-85/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 85
+        },
+        {
+          "pdfObject": "Im5.jpg",
+          "page": 85
+        }
+      ]
+    },
+    {
+      "productId": "family-0111",
+      "slug": "kroom-mkf-511-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-86",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        86
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkf-511-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-86/hero.webp",
+        "assets/products/kroom/kroom-mkf-511-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-86/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 86
+        },
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 86
+        }
+      ]
+    },
+    {
+      "productId": "family-0112",
+      "slug": "kroom-mkf-711-bm-elektrikli-konveksiyon-nemlendirmeli-firin-elektronik-kontrol-sayfa-87",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        87
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkf-711-bm-elektrikli-konveksiyon-nemlendirmeli-firin-elektronik-kontrol-sayfa-87/hero.webp",
+        "assets/products/kroom/kroom-mkf-711-bm-elektrikli-konveksiyon-nemlendirmeli-firin-elektronik-kontrol-sayfa-87/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 87
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 87
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 87
+        }
+      ]
+    },
+    {
+      "productId": "family-0113",
+      "slug": "kroom-mkf-1111-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-88",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        88
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkf-1111-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-88/hero.webp",
+        "assets/products/kroom/kroom-mkf-1111-s-elektrikli-konveksiyon-nemlendirmeli-firin-elektromekanik-kontrol-sayfa-88/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 88
+        }
+      ]
+    },
+    {
+      "productId": "family-0114",
+      "slug": "kroom-mkf-1111-v-ts-elektrikli-boylerli-kombi-firin-dokunmatik-kontrol-sayfa-89",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        89
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkf-1111-v-ts-elektrikli-boylerli-kombi-firin-dokunmatik-kontrol-sayfa-89/hero.webp",
+        "assets/products/kroom/kroom-mkf-1111-v-ts-elektrikli-boylerli-kombi-firin-dokunmatik-kontrol-sayfa-89/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 89
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 89
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 89
+        }
+      ]
+    },
+    {
+      "productId": "family-0115",
+      "slug": "kroom-mkf-2011-ts-elektrikli-konveksiyon-nemlendirmeli-firin-dokunmatik-kontrol-sayfa-90",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        90
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkf-2011-ts-elektrikli-konveksiyon-nemlendirmeli-firin-dokunmatik-kontrol-sayfa-90/hero.webp",
+        "assets/products/kroom/kroom-mkf-2011-ts-elektrikli-konveksiyon-nemlendirmeli-firin-dokunmatik-kontrol-sayfa-90/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 90
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 90
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 90
+        }
+      ]
+    },
+    {
+      "productId": "family-0116",
+      "slug": "kroom-mkf-621-ts-elektrikli-konveksiyon-nemlendirmeli-firin-dokunmatik-kontrol-sayfa-91",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        91
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkf-621-ts-elektrikli-konveksiyon-nemlendirmeli-firin-dokunmatik-kontrol-sayfa-91/hero.webp",
+        "assets/products/kroom/kroom-mkf-621-ts-elektrikli-konveksiyon-nemlendirmeli-firin-dokunmatik-kontrol-sayfa-91/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 91
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 91
+        }
+      ]
+    },
+    {
+      "productId": "family-0117",
+      "slug": "kroom-mkf-1021-ts-elektrikli-konveksiyon-nemlendirmeli-firin-dokunmatik-kontrol-sayfa-92",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        92
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkf-1021-ts-elektrikli-konveksiyon-nemlendirmeli-firin-dokunmatik-kontrol-sayfa-92/hero.webp",
+        "assets/products/kroom/kroom-mkf-1021-ts-elektrikli-konveksiyon-nemlendirmeli-firin-dokunmatik-kontrol-sayfa-92/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 92
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 92
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 92
+        }
+      ]
+    },
+    {
+      "productId": "family-0118",
+      "slug": "kroom-mkf-611-c-bm-elektrikli-kompakt-konveksiyon-firin-elektronik-kontrol-sayfa-93",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        93
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkf-611-c-bm-elektrikli-kompakt-konveksiyon-firin-elektronik-kontrol-sayfa-93/hero.webp",
+        "assets/products/kroom/kroom-mkf-611-c-bm-elektrikli-kompakt-konveksiyon-firin-elektronik-kontrol-sayfa-93/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 93
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 93
+        }
+      ]
+    },
+    {
+      "productId": "family-0119",
+      "slug": "kroom-mkf-1011-c-bm-elektrikli-kompakt-konveksiyon-firin-elektronik-kontrol-sayfa-94",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        94
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkf-1011-c-bm-elektrikli-kompakt-konveksiyon-firin-elektronik-kontrol-sayfa-94/hero.webp",
+        "assets/products/kroom/kroom-mkf-1011-c-bm-elektrikli-kompakt-konveksiyon-firin-elektronik-kontrol-sayfa-94/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 94
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 94
+        }
+      ]
+    },
+    {
+      "productId": "family-0120",
+      "slug": "kroom-mkm-1211-sicak-tutma-kabini-sayfa-95",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        95
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkm-1211-sicak-tutma-kabini-sayfa-95/hero.webp",
+        "assets/products/kroom/kroom-mkm-1211-sicak-tutma-kabini-sayfa-95/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 95
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 95
+        }
+      ]
+    },
+    {
+      "productId": "family-0121",
+      "slug": "kroom-mkkc-610-yogusmali-davlumbaz-sayfa-96",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        96
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mkkc-610-yogusmali-davlumbaz-sayfa-96/hero.webp",
+        "assets/products/kroom/kroom-mkkc-610-yogusmali-davlumbaz-sayfa-96/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 96
+        }
+      ]
+    },
+    {
+      "productId": "family-0122",
+      "slug": "kroom-yag-toplama-kiti-sayfa-97",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        97
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-yag-toplama-kiti-sayfa-97/hero.webp",
+        "assets/products/kroom/kroom-yag-toplama-kiti-sayfa-97/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 97
+        }
+      ]
+    },
+    {
+      "productId": "family-0123",
+      "slug": "kroom-sinyal-sesi-artirici-sayfa-98",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        98
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-sinyal-sesi-artirici-sayfa-98/hero.webp",
+        "assets/products/kroom/kroom-sinyal-sesi-artirici-sayfa-98/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 98
+        }
+      ]
+    },
+    {
+      "productId": "family-0124",
+      "slug": "kroom-ust-uste-koyma-kiti-sayfa-99",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        99
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-ust-uste-koyma-kiti-sayfa-99/hero.webp",
+        "assets/products/kroom/kroom-ust-uste-koyma-kiti-sayfa-99/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 99
+        }
+      ]
+    },
+    {
+      "productId": "family-0125",
+      "slug": "kroom-touch-panel-sayfa-100",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        100
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-touch-panel-sayfa-100/hero.webp",
+        "assets/products/kroom/kroom-touch-panel-sayfa-100/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.png",
+          "page": 100
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 100
+        },
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 100
+        }
+      ]
+    },
+    {
+      "productId": "family-0126",
+      "slug": "kroom-ekf-423-n-pp-elektrikli-konveksiyon-firin-manuel-kontrol-sayfa-102",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        102
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-ekf-423-n-pp-elektrikli-konveksiyon-firin-manuel-kontrol-sayfa-102/hero.webp",
+        "assets/products/kroom/kroom-ekf-423-n-pp-elektrikli-konveksiyon-firin-manuel-kontrol-sayfa-102/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 102
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 102
+        },
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 102
+        }
+      ]
+    },
+    {
+      "productId": "family-0127",
+      "slug": "kroom-ekl-823-n-mayalandirma-kabini-sayfa-103",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        103
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-ekl-823-n-mayalandirma-kabini-sayfa-103/hero.webp",
+        "assets/products/kroom/kroom-ekl-823-n-mayalandirma-kabini-sayfa-103/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 103
+        },
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 103
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 103
+        }
+      ]
+    },
+    {
+      "productId": "family-0128",
+      "slug": "kroom-ekf-364-n-ud-elektrikli-konveksiyon-nemlendirmeli-firin-manuel-kontrol-sayfa-104",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        104
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-ekf-364-n-ud-elektrikli-konveksiyon-nemlendirmeli-firin-manuel-kontrol-sayfa-104/hero.webp",
+        "assets/products/kroom/kroom-ekf-364-n-ud-elektrikli-konveksiyon-nemlendirmeli-firin-manuel-kontrol-sayfa-104/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 104
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 104
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 104
+        },
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 104
+        }
+      ]
+    },
+    {
+      "productId": "family-0129",
+      "slug": "kroom-ekf-464-n-ud-elektrikli-konveksiyon-nemlendirmeli-firin-manuel-kontrol-sayfa-105",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        105
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-ekf-464-n-ud-elektrikli-konveksiyon-nemlendirmeli-firin-manuel-kontrol-sayfa-105/hero.webp",
+        "assets/products/kroom/kroom-ekf-464-n-ud-elektrikli-konveksiyon-nemlendirmeli-firin-manuel-kontrol-sayfa-105/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 105
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 105
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 105
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 105
+        }
+      ]
+    },
+    {
+      "productId": "family-0130",
+      "slug": "kroom-ekf-411-n-t-ud-elektrikli-konveksiyon-nemlendirmeli-firin-dokunmatik-kontrol-sayfa-106",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        106
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-ekf-411-n-t-ud-elektrikli-konveksiyon-nemlendirmeli-firin-dokunmatik-kontrol-sayfa-106/hero.webp",
+        "assets/products/kroom/kroom-ekf-411-n-t-ud-elektrikli-konveksiyon-nemlendirmeli-firin-dokunmatik-kontrol-sayfa-106/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 106
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 106
+        }
+      ]
+    },
+    {
+      "productId": "family-0131",
+      "slug": "kroom-ekkcn-4-yogusmali-davlumbaz-sayfa-107",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        107
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-ekkcn-4-yogusmali-davlumbaz-sayfa-107/hero.webp",
+        "assets/products/kroom/kroom-ekkcn-4-yogusmali-davlumbaz-sayfa-107/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 107
+        }
+      ]
+    },
+    {
+      "productId": "family-0132",
+      "slug": "kroom-elektromekanik-panel-sayfa-108",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        108
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-elektromekanik-panel-sayfa-108/hero.webp",
+        "assets/products/kroom/kroom-elektromekanik-panel-sayfa-108/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 108
+        }
+      ]
+    },
+    {
+      "productId": "family-0133",
+      "slug": "kroom-sok-sogutucular-sayfa-109",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        109
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-sok-sogutucular-sayfa-109/hero.webp",
+        "assets/products/kroom/kroom-sok-sogutucular-sayfa-109/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 109
+        }
+      ]
+    },
+    {
+      "productId": "family-0134",
+      "slug": "kroom-mxe5-20-sok-sogutucu-ve-dondurucu-elektronik-kontrol-sayfa-110",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        110
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-mxe5-20-sok-sogutucu-ve-dondurucu-elektronik-kontrol-sayfa-110/hero.webp",
+        "assets/products/kroom/kroom-mxe5-20-sok-sogutucu-ve-dondurucu-elektronik-kontrol-sayfa-110/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 110
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 110
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 110
+        }
+      ]
+    },
+    {
+      "productId": "family-0135",
+      "slug": "kroom-ft5-30-klima-sok-sogutucu-ve-dondurucu-dokunmatik-kontrol-sayfa-111",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        111
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-ft5-30-klima-sok-sogutucu-ve-dondurucu-dokunmatik-kontrol-sayfa-111/hero.webp",
+        "assets/products/kroom/kroom-ft5-30-klima-sok-sogutucu-ve-dondurucu-dokunmatik-kontrol-sayfa-111/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 111
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 111
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 111
+        }
+      ]
+    },
+    {
+      "productId": "family-0136",
+      "slug": "kroom-ftw12-50-klima-sok-sogutucu-ve-dondurucu-dokunmatik-kontrol-sayfa-112",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        112
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-ftw12-50-klima-sok-sogutucu-ve-dondurucu-dokunmatik-kontrol-sayfa-112/hero.webp",
+        "assets/products/kroom/kroom-ftw12-50-klima-sok-sogutucu-ve-dondurucu-dokunmatik-kontrol-sayfa-112/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 112
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 112
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 112
+        }
+      ]
+    },
+    {
+      "productId": "family-0137",
+      "slug": "kroom-ekipmanlari-sayfa-113",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        113
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-ekipmanlari-sayfa-113/hero.webp",
+        "assets/products/kroom/kroom-ekipmanlari-sayfa-113/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 113
+        }
+      ]
+    },
+    {
+      "productId": "family-0138",
+      "slug": "kroom-firinlar-sayfa-115",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        115
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-firinlar-sayfa-115/hero.webp",
+        "assets/products/kroom/kroom-firinlar-sayfa-115/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 115
+        }
+      ]
+    },
+    {
+      "productId": "family-0139",
+      "slug": "kroom-magistar-ts-boylerli-kombi-firinlar-dokunmatik-ekran-sayfa-116",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        116
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-magistar-ts-boylerli-kombi-firinlar-dokunmatik-ekran-sayfa-116/hero.webp",
+        "assets/products/kroom/kroom-magistar-ts-boylerli-kombi-firinlar-dokunmatik-ekran-sayfa-116/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 116
+        }
+      ]
+    },
+    {
+      "productId": "family-0140",
+      "slug": "kroom-dogalgazli-40x60-modeller-sayfa-117",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        117
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-dogalgazli-40x60-modeller-sayfa-117/hero.webp",
+        "assets/products/kroom/kroom-dogalgazli-40x60-modeller-sayfa-117/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 117
+        }
+      ]
+    },
+    {
+      "productId": "family-0141",
+      "slug": "kroom-magistar-ti-konveksiyon-nemlendirmeli-firinlar-dokunmatik-ekran-sayfa-118",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        118
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-magistar-ti-konveksiyon-nemlendirmeli-firinlar-dokunmatik-ekran-sayfa-118/hero.webp",
+        "assets/products/kroom/kroom-magistar-ti-konveksiyon-nemlendirmeli-firinlar-dokunmatik-ekran-sayfa-118/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 118
+        }
+      ]
+    },
+    {
+      "productId": "family-0142",
+      "slug": "kroom-lpg-li-gastronorm-modeller-sayfa-119",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        119
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-lpg-li-gastronorm-modeller-sayfa-119/hero.webp",
+        "assets/products/kroom/kroom-lpg-li-gastronorm-modeller-sayfa-119/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "catalog-page-fallback",
+          "page": 119
+        }
+      ]
+    },
+    {
+      "productId": "family-0143",
+      "slug": "kroom-magistar-di-konveksiyon-nemlendirmeli-firinlar-dijital-kontrol-sayfa-120",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        120
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-magistar-di-konveksiyon-nemlendirmeli-firinlar-dijital-kontrol-sayfa-120/hero.webp",
+        "assets/products/kroom/kroom-magistar-di-konveksiyon-nemlendirmeli-firinlar-dijital-kontrol-sayfa-120/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 120
+        }
+      ]
+    },
+    {
+      "productId": "family-0144",
+      "slug": "kroom-konveksiyon-nemlendirmeli-firinlar-crosswise-sayfa-121",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        121
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-konveksiyon-nemlendirmeli-firinlar-crosswise-sayfa-121/hero.webp",
+        "assets/products/kroom/kroom-konveksiyon-nemlendirmeli-firinlar-crosswise-sayfa-121/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 121
+        }
+      ]
+    },
+    {
+      "productId": "family-0145",
+      "slug": "kroom-eazy-kompakt-konveksiyon-nemlendirmeli-firinlar-sayfa-122",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        122
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-eazy-kompakt-konveksiyon-nemlendirmeli-firinlar-sayfa-122/hero.webp",
+        "assets/products/kroom/kroom-eazy-kompakt-konveksiyon-nemlendirmeli-firinlar-sayfa-122/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 122
+        }
+      ]
+    },
+    {
+      "productId": "family-0146",
+      "slug": "kroom-easy-cooking-pro-serisi-sayfa-124",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        124
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-easy-cooking-pro-serisi-sayfa-124/hero.webp",
+        "assets/products/kroom/kroom-easy-cooking-pro-serisi-sayfa-124/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 124
+        }
+      ]
+    },
+    {
+      "productId": "family-0147",
+      "slug": "kroom-evo-700-serisi-sayfa-125",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        125
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-evo-700-serisi-sayfa-125/hero.webp",
+        "assets/products/kroom/kroom-evo-700-serisi-sayfa-125/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 125
+        }
+      ]
+    },
+    {
+      "productId": "family-0148",
+      "slug": "kroom-set-ustu-gazli-ocaklar-sayfa-126",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        126
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-set-ustu-gazli-ocaklar-sayfa-126/hero.webp",
+        "assets/products/kroom/kroom-set-ustu-gazli-ocaklar-sayfa-126/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 126
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 126
+        }
+      ]
+    },
+    {
+      "productId": "family-0149",
+      "slug": "kroom-set-ustu-elektrikli-dinlendirme-ocaklari-sayfa-127",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        127
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-set-ustu-elektrikli-dinlendirme-ocaklari-sayfa-127/hero.webp",
+        "assets/products/kroom/kroom-set-ustu-elektrikli-dinlendirme-ocaklari-sayfa-127/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 127
+        }
+      ]
+    },
+    {
+      "productId": "family-0150",
+      "slug": "kroom-set-ustu-gazli-fritozler-sayfa-128",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        128
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-set-ustu-gazli-fritozler-sayfa-128/hero.webp",
+        "assets/products/kroom/kroom-set-ustu-gazli-fritozler-sayfa-128/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 128
+        }
+      ]
+    },
+    {
+      "productId": "family-0151",
+      "slug": "kroom-dolapli-gazli-fritozler-sayfa-129",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        129
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-dolapli-gazli-fritozler-sayfa-129/hero.webp",
+        "assets/products/kroom/kroom-dolapli-gazli-fritozler-sayfa-129/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 129
+        }
+      ]
+    },
+    {
+      "productId": "family-0152",
+      "slug": "kroom-dolapli-gazli-makarna-pisiriciler-sayfa-130",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        130
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-dolapli-gazli-makarna-pisiriciler-sayfa-130/hero.webp",
+        "assets/products/kroom/kroom-dolapli-gazli-makarna-pisiriciler-sayfa-130/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 130
+        },
+        {
+          "pdfObject": "Im6.jpg",
+          "page": 130
+        }
+      ]
+    },
+    {
+      "productId": "family-0153",
+      "slug": "kroom-set-ustu-krom-kaplamali-gazli-izgaralar-sayfa-131",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        131
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-set-ustu-krom-kaplamali-gazli-izgaralar-sayfa-131/hero.webp",
+        "assets/products/kroom/kroom-set-ustu-krom-kaplamali-gazli-izgaralar-sayfa-131/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 131
+        }
+      ]
+    },
+    {
+      "productId": "family-0154",
+      "slug": "kroom-set-ustu-krom-kaplamali-elektrikli-izgaralar-sayfa-132",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        132
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-set-ustu-krom-kaplamali-elektrikli-izgaralar-sayfa-132/hero.webp",
+        "assets/products/kroom/kroom-set-ustu-krom-kaplamali-elektrikli-izgaralar-sayfa-132/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 132
+        }
+      ]
+    },
+    {
+      "productId": "family-0155",
+      "slug": "kroom-set-ustu-elektrikli-hp-izgaralar-sayfa-133",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        133
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-set-ustu-elektrikli-hp-izgaralar-sayfa-133/hero.webp",
+        "assets/products/kroom/kroom-set-ustu-elektrikli-hp-izgaralar-sayfa-133/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im5.jpg",
+          "page": 133
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 133
+        }
+      ]
+    },
+    {
+      "productId": "family-0156",
+      "slug": "kroom-dolapli-gazli-barbeku-dokum-izgarali-sayfa-134",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        134
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-dolapli-gazli-barbeku-dokum-izgarali-sayfa-134/hero.webp",
+        "assets/products/kroom/kroom-dolapli-gazli-barbeku-dokum-izgarali-sayfa-134/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 134
+        }
+      ]
+    },
+    {
+      "productId": "family-0157",
+      "slug": "kroom-60-lt-kaynatma-kazanlari-sayfa-135",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        135
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-60-lt-kaynatma-kazanlari-sayfa-135/hero.webp",
+        "assets/products/kroom/kroom-60-lt-kaynatma-kazanlari-sayfa-135/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 135
+        }
+      ]
+    },
+    {
+      "productId": "family-0158",
+      "slug": "kroom-206342-onu-acik-alt-dolap-icin-kapak-sayfa-136",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        136
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-206342-onu-acik-alt-dolap-icin-kapak-sayfa-136/hero.webp",
+        "assets/products/kroom/kroom-206342-onu-acik-alt-dolap-icin-kapak-sayfa-136/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 136
+        }
+      ]
+    },
+    {
+      "productId": "family-0159",
+      "slug": "kroom-evo700xp-konsol-tip-montaj-kilavuzu-ve-aksesuarlari-sayfa-137",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        137
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-evo700xp-konsol-tip-montaj-kilavuzu-ve-aksesuarlari-sayfa-137/hero.webp",
+        "assets/products/kroom/kroom-evo700xp-konsol-tip-montaj-kilavuzu-ve-aksesuarlari-sayfa-137/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 137
+        }
+      ]
+    },
+    {
+      "productId": "family-0160",
+      "slug": "kroom-evo-900-serisi-sayfa-138",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        138
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-evo-900-serisi-sayfa-138/hero.webp",
+        "assets/products/kroom/kroom-evo-900-serisi-sayfa-138/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im4.jp2",
+          "page": 138
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 138
+        }
+      ]
+    },
+    {
+      "productId": "family-0161",
+      "slug": "kroom-set-ustu-gazli-ocaklar-sayfa-139",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        139
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-set-ustu-gazli-ocaklar-sayfa-139/hero.webp",
+        "assets/products/kroom/kroom-set-ustu-gazli-ocaklar-sayfa-139/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 139
+        }
+      ]
+    },
+    {
+      "productId": "family-0162",
+      "slug": "kroom-set-ustu-enfraruj-ocaklar-sayfa-140",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        140
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-set-ustu-enfraruj-ocaklar-sayfa-140/hero.webp",
+        "assets/products/kroom/kroom-set-ustu-enfraruj-ocaklar-sayfa-140/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 140
+        }
+      ]
+    },
+    {
+      "productId": "family-0163",
+      "slug": "kroom-dolapli-gazli-fritozler-sayfa-141",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        141
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-dolapli-gazli-fritozler-sayfa-141/hero.webp",
+        "assets/products/kroom/kroom-dolapli-gazli-fritozler-sayfa-141/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 141
+        }
+      ]
+    },
+    {
+      "productId": "family-0164",
+      "slug": "kroom-dolapli-makarna-pisiriciler-sayfa-142",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        142
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-dolapli-makarna-pisiriciler-sayfa-142/hero.webp",
+        "assets/products/kroom/kroom-dolapli-makarna-pisiriciler-sayfa-142/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 142
+        },
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 142
+        }
+      ]
+    },
+    {
+      "productId": "family-0165",
+      "slug": "kroom-set-ustu-krom-kaplamali-gazli-izgaralar-sayfa-143",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        143
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-set-ustu-krom-kaplamali-gazli-izgaralar-sayfa-143/hero.webp",
+        "assets/products/kroom/kroom-set-ustu-krom-kaplamali-gazli-izgaralar-sayfa-143/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 143
+        }
+      ]
+    },
+    {
+      "productId": "family-0166",
+      "slug": "kroom-set-ustu-krom-kaplamali-elektrikli-izgaralar-sayfa-144",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        144
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-set-ustu-krom-kaplamali-elektrikli-izgaralar-sayfa-144/hero.webp",
+        "assets/products/kroom/kroom-set-ustu-krom-kaplamali-elektrikli-izgaralar-sayfa-144/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 144
+        }
+      ]
+    },
+    {
+      "productId": "family-0167",
+      "slug": "kroom-set-ustu-gazli-sulu-izgaralar-sayfa-145",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        145
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-set-ustu-gazli-sulu-izgaralar-sayfa-145/hero.webp",
+        "assets/products/kroom/kroom-set-ustu-gazli-sulu-izgaralar-sayfa-145/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 145
+        }
+      ]
+    },
+    {
+      "productId": "family-0168",
+      "slug": "kroom-dolapli-gazli-barbeku-dokum-izgarali-sayfa-146",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        146
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-dolapli-gazli-barbeku-dokum-izgarali-sayfa-146/hero.webp",
+        "assets/products/kroom/kroom-dolapli-gazli-barbeku-dokum-izgarali-sayfa-146/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 146
+        }
+      ]
+    },
+    {
+      "productId": "family-0169",
+      "slug": "kroom-gazli-kaynatma-kazanlari-sayfa-147",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        147
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-gazli-kaynatma-kazanlari-sayfa-147/hero.webp",
+        "assets/products/kroom/kroom-gazli-kaynatma-kazanlari-sayfa-147/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 147
+        }
+      ]
+    },
+    {
+      "productId": "family-0170",
+      "slug": "kroom-gazli-devrilir-tavalar-sayfa-148",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        148
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-gazli-devrilir-tavalar-sayfa-148/hero.webp",
+        "assets/products/kroom/kroom-gazli-devrilir-tavalar-sayfa-148/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 148
+        }
+      ]
+    },
+    {
+      "productId": "family-0171",
+      "slug": "kroom-set-ustu-ara-tezgahlar-sayfa-149",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        149
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-set-ustu-ara-tezgahlar-sayfa-149/hero.webp",
+        "assets/products/kroom/kroom-set-ustu-ara-tezgahlar-sayfa-149/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 149
+        }
+      ]
+    },
+    {
+      "productId": "family-0172",
+      "slug": "kroom-evo900xp-konsol-tip-montaj-kilavuzu-ve-aksesuarlari-sayfa-150",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        150
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-evo900xp-konsol-tip-montaj-kilavuzu-ve-aksesuarlari-sayfa-150/hero.webp",
+        "assets/products/kroom/kroom-evo900xp-konsol-tip-montaj-kilavuzu-ve-aksesuarlari-sayfa-150/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 150
+        }
+      ]
+    },
+    {
+      "productId": "family-0173",
+      "slug": "kroom-salamanderler-sayfa-151",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        151
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-salamanderler-sayfa-151/hero.webp",
+        "assets/products/kroom/kroom-salamanderler-sayfa-151/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 151
+        }
+      ]
+    },
+    {
+      "productId": "family-0174",
+      "slug": "kroom-evo-700-900xp-tencere-rafi-sayfa-152",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        152
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-evo-700-900xp-tencere-rafi-sayfa-152/hero.webp",
+        "assets/products/kroom/kroom-evo-700-900xp-tencere-rafi-sayfa-152/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 152
+        },
+        {
+          "pdfObject": "Im25.jpg",
+          "page": 152
+        },
+        {
+          "pdfObject": "Im23.jpg",
+          "page": 152
+        },
+        {
+          "pdfObject": "Im26.jpg",
+          "page": 152
+        }
+      ]
+    },
+    {
+      "productId": "family-0175",
+      "slug": "kroom-evo-700-900xp-tencere-rafi-ve-salamander-destegi-sayfa-153",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        153
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-evo-700-900xp-tencere-rafi-ve-salamander-destegi-sayfa-153/hero.webp",
+        "assets/products/kroom/kroom-evo-700-900xp-tencere-rafi-ve-salamander-destegi-sayfa-153/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 153
+        },
+        {
+          "pdfObject": "Im8.jp2",
+          "page": 153
+        }
+      ]
+    },
+    {
+      "productId": "family-0176",
+      "slug": "kroom-evo700-sogutucu-dolap-uzerine-sayfa-155",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        155
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-evo700-sogutucu-dolap-uzerine-sayfa-155/hero.webp",
+        "assets/products/kroom/kroom-evo700-sogutucu-dolap-uzerine-sayfa-155/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.png",
+          "page": 155
+        },
+        {
+          "pdfObject": "Im0.png",
+          "page": 155
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 155
+        }
+      ]
+    },
+    {
+      "productId": "family-0177",
+      "slug": "kroom-cihaz-alti-buzdolabi-evo-700-sayfa-156",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        156
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-cihaz-alti-buzdolabi-evo-700-sayfa-156/hero.webp",
+        "assets/products/kroom/kroom-cihaz-alti-buzdolabi-evo-700-sayfa-156/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 156
+        }
+      ]
+    },
+    {
+      "productId": "family-0178",
+      "slug": "kroom-npt-active-serisi-dik-tip-sogutucular-gn-2-1-aisi-304-r290-sayfa-157",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        157
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-npt-active-serisi-dik-tip-sogutucular-gn-2-1-aisi-304-r290-sayfa-157/hero.webp",
+        "assets/products/kroom/kroom-npt-active-serisi-dik-tip-sogutucular-gn-2-1-aisi-304-r290-sayfa-157/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 157
+        }
+      ]
+    },
+    {
+      "productId": "family-0179",
+      "slug": "kroom-nau-maxi-serisi-dik-tip-sogutucular-gn-2-1-aisi-304-r290-sayfa-158",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        158
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-nau-maxi-serisi-dik-tip-sogutucular-gn-2-1-aisi-304-r290-sayfa-158/hero.webp",
+        "assets/products/kroom/kroom-nau-maxi-serisi-dik-tip-sogutucular-gn-2-1-aisi-304-r290-sayfa-158/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 158
+        }
+      ]
+    },
+    {
+      "productId": "family-0180",
+      "slug": "kroom-nau-maxi-serisi-dik-tip-sogutucular-gn-2-1-aisi-430-sayfa-159",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        159
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-nau-maxi-serisi-dik-tip-sogutucular-gn-2-1-aisi-430-sayfa-159/hero.webp",
+        "assets/products/kroom/kroom-nau-maxi-serisi-dik-tip-sogutucular-gn-2-1-aisi-430-sayfa-159/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 159
+        }
+      ]
+    },
+    {
+      "productId": "family-0181",
+      "slug": "kroom-npt-active-hp-serisi-tezgah-tip-sogutucular-ustu-duz-aisi-304-sayfa-160",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        160
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-npt-active-hp-serisi-tezgah-tip-sogutucular-ustu-duz-aisi-304-sayfa-160/hero.webp",
+        "assets/products/kroom/kroom-npt-active-hp-serisi-tezgah-tip-sogutucular-ustu-duz-aisi-304-sayfa-160/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 160
+        }
+      ]
+    },
+    {
+      "productId": "family-0182",
+      "slug": "kroom-npt-active-buzdolaplari-sayfa-161",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        161
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-npt-active-buzdolaplari-sayfa-161/hero.webp",
+        "assets/products/kroom/kroom-npt-active-buzdolaplari-sayfa-161/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 161
+        }
+      ]
+    },
+    {
+      "productId": "family-0183",
+      "slug": "kroom-npt-active-cp-serisi-tezgah-tip-sogutucular-ustu-duz-aisi-304-sayfa-162",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        162
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-npt-active-cp-serisi-tezgah-tip-sogutucular-ustu-duz-aisi-304-sayfa-162/hero.webp",
+        "assets/products/kroom/kroom-npt-active-cp-serisi-tezgah-tip-sogutucular-ustu-duz-aisi-304-sayfa-162/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 162
+        }
+      ]
+    },
+    {
+      "productId": "family-0184",
+      "slug": "kroom-npt-au-serisi-tezgah-tip-sogutucular-sirtli-aisi-304-sayfa-163",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        163
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-npt-au-serisi-tezgah-tip-sogutucular-sirtli-aisi-304-sayfa-163/hero.webp",
+        "assets/products/kroom/kroom-npt-au-serisi-tezgah-tip-sogutucular-sirtli-aisi-304-sayfa-163/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 163
+        }
+      ]
+    },
+    {
+      "productId": "family-0185",
+      "slug": "kroom-pastacilik-tezgah-tip-sogutucular-sirtli-aisi-304-sayfa-164",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        164
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-pastacilik-tezgah-tip-sogutucular-sirtli-aisi-304-sayfa-164/hero.webp",
+        "assets/products/kroom/kroom-pastacilik-tezgah-tip-sogutucular-sirtli-aisi-304-sayfa-164/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 164
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 164
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 164
+        }
+      ]
+    },
+    {
+      "productId": "family-0186",
+      "slug": "kroom-rapido-serisi-sok-sogutucu-dondurucular-blast-chiller-sayfa-165",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        165
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-rapido-serisi-sok-sogutucu-dondurucular-blast-chiller-sayfa-165/hero.webp",
+        "assets/products/kroom/kroom-rapido-serisi-sok-sogutucu-dondurucular-blast-chiller-sayfa-165/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 165
+        }
+      ]
+    },
+    {
+      "productId": "family-0187",
+      "slug": "kroom-crosswise-serisi-sok-sogutucu-dondurucular-blast-chiller-sayfa-166",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        166
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-crosswise-serisi-sok-sogutucu-dondurucular-blast-chiller-sayfa-166/hero.webp",
+        "assets/products/kroom/kroom-crosswise-serisi-sok-sogutucu-dondurucular-blast-chiller-sayfa-166/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im4.jpg",
+          "page": 166
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 166
+        }
+      ]
+    },
+    {
+      "productId": "family-0188",
+      "slug": "kroom-bardak-yikama-bulasik-makineleri-sayfa-168",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        168
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-bardak-yikama-bulasik-makineleri-sayfa-168/hero.webp",
+        "assets/products/kroom/kroom-bardak-yikama-bulasik-makineleri-sayfa-168/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 168
+        }
+      ]
+    },
+    {
+      "productId": "family-0189",
+      "slug": "kroom-giyotin-tip-bulasik-makineleri-sayfa-169",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        169
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-giyotin-tip-bulasik-makineleri-sayfa-169/hero.webp",
+        "assets/products/kroom/kroom-giyotin-tip-bulasik-makineleri-sayfa-169/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 169
+        }
+      ]
+    },
+    {
+      "productId": "family-0190",
+      "slug": "kroom-kazan-bulasik-makineleri-sayfa-170",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        170
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-kazan-bulasik-makineleri-sayfa-170/hero.webp",
+        "assets/products/kroom/kroom-kazan-bulasik-makineleri-sayfa-170/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 170
+        }
+      ]
+    },
+    {
+      "productId": "family-0191",
+      "slug": "kroom-cift-durulamali-konveyorlu-bulasik-makineleri-sayfa-171",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        171
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-cift-durulamali-konveyorlu-bulasik-makineleri-sayfa-171/hero.webp",
+        "assets/products/kroom/kroom-cift-durulamali-konveyorlu-bulasik-makineleri-sayfa-171/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 171
+        }
+      ]
+    },
+    {
+      "productId": "family-0192",
+      "slug": "kroom-cift-durulamali-enerji-tasarruflu-konveyorlu-bulasik-makineleri-sayfa-172",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        172
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-cift-durulamali-enerji-tasarruflu-konveyorlu-bulasik-makineleri-sayfa-172/hero.webp",
+        "assets/products/kroom/kroom-cift-durulamali-enerji-tasarruflu-konveyorlu-bulasik-makineleri-sayfa-172/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 172
+        }
+      ]
+    },
+    {
+      "productId": "family-0193",
+      "slug": "kroom-coklu-durulamali-enerji-tasarruflu-konveyorlu-bulasik-makineleri-sayfa-173",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        173
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-coklu-durulamali-enerji-tasarruflu-konveyorlu-bulasik-makineleri-sayfa-173/hero.webp",
+        "assets/products/kroom/kroom-coklu-durulamali-enerji-tasarruflu-konveyorlu-bulasik-makineleri-sayfa-173/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 173
+        }
+      ]
+    },
+    {
+      "productId": "family-0194",
+      "slug": "kroom-coklu-durulamali-enerji-tasarruflu-konveyorlu-bulasik-makineleri-sayfa-174",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        174
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-coklu-durulamali-enerji-tasarruflu-konveyorlu-bulasik-makineleri-sayfa-174/hero.webp",
+        "assets/products/kroom/kroom-coklu-durulamali-enerji-tasarruflu-konveyorlu-bulasik-makineleri-sayfa-174/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 174
+        }
+      ]
+    },
+    {
+      "productId": "family-0195",
+      "slug": "kroom-600970-prep4you-sebze-dograma-makinesi-sayfa-176",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        176
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-600970-prep4you-sebze-dograma-makinesi-sayfa-176/hero.webp",
+        "assets/products/kroom/kroom-600970-prep4you-sebze-dograma-makinesi-sayfa-176/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 176
+        },
+        {
+          "pdfObject": "Im10.jpg",
+          "page": 176
+        }
+      ]
+    },
+    {
+      "productId": "family-0196",
+      "slug": "kroom-cc0g12-8-li-disk-takimi-sayfa-177",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        177
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-cc0g12-8-li-disk-takimi-sayfa-177/hero.webp",
+        "assets/products/kroom/kroom-cc0g12-8-li-disk-takimi-sayfa-177/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im12.jpg",
+          "page": 177
+        },
+        {
+          "pdfObject": "Im8.jpg",
+          "page": 177
+        },
+        {
+          "pdfObject": "Im10.jp2",
+          "page": 177
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 177
+        }
+      ]
+    },
+    {
+      "productId": "family-0197",
+      "slug": "kroom-650092-3-lu-disk-takimi-sayfa-178",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        178
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-650092-3-lu-disk-takimi-sayfa-178/hero.webp",
+        "assets/products/kroom/kroom-650092-3-lu-disk-takimi-sayfa-178/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im17.jpg",
+          "page": 178
+        },
+        {
+          "pdfObject": "Im20.jpg",
+          "page": 178
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 178
+        }
+      ]
+    },
+    {
+      "productId": "family-0198",
+      "slug": "kroom-650113-6-li-disk-takimi-sayfa-179",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        179
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-650113-6-li-disk-takimi-sayfa-179/hero.webp",
+        "assets/products/kroom/kroom-650113-6-li-disk-takimi-sayfa-179/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im10.jpg",
+          "page": 179
+        },
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 179
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 179
+        }
+      ]
+    },
+    {
+      "productId": "family-0199",
+      "slug": "kroom-sebze-kesme-makineleri-sayfa-180",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        180
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-sebze-kesme-makineleri-sayfa-180/hero.webp",
+        "assets/products/kroom/kroom-sebze-kesme-makineleri-sayfa-180/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im11.jpg",
+          "page": 180
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 180
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 180
+        }
+      ]
+    },
+    {
+      "productId": "family-0200",
+      "slug": "kroom-sebze-kesme-makineleri-sayfa-181",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        181
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-sebze-kesme-makineleri-sayfa-181/hero.webp",
+        "assets/products/kroom/kroom-sebze-kesme-makineleri-sayfa-181/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 181
+        },
+        {
+          "pdfObject": "Im10.jpg",
+          "page": 181
+        }
+      ]
+    },
+    {
+      "productId": "family-0201",
+      "slug": "kroom-sebze-kesme-makineleri-sayfa-182",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        182
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-sebze-kesme-makineleri-sayfa-182/hero.webp",
+        "assets/products/kroom/kroom-sebze-kesme-makineleri-sayfa-182/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 182
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 182
+        },
+        {
+          "pdfObject": "Im10.jpg",
+          "page": 182
+        }
+      ]
+    },
+    {
+      "productId": "family-0202",
+      "slug": "kroom-sebze-kesme-makineleri-sayfa-183",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        183
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-sebze-kesme-makineleri-sayfa-183/hero.webp",
+        "assets/products/kroom/kroom-sebze-kesme-makineleri-sayfa-183/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im9.jpg",
+          "page": 183
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 183
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 183
+        },
+        {
+          "pdfObject": "Im8.jpg",
+          "page": 183
+        }
+      ]
+    },
+    {
+      "productId": "family-0203",
+      "slug": "kroom-sebze-kesme-makineleri-sayfa-184",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        184
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-sebze-kesme-makineleri-sayfa-184/hero.webp",
+        "assets/products/kroom/kroom-sebze-kesme-makineleri-sayfa-184/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 184
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 184
+        }
+      ]
+    },
+    {
+      "productId": "family-0204",
+      "slug": "kroom-sebze-kesme-makineleri-sayfa-185",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        185
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-sebze-kesme-makineleri-sayfa-185/hero.webp",
+        "assets/products/kroom/kroom-sebze-kesme-makineleri-sayfa-185/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im7.jpg",
+          "page": 185
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 185
+        },
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 185
+        }
+      ]
+    },
+    {
+      "productId": "family-0205",
+      "slug": "kroom-603428-tr260-sebze-dograma-makinesi-sayfa-186",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        186
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-603428-tr260-sebze-dograma-makinesi-sayfa-186/hero.webp",
+        "assets/products/kroom/kroom-603428-tr260-sebze-dograma-makinesi-sayfa-186/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 186
+        },
+        {
+          "pdfObject": "Im2.jp2",
+          "page": 186
+        }
+      ]
+    },
+    {
+      "productId": "family-0206",
+      "slug": "kroom-tr260-tr300-icin-rende-diskleri-sayfa-187",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        187
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-tr260-tr300-icin-rende-diskleri-sayfa-187/hero.webp",
+        "assets/products/kroom/kroom-tr260-tr300-icin-rende-diskleri-sayfa-187/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 187
+        }
+      ]
+    },
+    {
+      "productId": "family-0207",
+      "slug": "kroom-tr260-tr300-icin-dalgali-dilimleme-diskleri-sayfa-188",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        188
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-tr260-tr300-icin-dalgali-dilimleme-diskleri-sayfa-188/hero.webp",
+        "assets/products/kroom/kroom-tr260-tr300-icin-dalgali-dilimleme-diskleri-sayfa-188/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 188
+        }
+      ]
+    },
+    {
+      "productId": "family-0208",
+      "slug": "kroom-rc14-icin-parmak-patates-kesme-blogu-sayfa-189",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        189
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-rc14-icin-parmak-patates-kesme-blogu-sayfa-189/hero.webp",
+        "assets/products/kroom/kroom-rc14-icin-parmak-patates-kesme-blogu-sayfa-189/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 189
+        }
+      ]
+    },
+    {
+      "productId": "family-0209",
+      "slug": "kroom-600959-set-ustu-parcalama-2-6-lt-sayfa-190",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        190
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-600959-set-ustu-parcalama-2-6-lt-sayfa-190/hero.webp",
+        "assets/products/kroom/kroom-600959-set-ustu-parcalama-2-6-lt-sayfa-190/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 190
+        }
+      ]
+    },
+    {
+      "productId": "family-0210",
+      "slug": "kroom-600445-set-ustu-parcalama-5-5-lt-trifaze-sayfa-191",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        191
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-600445-set-ustu-parcalama-5-5-lt-trifaze-sayfa-191/hero.webp",
+        "assets/products/kroom/kroom-600445-set-ustu-parcalama-5-5-lt-trifaze-sayfa-191/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 191
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 191
+        }
+      ]
+    },
+    {
+      "productId": "family-0211",
+      "slug": "kroom-603676-speedy-el-blenderi-200-mm-sayfa-192",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        192
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-603676-speedy-el-blenderi-200-mm-sayfa-192/hero.webp",
+        "assets/products/kroom/kroom-603676-speedy-el-blenderi-200-mm-sayfa-192/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 192
+        },
+        {
+          "pdfObject": "Im5.jpg",
+          "page": 192
+        },
+        {
+          "pdfObject": "Im4.jpg",
+          "page": 192
+        }
+      ]
+    },
+    {
+      "productId": "family-0212",
+      "slug": "kroom-600322-bermixer-pro-plus-el-blenderi-453-mm-550-w-sayfa-193",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        193
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-600322-bermixer-pro-plus-el-blenderi-453-mm-550-w-sayfa-193/hero.webp",
+        "assets/products/kroom/kroom-600322-bermixer-pro-plus-el-blenderi-453-mm-550-w-sayfa-193/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 193
+        },
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 193
+        }
+      ]
+    },
+    {
+      "productId": "family-0213",
+      "slug": "kroom-dmix-5-litre-set-ustu-mikser-sayfa-194",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        194
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-dmix-5-litre-set-ustu-mikser-sayfa-194/hero.webp",
+        "assets/products/kroom/kroom-dmix-5-litre-set-ustu-mikser-sayfa-194/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 194
+        }
+      ]
+    },
+    {
+      "productId": "family-0214",
+      "slug": "kroom-600145-xbm20-20-litre-planet-mikser-sayfa-195",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        195
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-600145-xbm20-20-litre-planet-mikser-sayfa-195/hero.webp",
+        "assets/products/kroom/kroom-600145-xbm20-20-litre-planet-mikser-sayfa-195/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 195
+        }
+      ]
+    },
+    {
+      "productId": "family-0215",
+      "slug": "kroom-600177-bmx60-60-litre-planet-mikser-sayfa-196",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        196
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-600177-bmx60-60-litre-planet-mikser-sayfa-196/hero.webp",
+        "assets/products/kroom/kroom-600177-bmx60-60-litre-planet-mikser-sayfa-196/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 196
+        }
+      ]
+    },
+    {
+      "productId": "family-0216",
+      "slug": "kroom-602282-dsk-10-litre-spiral-tip-hamur-yogurma-makinesi-sayfa-197",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        197
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-602282-dsk-10-litre-spiral-tip-hamur-yogurma-makinesi-sayfa-197/hero.webp",
+        "assets/products/kroom/kroom-602282-dsk-10-litre-spiral-tip-hamur-yogurma-makinesi-sayfa-197/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 197
+        }
+      ]
+    },
+    {
+      "productId": "family-0217",
+      "slug": "kroom-601549-lmp400-manuel-hamur-acma-makinesi-sayfa-198",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        198
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-601549-lmp400-manuel-hamur-acma-makinesi-sayfa-198/hero.webp",
+        "assets/products/kroom/kroom-601549-lmp400-manuel-hamur-acma-makinesi-sayfa-198/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 198
+        }
+      ]
+    },
+    {
+      "productId": "family-0218",
+      "slug": "kroom-603498-t5e-5-kg-patates-soyma-makinesi-sayfa-199",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        199
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-603498-t5e-5-kg-patates-soyma-makinesi-sayfa-199/hero.webp",
+        "assets/products/kroom/kroom-603498-t5e-5-kg-patates-soyma-makinesi-sayfa-199/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 199
+        },
+        {
+          "pdfObject": "Im6.jpg",
+          "page": 199
+        }
+      ]
+    },
+    {
+      "productId": "family-0219",
+      "slug": "kroom-603510-t10e-10-kg-patates-soyma-makinesi-sayfa-200",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        200
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-603510-t10e-10-kg-patates-soyma-makinesi-sayfa-200/hero.webp",
+        "assets/products/kroom/kroom-603510-t10e-10-kg-patates-soyma-makinesi-sayfa-200/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 200
+        }
+      ]
+    },
+    {
+      "productId": "family-0220",
+      "slug": "kroom-603354-el40-32-litre-sebze-kurutma-makinesi-sayfa-201",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        201
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-603354-el40-32-litre-sebze-kurutma-makinesi-sayfa-201/hero.webp",
+        "assets/products/kroom/kroom-603354-el40-32-litre-sebze-kurutma-makinesi-sayfa-201/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 201
+        }
+      ]
+    },
+    {
+      "productId": "family-0221",
+      "slug": "kroom-660033-lv300-300-litre-sabit-kazanli-sebze-yikama-makinesi-sayfa-202",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        202
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-660033-lv300-300-litre-sabit-kazanli-sebze-yikama-makinesi-sayfa-202/hero.webp",
+        "assets/products/kroom/kroom-660033-lv300-300-litre-sabit-kazanli-sebze-yikama-makinesi-sayfa-202/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 202
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 202
+        }
+      ]
+    },
+    {
+      "productId": "family-0222",
+      "slug": "kroom-602184-8m3-h-vakum-paketleme-makinesi-sayfa-203",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        203
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-602184-8m3-h-vakum-paketleme-makinesi-sayfa-203/hero.webp",
+        "assets/products/kroom/kroom-602184-8m3-h-vakum-paketleme-makinesi-sayfa-203/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 203
+        }
+      ]
+    },
+    {
+      "productId": "family-0223",
+      "slug": "kroom-602336-25m3-h-tekerlekli-vakum-paketleme-makinesi-sayfa-204",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        204
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-602336-25m3-h-tekerlekli-vakum-paketleme-makinesi-sayfa-204/hero.webp",
+        "assets/products/kroom/kroom-602336-25m3-h-tekerlekli-vakum-paketleme-makinesi-sayfa-204/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 204
+        }
+      ]
+    },
+    {
+      "productId": "family-0224",
+      "slug": "kroom-cr9001l-set-ustu-luks-seri-chafing-dish-gn-1-1-sayfa-206",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        206
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-cr9001l-set-ustu-luks-seri-chafing-dish-gn-1-1-sayfa-206/hero.webp",
+        "assets/products/kroom/kroom-cr9001l-set-ustu-luks-seri-chafing-dish-gn-1-1-sayfa-206/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 206
+        },
+        {
+          "pdfObject": "Im6.jpg",
+          "page": 206
+        }
+      ]
+    },
+    {
+      "productId": "family-0225",
+      "slug": "kroom-yer-izgaralari-alttan-cikisli-ortadan-sifonlu-70-cikisli-sayfa-207",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        207
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-yer-izgaralari-alttan-cikisli-ortadan-sifonlu-70-cikisli-sayfa-207/hero.webp",
+        "assets/products/kroom/kroom-yer-izgaralari-alttan-cikisli-ortadan-sifonlu-70-cikisli-sayfa-207/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jpg",
+          "page": 207
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 207
+        }
+      ]
+    },
+    {
+      "productId": "family-0226",
+      "slug": "kroom-izolasyon-sayfa-209",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        209
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-izolasyon-sayfa-209/hero.webp",
+        "assets/products/kroom/kroom-izolasyon-sayfa-209/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 209
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 209
+        }
+      ]
+    },
+    {
+      "productId": "family-0227",
+      "slug": "kroom-yatay-tip-buzdolabi-sayfa-210",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        210
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-yatay-tip-buzdolabi-sayfa-210/hero.webp",
+        "assets/products/kroom/kroom-yatay-tip-buzdolabi-sayfa-210/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 210
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 210
+        }
+      ]
+    },
+    {
+      "productId": "family-0228",
+      "slug": "kroom-yatay-tip-derin-dondurucu-sayfa-211",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        211
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-yatay-tip-derin-dondurucu-sayfa-211/hero.webp",
+        "assets/products/kroom/kroom-yatay-tip-derin-dondurucu-sayfa-211/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 211
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 211
+        }
+      ]
+    },
+    {
+      "productId": "family-0229",
+      "slug": "kroom-make-up-buzdolabi-sayfa-212",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        212
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-make-up-buzdolabi-sayfa-212/hero.webp",
+        "assets/products/kroom/kroom-make-up-buzdolabi-sayfa-212/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im3.jpg",
+          "page": 212
+        },
+        {
+          "pdfObject": "Im0.jpg",
+          "page": 212
+        },
+        {
+          "pdfObject": "Im2.jpg",
+          "page": 212
+        },
+        {
+          "pdfObject": "Im1.jp2",
+          "page": 212
+        }
+      ]
+    },
+    {
+      "productId": "family-0230",
+      "slug": "kroom-tek-kapili-tezgah-alti-slim-buzdolabi-derin-dondurucu-sayfa-213",
+      "catalog": "KROOM MUTFAK .pdf",
+      "pages": [
+        213
+      ],
+      "assets": [
+        "assets/products/kroom/kroom-tek-kapili-tezgah-alti-slim-buzdolabi-derin-dondurucu-sayfa-213/hero.webp",
+        "assets/products/kroom/kroom-tek-kapili-tezgah-alti-slim-buzdolabi-derin-dondurucu-sayfa-213/thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "pdfObject": "Im0.jp2",
+          "page": 213
+        }
+      ]
+    }
+  ]
+}

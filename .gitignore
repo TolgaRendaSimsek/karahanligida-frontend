@@ -1,0 +1,8 @@
+node_modules/
+__pycache__/
+*.pyc
+.firebase/
+.firebaserc
+firebase-debug.log
+firebase/*service-account*.json
+firebase/*.key.json
