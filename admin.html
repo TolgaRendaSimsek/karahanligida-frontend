@@ -3,22 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karahanlı Gıda Yönetim Paneli</title>
+  <title>Karahanlı Gıda Katalog Düzenleyici</title>
   <link rel="icon" type="image/png" href="logo.png">
-  
-  <!-- Yetkilendirme Koruması (Yalnızca Admin erişebilir) -->
   <script>
-    (function() {
+    (function () {
       try {
-        const user = JSON.parse(localStorage.getItem('karahanliUser'));
-        if (!user) {
-          window.location.href = 'register.html';
-        } else if (user.role !== 'admin') {
-          window.location.href = 'account.html';
-        }
-      } catch (e) {
-        localStorage.removeItem('karahanliUser');
-        window.location.href = 'register.html';
+        const user = JSON.parse(localStorage.getItem("karahanliUser"));
+        if (!user) location.href = "register.html";
+        else if (user.role !== "admin") location.href = "account.html";
+      } catch {
+        localStorage.removeItem("karahanliUser");
+        location.href = "register.html";
       }
     })();
   </script>
@@ -26,43 +21,54 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="admin-catalog.css">
 </head>
 <body>
   <aside class="sidebar">
-    <a class="admin-brand" href="index.html"><img src="logo.png" alt="Karahanlı Gıda Logo" class="admin-logo"><div><strong>KARAHANLI GIDA</strong><small>YÖNETİM PANELİ</small></div></a>
-    <nav><a class="active" href="#products">▦ Ürünler</a><a href="index.html">↗ Mağazayı Gör</a><a href="#" id="logoutBtn" style="color:var(--danger)">⎋ Çıkış Yap</a></nav>
-    <div class="sidebar-note"><strong>Demo yönetim paneli</strong><p>Veriler bu tarayıcıdaki LocalStorage alanında saklanır.</p></div>
+    <a class="admin-brand" href="index.html"><img src="logo.png" alt="Karahanlı Gıda" class="admin-logo"><div><strong>KARAHANLI GIDA</strong><small>KATALOG DÜZENLEYİCİ</small></div></a>
+    <nav><a class="active" href="#products">▦ Ürün Aileleri</a><a href="products.html">↗ Kataloğu Gör</a><a href="#" id="logoutBtn" style="color:var(--danger)">⎋ Çıkış Yap</a></nav>
+    <div class="sidebar-note"><strong>Yerel taslak modu</strong><p>Değişiklikler yalnızca bu tarayıcıda saklanır. Canlı Firebase verisi etkilenmez.</p></div>
   </aside>
 
   <main class="admin-main">
-    <header class="admin-header"><div><p class="eyebrow">YÖNETİM</p><h1>Ürün Yönetimi</h1><p>Mağazadaki ürünleri ekleyin, güncelleyin veya kaldırın.</p></div><button class="primary-btn" id="newProductBtn">+ Yeni Ürün</button></header>
-
+    <header class="admin-header"><div><p class="eyebrow">KATALOG</p><h1>Ürün Aileleri</h1><p>Aile, varyant ve teknik bilgileri fiyat alanı olmadan düzenleyin.</p></div><button class="primary-btn" id="newProductBtn">+ Yeni Aile</button></header>
     <section class="stats" id="stats"></section>
-
     <section class="panel" id="products">
-      <div class="panel-tools"><div><h2>Ürünler</h2><span id="productCount"></span></div><div class="tool-actions"><input id="adminSearch" type="search" placeholder="Ürün veya marka ara"><select id="categoryFilter"><option value="all">Tüm kategoriler</option><option value="gida">Gıda</option><option value="ekipman">Ekipman</option><option value="hizmet">Hizmet</option></select><button class="outline-btn" id="exportBtn">JSON İndir</button><label class="outline-btn file-label">JSON Yükle<input type="file" id="importInput" accept="application/json"></label></div></div>
-      <div class="table-wrap"><table><thead><tr><th>Ürün</th><th>Kategori</th><th>Fiyat</th><th>Stok</th><th>Rozet</th><th></th></tr></thead><tbody id="productTable"></tbody></table></div>
-      <div class="panel-footer"><button class="danger-link" id="resetBtn">Varsayılan ürünlere dön</button></div>
+      <div class="panel-tools">
+        <div><h2>Yerel katalog</h2><span id="productCount"></span></div>
+        <div class="tool-actions">
+          <input id="adminSearch" type="search" placeholder="Ürün, marka veya model ara">
+          <select id="categoryFilter"><option value="all">Tüm kategoriler</option></select>
+          <button class="outline-btn" id="exportBtn">JSON İndir</button>
+          <label class="outline-btn file-label">JSON Yükle<input type="file" id="importInput" accept="application/json"></label>
+        </div>
+      </div>
+      <div class="table-wrap"><table><thead><tr><th>Ürün ailesi</th><th>Kategori</th><th>Varyant/model</th><th>Durum</th><th>Kaynak</th><th></th></tr></thead><tbody id="productTable"></tbody></table></div>
+      <div class="panel-footer"><button class="danger-link" id="resetBtn">Yerel taslağı katalog JSON'una sıfırla</button></div>
     </section>
   </main>
 
   <div class="modal-backdrop" id="modalBackdrop" hidden>
-    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <div class="modal-head"><div><p class="eyebrow">ÜRÜN FORMU</p><h2 id="modalTitle">Yeni Ürün</h2></div><button id="closeModal" aria-label="Kapat">×</button></div>
+    <section class="modal catalog-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head"><div><p class="eyebrow">ÜRÜN AİLESİ</p><h2 id="modalTitle">Yeni Aile</h2></div><button id="closeModal" aria-label="Kapat">×</button></div>
       <form id="productForm">
         <input type="hidden" id="productId">
         <div class="form-grid">
-          <label class="wide">Ürün adı<input id="name" required maxlength="100"></label>
-          <label>Marka<input id="brand" required maxlength="40"></label>
-          <label>Kategori<select id="category" required><option value="gida">Gıda</option><option value="ekipman">Ekipman</option><option value="hizmet">Hizmet</option></select></label>
-          <label>Satış fiyatı (₺)<input id="price" type="number" min="0" step="0.01" required></label>
-          <label>Eski fiyat (₺)<input id="oldPrice" type="number" min="0" step="0.01"></label>
-          <label>Stok<input id="stock" type="number" min="0" step="1" required value="0"></label>
-          <label>Rozet<input id="badge" maxlength="24" placeholder="Yeni, Fırsat, %10..."></label>
-          <label>Ürün rengi<input id="color" type="color" value="#72462f"></label>
-          <label class="wide">Görsel URL'si<input id="image" type="url" placeholder="https://... (isteğe bağlı)"></label>
+          <label class="wide">Ürün ailesi adı<input id="name" required maxlength="140"></label>
+          <label>Slug<input id="slug" required pattern="[a-z0-9-]+"></label>
+          <label>Marka<input id="brand" required maxlength="60"></label>
+          <label>Kategori<input id="category" required maxlength="80"></label>
+          <label>Alt kategori<input id="subcategory" required maxlength="100"></label>
+          <label>Durum<select id="status"><option value="draft">Taslak</option><option value="published">Yayında</option></select></label>
+          <label class="checkbox-label"><input id="featured" type="checkbox"> Ana sayfada öne çıkar</label>
+          <label class="wide">Kısa özet<textarea id="summary" required rows="2"></textarea></label>
+          <label class="wide">Açıklama<textarea id="description" required rows="4"></textarea></label>
+          <label class="wide">Özellikler <small>Her satıra bir özellik</small><textarea id="features" rows="5"></textarea></label>
+          <label class="wide">Varyantlar / modeller <small>Her satır: Kod | Varyant adı</small><textarea id="variants" required rows="7"></textarea></label>
+          <label class="wide">Teknik bilgiler <small>Her satır: Alan | Değer</small><textarea id="specifications" rows="6"></textarea></label>
+          <label class="wide">Detay görseli yolu<input id="image" required placeholder="assets/products/.../hero.webp"></label>
         </div>
-        <div class="form-actions"><button type="button" class="outline-btn" id="cancelBtn">Vazgeç</button><button type="submit" class="primary-btn">Ürünü Kaydet</button></div>
+        <div class="form-actions"><button type="button" class="outline-btn" id="cancelBtn">Vazgeç</button><button type="submit" class="primary-btn">Yerel Taslağa Kaydet</button></div>
       </form>
     </section>
   </div>

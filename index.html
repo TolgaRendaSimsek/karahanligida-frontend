@@ -10,12 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="catalog.css" />
 </head>
 <body>
   <div class="announcement">
-    <span>₺1.500 üzeri siparişlerde ücretsiz kargo</span>
+    <span>Karahanlı Gıda profesyonel ürün kataloğu</span>
     <span class="announcement-separator">•</span>
-    <a href="#newsletter">Kampanyalara katıl</a>
+    <a href="products.html">Tüm ürünleri incele</a>
   </div>
 
   <header class="site-header">
@@ -34,18 +35,18 @@
       <div class="header-actions">
         <button class="action-link" id="accountBtn"><span>♙</span><small>Hesabım</small></button>
         <button class="action-link" id="favoritesBtn"><span>♡</span><small>Favoriler</small></button>
-        <button class="action-link cart-button" id="cartBtn"><span>▱</span><small>Sepetim</small><b id="cartCount">0</b></button>
+        <button class="action-link cart-button" id="cartBtn"><span>▱</span><small>Teklif Sepeti</small><b id="cartCount">0</b></button>
       </div>
     </div>
 
     <nav class="category-nav" id="categoryNav">
       <div class="container nav-inner">
         <button class="all-categories" id="allCategoriesBtn" aria-expanded="false" aria-controls="megaMenu">☰ Tüm Kategoriler</button>
-        <a href="#products" data-cat="gida">Gıda</a>
-        <a href="#products" data-cat="ekipman">Ekipman</a>
-        <a href="#products" data-cat="hizmet">Hizmet</a>
+        <a href="products.html?category=Kahve">Kahve</a>
+        <a href="products.html?category=Çay">Çay</a>
+        <a href="products.html?category=Endüstriyel%20Mutfak%20Ekipmanları">Ekipman</a>
         <a href="#brands">Markalar</a>
-        <a class="sale-link" href="#products" data-cat="all">Fırsatlar</a>
+        <a class="sale-link" href="products.html">Tüm Katalog</a>
       </div>
 
       <!-- MEGA MENU -->
@@ -232,10 +233,10 @@
       <div class="hero-slide active" data-slide="0">
         <div class="hero-bg hero-bg-one"></div>
         <div class="container hero-content">
-          <p class="eyebrow">YENİ HASAT • 2026</p>
-          <h1>Kahvenin en iyi<br>halini keşfet.</h1>
-          <p>Özenle seçilmiş çekirdekler, taze kavrum ve profesyonel ekipmanlar.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="#products">Alışverişe Başla</a><a class="btn btn-ghost" href="#story">Hikâyemiz</a></div>
+          <p class="eyebrow">HORECA ÜRÜN KATALOĞU</p>
+          <h1>İşletmeniz için<br>doğru ürünler.</h1>
+          <p>Kahve, çay, içecek çözümleri ve profesyonel mutfak ekipmanlarını tek katalogda inceleyin.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="products.html">Kataloğu İncele</a><a class="btn btn-ghost" href="#story">Hakkımızda</a></div>
         </div>
       </div>
       <div class="hero-slide" data-slide="1">
@@ -253,32 +254,32 @@
     </section>
 
     <section class="benefits container">
-      <article><span>♢</span><div><strong>Hızlı Teslimat</strong><small>Türkiye'nin her yerine</small></div></article>
-      <article><span>✓</span><div><strong>Güvenli Ödeme</strong><small>256-bit SSL koruması</small></div></article>
-      <article><span>↺</span><div><strong>Kolay İade</strong><small>14 gün içinde iade</small></div></article>
-      <article><span>☎</span><div><strong>Uzman Desteği</strong><small>Satış öncesi ve sonrası</small></div></article>
+      <article><span>♢</span><div><strong>230 Ürün Ailesi</strong><small>7 resmî katalogdan</small></div></article>
+      <article><span>✓</span><div><strong>Doğrulanmış Kaynak</strong><small>PDF katalog ve sayfa bilgisi</small></div></article>
+      <article><span>↺</span><div><strong>Model Seçenekleri</strong><small>1.300+ varyant ve model</small></div></article>
+      <article><span>☎</span><div><strong>Uzman Desteği</strong><small>Teklif öncesi ve sonrası</small></div></article>
     </section>
 
     <section class="section container" id="coffee">
-      <div class="section-heading"><div><p class="eyebrow dark">KATEGORİLER</p><h2>Kahve dünyasına göz at</h2></div><a href="#">Tümünü Gör →</a></div>
+      <div class="section-heading"><div><p class="eyebrow dark">KATEGORİLER</p><h2>Ürün gruplarını keşfedin</h2></div><a href="products.html">Tümünü Gör →</a></div>
       <div class="category-grid">
-        <a class="category-card large" href="#products"><div class="category-art art-coffee"></div><div class="category-info"><small>42 ürün</small><h3>Özel Seri Kahveler</h3><span>Keşfet →</span></div></a>
-        <a class="category-card" href="#machines"><div class="category-art art-machine"></div><div class="category-info"><small>28 ürün</small><h3>Espresso Makineleri</h3><span>Keşfet →</span></div></a>
-        <a class="category-card" href="#grinders"><div class="category-art art-grinder"></div><div class="category-info"><small>35 ürün</small><h3>Kahve Değirmenleri</h3><span>Keşfet →</span></div></a>
-        <a class="category-card wide" href="#barista"><div class="category-art art-barista"></div><div class="category-info"><small>120+ ürün</small><h3>Barista Ekipmanları</h3><span>Keşfet →</span></div></a>
+        <a class="category-card large" href="products.html?category=Kahve"><div class="category-art art-coffee"></div><div class="category-info"><small>Kimbo</small><h3>Kahve Ürünleri</h3><span>Keşfet →</span></div></a>
+        <a class="category-card" href="products.html?brand=Kroom"><div class="category-art art-machine"></div><div class="category-info"><small>Kroom</small><h3>Profesyonel Makineler</h3><span>Keşfet →</span></div></a>
+        <a class="category-card" href="products.html?category=Çay"><div class="category-art art-grinder"></div><div class="category-info"><small>Oçay</small><h3>Çay Koleksiyonu</h3><span>Keşfet →</span></div></a>
+        <a class="category-card wide" href="products.html?category=Şurup%20ve%20Püreler"><div class="category-art art-barista"></div><div class="category-info"><small>FO ve Toschi</small><h3>Şurup, Sos ve Püreler</h3><span>Keşfet →</span></div></a>
       </div>
     </section>
 
     <section class="section products-section" id="products">
       <div class="container">
-        <div class="section-heading"><div><p class="eyebrow dark">ÇOK SEVİLENLER</p><h2>Öne çıkan ürünler</h2></div><div class="tabs" id="productTabs"><button class="active" data-filter="all">Tümü</button><button data-filter="gida">Gıda</button><button data-filter="ekipman">Ekipman</button><button data-filter="hizmet">Hizmet</button></div></div>
+        <div class="section-heading"><div><p class="eyebrow dark">KATALOGDAN SEÇKİ</p><h2>Öne çıkan ürün aileleri</h2></div><div class="tabs" id="productTabs"><button class="active" data-filter="all">Tümü</button><button data-filter="Kahve">Kahve</button><button data-filter="Çay">Çay</button><button data-filter="Endüstriyel Mutfak Ekipmanları">Ekipman</button></div></div>
         <div class="product-grid" id="productGrid"></div>
       </div>
     </section>
 
     <section class="split-banner container" id="professional">
-      <article class="banner banner-dark"><div><p class="eyebrow">PROFESYONEL SERİ</p><h2>İşletmeniz için<br>doğru ekipman</h2><p>Yüksek performans, güçlü servis desteği ve kurulum çözümleri.</p><a class="btn btn-light" href="#">Teklif Al</a></div></article>
-      <article class="banner banner-warm"><div><p class="eyebrow dark">KAHVE ABONELİĞİ</p><h2>Her ay taze kahve<br>kapınızda.</h2><p>Damak tadınıza göre seçin, teslimat sıklığını dilediğiniz gibi değiştirin.</p><a class="btn btn-primary" href="#">Aboneliği Keşfet</a></div></article>
+      <article class="banner banner-dark"><div><p class="eyebrow">PROFESYONEL SERİ</p><h2>İşletmeniz için<br>doğru ekipman</h2><p>Yüksek performanslı ekipmanları model seçenekleriyle karşılaştırın.</p><a class="btn btn-light" href="products.html?brand=Kroom">Kroom Kataloğu</a></div></article>
+      <article class="banner banner-warm"><div><p class="eyebrow dark">İÇECEK ÇÖZÜMLERİ</p><h2>Menünüz için<br>geniş ürün seçkisi.</h2><p>Kahve, çay, şurup, sos, püre ve bitkisel içecek ailelerini keşfedin.</p><a class="btn btn-primary" href="products.html">Ürünleri İncele</a></div></article>
     </section>
 
     <section class="section story-section" id="story">
@@ -290,7 +291,7 @@
 
     <section class="brands section container" id="brands">
       <div class="section-heading centered"><div><p class="eyebrow dark">SEÇKİN MARKALAR</p><h2>Güvendiğimiz markalar</h2></div></div>
-      <div class="brand-row"><span>NUOVA</span><span>MAZZER</span><span>FELLOW</span><span>HARIO</span><span>MORETTI</span><span>LA MARZO</span></div>
+      <div class="brand-row"><span>FAVORİ FRESH</span><span>FO</span><span>KIMBO</span><span>KROOM</span><span>OÇAY</span><span>TOSCHI</span></div>
     </section>
 
     <section class="newsletter" id="newsletter">
@@ -313,6 +314,7 @@
   <div class="overlay" id="overlay"></div>
   <div class="toast" id="toast"></div>
 
+  <script src="catalog-core.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
