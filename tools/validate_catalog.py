@@ -68,6 +68,9 @@ def main() -> int:
         missing = REQUIRED - product.keys()
         if missing:
             fail(errors, f"{product.get('slug', '?')}: eksik alanlar {sorted(missing)}")
+        unknown = product.keys() - REQUIRED
+        if unknown:
+            fail(errors, f"{product.get('slug', '?')}: public şemada bilinmeyen alanlar {sorted(unknown)}")
         if "price" in json.dumps(product, ensure_ascii=False).lower():
             fail(errors, f"{product.get('slug', '?')}: fiyat alanı/metni içeriyor")
         if product.get("id") in ids:
@@ -80,7 +83,7 @@ def main() -> int:
         if not product.get("variants"):
             fail(errors, f"{slug}: varyant/model bulunmuyor")
         source = product.get("source", {})
-        if source.get("type") != "pdf" or not source.get("pages"):
+        if set(source) != {"catalog", "pages"} or not source.get("pages"):
             fail(errors, f"{slug}: PDF kaynak sayfası bulunmuyor")
         covered_catalogs.add(source.get("catalog"))
         for image in product.get("images", []):
@@ -91,10 +94,11 @@ def main() -> int:
                 "alt",
                 "order",
                 "variantIds",
-                "source",
             }
             if missing_image_fields := required_image_fields - image.keys():
                 fail(errors, f"{slug}: görsel alanları eksik {sorted(missing_image_fields)}")
+            if unknown_image_fields := image.keys() - required_image_fields:
+                fail(errors, f"{slug}: public görselde bilinmeyen alanlar {sorted(unknown_image_fields)}")
             for field in ("src", "thumbnailSrc"):
                 asset = image.get(field, "")
                 if asset.startswith(("http://", "https://", "/media/")):

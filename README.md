@@ -24,6 +24,7 @@ PDF kataloglar frontend deposuna kopyalanmaz. Kaynak dosyaların projenin üst k
 
 ```powershell
 python tools/build_catalog.py --clean
+node tools/sanitize_public_catalog.mjs
 node tools/generate_product_pages.mjs
 python tools/validate_catalog.py
 node tools/test_quote_message.mjs
@@ -38,6 +39,8 @@ node tools/test_quote_message.mjs
 ## Admin, Firebase ve Linux
 
 Firestore ürün içeriklerinin ana kaynağıdır; Firebase Authentication birden fazla admin hesabını doğrular. Görseller Firebase Storage yerine Linux diskine yüklenir. Docker içindeki admin API her yayında statik `products.json` snapshot'ını ve ürün sayfasını yeniler.
+
+Caddy doğrudan Git deposunu sunmaz. `deploy/linux/build-public.sh` yalnızca gerekli HTML, CSS, JavaScript, katalog ve görsellerden ayrı bir `public/current` sürümü oluşturur.
 
 Kurulum sırası, Docker Compose, Caddy yönlendirmeleri, servis hesabı ve admin yetkileri için [Firebase/Linux rehberine](docs/FIREBASE_TR.md) bakın.
 

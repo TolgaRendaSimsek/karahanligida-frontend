@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Karahanlı Gıda Horeca Dağıtım platformuna üye olun. Özel fiyatlardan ve profesyonel lojistik ağımızdan faydalanın.">
-  <title>Karahanlı Gıda - Kayıt Ol</title>
+  <meta name="description" content="Karahanlı Gıda teklif ve müşteri iletişim bilgileri.">
+  <title>Müşteri İşlemleri | Karahanlı Gıda</title>
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,198 +13,44 @@
 </head>
 <body>
   <div class="auth-wrapper">
-    <!-- Sol Panel: Tanıtım Paneli -->
     <aside class="auth-showcase">
       <div class="showcase-content">
-        <a href="index.html" class="showcase-logo-link" aria-label="Ana Sayfaya Git">
+        <a href="index.html" class="showcase-logo-link" aria-label="Ana sayfaya git">
           <div class="logo-glow-box">
-            <img src="logo.png" alt="Karahanlı Gıda Logo" class="showcase-logo">
+            <img src="logo.png" alt="Karahanlı Gıda" class="showcase-logo">
           </div>
         </a>
         <div class="showcase-text">
-          <p class="showcase-eyebrow">HORECA DAĞITIM PLATFORMU</p>
-          <h1>Profesyonel Tedarikçiniz.</h1>
-          <p>Kafe, otel, restoran ve ofisleriniz için nitelikli çekirdek kahvelerden profesyonel mutfak ekipmanlarına kadar aradığınız her şey tek noktada.</p>
+          <p class="showcase-eyebrow">HORECA DAĞITIM</p>
+          <h1>Güvenli teklif süreci.</h1>
+          <p>Ürünleri kataloğa ekleyin ve fiyat içermeyen teklif listenizi doğrudan WhatsApp üzerinden iletin.</p>
         </div>
         <ul class="benefits-list">
-          <li>
-            <span class="benefit-icon">✦</span>
-            <div>
-              <strong>Horeca Üyelerine Özel Fiyatlar</strong>
-              <p>Toplu alımlarda ve işletme üyeliklerinde rekabetçi fiyatlandırma seçenekleri.</p>
-            </div>
-          </li>
-          <li>
-            <span class="benefit-icon">✦</span>
-            <div>
-              <strong>Aynı Gün Kargo ve Lojistik</strong>
-              <p>Anlaşmalı kargo firmaları ve kendi dağıtım araçlarımızla hızlı teslimat güvencesi.</p>
-            </div>
-          </li>
-          <li>
-            <span class="benefit-icon">✦</span>
-            <div>
-              <strong>7/24 Kesintisiz Destek</strong>
-              <p>Satış öncesi planlama ve satış sonrası teknik servis desteği ile yanınızdayız.</p>
-            </div>
-          </li>
+          <li><span class="benefit-icon">✦</span><div><strong>Parola toplamıyoruz</strong><p>Müşteri parolası veya kişisel profil bilgisi tarayıcıda ya da Firestore’da saklanmaz.</p></div></li>
+          <li><span class="benefit-icon">✦</span><div><strong>Hızlı teklif</strong><p>Ürün, model ve adet bilgilerini teklif sepetinde hazırlayabilirsiniz.</p></div></li>
+          <li><span class="benefit-icon">✦</span><div><strong>Doğrudan iletişim</strong><p>Talebiniz yalnızca siz WhatsApp düğmesine bastığınızda iletilir.</p></div></li>
         </ul>
       </div>
-      <div class="showcase-footer">
-        <span>© 2026 Karahanlı Gıda. Tüm hakları saklıdır.</span>
-      </div>
+      <div class="showcase-footer">© 2026 Karahanlı Gıda.</div>
     </aside>
 
-    <!-- Sağ Panel: Kayıt Formu -->
     <main class="auth-form-container">
-      <div class="form-header-nav">
-        <a href="index.html" class="back-to-store">← Mağazaya Dön</a>
-      </div>
-      <div class="form-content-wrap">
-        <!-- REGISTRATION SECTION -->
-        <div id="registerSection">
-          <header class="form-header">
-            <h2>Hesap Oluşturun</h2>
-            <p>Karahanlı Gıda dünyasına adım atarak işletmenize özel tekliflerden yararlanın.</p>
-          </header>
-
-          <form id="registerForm" novalidate>
-            <div class="form-grid">
-              <!-- Ad Soyad -->
-              <div class="form-field">
-                <label for="fullName">Ad Soyad *</label>
-                <input type="text" id="fullName" placeholder="Adınız ve soyadınız" required maxlength="80">
-                <span class="field-error-msg" id="fullNameError"></span>
-              </div>
-
-              <!-- E-posta -->
-              <div class="form-field">
-                <label for="email">E-posta Adresi *</label>
-                <input type="email" id="email" placeholder="ornek@firma.com" required>
-                <span class="field-error-msg" id="emailError"></span>
-              </div>
-
-              <!-- Telefon -->
-              <div class="form-field">
-                <label for="phone">Telefon Numarası *</label>
-                <input type="tel" id="phone" placeholder="0 (555) 000 00 00" required>
-                <span class="field-error-msg" id="phoneError"></span>
-              </div>
-
-              <!-- İşletme Türü -->
-              <div class="form-field">
-                <label for="businessType">İşletme Türü *</label>
-                <select id="businessType" required>
-                  <option value="" disabled selected>İşletmenizi seçin...</option>
-                  <option value="cafe">Kafe / Restoran / Bar</option>
-                  <option value="hotel">Otel / Pansiyon / Konaklama</option>
-                  <option value="office">Ofis / Kurumsal Şirket</option>
-                  <option value="catering">Yemek Firması / Catering</option>
-                  <option value="individual">Bireysel Müşteri</option>
-                </select>
-                <span class="field-error-msg" id="businessTypeError"></span>
-              </div>
-
-              <!-- Firma Adı (Opsiyonel) -->
-              <div class="form-field wide">
-                <label for="companyName">Firma / İşletme Adı <span class="optional">(Kurumsal müşteriler için)</span></label>
-                <input type="text" id="companyName" placeholder="Varsa ticari ünvanınız veya tabela isminiz" maxlength="100">
-              </div>
-
-              <!-- Şifre -->
-              <div class="form-field">
-                <label for="password">Şifre *</label>
-                <div class="password-input-wrap">
-                  <input type="password" id="password" placeholder="En az 6 karakter" required minlength="6">
-                  <button type="button" class="toggle-password-btn" id="togglePasswordBtn" aria-label="Şifreyi Göster">👁</button>
-                </div>
-                <span class="field-error-msg" id="passwordError"></span>
-              </div>
-
-              <!-- Şifre Tekrar -->
-              <div class="form-field">
-                <label for="passwordConfirm">Şifre Tekrar *</label>
-                <input type="password" id="passwordConfirm" placeholder="Şifrenizi tekrar girin" required>
-                <span class="field-error-msg" id="passwordConfirmError"></span>
-              </div>
-
-              <!-- KVKK Onay Checkbox -->
-              <div class="form-field wide checkbox-field">
-                <label class="custom-checkbox">
-                  <input type="checkbox" id="termsCheck" required>
-                  <span class="checkmark"></span>
-                  <span class="checkbox-text">
-                    <a href="#" class="terms-link">Kullanım Koşullarını</a> ve 
-                    <a href="#" class="terms-link">KVKK Aydınlatma Metnini</a> okudum, onaylıyorum. *
-                  </span>
-                </label>
-                <span class="field-error-msg" id="termsCheckError"></span>
-              </div>
-            </div>
-
-            <button type="submit" class="submit-btn" id="submitBtn">Kayıt İşlemini Tamamla</button>
-          </form>
-
-          <footer class="auth-form-footer">
-            <p>Zaten bir hesabınız var mı? <a href="#" id="toLoginLink">Giriş Yapın</a></p>
-          </footer>
+      <div class="form-header-nav"><a href="index.html" class="back-to-store">← Ana sayfaya dön</a></div>
+      <div class="form-content-wrap retired-account-card">
+        <header class="form-header">
+          <h2>Müşteri hesabı kullanılmıyor</h2>
+          <p>Güvenli bir sunucu taraflı müşteri hesabı devreye alınana kadar kayıt ve parola girişi kapalıdır. Teklif almak için hesap açmanız gerekmez.</p>
+        </header>
+        <div class="retired-actions">
+          <a class="submit-btn" href="products.html">Ürünleri İncele</a>
+          <a class="secondary-auth-link" href="index.html">Ana Sayfaya Dön</a>
         </div>
-
-        <!-- LOGIN SECTION -->
-        <div id="loginSection" style="display: none;">
-          <header class="form-header">
-            <h2>Giriş Yapın</h2>
-            <p>Bilgilerinizle giriş yapıp siparişlerinize ve hesabınıza erişin.</p>
-          </header>
-
-          <form id="loginForm" novalidate>
-            <div class="form-grid">
-              <!-- E-posta -->
-              <div class="form-field wide">
-                <label for="loginEmail">E-posta Adresi *</label>
-                <input type="email" id="loginEmail" placeholder="ornek@firma.com" required>
-                <span class="field-error-msg" id="loginEmailError"></span>
-              </div>
-
-              <!-- Şifre -->
-              <div class="form-field wide">
-                <label for="loginPassword">Şifre *</label>
-                <div class="password-input-wrap">
-                  <input type="password" id="loginPassword" placeholder="Şifreniz" required>
-                  <button type="button" class="toggle-password-btn" id="toggleLoginPasswordBtn" aria-label="Şifreyi Göster">👁</button>
-                </div>
-                <span class="field-error-msg" id="loginPasswordError"></span>
-              </div>
-            </div>
-
-            <button type="submit" class="submit-btn" id="loginSubmitBtn" style="margin-top: 10px;">Giriş Yap</button>
-          </form>
-
-          <footer class="auth-form-footer">
-            <p>Hesabınız yok mu? <a href="#" id="toRegisterLink">Kayıt Olun</a></p>
-          </footer>
-        </div>
+        <footer class="auth-form-footer">
+          <p>Yönetici misiniz? <a href="admin.html">Güvenli admin girişine gidin</a></p>
+        </footer>
       </div>
     </main>
   </div>
-
-  <!-- Kayıt Başarılı Modali -->
-  <div class="modal-backdrop" id="successModal" hidden>
-    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <div class="success-animation-container">
-        <div class="success-checkmark-circle">
-          <div class="success-checkmark"></div>
-        </div>
-      </div>
-      <h2 id="modalTitle">Kayıt Başarılı!</h2>
-      <p id="modalDescription">Hesabınız başarıyla oluşturuldu. Karahanlı Gıda dünyasına hoş geldiniz. Ana sayfaya yönlendiriliyorsunuz...</p>
-      <button class="primary-btn" id="successGoBtn">Devam Et</button>
-    </section>
-  </div>
-
-  <!-- Toast Bildirimi -->
-  <div class="toast" id="registerToast"></div>
-
   <script src="register.js"></script>
 </body>
 </html>

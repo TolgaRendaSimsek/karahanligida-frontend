@@ -10,8 +10,31 @@ const FORMAT_MIME = {
   png: new Set(["image/png"]),
   webp: new Set(["image/webp"]),
   avif: new Set(["image/avif"]),
-  tiff: new Set(["image/tiff"]),
 };
+
+function detectedImageFormat(buffer) {
+  if (buffer.length >= 3 && buffer[0] === 0xff && buffer[1] === 0xd8 && buffer[2] === 0xff) {
+    return "jpeg";
+  }
+  if (
+    buffer.length >= 8
+    && buffer.subarray(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]))
+  ) {
+    return "png";
+  }
+  if (
+    buffer.length >= 12
+    && buffer.toString("ascii", 0, 4) === "RIFF"
+    && buffer.toString("ascii", 8, 12) === "WEBP"
+  ) {
+    return "webp";
+  }
+  if (buffer.length >= 12 && buffer.toString("ascii", 4, 8) === "ftyp") {
+    const brands = buffer.toString("ascii", 8, Math.min(buffer.length, 40));
+    if (/(?:avif|avis)/.test(brands)) return "avif";
+  }
+  return "";
+}
 
 export function assertProductId(value) {
   if (!PRODUCT_ID.test(value ?? "")) {
@@ -26,13 +49,23 @@ export async function processUpload({
   buffer,
   productId,
   mediaRoot,
-  originalName = "image",
   mimeType = "",
 }) {
   assertProductId(productId);
   if (!Buffer.isBuffer(buffer) || buffer.length === 0 || buffer.length > 10 * 1024 * 1024) {
     const error = new Error("Görsel boş veya 10 MB sınırını aşıyor.");
     error.status = 413;
+    throw error;
+  }
+  const signatureFormat = detectedImageFormat(buffer);
+  if (!signatureFormat) {
+    const error = new Error("Yalnızca JPEG, PNG, WebP veya AVIF görseller kabul edilir.");
+    error.status = 415;
+    throw error;
+  }
+  if (mimeType && !FORMAT_MIME[signatureFormat].has(mimeType.toLowerCase())) {
+    const error = new Error("Dosyanın MIME türü ile görsel imzası eşleşmiyor.");
+    error.status = 415;
     throw error;
   }
   let metadata;
@@ -43,13 +76,11 @@ export async function processUpload({
     error.status = 415;
     throw error;
   }
-  if (!["jpeg", "png", "webp", "avif", "tiff"].includes(metadata.format)) {
+  const metadataMatches =
+    metadata.format === signatureFormat
+    || (signatureFormat === "avif" && metadata.format === "heif");
+  if (!metadataMatches) {
     const error = new Error("Desteklenmeyen görsel biçimi.");
-    error.status = 415;
-    throw error;
-  }
-  if (mimeType && !FORMAT_MIME[metadata.format]?.has(mimeType.toLowerCase())) {
-    const error = new Error("Dosyanın MIME türü ile görsel imzası eşleşmiyor.");
     error.status = 415;
     throw error;
   }
@@ -84,10 +115,10 @@ export async function processUpload({
     id: `image-${digest}`,
     src: `/media/products/${productId}/${fullName}`,
     thumbnailSrc: `/media/products/${productId}/${thumbName}`,
-    alt: originalName.replace(/\.[^.]+$/, ""),
+    alt: "Ürün görseli",
     order: 0,
     variantIds: [],
-    source: { type: "admin-upload", originalName, uploadedAt: new Date().toISOString() },
+    source: { type: "admin-upload", uploadedAt: new Date().toISOString() },
   };
 }
 

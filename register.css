@@ -438,6 +438,10 @@ body {
   cursor: pointer;
   transition: all 0.25s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .submit-btn:hover {
@@ -476,6 +480,57 @@ body {
 .auth-form-footer a:hover {
   color: var(--accent-dark);
   text-decoration: underline;
+}
+
+.retired-account-card {
+  max-width: 560px;
+}
+
+.retired-actions {
+  display: grid;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.secondary-auth-link {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.standalone-notice {
+  width: min(620px, calc(100% - 32px));
+  margin: 9vh auto;
+  padding: 48px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(29, 42, 35, 0.1);
+}
+
+.standalone-notice h1 {
+  margin: 16px 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(34px, 6vw, 54px);
+}
+
+.standalone-notice > p:not(.showcase-eyebrow) {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.notice-logo {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  margin-bottom: 24px;
 }
 
 /* Success Modal & Backdrop */

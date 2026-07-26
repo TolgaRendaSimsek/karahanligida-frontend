@@ -17,7 +17,7 @@ test("görsel olmayan dosyayı reddeder", async () => {
       productId: "family-media-test",
       mediaRoot: await mkdtemp(join(tmpdir(), "karahanli-")),
     }),
-    /geçerli bir görsel değil/,
+    /Yalnızca JPEG, PNG, WebP veya AVIF/,
   );
 });
 
@@ -30,13 +30,14 @@ test("yüklenen görseli tam ve küçük WebP olarak üretir", async () => {
     buffer,
     productId: "family-media-test",
     mediaRoot,
-    originalName: "ürün.png",
     mimeType: "image/png",
   });
   assert.match(result.src, /-full\.webp$/);
   assert.match(result.thumbnailSrc, /-thumb\.webp$/);
   const full = await readFile(join(mediaRoot, result.src.replace("/media/", "")));
   assert.equal((await sharp(full).metadata()).format, "webp");
+  assert.equal(result.source.originalName, undefined);
+  assert.equal(result.alt, "Ürün görseli");
 });
 
 test("MIME türü ile dosya imzası eşleşmeyen görseli reddeder", async () => {
@@ -51,5 +52,20 @@ test("MIME türü ile dosya imzası eşleşmeyen görseli reddeder", async () =>
       mimeType: "image/jpeg",
     }),
     /MIME türü ile görsel imzası eşleşmiyor/,
+  );
+});
+
+test("TIFF imzasını Sharp işleminden önce reddeder", async () => {
+  const buffer = await sharp({
+    create: { width: 320, height: 320, channels: 3, background: "#ffffff" },
+  }).tiff().toBuffer();
+  await assert.rejects(
+    processUpload({
+      buffer,
+      productId: "family-media-test",
+      mediaRoot: await mkdtemp(join(tmpdir(), "karahanli-")),
+      mimeType: "image/tiff",
+    }),
+    /Yalnızca JPEG, PNG, WebP veya AVIF/,
   );
 });

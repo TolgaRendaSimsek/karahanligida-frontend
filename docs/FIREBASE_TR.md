@@ -88,7 +88,8 @@ Kullanıcı claim verildikten sonra çıkış yapıp tekrar giriş yapmalıdır.
 Önerilen sunucu düzeni:
 
 ```text
-/srv/karahanli/app/current             statik site kodu
+/srv/karahanli/app/current             Git kaynak kodu; web üzerinden sunulmaz
+/srv/karahanli/public/current          yalnızca yayımlanabilir frontend dosyaları
 /srv/karahanli/data/media              admin görselleri
 /srv/karahanli/data/catalog            products.json
 /srv/karahanli/data/catalog/releases   son 30 başarılı katalog snapshot'ı
@@ -104,18 +105,19 @@ cd /srv/karahanli/app/current
 sudo sh deploy/linux/prepare.sh /srv/karahanli/app/current
 sudo cp /guvenli/kaynak/firebase-service-account.json /srv/karahanli/secrets/
 sudo chmod 600 /srv/karahanli/secrets/firebase-service-account.json
-cp .env.example .env
+sudo cp .env.example /srv/karahanli/.env
+sudo chmod 600 /srv/karahanli/.env
 ```
 
-`.env` içindeki `FIREBASE_PROJECT_ID`, `ADMIN_ORIGIN` ve servis hesabı yolunu gerçek değerlerle değiştirin.
+`/srv/karahanli/.env` içindeki `FIREBASE_PROJECT_ID`, `ADMIN_ORIGIN` ve servis hesabı yolunu gerçek değerlerle değiştirin. `.env`, servis hesabı, Git deposu ve API kaynak kodları hiçbir zaman Caddy web kökünde bulunmaz.
 
 ## 5. Docker admin API
 
 ```bash
-cd /srv/karahanli/app/current
-docker compose build admin-api
-docker compose up -d admin-api
-docker compose ps
+cd /srv/karahanli
+docker compose -f app/current/docker-compose.yml --env-file .env build admin-api
+docker compose -f app/current/docker-compose.yml --env-file .env up -d admin-api
+docker compose -f app/current/docker-compose.yml --env-file .env ps
 curl http://127.0.0.1:3100/health
 ```
 
@@ -125,7 +127,7 @@ Kalıcı dizinler bind mount olduğu için container silinse veya yeniden oluşt
 
 ## 6. Caddy
 
-`deploy/linux/Caddyfile.example` içindeki alan adını ve statik site yolunu kendi Caddyfile dosyanıza uyarlayın:
+`deploy/linux/Caddyfile.example` içindeki alan adını kendi Caddyfile dosyanıza uyarlayın. Caddy yalnızca `public/current` dizinini sunar; `app/current`, `.git`, `.env`, backend kaynakları ve servis hesabı web kökü dışındadır:
 
 ```caddyfile
 @adminApi path /api/admin/*

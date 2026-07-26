@@ -2,12 +2,13 @@
 set -eu
 
 APP_SOURCE="${1:-$(pwd)}"
-BASE_DIR="/srv/karahanli"
+BASE_DIR="${KARAHANLI_BASE_DIR:-/srv/karahanli}"
 DATA_DIR="$BASE_DIR/data"
+PUBLIC_DIR="$BASE_DIR/public"
 
 case "$(cd "$APP_SOURCE" && pwd)" in
   "$BASE_DIR"/*) ;;
-  *) echo "Uygulama kaynağı /srv/karahanli altında olmalıdır." >&2; exit 1 ;;
+  *) echo "Uygulama kaynağı $BASE_DIR altında olmalıdır." >&2; exit 1 ;;
 esac
 
 install -d -m 0755 "$DATA_DIR/media/products"
@@ -21,6 +22,8 @@ cp "$APP_SOURCE"/urunler/*.html "$DATA_DIR/generated/urunler/"
 
 # Dockerfile içindeki node kullanıcısı (UID/GID 1000) kalıcı dosyalara yazabilsin.
 chown -R 1000:1000 "$DATA_DIR"
+sh "$APP_SOURCE/deploy/linux/build-public.sh" "$APP_SOURCE" "$PUBLIC_DIR"
 
 echo "Kalıcı katalog dizinleri hazırlandı: $DATA_DIR"
+echo "Ayrıştırılmış web kökü hazırlandı: $PUBLIC_DIR/current"
 echo "Firebase servis hesabını $BASE_DIR/secrets/ altına yalnızca root okuyacak şekilde ekleyin."

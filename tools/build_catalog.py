@@ -482,10 +482,8 @@ def family_to_product(
     if features:
         description = f"{summary} Katalogda öne çıkan nitelikler: {'; '.join(features[:3])}."
     source = {
-        "type": "pdf",
         "catalog": spec.pdf,
         "pages": list(spec.pages),
-        "originalImages": image_manifest,
     }
     product = {
         "id": f"family-{sequence:04d}",
@@ -500,9 +498,8 @@ def family_to_product(
         "specifications": specifications,
         "images": [
             {
-                **image,
+                **{key: value for key, value in image.items() if key != "source"},
                 "alt": f"{spec.brand} {spec.name} - görsel {image['order']}",
-                "source": {**image["source"], "catalog": spec.pdf},
             }
             for image in images
         ],

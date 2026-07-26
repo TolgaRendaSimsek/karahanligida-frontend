@@ -80,8 +80,8 @@ document.getElementById("favoritesBtn").addEventListener("click", () => {
   location.href = "favorites.html";
 });
 document.getElementById("accountBtn").addEventListener("click", () => {
-  const user = localStorage.getItem("karahanliUser");
-  location.href = user ? "account.html" : "register.html";
+  localStorage.removeItem("karahanliUser");
+  location.href = "register.html";
 });
 
 document.getElementById("newsletterForm").addEventListener("submit", (event) => {

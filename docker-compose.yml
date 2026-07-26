@@ -15,9 +15,9 @@ services:
       CATALOG_PATH: "/data/catalog/products.json"
       GENERATED_PAGES_ROOT: "/data/generated/urunler"
     volumes:
-      - /srv/karahanli/data/media:/data/media
-      - /srv/karahanli/data/catalog:/data/catalog
-      - /srv/karahanli/data/generated:/data/generated
+      - ${KARAHANLI_BASE_DIR:-/srv/karahanli}/data/media:/data/media
+      - ${KARAHANLI_BASE_DIR:-/srv/karahanli}/data/catalog:/data/catalog
+      - ${KARAHANLI_BASE_DIR:-/srv/karahanli}/data/generated:/data/generated
     secrets:
       - firebase_service_account
     healthcheck:

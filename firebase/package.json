@@ -2,11 +2,18 @@
   "name": "karahanli-firebase-tools",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "seed": "node seed.mjs",
     "set-admin": "node set-admin.mjs"
   },
   "dependencies": {
-    "firebase-admin": "^13.4.0"
+    "firebase-admin": "^14.2.0"
+  },
+  "overrides": {
+    "brace-expansion": "5.0.8",
+    "uuid": "11.1.1"
   }
 }

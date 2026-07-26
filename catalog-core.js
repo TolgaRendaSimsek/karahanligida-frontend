@@ -187,6 +187,7 @@
 
   localStorage.removeItem("karahanliCart");
   localStorage.removeItem("roasteryProducts");
+  localStorage.removeItem("karahanliUser");
 
   window.KarahanliCatalog = {
     ROOT_PREFIX,

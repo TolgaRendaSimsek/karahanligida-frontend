@@ -50,10 +50,13 @@ function findForbiddenKey(value, path = "product") {
 
 export function validateProduct(input) {
   const errors = [];
-  const product = structuredClone(input ?? {});
+  const rawProduct = structuredClone(input ?? {});
   for (const field of REQUIRED_FIELDS) {
-    if (!(field in product)) errors.push(`Eksik alan: ${field}`);
+    if (!(field in rawProduct)) errors.push(`Eksik alan: ${field}`);
   }
+  const product = Object.fromEntries(
+    REQUIRED_FIELDS.filter((field) => field in rawProduct).map((field) => [field, rawProduct[field]]),
+  );
   if (!/^family-[a-z0-9-]{3,80}$/.test(product.id ?? "")) errors.push("Geçersiz ürün kimliği.");
   if (slugify(product.slug) !== product.slug) errors.push("Geçersiz ürün slug değeri.");
   for (const field of ["brand", "name", "category", "summary", "description"]) {
@@ -65,7 +68,7 @@ export function validateProduct(input) {
   if (!Array.isArray(product.images) || product.images.length === 0) {
     errors.push("En az bir ürün görseli gereklidir.");
   }
-  const forbidden = findForbiddenKey(product);
+  const forbidden = findForbiddenKey(rawProduct);
   if (forbidden) errors.push(`Yasaklı veri alanı: ${forbidden}`);
 
   const variantIds = new Set();
@@ -98,13 +101,48 @@ export function validateProduct(input) {
 }
 
 export function publicProduct(product) {
-  const {
-    revision,
-    updatedAt,
-    updatedBy,
-    createdAt,
-    createdBy,
-    ...publicFields
-  } = product;
-  return publicFields;
+  const publicRecord = (value) =>
+    Object.fromEntries(
+      Object.entries(value ?? {}).filter(([, item]) =>
+        ["string", "number", "boolean"].includes(typeof item)),
+    );
+  return {
+    id: String(product.id ?? ""),
+    slug: String(product.slug ?? ""),
+    brand: String(product.brand ?? ""),
+    name: String(product.name ?? ""),
+    category: String(product.category ?? ""),
+    subcategory: String(product.subcategory ?? ""),
+    summary: String(product.summary ?? ""),
+    description: String(product.description ?? ""),
+    features: Array.isArray(product.features) ? product.features.map(String) : [],
+    specifications: publicRecord(product.specifications),
+    images: Array.isArray(product.images)
+      ? product.images.map((image, index) => ({
+          id: String(image.id ?? ""),
+          src: String(image.src ?? ""),
+          thumbnailSrc: String(image.thumbnailSrc ?? ""),
+          alt: String(image.alt ?? ""),
+          order: Number(image.order ?? index + 1),
+          variantIds: Array.isArray(image.variantIds) ? image.variantIds.map(String) : [],
+        }))
+      : [],
+    variants: Array.isArray(product.variants)
+      ? product.variants.map((variant) => ({
+          id: String(variant.id ?? ""),
+          name: String(variant.name ?? ""),
+          code: String(variant.code ?? ""),
+          attributes: publicRecord(variant.attributes),
+          ...(variant.imageId ? { imageId: String(variant.imageId) } : {}),
+        }))
+      : [],
+    source: {
+      catalog: String(product.source?.catalog ?? "Karahanlı Gıda kataloğu"),
+      pages: Array.isArray(product.source?.pages)
+        ? product.source.pages.filter(Number.isFinite).map(Number)
+        : [],
+    },
+    featured: Boolean(product.featured),
+    status: product.status === "archived" ? "archived" : "published",
+  };
 }

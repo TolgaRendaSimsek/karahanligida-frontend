@@ -188,7 +188,6 @@ app.post("/api/admin/media", upload.array("images", 8), async (request, response
           buffer: file.buffer,
           productId: request.body.productId,
           mediaRoot,
-          originalName: file.originalname,
           mimeType: file.mimetype,
         }),
       ),

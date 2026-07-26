@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { slugify, validateProduct } from "../src/catalog.mjs";
+import { publicProduct, slugify, validateProduct } from "../src/catalog.mjs";
 
 const product = {
   id: "family-test-product",
@@ -33,8 +33,10 @@ test("Türkçe metni güvenli slug değerine çevirir", () => {
 });
 
 test("geçerli ürünü normalize eder", () => {
-  const validated = validateProduct(product);
+  const validated = validateProduct({ ...product, apiToken: "secret", internalNotes: "özel" });
   assert.equal(validated.images[0].order, 1);
+  assert.equal(validated.apiToken, undefined);
+  assert.equal(validated.internalNotes, undefined);
 });
 
 test("fiyat ve müşteri verisini reddeder", () => {
@@ -46,4 +48,21 @@ test("geçersiz varyant görsel eşleşmesini reddeder", () => {
   const invalid = structuredClone(product);
   invalid.variants[0].imageId = "missing";
   assert.throws(() => validateProduct(invalid), /eşleşen görsel bulunamadı/);
+});
+
+test("halka açık ürünü yalnızca izin verilen alanlardan üretir", () => {
+  const value = structuredClone(product);
+  value.apiToken = "secret";
+  value.internalNotes = "yalnızca admin";
+  value.images[0].internalPath = "/srv/private";
+  value.images[0].source.originalName = "calisan-adi-musteri.png";
+  value.source.originalImages = [{ pdfObject: "internal.png" }];
+  value.variants[0].internalCost = 42;
+  const published = publicProduct(value);
+  assert.equal(published.apiToken, undefined);
+  assert.equal(published.internalNotes, undefined);
+  assert.equal(published.images[0].source, undefined);
+  assert.equal(published.images[0].internalPath, undefined);
+  assert.equal(published.source.originalImages, undefined);
+  assert.equal(published.variants[0].internalCost, undefined);
 });

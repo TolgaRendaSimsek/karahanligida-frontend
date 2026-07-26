@@ -1,6 +1,20 @@
 karahanligida.com {
 	encode zstd gzip
 
+	header {
+		Content-Security-Policy "default-src 'self'; script-src 'self' https://www.gstatic.com; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://*.googleapis.com; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; form-action 'self'; upgrade-insecure-requests"
+		Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+	}
+
+	@privateFiles path /.git /.git/* /.env /secrets/* /admin-api/* /firebase/* /deploy/* /tools/* /docs/* /.dockerignore /docker-compose.yml /firebase.json /README.md
+	handle @privateFiles {
+		respond 404
+	}
+
 	@adminApi path /api/admin/*
 	handle @adminApi {
 		reverse_proxy 127.0.0.1:3100
@@ -26,8 +40,10 @@ karahanligida.com {
 	}
 
 	handle {
-		root * /srv/karahanli/app/current
+		root * /srv/karahanli/public/current
 		try_files {path} {path}/ /index.html
-		file_server
+		file_server {
+			hide .git .env
+		}
 	}
 }
