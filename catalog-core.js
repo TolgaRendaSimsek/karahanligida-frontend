@@ -32,8 +32,13 @@
   }
 
   function assetUrl(path) {
-    if (!path || /^https?:\/\//.test(path)) return path;
+    if (!path || /^(?:https?:)?\/\//.test(path) || path.startsWith("/")) return path;
     return `${ROOT_PREFIX}${path}`;
+  }
+
+  function imageSource(image, thumbnail = false) {
+    if (!image) return "";
+    return thumbnail ? image.thumbnailSrc || image.src : image.src;
   }
 
   function detailUrl(slug) {
@@ -88,7 +93,7 @@
         variantId: variant.id,
         variantName: variant.name,
         variantCode: variant.code || "",
-        image: product.images.find((image) => image.role === "thumbnail")?.src || product.images[0]?.src || "",
+        image: imageSource(product.images[0], true),
         quantity: Math.max(1, Number(quantity) || 1),
       });
     }
@@ -99,15 +104,30 @@
 
   function cardMarkup(product, options = {}) {
     const favorites = getFavorites();
-    const thumbnail =
-      product.images.find((image) => image.role === "thumbnail")?.src || product.images[0]?.src;
+    const gallery = product.images || [];
+    const thumbnail = imageSource(gallery[0], true);
     const firstVariant = product.variants[0];
     return `
       <article class="product-card catalog-card" data-id="${escapeHtml(product.id)}">
-        <div class="product-image has-image" style="background-image:url('${escapeHtml(assetUrl(thumbnail))}')">
+        <div class="product-image has-image card-gallery" data-gallery-index="0">
+          <img class="card-gallery-image" src="${escapeHtml(assetUrl(thumbnail))}"
+            alt="${escapeHtml(gallery[0]?.alt || `${product.brand} ${product.name}`)}" loading="lazy">
           <span class="badge">${escapeHtml(product.brand)}</span>
           <button class="favorite-btn ${favorites.includes(product.id) ? "active" : ""}" type="button"
             data-favorite="${escapeHtml(product.id)}" aria-label="Favorilere ekle">♥</button>
+          ${
+            gallery.length > 1
+              ? `<button class="card-gallery-arrow prev" type="button" data-gallery-direction="-1" aria-label="Önceki görsel">‹</button>
+                 <button class="card-gallery-arrow next" type="button" data-gallery-direction="1" aria-label="Sonraki görsel">›</button>
+                 <span class="card-gallery-count">1/${gallery.length}</span>`
+              : ""
+          }
+          <script type="application/json" class="card-gallery-data">${JSON.stringify(
+            gallery.map((image) => ({
+              src: assetUrl(imageSource(image, true)),
+              alt: image.alt || `${product.brand} ${product.name}`,
+            })),
+          ).replace(/</g, "\\u003c")}</script>
         </div>
         <div class="product-info">
           <span class="product-brand">${escapeHtml(product.category)} · ${escapeHtml(product.subcategory)}</span>
@@ -131,6 +151,22 @@
 
   function bindCardActions(container, products, onUpdate) {
     container.addEventListener("click", (event) => {
+      const galleryButton = event.target.closest("[data-gallery-direction]");
+      if (galleryButton) {
+        event.preventDefault();
+        event.stopPropagation();
+        const gallery = galleryButton.closest(".card-gallery");
+        const data = JSON.parse(gallery.querySelector(".card-gallery-data").textContent);
+        const nextIndex =
+          (Number(gallery.dataset.galleryIndex) + Number(galleryButton.dataset.galleryDirection) + data.length) %
+          data.length;
+        gallery.dataset.galleryIndex = String(nextIndex);
+        const image = gallery.querySelector(".card-gallery-image");
+        image.src = data[nextIndex].src;
+        image.alt = data[nextIndex].alt;
+        gallery.querySelector(".card-gallery-count").textContent = `${nextIndex + 1}/${data.length}`;
+        return;
+      }
       const favorite = event.target.closest("[data-favorite]");
       if (favorite) {
         event.preventDefault();
@@ -164,6 +200,7 @@
     escapeHtml,
     getFavorites,
     getQuoteCart,
+    imageSource,
     loadProducts,
     normalize,
     toggleFavorite,

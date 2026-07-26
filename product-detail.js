@@ -15,7 +15,8 @@ catalog.loadProducts().then((products) => {
   if (!product) throw new Error("Bu ürün ailesi bulunamadı.");
   document.title = `${product.name} | ${product.brand} | Karahanlı Gıda`;
 
-  const hero = product.images.find((image) => image.role === "detail") || product.images[0];
+  const gallery = product.images || [];
+  const hero = gallery[0];
   const variants = product.variants
     .map(
       (variant) =>
@@ -34,7 +35,30 @@ catalog.loadProducts().then((products) => {
   root.innerHTML = `
     <div class="breadcrumbs"><a href="../index.html">Ana Sayfa</a> / <a href="../products.html">Ürünler</a> / ${catalog.escapeHtml(product.brand)} / ${catalog.escapeHtml(product.name)}</div>
     <div class="detail-grid">
-      <div class="detail-gallery"><img src="${catalog.escapeHtml(catalog.assetUrl(hero.src))}" alt="${catalog.escapeHtml(hero.alt)}"></div>
+      <div class="detail-gallery" id="detailGallery">
+        <div class="detail-gallery-stage">
+          <img id="detailGalleryImage" src="${catalog.escapeHtml(catalog.assetUrl(hero.src))}" alt="${catalog.escapeHtml(hero.alt)}">
+          ${
+            gallery.length > 1
+              ? `<button class="detail-gallery-arrow prev" type="button" data-detail-direction="-1" aria-label="Önceki görsel">‹</button>
+                 <button class="detail-gallery-arrow next" type="button" data-detail-direction="1" aria-label="Sonraki görsel">›</button>
+                 <span class="detail-gallery-count" id="detailGalleryCount">1/${gallery.length}</span>`
+              : ""
+          }
+        </div>
+        ${
+          gallery.length > 1
+            ? `<div class="detail-thumbnails" aria-label="Ürün görselleri">${gallery
+                .map(
+                  (image, index) =>
+                    `<button type="button" class="${index === 0 ? "active" : ""}" data-detail-index="${index}" aria-label="${index + 1}. görseli göster">
+                      <img src="${catalog.escapeHtml(catalog.assetUrl(catalog.imageSource(image, true)))}" alt="" loading="lazy">
+                    </button>`,
+                )
+                .join("")}</div>`
+            : ""
+        }
+      </div>
       <div class="detail-copy">
         <p class="eyebrow dark">${catalog.escapeHtml(product.brand)} · ${catalog.escapeHtml(product.subcategory)}</p>
         <h1>${catalog.escapeHtml(product.name)}</h1>
@@ -66,6 +90,53 @@ catalog.loadProducts().then((products) => {
       document.getElementById("quantityInput").value,
     );
     showToast("Ürün teklif sepetine eklendi.");
+  });
+  let galleryIndex = 0;
+  const galleryRoot = document.getElementById("detailGallery");
+  const galleryImage = document.getElementById("detailGalleryImage");
+  const showGalleryImage = (index) => {
+    galleryIndex = (index + gallery.length) % gallery.length;
+    galleryImage.src = catalog.assetUrl(gallery[galleryIndex].src);
+    galleryImage.alt = gallery[galleryIndex].alt;
+    const counter = document.getElementById("detailGalleryCount");
+    if (counter) counter.textContent = `${galleryIndex + 1}/${gallery.length}`;
+    galleryRoot.querySelectorAll("[data-detail-index]").forEach((button) => {
+      button.classList.toggle("active", Number(button.dataset.detailIndex) === galleryIndex);
+    });
+  };
+  galleryRoot.addEventListener("click", (event) => {
+    const arrow = event.target.closest("[data-detail-direction]");
+    const thumb = event.target.closest("[data-detail-index]");
+    if (arrow) showGalleryImage(galleryIndex + Number(arrow.dataset.detailDirection));
+    if (thumb) showGalleryImage(Number(thumb.dataset.detailIndex));
+  });
+  galleryRoot.tabIndex = 0;
+  galleryRoot.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") showGalleryImage(galleryIndex - 1);
+    if (event.key === "ArrowRight") showGalleryImage(galleryIndex + 1);
+  });
+  let touchStartX = 0;
+  galleryRoot.addEventListener(
+    "touchstart",
+    (event) => {
+      touchStartX = event.changedTouches[0].clientX;
+    },
+    { passive: true },
+  );
+  galleryRoot.addEventListener(
+    "touchend",
+    (event) => {
+      const distance = event.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(distance) > 45) showGalleryImage(galleryIndex + (distance < 0 ? 1 : -1));
+    },
+    { passive: true },
+  );
+  document.getElementById("variantSelect").addEventListener("change", (event) => {
+    const variant = product.variants.find((item) => item.id === event.target.value);
+    const imageIndex = gallery.findIndex(
+      (image) => image.id === variant?.imageId || image.variantIds?.includes(variant?.id),
+    );
+    if (imageIndex >= 0) showGalleryImage(imageIndex);
   });
   const related = products
     .filter((item) => item.id !== product.id && item.category === product.category)

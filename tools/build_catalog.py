@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import shutil
@@ -24,6 +25,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SOURCE = REPO_ROOT.parent / "Ürünler"
 DATA_PATH = REPO_ROOT / "data" / "products.json"
 MANIFEST_PATH = REPO_ROOT / "data" / "catalog-manifest.json"
+CURATION_PATH = REPO_ROOT / "data" / "image-curation.json"
 ASSET_ROOT = REPO_ROOT / "assets" / "products"
 
 
@@ -74,19 +76,25 @@ def lines_for(reader: PdfReader, page_number: int) -> list[str]:
     return [clean(line) for line in text.splitlines() if clean(line)]
 
 
+def image_fingerprint(image: Image.Image) -> str:
+    sample = ImageOps.fit(image.convert("RGB"), (48, 48), method=Image.Resampling.LANCZOS)
+    return hashlib.sha256(sample.tobytes()).hexdigest()
+
+
 def useful_product_images(reader: PdfReader, pages: Iterable[int]) -> list[tuple[Image.Image, str, int]]:
-    candidates: list[tuple[int, Image.Image, str, int]] = []
+    candidates: list[tuple[float, Image.Image, str, int]] = []
     for page_number in pages:
         for item in reader.pages[page_number - 1].images:
             try:
-                image = item.image.copy()
+                image = ImageOps.exif_transpose(item.image.copy())
                 width, height = image.size
                 if width < 150 or height < 150:
                     continue
                 ratio = width / height
-                if ratio > 4.3 or ratio < 0.13:
+                if ratio > 3.2 or ratio < 0.13:
                     continue
-                score = width * height
+                shape_bonus = 1.35 if 0.28 <= ratio <= 1.45 else 0.55
+                score = width * height * shape_bonus
                 if image.mode not in {"RGB", "RGBA"}:
                     image = image.convert("RGB")
                 candidates.append((score, image, item.name, page_number))
@@ -94,51 +102,94 @@ def useful_product_images(reader: PdfReader, pages: Iterable[int]) -> list[tuple
                 continue
     candidates.sort(key=lambda row: row[0], reverse=True)
     unique: list[tuple[Image.Image, str, int]] = []
-    fingerprints: set[tuple[int, int, int]] = set()
+    fingerprints: set[str] = set()
     for score, image, name, page in candidates:
-        fingerprint = (image.width, image.height, score // 10_000)
+        fingerprint = image_fingerprint(image)
         if fingerprint in fingerprints:
             continue
         fingerprints.add(fingerprint)
         unique.append((image, name, page))
-        if len(unique) == 4:
+        if len(unique) == 8:
             break
     return unique
 
 
-def render_assets(reader: PdfReader, pages: tuple[int, ...], target: Path) -> tuple[list[dict], list[dict]]:
+def render_assets(
+    reader: PdfReader,
+    pages: tuple[int, ...],
+    target: Path,
+    curation: dict | None = None,
+) -> tuple[list[dict], list[dict]]:
+    curation = curation or {}
     images = useful_product_images(reader, pages)
+    excluded = {
+        (row.get("page"), row.get("pdfObject"))
+        for row in curation.get("exclude", [])
+    }
+    images = [
+        row for row in images if (row[2], row[1]) not in excluded
+    ]
+    expanded: list[tuple[Image.Image, str, int, list[str], list[int] | None]] = []
+    for image, name, page in images:
+        crop_rules = [
+            rule
+            for rule in curation.get("crops", [])
+            if rule.get("page") == page and rule.get("pdfObject") == name
+        ]
+        if not crop_rules:
+            variant_ids = curation.get("variantMap", {}).get(f"{page}:{name}", [])
+            expanded.append((image, name, page, variant_ids, None))
+            continue
+        for rule in crop_rules:
+            box = rule.get("box", [])
+            if len(box) != 4:
+                raise ValueError(f"{target.name}: geçersiz kırpma kutusu {box}")
+            left, top, right, bottom = [int(value) for value in box]
+            if not (0 <= left < right <= image.width and 0 <= top < bottom <= image.height):
+                raise ValueError(f"{target.name}: görsel dışında kırpma kutusu {box}")
+            expanded.append(
+                (
+                    image.crop((left, top, right, bottom)),
+                    name,
+                    page,
+                    rule.get("variantIds", []),
+                    [left, top, right, bottom],
+                )
+            )
+    images = expanded
     if not images:
         canvas = Image.new("RGB", (1200, 900), "#f4f0e8")
-        images = [(canvas, "catalog-page-fallback", pages[0])]
-
-    canvas = Image.new("RGB", (1200, 900), "#f6f2eb")
-    slots = [(60, 55, 540, 380), (660, 55, 540, 380), (60, 465, 540, 380), (660, 465, 540, 380)]
-    if len(images) == 1:
-        slots = [(100, 70, 1000, 760)]
-    elif len(images) == 2:
-        slots = [(45, 90, 535, 720), (620, 90, 535, 720)]
-    for (image, _, _), (x, y, width, height) in zip(images, slots):
-        tile = ImageOps.contain(image.convert("RGB"), (width, height), Image.Resampling.LANCZOS)
-        tile_canvas = Image.new("RGB", (width, height), "#ffffff")
-        tile_canvas.paste(tile, ((width - tile.width) // 2, (height - tile.height) // 2))
-        canvas.paste(tile_canvas, (x, y))
+        images = [(canvas, "catalog-page-fallback", pages[0], [], None)]
 
     target.mkdir(parents=True, exist_ok=True)
-    hero = target / "hero.webp"
-    thumb = target / "thumb.webp"
-    canvas.save(hero, "WEBP", quality=84, method=6)
-    ImageOps.fit(canvas, (480, 360), method=Image.Resampling.LANCZOS).save(
-        thumb, "WEBP", quality=78, method=6
-    )
-    manifest = [{"pdfObject": name, "page": page} for _, name, page in images]
-    return (
-        [
-            {"src": hero.relative_to(REPO_ROOT).as_posix(), "role": "detail"},
-            {"src": thumb.relative_to(REPO_ROOT).as_posix(), "role": "thumbnail"},
-        ],
-        manifest,
-    )
+    gallery: list[dict] = []
+    manifest: list[dict] = []
+    for index, (image, name, page, variant_ids, crop) in enumerate(images, 1):
+        image_id = f"image-{index:02d}"
+        full = target / f"{image_id}.webp"
+        thumb = target / f"{image_id}-thumb.webp"
+        canvas = Image.new("RGB", (1200, 900), "#ffffff")
+        contained = ImageOps.contain(image.convert("RGB"), (1120, 820), Image.Resampling.LANCZOS)
+        canvas.paste(contained, ((1200 - contained.width) // 2, (900 - contained.height) // 2))
+        canvas.save(full, "WEBP", quality=86, method=6)
+        ImageOps.fit(canvas, (480, 360), method=Image.Resampling.LANCZOS).save(
+            thumb, "WEBP", quality=80, method=6
+        )
+        source = {"type": "pdf", "page": page, "pdfObject": name}
+        if crop:
+            source["crop"] = crop
+        gallery.append(
+            {
+                "id": image_id,
+                "src": full.relative_to(REPO_ROOT).as_posix(),
+                "thumbnailSrc": thumb.relative_to(REPO_ROOT).as_posix(),
+                "order": index,
+                "variantIds": variant_ids,
+                "source": source,
+            }
+        )
+        manifest.append(source)
+    return gallery, manifest
 
 
 def extract_features(lines: list[str]) -> list[str]:
@@ -404,16 +455,22 @@ def kroom_specs(reader: PdfReader) -> list[FamilySpec]:
     return result
 
 
-def family_to_product(spec: FamilySpec, reader: PdfReader, sequence: int) -> tuple[dict, dict]:
+def family_to_product(
+    spec: FamilySpec,
+    reader: PdfReader,
+    sequence: int,
+    resolved_slug: str | None = None,
+    curation: dict | None = None,
+) -> tuple[dict, dict]:
     all_lines: list[str] = []
     for page in spec.pages:
         all_lines.extend(lines_for(reader, page))
     slug_source = f"{spec.brand}-{spec.name}"
     if spec.brand == "Kroom":
         slug_source = f"{slug_source}-sayfa-{spec.pages[0]}"
-    slug = slugify(slug_source)
+    slug = resolved_slug or slugify(slug_source)
     asset_dir = ASSET_ROOT / slugify(spec.brand) / slug
-    images, image_manifest = render_assets(reader, spec.pages, asset_dir)
+    images, image_manifest = render_assets(reader, spec.pages, asset_dir, curation)
     variants = [
         {"id": variant_id, "name": name, "code": "", "attributes": {}}
         for variant_id, name in spec.variants
@@ -442,7 +499,12 @@ def family_to_product(spec: FamilySpec, reader: PdfReader, sequence: int) -> tup
         "features": features,
         "specifications": specifications,
         "images": [
-            {**image, "alt": f"{spec.brand} {spec.name}"} for image in images
+            {
+                **image,
+                "alt": f"{spec.brand} {spec.name} - görsel {image['order']}",
+                "source": {**image["source"], "catalog": spec.pdf},
+            }
+            for image in images
         ],
         "variants": variants,
         "source": source,
@@ -454,7 +516,11 @@ def family_to_product(spec: FamilySpec, reader: PdfReader, sequence: int) -> tup
         "slug": slug,
         "catalog": spec.pdf,
         "pages": list(spec.pages),
-        "assets": [image["src"] for image in images],
+        "assets": [
+            asset
+            for image in images
+            for asset in (image["src"], image["thumbnailSrc"])
+        ],
         "originalImages": image_manifest,
     }
     return product, manifest
@@ -473,6 +539,11 @@ def main() -> None:
         shutil.rmtree(resolved)
 
     readers: dict[str, PdfReader] = {}
+    curation = (
+        json.loads(CURATION_PATH.read_text(encoding="utf-8")).get("products", {})
+        if CURATION_PATH.exists()
+        else {}
+    )
     expected = {spec.pdf for spec in manual_specs()} | {"KROOM MUTFAK .pdf"}
     for filename in sorted(expected):
         path = args.source / filename
@@ -485,14 +556,23 @@ def main() -> None:
     manifest: list[dict] = []
     used_slugs: set[str] = set()
     for sequence, spec in enumerate(specs, 1):
-        product, source_row = family_to_product(spec, readers[spec.pdf], sequence)
-        base_slug = product["slug"]
+        slug_source = f"{spec.brand}-{spec.name}"
+        if spec.brand == "Kroom":
+            slug_source = f"{slug_source}-sayfa-{spec.pages[0]}"
+        base_slug = slugify(slug_source)
+        resolved_slug = base_slug
         suffix = 2
-        while product["slug"] in used_slugs:
-            product["slug"] = f"{base_slug}-{suffix}"
-            source_row["slug"] = product["slug"]
+        while resolved_slug in used_slugs:
+            resolved_slug = f"{base_slug}-{suffix}"
             suffix += 1
-        used_slugs.add(product["slug"])
+        used_slugs.add(resolved_slug)
+        product, source_row = family_to_product(
+            spec,
+            readers[spec.pdf],
+            sequence,
+            resolved_slug,
+            curation.get(resolved_slug, {}),
+        )
         products.append(product)
         manifest.append(source_row)
 

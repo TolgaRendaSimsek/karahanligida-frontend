@@ -84,10 +84,30 @@ def main() -> int:
             fail(errors, f"{slug}: PDF kaynak sayfası bulunmuyor")
         covered_catalogs.add(source.get("catalog"))
         for image in product.get("images", []):
-            path = ROOT / image.get("src", "")
-            if not path.is_file():
-                fail(errors, f"{slug}: görsel bulunamadı {path}")
-            assets.add(image.get("src"))
+            required_image_fields = {
+                "id",
+                "src",
+                "thumbnailSrc",
+                "alt",
+                "order",
+                "variantIds",
+                "source",
+            }
+            if missing_image_fields := required_image_fields - image.keys():
+                fail(errors, f"{slug}: görsel alanları eksik {sorted(missing_image_fields)}")
+            for field in ("src", "thumbnailSrc"):
+                asset = image.get(field, "")
+                if asset.startswith(("http://", "https://", "/media/")):
+                    continue
+                path = ROOT / asset
+                if not path.is_file():
+                    fail(errors, f"{slug}: görsel bulunamadı {path}")
+                assets.add(asset)
+        if not product.get("images"):
+            fail(errors, f"{slug}: galeri görseli bulunmuyor")
+        orders = [image.get("order") for image in product.get("images", [])]
+        if orders != list(range(1, len(orders) + 1)):
+            fail(errors, f"{slug}: galeri sıralaması geçersiz")
 
     if covered_catalogs != EXPECTED_CATALOGS:
         fail(errors, f"Katalog kapsamı eksik/fazla: {sorted(covered_catalogs ^ EXPECTED_CATALOGS)}")

@@ -18,6 +18,9 @@ const escape = (value) =>
   })[character]);
 
 for (const product of payload.products) {
+  const imageUrl = product.images[0].src.startsWith("/")
+    ? product.images[0].src
+    : `../${product.images[0].src}`;
   const html = `<!doctype html>
 <html lang="tr">
 <head>
@@ -26,7 +29,7 @@ for (const product of payload.products) {
   <meta name="description" content="${escape(product.summary)}">
   <meta property="og:title" content="${escape(product.name)} | ${escape(product.brand)}">
   <meta property="og:description" content="${escape(product.summary)}">
-  <meta property="og:image" content="../${escape(product.images[0].src)}">
+  <meta property="og:image" content="${escape(imageUrl)}">
   <title>${escape(product.name)} | ${escape(product.brand)} | Karahanlı Gıda</title>
   <link rel="icon" type="image/png" href="../logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +39,7 @@ for (const product of payload.products) {
   <link rel="stylesheet" href="../catalog.css?v=20260726">
   <link rel="stylesheet" href="../quote-cart.css?v=20260726">
 </head>
-<body data-product-slug="${escape(product.slug)}">
+<body data-product-id="${escape(product.id)}" data-product-slug="${escape(product.slug)}">
   <div class="announcement">Karahanlı Gıda profesyonel ürün kataloğu · Fiyat bilgisi için teklif isteyin</div>
   <header class="site-header">
     <div class="header-main container">
