@@ -1,5 +1,5 @@
 import { mkdir } from "node:fs/promises";
-import { resolve } from "node:path";
+import { dirname, resolve } from "node:path";
 import express from "express";
 import helmet from "helmet";
 import multer from "multer";
@@ -15,7 +15,6 @@ const port = Number(process.env.PORT || 3100);
 const projectId = process.env.FIREBASE_PROJECT_ID;
 const mediaRoot = resolve(process.env.MEDIA_ROOT || "./var/media");
 const catalogPath = resolve(process.env.CATALOG_PATH || "./var/catalog/products.json");
-const pagesRoot = resolve(process.env.GENERATED_PAGES_ROOT || "./var/generated/urunler");
 const allowedOrigin = process.env.ADMIN_ORIGIN || "";
 
 initializeApp({ credential: applicationDefault(), projectId });
@@ -27,7 +26,10 @@ const upload = multer({
   limits: { fileSize: 10 * 1024 * 1024, files: 8 },
 });
 
-await Promise.all([mkdir(mediaRoot, { recursive: true }), mkdir(pagesRoot, { recursive: true })]);
+await Promise.all([
+  mkdir(mediaRoot, { recursive: true }),
+  mkdir(dirname(catalogPath), { recursive: true }),
+]);
 
 app.disable("x-powered-by");
 app.use(helmet({ contentSecurityPolicy: false }));
@@ -109,7 +111,6 @@ app.post("/api/admin/products/:id/publish", async (request, response, next) => {
         productId: request.params.id,
         user: request.admin,
         catalogPath,
-        pagesRoot,
         mediaRoot,
       }),
     );
@@ -144,7 +145,6 @@ app.post("/api/admin/products/:id/archive", async (request, response, next) => {
       payload = await rebuildPublicSnapshot({
         db,
         catalogPath,
-        pagesRoot,
         releaseId: releaseRef.id,
       });
     } catch (error) {
