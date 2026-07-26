@@ -11,7 +11,8 @@ pnpm install
 pnpm dev
 ```
 
-Site `http://127.0.0.1:3000` adresinde açılır.
+Canlı site `https://karahanligida.com` adresinde çalışır. Docker servisleri
+yalnızca Linux sunucuda Caddy arkasındaki loopback portlarına bağlanır.
 
 - Ana sayfa: `/`
 - Ürün kataloğu: `/urunler`
@@ -51,7 +52,7 @@ pnpm test
 pnpm build
 pnpm test:e2e
 python tools/validate_catalog.py
-node tools/validate_next_routes.mjs http://127.0.0.1:3000
+node tools/validate_next_routes.mjs https://karahanligida.com
 pnpm --dir admin-api test
 ```
 

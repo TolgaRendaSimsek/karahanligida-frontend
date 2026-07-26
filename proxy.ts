@@ -11,7 +11,7 @@ export function proxy(request: NextRequest) {
     `style-src 'self' 'nonce-${nonce}'${isDev ? " 'unsafe-inline'" : ""}`,
     "img-src 'self' data: blob:",
     "font-src 'self'",
-    "connect-src 'self' https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://*.googleapis.com",
+    "connect-src 'self' https://api.karahanligida.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://*.googleapis.com",
     "frame-ancestors 'none'",
     "base-uri 'self'",
     "object-src 'none'",

@@ -89,7 +89,13 @@ function parseVariants(value: string) {
   });
 }
 
-export function AdminClient({ firebaseConfig }: { firebaseConfig: FirebaseClientConfig }) {
+export function AdminClient({
+  firebaseConfig,
+  apiOrigin,
+}: {
+  firebaseConfig: FirebaseClientConfig;
+  apiOrigin: string;
+}) {
   const configured = Object.values(firebaseConfig).every(Boolean);
   const [user, setUser] = useState<User | null>(null);
   const [authReady, setAuthReady] = useState(false);
@@ -111,7 +117,8 @@ export function AdminClient({ firebaseConfig }: { firebaseConfig: FirebaseClient
   const api = useCallback(async (path: string, options: RequestInit = {}) => {
     if (!user) throw new Error("Admin oturumu bulunamadı.");
     const token = await user.getIdToken();
-    const response = await fetch(`/api/admin${path}`, {
+    const baseUrl = apiOrigin.replace(/\/+$/, "");
+    const response = await fetch(`${baseUrl}/api/admin${path}`, {
       ...options,
       headers: {
         ...(options.body instanceof FormData ? {} : { "Content-Type": "application/json" }),
@@ -126,7 +133,7 @@ export function AdminClient({ firebaseConfig }: { firebaseConfig: FirebaseClient
       throw error;
     }
     return payload;
-  }, [user]);
+  }, [apiOrigin, user]);
 
   const loadCatalog = useCallback(async () => {
     try {
@@ -331,13 +338,13 @@ export function AdminClient({ firebaseConfig }: { firebaseConfig: FirebaseClient
           <Image src="/logo.png" width={46} height={46} alt="" />
           <span><strong>KARAHANLI GIDA</strong><small>Katalog Yönetimi</small></span>
         </Link>
-        <nav><button className="active">Ürün Aileleri</button><Link href="/urunler">Canlı kataloğu gör</Link></nav>
-        <div className="admin-account"><span>{user.email}</span><button onClick={() => auth && signOut(auth)}>Çıkış</button></div>
+        <nav><button type="button" className="active">Ürün Aileleri</button><Link href="/urunler">Canlı kataloğu gör</Link></nav>
+        <div className="admin-account"><span>{user.email}</span><button type="button" onClick={() => auth && signOut(auth)}>Çıkış</button></div>
       </aside>
       <section className="admin-main">
         <header className="admin-topbar">
           <div><span className="eyebrow">FIREBASE + LINUX MEDYA</span><h1>Ürün kataloğu</h1></div>
-          <button className="admin-primary" onClick={() => setEditor(toEditor(emptyProduct()))}>Yeni Ürün Ailesi</button>
+          <button type="button" className="admin-primary" onClick={() => setEditor(toEditor(emptyProduct()))}>Yeni Ürün Ailesi</button>
         </header>
         {notice && <div className="admin-notice">{notice}</div>}
         <section className="admin-stats">
@@ -364,7 +371,7 @@ export function AdminClient({ firebaseConfig }: { firebaseConfig: FirebaseClient
                   </div></td>
                   <td>{product.category}</td><td>{product.variants.length}</td><td>{product.images.length}</td>
                   <td><span className={`admin-status ${product.displayStatus}`}>{product.displayStatus === "draft" ? "Taslak" : "Yayında"}</span></td>
-                  <td><button className="admin-edit" onClick={() => setEditor(toEditor(product))}>Düzenle</button></td>
+                  <td><button type="button" className="admin-edit" onClick={() => setEditor(toEditor(product))}>Düzenle</button></td>
                 </tr>
               )) : <tr><td colSpan={6}>Eşleşen ürün bulunamadı.</td></tr>}</tbody>
             </table>
@@ -374,7 +381,7 @@ export function AdminClient({ firebaseConfig }: { firebaseConfig: FirebaseClient
       {editor && (
         <div className="admin-editor-overlay">
           <form className="admin-editor" onSubmit={submitDraft}>
-            <header><div><span className="eyebrow">ÜRÜN AİLESİ</span><h2>{editor.product.name || "Yeni ürün ailesi"}</h2></div><button type="button" onClick={() => setEditor(null)}>×</button></header>
+            <header><div><span className="eyebrow">ÜRÜN AİLESİ</span><h2>{editor.product.name || "Yeni ürün ailesi"}</h2></div><button type="button" onClick={() => setEditor(null)} aria-label="Düzenleyiciyi kapat">×</button></header>
             <div className="admin-editor-body">
               <div className="admin-form-grid">
                 <label>Marka<input value={editor.product.brand} onChange={(e) => patchProduct({ brand: e.target.value })} required /></label>
@@ -402,9 +409,9 @@ export function AdminClient({ firebaseConfig }: { firebaseConfig: FirebaseClient
                       <small>{image.id}</small><small>{index + 1}. sıra</small>
                     </div>
                     <div className="admin-media-actions">
-                      <button type="button" disabled={index === 0} onClick={() => moveImage(index, -1)}>↑</button>
-                      <button type="button" disabled={index === editor.product.images.length - 1} onClick={() => moveImage(index, 1)}>↓</button>
-                      <button type="button" onClick={() => patchProduct({ images: editor.product.images.filter((item) => item.id !== image.id) })}>×</button>
+                      <button type="button" aria-label="Görseli yukarı taşı" disabled={index === 0} onClick={() => moveImage(index, -1)}>↑</button>
+                      <button type="button" aria-label="Görseli aşağı taşı" disabled={index === editor.product.images.length - 1} onClick={() => moveImage(index, 1)}>↓</button>
+                      <button type="button" aria-label="Görseli kaldır" onClick={() => patchProduct({ images: editor.product.images.filter((item) => item.id !== image.id) })}>×</button>
                     </div>
                   </article>
                 )) : <p>Henüz görsel eklenmedi.</p>}</div>

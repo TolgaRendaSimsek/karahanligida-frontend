@@ -13,6 +13,7 @@ services:
       CATALOG_PATH: "/data/catalog/products.json"
       SITE_URL: "${SITE_URL:-https://karahanligida.com}"
       WHATSAPP_NUMBER: "${WHATSAPP_NUMBER:-}"
+      ADMIN_API_ORIGIN: "${ADMIN_API_ORIGIN:-https://api.karahanligida.com}"
       FIREBASE_WEB_API_KEY: "${FIREBASE_WEB_API_KEY:-}"
       FIREBASE_AUTH_DOMAIN: "${FIREBASE_AUTH_DOMAIN:-}"
       FIREBASE_PROJECT_ID: "${FIREBASE_PROJECT_ID:-}"

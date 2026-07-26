@@ -9,7 +9,7 @@ Ziyaretçi -> Caddy -> Next.js (127.0.0.1:3000)
                          |
                          +-> /data/products.json snapshot
 
-Admin -> Firebase Auth -> Caddy /api/admin/* -> admin-api (127.0.0.1:3100)
+Admin -> Firebase Auth -> api.karahanligida.com -> admin-api (127.0.0.1:3100)
                                                    |
                                                    +-> Firestore
                                                    +-> Linux medya ve snapshot diski
@@ -61,6 +61,7 @@ Sunucu `.env` örneği:
 KARAHANLI_BASE_DIR=/srv/karahanli
 CATALOG_PATH=/srv/karahanli/data/catalog/products.json
 SITE_URL=https://karahanligida.com
+ADMIN_API_ORIGIN=https://api.karahanligida.com
 WHATSAPP_NUMBER=
 FIREBASE_WEB_API_KEY=
 FIREBASE_AUTH_DOMAIN=
@@ -92,10 +93,14 @@ curl -i http://127.0.0.1:3100/health
 
 Caddy yönlendirmeleri:
 
-- `/api/admin/*` -> `127.0.0.1:3100`
+- `api.karahanligida.com/api/admin/*` -> `127.0.0.1:3100`
 - `/media/*` -> kalıcı medya dizini
 - `/assets/*` -> ürün varlıkları
 - diğer bütün yollar -> `127.0.0.1:3000`
+
+Public `/api/catalog` ve `/api/health` rotaları Next.js ile birlikte
+`karahanligida.com` üzerinde kalır. `127.0.0.1` adresleri yalnız Linux
+sunucunun kendi içindeki Caddy-Docker bağlantılarıdır ve ziyaretçiye gönderilmez.
 
 `deploy/linux/Caddyfile.example` örneği kullanılmadan önce gerçek dizinlerle uyarlanmalı, `caddy validate` çalıştırılmalı ve mevcut Caddy dosyası yedeklenmelidir.
 

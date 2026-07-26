@@ -13,5 +13,10 @@ export default function AdminPage() {
     projectId: process.env.FIREBASE_PROJECT_ID || "",
     appId: process.env.FIREBASE_WEB_APP_ID || "",
   };
-  return <AdminClient firebaseConfig={firebaseConfig} />;
+  return (
+    <AdminClient
+      firebaseConfig={firebaseConfig}
+      apiOrigin={process.env.ADMIN_API_ORIGIN || "https://api.karahanligida.com"}
+    />
+  );
 }

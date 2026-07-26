@@ -7,6 +7,7 @@ import { applicationDefault, initializeApp } from "firebase-admin/app";
 import { getAuth } from "firebase-admin/auth";
 import { getFirestore } from "firebase-admin/firestore";
 import { createRequireAdmin } from "./auth.mjs";
+import { createAdminCors } from "./cors.mjs";
 import { validateProduct } from "./catalog.mjs";
 import { processUpload } from "./media.mjs";
 import { publishDraft, rebuildPublicSnapshot } from "./publisher.mjs";
@@ -15,7 +16,7 @@ const port = Number(process.env.PORT || 3100);
 const projectId = process.env.FIREBASE_PROJECT_ID;
 const mediaRoot = resolve(process.env.MEDIA_ROOT || "./var/media");
 const catalogPath = resolve(process.env.CATALOG_PATH || "./var/catalog/products.json");
-const allowedOrigin = process.env.ADMIN_ORIGIN || "";
+const allowedOrigin = process.env.ADMIN_ORIGIN || "https://karahanligida.com";
 
 initializeApp({ credential: applicationDefault(), projectId });
 const db = getFirestore();
@@ -34,12 +35,7 @@ await Promise.all([
 app.disable("x-powered-by");
 app.use(helmet({ contentSecurityPolicy: false }));
 app.use(express.json({ limit: "2mb" }));
-app.use((request, response, next) => {
-  if (allowedOrigin && request.headers.origin && request.headers.origin !== allowedOrigin) {
-    return response.status(403).json({ error: "Bu kaynak API'ye erişemez." });
-  }
-  next();
-});
+app.use(createAdminCors(allowedOrigin));
 
 const requireAdmin = createRequireAdmin(auth);
 

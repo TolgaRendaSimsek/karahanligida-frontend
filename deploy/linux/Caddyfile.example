@@ -14,11 +14,6 @@ karahanligida.com {
 		respond 404
 	}
 
-	@adminApi path /api/admin/*
-	handle @adminApi {
-		reverse_proxy 127.0.0.1:3100
-	}
-
 	handle_path /media/* {
 		root * /srv/karahanli/data/media
 		header Cache-Control "public, max-age=31536000, immutable"
@@ -40,5 +35,35 @@ karahanligida.com {
 
 	handle {
 		reverse_proxy 127.0.0.1:3000
+	}
+}
+
+api.karahanligida.com {
+	encode zstd gzip
+
+	header {
+		Access-Control-Allow-Origin "https://karahanligida.com"
+		Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		Vary "Origin"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+	}
+
+	@adminApi path /api/admin/* /health
+	handle @adminApi {
+		reverse_proxy 127.0.0.1:3100
+	}
+
+	handle {
+		header Content-Type application/json
+		respond `{"ok":false,"error":"Bulunamadı."}` 404
+	}
+
+	handle_errors {
+		@serviceUnavailable expression {err.status_code} == 502
+		header @serviceUnavailable Content-Type application/json
+		respond @serviceUnavailable `{"ok":false,"error":"Admin API henüz etkin değil."}` 503
 	}
 }
