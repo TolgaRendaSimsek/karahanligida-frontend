@@ -7,6 +7,7 @@ import json
 import re
 import sys
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
@@ -100,11 +101,33 @@ def main() -> int:
     }
     if assets != manifest_assets:
         fail(errors, "Ürün verisi ve kaynak manifest görselleri eşleşmiyor")
+    disk_assets = {
+        path.relative_to(ROOT).as_posix()
+        for path in (ROOT / "assets" / "products").rglob("*")
+        if path.is_file()
+    }
+    if disk_assets != assets:
+        fail(errors, f"Sahipsiz veya eksik ürün görseli var: {sorted(disk_assets ^ assets)[:10]}")
 
     if (ROOT / "urunler").exists():
         for slug in slugs:
             if not (ROOT / "urunler" / f"{slug}.html").is_file():
                 fail(errors, f"Ürün detay sayfası bulunamadı: {slug}")
+
+    for html_path in [*ROOT.glob("*.html"), *(ROOT / "urunler").glob("*.html")]:
+        html = html_path.read_text(encoding="utf-8")
+        for raw_url in re.findall(r"""(?:href|src)=["']([^"']+)["']""", html):
+            parsed = urlsplit(raw_url)
+            if parsed.scheme or raw_url.startswith(("#", "mailto:", "tel:", "javascript:")):
+                continue
+            relative = unquote(parsed.path)
+            if not relative:
+                continue
+            target = (html_path.parent / relative).resolve()
+            if target.is_dir():
+                target = target / "index.html"
+            if not target.exists():
+                fail(errors, f"Kırık yerel bağlantı: {html_path.relative_to(ROOT)} -> {raw_url}")
 
     if errors:
         print("\n".join(f"ERROR: {error}" for error in errors), file=sys.stderr)

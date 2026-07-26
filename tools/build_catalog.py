@@ -184,14 +184,30 @@ def variants_from_lines(lines: list[str], family_name: str) -> list[dict]:
     seen: set[str] = set()
 
     for line in lines:
-        for code in re.findall(r"\b\d{6}\b", line):
+        codes = re.findall(r"\b\d{6}\b", line)
+        codes.extend(re.findall(r"Ürün Kodu:\s*(\d{5})\b", line, flags=re.IGNORECASE))
+        for code in codes:
             if code in seen:
                 continue
             seen.add(code)
             variants.append({"id": f"model-{code}", "name": f"Model {code}", "code": code, "attributes": {}})
 
     if not variants:
-        for line in lines[:16]:
+        for line in lines:
+            coded = re.match(r"^([A-Z]{1,3}\d+[A-Z]?)\s+(.+)$", line)
+            if coded and 3 <= len(coded.group(2)) <= 120:
+                code, name = coded.groups()
+                if code not in seen:
+                    seen.add(code)
+                    variants.append(
+                        {
+                            "id": slugify(code),
+                            "name": clean(name),
+                            "code": code,
+                            "attributes": {},
+                        }
+                    )
+                continue
             if line.startswith(("-", "•", "*")) or len(line) > 125:
                 continue
             if " - " not in line or re.search(r"\b(Fiyat|Model Ürün|İçindekiler)\b", line, re.I):
@@ -203,7 +219,7 @@ def variants_from_lines(lines: list[str], family_name: str) -> list[dict]:
             if code and code not in seen:
                 seen.add(code)
                 variants.append({"id": code, "name": clean(line)[:150], "code": left[:64], "attributes": {}})
-            if len(variants) == 24:
+            if len(variants) == 300:
                 break
 
     if not variants:

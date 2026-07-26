@@ -204,6 +204,654 @@
           "name": "Blueberry & Lychee Base - Yaban Mersini ve Liçi Baz",
           "code": "Blueberry & Lychee Base",
           "attributes": {}
+        },
+        {
+          "id": "blue-curacao",
+          "name": "Blue Curacao - Turunç",
+          "code": "Blue Curacao",
+          "attributes": {}
+        },
+        {
+          "id": "blue-raspberry",
+          "name": "Blue Raspberry - Mavi Frambuaz",
+          "code": "Blue Raspberry",
+          "attributes": {}
+        },
+        {
+          "id": "bitter-aperitivo-base",
+          "name": "Bitter Aperitivo Base - Acı Portakal Baz",
+          "code": "Bitter Aperitivo Base",
+          "attributes": {}
+        },
+        {
+          "id": "biscuit",
+          "name": "Biscuit - Bisküvi",
+          "code": "Biscuit",
+          "attributes": {}
+        },
+        {
+          "id": "brown-sugar",
+          "name": "Brown Sugar - Esmer Şeker",
+          "code": "Brown Sugar",
+          "attributes": {}
+        },
+        {
+          "id": "bubble-gum",
+          "name": "Bubble Gum - Balonlu Sakız",
+          "code": "Bubble Gum",
+          "attributes": {}
+        },
+        {
+          "id": "butterscotch",
+          "name": "Butterscotch - Karamela",
+          "code": "Butterscotch",
+          "attributes": {}
+        },
+        {
+          "id": "butterfly-pea",
+          "name": "Butterfly pea - Mavi Kelebek Sarmaşığı",
+          "code": "Butterfly pea",
+          "attributes": {}
+        },
+        {
+          "id": "cactus-base",
+          "name": "Cactus Base - Kaktüs Baz",
+          "code": "Cactus Base",
+          "attributes": {}
+        },
+        {
+          "id": "cappuccino",
+          "name": "Cappuccino - Kapuçino",
+          "code": "Cappuccino",
+          "attributes": {}
+        },
+        {
+          "id": "caramel",
+          "name": "Caramel - Karamel",
+          "code": "Caramel",
+          "attributes": {}
+        },
+        {
+          "id": "cardamom",
+          "name": "Cardamom - Kakule",
+          "code": "Cardamom",
+          "attributes": {}
+        },
+        {
+          "id": "chai-tea",
+          "name": "Chai Tea - Chai Çay",
+          "code": "Chai Tea",
+          "attributes": {}
+        },
+        {
+          "id": "cherry-blossom",
+          "name": "Cherry Blossom - Kiraz Çiçeği",
+          "code": "Cherry Blossom",
+          "attributes": {}
+        },
+        {
+          "id": "chocolate",
+          "name": "Chocolate - Çikolata",
+          "code": "Chocolate",
+          "attributes": {}
+        },
+        {
+          "id": "cinnamon",
+          "name": "Cinnamon - Tarçın",
+          "code": "Cinnamon",
+          "attributes": {}
+        },
+        {
+          "id": "coconut-blanc",
+          "name": "Coconut (Blanc) - Hindistan Cevizi",
+          "code": "Coconut (Blanc)",
+          "attributes": {}
+        },
+        {
+          "id": "coconut-regular",
+          "name": "Coconut (Regular) - Hindistan Cevizi",
+          "code": "Coconut (Regular)",
+          "attributes": {}
+        },
+        {
+          "id": "coffee",
+          "name": "Coffee - Kahve",
+          "code": "Coffee",
+          "attributes": {}
+        },
+        {
+          "id": "coffee-concentrate",
+          "name": "Coffee Concentrate - Kahve Konsantresi",
+          "code": "Coffee Concentrate",
+          "attributes": {}
+        },
+        {
+          "id": "cool-lime-base-mint-lime",
+          "name": "Cool Lime Base (Mint & Lime) - Nane ve Misket Limonu",
+          "code": "Cool Lime Base (Mint & Lime)",
+          "attributes": {}
+        },
+        {
+          "id": "cranberry",
+          "name": "Cranberry - Kızılcık",
+          "code": "Cranberry",
+          "attributes": {}
+        },
+        {
+          "id": "creambrulee",
+          "name": "Creambrulee - Yanık Krema",
+          "code": "Creambrulee",
+          "attributes": {}
+        },
+        {
+          "id": "cucumber",
+          "name": "Cucumber - Salatalık",
+          "code": "Cucumber",
+          "attributes": {}
+        },
+        {
+          "id": "dragon-fruit",
+          "name": "Dragon Fruit - Ejder Meyvesi",
+          "code": "Dragon Fruit",
+          "attributes": {}
+        },
+        {
+          "id": "elderflower",
+          "name": "Elderflower - Mürver Çiçeği",
+          "code": "Elderflower",
+          "attributes": {}
+        },
+        {
+          "id": "energy-drink",
+          "name": "Energy Drink - Enerji İçeceği",
+          "code": "Energy Drink",
+          "attributes": {}
+        },
+        {
+          "id": "ginger",
+          "name": "Ginger - Zencefil",
+          "code": "Ginger",
+          "attributes": {}
+        },
+        {
+          "id": "gingerbread",
+          "name": "Gingerbread - Zencefilli Kurabiye",
+          "code": "Gingerbread",
+          "attributes": {}
+        },
+        {
+          "id": "green-apple",
+          "name": "Green Apple - Yeşil Elma",
+          "code": "Green Apple",
+          "attributes": {}
+        },
+        {
+          "id": "green-banana",
+          "name": "Green Banana - Yeşil Muz",
+          "code": "Green Banana",
+          "attributes": {}
+        },
+        {
+          "id": "grenadine",
+          "name": "Grenadine - Nar",
+          "code": "Grenadine",
+          "attributes": {}
+        },
+        {
+          "id": "grenadine-base",
+          "name": "Grenadine Base - Nar Baz",
+          "code": "Grenadine Base",
+          "attributes": {}
+        },
+        {
+          "id": "hazelnut",
+          "name": "Hazelnut - Fındık",
+          "code": "Hazelnut",
+          "attributes": {}
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus - Hibiskus",
+          "code": "Hibiscus",
+          "attributes": {}
+        },
+        {
+          "id": "hibiscus-wildberry",
+          "name": "Hibiscus Wildberry - Hibiskus ve Orman Meyvesi",
+          "code": "Hibiscus Wildberry",
+          "attributes": {}
+        },
+        {
+          "id": "irish",
+          "name": "Irish - İrlanda Viskisi",
+          "code": "Irish",
+          "attributes": {}
+        },
+        {
+          "id": "irish-cream",
+          "name": "Irish Cream - İrlanda Kreması",
+          "code": "Irish Cream",
+          "attributes": {}
+        },
+        {
+          "id": "kiwi",
+          "name": "Kiwi - Kivi",
+          "code": "Kiwi",
+          "attributes": {}
+        },
+        {
+          "id": "kiwi-fruited",
+          "name": "Kiwi Fruited - Kivi Meyveli",
+          "code": "Kiwi Fruited",
+          "attributes": {}
+        },
+        {
+          "id": "lavender",
+          "name": "Lavender - Lavanta",
+          "code": "Lavender",
+          "attributes": {}
+        },
+        {
+          "id": "lemon",
+          "name": "Lemon - Limon",
+          "code": "Lemon",
+          "attributes": {}
+        },
+        {
+          "id": "lemon-flavored-tea",
+          "name": "Lemon Flavored Tea - Limon Aromalı Çay",
+          "code": "Lemon Flavored Tea",
+          "attributes": {}
+        },
+        {
+          "id": "lemon-fruited",
+          "name": "Lemon Fruited - Limon Meyveli",
+          "code": "Lemon Fruited",
+          "attributes": {}
+        },
+        {
+          "id": "lemongrass",
+          "name": "Lemongrass - Limon Otu",
+          "code": "Lemongrass",
+          "attributes": {}
+        },
+        {
+          "id": "lime",
+          "name": "Lime - Misket Limon",
+          "code": "Lime",
+          "attributes": {}
+        },
+        {
+          "id": "lychee",
+          "name": "Lychee - Liçi",
+          "code": "Lychee",
+          "attributes": {}
+        },
+        {
+          "id": "matcha-green-tea",
+          "name": "Matcha Green Tea - Matcha Yeşil Çay",
+          "code": "Matcha Green Tea",
+          "attributes": {}
+        },
+        {
+          "id": "mandalina-tonic-base",
+          "name": "Mandalina & Tonic Base - Mandalina ve Tonik Baz",
+          "code": "Mandalina & Tonic Base",
+          "attributes": {}
+        },
+        {
+          "id": "mango",
+          "name": "Mango - Mango",
+          "code": "Mango",
+          "attributes": {}
+        },
+        {
+          "id": "mango-flavored-tea",
+          "name": "Mango Flavored Tea - Mango Aromalı Çay",
+          "code": "Mango Flavored Tea",
+          "attributes": {}
+        },
+        {
+          "id": "mandarin",
+          "name": "Mandarin - Mandalina",
+          "code": "Mandarin",
+          "attributes": {}
+        },
+        {
+          "id": "macadamia-hazelnut",
+          "name": "Macadamia Hazelnut - Makademya Fındığı",
+          "code": "Macadamia Hazelnut",
+          "attributes": {}
+        },
+        {
+          "id": "mastic",
+          "name": "Mastic - Damla Sakızı",
+          "code": "Mastic",
+          "attributes": {}
+        },
+        {
+          "id": "maple",
+          "name": "Maple - Akçaağaç",
+          "code": "Maple",
+          "attributes": {}
+        },
+        {
+          "id": "melon",
+          "name": "Melon - Kavun",
+          "code": "Melon",
+          "attributes": {}
+        },
+        {
+          "id": "mojito",
+          "name": "Mojito - Nane ve Limon",
+          "code": "Mojito",
+          "attributes": {}
+        },
+        {
+          "id": "orange-fruited",
+          "name": "Orange Fruited - Portakal Meyveli (%20)",
+          "code": "Orange Fruited",
+          "attributes": {}
+        },
+        {
+          "id": "orange-and-pineapple",
+          "name": "Orange and Pineapple - Portakal ve Ananas",
+          "code": "Orange and Pineapple",
+          "attributes": {}
+        },
+        {
+          "id": "orange-mango-base",
+          "name": "Orange Mango Base - Portakal ve Mango Baz",
+          "code": "Orange Mango Base",
+          "attributes": {}
+        },
+        {
+          "id": "orange-blossom",
+          "name": "Orange Blossom - Portakal Çiçeği",
+          "code": "Orange Blossom",
+          "attributes": {}
+        },
+        {
+          "id": "pecan-praline",
+          "name": "Pecan Praline - Pekan Cevizi",
+          "code": "Pecan Praline",
+          "attributes": {}
+        },
+        {
+          "id": "passion-fruit",
+          "name": "Passion Fruit - Çarkıfelek",
+          "code": "Passion Fruit",
+          "attributes": {}
+        },
+        {
+          "id": "pandan",
+          "name": "Pandan - Pandan",
+          "code": "Pandan",
+          "attributes": {}
+        },
+        {
+          "id": "peach",
+          "name": "Peach - Şeftali",
+          "code": "Peach",
+          "attributes": {}
+        },
+        {
+          "id": "peach-orange",
+          "name": "Peach (Orange) - Şeftali (Turuncu)",
+          "code": "Peach (Orange)",
+          "attributes": {}
+        },
+        {
+          "id": "peach-tea",
+          "name": "Peach Tea - Şeftali Çay",
+          "code": "Peach Tea",
+          "attributes": {}
+        },
+        {
+          "id": "pear",
+          "name": "Pear - Armut",
+          "code": "Pear",
+          "attributes": {}
+        },
+        {
+          "id": "peppermint",
+          "name": "Peppermint - Nane",
+          "code": "Peppermint",
+          "attributes": {}
+        },
+        {
+          "id": "pineapple",
+          "name": "Pineapple - Ananas",
+          "code": "Pineapple",
+          "attributes": {}
+        },
+        {
+          "id": "pink-grapefruit",
+          "name": "Pink Grapefruit - Pembe Greyfurt",
+          "code": "Pink Grapefruit",
+          "attributes": {}
+        },
+        {
+          "id": "pistachio",
+          "name": "Pistachio - Antep Fıstığı",
+          "code": "Pistachio",
+          "attributes": {}
+        },
+        {
+          "id": "pomegranate-flavored",
+          "name": "Pomegranate Flavored - Ekşi Nar Meyveli (%43)",
+          "code": "Pomegranate Flavored",
+          "attributes": {}
+        },
+        {
+          "id": "popcorn",
+          "name": "Popcorn - Patlamış Mısır",
+          "code": "Popcorn",
+          "attributes": {}
+        },
+        {
+          "id": "pumpkin-spice",
+          "name": "Pumpkin Spice - Baharatlı Bal Kabağı",
+          "code": "Pumpkin Spice",
+          "attributes": {}
+        },
+        {
+          "id": "raspberry",
+          "name": "Raspberry - Frambuaz",
+          "code": "Raspberry",
+          "attributes": {}
+        },
+        {
+          "id": "red-grapes",
+          "name": "Red Grapes - Kırmızı Üzüm",
+          "code": "Red Grapes",
+          "attributes": {}
+        },
+        {
+          "id": "rose",
+          "name": "Rose - Gül",
+          "code": "Rose",
+          "attributes": {}
+        },
+        {
+          "id": "roasted-almond",
+          "name": "Roasted Almond - Kavrulmuş Badem",
+          "code": "Roasted Almond",
+          "attributes": {}
+        },
+        {
+          "id": "roasted-hazelnut",
+          "name": "Roasted Hazelnut - Kavrulmuş Fındık",
+          "code": "Roasted Hazelnut",
+          "attributes": {}
+        },
+        {
+          "id": "saffron",
+          "name": "Saffron - Safran",
+          "code": "Saffron",
+          "attributes": {}
+        },
+        {
+          "id": "salted-caramel",
+          "name": "Salted Caramel - Tuzlu Karamel",
+          "code": "Salted Caramel",
+          "attributes": {}
+        },
+        {
+          "id": "salted-pistachio",
+          "name": "Salted Pistachio - Tuzlu Antep Fıstığı",
+          "code": "Salted Pistachio",
+          "attributes": {}
+        },
+        {
+          "id": "sour-cherry",
+          "name": "Sour Cherry - Vişne",
+          "code": "Sour Cherry",
+          "attributes": {}
+        },
+        {
+          "id": "sour-cherry-fruited",
+          "name": "Sour Cherry Fruited - Vişne Meyveli",
+          "code": "Sour Cherry Fruited",
+          "attributes": {}
+        },
+        {
+          "id": "strawberry",
+          "name": "Strawberry - Çilek",
+          "code": "Strawberry",
+          "attributes": {}
+        },
+        {
+          "id": "strawberry-base",
+          "name": "Strawberry Base - Çilek Baz",
+          "code": "Strawberry Base",
+          "attributes": {}
+        },
+        {
+          "id": "strawberry-fruited",
+          "name": "Strawberry Fruited - Çilek Meyveli",
+          "code": "Strawberry Fruited",
+          "attributes": {}
+        },
+        {
+          "id": "spearmint",
+          "name": "Spearmint - Bahçe Nanesi",
+          "code": "Spearmint",
+          "attributes": {}
+        },
+        {
+          "id": "sugar",
+          "name": "Sugar - Şeker",
+          "code": "Sugar",
+          "attributes": {}
+        },
+        {
+          "id": "sweet-sour",
+          "name": "Sweet & Sour - Tatlı & Ekşi Sos",
+          "code": "Sweet & Sour",
+          "attributes": {}
+        },
+        {
+          "id": "tarragon",
+          "name": "Tarragon - Tarhun",
+          "code": "Tarragon",
+          "attributes": {}
+        },
+        {
+          "id": "tamarind",
+          "name": "Tamarind - Demirhindi",
+          "code": "Tamarind",
+          "attributes": {}
+        },
+        {
+          "id": "tiramisu",
+          "name": "Tiramisu - Tiramisu",
+          "code": "Tiramisu",
+          "attributes": {}
+        },
+        {
+          "id": "toffee-nut",
+          "name": "Toffee Nut - Fındık Karamel",
+          "code": "Toffee Nut",
+          "attributes": {}
+        },
+        {
+          "id": "tonca-bean",
+          "name": "Tonca Bean - Tonca Fasülyesi",
+          "code": "Tonca Bean",
+          "attributes": {}
+        },
+        {
+          "id": "tonic",
+          "name": "Tonic - Tonik",
+          "code": "Tonic",
+          "attributes": {}
+        },
+        {
+          "id": "triple-sec",
+          "name": "Triple Sec. - Portakal",
+          "code": "Triple Sec.",
+          "attributes": {}
+        },
+        {
+          "id": "tropical-fruit",
+          "name": "Tropical Fruit - Tropikal Meyve",
+          "code": "Tropical Fruit",
+          "attributes": {}
+        },
+        {
+          "id": "ube",
+          "name": "Ube - Mor Patates",
+          "code": "Ube",
+          "attributes": {}
+        },
+        {
+          "id": "ume-plum",
+          "name": "Ume Plum - Ume Eriği",
+          "code": "Ume Plum",
+          "attributes": {}
+        },
+        {
+          "id": "vanilla",
+          "name": "Vanilla - Vanilya",
+          "code": "Vanilla",
+          "attributes": {}
+        },
+        {
+          "id": "violet",
+          "name": "Violet - Menekşe",
+          "code": "Violet",
+          "attributes": {}
+        },
+        {
+          "id": "watermelon",
+          "name": "Watermelon - Karpuz",
+          "code": "Watermelon",
+          "attributes": {}
+        },
+        {
+          "id": "white-chocolate",
+          "name": "White Chocolate - Beyaz Çikolata",
+          "code": "White Chocolate",
+          "attributes": {}
+        },
+        {
+          "id": "white-strawberry",
+          "name": "White Strawberry - Beyaz Çilek",
+          "code": "White Strawberry",
+          "attributes": {}
+        },
+        {
+          "id": "wildberry",
+          "name": "Wildberry - Orman Meyvesi",
+          "code": "Wildberry",
+          "attributes": {}
+        },
+        {
+          "id": "132-kinds-cesit",
+          "name": "132 Kinds Çeşit - 700ml",
+          "code": "132 Kinds Çeşit",
+          "attributes": {}
         }
       ],
       "source": {
@@ -342,6 +990,114 @@
           "name": "Peach - Şeftali",
           "code": "Peach",
           "attributes": {}
+        },
+        {
+          "id": "raspberry",
+          "name": "Raspberry - Frambuaz",
+          "code": "Raspberry",
+          "attributes": {}
+        },
+        {
+          "id": "strawberry",
+          "name": "Strawberry - Çilek",
+          "code": "Strawberry",
+          "attributes": {}
+        },
+        {
+          "id": "vanilla",
+          "name": "Vanilla - Vanilya",
+          "code": "Vanilla",
+          "attributes": {}
+        },
+        {
+          "id": "white-chocolate",
+          "name": "White Chocolate - Beyaz Çikolata",
+          "code": "White Chocolate",
+          "attributes": {}
+        },
+        {
+          "id": "red-pepper",
+          "name": "Red Pepper - Kırmızı Biber",
+          "code": "Red Pepper",
+          "attributes": {}
+        },
+        {
+          "id": "watermelon",
+          "name": "Watermelon - Karpuz",
+          "code": "Watermelon",
+          "attributes": {}
+        },
+        {
+          "id": "red-grape",
+          "name": "Red Grape - Kırmızı Üzüm",
+          "code": "Red Grape",
+          "attributes": {}
+        },
+        {
+          "id": "fig",
+          "name": "Fig - İncir",
+          "code": "Fig",
+          "attributes": {}
+        },
+        {
+          "id": "black-mulberry",
+          "name": "Black Mulberry - Karadut",
+          "code": "Black Mulberry",
+          "attributes": {}
+        },
+        {
+          "id": "date",
+          "name": "Date - Hurma",
+          "code": "Date",
+          "attributes": {}
+        },
+        {
+          "id": "blueberry",
+          "name": "Blueberry - Yaban Mersini",
+          "code": "Blueberry",
+          "attributes": {}
+        },
+        {
+          "id": "blackberry",
+          "name": "Blackberry - Böğürtlen",
+          "code": "Blackberry",
+          "attributes": {}
+        },
+        {
+          "id": "lychee",
+          "name": "Lychee - Liçi",
+          "code": "Lychee",
+          "attributes": {}
+        },
+        {
+          "id": "sweet-almond",
+          "name": "Sweet Almond - Tatlı Badem",
+          "code": "Sweet Almond",
+          "attributes": {}
+        },
+        {
+          "id": "mint",
+          "name": "Mint - Nane",
+          "code": "Mint",
+          "attributes": {}
+        },
+        {
+          "id": "aronia",
+          "name": "Aronia - Aronya",
+          "code": "Aronia",
+          "attributes": {}
+        },
+        {
+          "id": "banana",
+          "name": "Banana - Muz",
+          "code": "Banana",
+          "attributes": {}
+        },
+        {
+          "id": "31-kinds-cesit",
+          "name": "31 Kinds Çeşit - 700ml",
+          "code": "31 Kinds Çeşit",
+          "attributes": {}
         }
       ],
       "source": {
@@ -469,6 +1225,24 @@
           "name": "Bitter Aperitivo - Acı Portakal",
           "code": "Bitter Aperitivo",
           "attributes": {}
+        },
+        {
+          "id": "strawberry",
+          "name": "Strawberry - Çilek",
+          "code": "Strawberry",
+          "attributes": {}
+        },
+        {
+          "id": "grenadine",
+          "name": "Grenadine - Nar",
+          "code": "Grenadine",
+          "attributes": {}
+        },
+        {
+          "id": "14-kinds-cesit",
+          "name": "14 Kinds Çeşit - 700ml",
+          "code": "14 Kinds Çeşit",
+          "attributes": {}
         }
       ],
       "source": {
@@ -540,6 +1314,42 @@
           "name": "Mango Flavored Ice Tea Syrup - Mango Aromalı Soğuk Çay Şurubu",
           "code": "Mango Flavored Ice Tea Syrup",
           "attributes": {}
+        },
+        {
+          "id": "raspberry-flavored-ice-tea-syrup",
+          "name": "Raspberry Flavored Ice Tea Syrup - Ahududu Aromalı Soğuk Çay Şurubu",
+          "code": "Raspberry Flavored Ice Tea Syrup",
+          "attributes": {}
+        },
+        {
+          "id": "4-kinds-cesit",
+          "name": "4 Kinds Çeşit - 700ml",
+          "code": "4 Kinds Çeşit",
+          "attributes": {}
+        },
+        {
+          "id": "pomelo-flavored-silvery-syrup",
+          "name": "Pomelo Flavored Silvery Syrup - Pomelo Aromalı Simli Şurup",
+          "code": "Pomelo Flavored Silvery Syrup",
+          "attributes": {}
+        },
+        {
+          "id": "mangosteen-flavored-silvery-syrup",
+          "name": "Mangosteen Flavored Silvery Syrup - Mangostan Aromalı Simli Şurup",
+          "code": "Mangosteen Flavored Silvery Syrup",
+          "attributes": {}
+        },
+        {
+          "id": "golden-kiwi-flavored-silvery-syrup",
+          "name": "Golden Kiwi Flavored Silvery Syrup - Altın Kivi Aromalı Simli Şurup",
+          "code": "Golden Kiwi Flavored Silvery Syrup",
+          "attributes": {}
+        },
+        {
+          "id": "aronia-flavored-silvery-syrup",
+          "name": "Aronia Flavored Silvery Syrup - Aronya Aromalı Simli Şurup",
+          "code": "Aronia Flavored Silvery Syrup",
+          "attributes": {}
         }
       ],
       "source": {
@@ -604,9 +1414,9 @@
       ],
       "variants": [
         {
-          "id": "botanical-cordial-serisi",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "5-kinds-cesit",
+          "name": "5 Kinds Çeşit - 700ml",
+          "code": "5 Kinds Çeşit",
           "attributes": {}
         }
       ],
@@ -813,6 +1623,30 @@
           "name": "Black Biscuit - Siyah Bisküvili",
           "code": "Black Biscuit",
           "attributes": {}
+        },
+        {
+          "id": "caramelized-biscuit",
+          "name": "Caramelized Biscuit - Karamelize Bisküvili",
+          "code": "Caramelized Biscuit",
+          "attributes": {}
+        },
+        {
+          "id": "salted-caramel-flavored",
+          "name": "Salted Caramel Flavored - Tuzlu Karamel Aromalı",
+          "code": "Salted Caramel Flavored",
+          "attributes": {}
+        },
+        {
+          "id": "chocolate-flavored",
+          "name": "Chocolate Flavored - Çikolata Aromalı",
+          "code": "Chocolate Flavored",
+          "attributes": {}
+        },
+        {
+          "id": "11-kinds-cesit",
+          "name": "11 Kinds Çeşit - 2500 g",
+          "code": "11 Kinds Çeşit",
+          "attributes": {}
         }
       ],
       "source": {
@@ -869,9 +1703,9 @@
       ],
       "variants": [
         {
-          "id": "premium-soslar",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "5-kinds-cesit",
+          "name": "5 Kinds Çeşit - 2500 g",
+          "code": "5 Kinds Çeşit",
           "attributes": {}
         }
       ],
@@ -947,6 +1781,198 @@
           "name": "Taro Flavored - Taro Aromalı",
           "code": "Taro Flavored",
           "attributes": {}
+        },
+        {
+          "id": "blue-velvet",
+          "name": "Blue Velvet - Mavi Pan Kek Aromalı",
+          "code": "Blue Velvet",
+          "attributes": {}
+        },
+        {
+          "id": "caramelized-biscuit",
+          "name": "Caramelized Biscuit - Karamelize Bisküvili",
+          "code": "Caramelized Biscuit",
+          "attributes": {}
+        },
+        {
+          "id": "hazelnut-oil-base",
+          "name": "Hazelnut (Oil Base) - Fındıklı (Yağ Bazlı)",
+          "code": "Hazelnut (Oil Base)",
+          "attributes": {}
+        },
+        {
+          "id": "pink-cotton-candy-flavored",
+          "name": "Pink Cotton Candy Flavored - Pembe Pamuk Şekeri Aromalı",
+          "code": "Pink Cotton Candy Flavored",
+          "attributes": {}
+        },
+        {
+          "id": "pistachio",
+          "name": "Pistachio - Antep Fıstıklı",
+          "code": "Pistachio",
+          "attributes": {}
+        },
+        {
+          "id": "rose",
+          "name": "Rose - Gül Aromalı",
+          "code": "Rose",
+          "attributes": {}
+        },
+        {
+          "id": "saffron-flavored",
+          "name": "Saffron Flavored - Safran Aromalı",
+          "code": "Saffron Flavored",
+          "attributes": {}
+        },
+        {
+          "id": "toffee-caramel",
+          "name": "Toffee Caramel - Toffee Karamelli",
+          "code": "Toffee Caramel",
+          "attributes": {}
+        },
+        {
+          "id": "white-chocolate-flavored",
+          "name": "White Chocolate Flavored - Beyaz Çikolata Aromalı",
+          "code": "White Chocolate Flavored",
+          "attributes": {}
+        },
+        {
+          "id": "white-hazelnut",
+          "name": "White Hazelnut - Beyaz Fındıklı",
+          "code": "White Hazelnut",
+          "attributes": {}
+        },
+        {
+          "id": "banana-flavored",
+          "name": "Banana Flavored - Muz Aromalı",
+          "code": "Banana Flavored",
+          "attributes": {}
+        },
+        {
+          "id": "blue-curacao-flavored",
+          "name": "Blue Curacao Flavored - Turunç Aromalı",
+          "code": "Blue Curacao Flavored",
+          "attributes": {}
+        },
+        {
+          "id": "caramel-flavored",
+          "name": "Caramel Flavored - Karamel Aromalı",
+          "code": "Caramel Flavored",
+          "attributes": {}
+        },
+        {
+          "id": "chocolate-flavored",
+          "name": "Chocolate Flavored - Çikolata Aromalı",
+          "code": "Chocolate Flavored",
+          "attributes": {}
+        },
+        {
+          "id": "kiwi-flavored",
+          "name": "Kiwi Flavored - Kivi Aromalı",
+          "code": "Kiwi Flavored",
+          "attributes": {}
+        },
+        {
+          "id": "maple",
+          "name": "Maple - Akçaağaç Aromalı",
+          "code": "Maple",
+          "attributes": {}
+        },
+        {
+          "id": "strawberry-flavored",
+          "name": "Strawberry Flavored - Çilek Aromalı",
+          "code": "Strawberry Flavored",
+          "attributes": {}
+        },
+        {
+          "id": "vanilla-flavored",
+          "name": "Vanilla Flavored - Vanilya Aromalı",
+          "code": "Vanilla Flavored",
+          "attributes": {}
+        },
+        {
+          "id": "cocoa-cream-sauce-dark",
+          "name": "Cocoa Cream Sauce (Dark) - Kakaolu Krema Sos (Bitter)",
+          "code": "Cocoa Cream Sauce (Dark)",
+          "attributes": {}
+        },
+        {
+          "id": "hazelnut-cream-sauce",
+          "name": "Hazelnut Cream Sauce - Fındıklı Krema Sos",
+          "code": "Hazelnut Cream Sauce",
+          "attributes": {}
+        },
+        {
+          "id": "milky-cacao-cream-sauce",
+          "name": "Milky Cacao Cream Sauce - Sütlü Kakaolu Krema Sos",
+          "code": "Milky Cacao Cream Sauce",
+          "attributes": {}
+        },
+        {
+          "id": "pistachio-cream-sauce",
+          "name": "Pistachio Cream Sauce - Antep Fıstıklı Krema Sos",
+          "code": "Pistachio Cream Sauce",
+          "attributes": {}
+        },
+        {
+          "id": "white-cream-sauce",
+          "name": "White Cream Sauce - Beyaz Krema Sos",
+          "code": "White Cream Sauce",
+          "attributes": {}
+        },
+        {
+          "id": "banana-cream-sauce",
+          "name": "Banana Cream Sauce - Muz Krema Sos",
+          "code": "Banana Cream Sauce",
+          "attributes": {}
+        },
+        {
+          "id": "caramel-flavored-cream-sauce",
+          "name": "Caramel Flavored Cream Sauce - Karamel Aromalı Krema Sos",
+          "code": "Caramel Flavored Cream Sauce",
+          "attributes": {}
+        },
+        {
+          "id": "mango-cream-sauce",
+          "name": "Mango Cream Sauce - Mango Krema Sos",
+          "code": "Mango Cream Sauce",
+          "attributes": {}
+        },
+        {
+          "id": "raspberry-cream-sauce",
+          "name": "Raspberry Cream Sauce - Frambuaz Krema Sos",
+          "code": "Raspberry Cream Sauce",
+          "attributes": {}
+        },
+        {
+          "id": "strawberry-cream-sauce",
+          "name": "Strawberry Cream Sauce - Çilek Krema Sos",
+          "code": "Strawberry Cream Sauce",
+          "attributes": {}
+        },
+        {
+          "id": "walnut-cream-sauce",
+          "name": "Walnut Cream Sauce - Cevizli Krema Sos",
+          "code": "Walnut Cream Sauce",
+          "attributes": {}
+        },
+        {
+          "id": "8-kinds-cesit",
+          "name": "8 Kinds Çeşit - 750 g",
+          "code": "8 Kinds Çeşit",
+          "attributes": {}
+        },
+        {
+          "id": "12-kinds-cesit",
+          "name": "12 Kinds Çeşit - 940 g",
+          "code": "12 Kinds Çeşit",
+          "attributes": {}
+        },
+        {
+          "id": "14-kinds-cesit",
+          "name": "14 Kinds Çeşit - 940 g - 350 g",
+          "code": "14 Kinds Çeşit",
+          "attributes": {}
         }
       ],
       "source": {
@@ -1018,6 +2044,138 @@
           "id": "banana",
           "name": "Banana - Muz",
           "code": "Banana",
+          "attributes": {}
+        },
+        {
+          "id": "blackberry",
+          "name": "Blackberry - Böğürtlen",
+          "code": "Blackberry",
+          "attributes": {}
+        },
+        {
+          "id": "black-mulberry",
+          "name": "Black Mulberry - Karadut",
+          "code": "Black Mulberry",
+          "attributes": {}
+        },
+        {
+          "id": "blueberry",
+          "name": "Blueberry - Yaban Mersini",
+          "code": "Blueberry",
+          "attributes": {}
+        },
+        {
+          "id": "coconut",
+          "name": "Coconut - Hindistan Cevizi",
+          "code": "Coconut",
+          "attributes": {}
+        },
+        {
+          "id": "green-apple",
+          "name": "Green Apple - Yeşil Elma",
+          "code": "Green Apple",
+          "attributes": {}
+        },
+        {
+          "id": "kiwi",
+          "name": "Kiwi - Kivi",
+          "code": "Kiwi",
+          "attributes": {}
+        },
+        {
+          "id": "lemon",
+          "name": "Lemon - Limon",
+          "code": "Lemon",
+          "attributes": {}
+        },
+        {
+          "id": "mandarin",
+          "name": "Mandarin - Mandalina",
+          "code": "Mandarin",
+          "attributes": {}
+        },
+        {
+          "id": "mango",
+          "name": "Mango - Mango",
+          "code": "Mango",
+          "attributes": {}
+        },
+        {
+          "id": "melon",
+          "name": "Melon - Kavun",
+          "code": "Melon",
+          "attributes": {}
+        },
+        {
+          "id": "passion-fruit",
+          "name": "Passion Fruit - Çarkıfelek",
+          "code": "Passion Fruit",
+          "attributes": {}
+        },
+        {
+          "id": "peach",
+          "name": "Peach - Şeftali",
+          "code": "Peach",
+          "attributes": {}
+        },
+        {
+          "id": "pineapple",
+          "name": "Pineapple - Ananas",
+          "code": "Pineapple",
+          "attributes": {}
+        },
+        {
+          "id": "pomegranate",
+          "name": "Pomegranate - Nar",
+          "code": "Pomegranate",
+          "attributes": {}
+        },
+        {
+          "id": "pumpkin",
+          "name": "Pumpkin - Bal Kabağı",
+          "code": "Pumpkin",
+          "attributes": {}
+        },
+        {
+          "id": "raspberry",
+          "name": "Raspberry - Frambuaz",
+          "code": "Raspberry",
+          "attributes": {}
+        },
+        {
+          "id": "strawberry",
+          "name": "Strawberry - Çilek",
+          "code": "Strawberry",
+          "attributes": {}
+        },
+        {
+          "id": "watermelon",
+          "name": "Watermelon - Karpuz",
+          "code": "Watermelon",
+          "attributes": {}
+        },
+        {
+          "id": "wildberries",
+          "name": "Wildberries - Orman Meyvesi",
+          "code": "Wildberries",
+          "attributes": {}
+        },
+        {
+          "id": "dragon-fruit",
+          "name": "Dragon Fruit - Ejder Meyvesi",
+          "code": "Dragon Fruit",
+          "attributes": {}
+        },
+        {
+          "id": "guava",
+          "name": "Guava - Guava",
+          "code": "Guava",
+          "attributes": {}
+        },
+        {
+          "id": "24-kinds-cesit",
+          "name": "24 Kinds Çeşit - 1000 g",
+          "code": "24 Kinds Çeşit",
           "attributes": {}
         }
       ],
@@ -1155,6 +2313,84 @@
           "name": "Orange - Portakallı",
           "code": "Orange",
           "attributes": {}
+        },
+        {
+          "id": "peach",
+          "name": "Peach - Şeftalili",
+          "code": "Peach",
+          "attributes": {}
+        },
+        {
+          "id": "pistachio",
+          "name": "Pistachio - Antep Fıstıklı",
+          "code": "Pistachio",
+          "attributes": {}
+        },
+        {
+          "id": "raspberry",
+          "name": "Raspberry - Frambuazlı",
+          "code": "Raspberry",
+          "attributes": {}
+        },
+        {
+          "id": "strawberry",
+          "name": "Strawberry - Çilekli",
+          "code": "Strawberry",
+          "attributes": {}
+        },
+        {
+          "id": "sour-cherry",
+          "name": "Sour Cherry - Vişneli",
+          "code": "Sour Cherry",
+          "attributes": {}
+        },
+        {
+          "id": "walnut",
+          "name": "Walnut - Cevizli",
+          "code": "Walnut",
+          "attributes": {}
+        },
+        {
+          "id": "watermelon",
+          "name": "Watermelon - Karpuzlu",
+          "code": "Watermelon",
+          "attributes": {}
+        },
+        {
+          "id": "white-chocolate",
+          "name": "White Chocolate - Beyaz Çikolatalı",
+          "code": "White Chocolate",
+          "attributes": {}
+        },
+        {
+          "id": "wildberries",
+          "name": "Wildberries - Orman Meyveli",
+          "code": "Wildberries",
+          "attributes": {}
+        },
+        {
+          "id": "caramel",
+          "name": "Caramel - Karamelli",
+          "code": "Caramel",
+          "attributes": {}
+        },
+        {
+          "id": "hazelnut",
+          "name": "Hazelnut - Fındıklı",
+          "code": "Hazelnut",
+          "attributes": {}
+        },
+        {
+          "id": "24-kinds-cesit",
+          "name": "24 Kinds Çeşit - 1000 g",
+          "code": "24 Kinds Çeşit",
+          "attributes": {}
+        },
+        {
+          "id": "10-kinds-cesit",
+          "name": "10 Kinds Çeşit - 350 g",
+          "code": "10 Kinds Çeşit",
+          "attributes": {}
         }
       ],
       "source": {
@@ -1281,6 +2517,120 @@
           "name": "Strawberry - Çilek %20",
           "code": "Strawberry",
           "attributes": {}
+        },
+        {
+          "id": "bergamut",
+          "name": "Bergamut - Bergamot",
+          "code": "Bergamut",
+          "attributes": {}
+        },
+        {
+          "id": "chai-concentre",
+          "name": "Chai Concentre - Chai Konsantre",
+          "code": "Chai Concentre",
+          "attributes": {}
+        },
+        {
+          "id": "mango",
+          "name": "Mango - Mango",
+          "code": "Mango",
+          "attributes": {}
+        },
+        {
+          "id": "peach",
+          "name": "Peach - Şeftali",
+          "code": "Peach",
+          "attributes": {}
+        },
+        {
+          "id": "caramel",
+          "name": "Caramel - Karamel",
+          "code": "Caramel",
+          "attributes": {}
+        },
+        {
+          "id": "chocolate",
+          "name": "Chocolate - Çikolata",
+          "code": "Chocolate",
+          "attributes": {}
+        },
+        {
+          "id": "hazelnut",
+          "name": "Hazelnut - Fındık",
+          "code": "Hazelnut",
+          "attributes": {}
+        },
+        {
+          "id": "tiramisu",
+          "name": "Tiramisu - Tiramisu",
+          "code": "Tiramisu",
+          "attributes": {}
+        },
+        {
+          "id": "vanilla",
+          "name": "Vanilla - Vanilya",
+          "code": "Vanilla",
+          "attributes": {}
+        },
+        {
+          "id": "white-chocolate",
+          "name": "White Chocolate - Beyaz Çikolata",
+          "code": "White Chocolate",
+          "attributes": {}
+        },
+        {
+          "id": "blue-hawaii",
+          "name": "Blue Hawaii - Hindistan Cevizi",
+          "code": "Blue Hawaii",
+          "attributes": {}
+        },
+        {
+          "id": "cosmopolitan",
+          "name": "Cosmopolitan - Nar ve Portakal",
+          "code": "Cosmopolitan",
+          "attributes": {}
+        },
+        {
+          "id": "margarita",
+          "name": "Margarita - Misket Limon",
+          "code": "Margarita",
+          "attributes": {}
+        },
+        {
+          "id": "pina-colada",
+          "name": "Pina Colada - Hindistan Cevizi ve Ananas",
+          "code": "Pina Colada",
+          "attributes": {}
+        },
+        {
+          "id": "sea-garden",
+          "name": "Sea Garden - Mango",
+          "code": "Sea Garden",
+          "attributes": {}
+        },
+        {
+          "id": "x-on-the-beach",
+          "name": "X On The Beach - Portakal, Şeftali ve Nar",
+          "code": "X On The Beach",
+          "attributes": {}
+        },
+        {
+          "id": "6-kinds-cesit",
+          "name": "6 Kinds Çeşit - 700 ml",
+          "code": "6 Kinds Çeşit",
+          "attributes": {}
+        },
+        {
+          "id": "5-kinds-cesit",
+          "name": "5 Kinds Çeşit - 700 ml",
+          "code": "5 Kinds Çeşit",
+          "attributes": {}
+        },
+        {
+          "id": "1-2-kinds-cesit",
+          "name": "1 2 Kinds Çeşit - 750 ml",
+          "code": "1 2 Kinds Çeşit",
+          "attributes": {}
         }
       ],
       "source": {
@@ -1381,6 +2731,132 @@
           "id": "chocolate",
           "name": "Chocolate - Çikolata",
           "code": "Chocolate",
+          "attributes": {}
+        },
+        {
+          "id": "black-biscuit",
+          "name": "Black Biscuit - Siyah Bisküvi",
+          "code": "Black Biscuit",
+          "attributes": {}
+        },
+        {
+          "id": "kiwi",
+          "name": "Kiwi - Kivi",
+          "code": "Kiwi",
+          "attributes": {}
+        },
+        {
+          "id": "mango",
+          "name": "Mango - Mango",
+          "code": "Mango",
+          "attributes": {}
+        },
+        {
+          "id": "melon",
+          "name": "Melon - Kavun",
+          "code": "Melon",
+          "attributes": {}
+        },
+        {
+          "id": "peach",
+          "name": "Peach - Şeftali",
+          "code": "Peach",
+          "attributes": {}
+        },
+        {
+          "id": "raspberry",
+          "name": "Raspberry - Frambuaz",
+          "code": "Raspberry",
+          "attributes": {}
+        },
+        {
+          "id": "strawberry",
+          "name": "Strawberry - Çilek",
+          "code": "Strawberry",
+          "attributes": {}
+        },
+        {
+          "id": "tiramisu",
+          "name": "Tiramisu - Tiramisu",
+          "code": "Tiramisu",
+          "attributes": {}
+        },
+        {
+          "id": "vanilla",
+          "name": "Vanilla - Vanilya",
+          "code": "Vanilla",
+          "attributes": {}
+        },
+        {
+          "id": "yoghurt",
+          "name": "Yoghurt - Yoğurt",
+          "code": "Yoghurt",
+          "attributes": {}
+        },
+        {
+          "id": "orange",
+          "name": "Orange - Portakal",
+          "code": "Orange",
+          "attributes": {}
+        },
+        {
+          "id": "watermelon",
+          "name": "Watermelon - Karpuz",
+          "code": "Watermelon",
+          "attributes": {}
+        },
+        {
+          "id": "matcha",
+          "name": "Matcha - Matcha",
+          "code": "Matcha",
+          "attributes": {}
+        },
+        {
+          "id": "hibiscus",
+          "name": "Hibiscus - Hibiskus",
+          "code": "Hibiscus",
+          "attributes": {}
+        },
+        {
+          "id": "ube",
+          "name": "Ube - Mor Patates",
+          "code": "Ube",
+          "attributes": {}
+        },
+        {
+          "id": "1-kindcesit",
+          "name": "1 KindÇeşit - 1000 g",
+          "code": "1 KindÇeşit",
+          "attributes": {}
+        },
+        {
+          "id": "2-kind-cesit",
+          "name": "2 Kind Çeşit - 1000 g",
+          "code": "2 Kind Çeşit",
+          "attributes": {}
+        },
+        {
+          "id": "bitter-chocolate",
+          "name": "Bitter Chocolate - Bitter Çikolata",
+          "code": "Bitter Chocolate",
+          "attributes": {}
+        },
+        {
+          "id": "white-chocolate",
+          "name": "White Chocolate - Beyaz Çikolata",
+          "code": "White Chocolate",
+          "attributes": {}
+        },
+        {
+          "id": "17-kinds-cesit",
+          "name": "17 Kinds Çeşit - 1000 g",
+          "code": "17 Kinds Çeşit",
+          "attributes": {}
+        },
+        {
+          "id": "4-kinds-cesit",
+          "name": "4 Kinds Çeşit - 1000 g",
+          "code": "4 Kinds Çeşit",
           "attributes": {}
         }
       ],
@@ -1515,6 +2991,120 @@
           "name": "Caramel (Blue Angel) - Karamel",
           "code": "Caramel (Blue Angel)",
           "attributes": {}
+        },
+        {
+          "id": "caramel-pink-angel",
+          "name": "Caramel (Pink Angel) - Karamel",
+          "code": "Caramel (Pink Angel)",
+          "attributes": {}
+        },
+        {
+          "id": "coco",
+          "name": "Coco - Hindistan Cevizi",
+          "code": "Coco",
+          "attributes": {}
+        },
+        {
+          "id": "kiwi",
+          "name": "Kiwi - Kivi",
+          "code": "Kiwi",
+          "attributes": {}
+        },
+        {
+          "id": "lemon",
+          "name": "Lemon - Limon",
+          "code": "Lemon",
+          "attributes": {}
+        },
+        {
+          "id": "mandarin",
+          "name": "Mandarin - Mandalina",
+          "code": "Mandarin",
+          "attributes": {}
+        },
+        {
+          "id": "mango",
+          "name": "Mango - Mango",
+          "code": "Mango",
+          "attributes": {}
+        },
+        {
+          "id": "mastic",
+          "name": "Mastic - Damla Sakızı",
+          "code": "Mastic",
+          "attributes": {}
+        },
+        {
+          "id": "melon",
+          "name": "Melon - Kavun",
+          "code": "Melon",
+          "attributes": {}
+        },
+        {
+          "id": "orange",
+          "name": "Orange - Portakal",
+          "code": "Orange",
+          "attributes": {}
+        },
+        {
+          "id": "pineapple",
+          "name": "Pineapple - Ananas",
+          "code": "Pineapple",
+          "attributes": {}
+        },
+        {
+          "id": "grenadine",
+          "name": "Grenadine - Nar",
+          "code": "Grenadine",
+          "attributes": {}
+        },
+        {
+          "id": "sour-cherry",
+          "name": "Sour Cherry - Vişne",
+          "code": "Sour Cherry",
+          "attributes": {}
+        },
+        {
+          "id": "strawberry",
+          "name": "Strawberry - Çilek",
+          "code": "Strawberry",
+          "attributes": {}
+        },
+        {
+          "id": "watermelon",
+          "name": "Watermelon - Karpuz",
+          "code": "Watermelon",
+          "attributes": {}
+        },
+        {
+          "id": "wildberries",
+          "name": "Wildberries - Orman Meyve",
+          "code": "Wildberries",
+          "attributes": {}
+        },
+        {
+          "id": "1-kindcesit",
+          "name": "1 KindÇeşit - 1000 g",
+          "code": "1 KindÇeşit",
+          "attributes": {}
+        },
+        {
+          "id": "26-maple",
+          "name": "26 Maple - Akçaağaç",
+          "code": "26 Maple",
+          "attributes": {}
+        },
+        {
+          "id": "26-kinds-cesit",
+          "name": "26 Kinds Çeşit - 6000 g",
+          "code": "26 Kinds Çeşit",
+          "attributes": {}
+        },
+        {
+          "id": "5-kinds-cesit",
+          "name": "5 Kinds Çeşit - 900 g",
+          "code": "5 Kinds Çeşit",
+          "attributes": {}
         }
       ],
       "source": {
@@ -1624,6 +3214,12 @@
           "name": "Mangosteen - Mangostan",
           "code": "Mangosteen",
           "attributes": {}
+        },
+        {
+          "id": "11-kinds-cesit",
+          "name": "11 Kinds Çeşit - 250 ml",
+          "code": "11 Kinds Çeşit",
+          "attributes": {}
         }
       ],
       "source": {
@@ -1707,6 +3303,12 @@
           "id": "peanut-butter-spread",
           "name": "Peanut Butter Spread - Yer Fıstıklı Sürülebilir Krema",
           "code": "Peanut Butter Spread",
+          "attributes": {}
+        },
+        {
+          "id": "caramelized-biscuit-spread",
+          "name": "Caramelized Biscuit Spread - Karamelize Bisküvili",
+          "code": "Caramelized Biscuit Spread",
           "attributes": {}
         }
       ],
@@ -1861,9 +3463,27 @@
       ],
       "variants": [
         {
-          "id": "horeca-cekirdek-kahveler",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "model-14003",
+          "name": "Model 14003",
+          "code": "14003",
+          "attributes": {}
+        },
+        {
+          "id": "model-14088",
+          "name": "Model 14088",
+          "code": "14088",
+          "attributes": {}
+        },
+        {
+          "id": "model-14815",
+          "name": "Model 14815",
+          "code": "14815",
+          "attributes": {}
+        },
+        {
+          "id": "model-14841",
+          "name": "Model 14841",
+          "code": "14841",
           "attributes": {}
         }
       ],
@@ -1923,9 +3543,15 @@
       ],
       "variants": [
         {
-          "id": "horeca-filtre-kahveler",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "model-10180",
+          "name": "Model 10180",
+          "code": "10180",
+          "attributes": {}
+        },
+        {
+          "id": "model-10023",
+          "name": "Model 10023",
+          "code": "10023",
           "attributes": {}
         }
       ],
@@ -1984,9 +3610,21 @@
       ],
       "variants": [
         {
-          "id": "nespresso-uyumlu-kapsuller",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "model-14492",
+          "name": "Model 14492",
+          "code": "14492",
+          "attributes": {}
+        },
+        {
+          "id": "model-14494",
+          "name": "Model 14494",
+          "code": "14494",
+          "attributes": {}
+        },
+        {
+          "id": "model-14493",
+          "name": "Model 14493",
+          "code": "14493",
           "attributes": {}
         }
       ],
@@ -2045,9 +3683,15 @@
       ],
       "variants": [
         {
-          "id": "blue-uyumlu-kapsuller",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "model-14198",
+          "name": "Model 14198",
+          "code": "14198",
+          "attributes": {}
+        },
+        {
+          "id": "model-14199",
+          "name": "Model 14199",
+          "code": "14199",
           "attributes": {}
         }
       ],
@@ -2106,9 +3750,15 @@
       ],
       "variants": [
         {
-          "id": "retail-cekirdek-kahveler",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "model-14096",
+          "name": "Model 14096",
+          "code": "14096",
+          "attributes": {}
+        },
+        {
+          "id": "model-14099",
+          "name": "Model 14099",
+          "code": "14099",
           "attributes": {}
         }
       ],
@@ -2168,9 +3818,21 @@
       ],
       "variants": [
         {
-          "id": "retail-filtre-kahveler",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "model-14046",
+          "name": "Model 14046",
+          "code": "14046",
+          "attributes": {}
+        },
+        {
+          "id": "model-14047",
+          "name": "Model 14047",
+          "code": "14047",
+          "attributes": {}
+        },
+        {
+          "id": "model-14048",
+          "name": "Model 14048",
+          "code": "14048",
           "attributes": {}
         }
       ],
@@ -2628,9 +4290,273 @@
       ],
       "variants": [
         {
-          "id": "suruplar-1-l",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "p27",
+          "name": "PEAR (Armut)",
+          "code": "P27",
+          "attributes": {}
+        },
+        {
+          "id": "p29",
+          "name": "BLACK CURRANT (Frenk Üzümü)",
+          "code": "P29",
+          "attributes": {}
+        },
+        {
+          "id": "p30",
+          "name": "ALMOND MİLK (Badem Sütü)",
+          "code": "P30",
+          "attributes": {}
+        },
+        {
+          "id": "p31",
+          "name": "ORZATA",
+          "code": "P31",
+          "attributes": {}
+        },
+        {
+          "id": "p32",
+          "name": "MINT (Nane)",
+          "code": "P32",
+          "attributes": {}
+        },
+        {
+          "id": "p33",
+          "name": "LIME",
+          "code": "P33",
+          "attributes": {}
+        },
+        {
+          "id": "p34",
+          "name": "STRAWBERRY (Çilek)",
+          "code": "P34",
+          "attributes": {}
+        },
+        {
+          "id": "p36",
+          "name": "AMARENA (Kiraz)",
+          "code": "P36",
+          "attributes": {}
+        },
+        {
+          "id": "p37",
+          "name": "GRENADINE (Nar)",
+          "code": "P37",
+          "attributes": {}
+        },
+        {
+          "id": "p38",
+          "name": "RASPERRY (Ahududu)",
+          "code": "P38",
+          "attributes": {}
+        },
+        {
+          "id": "p40",
+          "name": "PEACH (Şeftali)",
+          "code": "P40",
+          "attributes": {}
+        },
+        {
+          "id": "p41",
+          "name": "MELON (Kavun)",
+          "code": "P41",
+          "attributes": {}
+        },
+        {
+          "id": "p42",
+          "name": "ROSE (Gül)",
+          "code": "P42",
+          "attributes": {}
+        },
+        {
+          "id": "p43",
+          "name": "LYCHEES (Liçi)",
+          "code": "P43",
+          "attributes": {}
+        },
+        {
+          "id": "p45",
+          "name": "BANANA (Muz)",
+          "code": "P45",
+          "attributes": {}
+        },
+        {
+          "id": "p46",
+          "name": "BLUE CURACAO (Portakal Kabuhu)",
+          "code": "P46",
+          "attributes": {}
+        },
+        {
+          "id": "p47",
+          "name": "COCONUT (Hindistan Cevizi)",
+          "code": "P47",
+          "attributes": {}
+        },
+        {
+          "id": "p49",
+          "name": "CUCUMBER (Salatalık)",
+          "code": "P49",
+          "attributes": {}
+        },
+        {
+          "id": "p50",
+          "name": "PAPAYA",
+          "code": "P50",
+          "attributes": {}
+        },
+        {
+          "id": "p52",
+          "name": "MANDARIN (Mandalina)",
+          "code": "P52",
+          "attributes": {}
+        },
+        {
+          "id": "p53",
+          "name": "BLUEBERRY (Yaban Mersini)",
+          "code": "P53",
+          "attributes": {}
+        },
+        {
+          "id": "p56",
+          "name": "EASY SPRİTZ",
+          "code": "P56",
+          "attributes": {}
+        },
+        {
+          "id": "p58",
+          "name": "GREEN APPLE (Yeşil Elma)",
+          "code": "P58",
+          "attributes": {}
+        },
+        {
+          "id": "p59",
+          "name": "AGAVE",
+          "code": "P59",
+          "attributes": {}
+        },
+        {
+          "id": "p60",
+          "name": "CRANBERRY(Kızılcık)",
+          "code": "P60",
+          "attributes": {}
+        },
+        {
+          "id": "p61",
+          "name": "GINGER (Zencefil)",
+          "code": "P61",
+          "attributes": {}
+        },
+        {
+          "id": "p62",
+          "name": "MANGO",
+          "code": "P62",
+          "attributes": {}
+        },
+        {
+          "id": "p63",
+          "name": "WATER MELON (Karpuz)",
+          "code": "P63",
+          "attributes": {}
+        },
+        {
+          "id": "p64",
+          "name": "PASSİON FRUIT (Çarkıfelek)",
+          "code": "P64",
+          "attributes": {}
+        },
+        {
+          "id": "p67",
+          "name": "MOJITO MINT",
+          "code": "P67",
+          "attributes": {}
+        },
+        {
+          "id": "p68",
+          "name": "ELDER FLOWER (Mürver Çiçehi)",
+          "code": "P68",
+          "attributes": {}
+        },
+        {
+          "id": "p69",
+          "name": "TOBACCO (Tütün)",
+          "code": "P69",
+          "attributes": {}
+        },
+        {
+          "id": "p51",
+          "name": "CNE SUGAR (Esmer Şeker)",
+          "code": "P51",
+          "attributes": {}
+        },
+        {
+          "id": "p70",
+          "name": "VANILLA (Vanilya)",
+          "code": "P70",
+          "attributes": {}
+        },
+        {
+          "id": "p72",
+          "name": "HAZELNUT (Fındık)",
+          "code": "P72",
+          "attributes": {}
+        },
+        {
+          "id": "p74",
+          "name": "AMARETTO (Acıbadem)",
+          "code": "P74",
+          "attributes": {}
+        },
+        {
+          "id": "p75",
+          "name": "SALTED CARAMEL (Tuzlu Karamel)",
+          "code": "P75",
+          "attributes": {}
+        },
+        {
+          "id": "p76",
+          "name": "CARAMEL (Karamel)",
+          "code": "P76",
+          "attributes": {}
+        },
+        {
+          "id": "p78",
+          "name": "CHOCOLATE (Çikolata)",
+          "code": "P78",
+          "attributes": {}
+        },
+        {
+          "id": "p80",
+          "name": "IRISH CREAM",
+          "code": "P80",
+          "attributes": {}
+        },
+        {
+          "id": "p82",
+          "name": "CINNAMON (Tarçın)",
+          "code": "P82",
+          "attributes": {}
+        },
+        {
+          "id": "p84",
+          "name": "WHITE CHOCOLATE (Beyaz Çikolata)",
+          "code": "P84",
+          "attributes": {}
+        },
+        {
+          "id": "p87",
+          "name": "PUMPKİN SPICE (Bal Kabahı)",
+          "code": "P87",
+          "attributes": {}
+        },
+        {
+          "id": "p88",
+          "name": "LAVENDER (Lavanta)",
+          "code": "P88",
+          "attributes": {}
+        },
+        {
+          "id": "p89",
+          "name": "CHAI TEA",
+          "code": "P89",
           "attributes": {}
         }
       ],
@@ -2689,9 +4615,87 @@
       ],
       "variants": [
         {
-          "id": "soslar-1-kg",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "l87",
+          "name": "RASPBERRY (Ahududu)",
+          "code": "L87",
+          "attributes": {}
+        },
+        {
+          "id": "l91",
+          "name": "HAZELNUT (Fındık)",
+          "code": "L91",
+          "attributes": {}
+        },
+        {
+          "id": "l98",
+          "name": "PEANUT BUTTER (Yer Fıstıhı)",
+          "code": "L98",
+          "attributes": {}
+        },
+        {
+          "id": "l102",
+          "name": "AMARENA (Kiraz)",
+          "code": "L102",
+          "attributes": {}
+        },
+        {
+          "id": "l103",
+          "name": "MILK CHOCOLATE (Sütlü Çikolata)",
+          "code": "L103",
+          "attributes": {}
+        },
+        {
+          "id": "l1014",
+          "name": "CHOCOLATE (Çikolata)",
+          "code": "L1014",
+          "attributes": {}
+        },
+        {
+          "id": "l106",
+          "name": "CARAMEL (Karamel)",
+          "code": "L106",
+          "attributes": {}
+        },
+        {
+          "id": "l108",
+          "name": "STRAWBERRY (Çilek)",
+          "code": "L108",
+          "attributes": {}
+        },
+        {
+          "id": "l110",
+          "name": "WILD FRUITS (Orman Meyveleri)",
+          "code": "L110",
+          "attributes": {}
+        },
+        {
+          "id": "l111",
+          "name": "BLUEBERRY (Yaban Mersini)",
+          "code": "L111",
+          "attributes": {}
+        },
+        {
+          "id": "l116",
+          "name": "TOFFEE (Şekerleme)",
+          "code": "L116",
+          "attributes": {}
+        },
+        {
+          "id": "l119",
+          "name": "PISTACHIO (Antep Fıstıhı)",
+          "code": "L119",
+          "attributes": {}
+        },
+        {
+          "id": "l126",
+          "name": "ANTONELLA",
+          "code": "L126",
+          "attributes": {}
+        },
+        {
+          "id": "l127",
+          "name": "WHİTE CHOCOLATE (B. Çikolata)",
+          "code": "L127",
           "attributes": {}
         }
       ],
@@ -2748,9 +4752,21 @@
       ],
       "variants": [
         {
-          "id": "barista-sos-2-kg",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "lp76n",
+          "name": "CARAMEL (Karamel)",
+          "code": "LP76N",
+          "attributes": {}
+        },
+        {
+          "id": "lp78n",
+          "name": "CHOCOLATE (Çikolata)",
+          "code": "LP78N",
+          "attributes": {}
+        },
+        {
+          "id": "lp84n",
+          "name": "WHITE CHOCOLATE (B. Çikolata)",
+          "code": "LP84N",
           "attributes": {}
         }
       ],
@@ -2803,9 +4819,21 @@
       ],
       "variants": [
         {
-          "id": "barista-sos-500-g",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "lp56n",
+          "name": "CARAMEL (Karamel)",
+          "code": "LP56N",
+          "attributes": {}
+        },
+        {
+          "id": "lp58n",
+          "name": "CHOCOLATE (Çikolata)",
+          "code": "LP58N",
+          "attributes": {}
+        },
+        {
+          "id": "lp54n",
+          "name": "WHITE CHOCOLATE (B. Çikolata)",
+          "code": "LP54N",
           "attributes": {}
         }
       ],
@@ -2862,9 +4890,45 @@
       ],
       "variants": [
         {
-          "id": "pureler-1-3-kg",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "s01",
+          "name": "STRAWBERRY (Çilek)",
+          "code": "S01",
+          "attributes": {}
+        },
+        {
+          "id": "s02",
+          "name": "PEACH (Şeftali)",
+          "code": "S02",
+          "attributes": {}
+        },
+        {
+          "id": "s03",
+          "name": "PASSİON FRUIT (Çarkıfelek)",
+          "code": "S03",
+          "attributes": {}
+        },
+        {
+          "id": "s04",
+          "name": "COCONUT (Hindistan Cevizi)",
+          "code": "S04",
+          "attributes": {}
+        },
+        {
+          "id": "s10",
+          "name": "MELON (Kavun)",
+          "code": "S10",
+          "attributes": {}
+        },
+        {
+          "id": "s12",
+          "name": "SWEET & SOUR (Tatlı Ekşi)",
+          "code": "S12",
+          "attributes": {}
+        },
+        {
+          "id": "s13",
+          "name": "MANGO",
+          "code": "S13",
           "attributes": {}
         }
       ],
@@ -3152,6 +5216,12 @@
           "name": "CB 416 A HC - 44 KG/GÜN KÜP BUZ MAKİNESİ",
           "code": "CB 416 A HC",
           "attributes": {}
+        },
+        {
+          "id": "cb-640-a-hc",
+          "name": "CB 640 A HC - 73 KG/GÜN KÜP BUZ MAKİNESİ",
+          "code": "CB 640 A HC",
+          "attributes": {}
         }
       ],
       "source": {
@@ -3230,6 +5300,12 @@
           "name": "C 300 A - 320 KG/GÜN KÜP BUZ MAKİNESİ",
           "code": "C 300 A",
           "attributes": {}
+        },
+        {
+          "id": "cb-840-a-hc",
+          "name": "CB 840 A HC - 82 KG/GÜN KÜP BUZ MAKİNESİ",
+          "code": "CB 840 A HC",
+          "attributes": {}
         }
       ],
       "source": {
@@ -3296,15 +5372,27 @@
       ],
       "variants": [
         {
-          "id": "cb249-a-hc-b-qube",
-          "name": "CB249 A HC B-QUBE - 32 KG/GÜN B-KÜP BUZ MAKİNESİ",
-          "code": "CB249 A HC B-QUBE",
+          "id": "cb249",
+          "name": "A HC B-QUBE - 32 KG/GÜN B-KÜP BUZ MAKİNESİ",
+          "code": "CB249",
           "attributes": {}
         },
         {
-          "id": "cb416-a-hc-b-qube",
-          "name": "CB416 A HC B-QUBE - 44 KG/GÜN B-KÜP BUZ MAKİNESİ",
-          "code": "CB416 A HC B-QUBE",
+          "id": "cb416",
+          "name": "A HC B-QUBE - 44 KG/GÜN B-KÜP BUZ MAKİNESİ",
+          "code": "CB416",
+          "attributes": {}
+        },
+        {
+          "id": "cb425",
+          "name": "A HC B-QUBE - 54 KG/GÜN B-KÜP BUZ MAKİNESİ",
+          "code": "CB425",
+          "attributes": {}
+        },
+        {
+          "id": "cb640",
+          "name": "A HC B-QUBE - 73 KG/GÜN B-KÜP BUZ MAKİNESİ",
+          "code": "CB640",
           "attributes": {}
         }
       ],
@@ -3364,21 +5452,21 @@
       ],
       "variants": [
         {
-          "id": "cb840-a-hc-b-qube",
-          "name": "CB840 A HC B-QUBE - 82 KG/GÜN B-KÜP BUZ MAKİNESİ",
-          "code": "CB840 A HC B-QUBE",
+          "id": "cb840",
+          "name": "A HC B-QUBE - 82 KG/GÜN B-KÜP BUZ MAKİNESİ",
+          "code": "CB840",
           "attributes": {}
         },
         {
-          "id": "cb955-a-hc-b-qube",
-          "name": "CB955 A HC B-QUBE - 97 KG/GÜN B-KÜP BUZ MAKİNESİ",
-          "code": "CB955 A HC B-QUBE",
+          "id": "cb955",
+          "name": "A HC B-QUBE - 97 KG/GÜN B-KÜP BUZ MAKİNESİ",
+          "code": "CB955",
           "attributes": {}
         },
         {
-          "id": "cb1565-a-hc-b-qube",
-          "name": "CB1565 A HC B-QUBE - 160 KG/GÜN B-KÜP BUZ MAKİNESİ",
-          "code": "CB1565 A HC B-QUBE",
+          "id": "cb1565",
+          "name": "A HC B-QUBE - 160 KG/GÜN B-KÜP BUZ MAKİNESİ",
+          "code": "CB1565",
           "attributes": {}
         }
       ],
@@ -3706,6 +5794,18 @@
           "name": "HIKU 26 A HC - 25 KG/GÜN KÜP BUZ MAKİNESİ DİSPENSERİ",
           "code": "HIKU 26 A HC",
           "attributes": {}
+        },
+        {
+          "id": "ic-18-a-hc",
+          "name": "IC 18 A HC - 25 KG/GÜN KÜP BUZ MAKİNESİ",
+          "code": "IC 18 A HC",
+          "attributes": {}
+        },
+        {
+          "id": "ic-24-a-hc",
+          "name": "IC 24 A HC - 30 KG/GÜN KÜP BUZ MAKİNESİ",
+          "code": "IC 24 A HC",
+          "attributes": {}
         }
       ],
       "source": {
@@ -3780,6 +5880,18 @@
           "id": "bin-350",
           "name": "BIN 350 - BUZ HAZNESİ",
           "code": "BIN 350",
+          "attributes": {}
+        },
+        {
+          "id": "bin-110",
+          "name": "BIN 110 - BUZ HAZNESİ",
+          "code": "BIN 110",
+          "attributes": {}
+        },
+        {
+          "id": "id-70",
+          "name": "ID 70 - BUZ DİSPENSERİ",
+          "code": "ID 70",
           "attributes": {}
         }
       ],
@@ -3925,9 +6037,15 @@
       ],
       "variants": [
         {
-          "id": "grubu-isitma-sistemi",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "cc202",
+          "name": "DTC 2 GRUPLU DOZAJ AYARLI ESPRESSO MAKİNESİ",
+          "code": "CC202",
+          "attributes": {}
+        },
+        {
+          "id": "cc101",
+          "name": "TC 1 GRUPLU DOZAJ AYARLI ESPRESSO MAKİNESİ",
+          "code": "CC101",
           "attributes": {}
         }
       ],
@@ -5416,6 +7534,18 @@
           "name": "THa - FİLTRE KAHVE MAKİNESİ",
           "code": "THa",
           "attributes": {}
+        },
+        {
+          "id": "mondo",
+          "name": "MONDO - FİLTRE KAHVE MAKİNESİ",
+          "code": "MONDO",
+          "attributes": {}
+        },
+        {
+          "id": "matic",
+          "name": "MATIC - FİLTRE KAHVE MAKİNESİ",
+          "code": "MATIC",
+          "attributes": {}
         }
       ],
       "source": {
@@ -5478,6 +7608,18 @@
           "id": "rlx-55",
           "name": "RLX 55 - FİLTRE KAHVE MAKİNESİ",
           "code": "RLX 55",
+          "attributes": {}
+        },
+        {
+          "id": "rlx-75",
+          "name": "RLX 75 - FİLTRE KAHVE MAKİNESİ VE SU ISITICI",
+          "code": "RLX 75",
+          "attributes": {}
+        },
+        {
+          "id": "rlx-575",
+          "name": "RLX 575 - FİLTRE KAHVE MAKİNESİ VE SU ISITICI",
+          "code": "RLX 575",
           "attributes": {}
         }
       ],
@@ -5550,6 +7692,12 @@
           "name": "AURORA TWIN HIGH (TWH) - FİLTRE KAHVE MAKİNESİ VE SU ISITICI",
           "code": "AURORA TWIN HIGH (TWH)",
           "attributes": {}
+        },
+        {
+          "id": "b5",
+          "name": "- FİLTRE KAHVE MAKİNESİ",
+          "code": "B5",
+          "attributes": {}
         }
       ],
       "source": {
@@ -5608,14 +7756,14 @@
       "variants": [
         {
           "id": "b10",
-          "name": "B10 - FİLTRE KAHVE MAKİNESİ",
+          "name": "- FİLTRE KAHVE MAKİNESİ",
           "code": "B10",
           "attributes": {}
         },
         {
-          "id": "b10-hw",
-          "name": "B10 HW - FİLTRE KAHVE MAKİNESİ VE SU ISITICI",
-          "code": "B10 HW",
+          "id": "b20",
+          "name": "- FİLTRE KAHVE MAKİNESİ",
+          "code": "B20",
           "attributes": {}
         }
       ],
@@ -5675,7 +7823,7 @@
       "variants": [
         {
           "id": "b40",
-          "name": "B40 - FİLTRE KAHVE MAKİNESİ",
+          "name": "- FİLTRE KAHVE MAKİNESİ",
           "code": "B40",
           "attributes": {}
         },
@@ -5683,6 +7831,18 @@
           "id": "hwa-6",
           "name": "HWA 6 - SU ISITICI",
           "code": "HWA 6",
+          "attributes": {}
+        },
+        {
+          "id": "hwa-6d",
+          "name": "HWA 6D - SU ISITICI",
+          "code": "HWA 6D",
+          "attributes": {}
+        },
+        {
+          "id": "hwa-14",
+          "name": "HWA 14 - SU ISITICI",
+          "code": "HWA 14",
           "attributes": {}
         }
       ],
@@ -5817,9 +7977,9 @@
       ],
       "variants": [
         {
-          "id": "airpot-termos",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "whk",
+          "name": "WHK - FİNCAN ISITICI",
+          "code": "WHK",
           "attributes": {}
         }
       ],
@@ -6256,6 +8416,12 @@
           "name": "NO 62 - BAR BLENDER 1,4 LİTRE",
           "code": "NO 62",
           "attributes": {}
+        },
+        {
+          "id": "no-33-ge",
+          "name": "NO 33 GE - BAR BLENDER 1,25 LİTRE",
+          "code": "NO 33 GE",
+          "attributes": {}
         }
       ],
       "source": {
@@ -6543,6 +8709,30 @@
           "name": "CR DESIGN - HAZNE DUŞLAMA ÜNİTESİ (RINSER)",
           "code": "CR DESIGN",
           "attributes": {}
+        },
+        {
+          "id": "bar-tipi-sogutucular",
+          "name": "BAR TİPİ SOĞUTUCULAR - SİYAH GÖVDE",
+          "code": "BAR TİPİ SOĞUTUCULAR",
+          "attributes": {}
+        },
+        {
+          "id": "bar150",
+          "name": "1 Kapılı Bar Tipi Buzdolabı +2 / +8 °C 595x500x875 130 0,24 65",
+          "code": "BAR150",
+          "attributes": {}
+        },
+        {
+          "id": "bar250",
+          "name": "2 Kapılı Bar Tipi Buzdolabı +2 / +8 °C 900x500x875 210 0,26 88",
+          "code": "BAR250",
+          "attributes": {}
+        },
+        {
+          "id": "bar350",
+          "name": "3 Kapılı Bar Tipi Buzdolabı +2 / +8 °C 1350x500x875 325 0,31 115",
+          "code": "BAR350",
+          "attributes": {}
         }
       ],
       "source": {
@@ -6674,6 +8864,12 @@
           "id": "xpresscheftm",
           "name": "XPRESSCHEF™ - JET514 HIZLI FIRIN",
           "code": "XPRESSCHEF™",
+          "attributes": {}
+        },
+        {
+          "id": "jet514v",
+          "name": "HIZLI FIRIN (JET514 model özelliklerine ek olarak)",
+          "code": "JET514V",
           "attributes": {}
         }
       ],
@@ -7343,9 +9539,27 @@
       ],
       "variants": [
         {
-          "id": "neapolis-tas-tabanli-kubbeli-pizza-firini",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "t64e",
+          "name": "Konveyörlü Fırın 1234x800x510 2x33 cm Pizza ya da",
+          "code": "T64E",
+          "attributes": {}
+        },
+        {
+          "id": "t75e",
+          "name": "Konveyörlü Fırın 1810x1210x560 3x33 cm Pizza ya da",
+          "code": "T75E",
+          "attributes": {}
+        },
+        {
+          "id": "tt96e",
+          "name": "Konveyörlü Fırın 2050x1185x620 5x33 cm Pizza ya da",
+          "code": "TT96E",
+          "attributes": {}
+        },
+        {
+          "id": "tt98e",
+          "name": "Konveyörlü Fırın 2050x1476x620 6x33 cm Pizza ya da",
+          "code": "TT98E",
           "attributes": {}
         }
       ],
@@ -7401,9 +9615,27 @@
       ],
       "variants": [
         {
-          "id": "ideck-elektronik-kontrollu-pizza-firini",
-          "name": "Katalog seçeneği",
-          "code": "",
+          "id": "s-60-60-w-alt-stand-tekerlekli-850x840x1000",
+          "name": "S-60.60-W Alt Stand, Tekerlekli 850x840x1000 - -",
+          "code": "S-60.60-W Alt Stand, Tekerlekli 850x840x1000",
+          "attributes": {}
+        },
+        {
+          "id": "s-105-105-w-alt-stand-tekerlekli-1320x1290x1000",
+          "name": "S-105.105-W Alt Stand, Tekerlekli 1320x1290x1000 - -",
+          "code": "S-105.105-W Alt Stand, Tekerlekli 1320x1290x1000",
+          "attributes": {}
+        },
+        {
+          "id": "s-105-65-w-alt-stand-tekerlekli-1320x890x1000",
+          "name": "S-105.65-W Alt Stand, Tekerlekli 1320x890x1000 - -",
+          "code": "S-105.65-W Alt Stand, Tekerlekli 1320x890x1000",
+          "attributes": {}
+        },
+        {
+          "id": "s-72-72-w-alt-stand-tekerlekli-988x947x1000",
+          "name": "S-72.72-W Alt Stand, Tekerlekli 988x947x1000 - -",
+          "code": "S-72.72-W Alt Stand, Tekerlekli 988x947x1000",
           "attributes": {}
         }
       ],
@@ -9043,6 +11275,12 @@
           "name": "EKF 323 N T - ELEKTRİKLİ KONVEKSİYON FIRIN DOKUNMATİK KONTROL",
           "code": "EKF 323 N T",
           "attributes": {}
+        },
+        {
+          "id": "ekf-423-n-t-ud",
+          "name": "EKF 423 N T UD - ELEKTRİKLİ KONVEKSİYON NEMLENDİRMELİ FIRIN DOKUNMATİK KONTROL",
+          "code": "EKF 423 N T UD",
+          "attributes": {}
         }
       ],
       "source": {
@@ -9284,6 +11522,12 @@
           "name": "EKF 464 N T AL UD - ELEKTRİKLİ KONVEKSİYON NEMLENDİRMELİ FIRIN DOKUNMATİK KONTROL",
           "code": "EKF 464 N T AL UD",
           "attributes": {}
+        },
+        {
+          "id": "ekf-411-n-ud",
+          "name": "EKF 411 N UD - ELEKTRİKLİ KONVEKSİYON NEMLENDİRMELİ FIRIN MANUEL KONTROL",
+          "code": "EKF 411 N UD",
+          "attributes": {}
         }
       ],
       "source": {
@@ -9358,6 +11602,18 @@
           "id": "ekf-411-n-t-al-ud",
           "name": "EKF 411 N T AL UD - ELEKTRİKLİ KONVEKSİYON NEMLENDİRMELİ FIRIN DOKUNMATİK KONTROL",
           "code": "EKF 411 N T AL UD",
+          "attributes": {}
+        },
+        {
+          "id": "ekl-864-n",
+          "name": "EKL 864 N - MAYALANDIRMA KABİNİ",
+          "code": "EKL 864 N",
+          "attributes": {}
+        },
+        {
+          "id": "ekl-864-n-r",
+          "name": "EKL 864 N R - TEKERLEKLİ MAYALANDIRMA KABİNİ",
+          "code": "EKL 864 N R",
           "attributes": {}
         }
       ],
@@ -19424,19 +21680,19 @@
       "variants": [
         {
           "id": "cr9001l",
-          "name": "CR9001L - SET ÜSTÜ LÜKS SERİ CHAFING DISH - GN 1/1",
+          "name": "- SET ÜSTÜ LÜKS SERİ CHAFING DISH - GN 1/1",
           "code": "CR9001L",
           "attributes": {}
         },
         {
           "id": "cr9002l",
-          "name": "CR9002L - SET ÜSTÜ LÜKS SERİ CHAFING DISH - GN 2/3",
+          "name": "- SET ÜSTÜ LÜKS SERİ CHAFING DISH - GN 2/3",
           "code": "CR9002L",
           "attributes": {}
         },
         {
           "id": "cr5033n",
-          "name": "CR5033N - GÖMME ROLL-TOP EKONOMİK CHAFING DISH - GN 1/1",
+          "name": "- GÖMME ROLL-TOP EKONOMİK CHAFING DISH - GN 1/1",
           "code": "CR5033N",
           "attributes": {}
         }

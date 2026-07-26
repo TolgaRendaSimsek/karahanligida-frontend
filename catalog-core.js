@@ -21,7 +21,7 @@
 
   async function loadProducts() {
     if (!productPromise) {
-      productPromise = fetch(`${ROOT_PREFIX}data/products.json`)
+      productPromise = fetch(`${ROOT_PREFIX}data/products.json?v=20260726`)
         .then((response) => {
           if (!response.ok) throw new Error("Ürün kataloğu yüklenemedi.");
           return response.json();

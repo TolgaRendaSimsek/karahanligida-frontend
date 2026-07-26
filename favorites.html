@@ -11,10 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="favorites.css" />
+  <link rel="stylesheet" href="catalog.css?v=20260726" />
+  <link rel="stylesheet" href="quote-cart.css?v=20260726" />
 </head>
 <body>
   <div class="announcement">
-    <span>₺1.500 üzeri siparişlerde ücretsiz kargo</span>
+    <span>Karahanlı Gıda profesyonel ürün kataloğu</span>
     <span class="announcement-separator">•</span>
     <a href="index.html#newsletter">Kampanyalara katıl</a>
   </div>
@@ -35,7 +37,7 @@
       <div class="header-actions">
         <button class="action-link" id="accountBtn"><span>♙</span><small>Hesabım</small></button>
         <button class="action-link active-page" id="favoritesBtn"><span>♥</span><small>Favoriler</small></button>
-        <button class="action-link cart-button" id="cartBtn"><span>▱</span><small>Sepetim</small><b id="cartCount">0</b></button>
+        <button class="action-link cart-button" id="cartBtn"><span>▱</span><small>Teklif Sepeti</small><b id="cartCount">0</b></button>
       </div>
     </div>
 
@@ -233,7 +235,7 @@
       <div class="favorites-header">
         <p class="eyebrow dark">HESABIM &gt; ÖZEL LİSTEM</p>
         <h2>Favori Ürünlerim</h2>
-        <p class="favorites-lead">Daha sonra satın almak için beğendiğiniz tüm ürünler tek bir yerde listelenir.</p>
+        <p class="favorites-lead">İncelemek ve teklif listenize eklemek istediğiniz ürün ailelerini tek yerde saklayın.</p>
       </div>
 
       <!-- Empty State -->
@@ -241,7 +243,7 @@
         <div class="heart-symbol">♥</div>
         <h3>Listeniz henüz boş</h3>
         <p>Beğendiğiniz ürünleri daha sonra kolayca bulmak için ürün görselinin üzerindeki kalp simgesine tıklayın.</p>
-        <a class="btn btn-primary" href="index.html#products">Ürünleri Keşfet</a>
+        <a class="btn btn-primary" href="products.html">Ürünleri Keşfet</a>
       </div>
 
       <!-- Favorites Grid -->
@@ -260,24 +262,28 @@
         <div class="socials"><a href="#">ig</a><a href="#">fb</a><a href="#">in</a></div>
       </div>
       <div><h4>Kurumsal</h4><a href="index.html#story">Hakkımızda</a><a href="#">Mağazalar</a><a href="#">Kariyer</a><a href="#">İletişim</a></div>
-      <div><h4>Müşteri Hizmetleri</h4><a href="#">Sipariş Takibi</a><a href="#">İade & Değişim</a><a href="#">Teslimat</a><a href="#">Sıkça Sorulanlar</a></div>
+      <div><h4>Teklif ve Destek</h4><a href="products.html">Ürün Kataloğu</a><a href="index.html#professional">Teklif Süreci</a><a href="index.html#story">Danışmanlık</a><a href="#">Sıkça Sorulanlar</a></div>
       <div><h4>Kategoriler</h4><a href="index.html#products" data-cat="gida">Gıda</a><a href="index.html#products" data-cat="ekipman">Ekipman</a><a href="index.html#products" data-cat="hizmet">Hizmet</a></div>
-      <div><h4>İletişim</h4><p>+90 212 000 00 00</p><p>hello@roasterymarket.com</p><p>İstanbul, Türkiye</p></div>
+      <div><h4>İletişim</h4><p>ozkanguden@karahanligida.com</p><p>Adana, Türkiye</p></div>
     </div>
     <div class="container footer-bottom"><span>© 2026 Karahanlı Gıda. Tüm hakları saklıdır.</span><span>Gizlilik • Çerezler • Kullanım Koşulları</span></div>
   </footer>
 
   <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
-    <div class="drawer-head"><h3>Sepetim</h3><button id="closeCart">×</button></div>
-    <div class="drawer-body" id="cartItems"><p class="empty-cart">Sepetiniz henüz boş.</p></div>
+    <div class="drawer-head"><h3>Teklif Sepeti</h3><button id="closeCart">×</button></div>
+    <div class="drawer-body" id="cartItems"></div>
     <div class="drawer-footer">
-      <div><span>Ara Toplam</span><strong id="cartTotal">₺0,00</strong></div>
-      <button class="btn btn-primary full" id="checkoutBtn">Sepete Git</button>
+      <span class="quote-summary" id="quoteSummary"></span>
+      <button class="btn btn-primary full" id="checkoutBtn">WhatsApp'tan Teklif İste</button>
     </div>
   </aside>
   <div class="overlay" id="overlay"></div>
   <div class="toast" id="toast"></div>
 
-  <script src="favorites.js"></script>
+  <script src="config.js?v=20260726"></script>
+  <script src="quote-message.js?v=20260726"></script>
+  <script src="catalog-core.js?v=20260726"></script>
+  <script src="quote-cart.js?v=20260726"></script>
+  <script src="favorites.js?v=20260726"></script>
 </body>
 </html>

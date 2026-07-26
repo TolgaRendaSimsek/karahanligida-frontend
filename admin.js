@@ -236,7 +236,7 @@ $("logoutBtn").addEventListener("click", (event) => {
   location.href = "index.html";
 });
 
-fetch("data/products.json")
+fetch("data/products.json?v=20260726")
   .then((response) => response.json())
   .then((payload) => {
     basePayload = payload;

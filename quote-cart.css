@@ -1,0 +1,56 @@
+.drawer-footer .quote-summary {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+
+.cart-thumb {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+}
+
+.cart-item p {
+  margin: 4px 0 8px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.quote-quantity {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 7px;
+}
+
+.quote-quantity button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.quote-quantity strong {
+  min-width: 16px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.empty-cart {
+  padding: 28px 4px;
+  text-align: center;
+}
+
+.empty-cart p {
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+#checkoutBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

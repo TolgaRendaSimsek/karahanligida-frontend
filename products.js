@@ -113,6 +113,3 @@ function updateQuoteCount() {
 }
 updateQuoteCount();
 document.addEventListener("karahanli:quote-changed", updateQuoteCount);
-document.getElementById("cartBtn").addEventListener("click", () => {
-  showToast("Teklif sepeti ana sayfadaki panelden açılabilir.");
-});

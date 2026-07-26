@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="catalog.css">
+  <link rel="stylesheet" href="catalog.css?v=20260726">
+  <link rel="stylesheet" href="quote-cart.css?v=20260726">
 </head>
 <body>
   <div class="announcement">Karahanlı Gıda profesyonel ürün kataloğu · Fiyat bilgisi için teklif isteyin</div>
@@ -55,8 +56,17 @@
   <footer class="site-footer">
     <div class="container footer-bottom"><span>© 2026 Karahanlı Gıda. Tüm hakları saklıdır.</span><a href="index.html">Ana sayfaya dön</a></div>
   </footer>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Teklif sepeti">
+    <div class="drawer-head"><h3>Teklif Sepeti</h3><button id="closeCart" aria-label="Kapat">×</button></div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="drawer-footer"><span class="quote-summary" id="quoteSummary"></span><button class="btn btn-primary full" id="checkoutBtn">WhatsApp'tan Teklif İste</button></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
   <div class="toast" id="toast"></div>
-  <script src="catalog-core.js"></script>
-  <script src="products.js"></script>
+  <script src="config.js?v=20260726"></script>
+  <script src="quote-message.js?v=20260726"></script>
+  <script src="catalog-core.js?v=20260726"></script>
+  <script src="quote-cart.js?v=20260726"></script>
+  <script src="products.js?v=20260726"></script>
 </body>
 </html>
