@@ -1,58 +1,186 @@
-# Karahanlı Gıda Firebase Geçiş Rehberi
+# Karahanlı Gıda - Ücretsiz Firebase ve Linux Kurulum Rehberi
 
-Bu depo şu anda `data/products.json` dosyasını kullanır. Firebase dosyaları, yerel katalog onaylandıktan sonra aynı veri modelini Firestore'a taşımak için hazırlandı. Canlı bir Firebase projesine bağlantı veya yayın yapılmadı.
+Bu mimaride Firebase Spark planı yalnızca Authentication ve Firestore için kullanılır. Ürün görselleri Firebase Storage'a gönderilmez; Caddy'nin sunduğu Linux diskinde tutulur. Ziyaretçiler Firestore'u doğrudan okumaz, admin API'nin ürettiği statik `products.json` dosyasını okur.
 
-## Neden Firestore?
-
-Karahanlı Gıda kataloğu belge temelli bir yapıya uygundur: bir ürün ailesinin altında varyantlar, görseller ve teknik bilgiler bulunur. Firestore bu iç içe yapıyı doğal şekilde karşılar. Authentication admin girişini, Storage görselleri, Security Rules ise ziyaretçi ve admin yetkilerini yönetir.
-
-## Koleksiyon yapısı
+## Mimari
 
 ```text
-brands/{brandId}
-categories/{categoryId}
-productFamilies/{familyId}
-  variants/{variantId}
-  images/{imageId}
-  specs/{specId}
+Ziyaretçi -> Caddy -> statik site + products.json + /media
+Admin -> Firebase Auth -> Caddy /api/admin -> Docker admin-api
+admin-api -> Firestore + /srv/karahanli/data
 ```
 
-`productFamilies` belgesi ürün adı, slug, marka, kategori, açıklama, öne çıkan bilgisi, kaynak ve `status` alanlarını taşır. Fiyat alanı yoktur. Ziyaretçiler yalnızca `status: "published"` olan aileleri okuyabilir. Yazma işlemleri Firebase Authentication kullanıcısında `admin: true` custom claim'i varsa açılır.
+Firestore koleksiyonları:
 
-## İlk kurulum
+- `productFamilies`: yayımlanmış ürün aileleri
+- `productDrafts`: admin taslakları
+- `brands`, `categories`
+- `auditLogs`: admin işlem kayıtları
+- `catalogReleases`: yayın işlemlerinin durumu
 
-1. Firebase Console'da yeni proje açın ve Web App ekleyin.
-2. Firestore Database, Authentication (Email/Password) ve Storage'ı etkinleştirin.
-3. Bilgisayarınızda Firebase CLI ile giriş yapın: `firebase login`.
-4. `.firebaserc.example` dosyasını `.firebaserc` adıyla kopyalayın ve proje kimliğini değiştirin.
-5. `firebase` klasöründe `npm install` çalıştırın.
-6. Google Application Default Credentials veya güvenli bir servis hesabı ile `npm run seed` çalıştırın.
-7. Admin kullanıcısını Authentication ekranında oluşturun, sonra `npm run set-admin -- admin@alanadi.com` çalıştırın.
-8. Kuralları önce Emulator Suite'te test edin; onaydan sonra `firebase deploy --only firestore:rules,firestore:indexes,storage` komutunu kullanın.
+Firestore istemci kuralları bütün doğrudan okuma ve yazmaları kapatır. Linux API, Firebase Admin SDK ile çalıştığı için bu kuralları kullanmaz.
 
-Servis hesabı JSON dosyasını depoya koymayın. Bu dosya `.gitignore` kapsamındadır.
+## 1. Firebase projesini oluşturma
 
-## Görseller
+1. Firebase Console'dan yeni bir proje oluşturun. Blaze'e geçmeyin ve ödeme hesabı bağlamayın.
+2. Project Settings > Your apps bölümünden Web App oluşturun.
+3. Web App config değerlerini projenin `firebase-config.js` dosyasına yazın. Bu değerler web istemcisi tarafından görülür; servis hesabı anahtarı değildir.
+4. Build > Authentication > Sign-in method bölümünden Email/Password girişini açın.
+5. Build > Firestore Database bölümünden tek bir Standard veritabanı oluşturun. Avrupa bölgesi seçin.
+6. Authentication > Users bölümünden admin hesaplarını oluşturun.
 
-İlk sürümde optimize WebP dosyaları statik `assets/products` klasöründen gelir. Firebase aşamasında dosyalar `product-images/{familyId}/` yoluna yüklenir ve ürün belgesindeki görsel URL'leri Storage indirme URL'leriyle güncellenir. Storage'a yalnızca admin yazabilir; 10 MB üzeri veya görsel olmayan dosyalar reddedilir.
+`firebase-config.js` örneği:
 
-## Yerel geliştirme
+```js
+window.KARAHANLI_FIREBASE_CONFIG = {
+  apiKey: "firebase-web-api-key",
+  authDomain: "proje-id.firebaseapp.com",
+  projectId: "proje-id",
+  appId: "firebase-web-app-id",
+};
+```
 
-`firebase emulators:start` komutu Auth, Firestore, Storage ve Hosting emülatörlerini açar. Emulator UI varsayılan olarak `http://127.0.0.1:4000` adresindedir. Gerçek Firebase projesine veri yazmadan önce seed ve admin akışını burada test edin.
+## 2. Firebase CLI ve ilk veriyi yükleme
 
-## Maliyet ve güvenlik notları
+Bilgisayarınızda Firebase CLI ile giriş yapın:
 
-- Katalog listelemesinde sayfalama kullanın; her açılışta bütün alt koleksiyonları okumayın.
-- Arama için ilk aşamada istemci tarafındaki normalize arama terimleri yeterlidir. Tam metin arama büyürse ayrı bir arama hizmeti değerlendirilir.
-- App Check, canlıya geçmeden önce web istemcisi için etkinleştirilebilir.
-- Bütçe uyarısı tanımlayın.
-- WhatsApp mesajları ve müşteri bilgileri ilk sürümde Firestore'a yazılmaz.
+```bash
+npm install -g firebase-tools
+firebase login
+cp .firebaserc.example .firebaserc
+```
 
-## Geçiş sırası
+`.firebaserc` içindeki proje kimliğini Firebase Console'daki gerçek `projectId` ile değiştirin. Ardından kuralları yayınlayın:
 
-1. Yerel JSON kataloğunu içerik ve görsel açısından onaylayın.
-2. Emulator üzerinde seed verisini ve Security Rules davranışını test edin.
-3. Admin girişini Firebase Authentication'a bağlayın.
-4. Görselleri Storage'a taşıyın.
-5. Site veri sağlayıcısını `products.json` yerine Firestore sorgusuna çevirin.
-6. Son olarak Firebase Hosting veya mevcut hosting üzerinde yayınlayın.
+```bash
+firebase deploy --only firestore:rules,firestore:indexes
+```
+
+Project Settings > Service accounts bölümünden Linux API için yeni bir özel anahtar üretin. Bu JSON dosyasını Git deposuna koymayın.
+
+Yerel seed işlemi için:
+
+```bash
+cd firebase
+npm install
+export FIREBASE_PROJECT_ID="gercek-proje-id"
+export GOOGLE_APPLICATION_CREDENTIALS="/guvenli/yol/firebase-service-account.json"
+npm run seed
+```
+
+Seed işlemi 230 ürün ailesini, marka ve kategorileri Firestore'a yazar. Tekrar çalıştırılabilir; mevcut belgeleri aynı kimlikle günceller.
+
+## 3. Admin yetkileri
+
+Authentication ekranında oluşturduğunuz her admin hesabına custom claim verin:
+
+```bash
+cd firebase
+export FIREBASE_PROJECT_ID="gercek-proje-id"
+export GOOGLE_APPLICATION_CREDENTIALS="/guvenli/yol/firebase-service-account.json"
+npm run set-admin -- admin@alanadi.com
+```
+
+Kullanıcı claim verildikten sonra çıkış yapıp tekrar giriş yapmalıdır. Admin paneli hem Firebase ID tokenini hem `admin: true` claim'ini kontrol eder. Admin olmayan hesap API'den `403` alır.
+
+## 4. Linux dizinleri ve ilk snapshot
+
+Önerilen sunucu düzeni:
+
+```text
+/srv/karahanli/app/current             statik site kodu
+/srv/karahanli/data/media              admin görselleri
+/srv/karahanli/data/catalog            products.json
+/srv/karahanli/data/catalog/releases   son 30 başarılı katalog snapshot'ı
+/srv/karahanli/data/generated/urunler  üretilen detay sayfaları
+/srv/karahanli/secrets                 servis hesabı
+/srv/karahanli/backups                 30 günlük yerel yedek
+```
+
+Projeyi `/srv/karahanli/app/current` altına aldıktan sonra:
+
+```bash
+cd /srv/karahanli/app/current
+sudo sh deploy/linux/prepare.sh /srv/karahanli/app/current
+sudo cp /guvenli/kaynak/firebase-service-account.json /srv/karahanli/secrets/
+sudo chmod 600 /srv/karahanli/secrets/firebase-service-account.json
+cp .env.example .env
+```
+
+`.env` içindeki `FIREBASE_PROJECT_ID`, `ADMIN_ORIGIN` ve servis hesabı yolunu gerçek değerlerle değiştirin.
+
+## 5. Docker admin API
+
+```bash
+cd /srv/karahanli/app/current
+docker compose build admin-api
+docker compose up -d admin-api
+docker compose ps
+curl http://127.0.0.1:3100/health
+```
+
+API host üzerinde yalnızca `127.0.0.1:3100` adresine açılır. Dış dünya API'ye Caddy üzerinden ve HTTPS ile ulaşır.
+
+Kalıcı dizinler bind mount olduğu için container silinse veya yeniden oluşturulsa bile görseller ve katalog snapshot'ı korunur.
+
+## 6. Caddy
+
+`deploy/linux/Caddyfile.example` içindeki alan adını ve statik site yolunu kendi Caddyfile dosyanıza uyarlayın:
+
+```caddyfile
+@adminApi path /api/admin/*
+handle @adminApi {
+  reverse_proxy 127.0.0.1:3100
+}
+```
+
+Örnek ayrıca şu yolları tanımlar:
+
+- `/media/*` -> Linux medya dizini
+- `/data/products.json` -> güncel katalog snapshot'ı
+- `/urunler/*` -> admin API tarafından üretilen detay HTML'leri
+- diğer yollar -> statik frontend
+
+Caddyfile değişikliğinden sonra:
+
+```bash
+caddy validate --config /etc/caddy/Caddyfile
+sudo systemctl reload caddy
+```
+
+## 7. Admin yayın akışı
+
+1. Admin `admin.html` üzerinden Firebase hesabıyla giriş yapar.
+2. Ürünü düzenler ve görselleri seçer.
+3. Görseller API tarafından doğrulanır, WebP tam/küçük sürüme dönüştürülür ve Linux diske yazılır.
+4. “Taslağı Kaydet” veriyi `productDrafts` koleksiyonuna yazar.
+5. “Yayınla” taslağı `productFamilies` koleksiyonuna taşır.
+6. API yeni `products.json` ve ürün HTML sayfasını atomik olarak oluşturur.
+7. İşlem `auditLogs` ve `catalogReleases` koleksiyonlarına kaydedilir.
+
+İki admin aynı revizyonu düzenlerse ikinci kayıt `409 revision-conflict` alır ve ilk adminin değişikliği ezilmez.
+Dosya üretimi tamamlanamazsa yayımlanmış Firestore belgesi geri alınır, taslak korunur ve sürüm `retry-required` durumuna geçer. Başarılı kataloglardan son 30 JSON snapshot'ı `data/catalog/releases` altında tutulur. Artık bir üründe kullanılmayan admin görselleri fiziksel olarak silinmez; `data/media/.trash` altına taşınır.
+
+## 8. Yedekleme
+
+Elle yedek almak için:
+
+```bash
+sudo sh /srv/karahanli/app/current/deploy/linux/backup.sh
+```
+
+Günlük çalıştırmak için root cron örneği:
+
+```cron
+20 3 * * * /bin/sh /srv/karahanli/app/current/deploy/linux/backup.sh
+```
+
+Betik medya, katalog ve üretilmiş sayfaları arşivler; 30 günden eski kendi arşivlerini siler. Kritik kullanımda ayrıca sunucu dışı yedek önerilir.
+
+## Ücretsiz plan sınırları
+
+- Firebase Storage, Firebase Hosting ve Cloud Functions kullanılmaz.
+- Firestore ücretsiz kotası yalnızca seed ve admin işlemlerinde tüketilir.
+- Ziyaretçi trafiği Linux/Caddy üzerinden hizmet alır.
+- Spark kotası aşılırsa Firebase hizmeti dönem sonuna kadar durabilir; otomatik ücret oluşmaz.
+- WhatsApp mesajı ve müşteri verileri Firestore'a kaydedilmez.

@@ -1,6 +1,9 @@
 node_modules/
+admin-api/var/
 __pycache__/
 *.pyc
+.env
+secrets/
 .firebase/
 .firebaserc
 firebase-debug.log

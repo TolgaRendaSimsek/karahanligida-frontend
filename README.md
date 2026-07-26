@@ -1,6 +1,6 @@
 # Karahanlı Gıda Katalog ve Teklif Sitesi
 
-Statik HTML/CSS/JavaScript ile çalışan, fiyat göstermeyen ürün kataloğu ve WhatsApp teklif sepeti.
+Statik HTML/CSS/JavaScript ile çalışan, fiyat göstermeyen ürün kataloğu, çoklu ürün galerileri, WhatsApp teklif sepeti ve Firebase destekli yönetim sistemi.
 
 ## Yerel çalıştırma
 
@@ -15,7 +15,7 @@ Ardından `http://127.0.0.1:4173` adresini açın.
 - Ana sayfa: `index.html`
 - Tüm katalog: `products.html`
 - Ürün detayları: `urunler/<slug>.html`
-- Yerel katalog düzenleyici: `admin.html`
+- Firebase admin paneli: `admin.html`
 - Ana ürün verisi: `data/products.json`
 
 ## Katalog verisini yeniden üretme
@@ -29,14 +29,16 @@ python tools/validate_catalog.py
 node tools/test_quote_message.mjs
 ```
 
-İlk komut PDF içindeki ürün görsellerini WebP olarak ayıklar, aile/varyant verisini üretir ve kaynak manifestini günceller. İkinci komut paylaşılabilir ürün detay sayfalarını oluşturur.
+İlk komut PDF içindeki ürün görsellerini ayrı tam/küçük WebP galerileri olarak ayıklar, aile/varyant verisini üretir ve kaynak manifestini günceller. İkinci komut paylaşılabilir ürün detay sayfalarını oluşturur.
 
 ## WhatsApp ayarı
 
 İşletme numarasını `config.js` içindeki `whatsappNumber` alanına ülke koduyla ve yalnızca rakam kullanarak yazın. Canlı alan adı belli olduğunda `siteUrl` alanını da doldurun. Mesaj ürün ailesi, varyant/model, ürün kodu, adet ve detay sayfası bağlantısını içerir.
 
-## Admin ve Firebase
+## Admin, Firebase ve Linux
 
-Admin paneli şu aşamada tarayıcıdaki yerel taslak üzerinde çalışır ve katalog JSON dosyasını içe/dışa aktarır. Canlı Firebase geçişi için Firestore, Storage ve Authentication hazırlıkları `firebase/` dizinindedir. Kurulum sırası ve güvenlik notları için [Firebase rehberine](docs/FIREBASE_TR.md) bakın.
+Firestore ürün içeriklerinin ana kaynağıdır; Firebase Authentication birden fazla admin hesabını doğrular. Görseller Firebase Storage yerine Linux diskine yüklenir. Docker içindeki admin API her yayında statik `products.json` snapshot'ını ve ürün sayfasını yeniler.
 
-Hiçbir Firebase projesi bağlanmamış ve yayınlama yapılmamıştır.
+Kurulum sırası, Docker Compose, Caddy yönlendirmeleri, servis hesabı ve admin yetkileri için [Firebase/Linux rehberine](docs/FIREBASE_TR.md) bakın.
+
+Firebase projesi oluşturulmamış, gerçek servis hesabı eklenmemiş ve sunucuya yayın yapılmamıştır.

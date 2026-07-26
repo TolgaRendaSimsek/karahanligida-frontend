@@ -1,0 +1,13 @@
+.git
+.gitignore
+.env
+node_modules
+admin-api/node_modules
+assets
+data
+urunler
+docs
+firebase
+tools
+*.pdf
+*.log
