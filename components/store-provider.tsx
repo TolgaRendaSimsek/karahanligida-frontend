@@ -134,6 +134,10 @@ export function StoreProvider({
 
   const requestQuote = useCallback(() => {
     if (!cart.length) return;
+    if (!whatsappNumber.replace(/\D/g, "")) {
+      window.location.assign("/iletisim?durum=whatsapp-yapilandirilmadi");
+      return;
+    }
     const message = buildQuoteMessage(cart, siteUrl || window.location.origin);
     const number = whatsappNumber.replace(/\D/g, "");
     window.open(`https://wa.me/${number}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");

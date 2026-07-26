@@ -55,10 +55,10 @@ export function QuoteDrawer() {
                 </Link>
                 <small>{item.variantName}{item.variantCode ? ` · ${item.variantCode}` : ""}</small>
                 <div className="quantity-control">
-                  <button onClick={() => updateQuantity(item.key, item.quantity - 1)} aria-label="Azalt">−</button>
+                  <button type="button" onClick={() => updateQuantity(item.key, item.quantity - 1)} aria-label="Azalt">−</button>
                   <b>{item.quantity}</b>
-                  <button onClick={() => updateQuantity(item.key, item.quantity + 1)} aria-label="Artır">+</button>
-                  <button className="remove" onClick={() => removeFromCart(item.key)}>Kaldır</button>
+                  <button type="button" onClick={() => updateQuantity(item.key, item.quantity + 1)} aria-label="Artır">+</button>
+                  <button type="button" className="remove" onClick={() => removeFromCart(item.key)}>Kaldır</button>
                 </div>
               </div>
             </article>
@@ -67,7 +67,7 @@ export function QuoteDrawer() {
         {cart.length > 0 && (
           <div className="drawer-footer">
             <p>{cart.length} ürün seçimi · Fiyatlar teklif aşamasında paylaşılır.</p>
-            <button className="button primary full" onClick={requestQuote}>
+            <button type="button" className="button primary full" onClick={requestQuote}>
               WhatsApp&apos;tan Teklif İste
             </button>
           </div>

@@ -201,6 +201,7 @@ button { color: inherit; }
 .contact-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 18px; padding-block: 75px; }
 .contact-card { min-height: 310px; display: flex; flex-direction: column; align-items: flex-start; padding: 30px; border: 1px solid var(--line); border-radius: 22px; background: white; }
 .contact-card.featured { color: white; background: var(--green); }
+.contact-notice { margin-top: 28px; padding: 14px 18px; border: 1px solid #d5b98f; border-radius: 12px; color: #563719; background: #fff4df; font-size: 13px; font-weight: 700; }
 .contact-card > span { color: var(--gold); font-size: 10px; font-weight: 900; letter-spacing: .12em; }
 .contact-card h2 { margin: 15px 0; font-family: Georgia, serif; font-size: 28px; font-weight: 500; overflow-wrap: anywhere; }
 .contact-card p { color: var(--muted); font-size: 13px; line-height: 1.7; }

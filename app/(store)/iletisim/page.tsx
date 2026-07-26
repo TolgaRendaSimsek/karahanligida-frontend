@@ -7,12 +7,23 @@ export const metadata: Metadata = {
   alternates: { canonical: "/iletisim" },
 };
 
-export default function ContactPage() {
+export default async function ContactPage({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const params = await searchParams;
+  const whatsappUnavailable = params.durum === "whatsapp-yapilandirilmadi";
   return (
     <main>
       <section className="page-hero compact">
         <div className="container"><span className="eyebrow light">BİZE ULAŞIN</span><h1>İşletmeniz için birlikte çalışalım.</h1><p>Ürün seçimi, teklif ve teslimat bilgileri için ekibimizle iletişime geçin.</p></div>
       </section>
+      {whatsappUnavailable && (
+        <div className="container contact-notice" role="status">
+          WhatsApp teklif hattı henüz yapılandırılmadı. Teklifiniz için e-posta yoluyla bize ulaşabilirsiniz.
+        </div>
+      )}
       <section className="container contact-grid">
         <article className="contact-card featured">
           <span>TEKLİF LİSTESİ</span>

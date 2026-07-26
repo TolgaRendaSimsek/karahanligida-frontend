@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { useStore } from "./store-provider";
 
 const navigation = [
@@ -22,6 +22,25 @@ export function SiteHeader() {
   const { favorites, cart, setCartOpen } = useStore();
   const [menuOpen, setMenuOpen] = useState(false);
   const [query, setQuery] = useState(searchParams.get("q") || "");
+  const urlQuery = searchParams.get("q") || "";
+
+  useEffect(() => {
+    setQuery(urlQuery);
+  }, [urlQuery]);
+
+  function navigationActive(href: string) {
+    if (href === "/urunler") {
+      return pathname === "/urunler" && !searchParams.get("category") && !searchParams.get("brand");
+    }
+    if (href.startsWith("/urunler?")) {
+      const target = new URL(href, "https://karahanligida.com");
+      return (
+        pathname === "/urunler"
+        && target.searchParams.get("category") === searchParams.get("category")
+      );
+    }
+    return href.startsWith("/#") && pathname === "/";
+  }
 
   function submitSearch(event: FormEvent) {
     event.preventDefault();
@@ -95,7 +114,7 @@ export function SiteHeader() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={pathname === item.href ? "active" : undefined}
+                className={navigationActive(item.href) ? "active" : undefined}
                 onClick={() => setMenuOpen(false)}
               >
                 {item.label}

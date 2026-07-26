@@ -109,12 +109,12 @@ export function CatalogBrowser({
         <div className="empty-state catalog-empty">
           <h2>Aramanızla eşleşen ürün bulunamadı</h2>
           <p>Filtreleri temizleyerek tüm kataloğu yeniden görüntüleyebilirsiniz.</p>
-          <button className="button primary" onClick={clear}>Tüm ürünleri göster</button>
+          <button className="button primary" type="button" onClick={clear}>Tüm ürünleri göster</button>
         </div>
       )}
       {result.nextCursor && (
         <div className="load-more">
-          <button className="button secondary" disabled={loading} onClick={loadMore}>
+          <button className="button secondary" type="button" disabled={loading} onClick={loadMore}>
             {loading ? "Yükleniyor…" : "Daha fazla göster"}
           </button>
         </div>

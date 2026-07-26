@@ -52,8 +52,8 @@ export function ProductDetailClient({
               />
               {product.images.length > 1 && (
                 <>
-                  <button onClick={() => move(-1)} className="detail-arrow previous" aria-label="Önceki görsel">‹</button>
-                  <button onClick={() => move(1)} className="detail-arrow next" aria-label="Sonraki görsel">›</button>
+                  <button type="button" onClick={() => move(-1)} className="detail-arrow previous" aria-label="Önceki görsel">‹</button>
+                  <button type="button" onClick={() => move(1)} className="detail-arrow next" aria-label="Sonraki görsel">›</button>
                 </>
               )}
             </div>
@@ -61,6 +61,7 @@ export function ProductDetailClient({
               <div className="thumbnail-strip">
                 {product.images.map((item, index) => (
                   <button
+                    type="button"
                     key={item.id}
                     className={index === imageIndex ? "active" : undefined}
                     onClick={() => setImageIndex(index)}
@@ -92,14 +93,15 @@ export function ProductDetailClient({
             </label>
             <div className="detail-actions">
               <div className="quantity-control large">
-                <button onClick={() => setQuantity((value) => Math.max(1, value - 1))}>−</button>
+                <button type="button" onClick={() => setQuantity((value) => Math.max(1, value - 1))} aria-label="Adedi azalt">−</button>
                 <b>{quantity}</b>
-                <button onClick={() => setQuantity((value) => value + 1)}>+</button>
+                <button type="button" onClick={() => setQuantity((value) => value + 1)} aria-label="Adedi artır">+</button>
               </div>
-              <button className="button primary grow" onClick={() => addToCart(product, variant, quantity)}>
+              <button type="button" className="button primary grow" onClick={() => addToCart(product, variant, quantity)}>
                 Teklif Sepetine Ekle
               </button>
               <button
+                type="button"
                 className={`button icon${favorites.includes(product.id) ? " selected" : ""}`}
                 onClick={() => toggleFavorite(product.id)}
                 aria-label="Favorilere ekle"

@@ -34,6 +34,7 @@ export default async function ProductsPage({
         </div>
       </section>
       <CatalogBrowser
+        key={`${q}|${brand}|${category}`}
         initial={initial}
         brands={facets.brands}
         categories={facets.categories}

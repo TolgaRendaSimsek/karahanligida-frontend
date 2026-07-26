@@ -3,12 +3,13 @@
 import { readFile } from "node:fs/promises";
 import process from "node:process";
 
-const baseUrl = (process.argv[2] || "http://127.0.0.1:3000").replace(/\/$/, "");
+const baseUrl = (process.argv[2] || "https://karahanligida.com").replace(/\/$/, "");
 const catalog = JSON.parse(
   await readFile(new URL("../data/products.json", import.meta.url), "utf8"),
 );
 const products = catalog.products || [];
 const errors = [];
+const forbiddenPublicAddress = /(?:localhost|127\.0\.0\.1)/i;
 
 async function check(path, expectedStatus, label = path) {
   try {
@@ -32,7 +33,15 @@ if (health) {
 }
 
 const publicPages = ["/", "/urunler", "/favoriler", "/iletisim", "/admin"];
-await Promise.all(publicPages.map((path) => check(path, 200)));
+const publicResponses = await Promise.all(publicPages.map((path) => check(path, 200)));
+for (let index = 0; index < publicResponses.length; index += 1) {
+  const response = publicResponses[index];
+  if (!response) continue;
+  const html = await response.text();
+  if (forbiddenPublicAddress.test(html)) {
+    errors.push(`${publicPages[index]} public HTML içinde localhost/127.0.0.1 içeriyor`);
+  }
+}
 
 const batches = [];
 for (let index = 0; index < products.length; index += 20) {
@@ -70,6 +79,9 @@ if (catalogResponse) {
   const text = await catalogResponse.text();
   if (/"price"|"subtotal"|"payment"/i.test(text)) {
     errors.push("/api/catalog fiyat veya ödeme alanı içeriyor");
+  }
+  if (forbiddenPublicAddress.test(text)) {
+    errors.push("/api/catalog localhost/127.0.0.1 içeriyor");
   }
 }
 

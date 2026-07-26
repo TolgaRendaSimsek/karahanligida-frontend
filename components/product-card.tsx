@@ -40,8 +40,8 @@ export function ProductCard({ product }: { product: CatalogCard }) {
         </button>
         {images.length > 1 && (
           <>
-            <button className="gallery-arrow previous" onClick={() => moveImage(-1)} aria-label="Önceki görsel">‹</button>
-            <button className="gallery-arrow next" onClick={() => moveImage(1)} aria-label="Sonraki görsel">›</button>
+            <button type="button" className="gallery-arrow previous" onClick={() => moveImage(-1)} aria-label="Önceki görsel">‹</button>
+            <button type="button" className="gallery-arrow next" onClick={() => moveImage(1)} aria-label="Sonraki görsel">›</button>
             <span className="gallery-count">{imageIndex + 1}/{images.length}</span>
           </>
         )}
