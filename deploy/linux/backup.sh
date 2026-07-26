@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -eu
 
-BASE_DIR="/srv/karahanli"
+BASE_DIR="${KARAHANLI_BASE_DIR:-/srv/karahanli}"
 DATA_DIR="$BASE_DIR/data"
 BACKUP_DIR="$BASE_DIR/backups"
 STAMP="$(date -u +%Y%m%dT%H%M%SZ)"

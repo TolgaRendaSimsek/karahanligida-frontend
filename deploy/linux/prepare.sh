@@ -15,7 +15,9 @@ install -d -m 0755 "$DATA_DIR/catalog"
 install -d -m 0700 "$BASE_DIR/secrets"
 install -d -m 0750 "$BASE_DIR/backups"
 
-cp "$APP_SOURCE/data/products.json" "$DATA_DIR/catalog/products.json"
+if [ ! -f "$DATA_DIR/catalog/products.json" ]; then
+  cp "$APP_SOURCE/data/products.json" "$DATA_DIR/catalog/products.json"
+fi
 
 # Dockerfile içindeki node kullanıcısı (UID/GID 1000) kalıcı dosyalara yazabilsin.
 chown -R 1000:1000 "$DATA_DIR"
