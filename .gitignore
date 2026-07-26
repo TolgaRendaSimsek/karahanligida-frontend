@@ -9,4 +9,8 @@ secrets/
 firebase-debug.log
 firebase/*service-account*.json
 firebase/*.key.json
-public/
+.next/
+playwright-report/
+test-results/
+coverage/
+*.tsbuildinfo

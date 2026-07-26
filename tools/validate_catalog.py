@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Normalize katalog verisini, görselleri ve statik ürün bağlantılarını doğrular."""
+"""Normalize katalog verisini, görselleri ve Next.js rota yapısını doğrular."""
 
 from __future__ import annotations
 
@@ -7,7 +7,6 @@ import json
 import re
 import sys
 from pathlib import Path
-from urllib.parse import unquote, urlsplit
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
@@ -133,25 +132,22 @@ def main() -> int:
     if disk_assets != assets:
         fail(errors, f"Sahipsiz veya eksik ürün görseli var: {sorted(disk_assets ^ assets)[:10]}")
 
-    if (ROOT / "urunler").exists():
-        for slug in slugs:
-            if not (ROOT / "urunler" / f"{slug}.html").is_file():
-                fail(errors, f"Ürün detay sayfası bulunamadı: {slug}")
+    dynamic_route = ROOT / "app" / "(store)" / "urunler" / "[slug]" / "page.tsx"
+    if not dynamic_route.is_file():
+        fail(errors, "Next.js dinamik ürün rotası bulunamadı")
+    if not (ROOT / "next.config.ts").is_file():
+        fail(errors, "Next.js yönlendirme yapılandırması bulunamadı")
 
-    for html_path in [*ROOT.glob("*.html"), *(ROOT / "urunler").glob("*.html")]:
-        html = html_path.read_text(encoding="utf-8")
-        for raw_url in re.findall(r"""(?:href|src)=["']([^"']+)["']""", html):
-            parsed = urlsplit(raw_url)
-            if parsed.scheme or raw_url.startswith(("#", "mailto:", "tel:", "javascript:")):
-                continue
-            relative = unquote(parsed.path)
-            if not relative:
-                continue
-            target = (html_path.parent / relative).resolve()
-            if target.is_dir():
-                target = target / "index.html"
-            if not target.exists():
-                fail(errors, f"Kırık yerel bağlantı: {html_path.relative_to(ROOT)} -> {raw_url}")
+    static_html = [*ROOT.glob("*.html")]
+    legacy_product_dir = ROOT / "urunler"
+    if legacy_product_dir.exists():
+        static_html.extend(legacy_product_dir.glob("*.html"))
+    if static_html:
+        fail(
+            errors,
+            "Eski statik HTML dosyaları kalmış: "
+            + ", ".join(path.relative_to(ROOT).as_posix() for path in static_html[:10]),
+        )
 
     if errors:
         print("\n".join(f"ERROR: {error}" for error in errors), file=sys.stderr)
