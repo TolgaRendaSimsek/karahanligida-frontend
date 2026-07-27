@@ -7,6 +7,7 @@ import { applicationDefault, initializeApp } from "firebase-admin/app";
 import { getAuth } from "firebase-admin/auth";
 import { getFirestore } from "firebase-admin/firestore";
 import { createRequireAdmin } from "./auth.mjs";
+import { grantAdminByEmail, listAdminUsers, revokeAdminByUid } from "./admin-users.mjs";
 import { createAdminCors } from "./cors.mjs";
 import { validateProduct } from "./catalog.mjs";
 import { processUpload } from "./media.mjs";
@@ -189,6 +190,48 @@ app.post("/api/admin/media", upload.array("images", 8), async (request, response
       ),
     );
     response.status(201).json({ images });
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.get("/api/admin/admins", async (_request, response, next) => {
+  try {
+    response.json({ admins: await listAdminUsers(auth) });
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.post("/api/admin/admins", async (request, response, next) => {
+  try {
+    const admin = await grantAdminByEmail(auth, request.body.email);
+    await db.collection("auditLogs").add({
+      action: "grant-admin",
+      targetUid: admin.uid,
+      targetEmail: admin.email,
+      actorUid: request.admin.uid,
+      actorEmail: request.admin.email,
+      createdAt: new Date(),
+    });
+    response.status(201).json({ admin });
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.delete("/api/admin/admins/:uid", async (request, response, next) => {
+  try {
+    const admin = await revokeAdminByUid(auth, request.params.uid, request.admin.uid);
+    await db.collection("auditLogs").add({
+      action: "revoke-admin",
+      targetUid: admin.uid,
+      targetEmail: admin.email,
+      actorUid: request.admin.uid,
+      actorEmail: request.admin.email,
+      createdAt: new Date(),
+    });
+    response.json({ ok: true });
   } catch (error) {
     next(error);
   }

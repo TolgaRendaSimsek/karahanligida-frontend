@@ -14,7 +14,7 @@ export function createAdminCors(allowedOrigin) {
     if (origin === allowedOrigin) {
       response.setHeader("Access-Control-Allow-Origin", allowedOrigin);
       response.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type");
-      response.setHeader("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
+      response.setHeader("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE, OPTIONS");
       response.setHeader("Access-Control-Max-Age", "600");
     }
 

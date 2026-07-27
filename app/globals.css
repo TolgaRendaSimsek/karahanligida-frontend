@@ -323,6 +323,20 @@ button { color: inherit; }
 .admin-media-actions button { width: 30px; height: 30px; border: 1px solid var(--line); border-radius: 7px; background: white; cursor: pointer; }
 .admin-editor > footer { border-top: 1px solid var(--line); border-bottom: 0; }
 .admin-editor > footer span { flex: 1; }
+.admin-users-panel { margin-top: 22px; scroll-margin-top: 24px; }
+.admin-users-panel > header { display: flex; justify-content: space-between; gap: 24px; padding: 22px; border-bottom: 1px solid var(--line); }
+.admin-users-panel > header h2 { margin: 5px 0; font-family: Georgia, serif; font-size: 28px; }
+.admin-users-panel > header p { max-width: 680px; margin: 0; color: var(--muted); font-size: 13px; }
+.admin-users-panel > header > strong { align-self: flex-start; white-space: nowrap; color: var(--green); }
+.admin-user-form { display: flex; align-items: end; gap: 12px; padding: 20px 22px; border-bottom: 1px solid var(--line); }
+.admin-user-form label { flex: 1; display: grid; gap: 7px; font-size: 12px; font-weight: 700; }
+.admin-user-form input { height: 44px; padding: 0 12px; border: 1px solid var(--line); border-radius: 9px; }
+.admin-user-list { display: grid; }
+.admin-user-list article { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 16px 22px; border-bottom: 1px solid var(--line); }
+.admin-user-list article:last-child { border-bottom: 0; }
+.admin-user-list article > div { display: grid; gap: 3px; }
+.admin-user-list small { color: var(--muted); }
+.admin-user-list button:disabled { opacity: .55; cursor: not-allowed; }
 
 @media (max-width: 1050px) {
   .header-main { grid-template-columns: 230px 1fr auto; gap: 14px; }
@@ -414,6 +428,7 @@ button { color: inherit; }
   .admin-main { padding: 24px 12px; }
   .admin-topbar { align-items: flex-start; gap: 18px; }
   .admin-toolbar { grid-template-columns: 1fr; }
+  .admin-users-panel > header, .admin-user-form, .admin-user-list article { align-items: stretch; flex-direction: column; }
   .admin-editor > footer { flex-wrap: wrap; }
   .admin-media-row { grid-template-columns: 65px 1fr; }
   .admin-media-row > div:first-child { width: 65px; }

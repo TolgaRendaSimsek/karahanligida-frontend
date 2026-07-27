@@ -27,6 +27,7 @@ test("izin verilen origin için CORS ve preflight başlıklarını döndürür",
   assert.equal(response.ended, true);
   assert.equal(response.headers["access-control-allow-origin"], "https://karahanligida.com");
   assert.match(response.headers["access-control-allow-headers"], /Authorization/);
+  assert.match(response.headers["access-control-allow-methods"], /DELETE/);
   assert.equal(response.headers.vary, "Origin");
 });
 

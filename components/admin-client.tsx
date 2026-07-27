@@ -25,6 +25,13 @@ type AdminProduct = ProductFamily & {
   displayStatus?: "published" | "draft";
 };
 
+type AdminUser = {
+  uid: string;
+  email: string;
+  displayName: string;
+  disabled: boolean;
+};
+
 type EditorFields = {
   product: AdminProduct;
   featuresText: string;
@@ -107,6 +114,9 @@ export function AdminClient({
   const [editor, setEditor] = useState<EditorFields | null>(null);
   const [notice, setNotice] = useState("");
   const [busy, setBusy] = useState(false);
+  const [admins, setAdmins] = useState<AdminUser[]>([]);
+  const [adminEmail, setAdminEmail] = useState("");
+  const [adminBusy, setAdminBusy] = useState(false);
 
   const auth = useMemo(() => {
     if (!configured) return null;
@@ -146,6 +156,15 @@ export function AdminClient({
     }
   }, [api]);
 
+  const loadAdmins = useCallback(async () => {
+    try {
+      const payload = await api("/admins");
+      setAdmins(payload.admins || []);
+    } catch (error) {
+      setNotice(`Admin listesi alınamadı: ${(error as Error).message}`);
+    }
+  }, [api]);
+
   useEffect(() => {
     if (!auth) {
       setAuthReady(true);
@@ -170,8 +189,11 @@ export function AdminClient({
   }, [auth]);
 
   useEffect(() => {
-    if (user) void loadCatalog();
-  }, [user, loadCatalog]);
+    if (user) {
+      void loadCatalog();
+      void loadAdmins();
+    }
+  }, [user, loadCatalog, loadAdmins]);
 
   const effectiveProducts = useMemo(() => {
     const byId = new Map<string, AdminProduct>(products.map((product) => [
@@ -296,6 +318,42 @@ export function AdminClient({
     }
   }
 
+  async function addAdmin(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setAdminBusy(true);
+    try {
+      await api("/admins", {
+        method: "POST",
+        body: JSON.stringify({ email: adminEmail }),
+      });
+      setAdminEmail("");
+      await loadAdmins();
+      setNotice("Kullanıcıya admin yetkisi verildi. Yeni yetki bir sonraki oturum açılışında etkinleşir.");
+    } catch (error) {
+      setNotice((error as Error).message);
+    } finally {
+      setAdminBusy(false);
+    }
+  }
+
+  async function removeAdmin(admin: AdminUser) {
+    if (admin.uid === user?.uid) {
+      setNotice("Kendi admin yetkinizi kaldıramazsınız.");
+      return;
+    }
+    if (!window.confirm(`${admin.email} kullanıcısının admin yetkisi kaldırılsın mı?`)) return;
+    setAdminBusy(true);
+    try {
+      await api(`/admins/${encodeURIComponent(admin.uid)}`, { method: "DELETE" });
+      await loadAdmins();
+      setNotice("Admin yetkisi kaldırıldı ve kullanıcının mevcut oturumları iptal edildi.");
+    } catch (error) {
+      setNotice((error as Error).message);
+    } finally {
+      setAdminBusy(false);
+    }
+  }
+
   function updateImage(id: string, patch: Partial<ProductImage>) {
     if (!editor) return;
     patchProduct({ images: editor.product.images.map((image) => image.id === id ? { ...image, ...patch } : image) });
@@ -338,7 +396,11 @@ export function AdminClient({
           <Image src="/logo.png" width={46} height={46} alt="" />
           <span><strong>KARAHANLI GIDA</strong><small>Katalog Yönetimi</small></span>
         </Link>
-        <nav><button type="button" className="active">Ürün Aileleri</button><Link href="/urunler">Canlı kataloğu gör</Link></nav>
+        <nav>
+          <a className="active" href="#urunler">Ürün Aileleri</a>
+          <a href="#yoneticiler">Yöneticiler</a>
+          <Link href="/urunler">Canlı kataloğu gör</Link>
+        </nav>
         <div className="admin-account"><span>{user.email}</span><button type="button" onClick={() => auth && signOut(auth)}>Çıkış</button></div>
       </aside>
       <section className="admin-main">
@@ -353,7 +415,7 @@ export function AdminClient({
           <article><span>Görsel</span><strong>{imageCount}</strong></article>
           <article><span>Varyant / model</span><strong>{variantCount}</strong></article>
         </section>
-        <section className="admin-panel">
+        <section className="admin-panel" id="urunler">
           <div className="admin-toolbar">
             <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ürün, marka veya model kodu ara" />
             <select value={status} onChange={(event) => setStatus(event.target.value)}>
@@ -375,6 +437,49 @@ export function AdminClient({
                 </tr>
               )) : <tr><td colSpan={6}>Eşleşen ürün bulunamadı.</td></tr>}</tbody>
             </table>
+          </div>
+        </section>
+        <section className="admin-panel admin-users-panel" id="yoneticiler">
+          <header>
+            <div>
+              <span className="eyebrow">FIREBASE AUTHENTICATION</span>
+              <h2>Yöneticiler</h2>
+              <p>Önceden Firebase Authentication’a eklenmiş bir kullanıcıya admin yetkisi verin veya mevcut yetkiyi kaldırın.</p>
+            </div>
+            <strong>{admins.length} admin</strong>
+          </header>
+          <form className="admin-user-form" onSubmit={addAdmin}>
+            <label>
+              Kullanıcı e-postası
+              <input
+                type="email"
+                value={adminEmail}
+                onChange={(event) => setAdminEmail(event.target.value)}
+                placeholder="admin@ornek.com"
+                required
+              />
+            </label>
+            <button className="admin-primary" type="submit" disabled={adminBusy}>Admin Yetkisi Ver</button>
+          </form>
+          <div className="admin-user-list">
+            {admins.map((admin) => (
+              <article key={admin.uid}>
+                <div>
+                  <strong>{admin.displayName || admin.email}</strong>
+                  {admin.displayName && <small>{admin.email}</small>}
+                  <small>{admin.disabled ? "Hesap devre dışı" : "Aktif hesap"}</small>
+                </div>
+                <button
+                  className="admin-danger"
+                  type="button"
+                  disabled={adminBusy || admin.uid === user.uid}
+                  onClick={() => void removeAdmin(admin)}
+                  title={admin.uid === user.uid ? "Kendi yetkinizi kaldıramazsınız" : "Admin yetkisini kaldır"}
+                >
+                  {admin.uid === user.uid ? "Mevcut hesap" : "Yetkiyi Kaldır"}
+                </button>
+              </article>
+            ))}
           </div>
         </section>
       </section>
