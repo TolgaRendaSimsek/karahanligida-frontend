@@ -118,6 +118,8 @@ export function AdminClient({
   const [drafts, setDrafts] = useState<AdminProduct[]>([]);
   const [query, setQuery] = useState("");
   const [status, setStatus] = useState("");
+  const [categoryFilter, setCategoryFilter] = useState("");
+  const [brandFilter, setBrandFilter] = useState("");
   const [editor, setEditor] = useState<EditorFields | null>(null);
   const [notice, setNotice] = useState("");
   const [busy, setBusy] = useState(false);
@@ -252,14 +254,31 @@ export function AdminClient({
     return [...byId.values()];
   }, [products, drafts]);
 
+  const categories = useMemo(() => [...new Set(effectiveProducts.map((product) => product.category))]
+    .sort((left, right) => left.localeCompare(right, "tr")), [effectiveProducts]);
+  const brands = useMemo(() => [...new Set(effectiveProducts.map((product) => product.brand))]
+    .sort((left, right) => left.localeCompare(right, "tr")), [effectiveProducts]);
+  const categoryCounts = useMemo(() => effectiveProducts.reduce<Record<string, number>>((counts, product) => {
+    counts[product.category] = (counts[product.category] || 0) + 1;
+    return counts;
+  }, {}), [effectiveProducts]);
+
   const filtered = effectiveProducts.filter((product) => {
     const text = [
       product.brand, product.name, product.category,
       ...product.variants.flatMap((variant) => [variant.name, variant.code]),
     ].join(" ").toLocaleLowerCase("tr-TR");
     return (!query || text.includes(query.toLocaleLowerCase("tr-TR")))
+      && (!brandFilter || product.brand === brandFilter)
+      && (!categoryFilter || product.category === categoryFilter)
       && (!status || product.displayStatus === status);
-  });
+  }).sort((left, right) => left.category.localeCompare(right.category, "tr")
+    || left.brand.localeCompare(right.brand, "tr")
+    || left.name.localeCompare(right.name, "tr"));
+
+  function scrollAdminSection(id: string) {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 
   async function login() {
     if (!auth) {
@@ -499,14 +518,14 @@ export function AdminClient({
   return (
     <main className="admin-page">
       <aside className="admin-sidebar">
-        <Link className="admin-brand" href="/">
+        <Link className="admin-brand" href="/admin">
           <Image src="/logo.png" width={46} height={46} alt="" />
           <span><strong>KARAHANLI GIDA</strong><small>Katalog Yönetimi</small></span>
         </Link>
         <nav>
-          <a className="active" href="#urunler">Ürün Aileleri</a>
-          <a href="#yoneticiler">Yöneticiler</a>
-          <Link href="/urunler">Canlı kataloğu gör</Link>
+          <button className="active" type="button" onClick={() => scrollAdminSection("urunler")}>Ürün Aileleri</button>
+          <button type="button" onClick={() => scrollAdminSection("yoneticiler")}>Yöneticiler</button>
+          <Link href="/urunler" target="_blank" rel="noopener noreferrer">Canlı kataloğu gör ↗</Link>
         </nav>
         <div className="admin-account"><span>{user.email}</span><button type="button" onClick={() => auth && signOut(auth)}>Çıkış</button></div>
       </aside>
@@ -533,28 +552,49 @@ export function AdminClient({
           <article><span>Varyant / model</span><strong>{variantCount}</strong></article>
         </section>
         <section className="admin-panel" id="urunler">
+          <header className="admin-catalog-heading">
+            <div><span className="eyebrow">ÜRÜN SINIFLARI</span><h2>Katalog görünümü</h2><p>Ürünleri canlı sitedeki gibi fotoğraflarıyla inceleyin; marka, kategori veya duruma göre süzün.</p></div>
+            <strong>{filtered.length} / {effectiveProducts.length} ürün</strong>
+          </header>
+          <div className="admin-category-strip" aria-label="Kategori filtreleri">
+            <button type="button" className={!categoryFilter ? "active" : undefined} onClick={() => setCategoryFilter("")}><span>Tümü</span><strong>{effectiveProducts.length}</strong></button>
+            {categories.map((category) => <button type="button" className={categoryFilter === category ? "active" : undefined} key={category} onClick={() => setCategoryFilter(category)}><span>{category}</span><strong>{categoryCounts[category]}</strong></button>)}
+          </div>
           <div className="admin-toolbar">
             <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ürün, marka veya model kodu ara" />
+            <select aria-label="Marka" value={brandFilter} onChange={(event) => setBrandFilter(event.target.value)}>
+              <option value="">Tüm markalar</option>{brands.map((brand) => <option key={brand}>{brand}</option>)}
+            </select>
+            <select aria-label="Kategori" value={categoryFilter} onChange={(event) => setCategoryFilter(event.target.value)}>
+              <option value="">Tüm kategoriler</option>{categories.map((category) => <option key={category}>{category}</option>)}
+            </select>
             <select value={status} onChange={(event) => setStatus(event.target.value)}>
               <option value="">Tüm durumlar</option><option value="published">Yayımlanmış</option><option value="draft">Taslak</option>
             </select>
           </div>
-          <div className="admin-table-wrap">
-            <table>
-              <thead><tr><th>Ürün ailesi</th><th>Kategori</th><th>Varyant</th><th>Görsel</th><th>Durum</th><th /></tr></thead>
-              <tbody>{filtered.length ? filtered.map((product) => (
-                <tr key={product.id}>
-                  <td><div className="admin-product-cell">
-                    <div>{product.images[0] && <Image src={publicAssetPath(product.images[0].thumbnailSrc)} fill sizes="60px" alt="" />}</div>
-                    <span><strong>{product.name}</strong><small>{product.brand} · {product.slug}</small></span>
-                  </div></td>
-                  <td>{product.category}</td><td>{product.variants.length}</td><td>{product.images.length}</td>
-                  <td><span className={`admin-status ${product.displayStatus}`}>{product.displayStatus === "draft" ? "Taslak" : "Yayında"}</span></td>
-                  <td><button type="button" className="admin-edit" onClick={() => setEditor(toEditor(product))}>Düzenle</button></td>
-                </tr>
-              )) : <tr><td colSpan={6}>Eşleşen ürün bulunamadı.</td></tr>}</tbody>
-            </table>
-          </div>
+          {filtered.length ? <div className="admin-product-grid">{filtered.map((product) => (
+            <article className="admin-product-card" key={product.id}>
+              <div className="admin-product-media">
+                {product.images[0] ? <Image src={publicAssetPath(product.images[0].thumbnailSrc || product.images[0].src)} fill sizes="(max-width: 800px) 100vw, 300px" alt={product.images[0].alt || `${product.brand} ${product.name}`} /> : <span>Görsel yok</span>}
+                <span className={`admin-status ${product.displayStatus}`}>{product.displayStatus === "draft" ? "Taslak" : "Yayında"}</span>
+                <span className="admin-image-count" aria-label={`${product.images.length} görsel`}>▧ {product.images.length}</span>
+              </div>
+              <div className="admin-product-content">
+                <div className="admin-product-labels"><span>{product.brand}</span><span>{product.category}</span></div>
+                <h3>{product.name}</h3>
+                <p>{product.summary}</p>
+                <dl>
+                  <div><dt>Varyant / model</dt><dd>{product.variants.length}</dd></div>
+                  <div><dt>Ürün görseli</dt><dd>{product.images.length}</dd></div>
+                  <div><dt>Alt kategori</dt><dd>{product.subcategory || "—"}</dd></div>
+                </dl>
+              </div>
+              <footer>
+                <Link href={`/urunler/${product.slug}`} target="_blank" rel="noopener noreferrer" aria-label={`${product.name} canlı ürün sayfasını aç`}>Canlı sayfa ↗</Link>
+                <button type="button" className="admin-edit" onClick={() => setEditor(toEditor(product))}>Ürünü Düzenle</button>
+              </footer>
+            </article>
+          ))}</div> : <div className="admin-empty-products"><h3>Eşleşen ürün bulunamadı</h3><p>Aramayı veya kategori filtrelerini temizleyin.</p><button type="button" onClick={() => { setQuery(""); setBrandFilter(""); setCategoryFilter(""); setStatus(""); }}>Tüm ürünleri göster</button></div>}
         </section>
         <section className="admin-panel admin-users-panel" id="yoneticiler">
           <header>
