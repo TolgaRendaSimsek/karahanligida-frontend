@@ -136,16 +136,20 @@ export function AdminClient({
 
   const api = useCallback(async (path: string, options: RequestInit = {}) => {
     if (!user) throw new Error("Admin oturumu bulunamadı.");
-    const token = await user.getIdToken();
     const baseUrl = apiOrigin.replace(/\/+$/, "");
-    const response = await fetch(`${baseUrl}/api/admin${path}`, {
+    const send = async (forceRefresh = false) => fetch(`${baseUrl}/api/admin${path}`, {
       ...options,
       headers: {
         ...(options.body instanceof FormData ? {} : { "Content-Type": "application/json" }),
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${await user.getIdToken(forceRefresh)}`,
         ...options.headers,
       },
     });
+    let response = await send();
+    // Sağlayıcı bağlama veya admin claim değişikliğinden sonra önbellekteki
+    // token iptal edilmiş olabilir. Bir kez zorla yenileyerek kullanıcıyı
+    // gereksiz yere panelden atmadan isteği tekrarlarız.
+    if (response.status === 401) response = await send(true);
     const payload = await response.json().catch(() => ({}));
     if (!response.ok) {
       const error = new Error(payload.error || "İşlem tamamlanamadı.") as Error & { status?: number };
