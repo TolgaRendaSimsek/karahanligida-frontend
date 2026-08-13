@@ -2,12 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { ProductCard } from "@/components/product-card";
 import { publishedProducts } from "@/lib/catalog-repository";
-import { toCatalogCard } from "@/lib/catalog-schema";
+import { publicAssetPath, toCatalogCard } from "@/lib/catalog-schema";
 
 export default async function HomePage() {
   const products = await publishedProducts();
   const featured = products.filter((product) => product.featured).slice(0, 4);
   const brands = [...new Set(products.map((product) => product.brand))];
+  const heroCoffee = products.find((product) => product.slug === "kimbo-horeca-cekirdek-kahveler")
+    ?? products.find((product) => product.category === "Kahve");
+  const accentCoffee = products.find((product) => product.slug === "kimbo-retail-cekirdek-kahveler")
+    ?? products.find((product) => product.category === "Kahve" && product.id !== heroCoffee?.id);
 
   return (
     <main>
@@ -31,23 +35,23 @@ export default async function HomePage() {
             </div>
           </div>
           <div className="hero-visual">
-            <div className="hero-image-card main">
+            {heroCoffee && <Link className="hero-image-card main" href={`/urunler/${heroCoffee.slug}`} aria-label={`${heroCoffee.name} ürününü incele`}>
               <Image
-                src="/assets/products/kimbo/kimbo-horeca-cekirdek-kahveler/image-01.webp"
+                src={publicAssetPath(heroCoffee.images[0].src)}
                 fill
                 priority
                 sizes="(max-width: 900px) 90vw, 42vw"
-                alt="Karahanlı Gıda profesyonel kahve ürünleri"
+                alt={heroCoffee.images[0].alt || `Kimbo ${heroCoffee.name}`}
               />
-            </div>
-            <div className="hero-image-card accent">
+            </Link>}
+            {accentCoffee && <Link className="hero-image-card accent" href={`/urunler/${accentCoffee.slug}`} aria-label={`${accentCoffee.name} ürününü incele`}>
               <Image
-                src="/assets/products/yook/yook-vitamin-ve-kalsiyumlu-yulaf-icecegi/image-01.webp"
+                src={publicAssetPath(accentCoffee.images[0].src)}
                 fill
                 sizes="220px"
-                alt="Profesyonel kahve ekipmanı"
+                alt={accentCoffee.images[0].alt || `Kimbo ${accentCoffee.name}`}
               />
-            </div>
+            </Link>}
             <div className="hero-note"><span>7 katalog</span><strong>Tek bir profesyonel çözüm ortağı</strong></div>
           </div>
         </div>

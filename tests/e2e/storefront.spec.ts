@@ -9,6 +9,19 @@ test("ortak header ve temiz katalog URL'si çalışır", async ({ page }) => {
   await expect(page.locator(".catalog-summary")).toContainText("ürün ailesi bulundu");
 });
 
+test("ana sayfa hero alanı gerçek kahve ürünlerini gösterir", async ({ page }) => {
+  await page.goto("/");
+
+  const heroLinks = page.locator(".hero-image-card");
+  await expect(heroLinks).toHaveCount(2);
+  await expect(heroLinks.first()).toHaveAttribute("href", "/urunler/kimbo-horeca-cekirdek-kahveler");
+  await expect(heroLinks.last()).toHaveAttribute("href", "/urunler/kimbo-retail-cekirdek-kahveler");
+  await expect.poll(async () => heroLinks.locator("img").evaluateAll((images) => images.every((image) => {
+    const element = image as HTMLImageElement;
+    return element.complete && element.naturalWidth > 0;
+  }))).toBe(true);
+});
+
 test("header kategori bağlantıları aynı katalog sayfasında state'i yeniler", async ({ page }, testInfo) => {
   await page.goto("/urunler?category=%C5%9Eurup%20ve%20P%C3%BCreler");
   await expect(page.getByRole("combobox", { name: "Kategori" })).toHaveValue("Şurup ve Püreler");

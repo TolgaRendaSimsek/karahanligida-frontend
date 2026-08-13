@@ -3,7 +3,7 @@ import path from "node:path";
 import { NextResponse } from "next/server";
 
 const SEGMENT = /^[a-z0-9-]+$/;
-const FILE = /^image-[a-z0-9-]+(?:-thumb)?\.webp$/;
+const FILE = /^(?:image|web)-[a-z0-9-]+(?:-thumb)?\.webp$/;
 
 export async function GET(
   _request: Request,
