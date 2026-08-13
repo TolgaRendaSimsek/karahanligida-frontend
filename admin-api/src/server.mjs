@@ -6,11 +6,17 @@ import multer from "multer";
 import { applicationDefault, initializeApp } from "firebase-admin/app";
 import { getAuth } from "firebase-admin/auth";
 import { getFirestore } from "firebase-admin/firestore";
-import { createRequireAdmin } from "./auth.mjs";
-import { grantAdminByEmail, listAdminUsers, revokeAdminByUid } from "./admin-users.mjs";
+import { createRequireAdmin, createRequireGoogleUser } from "./auth.mjs";
+import { listAdminUsers, revokeAdminByUid } from "./admin-users.mjs";
+import {
+  cancelAdminInvite,
+  claimAdminInvite,
+  createAdminInvite,
+  listAdminInvites,
+} from "./admin-invites.mjs";
 import { createAdminCors } from "./cors.mjs";
 import { validateProduct } from "./catalog.mjs";
-import { processUpload } from "./media.mjs";
+import { cleanupExpiredTrash, processUpload, trashProductMedia } from "./media.mjs";
 import { publishDraft, rebuildPublicSnapshot } from "./publisher.mjs";
 
 const port = Number(process.env.PORT || 3100);
@@ -32,6 +38,10 @@ await Promise.all([
   mkdir(mediaRoot, { recursive: true }),
   mkdir(dirname(catalogPath), { recursive: true }),
 ]);
+await cleanupExpiredTrash({ mediaRoot }).catch((error) => console.warn("Medya çöpü temizlenemedi:", error));
+setInterval(() => {
+  void cleanupExpiredTrash({ mediaRoot }).catch((error) => console.warn("Medya çöpü temizlenemedi:", error));
+}, 24 * 60 * 60 * 1000).unref();
 
 app.disable("x-powered-by");
 app.use(helmet({ contentSecurityPolicy: false }));
@@ -39,9 +49,25 @@ app.use(express.json({ limit: "2mb" }));
 app.use(createAdminCors(allowedOrigin));
 
 const requireAdmin = createRequireAdmin(auth);
+const requireGoogleUser = createRequireGoogleUser(auth);
 
 app.get("/health", (_request, response) => {
   response.json({ ok: true, service: "karahanli-admin-api" });
+});
+
+app.post("/api/admin/claim-invite", requireGoogleUser, async (request, response, next) => {
+  try {
+    const admin = await claimAdminInvite({ db, auth, user: request.googleUser });
+    await db.collection("auditLogs").add({
+      action: "accept-admin-invite",
+      actorUid: admin.uid,
+      actorEmail: admin.email,
+      createdAt: new Date(),
+    });
+    response.json({ ok: true, admin });
+  } catch (error) {
+    next(error);
+  }
 });
 
 app.use("/api/admin", requireAdmin);
@@ -195,9 +221,62 @@ app.post("/api/admin/media", upload.array("images", 8), async (request, response
   }
 });
 
+app.delete("/api/admin/products/:id", async (request, response, next) => {
+  const familyRef = db.collection("productFamilies").doc(request.params.id);
+  const draftRef = db.collection("productDrafts").doc(request.params.id);
+  let previousFamily = null;
+  let previousDraft = null;
+  try {
+    const [family, draft] = await Promise.all([familyRef.get(), draftRef.get()]);
+    if (!family.exists && !draft.exists) {
+      const error = new Error("Silinecek ürün bulunamadı.");
+      error.status = 404;
+      throw error;
+    }
+    const expectedName = String(request.body?.confirmation || "").trim();
+    const actualName = String((draft.exists ? draft.data() : family.data()).name || "").trim();
+    if (!actualName || expectedName !== actualName) {
+      const error = new Error("Kalıcı silme için ürün adını eksiksiz yazın.");
+      error.status = 400;
+      error.code = "confirmation-mismatch";
+      throw error;
+    }
+    previousFamily = family.exists ? family.data() : null;
+    previousDraft = draft.exists ? draft.data() : null;
+    await db.runTransaction(async (transaction) => {
+      transaction.delete(familyRef);
+      transaction.delete(draftRef);
+    });
+    let payload;
+    try {
+      payload = await rebuildPublicSnapshot({ db, catalogPath });
+    } catch (error) {
+      await db.runTransaction(async (transaction) => {
+        if (previousFamily) transaction.set(familyRef, previousFamily);
+        if (previousDraft) transaction.set(draftRef, previousDraft);
+      });
+      throw error;
+    }
+    const trashedMediaPath = await trashProductMedia({ productId: request.params.id, mediaRoot });
+    await db.collection("auditLogs").add({
+      action: "delete-product",
+      productId: request.params.id,
+      productName: actualName,
+      actorUid: request.admin.uid,
+      actorEmail: request.admin.email,
+      mediaTrashed: Boolean(trashedMediaPath),
+      createdAt: new Date(),
+    });
+    response.json({ ok: true, productCount: payload.products.length });
+  } catch (error) {
+    next(error);
+  }
+});
+
 app.get("/api/admin/admins", async (_request, response, next) => {
   try {
-    response.json({ admins: await listAdminUsers(auth) });
+    const [admins, invites] = await Promise.all([listAdminUsers(auth), listAdminInvites(db)]);
+    response.json({ admins, invites });
   } catch (error) {
     next(error);
   }
@@ -205,16 +284,33 @@ app.get("/api/admin/admins", async (_request, response, next) => {
 
 app.post("/api/admin/admins", async (request, response, next) => {
   try {
-    const admin = await grantAdminByEmail(auth, request.body.email);
+    const invite = await createAdminInvite(db, request.body.email, request.admin);
     await db.collection("auditLogs").add({
-      action: "grant-admin",
-      targetUid: admin.uid,
-      targetEmail: admin.email,
+      action: "invite-admin",
+      inviteId: invite.id,
+      targetEmail: invite.email,
       actorUid: request.admin.uid,
       actorEmail: request.admin.email,
       createdAt: new Date(),
     });
-    response.status(201).json({ admin });
+    response.status(201).json({ invite });
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.delete("/api/admin/invites/:id", async (request, response, next) => {
+  try {
+    const invite = await cancelAdminInvite(db, request.params.id, request.admin);
+    await db.collection("auditLogs").add({
+      action: "cancel-admin-invite",
+      inviteId: request.params.id,
+      targetEmail: invite.email,
+      actorUid: request.admin.uid,
+      actorEmail: request.admin.email,
+      createdAt: new Date(),
+    });
+    response.json({ ok: true });
   } catch (error) {
     next(error);
   }

@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FormEvent, useCallback, useEffect, useMemo, useState } from "react";
+import { FormEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { getApps, initializeApp } from "firebase/app";
 import {
   getAuth,
   onAuthStateChanged,
-  signInWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
   signOut,
   type User,
 } from "firebase/auth";
@@ -30,6 +31,12 @@ type AdminUser = {
   email: string;
   displayName: string;
   disabled: boolean;
+};
+
+type AdminInvite = {
+  id: string;
+  email: string;
+  status: "pending";
 };
 
 type EditorFields = {
@@ -115,8 +122,11 @@ export function AdminClient({
   const [notice, setNotice] = useState("");
   const [busy, setBusy] = useState(false);
   const [admins, setAdmins] = useState<AdminUser[]>([]);
+  const [invites, setInvites] = useState<AdminInvite[]>([]);
   const [adminEmail, setAdminEmail] = useState("");
   const [adminBusy, setAdminBusy] = useState(false);
+  const replacementInput = useRef<HTMLInputElement>(null);
+  const [replacementImageId, setReplacementImageId] = useState("");
 
   const auth = useMemo(() => {
     if (!configured) return null;
@@ -160,6 +170,7 @@ export function AdminClient({
     try {
       const payload = await api("/admins");
       setAdmins(payload.admins || []);
+      setInvites(payload.invites || []);
     } catch (error) {
       setNotice(`Admin listesi alınamadı: ${(error as Error).message}`);
     }
@@ -176,17 +187,29 @@ export function AdminClient({
         setAuthReady(true);
         return;
       }
-      const token = await nextUser.getIdTokenResult(true);
+      let token = await nextUser.getIdTokenResult(true);
       if (token.claims.admin !== true) {
-        setLoginError("Bu hesabın admin yetkisi bulunmuyor.");
-        await signOut(auth);
-        setAuthReady(true);
-        return;
+        try {
+          const baseUrl = apiOrigin.replace(/\/+$/, "");
+          const response = await fetch(`${baseUrl}/api/admin/claim-invite`, {
+            method: "POST",
+            headers: { Authorization: `Bearer ${await nextUser.getIdToken()}` },
+          });
+          const payload = await response.json().catch(() => ({}));
+          if (!response.ok) throw new Error(payload.error || "Admin daveti bulunamadı.");
+          token = await nextUser.getIdTokenResult(true);
+        } catch (error) {
+          setLoginError((error as Error).message);
+          await signOut(auth);
+          setAuthReady(true);
+          return;
+        }
       }
+      if (token.claims.admin !== true) throw new Error("Admin yetkisi etkinleştirilemedi.");
       setUser(nextUser);
       setAuthReady(true);
     });
-  }, [auth]);
+  }, [auth, apiOrigin]);
 
   useEffect(() => {
     if (user) {
@@ -213,18 +236,20 @@ export function AdminClient({
       && (!status || product.displayStatus === status);
   });
 
-  async function login(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+  async function login() {
     if (!auth) {
       setLoginError("Firebase Web App ortam değişkenleri yapılandırılmamış.");
       return;
     }
-    const form = new FormData(event.currentTarget);
     setLoginError("");
     try {
-      await signInWithEmailAndPassword(auth, String(form.get("email")), String(form.get("password")));
-    } catch {
-      setLoginError("E-posta, şifre veya Firebase yapılandırması geçersiz.");
+      const provider = new GoogleAuthProvider();
+      provider.setCustomParameters({ prompt: "select_account" });
+      await signInWithPopup(auth, provider);
+    } catch (error) {
+      setLoginError((error as { code?: string }).code === "auth/popup-closed-by-user"
+        ? "Google giriş penceresi kapatıldı."
+        : "Google ile giriş tamamlanamadı.");
     }
   }
 
@@ -318,6 +343,31 @@ export function AdminClient({
     }
   }
 
+  async function replaceImage(files: FileList | null) {
+    if (!editor || !replacementImageId || !files?.[0]) return;
+    setBusy(true);
+    const form = new FormData();
+    form.append("productId", editor.product.id);
+    form.append("images", files[0]);
+    try {
+      const result = await api("/media", { method: "POST", body: form });
+      const replacement = result.images[0] as ProductImage;
+      const previous = editor.product.images.find((image) => image.id === replacementImageId);
+      patchProduct({
+        images: editor.product.images.map((image) => image.id === replacementImageId
+          ? { ...replacement, alt: previous?.alt || replacement.alt, variantIds: previous?.variantIds || [] }
+          : image),
+      });
+      setNotice("Görsel değiştirildi. Dosya, ürün yayımlandığında canlıya alınacak.");
+    } catch (error) {
+      setNotice((error as Error).message);
+    } finally {
+      setReplacementImageId("");
+      if (replacementInput.current) replacementInput.current.value = "";
+      setBusy(false);
+    }
+  }
+
   async function addAdmin(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setAdminBusy(true);
@@ -328,11 +378,45 @@ export function AdminClient({
       });
       setAdminEmail("");
       await loadAdmins();
-      setNotice("Kullanıcıya admin yetkisi verildi. Yeni yetki bir sonraki oturum açılışında etkinleşir.");
+      setNotice("Google admin daveti oluşturuldu. Kullanıcı ilk Google girişinde yetkilendirilecek.");
     } catch (error) {
       setNotice((error as Error).message);
     } finally {
       setAdminBusy(false);
+    }
+  }
+
+  async function cancelInvite(invite: AdminInvite) {
+    if (!window.confirm(`${invite.email} daveti iptal edilsin mi?`)) return;
+    setAdminBusy(true);
+    try {
+      await api(`/invites/${encodeURIComponent(invite.id)}`, { method: "DELETE" });
+      await loadAdmins();
+      setNotice("Admin daveti iptal edildi.");
+    } catch (error) {
+      setNotice((error as Error).message);
+    } finally {
+      setAdminBusy(false);
+    }
+  }
+
+  async function deleteProduct() {
+    if (!editor) return;
+    const confirmation = window.prompt(`Bu işlem geri alınamaz. Kalıcı silmek için ürün adını yazın:\n${editor.product.name}`);
+    if (confirmation === null) return;
+    setBusy(true);
+    try {
+      await api(`/products/${encodeURIComponent(editor.product.id)}`, {
+        method: "DELETE",
+        body: JSON.stringify({ confirmation }),
+      });
+      setEditor(null);
+      await loadCatalog();
+      setNotice("Ürün kalıcı olarak silindi; medya dosyaları 30 günlük çöp alanına taşındı.");
+    } catch (error) {
+      setNotice((error as Error).message);
+    } finally {
+      setBusy(false);
     }
   }
 
@@ -372,16 +456,14 @@ export function AdminClient({
   if (!user) {
     return (
       <main className="admin-login-shell">
-        <form className="admin-login-card" onSubmit={login}>
+        <section className="admin-login-card">
           <Image src="/logo.png" width={70} height={70} alt="Karahanlı Gıda" />
           <span className="eyebrow">GÜVENLİ YÖNETİM</span>
           <h1>Katalog yönetimi</h1>
-          <p>Firebase admin hesabınızla giriş yapın.</p>
-          <label>E-posta<input name="email" type="email" autoComplete="username" required /></label>
-          <label>Şifre<input name="password" type="password" autoComplete="current-password" required /></label>
-          <button type="submit">Giriş Yap</button>
+          <p>Davet edilmiş Google hesabınızla güvenli şekilde giriş yapın.</p>
+          <button type="button" onClick={() => void login()}>Google ile Giriş Yap</button>
           <p className="admin-error">{loginError}</p>
-        </form>
+        </section>
       </main>
     );
   }
@@ -444,7 +526,7 @@ export function AdminClient({
             <div>
               <span className="eyebrow">FIREBASE AUTHENTICATION</span>
               <h2>Yöneticiler</h2>
-              <p>Önceden Firebase Authentication’a eklenmiş bir kullanıcıya admin yetkisi verin veya mevcut yetkiyi kaldırın.</p>
+              <p>Google hesabını davet edin veya mevcut bir yöneticinin yetkisini kaldırın.</p>
             </div>
             <strong>{admins.length} admin</strong>
           </header>
@@ -459,8 +541,14 @@ export function AdminClient({
                 required
               />
             </label>
-            <button className="admin-primary" type="submit" disabled={adminBusy}>Admin Yetkisi Ver</button>
+            <button className="admin-primary" type="submit" disabled={adminBusy}>Google Admin Daveti Gönder</button>
           </form>
+          {invites.length > 0 && <div className="admin-user-list">
+            {invites.map((invite) => <article key={invite.id}>
+              <div><strong>{invite.email}</strong><small>İlk Google girişini bekliyor</small></div>
+              <button className="admin-danger" type="button" disabled={adminBusy} onClick={() => void cancelInvite(invite)}>Daveti İptal Et</button>
+            </article>)}
+          </div>}
           <div className="admin-user-list">
             {admins.map((admin) => (
               <article key={admin.uid}>
@@ -505,6 +593,7 @@ export function AdminClient({
               </div>
               <section className="admin-media">
                 <div className="admin-media-heading"><div><h3>Ürün görselleri</h3><p>Görselleri yükleyin, sıralayın ve varyantlarla eşleştirin.</p></div><label className="admin-upload">Görsel Yükle<input type="file" accept="image/jpeg,image/png,image/webp,image/avif" multiple onChange={(e) => void uploadImages(e.target.files)} /></label></div>
+                <input ref={replacementInput} hidden type="file" accept="image/jpeg,image/png,image/webp,image/avif" onChange={(event) => void replaceImage(event.target.files)} />
                 <div className="admin-media-list">{editor.product.images.length ? editor.product.images.map((image, index) => (
                   <article className="admin-media-row" key={image.id}>
                     <div><Image src={publicAssetPath(image.thumbnailSrc || image.src)} fill sizes="82px" alt="" /></div>
@@ -516,14 +605,15 @@ export function AdminClient({
                     <div className="admin-media-actions">
                       <button type="button" aria-label="Görseli yukarı taşı" disabled={index === 0} onClick={() => moveImage(index, -1)}>↑</button>
                       <button type="button" aria-label="Görseli aşağı taşı" disabled={index === editor.product.images.length - 1} onClick={() => moveImage(index, 1)}>↓</button>
-                      <button type="button" aria-label="Görseli kaldır" onClick={() => patchProduct({ images: editor.product.images.filter((item) => item.id !== image.id) })}>×</button>
+                      <button type="button" aria-label="Görseli değiştir" onClick={() => { setReplacementImageId(image.id); replacementInput.current?.click(); }}>↻</button>
+                      <button type="button" aria-label="Görseli kaldır" disabled={editor.product.images.length === 1} title={editor.product.images.length === 1 ? "Önce yeni bir görsel yükleyin" : "Görseli kaldır"} onClick={() => patchProduct({ images: editor.product.images.filter((item) => item.id !== image.id) })}>×</button>
                     </div>
                   </article>
                 )) : <p>Henüz görsel eklenmedi.</p>}</div>
               </section>
             </div>
             <footer>
-              {products.some((item) => item.id === editor.product.id) && <button className="admin-danger" type="button" onClick={() => void archive()}>Arşivle</button>}
+              {products.some((item) => item.id === editor.product.id) && <><button className="admin-danger" type="button" onClick={() => void archive()}>Arşivle</button><button className="admin-danger" type="button" onClick={() => void deleteProduct()}>Kalıcı Sil</button></>}
               <span />
               <button className="admin-secondary" type="submit" disabled={busy}>Taslağı Kaydet</button>
               <button className="admin-primary" type="button" disabled={busy} onClick={() => void publish()}>Yayınla</button>

@@ -11,7 +11,8 @@ export function proxy(request: NextRequest) {
     `style-src 'self' 'nonce-${nonce}'${isDev ? " 'unsafe-inline'" : ""}`,
     "img-src 'self' data: blob:",
     "font-src 'self'",
-    "connect-src 'self' https://api.karahanligida.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://*.googleapis.com",
+    "connect-src 'self' https://api.karahanligida.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://*.googleapis.com https://karahanligida01.firebaseapp.com",
+    "frame-src 'self' https://karahanligida01.firebaseapp.com https://accounts.google.com",
     "frame-ancestors 'none'",
     "base-uri 'self'",
     "object-src 'none'",
@@ -23,6 +24,9 @@ export function proxy(request: NextRequest) {
   headers.set("Content-Security-Policy", csp);
   const response = NextResponse.next({ request: { headers } });
   response.headers.set("Content-Security-Policy", csp);
+  if (request.nextUrl.pathname.startsWith("/admin")) {
+    response.headers.set("Cross-Origin-Opener-Policy", "same-origin-allow-popups");
+  }
   return response;
 }
 

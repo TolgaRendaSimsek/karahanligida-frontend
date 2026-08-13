@@ -1,6 +1,13 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { createRequireAdmin } from "../src/auth.mjs";
+import { createRequireAdmin, createRequireGoogleUser } from "../src/auth.mjs";
+
+const googleToken = {
+  uid: "u1",
+  email: "admin@example.com",
+  email_verified: true,
+  firebase: { sign_in_provider: "google.com" },
+};
 
 function responseRecorder() {
   return {
@@ -19,7 +26,7 @@ test("token bulunmayan isteği 401 ile reddeder", async () => {
 });
 
 test("admin claim bulunmayan isteği 403 ile reddeder", async () => {
-  const middleware = createRequireAdmin({ verifyIdToken: async () => ({ uid: "u1", admin: false }) });
+  const middleware = createRequireAdmin({ verifyIdToken: async () => ({ ...googleToken, admin: false }) });
   const response = responseRecorder();
   await middleware({ headers: { authorization: "Bearer token" } }, response, () => assert.fail("next çağrılmamalı"));
   assert.equal(response.statusCode, 403);
@@ -27,7 +34,7 @@ test("admin claim bulunmayan isteği 403 ile reddeder", async () => {
 
 test("admin tokenini doğrular ve kullanıcıyı isteğe ekler", async () => {
   const middleware = createRequireAdmin({
-    verifyIdToken: async () => ({ uid: "u1", email: "admin@example.com", admin: true }),
+    verifyIdToken: async () => ({ ...googleToken, admin: true }),
   });
   const request = { headers: { authorization: "Bearer token" } };
   const response = responseRecorder();
@@ -35,4 +42,23 @@ test("admin tokenini doğrular ve kullanıcıyı isteğe ekler", async () => {
   await middleware(request, response, () => { continued = true; });
   assert.equal(continued, true);
   assert.equal(request.admin.email, "admin@example.com");
+});
+
+test("parola sağlayıcısıyla alınmış admin tokenini reddeder", async () => {
+  const middleware = createRequireAdmin({
+    verifyIdToken: async () => ({ ...googleToken, admin: true, firebase: { sign_in_provider: "password" } }),
+  });
+  const response = responseRecorder();
+  await middleware({ headers: { authorization: "Bearer token" } }, response, () => assert.fail("next çağrılmamalı"));
+  assert.equal(response.statusCode, 403);
+});
+
+test("doğrulanmış Google kullanıcısını davet kabul akışına geçirir", async () => {
+  const middleware = createRequireGoogleUser({ verifyIdToken: async () => googleToken });
+  const request = { headers: { authorization: "Bearer token" } };
+  const response = responseRecorder();
+  let continued = false;
+  await middleware(request, response, () => { continued = true; });
+  assert.equal(continued, true);
+  assert.equal(request.googleUser.email, "admin@example.com");
 });

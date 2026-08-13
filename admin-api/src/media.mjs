@@ -1,5 +1,5 @@
 import { createHash, randomUUID } from "node:crypto";
-import { mkdir, readdir, rename } from "node:fs/promises";
+import { mkdir, readdir, rename, rm, stat } from "node:fs/promises";
 import { basename, join } from "node:path";
 import sharp from "sharp";
 
@@ -157,4 +157,41 @@ export async function trashUnusedProductMedia({ productId, images, mediaRoot }) 
     unused.map((fileName) => moveToTrash({ productId, fileName, mediaRoot })),
   );
   return unused;
+}
+
+export async function trashProductMedia({ productId, mediaRoot }) {
+  assertProductId(productId);
+  const source = join(mediaRoot, "products", productId);
+  try {
+    await stat(source);
+  } catch (error) {
+    if (error.code === "ENOENT") return null;
+    throw error;
+  }
+  const trash = join(mediaRoot, ".trash", new Date().toISOString().slice(0, 10));
+  await mkdir(trash, { recursive: true });
+  const target = join(trash, `${productId}-${Date.now()}`);
+  await rename(source, target);
+  return target;
+}
+
+export async function cleanupExpiredTrash({ mediaRoot, retentionDays = 30, now = Date.now() }) {
+  const trashRoot = join(mediaRoot, ".trash");
+  let entries;
+  try {
+    entries = await readdir(trashRoot, { withFileTypes: true });
+  } catch (error) {
+    if (error.code === "ENOENT") return [];
+    throw error;
+  }
+  const cutoff = now - retentionDays * 24 * 60 * 60 * 1000;
+  const removed = [];
+  for (const entry of entries) {
+    if (!entry.isDirectory() || !/^\d{4}-\d{2}-\d{2}$/.test(entry.name)) continue;
+    const timestamp = Date.parse(`${entry.name}T00:00:00Z`);
+    if (Number.isNaN(timestamp) || timestamp >= cutoff) continue;
+    await rm(join(trashRoot, entry.name), { recursive: true, force: true });
+    removed.push(entry.name);
+  }
+  return removed;
 }
