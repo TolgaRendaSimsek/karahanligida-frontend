@@ -494,7 +494,13 @@ export function AdminClient({
           <div><span className="eyebrow">FIREBASE + LINUX MEDYA</span><h1>Ürün kataloğu</h1></div>
           <button type="button" className="admin-primary" onClick={() => setEditor(toEditor(emptyProduct()))}>Yeni Ürün Ailesi</button>
         </header>
-        {notice && <div className="admin-notice">{notice}</div>}
+        {notice && <div className="admin-notice">
+          <span>{notice}</span>
+          {notice.includes("bağlantısı kurulamadı") && <button type="button" onClick={() => {
+            void loadCatalog();
+            void loadAdmins();
+          }}>Tekrar Dene</button>}
+        </div>}
         <section className="admin-stats">
           <article><span>Yayımlanmış</span><strong>{products.filter((item) => item.status === "published").length}</strong></article>
           <article><span>Taslak</span><strong>{drafts.length}</strong></article>

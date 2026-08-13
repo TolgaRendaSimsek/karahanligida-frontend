@@ -42,11 +42,9 @@ api.karahanligida.com {
 	encode zstd gzip
 
 	header {
-		Access-Control-Allow-Origin "https://karahanligida.com"
 		Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
 		Referrer-Policy "strict-origin-when-cross-origin"
 		Strict-Transport-Security "max-age=31536000; includeSubDomains"
-		Vary "Origin"
 		X-Content-Type-Options "nosniff"
 		X-Frame-Options "DENY"
 	}

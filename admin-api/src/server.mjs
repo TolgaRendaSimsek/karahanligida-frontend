@@ -44,7 +44,7 @@ setInterval(() => {
 }, 24 * 60 * 60 * 1000).unref();
 
 app.disable("x-powered-by");
-app.use(helmet({ contentSecurityPolicy: false }));
+app.use(helmet({ contentSecurityPolicy: false, crossOriginResourcePolicy: false }));
 app.use(express.json({ limit: "2mb" }));
 app.use(createAdminCors(allowedOrigin));
 
