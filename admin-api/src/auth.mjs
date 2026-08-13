@@ -6,6 +6,12 @@ function googleIdentity(decoded) {
 
 function authenticationError(response, error, googleOnly = false) {
   const code = error?.code;
+  if (code === "EACCES" || String(code || "").startsWith("app/")) {
+    return response.status(503).json({
+      error: "Firebase kimlik doğrulama servisine erişilemiyor.",
+      code: "firebase-unavailable",
+    });
+  }
   if (code === "auth/id-token-revoked") {
     return response.status(401).json({
       error: "Güvenlik nedeniyle oturumunuz kapatıldı. Google ile yeniden giriş yapın.",

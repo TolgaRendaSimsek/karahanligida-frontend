@@ -86,3 +86,15 @@ test("süresi dolan tokeni ayrı hata koduyla reddeder", async () => {
   assert.equal(response.statusCode, 401);
   assert.equal(response.body.code, "token-expired");
 });
+
+test("okunamayan Firebase credential hatasını oturum hatası gibi göstermez", async () => {
+  const middleware = createRequireAdmin({
+    verifyIdToken: async () => {
+      throw Object.assign(new Error("permission denied"), { code: "EACCES" });
+    },
+  });
+  const response = responseRecorder();
+  await middleware({ headers: { authorization: "Bearer token" } }, response, () => assert.fail("next çağrılmamalı"));
+  assert.equal(response.statusCode, 503);
+  assert.equal(response.body.code, "firebase-unavailable");
+});

@@ -59,6 +59,7 @@ Sunucu `.env` örneği:
 
 ```dotenv
 KARAHANLI_BASE_DIR=/srv/karahanli
+KARAHANLI_SECRET_GID=3100
 CATALOG_PATH=/srv/karahanli/data/catalog/products.json
 SITE_URL=https://karahanligida.com
 ADMIN_API_ORIGIN=https://api.karahanligida.com

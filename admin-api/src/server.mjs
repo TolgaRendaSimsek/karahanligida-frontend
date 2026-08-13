@@ -25,7 +25,7 @@ const mediaRoot = resolve(process.env.MEDIA_ROOT || "./var/media");
 const catalogPath = resolve(process.env.CATALOG_PATH || "./var/catalog/products.json");
 const allowedOrigin = process.env.ADMIN_ORIGIN || "https://karahanligida.com";
 
-initializeApp({ credential: applicationDefault(), projectId });
+const firebaseApp = initializeApp({ credential: applicationDefault(), projectId });
 const db = getFirestore();
 const auth = getAuth();
 const app = express();
@@ -53,6 +53,15 @@ const requireGoogleUser = createRequireGoogleUser(auth);
 
 app.get("/health", (_request, response) => {
   response.json({ ok: true, service: "karahanli-admin-api" });
+});
+
+app.get("/health/ready", async (_request, response) => {
+  try {
+    await firebaseApp.options.credential.getAccessToken();
+    response.json({ ok: true, service: "karahanli-admin-api", firebase: "ready" });
+  } catch {
+    response.status(503).json({ ok: false, service: "karahanli-admin-api", firebase: "unavailable" });
+  }
 });
 
 app.post("/api/admin/claim-invite", requireGoogleUser, async (request, response, next) => {

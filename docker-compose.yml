@@ -38,6 +38,11 @@ services:
       context: .
       dockerfile: admin-api/Dockerfile
     restart: unless-stopped
+    # Docker Compose file-secrets preserve host ownership. The dedicated
+    # supplementary group can read the 0640 service-account file without
+    # running the API as root or exposing the secret to other users.
+    group_add:
+      - "${KARAHANLI_SECRET_GID:-3100}"
     ports:
       - "127.0.0.1:3100:3100"
     environment:
@@ -57,7 +62,7 @@ services:
         - CMD
         - node
         - -e
-        - "fetch('http://127.0.0.1:3100/health').then(r=>{if(!r.ok)process.exit(1)})"
+        - "fetch('http://127.0.0.1:3100/health/ready').then(r=>{if(!r.ok)process.exit(1)})"
       interval: 30s
       timeout: 5s
       retries: 3
