@@ -72,6 +72,10 @@ app.post("/api/admin/claim-invite", requireGoogleUser, async (request, response,
 
 app.use("/api/admin", requireAdmin);
 
+app.get("/api/admin/session", (request, response) => {
+  response.json({ ok: true, admin: request.admin });
+});
+
 app.get("/api/admin/catalog", async (_request, response, next) => {
   try {
     const [families, drafts] = await Promise.all([

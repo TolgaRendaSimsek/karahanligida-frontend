@@ -62,3 +62,27 @@ test("doğrulanmış Google kullanıcısını davet kabul akışına geçirir", 
   assert.equal(continued, true);
   assert.equal(request.googleUser.email, "admin@example.com");
 });
+
+test("iptal edilmiş tokeni yeniden giriş koduyla reddeder", async () => {
+  const middleware = createRequireAdmin({
+    verifyIdToken: async () => {
+      throw Object.assign(new Error("revoked"), { code: "auth/id-token-revoked" });
+    },
+  });
+  const response = responseRecorder();
+  await middleware({ headers: { authorization: "Bearer revoked-token" } }, response, () => assert.fail("next çağrılmamalı"));
+  assert.equal(response.statusCode, 401);
+  assert.equal(response.body.code, "session-revoked");
+});
+
+test("süresi dolan tokeni ayrı hata koduyla reddeder", async () => {
+  const middleware = createRequireAdmin({
+    verifyIdToken: async () => {
+      throw Object.assign(new Error("expired"), { code: "auth/id-token-expired" });
+    },
+  });
+  const response = responseRecorder();
+  await middleware({ headers: { authorization: "Bearer expired-token" } }, response, () => assert.fail("next çağrılmamalı"));
+  assert.equal(response.statusCode, 401);
+  assert.equal(response.body.code, "token-expired");
+});

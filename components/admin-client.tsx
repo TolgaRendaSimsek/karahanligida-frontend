@@ -125,6 +125,7 @@ export function AdminClient({
   const [invites, setInvites] = useState<AdminInvite[]>([]);
   const [adminEmail, setAdminEmail] = useState("");
   const [adminBusy, setAdminBusy] = useState(false);
+  const [dashboardState, setDashboardState] = useState<"idle" | "loading" | "ready" | "error">("idle");
   const replacementInput = useRef<HTMLInputElement>(null);
   const [replacementImageId, setReplacementImageId] = useState("");
 
@@ -151,21 +152,27 @@ export function AdminClient({
     // gereksiz yere panelden atmadan isteği tekrarlarız.
     if (response.status === 401) response = await send(true);
     const payload = await response.json().catch(() => ({}));
+    if (response.status === 401) {
+      setLoginError(payload.error || "Google oturumunuz yenilenmeli.");
+      if (auth) await signOut(auth);
+    }
     if (!response.ok) {
       const error = new Error(payload.error || "İşlem tamamlanamadı.") as Error & { status?: number };
       error.status = response.status;
       throw error;
     }
     return payload;
-  }, [apiOrigin, user]);
+  }, [apiOrigin, auth, user]);
 
   const loadCatalog = useCallback(async () => {
     try {
       const payload = await api("/catalog");
       setProducts(payload.products || []);
       setDrafts(payload.drafts || []);
+      setDashboardState("ready");
       setNotice("");
     } catch (error) {
+      setDashboardState("error");
       setNotice(`Admin API bağlantısı kurulamadı: ${(error as Error).message}`);
     }
   }, [api]);
@@ -217,10 +224,24 @@ export function AdminClient({
 
   useEffect(() => {
     if (user) {
-      void loadCatalog();
-      void loadAdmins();
+      setDashboardState("loading");
+      void (async () => {
+        try {
+          await api("/session");
+          await Promise.all([loadCatalog(), loadAdmins()]);
+        } catch (error) {
+          setDashboardState("error");
+          setNotice(`Admin oturumu doğrulanamadı: ${(error as Error).message}`);
+        }
+      })();
+    } else {
+      setProducts([]);
+      setDrafts([]);
+      setAdmins([]);
+      setInvites([]);
+      setDashboardState("idle");
     }
-  }, [user, loadCatalog, loadAdmins]);
+  }, [user, api, loadCatalog, loadAdmins]);
 
   const effectiveProducts = useMemo(() => {
     const byId = new Map<string, AdminProduct>(products.map((product) => [
@@ -494,14 +515,18 @@ export function AdminClient({
           <div><span className="eyebrow">FIREBASE + LINUX MEDYA</span><h1>Ürün kataloğu</h1></div>
           <button type="button" className="admin-primary" onClick={() => setEditor(toEditor(emptyProduct()))}>Yeni Ürün Ailesi</button>
         </header>
+        {dashboardState === "loading" && <div className="admin-notice"><span>Google oturumu doğrulanıyor ve 230 ürün yükleniyor…</span></div>}
         {notice && <div className="admin-notice">
           <span>{notice}</span>
-          {notice.includes("bağlantısı kurulamadı") && <button type="button" onClick={() => {
-            void loadCatalog();
-            void loadAdmins();
+          {dashboardState === "error" && user && <button type="button" onClick={() => {
+            setDashboardState("loading");
+            void api("/session").then(() => Promise.all([loadCatalog(), loadAdmins()])).catch((error) => {
+              setDashboardState("error");
+              setNotice(`Admin oturumu doğrulanamadı: ${error.message}`);
+            });
           }}>Tekrar Dene</button>}
         </div>}
-        <section className="admin-stats">
+        {dashboardState === "ready" && <><section className="admin-stats">
           <article><span>Yayımlanmış</span><strong>{products.filter((item) => item.status === "published").length}</strong></article>
           <article><span>Taslak</span><strong>{drafts.length}</strong></article>
           <article><span>Görsel</span><strong>{imageCount}</strong></article>
@@ -579,7 +604,7 @@ export function AdminClient({
               </article>
             ))}
           </div>
-        </section>
+        </section></>}
       </section>
       {editor && (
         <div className="admin-editor-overlay">
