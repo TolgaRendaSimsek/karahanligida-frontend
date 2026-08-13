@@ -66,6 +66,35 @@ test("ürün detayı temiz URL, galeri ve teklif sepeti sunar", async ({ page })
   await expect(page.locator(".quote-drawer")).not.toContainText(/Ara Toplam|Birim Fiyat|₺/i);
 });
 
+test("ürün detayı ve benzer ürün kartları footer alanına taşmaz", async ({ page }) => {
+  await page.goto("/urunler/kroom-206342-onu-acik-alt-dolap-icin-kapak-sayfa-136");
+
+  const layout = await page.evaluate(() => {
+    const related = document.querySelector<HTMLElement>(".related-section")!;
+    const footer = document.querySelector<HTMLElement>(".site-footer")!;
+    const gallery = document.querySelector<HTMLElement>(".detail-gallery")!;
+    const cards = [...document.querySelectorAll<HTMLElement>(".related-card")];
+
+    return {
+      separateStickyScroll: getComputedStyle(gallery).position === "sticky",
+      relatedBottom: related.getBoundingClientRect().bottom,
+      footerTop: footer.getBoundingClientRect().top,
+      cardsFit: cards.every((card) => {
+        const cardRect = card.getBoundingClientRect();
+        return [...card.children].every((child) => {
+          const childRect = child.getBoundingClientRect();
+          return childRect.left >= cardRect.left - 1 && childRect.right <= cardRect.right + 1
+            && childRect.bottom <= cardRect.bottom + 1;
+        });
+      }),
+    };
+  });
+
+  expect(layout.separateStickyScroll).toBe(false);
+  expect(layout.cardsFit).toBe(true);
+  expect(layout.footerTop).toBeGreaterThanOrEqual(layout.relatedBottom - 1);
+});
+
 test("favoriler mevcut localStorage anahtarını korur", async ({ page }) => {
   await page.addInitScript(() => {
     localStorage.setItem("karahanliFavoritesV2", JSON.stringify(["family-0001"]));
