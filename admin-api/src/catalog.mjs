@@ -27,6 +27,22 @@ const FORBIDDEN_KEYS = new Set([
   "whatsappMessage",
 ]);
 
+/**
+ * Keep commercial terms out of public catalog copy.  The source PDFs contain
+ * occasional price-list boilerplate (and machine capacity labels using the
+ * word "stok").  Product records must remain quote-only, so normalize those
+ * phrases before returning a public record or creating a snapshot.
+ */
+export function sanitizeCommercialText(value) {
+  return String(value ?? "")
+    .replace(/f[ıiİI]yata?\s+dahildir/giu, "kapsama dahildir")
+    .replace(/f[ıiİI]yat[ıiİI]?/giu, "")
+    .replace(/stok\s+kahve\s+kapasitesi/giu, "kahve kapasitesi")
+    .replace(/stok/giu, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
 export function slugify(value) {
   return String(value ?? "")
     .toLocaleLowerCase("tr-TR")
@@ -112,13 +128,15 @@ export function publicProduct(product) {
     id: String(product.id ?? ""),
     slug: String(product.slug ?? ""),
     brand: String(product.brand ?? ""),
-    name: String(product.name ?? ""),
+    name: sanitizeCommercialText(product.name),
     category: String(product.category ?? ""),
     subcategory: String(product.subcategory ?? ""),
-    summary: String(product.summary ?? ""),
-    description: String(product.description ?? ""),
-    features: Array.isArray(product.features) ? product.features.map(String) : [],
-    specifications: publicRecord(product.specifications),
+    summary: sanitizeCommercialText(product.summary),
+    description: sanitizeCommercialText(product.description),
+    features: Array.isArray(product.features) ? product.features.map(sanitizeCommercialText).filter(Boolean) : [],
+    specifications: Object.fromEntries(
+      Object.entries(publicRecord(product.specifications)).map(([key, value]) => [sanitizeCommercialText(key), sanitizeCommercialText(value)]),
+    ),
     images: Array.isArray(product.images)
       ? product.images.map((image, index) => ({
           id: String(image.id ?? ""),
@@ -139,7 +157,7 @@ export function publicProduct(product) {
         }))
       : [],
     source: {
-      catalog: String(product.source?.catalog ?? "Karahanlı Gıda kataloğu"),
+      catalog: sanitizeCommercialText(product.source?.catalog ?? "Karahanlı Gıda kataloğu") || "Karahanlı Gıda kataloğu",
       pages: Array.isArray(product.source?.pages)
         ? product.source.pages.filter(Number.isFinite).map(Number)
         : [],

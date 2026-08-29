@@ -2,7 +2,7 @@
   "sourceFile": "KARAHANLI FİYAT LİSTESİ - Kopya (1).xlsx",
   "sourceHash": "DE7F42C39556A885610446A4FCC40AA9352F74B50D587D15ED43CC51CA13A1EA",
   "sheet": "Sayfa1",
-  "importedAt": "2026-08-29T06:40:25.931Z",
+  "importedAt": "2026-08-29T07:01:26.664Z",
   "rowCount": 201,
   "uniqueFamilyCount": 172,
   "matchedFamilyCount": 13,
@@ -10,7 +10,7 @@
   "publishedExcelRowCount": 201,
   "draftCount": 0,
   "researchNeededCount": 159,
-  "archivedFamilyCount": 29,
+  "archivedFamilyCount": 27,
   "duplicateGroups": [
     {
       "rows": [
@@ -2879,7 +2879,7 @@
     {
       "row": 186,
       "name": "GRAFT POŞET KG FİYATI",
-      "displayName": "KRAFT POŞET KG FİYATI",
+      "displayName": "KRAFT POŞET KG",
       "brand": "Karahanlı Gıda",
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Diğer Sarf Ürünleri",

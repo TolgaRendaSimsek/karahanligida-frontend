@@ -46,6 +46,7 @@ EXPECTED_CATALOGS = {
     "YOOK_Brochure.pdf",
 }
 EXCEL_SOURCE = "KARAHANLI FİYAT LİSTESİ - Kopya (1).xlsx"
+PUBLIC_EXCEL_SOURCE = "Karahanlı Gıda Excel Kataloğu"
 
 
 def fail(errors: list[str], message: str) -> None:
@@ -74,7 +75,8 @@ def main() -> int:
         unknown = product.keys() - REQUIRED - OPTIONAL_PUBLIC
         if unknown:
             fail(errors, f"{product.get('slug', '?')}: public şemada bilinmeyen alanlar {sorted(unknown)}")
-        if "price" in json.dumps(product, ensure_ascii=False).lower():
+        serialized = json.dumps(product, ensure_ascii=False)
+        if "price" in serialized.lower() or re.search(r"f[ıiİI]yat|stok", serialized, re.IGNORECASE):
             fail(errors, f"{product.get('slug', '?')}: fiyat alanı/metni içeriyor")
         if product.get("id") in ids:
             fail(errors, f"Tekrarlanan id: {product.get('id')}")
@@ -116,8 +118,8 @@ def main() -> int:
         if orders != list(range(1, len(orders) + 1)):
             fail(errors, f"{slug}: galeri sıralaması geçersiz")
 
-    if not covered_catalogs.issubset(EXPECTED_CATALOGS | {EXCEL_SOURCE}):
-        fail(errors, f"Katalog kapsamı dışında kaynak var: {sorted(covered_catalogs - EXPECTED_CATALOGS)}")
+    if not covered_catalogs.issubset(EXPECTED_CATALOGS | {EXCEL_SOURCE, PUBLIC_EXCEL_SOURCE}):
+        fail(errors, f"Katalog kapsamı dışında kaynak var: {sorted(covered_catalogs - EXPECTED_CATALOGS - {EXCEL_SOURCE, PUBLIC_EXCEL_SOURCE})}")
     if set(manifest.get("catalogs", [])) != EXPECTED_CATALOGS:
         fail(errors, "Kaynak manifest katalog listesi hatalı")
 

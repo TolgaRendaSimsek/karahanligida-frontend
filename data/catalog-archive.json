@@ -1,78 +1,8 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-08-29T06:40:25.940Z",
+  "generatedAt": "2026-08-29T07:01:26.677Z",
   "source": "Excel catalog import",
   "products": [
-    {
-      "id": "family-excel-021",
-      "slug": "kimbo-intenso-filtre-kahve-250-gr-excel-21",
-      "brand": "Kimbo",
-      "name": "KİMBO İNTENSO FİLTRE KAHVE 250 GR",
-      "category": "Kahve",
-      "subcategory": "Filtre Kahve",
-      "summary": "KİMBO İNTENSO FİLTRE KAHVE 250 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "KİMBO İNTENSO FİLTRE KAHVE 250 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
-      "features": [],
-      "specifications": {
-        "Ambalaj Excel 21": "20"
-      },
-      "images": [],
-      "variants": [
-        {
-          "id": "excel-21",
-          "name": "KİMBO İNTENSO FİLTRE KAHVE 250 GR",
-          "code": "",
-          "attributes": {
-            "Ambalaj": "20",
-            "ExcelSatırı": "21"
-          }
-        }
-      ],
-      "source": {
-        "catalog": "KARAHANLI FİYAT LİSTESİ - Kopya (1).xlsx",
-        "pages": [
-          21
-        ]
-      },
-      "featured": false,
-      "status": "archived",
-      "imageStatus": "research-needed"
-    },
-    {
-      "id": "family-excel-022",
-      "slug": "kimbo-italino-filtre-kahve-205-gr-excel-22",
-      "brand": "Kimbo",
-      "name": "KİMBO İTALİNO FİLTRE KAHVE 205 GR",
-      "category": "Kahve",
-      "subcategory": "Filtre Kahve",
-      "summary": "KİMBO İTALİNO FİLTRE KAHVE 205 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "KİMBO İTALİNO FİLTRE KAHVE 205 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
-      "features": [],
-      "specifications": {
-        "Ambalaj Excel 22": "20"
-      },
-      "images": [],
-      "variants": [
-        {
-          "id": "excel-22",
-          "name": "KİMBO İTALİNO FİLTRE KAHVE 205 GR",
-          "code": "",
-          "attributes": {
-            "Ambalaj": "20",
-            "ExcelSatırı": "22"
-          }
-        }
-      ],
-      "source": {
-        "catalog": "KARAHANLI FİYAT LİSTESİ - Kopya (1).xlsx",
-        "pages": [
-          22
-        ]
-      },
-      "featured": false,
-      "status": "archived",
-      "imageStatus": "research-needed"
-    },
     {
       "id": "family-0003",
       "slug": "fo-meyveli-suruplar",

@@ -4,6 +4,7 @@ import { readFile, writeFile, copyFile, mkdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { catalogTaxonomy, extractBrand, inferExcelCategory, normalizeCatalogText, slugifyCatalog } from "../admin-api/src/catalog-import.mjs";
+import { sanitizeCommercialText } from "../admin-api/src/catalog.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const productsPath = resolve(root, "data/products.json");
@@ -35,6 +36,9 @@ function stripCommercialText(product) {
   const clean = (value) => String(value ?? "")
     .replace(/Fiyatlarımıza\s*KDV\s*dahil\s*değildir\.?/gi, "")
     .replace(/Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir\.?/gi, "")
+    .replace(/f[ıiİI]yata?\s+dahildir/giu, "kapsama dahildir")
+    .replace(/stok\s+kahve\s+kapasitesi/giu, "kahve kapasitesi")
+    .replace(/stok/giu, "")
     .replace(/\s{2,}/g, " ").trim();
   return {
     ...product,
@@ -57,6 +61,7 @@ function displayName(value, row) {
     .replace(/PAKER/gi, "PAKET").replace(/GRAFT/gi, "KRAFT")
     .replace(/CEATRİNG/gi, "CATERING").replace(/KIRIİTAL/gi, "KRİSTAL")
     .replace(/PİPERT/gi, "PİPET").replace(/(?:\s*,\s*)?ML\b/gi, " ML")
+    .replace(/\s+F[İiIı]YAT[Iİiı]?\b/giu, "")
     .replace(/\s{2,}/g, " ").trim();
 }
 
@@ -151,7 +156,7 @@ for (const items of previewByName.values()) {
     summary: `${displayName(first.name, first.row)} için Karahanlı Gıda katalog kaydı.`,
     description: `${displayName(first.name, first.row)} ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.`,
     features: [], specifications: Object.fromEntries(items.filter((item) => item.packaging).map((item) => [`Ambalaj Excel ${item.row}`, item.packaging])), images: [], variants: items.map(variantFor),
-    source: { catalog: source.sourceFile, pages: items.map((item) => Number(item.row)) }, featured: false, status: "published", imageStatus: "research-needed", importMeta: excelMeta(items),
+    source: { catalog: "Karahanlı Gıda Excel Kataloğu", pages: items.map((item) => Number(item.row)) }, featured: false, status: "published", imageStatus: "research-needed", importMeta: excelMeta(items),
   };
   excelFamilies.push(family);
 }
@@ -163,6 +168,10 @@ for (const product of allFamilies) {
   if (product.brand === "Kroom") {
     const [category, subcategory] = machineCategory(product);
     nextProducts.push(stripCommercialText({ ...product, category, subcategory, imageStatus: product.images?.length ? "verified" : "research-needed", status: "published" }));
+  } else if (String(product.id).startsWith("family-excel-")) {
+    // Excel families are rebuilt from the authoritative source on every run;
+    // never leave stale generated families in the archive when a row is now
+    // mapped to an existing family or merged as a duplicate variant.
   } else if (!usedIds.has(product.id) && !matchedIds.has(product.id)) {
     archivedProducts.push(stripCommercialText({ ...product, status: "archived" }));
   }
@@ -174,8 +183,15 @@ const report = {
   draftCount: 0, researchNeededCount: excelFamilies.filter((product) => product.imageStatus === "research-needed").length, archivedFamilyCount: archivedProducts.length,
   duplicateGroups, needsReview: previewRows.filter((item) => item.ambiguous).map((item) => ({ row: item.row, name: item.name })), categories: catalogTaxonomy(), rows: previewRows,
 };
-const publicProducts = nextProducts.map(({ importMeta: _internal, ...product }) => product);
+const publicProducts = nextProducts.map(({ importMeta: _internal, ...product }) => {
+  const clean = stripCommercialText(product);
+  return {
+    ...clean,
+    name: displayName(clean.name, Number(clean.source?.pages?.[0])),
+    source: { ...clean.source, catalog: sanitizeCommercialText(clean.source?.catalog) || "Karahanlı Gıda kataloğu" },
+  };
+});
 await writeFile(reportPath, `${JSON.stringify(report, null, 2)}\n`);
-await writeFile(productsPath, `${JSON.stringify({ ...current, schemaVersion: 3, generatedAt: new Date().toISOString(), generatedFrom: source.sourceFile, products: publicProducts }, null, 2)}\n`);
+await writeFile(productsPath, `${JSON.stringify({ ...current, schemaVersion: 3, generatedAt: new Date().toISOString(), generatedFrom: "Karahanlı Gıda Excel Kataloğu", products: publicProducts }, null, 2)}\n`);
 await writeFile(archivePath, `${JSON.stringify({ schemaVersion: 3, generatedAt: new Date().toISOString(), source: "Excel catalog import", products: archivedProducts }, null, 2)}\n`);
 console.log(JSON.stringify({ published: publicProducts.length, publishedExcelRows: rows.length, excelFamilies: excelFamilies.length, archived: archivedProducts.length, duplicateGroups: duplicateGroups.length, researchNeeded: report.researchNeededCount, reportPath }, null, 2));
