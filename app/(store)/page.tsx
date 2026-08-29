@@ -36,21 +36,21 @@ export default async function HomePage() {
           </div>
           <div className="hero-visual">
             {heroCoffee && <Link className="hero-image-card main" href={`/urunler/${heroCoffee.slug}`} aria-label={`${heroCoffee.name} ürününü incele`}>
-              <Image
+              {heroCoffee.images[0] ? <Image
                 src={publicAssetPath(heroCoffee.images[0].src)}
                 fill
                 priority
                 sizes="(max-width: 900px) 90vw, 42vw"
                 alt={heroCoffee.images[0].alt || `Kimbo ${heroCoffee.name}`}
-              />
+              /> : <span className="product-image-placeholder"><span>Görsel doğrulanıyor</span></span>}
             </Link>}
             {accentCoffee && <Link className="hero-image-card accent" href={`/urunler/${accentCoffee.slug}`} aria-label={`${accentCoffee.name} ürününü incele`}>
-              <Image
+              {accentCoffee.images[0] ? <Image
                 src={publicAssetPath(accentCoffee.images[0].src)}
                 fill
                 sizes="220px"
                 alt={accentCoffee.images[0].alt || `Kimbo ${accentCoffee.name}`}
-              />
+              /> : <span className="product-image-placeholder"><span>Görsel doğrulanıyor</span></span>}
             </Link>}
             <div className="hero-note"><span>7 katalog</span><strong>Tek bir profesyonel çözüm ortağı</strong></div>
           </div>

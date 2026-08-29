@@ -1,8 +1,78 @@
 {
-  "schemaVersion": 2,
-  "generatedAt": "2026-08-29T06:01:00.051Z",
+  "schemaVersion": 3,
+  "generatedAt": "2026-08-29T06:40:25.940Z",
   "source": "Excel catalog import",
   "products": [
+    {
+      "id": "family-excel-021",
+      "slug": "kimbo-intenso-filtre-kahve-250-gr-excel-21",
+      "brand": "Kimbo",
+      "name": "KİMBO İNTENSO FİLTRE KAHVE 250 GR",
+      "category": "Kahve",
+      "subcategory": "Filtre Kahve",
+      "summary": "KİMBO İNTENSO FİLTRE KAHVE 250 GR için Karahanlı Gıda katalog kaydı.",
+      "description": "KİMBO İNTENSO FİLTRE KAHVE 250 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "features": [],
+      "specifications": {
+        "Ambalaj Excel 21": "20"
+      },
+      "images": [],
+      "variants": [
+        {
+          "id": "excel-21",
+          "name": "KİMBO İNTENSO FİLTRE KAHVE 250 GR",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "20",
+            "ExcelSatırı": "21"
+          }
+        }
+      ],
+      "source": {
+        "catalog": "KARAHANLI FİYAT LİSTESİ - Kopya (1).xlsx",
+        "pages": [
+          21
+        ]
+      },
+      "featured": false,
+      "status": "archived",
+      "imageStatus": "research-needed"
+    },
+    {
+      "id": "family-excel-022",
+      "slug": "kimbo-italino-filtre-kahve-205-gr-excel-22",
+      "brand": "Kimbo",
+      "name": "KİMBO İTALİNO FİLTRE KAHVE 205 GR",
+      "category": "Kahve",
+      "subcategory": "Filtre Kahve",
+      "summary": "KİMBO İTALİNO FİLTRE KAHVE 205 GR için Karahanlı Gıda katalog kaydı.",
+      "description": "KİMBO İTALİNO FİLTRE KAHVE 205 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "features": [],
+      "specifications": {
+        "Ambalaj Excel 22": "20"
+      },
+      "images": [],
+      "variants": [
+        {
+          "id": "excel-22",
+          "name": "KİMBO İTALİNO FİLTRE KAHVE 205 GR",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "20",
+            "ExcelSatırı": "22"
+          }
+        }
+      ],
+      "source": {
+        "catalog": "KARAHANLI FİYAT LİSTESİ - Kopya (1).xlsx",
+        "pages": [
+          22
+        ]
+      },
+      "featured": false,
+      "status": "archived",
+      "imageStatus": "research-needed"
+    },
     {
       "id": "family-0003",
       "slug": "fo-meyveli-suruplar",
@@ -1731,52 +1801,6 @@
         "catalog": "FO HORECA 37 .yıl.pdf",
         "pages": [
           38
-        ]
-      },
-      "featured": false,
-      "status": "archived"
-    },
-    {
-      "id": "family-0024",
-      "slug": "kimbo-horeca-filtre-kahveler",
-      "brand": "Kimbo",
-      "name": "Horeca Filtre Kahveler",
-      "category": "Kahve",
-      "subcategory": "Filtre kahve",
-      "summary": "Kimbo Horeca Filtre Kahveler ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "Kimbo Horeca Filtre Kahveler ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {
-        "Ürün Kodu": "10180 / Koli İçeriği: 20 Adet"
-      },
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/kimbo/kimbo-horeca-filtre-kahveler/web-54e979bb7273.webp",
-          "thumbnailSrc": "assets/products/kimbo/kimbo-horeca-filtre-kahveler/web-54e979bb7273-thumb.webp",
-          "alt": "Kimbo Horeca Filtre Kahveler",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "model-10180",
-          "name": "Model 10180",
-          "code": "10180",
-          "attributes": {}
-        },
-        {
-          "id": "model-10023",
-          "name": "Model 10023",
-          "code": "10023",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "Kimbo 2025 New Katalog.pdf",
-        "pages": [
-          8
         ]
       },
       "featured": false,

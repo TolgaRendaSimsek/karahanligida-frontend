@@ -12,14 +12,15 @@ const rows = [
 test("Excel grupları yeni kategori ağacına ayrılır", () => {
   assert.deepEqual(inferExcelCategory(rows[0]), ["Kahve", "Çekirdek Kahve"]);
   assert.deepEqual(inferExcelCategory(rows[3]), ["Gıda Dışı Ürünler", "Diğer Sarf Ürünleri"]);
+  assert.deepEqual(inferExcelCategory({ section: "FİLİTRE KAHVE & DÜNYA KAHVELERİ GRUBU", name: "KİMBO KAPSUL KAHVE NESPRESSO" }), ["Kahve", "Kapsül Kahve"]);
   assert.equal(catalogTaxonomy().find((category) => category.name === "Kahve Makineleri").subcategories.length, 4);
 });
 
-test("tekrarlar ve belirsiz satır yayın dışı işaretlenir", () => {
+test("tekrarlar ve belirsiz satır metadata ile yayınlanabilir", () => {
   const preview = buildImportPreview({ rows, existingProducts: [] });
   assert.equal(preview.counts.total, 4);
   assert.equal(preview.counts.duplicates, 2);
-  assert.equal(preview.rows.find((row) => row.row === 185).decision, "research-needed");
+  assert.equal(preview.rows.find((row) => row.row === 185).decision, "new-family");
   const draft = draftFromImportRow(preview.rows[0]);
   assert.equal(draft.status, "draft");
   assert.equal(draft.specifications.Ambalaj, "6");

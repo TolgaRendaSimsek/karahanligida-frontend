@@ -21,12 +21,18 @@ export function ProductCard({ product }: { product: CatalogCard }) {
     <article className="product-card">
       <div className="product-card-media">
         <Link href={`/urunler/${product.slug}`} aria-label={`${product.name} detayını aç`}>
-          <Image
-            src={publicAssetPath(image.thumbnailSrc || image.src)}
-            fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 25vw"
-            alt={image.alt || `${product.brand} ${product.name}`}
-          />
+          {image ? (
+            <Image
+              src={publicAssetPath(image.thumbnailSrc || image.src)}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 25vw"
+              alt={image.alt || `${product.brand} ${product.name}`}
+            />
+          ) : (
+            <div className="product-image-placeholder" role="img" aria-label="Görsel doğrulanıyor">
+              <span>Görsel doğrulanıyor</span>
+            </div>
+          )}
         </Link>
         <span className="brand-badge">{product.brand}</span>
         <button

@@ -16,18 +16,23 @@ export function CatalogBrowser({
   brands,
   categories,
   initialQuery,
+  fixedCategory,
+  subcategories = [],
 }: {
   initial: CatalogResponse;
   brands: string[];
   categories: string[];
-  initialQuery: { q: string; brand: string; category: string };
+  initialQuery: { q: string; brand: string; category: string; subcategory?: string };
+  fixedCategory?: string;
+  subcategories?: string[];
 }) {
   const router = useRouter();
   const pathname = usePathname();
   const firstRender = useRef(true);
   const [q, setQ] = useState(initialQuery.q);
   const [brand, setBrand] = useState(initialQuery.brand);
-  const [category, setCategory] = useState(initialQuery.category);
+  const [category, setCategory] = useState(fixedCategory || initialQuery.category);
+  const [subcategory, setSubcategory] = useState(initialQuery.subcategory || "");
   const [result, setResult] = useState(initial);
   const [loading, setLoading] = useState(false);
 
@@ -41,14 +46,17 @@ export function CatalogBrowser({
       const params = new URLSearchParams();
       if (q.trim()) params.set("q", q.trim());
       if (brand) params.set("brand", brand);
-      if (category) params.set("category", category);
+      if (!fixedCategory && category) params.set("category", category);
+      if (subcategory) params.set("subcategory", subcategory);
       router.replace(`${pathname}${params.size ? `?${params}` : ""}`, { scroll: false });
-      const response = await fetch(`/api/catalog?${params}`);
+      const apiParams = new URLSearchParams(params);
+      if (fixedCategory) apiParams.set("category", fixedCategory);
+      const response = await fetch(`/api/catalog?${apiParams}`);
       if (response.ok) setResult(await response.json());
       setLoading(false);
     }, 250);
     return () => window.clearTimeout(timer);
-  }, [q, brand, category, pathname, router]);
+  }, [q, brand, category, subcategory, pathname, router, fixedCategory]);
 
   async function loadMore() {
     if (!result.nextCursor) return;
@@ -56,7 +64,9 @@ export function CatalogBrowser({
     const params = new URLSearchParams({ cursor: result.nextCursor });
     if (q.trim()) params.set("q", q.trim());
     if (brand) params.set("brand", brand);
-    if (category) params.set("category", category);
+    if (!fixedCategory && category) params.set("category", category);
+    if (subcategory) params.set("subcategory", subcategory);
+    if (fixedCategory) params.set("category", fixedCategory);
     const response = await fetch(`/api/catalog?${params}`);
     if (response.ok) {
       const next: CatalogResponse = await response.json();
@@ -72,7 +82,8 @@ export function CatalogBrowser({
   function clear() {
     setQ("");
     setBrand("");
-    setCategory("");
+    setCategory(fixedCategory || "");
+    setSubcategory("");
   }
 
   return (
@@ -89,17 +100,24 @@ export function CatalogBrowser({
             {brands.map((item) => <option key={item}>{item}</option>)}
           </select>
         </label>
-        <label>
+        {!fixedCategory && <label>
           <span>Kategori</span>
           <select value={category} onChange={(event) => setCategory(event.target.value)}>
             <option value="">Tüm kategoriler</option>
             {categories.map((item) => <option key={item}>{item}</option>)}
           </select>
-        </label>
+        </label>}
+        {fixedCategory && subcategories.length > 0 && <label>
+          <span>Alt kategori</span>
+          <select value={subcategory} onChange={(event) => setSubcategory(event.target.value)}>
+            <option value="">Tüm alt kategoriler</option>
+            {subcategories.map((item) => <option key={item}>{item}</option>)}
+          </select>
+        </label>}
       </div>
       <div className="catalog-summary">
         <p><strong>{result.total}</strong> ürün ailesi bulundu</p>
-        {(q || brand || category) && <button type="button" onClick={clear}>Filtreleri temizle</button>}
+        {(q || brand || category !== (fixedCategory || "") || subcategory) && <button type="button" onClick={clear}>Filtreleri temizle</button>}
       </div>
       {result.items.length ? (
         <div className={`product-grid${loading ? " loading" : ""}`}>

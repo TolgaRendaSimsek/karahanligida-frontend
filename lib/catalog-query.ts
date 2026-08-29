@@ -4,6 +4,7 @@ export type CatalogQuery = {
   q?: string;
   brand?: string;
   category?: string;
+  subcategory?: string;
   ids?: string[];
   cursor?: string;
   limit?: number;
@@ -49,6 +50,7 @@ export function queryCatalog(products: ProductFamily[], query: CatalogQuery) {
     if (ids.size && !ids.has(product.id)) return false;
     if (query.brand && product.brand !== query.brand) return false;
     if (query.category && product.category !== query.category) return false;
+    if (query.subcategory && product.subcategory !== query.subcategory) return false;
     return !needle || searchText(product).includes(needle);
   });
   const offset = decodeCursor(query.cursor);

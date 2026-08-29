@@ -11,47 +11,79 @@ const catalog = JSON.parse(await readFile(new URL("../data/products.json", impor
 const archive = JSON.parse(await readFile(new URL("../data/catalog-archive.json", import.meta.url), "utf8"));
 const report = JSON.parse(await readFile(new URL("../data/catalog-import-report.json", import.meta.url), "utf8"));
 const now = new Date();
-const writes = [];
+const allProducts = [...catalog.products, ...archive.products];
+const reportRowsByNumber = new Map(report.rows.map((row) => [Number(row.row), row]));
 
-for (const product of [...catalog.products, ...archive.products]) {
-  writes.push({ ref: db.collection("productFamilies").doc(product.id), data: { ...product, revision: 1, status: product.status === "archived" ? "archived" : "published", importMeta: product.importMeta || { source: report.sourceFile, decision: product.status === "archived" ? "archived-extra" : "matched" }, updatedAt: now, updatedBy: "excel-import" } });
+function importMetaFor(product) {
+  const rowNumbers = product.variants.map((variant) => String(variant.id)).filter((id) => id.startsWith("excel-")).map((id) => Number(id.slice(6))).filter(Number.isFinite);
+  if (!rowNumbers.length) return product.importMeta || undefined;
+  const rows = rowNumbers.map((number) => reportRowsByNumber.get(number)).filter(Boolean);
+  const first = rows[0];
+  return {
+    excelRows: rowNumbers,
+    originalName: first?.name || product.name,
+    originalNames: [...new Set(rows.map((row) => row.name))],
+    sourceFile: report.sourceFile,
+    decision: "published",
+    research: {
+      sourceUrl: product.images?.length ? null : officialSourceForBrand(product.brand),
+      sourceType: product.images?.length ? "catalog-asset" : "pending-official-research",
+      checkedAt: null,
+      confidence: product.images?.length ? "catalog" : "unverified",
+      imageStatus: product.images?.length ? "verified" : "research-needed",
+      officialUrl: officialSourceForBrand(product.brand),
+    },
+  };
 }
-for (const row of report.rows.filter((item) => item.decision !== "matched")) {
-  const id = `family-excel-${String(row.row).padStart(3, "0")}`;
+
+const writes = [];
+for (const product of allProducts) {
   writes.push({
-    ref: db.collection("productDrafts").doc(id),
+    ref: db.collection("productFamilies").doc(product.id),
     data: {
-      id,
-      slug: `${String(row.name).toLocaleLowerCase("tr-TR").normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/ı/g, "i").replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "").slice(0, 80)}-excel-${row.row}`,
-      brand: row.brand,
-      name: row.name,
-      category: row.category,
-      subcategory: row.subcategory,
-      summary: `${row.name} için katalog kaydı.`,
-      description: `${row.name} ürünü Excel kataloğunda yer almaktadır. Resmî ürün doğrulaması ve görseli tamamlanana kadar taslak olarak tutulur.`,
-      features: [],
-      specifications: row.packaging ? { Ambalaj: row.packaging } : {},
-      images: [],
-      variants: [{ id: `excel-${row.row}`, name: row.name, code: "", attributes: row.packaging ? { Ambalaj: row.packaging } : {} }],
-      source: { catalog: report.sourceFile, pages: [Number(row.row)] },
-      featured: false,
-      status: "draft",
-      importMeta: { excelRow: row.row, duplicateRows: row.duplicateRows || [], decision: row.ambiguous ? "needs-review" : "research-needed", research: { status: "research-needed", officialUrl: officialSourceForBrand(row.brand), checkedAt: null } },
+      ...product,
+      status: product.status === "archived" ? "archived" : "published",
+      imageStatus: product.imageStatus || (product.images?.length ? "verified" : "research-needed"),
+      ...(importMetaFor(product) ? { importMeta: importMetaFor(product) } : {}),
       revision: 1,
       updatedAt: now,
       updatedBy: "excel-import",
     },
   });
 }
+
+// Old imports created one draft per unmatched row. They are obsolete now that
+// every Excel row is published as a family/variant; keep unrelated admin drafts.
+const oldDraftRefs = (await db.collection("productDrafts").listDocuments()).filter((ref) => ref.id.startsWith("family-excel-"));
+for (const ref of oldDraftRefs) writes.push({ ref, delete: true });
+
 for (const category of catalogTaxonomy()) writes.push({ ref: db.collection("categories").doc(category.id), data: { ...category, updatedAt: now, updatedBy: "excel-import" } });
-for (const product of [...catalog.products, ...archive.products]) writes.push({ ref: db.collection("brands").doc(product.brand.toLocaleLowerCase("tr-TR").normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/ı/g, "i").replace(/[^a-z0-9]+/gi, "-")), data: { name: product.brand, status: "published", updatedAt: now, updatedBy: "excel-import" } });
+for (const product of allProducts) {
+  const id = product.brand.toLocaleLowerCase("tr-TR").normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/ı/g, "i").replace(/[^a-z0-9]+/gi, "-");
+  writes.push({ ref: db.collection("brands").doc(id), data: { name: product.brand, status: "published", updatedAt: now, updatedBy: "excel-import" } });
+}
 
 for (let offset = 0; offset < writes.length; offset += 400) {
   const batch = db.batch();
-  writes.slice(offset, offset + 400).forEach(({ ref, data }) => batch.set(ref, data, { merge: true }));
+  writes.slice(offset, offset + 400).forEach((entry) => entry.delete ? batch.delete(entry.ref) : batch.set(entry.ref, entry.data, { merge: true }));
   await batch.commit();
   console.log(`${Math.min(offset + 400, writes.length)}/${writes.length} Firestore kaydı yazıldı`);
 }
-await db.collection("catalogImports").add({ sourceFile: report.sourceFile, status: "applied", rowCount: report.rowCount, matchedFamilyCount: report.matchedFamilyCount, draftCount: report.draftCount, archivedFamilyCount: report.archivedFamilyCount, appliedAt: now, appliedBy: "excel-import" });
-await db.collection("auditLogs").add({ action: "catalog-import-apply", sourceFile: report.sourceFile, rowCount: report.rowCount, actorEmail: "excel-import", createdAt: now });
-console.log(JSON.stringify({ productFamilies: catalog.products.length + archive.products.length, drafts: report.draftCount, categories: catalogTaxonomy().length }));
+await db.collection("catalogImports").add({
+  sourceFile: report.sourceFile,
+  sourceHash: report.sourceHash || null,
+  status: "applied",
+  rowCount: report.rowCount,
+  publishedExcelRowCount: report.publishedExcelRowCount,
+  uniqueFamilyCount: report.uniqueFamilyCount,
+  matchedFamilyCount: report.matchedFamilyCount,
+  newFamilyCount: report.newFamilyCount,
+  draftCount: 0,
+  archivedFamilyCount: report.archivedFamilyCount,
+  duplicateGroups: report.duplicateGroups,
+  researchNeededCount: report.researchNeededCount,
+  appliedAt: now,
+  appliedBy: "excel-import",
+});
+await db.collection("auditLogs").add({ action: "catalog-import-apply", sourceFile: report.sourceFile, sourceHash: report.sourceHash || null, rowCount: report.rowCount, actorEmail: "excel-import", createdAt: now });
+console.log(JSON.stringify({ productFamilies: catalog.products.length + archive.products.length, removedObsoleteDrafts: oldDraftRefs.length, categories: catalogTaxonomy().length, excelRows: report.rowCount }, null, 2));

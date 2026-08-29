@@ -24,8 +24,11 @@ export type FirebaseClientConfig = {
 type AdminProduct = ProductFamily & {
   revision?: number;
   displayStatus?: "published" | "draft" | "archived";
+  imageStatus?: "verified" | "research-needed" | "missing";
   importMeta?: {
     excelRow?: number;
+    excelRows?: number[];
+    originalName?: string;
     decision?: string;
     duplicateRows?: number[];
     research?: { status?: string; officialUrl?: string | null; checkedAt?: string | null };
@@ -42,6 +45,7 @@ type TaxonomyCategory = {
 };
 
 type Taxonomy = { categories: TaxonomyCategory[]; brands: Array<{ id: string; name: string; productCount?: number }> };
+type CatalogImportSummary = { status?: string; sourceFile?: string; sourceHash?: string | null; rowCount?: number; publishedExcelRowCount?: number; uniqueFamilyCount?: number; draftCount?: number; archivedFamilyCount?: number; researchNeededCount?: number; appliedAt?: unknown };
 
 type AdminUser = {
   uid: string;
@@ -79,6 +83,7 @@ const emptyProduct = (): AdminProduct => ({
   source: { catalog: "Admin paneli", pages: [] },
   featured: false,
   status: "published",
+  imageStatus: "research-needed",
   revision: 0,
 });
 
@@ -134,6 +139,7 @@ export function AdminClient({
   const [products, setProducts] = useState<AdminProduct[]>([]);
   const [drafts, setDrafts] = useState<AdminProduct[]>([]);
   const [archived, setArchived] = useState<AdminProduct[]>([]);
+  const [latestImport, setLatestImport] = useState<CatalogImportSummary | null>(null);
   const [taxonomy, setTaxonomy] = useState<Taxonomy>({ categories: [], brands: [] });
   const [query, setQuery] = useState("");
   const [status, setStatus] = useState("");
@@ -150,7 +156,7 @@ export function AdminClient({
   const replacementInput = useRef<HTMLInputElement>(null);
   const [replacementImageId, setReplacementImageId] = useState("");
   const [wizardStep, setWizardStep] = useState(1);
-  const [adminView, setAdminView] = useState<"catalog" | "archive" | "categories" | "admins">("catalog");
+  const [adminView, setAdminView] = useState<"catalog" | "archive" | "categories" | "imports" | "admins">("catalog");
 
   const auth = useMemo(() => {
     if (!configured) return null;
@@ -193,6 +199,7 @@ export function AdminClient({
       setProducts(payload.products || []);
       setDrafts(payload.drafts || []);
       setArchived(payload.archived || []);
+      setLatestImport(payload.latestImport || null);
       setDashboardState("ready");
       setNotice("");
     } catch (error) {
@@ -271,6 +278,7 @@ export function AdminClient({
       setProducts([]);
       setDrafts([]);
       setArchived([]);
+      setLatestImport(null);
       setTaxonomy({ categories: [], brands: [] });
       setAdmins([]);
       setInvites([]);
@@ -394,6 +402,7 @@ export function AdminClient({
       specifications: parseSpecifications(current.specificationsText),
       variants: parseVariants(current.variantsText),
       images: current.product.images.map((image, index) => ({ ...image, order: index + 1 })),
+      imageStatus: current.product.images.length ? "verified" : "research-needed",
       status: "published",
     };
   }
@@ -625,6 +634,7 @@ export function AdminClient({
           <button className={adminView === "catalog" ? "active" : undefined} type="button" onClick={() => { setAdminView("catalog"); scrollAdminSection("urunler"); }}>Yayınlanan Ürünler</button>
           <button className={adminView === "archive" ? "active" : undefined} type="button" onClick={() => { setAdminView("archive"); scrollAdminSection("urunler"); }}>Arşiv <small>({archived.length})</small></button>
           <button className={adminView === "categories" ? "active" : undefined} type="button" onClick={() => { setAdminView("categories"); scrollAdminSection("kategoriler"); }}>Kategoriler</button>
+          <button className={adminView === "imports" ? "active" : undefined} type="button" onClick={() => { setAdminView("imports"); scrollAdminSection("excel-aktarimi"); }}>Excel Aktarımı</button>
           <button className={adminView === "admins" ? "active" : undefined} type="button" onClick={() => { setAdminView("admins"); scrollAdminSection("yoneticiler"); }}>Yöneticiler</button>
           <Link href="/urunler" target="_blank" rel="noopener noreferrer">Canlı kataloğu gör ↗</Link>
         </nav>
@@ -635,7 +645,7 @@ export function AdminClient({
           <div><span className="eyebrow">FIREBASE + LINUX MEDYA</span><h1>Ürün kataloğu</h1></div>
           <button type="button" className="admin-primary" onClick={() => openEditor(emptyProduct())}>Yeni Ürün Ailesi</button>
         </header>
-        {dashboardState === "loading" && <div className="admin-notice"><span>Google oturumu doğrulanıyor ve 230 ürün yükleniyor…</span></div>}
+        {dashboardState === "loading" && <div className="admin-notice"><span>Google oturumu doğrulanıyor ve katalog yükleniyor…</span></div>}
         {notice && <div className="admin-notice">
           <span>{notice}</span>
           {dashboardState === "error" && user && <button type="button" onClick={() => {
@@ -676,7 +686,7 @@ export function AdminClient({
           {filtered.length ? <div className="admin-product-grid">{filtered.map((product) => (
             <article className="admin-product-card" key={product.id}>
               <div className="admin-product-media">
-                {product.images[0] ? <Image src={publicAssetPath(product.images[0].thumbnailSrc || product.images[0].src)} fill sizes="(max-width: 800px) 100vw, 300px" alt={product.images[0].alt || `${product.brand} ${product.name}`} /> : <span>Görsel yok</span>}
+                {product.images[0] ? <Image src={publicAssetPath(product.images[0].thumbnailSrc || product.images[0].src)} fill sizes="(max-width: 800px) 100vw, 300px" alt={product.images[0].alt || `${product.brand} ${product.name}`} /> : <span>Görsel doğrulanıyor</span>}
                 <span className={`admin-status ${product.displayStatus}`}>{product.displayStatus === "draft" ? "Taslak" : product.displayStatus === "archived" ? "Arşiv" : "Yayında"}</span>
                 <span className="admin-image-count" aria-label={`${product.images.length} görsel`}>▧ {product.images.length}</span>
               </div>
@@ -688,6 +698,7 @@ export function AdminClient({
                   <div><dt>Varyant / model</dt><dd>{product.variants.length}</dd></div>
                   <div><dt>Ürün görseli</dt><dd>{product.images.length}</dd></div>
                   <div><dt>Alt kategori</dt><dd>{product.subcategory || "—"}</dd></div>
+                  <div><dt>Excel satırı</dt><dd>{product.importMeta?.excelRows?.join(", ") || product.importMeta?.excelRow || "—"}</dd></div>
                 </dl>
               </div>
               <footer>
@@ -696,6 +707,20 @@ export function AdminClient({
               </footer>
             </article>
           ))}</div> : <div className="admin-empty-products"><h3>Eşleşen ürün bulunamadı</h3><p>Aramayı veya kategori filtrelerini temizleyin.</p><button type="button" onClick={() => { setQuery(""); setBrandFilter(""); setCategoryFilter(""); setStatus(""); }}>Tüm ürünleri göster</button></div>}
+        </section>
+        <section className="admin-panel admin-import-panel" id="excel-aktarimi">
+          <header>
+            <div><span className="eyebrow">EXCEL AKTARIMI</span><h2>Son katalog aktarımı</h2><p>Excel ana kaynak olarak işlendi; her satır bir aileye veya varyanta bağlandı.</p></div>
+            <strong>{latestImport?.status === "applied" ? "Uygulandı" : "—"}</strong>
+          </header>
+          {latestImport ? <dl className="admin-import-summary">
+            <div><dt>Kaynak</dt><dd>{latestImport.sourceFile || "—"}</dd></div>
+            <div><dt>Excel satırı</dt><dd>{latestImport.publishedExcelRowCount || latestImport.rowCount || 0}</dd></div>
+            <div><dt>Ürün ailesi</dt><dd>{latestImport.uniqueFamilyCount || 0}</dd></div>
+            <div><dt>Görsel araştırılıyor</dt><dd>{latestImport.researchNeededCount || 0}</dd></div>
+            <div><dt>Arşivlenen eski aile</dt><dd>{latestImport.archivedFamilyCount || 0}</dd></div>
+            <div><dt>Kaynak SHA-256</dt><dd>{latestImport.sourceHash || "Kayıt yok"}</dd></div>
+          </dl> : <p className="admin-empty-products">Henüz Excel aktarım kaydı bulunamadı.</p>}
         </section>
         <section className="admin-panel admin-taxonomy-panel" id="kategoriler">
           <header>
@@ -805,7 +830,7 @@ export function AdminClient({
                   </article>
                 )) : <p>Henüz görsel eklenmedi.</p>}</div>
               </section>}
-              {wizardStep === 5 && <section className="admin-preview-step"><span className="eyebrow">YAYINA HAZIRLIK</span><h3>{editor.product.name || "Yeni ürün ailesi"}</h3><p>{editor.product.summary || "Kısa özet eklenmedi."}</p><dl><div><dt>Marka</dt><dd>{editor.product.brand || "—"}</dd></div><div><dt>Kategori</dt><dd>{editor.product.category || "—"} / {editor.product.subcategory || "—"}</dd></div><div><dt>Varyant</dt><dd>{parseVariants(editor.variantsText).length}</dd></div><div><dt>Görsel</dt><dd>{editor.product.images.length}</dd></div></dl>{(!editor.product.images.length || !editor.product.variants.length) && <p className="admin-warning">Yayınlamak için en az bir görsel ve varyant gerekir.</p>}</section>}
+              {wizardStep === 5 && <section className="admin-preview-step"><span className="eyebrow">YAYINA HAZIRLIK</span><h3>{editor.product.name || "Yeni ürün ailesi"}</h3><p>{editor.product.summary || "Kısa özet eklenmedi."}</p><dl><div><dt>Marka</dt><dd>{editor.product.brand || "—"}</dd></div><div><dt>Kategori</dt><dd>{editor.product.category || "—"} / {editor.product.subcategory || "—"}</dd></div><div><dt>Varyant</dt><dd>{parseVariants(editor.variantsText).length}</dd></div><div><dt>Görsel</dt><dd>{editor.product.images.length ? `${editor.product.images.length} doğrulanmış` : "Araştırılıyor"}</dd></div></dl>{!editor.product.variants.length && <p className="admin-warning">Yayınlamak için en az bir varyant/model gerekir.</p>}{!editor.product.images.length && <p className="admin-note">Görsel olmadan da yayınlanabilir; ürün kartında “Görsel doğrulanıyor” alanı gösterilir.</p>}</section>}
             </div>
             <footer>
               {products.some((item) => item.id === editor.product.id) && <><button className="admin-danger" type="button" onClick={() => void archive()}>Arşivle</button><button className="admin-danger" type="button" onClick={() => void deleteProduct()}>Kalıcı Sil</button></>}

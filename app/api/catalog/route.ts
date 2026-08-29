@@ -12,6 +12,7 @@ export async function GET(request: NextRequest) {
     q: params.get("q") || "",
     brand: params.get("brand") || "",
     category: params.get("category") || "",
+    subcategory: params.get("subcategory") || "",
     ids,
     cursor: params.get("cursor") || "",
     limit: Number(params.get("limit")) || 24,

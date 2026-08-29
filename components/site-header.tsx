@@ -8,11 +8,11 @@ import { useStore } from "./store-provider";
 
 const navigation = [
   { href: "/urunler", label: "Tüm Ürünler" },
-  { href: "/urunler?category=Kahve", label: "Kahve" },
-  { href: "/urunler?category=Kahve Makineleri", label: "Kahve Makineleri" },
-  { href: "/urunler?category=Çay", label: "Çay" },
-  { href: "/urunler?category=Şurup ve Püreler", label: "Şurup & Püre" },
-  { href: "/urunler?category=Endüstriyel Mutfak Ekipmanları", label: "Ekipman" },
+  { href: "/kategori/kahve", label: "Kahve", category: "Kahve" },
+  { href: "/kategori/kahve-makineleri", label: "Kahve Makineleri", category: "Kahve Makineleri" },
+  { href: "/kategori/cay", label: "Çay", category: "Çay" },
+  { href: "/kategori/surup-ve-pureler", label: "Şurup & Püre", category: "Şurup ve Püreler" },
+  { href: "/kategori/endustriyel-mutfak-ekipmanlari", label: "Ekipman", category: "Endüstriyel Mutfak Ekipmanları" },
   { href: "/#markalar", label: "Markalar" },
 ];
 
@@ -33,12 +33,9 @@ export function SiteHeader() {
     if (href === "/urunler") {
       return pathname === "/urunler" && !searchParams.get("category") && !searchParams.get("brand");
     }
-    if (href.startsWith("/urunler?")) {
-      const target = new URL(href, "https://karahanligida.com");
-      return (
-        pathname === "/urunler"
-        && target.searchParams.get("category") === searchParams.get("category")
-      );
+    const item = navigation.find((entry) => entry.href === href);
+    if (item?.category) {
+      return pathname === item.href || (pathname === "/urunler" && searchParams.get("category") === item.category);
     }
     return href.startsWith("/#") && pathname === "/";
   }
@@ -54,7 +51,7 @@ export function SiteHeader() {
     <>
       <div className="announcement">
         <span>Karahanlı Gıda profesyonel ürün kataloğu</span>
-        <Link href="/urunler">202 yayınlanmış ürün ailesini keşfedin <span aria-hidden>→</span></Link>
+        <Link href="/urunler">Tüm ürün ailelerini keşfedin <span aria-hidden>→</span></Link>
       </div>
       <header className="site-header">
         <div className="header-main container">

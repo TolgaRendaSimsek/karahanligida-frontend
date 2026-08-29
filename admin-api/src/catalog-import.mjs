@@ -48,20 +48,17 @@ function sectionText(row) {
 export function inferExcelCategory(row) {
   const section = sectionText(row);
   const name = normalizeCatalogText(row.name);
-  if (name.includes("espresso") || name.includes("super otomatik") || name.includes("filtre kahve makinesi") || name.includes("degirmen")) {
-    if (name.includes("super otomatik")) return ["Kahve Makineleri", "Süper Otomatik Kahve Makineleri"];
-    if (name.includes("degirmen")) return ["Kahve Makineleri", "Kahve Değirmenleri"];
-    if (name.includes("filtre")) return ["Kahve Makineleri", "Filtre Kahve Makineleri"];
-    return ["Kahve Makineleri", "Espresso Kahve Makineleri"];
-  }
-  if (section.includes("cekirdek") || section.includes("filtre kahve") || section.includes("turk kahvesi")) {
+  // Excel section is authoritative for food/consumable rows. In particular,
+  // Nespresso capsules are coffee products, not espresso machines.
+  if (section.includes("cekirdek") || section.includes("filtre kahve") || section.includes("filitre kahve") || section.includes("turk kahvesi")) {
     if (section.includes("cekirdek")) return ["Kahve", "Çekirdek Kahve"];
-    if (section.includes("filtre")) return [name.includes("kapsul") ? "Kahve" : "Kahve", name.includes("kapsul") ? "Kapsül Kahve" : "Filtre Kahve"];
+    if (name.includes("kapsul")) return ["Kahve", "Kapsül Kahve"];
+    if (section.includes("filtre") || section.includes("filitre")) return ["Kahve", "Filtre Kahve"];
     return ["Kahve", "Türk Kahvesi ve Yöresel"];
   }
   if (section.includes("cay")) return ["Çay", section.includes("bitki") ? "Bitki Çayları" : "Siyah Çay"];
   if (section.includes("kokteyl")) return ["Şurup ve Püreler", "Kokteyl Şurupları"];
-  if (section.includes("meyve püre")) {
+  if (section.includes("meyve pure") || section.includes("meyve püre")) {
     return [name.includes("sos") || name.includes("topping") || name.includes("dekor") ? "Soslar" : "Şurup ve Püreler", name.includes("sos") || name.includes("topping") || name.includes("dekor") ? "Topping ve Dekor Sosları" : "Meyve Püreleri"];
   }
   if (section.includes("profosyonel sos") || section.includes("profesyonel sos")) return ["Soslar", "Profesyonel Soslar"];
@@ -78,6 +75,15 @@ export function inferExcelCategory(row) {
     if (name.includes("temiz") || name.includes("puly") || name.includes("poligaf")) return ["Gıda Dışı Ürünler", "Temizlik Ürünleri"];
     if (name.includes("frenc") || name.includes("blender") || name.includes("sifon")) return ["Gıda Dışı Ürünler", "Servis Sarfı"];
     return ["Gıda Dışı Ürünler", "Diğer Sarf Ürünleri"];
+  }
+  // Machine classification is only applied to explicit machine rows or
+  // Kroom records. Never infer a machine from the word "espresso" alone
+  // when it is part of a capsule/coffee product name.
+  if (!name.includes("nespresso")) {
+    if (name.includes("super otomatik")) return ["Kahve Makineleri", "Süper Otomatik Kahve Makineleri"];
+    if (name.includes("filtre kahve makinesi")) return ["Kahve Makineleri", "Filtre Kahve Makineleri"];
+    if (name.includes("kahve degirmen") || name.includes("kahve degirmeni") || name.includes("degirmen")) return ["Kahve Makineleri", "Kahve Değirmenleri"];
+    if (name.includes("espresso makinesi") || name.includes("espresso makina")) return ["Kahve Makineleri", "Espresso Kahve Makineleri"];
   }
   return ["Gıda Ürünleri", "Diğer Gıda Ürünleri"];
 }
@@ -135,7 +141,9 @@ export function buildImportPreview({ rows, existingProducts = [] }) {
       duplicateRows,
       ambiguous,
       match: candidates[0] ? { id: candidates[0].product.id, name: candidates[0].product.name, score: candidates[0].score } : null,
-      decision: candidates[0] && !ambiguous ? "matched" : "research-needed",
+      // Ambiguity is recorded for admin review, but it must not hide an Excel
+      // row from the catalog. Apply creates a variant/family for every row.
+      decision: candidates[0] ? "matched" : "new-family",
     };
   });
   return {
@@ -169,10 +177,12 @@ export function draftFromImportRow(row, { catalogName = "KARAHANLI FİYAT LİSTE
     source: { catalog: catalogName, pages: [Number(row.row)] },
     featured: false,
     status: "draft",
+    imageStatus: "research-needed",
     importMeta: {
       excelRow: Number(row.row),
       duplicateRows: row.duplicateRows || [],
       decision: row.ambiguous ? "needs-review" : "research-needed",
+      originalName: row.originalName || row.name,
       research: { status: "research-needed", officialUrl: officialSourceForBrand(row.brand), checkedAt: null },
     },
   };

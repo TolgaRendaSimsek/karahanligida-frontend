@@ -13,8 +13,10 @@ export function SiteFooter() {
           <h3>Katalog</h3>
           <Link href="/urunler">Tüm ürünler</Link>
           <Link href="/favoriler">Favoriler</Link>
-          <Link href="/urunler?category=Kahve">Kahve</Link>
-          <Link href="/urunler?category=Kahve Makineleri">Kahve makineleri</Link>
+          <Link href="/kategori/kahve">Kahve</Link>
+          <Link href="/kategori/kahve-makineleri">Kahve makineleri</Link>
+          <Link href="/kategori/cay">Çay</Link>
+          <Link href="/kategori/gida-disi-urunler">Gıda dışı ürünler</Link>
         </div>
         <div>
           <h3>Kurumsal</h3>

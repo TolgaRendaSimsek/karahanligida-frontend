@@ -35,6 +35,7 @@ REQUIRED = {
     "featured",
     "status",
 }
+OPTIONAL_PUBLIC = {"imageStatus"}
 EXPECTED_CATALOGS = {
     "favori1.pdf",
     "FO HORECA 37 .yıl.pdf",
@@ -44,6 +45,7 @@ EXPECTED_CATALOGS = {
     "Toschi 2025 New Katalog.pdf",
     "YOOK_Brochure.pdf",
 }
+EXCEL_SOURCE = "KARAHANLI FİYAT LİSTESİ - Kopya (1).xlsx"
 
 
 def fail(errors: list[str], message: str) -> None:
@@ -69,7 +71,7 @@ def main() -> int:
         missing = REQUIRED - product.keys()
         if missing:
             fail(errors, f"{product.get('slug', '?')}: eksik alanlar {sorted(missing)}")
-        unknown = product.keys() - REQUIRED
+        unknown = product.keys() - REQUIRED - OPTIONAL_PUBLIC
         if unknown:
             fail(errors, f"{product.get('slug', '?')}: public şemada bilinmeyen alanlar {sorted(unknown)}")
         if "price" in json.dumps(product, ensure_ascii=False).lower():
@@ -108,13 +110,13 @@ def main() -> int:
                 if not path.is_file():
                     fail(errors, f"{slug}: görsel bulunamadı {path}")
                 assets.add(asset)
-        if not product.get("images"):
-            fail(errors, f"{slug}: galeri görseli bulunmuyor")
+        if not product.get("images") and product.get("imageStatus") not in {"research-needed", "missing"}:
+            fail(errors, f"{slug}: galeri görseli bulunmuyor ve araştırma durumu belirtilmemiş")
         orders = [image.get("order") for image in product.get("images", [])]
         if orders != list(range(1, len(orders) + 1)):
             fail(errors, f"{slug}: galeri sıralaması geçersiz")
 
-    if not covered_catalogs.issubset(EXPECTED_CATALOGS):
+    if not covered_catalogs.issubset(EXPECTED_CATALOGS | {EXCEL_SOURCE}):
         fail(errors, f"Katalog kapsamı dışında kaynak var: {sorted(covered_catalogs - EXPECTED_CATALOGS)}")
     if set(manifest.get("catalogs", [])) != EXPECTED_CATALOGS:
         fail(errors, "Kaynak manifest katalog listesi hatalı")
@@ -133,6 +135,21 @@ def main() -> int:
     }
     if not assets.issubset(disk_assets):
         fail(errors, f"Eksik ürün görseli var: {sorted(assets - disk_assets)[:10]}")
+
+    # Every sanitized Excel row must be represented by a published family
+    # variant. Duplicate names may share a family, but each row keeps its own
+    # excel-<row> variant id.
+    excel_source = ROOT / "data" / "excel-catalog-import.json"
+    if excel_source.exists():
+        excel_rows = {str(row.get("row")) for row in json.loads(excel_source.read_text(encoding="utf-8")).get("rows", [])}
+        represented_rows = {
+            variant.get("id", "").removeprefix("excel-")
+            for product in products
+            for variant in product.get("variants", [])
+            if str(variant.get("id", "")).startswith("excel-")
+        }
+        if not excel_rows.issubset(represented_rows):
+            fail(errors, f"Excel satırları ürüne bağlanmamış: {sorted(excel_rows - represented_rows)}")
 
     dynamic_route = ROOT / "app" / "(store)" / "urunler" / "[slug]" / "page.tsx"
     if not dynamic_route.is_file():

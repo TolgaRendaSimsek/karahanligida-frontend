@@ -65,8 +65,10 @@ export function validateProduct(input) {
   if (!Array.isArray(product.variants) || product.variants.length === 0) {
     errors.push("En az bir varyant/model gereklidir.");
   }
-  if (!Array.isArray(product.images) || product.images.length === 0) {
-    errors.push("En az bir ürün görseli gereklidir.");
+  if (!Array.isArray(product.images)) errors.push("Görseller dizisi geçersiz.");
+  if (Array.isArray(product.images) && product.images.length === 0
+    && !["research-needed", "missing"].includes(rawProduct.imageStatus)) {
+    errors.push("En az bir ürün görseli gereklidir veya imageStatus research-needed/missing olmalıdır.");
   }
   const forbidden = findForbiddenKey(rawProduct);
   if (forbidden) errors.push(`Yasaklı veri alanı: ${forbidden}`);
@@ -144,6 +146,7 @@ export function publicProduct(product) {
     },
     featured: Boolean(product.featured),
     status: product.status === "archived" ? "archived" : "published",
+    ...(product.imageStatus ? { imageStatus: String(product.imageStatus) } : {}),
   };
 }
 

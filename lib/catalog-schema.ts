@@ -30,7 +30,10 @@ export const productFamilySchema = z.object({
   description: z.string().min(1),
   features: z.array(z.string()),
   specifications: z.record(z.string(), primitive),
-  images: z.array(productImageSchema).min(1),
+  // A verified image is preferred, but Excel products may be published while
+  // their official image is still being researched. The UI renders a neutral
+  // placeholder for these records instead of a broken image.
+  images: z.array(productImageSchema),
   variants: z.array(productVariantSchema).min(1),
   source: z.object({
     catalog: z.string(),
@@ -38,6 +41,7 @@ export const productFamilySchema = z.object({
   }).strict(),
   featured: z.boolean(),
   status: z.enum(["published", "archived"]),
+  imageStatus: z.enum(["verified", "research-needed", "missing"]).optional(),
 }).strict();
 
 export const catalogPayloadSchema = z.object({

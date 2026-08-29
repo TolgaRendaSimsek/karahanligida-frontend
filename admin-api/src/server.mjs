@@ -88,9 +88,10 @@ app.get("/api/admin/session", (request, response) => {
 
 app.get("/api/admin/catalog", async (_request, response, next) => {
   try {
-    const [families, drafts] = await Promise.all([
+    const [families, drafts, imports] = await Promise.all([
       db.collection("productFamilies").get(),
       db.collection("productDrafts").get(),
+      db.collection("catalogImports").orderBy("appliedAt", "desc").limit(1).get().catch(() => ({ docs: [] })),
     ]);
     const allFamilies = families.docs.map((document) => ({ id: document.id, ...document.data() }));
     response.json({
@@ -102,6 +103,7 @@ app.get("/api/admin/catalog", async (_request, response, next) => {
         archived: allFamilies.filter((product) => product.status === "archived").length,
         drafts: drafts.size,
       },
+      latestImport: imports.docs[0] ? { id: imports.docs[0].id, ...imports.docs[0].data() } : null,
     });
   } catch (error) {
     next(error);
@@ -274,6 +276,7 @@ app.get("/api/admin/taxonomy", async (_request, response, next) => {
       db.collection("productDrafts").get(),
     ]);
     const allProducts = [...families.docs, ...drafts.docs].map((document) => document.data());
+    const publicProducts = [...families.docs.filter((document) => document.data().status !== "archived"), ...drafts.docs].map((document) => document.data());
     const categoriesById = new Map(categorySnapshot.docs.map((document) => [document.id, { id: document.id, ...document.data() }]));
     for (const category of catalogTaxonomy()) {
       if (!categoriesById.has(category.id)) categoriesById.set(category.id, category);
@@ -281,8 +284,9 @@ app.get("/api/admin/taxonomy", async (_request, response, next) => {
     const categories = [...categoriesById.values()].map((category) => ({
       ...category,
       subcategories: Array.isArray(category.subcategories) ? category.subcategories : [],
-      productCount: allProducts.filter((product) => product.category === category.name).length,
-    })).sort((a, b) => String(a.name).localeCompare(String(b.name), "tr"));
+      productCount: publicProducts.filter((product) => product.category === category.name).length,
+    })).filter((category) => catalogTaxonomy().some((item) => item.id === category.id) || category.productCount > 0 || category.custom)
+      .sort((a, b) => String(a.name).localeCompare(String(b.name), "tr"));
     const brands = new Map(brandSnapshot.docs.map((document) => [document.id, { id: document.id, ...document.data() }]));
     for (const product of allProducts) {
       const id = slugify(String(product.brand || ""));
@@ -306,9 +310,9 @@ app.post("/api/admin/categories", async (request, response, next) => {
     const subcategories = Array.isArray(request.body?.subcategories)
       ? request.body.subcategories.map((item) => ({ name: String(item.name || item).trim(), slug: slugify(String(item.name || item)) })).filter((item) => item.name)
       : [];
-    await reference.set({ name, slug: id, subcategories, status: "published", createdAt: new Date(), updatedAt: new Date(), createdBy: request.admin.email });
+    await reference.set({ name, slug: id, subcategories, custom: true, status: "published", createdAt: new Date(), updatedAt: new Date(), createdBy: request.admin.email });
     await db.collection("auditLogs").add({ action: "create-category", categoryId: id, categoryName: name, actorUid: request.admin.uid, actorEmail: request.admin.email, createdAt: new Date() });
-    response.status(201).json({ ok: true, category: { id, name, slug: id, subcategories, status: "published", productCount: 0 } });
+    response.status(201).json({ ok: true, category: { id, name, slug: id, subcategories, custom: true, status: "published", productCount: 0 } });
   } catch (error) { next(error); }
 });
 
@@ -379,7 +383,7 @@ app.post("/api/admin/catalog/import/apply", async (request, response, next) => {
     const batch = db.batch();
     const applied = [];
     for (const row of preview.rows) {
-      if (row.match?.id && familyById.has(row.match.id) && !row.ambiguous) {
+      if (row.match?.id && familyById.has(row.match.id)) {
         const product = familyById.get(row.match.id);
         const variantId = `excel-${row.row}`;
         const variants = Array.isArray(product.variants) ? product.variants : [];
@@ -388,12 +392,14 @@ app.post("/api/admin/catalog/import/apply", async (request, response, next) => {
         applied.push({ row: row.row, id: product.id, decision: "matched" });
       } else {
         const draft = validateDraft(draftFromImportRow(row));
-        batch.set(db.collection("productDrafts").doc(draft.id), { ...draft, updatedAt: new Date(), updatedBy: request.admin.email }, { merge: true });
-        applied.push({ row: row.row, id: draft.id, decision: draft.importMeta.decision });
+        const product = { ...draft, status: "published", imageStatus: "research-needed" };
+        batch.set(db.collection("productFamilies").doc(product.id), { ...product, updatedAt: new Date(), updatedBy: request.admin.email }, { merge: true });
+        batch.delete(db.collection("productDrafts").doc(product.id));
+        applied.push({ row: row.row, id: product.id, decision: "new-family" });
       }
     }
     if (request.body.archiveExtras) {
-      const importedIds = new Set(applied.filter((item) => item.decision === "matched").map((item) => item.id));
+      const importedIds = new Set(applied.map((item) => item.id));
       families.filter((product) => product.brand !== "Kroom" && !importedIds.has(product.id) && product.status !== "archived").forEach((product) => batch.set(db.collection("productFamilies").doc(product.id), { status: "archived", updatedAt: new Date(), updatedBy: request.admin.email }, { merge: true }));
     }
     await batch.commit();

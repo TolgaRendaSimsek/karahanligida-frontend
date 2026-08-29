@@ -8,7 +8,7 @@
 node tools/import_excel_catalog.mjs
 ```
 
-Komut mevcut `data/products.json` dosyasını yedekler, Kroom ailelerini koruyup makine kategorilerini günceller, eşleşmeyen gıda ailelerini `data/catalog-archive.json` içine alır ve kaynağı/görseli doğrulanmamış 159 satırı `data/catalog-import-report.json` içinde taslak olarak listeler.
+Komut mevcut `data/products.json` dosyasını yedekler, Kroom ailelerini koruyup makine kategorilerini günceller, eşleşen adları varyantlara bağlar ve Excel'deki tüm satırları `data/products.json` içinde yayımlar. Görseli doğrulanmamış ürünlerde `imageStatus: "research-needed"` kullanılır; ürün kartı nötr bir görsel alanı gösterir. Excel'de bulunmayan eski gıda aileleri silinmeden `data/catalog-archive.json` içine alınır.
 
 ## Firestore aktarımı
 

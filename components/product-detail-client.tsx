@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { publicAssetPath, type ProductFamily } from "@/lib/catalog-schema";
 import { useStore } from "./store-provider";
+import { taxonomySlugForName } from "@/lib/catalog-taxonomy";
 
 export function ProductDetailClient({
   product,
@@ -43,13 +44,20 @@ export function ProductDetailClient({
         <div className="detail-layout">
           <section className="detail-gallery" aria-label="Ürün görselleri">
             <div className="detail-image">
-              <Image
-                src={publicAssetPath(image.src)}
-                fill
-                priority
-                sizes="(max-width: 900px) 100vw, 52vw"
-                alt={image.alt || `${product.brand} ${product.name}`}
-              />
+              {image ? (
+                <Image
+                  src={publicAssetPath(image.src)}
+                  fill
+                  priority
+                  sizes="(max-width: 900px) 100vw, 52vw"
+                  alt={image.alt || `${product.brand} ${product.name}`}
+                />
+              ) : (
+                <div className="detail-image-placeholder" role="img" aria-label="Görsel doğrulanıyor">
+                  <span>Görsel doğrulanıyor</span>
+                  <small>Ürün bilgileri yayınlandı; görsel kaynağı doğrulanıyor.</small>
+                </div>
+              )}
               {product.images.length > 1 && (
                 <>
                   <button type="button" onClick={() => move(-1)} className="detail-arrow previous" aria-label="Önceki görsel">‹</button>
@@ -127,7 +135,7 @@ export function ProductDetailClient({
         <section className="related-section">
           <div className="container section-heading">
             <div><span className="eyebrow">BENZER ÜRÜNLER</span><h2>Aynı kategoriden seçenekler</h2></div>
-            <Link href={`/urunler?category=${encodeURIComponent(product.category)}`}>Tümünü gör →</Link>
+            <Link href={taxonomySlugForName(product.category) ? `/kategori/${taxonomySlugForName(product.category)}` : `/urunler?category=${encodeURIComponent(product.category)}`}>Tümünü gör →</Link>
           </div>
           <div className="container product-grid compact">
             {related.map((item) => <RelatedCard product={item} key={item.id} />)}
@@ -142,7 +150,7 @@ function RelatedCard({ product }: { product: ProductFamily }) {
   const image = product.images[0];
   return (
     <Link className="related-card" href={`/urunler/${product.slug}`}>
-      <div><Image src={publicAssetPath(image.thumbnailSrc)} fill sizes="240px" alt={image.alt} /></div>
+      <div>{image ? <Image src={publicAssetPath(image.thumbnailSrc)} fill sizes="240px" alt={image.alt} /> : <span className="product-image-placeholder"><span>Görsel doğrulanıyor</span></span>}</div>
       <span>{product.brand}</span>
       <strong>{product.name}</strong>
     </Link>

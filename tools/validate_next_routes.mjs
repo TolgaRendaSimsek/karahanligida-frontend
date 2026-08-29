@@ -43,6 +43,12 @@ for (let index = 0; index < publicResponses.length; index += 1) {
   }
 }
 
+const categorySlugs = [
+  "kahve", "cay", "surup-ve-pureler", "soslar", "gida-urunleri",
+  "donuk-urunler", "gida-disi-urunler", "kahve-makineleri", "endustriyel-mutfak-ekipmanlari",
+];
+for (const slug of categorySlugs) await check(`/kategori/${slug}`, 200, `kategori/${slug}`);
+
 const batches = [];
 for (let index = 0; index < products.length; index += 20) {
   batches.push(products.slice(index, index + 20));
