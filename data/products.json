@@ -2454,12 +2454,21 @@
       "category": "Kahve",
       "subcategory": "Çekirdek Kahve",
       "summary": "KİMBO AUDACE LİGHT ROSAT 1 KG için Karahanlı Gıda katalog kaydı.",
-      "description": "KİMBO AUDACE LİGHT ROSAT 1 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "KİMBO AUDACE LİGHT ROSAT 1 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 12": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-b52552f38a",
+          "src": "assets/products/kimbo/kimbo-audace-light-rosat-1-kg-excel-12/web-b52552f38aa5.webp",
+          "thumbnailSrc": "assets/products/kimbo/kimbo-audace-light-rosat-1-kg-excel-12/web-b52552f38aa5-thumb.webp",
+          "alt": "KİMBO AUDACE LİGHT ROSAT 1 KG",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-12",
@@ -2479,7 +2488,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-013",
@@ -2535,12 +2544,21 @@
       "category": "Kahve",
       "subcategory": "Çekirdek Kahve",
       "summary": "LUGANO ÇEKİRDEK KAHVE 1 KG STRONG PAKET için Karahanlı Gıda katalog kaydı.",
-      "description": "LUGANO ÇEKİRDEK KAHVE 1 KG STRONG PAKET ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "LUGANO ÇEKİRDEK KAHVE 1 KG STRONG PAKET ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 14": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-05d4a0c3e5",
+          "src": "assets/products/lugano/lugano-cekirdek-kahve-1-kg-strong-paket-excel-14/web-05d4a0c3e509.webp",
+          "thumbnailSrc": "assets/products/lugano/lugano-cekirdek-kahve-1-kg-strong-paket-excel-14/web-05d4a0c3e509-thumb.webp",
+          "alt": "LUGANO ÇEKİRDEK KAHVE 1 KG STRONG PAKET",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-14",
@@ -2560,7 +2578,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-015",
@@ -2570,12 +2588,21 @@
       "category": "Kahve",
       "subcategory": "Çekirdek Kahve",
       "summary": "LUGANO ÇEKİRDEK KAHVE ARABİCA 1 KG için Karahanlı Gıda katalog kaydı.",
-      "description": "LUGANO ÇEKİRDEK KAHVE ARABİCA 1 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "LUGANO ÇEKİRDEK KAHVE ARABİCA 1 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 15": "18"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-bad5b28dfe",
+          "src": "assets/products/lugano/lugano-cekirdek-kahve-arabica-1-kg-excel-15/web-bad5b28dfee7.webp",
+          "thumbnailSrc": "assets/products/lugano/lugano-cekirdek-kahve-arabica-1-kg-excel-15/web-bad5b28dfee7-thumb.webp",
+          "alt": "LUGANO ÇEKİRDEK KAHVE ARABİCA 1 KG",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-15",
@@ -2595,7 +2622,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-016",
@@ -2605,12 +2632,21 @@
       "category": "Kahve",
       "subcategory": "Çekirdek Kahve",
       "summary": "LUGANO ÇEKİRDEK KAHVE 1 KG BLACK için Karahanlı Gıda katalog kaydı.",
-      "description": "LUGANO ÇEKİRDEK KAHVE 1 KG BLACK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "LUGANO ÇEKİRDEK KAHVE 1 KG BLACK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 16": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-5108590efb",
+          "src": "assets/products/lugano/lugano-cekirdek-kahve-1-kg-black-excel-16/web-5108590efb6a.webp",
+          "thumbnailSrc": "assets/products/lugano/lugano-cekirdek-kahve-1-kg-black-excel-16/web-5108590efb6a-thumb.webp",
+          "alt": "LUGANO ÇEKİRDEK KAHVE 1 KG BLACK",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-16",
@@ -2630,7 +2666,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-017",
@@ -2640,12 +2676,21 @@
       "category": "Kahve",
       "subcategory": "Çekirdek Kahve",
       "summary": "LUGANO ÇEKİRDEK KAHVE 1 KG ELİTE LİFE için Karahanlı Gıda katalog kaydı.",
-      "description": "LUGANO ÇEKİRDEK KAHVE 1 KG ELİTE LİFE ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "LUGANO ÇEKİRDEK KAHVE 1 KG ELİTE LİFE ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 17": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-b1705537ed",
+          "src": "assets/products/lugano/lugano-cekirdek-kahve-1-kg-elite-life-excel-17/web-b1705537ed76.webp",
+          "thumbnailSrc": "assets/products/lugano/lugano-cekirdek-kahve-1-kg-elite-life-excel-17/web-b1705537ed76-thumb.webp",
+          "alt": "LUGANO ÇEKİRDEK KAHVE 1 KG ELİTE LİFE",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-17",
@@ -2665,7 +2710,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-018",
@@ -2745,12 +2790,21 @@
       "category": "Kahve",
       "subcategory": "Filtre Kahve",
       "summary": "LUGANO FİLTRE KAHVE 250 GR STRONG PAKET için Karahanlı Gıda katalog kaydı.",
-      "description": "LUGANO FİLTRE KAHVE 250 GR STRONG PAKET ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "LUGANO FİLTRE KAHVE 250 GR STRONG PAKET ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 28": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-58ce2ce11a",
+          "src": "assets/products/lugano/lugano-filtre-kahve-250-gr-strong-paket-excel-28/web-58ce2ce11a01.webp",
+          "thumbnailSrc": "assets/products/lugano/lugano-filtre-kahve-250-gr-strong-paket-excel-28/web-58ce2ce11a01-thumb.webp",
+          "alt": "LUGANO FİLTRE KAHVE 250 GR STRONG PAKET",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-28",
@@ -2770,7 +2824,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-029",
@@ -2780,12 +2834,21 @@
       "category": "Kahve",
       "subcategory": "Filtre Kahve",
       "summary": "LUGANO FİLTRE KAHVE 250 GR ELİTE LIFE PAKET için Karahanlı Gıda katalog kaydı.",
-      "description": "LUGANO FİLTRE KAHVE 250 GR ELİTE LIFE PAKET ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "LUGANO FİLTRE KAHVE 250 GR ELİTE LIFE PAKET ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 29": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-4f8b3b5ff1",
+          "src": "assets/products/lugano/lugano-filtre-kahve-250-gr-elite-life-paket-excel-29/web-4f8b3b5ff14c.webp",
+          "thumbnailSrc": "assets/products/lugano/lugano-filtre-kahve-250-gr-elite-life-paket-excel-29/web-4f8b3b5ff14c-thumb.webp",
+          "alt": "LUGANO FİLTRE KAHVE 250 GR ELİTE LIFE PAKET",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-29",
@@ -2805,7 +2868,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-030",
@@ -2885,12 +2948,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "KAHVE ALEMİ TÜRK KAHVESİ 100 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "KAHVE ALEMİ TÜRK KAHVESİ 100 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "KAHVE ALEMİ TÜRK KAHVESİ 100 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 33": "24"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-259f1adda8",
+          "src": "assets/products/karahanli-gida/kahve-alemi-turk-kahvesi-100-gr-excel-33/web-259f1adda872.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/kahve-alemi-turk-kahvesi-100-gr-excel-33/web-259f1adda872-thumb.webp",
+          "alt": "KAHVE ALEMİ TÜRK KAHVESİ 100 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-33",
@@ -2910,7 +2982,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-034",
@@ -2955,12 +3027,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "MEHMET EFENDİ TÜRK KAHVESİ 500 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "MEHMET EFENDİ TÜRK KAHVESİ 500 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "MEHMET EFENDİ TÜRK KAHVESİ 500 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 35": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-e146940fbc",
+          "src": "assets/products/karahanli-gida/mehmet-efendi-turk-kahvesi-500-gr-excel-35/web-e146940fbce7.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/mehmet-efendi-turk-kahvesi-500-gr-excel-35/web-e146940fbce7-thumb.webp",
+          "alt": "MEHMET EFENDİ TÜRK KAHVESİ 500 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-35",
@@ -2980,7 +3061,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-036",
@@ -2990,12 +3071,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "MEHMET EFENDİ TÜRK KAHVESİ 100 GR FOLYO için Karahanlı Gıda katalog kaydı.",
-      "description": "MEHMET EFENDİ TÜRK KAHVESİ 100 GR FOLYO ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "MEHMET EFENDİ TÜRK KAHVESİ 100 GR FOLYO ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 36": "25"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-39438c693a",
+          "src": "assets/products/karahanli-gida/mehmet-efendi-turk-kahvesi-100-gr-folyo-excel-36/web-39438c693a85.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/mehmet-efendi-turk-kahvesi-100-gr-folyo-excel-36/web-39438c693a85-thumb.webp",
+          "alt": "MEHMET EFENDİ TÜRK KAHVESİ 100 GR FOLYO",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-36",
@@ -3015,7 +3105,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-037",
@@ -5440,12 +5530,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Diğer Gıda Ürünleri",
       "summary": "LOTUS KIRINTI için Karahanlı Gıda katalog kaydı.",
-      "description": "LOTUS KIRINTI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "LOTUS KIRINTI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 136": "1 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-8af949fee1",
+          "src": "assets/products/karahanli-gida/lotus-kirinti-excel-136/web-8af949fee171.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/lotus-kirinti-excel-136/web-8af949fee171-thumb.webp",
+          "alt": "LOTUS KIRINTI",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-136",
@@ -5465,7 +5564,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-137",
@@ -5510,12 +5609,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Tatlı/Topping Ürünleri",
       "summary": "DELUCCA BİSKÜVİ KIRINTISI için Karahanlı Gıda katalog kaydı.",
-      "description": "DELUCCA BİSKÜVİ KIRINTISI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "DELUCCA BİSKÜVİ KIRINTISI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 138": "1KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-601ca2cf2b",
+          "src": "assets/products/de-lucca/delucca-biskuvi-kirintisi-excel-138/web-601ca2cf2b7f.webp",
+          "thumbnailSrc": "assets/products/de-lucca/delucca-biskuvi-kirintisi-excel-138/web-601ca2cf2b7f-thumb.webp",
+          "alt": "DELUCCA BİSKÜVİ KIRINTISI",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-138",
@@ -5535,7 +5643,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-139",
@@ -5545,12 +5653,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Tatlı/Topping Ürünleri",
       "summary": "DELUCCA KAKOLU BİSKÜVİ TOZU için Karahanlı Gıda katalog kaydı.",
-      "description": "DELUCCA KAKOLU BİSKÜVİ TOZU ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "DELUCCA KAKOLU BİSKÜVİ TOZU ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 139": "1KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-f34d00ad24",
+          "src": "assets/products/de-lucca/delucca-kakolu-biskuvi-tozu-excel-139/web-f34d00ad243c.webp",
+          "thumbnailSrc": "assets/products/de-lucca/delucca-kakolu-biskuvi-tozu-excel-139/web-f34d00ad243c-thumb.webp",
+          "alt": "DELUCCA KAKOLU BİSKÜVİ TOZU",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-139",
@@ -5570,7 +5687,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-140",
@@ -5720,12 +5837,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Diğer Gıda Ürünleri",
       "summary": "HARİBOO AYICIK için Karahanlı Gıda katalog kaydı.",
-      "description": "HARİBOO AYICIK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "HARİBOO AYICIK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 145": "1KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-1359bfd6fc",
+          "src": "assets/products/karahanli-gida/hariboo-ayicik-excel-145/web-1359bfd6fcc8.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/hariboo-ayicik-excel-145/web-1359bfd6fcc8-thumb.webp",
+          "alt": "HARİBOO AYICIK",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-145",
@@ -5745,7 +5871,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-146",
@@ -5976,12 +6102,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Diğer Gıda Ürünleri",
       "summary": "PELEGRİNO MADEN SUYU 250 ML için Karahanlı Gıda katalog kaydı.",
-      "description": "PELEGRİNO MADEN SUYU 250 ML ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "PELEGRİNO MADEN SUYU 250 ML ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 152": "24"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-379be56a25",
+          "src": "assets/products/karahanli-gida/pelegrino-maden-suyu-250-ml-excel-152/web-379be56a258c.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/pelegrino-maden-suyu-250-ml-excel-152/web-379be56a258c-thumb.webp",
+          "alt": "PELEGRİNO MADEN SUYU 250 ML",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-152",
@@ -6001,7 +6136,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-153",
@@ -6011,12 +6146,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Diğer Gıda Ürünleri",
       "summary": "PELEGRİNO MADEN SUYU 750 ML için Karahanlı Gıda katalog kaydı.",
-      "description": "PELEGRİNO MADEN SUYU 750 ML ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "PELEGRİNO MADEN SUYU 750 ML ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 153": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-d7b45d801e",
+          "src": "assets/products/karahanli-gida/pelegrino-maden-suyu-750-ml-excel-153/web-d7b45d801e20.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/pelegrino-maden-suyu-750-ml-excel-153/web-d7b45d801e20-thumb.webp",
+          "alt": "PELEGRİNO MADEN SUYU 750 ML",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-153",
@@ -6036,7 +6180,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-154",
@@ -7621,12 +7765,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Diğer Sarf Ürünleri",
       "summary": "BRAVİLOR BONAMAT 110/360 FİLTRE KAHVE KAĞIDI için Karahanlı Gıda katalog kaydı.",
-      "description": "BRAVİLOR BONAMAT 110/360 FİLTRE KAHVE KAĞIDI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "BRAVİLOR BONAMAT 110/360 FİLTRE KAHVE KAĞIDI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 208": "250 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-4bf1d8f6af",
+          "src": "assets/products/karahanli-gida/bravilor-bonamat-110-360-filtre-kahve-kagidi-excel-208/web-4bf1d8f6afcd.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/bravilor-bonamat-110-360-filtre-kahve-kagidi-excel-208/web-4bf1d8f6afcd-thumb.webp",
+          "alt": "BRAVİLOR BONAMAT 110/360 FİLTRE KAHVE KAĞIDI",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-208",
@@ -7646,7 +7799,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-209",
@@ -7656,12 +7809,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Diğer Sarf Ürünleri",
       "summary": "BRAVİLOR BONAMAT 85/245 FİLTRE KAHVE KAĞIDI için Karahanlı Gıda katalog kaydı.",
-      "description": "BRAVİLOR BONAMAT 85/245 FİLTRE KAHVE KAĞIDI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "BRAVİLOR BONAMAT 85/245 FİLTRE KAHVE KAĞIDI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 209": "20X50 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-4bf1d8f6af",
+          "src": "assets/products/karahanli-gida/bravilor-bonamat-85-245-filtre-kahve-kagidi-excel-209/web-4bf1d8f6afcd.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/bravilor-bonamat-85-245-filtre-kahve-kagidi-excel-209/web-4bf1d8f6afcd-thumb.webp",
+          "alt": "BRAVİLOR BONAMAT 85/245 FİLTRE KAHVE KAĞIDI",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-209",
@@ -7681,7 +7843,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-210",
@@ -7901,12 +8063,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Temizlik Ürünleri",
       "summary": "PULY GRİND KRİSTAL için Karahanlı Gıda katalog kaydı.",
-      "description": "PULY GRİND KRİSTAL ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "PULY GRİND KRİSTAL ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 216": "1ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-3db8db1c47",
+          "src": "assets/products/karahanli-gida/puly-grind-kristal-excel-216/web-3db8db1c471e.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/puly-grind-kristal-excel-216/web-3db8db1c471e-thumb.webp",
+          "alt": "PULY GRİND KRİSTAL",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-216",
@@ -7926,7 +8097,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-217",

@@ -10,6 +10,7 @@ const db = getFirestore();
 const catalog = JSON.parse(await readFile(new URL("../data/products.json", import.meta.url), "utf8"));
 const archive = JSON.parse(await readFile(new URL("../data/catalog-archive.json", import.meta.url), "utf8"));
 const report = JSON.parse(await readFile(new URL("../data/catalog-import-report.json", import.meta.url), "utf8"));
+const verifiedSources = JSON.parse(await readFile(new URL("../data/verified-image-sources.json", import.meta.url), "utf8"));
 const now = new Date();
 const allProducts = [...catalog.products, ...archive.products];
 const reportRowsByNumber = new Map(report.rows.map((row) => [Number(row.row), row]));
@@ -19,6 +20,7 @@ function importMetaFor(product) {
   if (!rowNumbers.length) return product.importMeta || undefined;
   const rows = rowNumbers.map((number) => reportRowsByNumber.get(number)).filter(Boolean);
   const first = rows[0];
+  const verified = verifiedSources[product.id];
   return {
     excelRows: rowNumbers,
     originalName: first?.name || product.name,
@@ -26,12 +28,14 @@ function importMetaFor(product) {
     sourceFile: report.sourceFile,
     decision: "published",
     research: {
-      sourceUrl: product.images?.length ? null : officialSourceForBrand(product.brand),
-      sourceType: product.images?.length ? "catalog-asset" : "pending-official-research",
-      checkedAt: null,
-      confidence: product.images?.length ? "catalog" : "unverified",
+      sourceUrl: verified?.sourceUrl || (product.images?.length ? null : officialSourceForBrand(product.brand)),
+      sourceType: verified?.sourceType || (product.images?.length ? "catalog-asset" : "pending-official-research"),
+      checkedAt: verified?.checkedAt || null,
+      confidence: verified?.confidence || (product.images?.length ? "catalog" : "unverified"),
       imageStatus: product.images?.length ? "verified" : "research-needed",
-      officialUrl: officialSourceForBrand(product.brand),
+      officialUrl: verified?.sourceUrl || officialSourceForBrand(product.brand),
+      ...(verified?.imageUrl ? { imageUrl: verified.imageUrl } : {}),
+      ...(verified?.fileHash ? { fileHash: verified.fileHash } : {}),
     },
   };
 }

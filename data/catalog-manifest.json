@@ -8106,6 +8106,415 @@
           "pdfObject": "Im0.jp2"
         }
       ]
+    },
+    {
+      "productId": "family-excel-012",
+      "slug": "kimbo-audace-light-rosat-1-kg-excel-12",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        12
+      ],
+      "assets": [
+        "assets/products/kimbo/kimbo-audace-light-rosat-1-kg-excel-12/web-b52552f38aa5.webp",
+        "assets/products/kimbo/kimbo-audace-light-rosat-1-kg-excel-12/web-b52552f38aa5-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.meta-bev.com/cdn/shop/files/KimboAudace1kg_712217c3-eb24-4cd7-9074-6f26c41d92ff.jpg?v=1737598610",
+          "sourceUrl": "https://www.meta-bev.com/products/kimbo-prestige-coffee-beans-copy",
+          "checkedAt": "2026-08-29T07:42:13.479Z",
+          "sha256": "b52552f38aa5b86033283d2fe4ebc02cecd3d68f89f949d32369fcaa8d317065"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-014",
+      "slug": "lugano-cekirdek-kahve-1-kg-strong-paket-excel-14",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        14
+      ],
+      "assets": [
+        "assets/products/lugano/lugano-cekirdek-kahve-1-kg-strong-paket-excel-14/web-05d4a0c3e509.webp",
+        "assets/products/lugano/lugano-cekirdek-kahve-1-kg-strong-paket-excel-14/web-05d4a0c3e509-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://luganocaffe.com/wp-content/uploads/2025/04/Lugano-Caffe-Strong-Espresso-Coffee-Beans-1-Kg-pack.png",
+          "sourceUrl": "https://luganocaffe.com/product/strong-espresso-coffee-beans-1-kg/",
+          "checkedAt": "2026-08-29T07:42:13.479Z",
+          "sha256": "05d4a0c3e509180d231c903fff0c1ad418075a27f325030b9323242f7a679964"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-015",
+      "slug": "lugano-cekirdek-kahve-arabica-1-kg-excel-15",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        15
+      ],
+      "assets": [
+        "assets/products/lugano/lugano-cekirdek-kahve-arabica-1-kg-excel-15/web-bad5b28dfee7.webp",
+        "assets/products/lugano/lugano-cekirdek-kahve-arabica-1-kg-excel-15/web-bad5b28dfee7-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://luganocaffe.com/wp-content/uploads/2025/04/Lugano-Caffe-Arabica-Espresso-Coffee-Beans-1-Kg-pack.png",
+          "sourceUrl": "https://luganocaffe.com/product/arabica-espresso-coffee-beans-1-kg/",
+          "checkedAt": "2026-08-29T07:42:13.479Z",
+          "sha256": "bad5b28dfee7bb3db5deb4daac795158482272ab3a24df73d7c5807986e9d236"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-016",
+      "slug": "lugano-cekirdek-kahve-1-kg-black-excel-16",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        16
+      ],
+      "assets": [
+        "assets/products/lugano/lugano-cekirdek-kahve-1-kg-black-excel-16/web-5108590efb6a.webp",
+        "assets/products/lugano/lugano-cekirdek-kahve-1-kg-black-excel-16/web-5108590efb6a-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://luganocaffe.com/wp-content/uploads/2025/04/Lugano-Caffe-Elite-Dark-Espresso-Coffee-Beans-1-Kg-pack.png",
+          "sourceUrl": "https://luganocaffe.com/product/elite-dark-espresso-coffee-beans-1-kg/",
+          "checkedAt": "2026-08-29T07:42:13.479Z",
+          "sha256": "5108590efb6a8c751d897334687c11df84812fec3878bf1aeba3df131db57c44"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-017",
+      "slug": "lugano-cekirdek-kahve-1-kg-elite-life-excel-17",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        17
+      ],
+      "assets": [
+        "assets/products/lugano/lugano-cekirdek-kahve-1-kg-elite-life-excel-17/web-b1705537ed76.webp",
+        "assets/products/lugano/lugano-cekirdek-kahve-1-kg-elite-life-excel-17/web-b1705537ed76-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://luganocaffe.com/wp-content/uploads/2025/04/Lugano-Caffe-Life-Arabica-Espresso-Coffee-Beans-1-Kg-pack.png",
+          "sourceUrl": "https://luganocaffe.com/product/elite-life-espresso-coffee-beans-1-kg/",
+          "checkedAt": "2026-08-29T07:42:13.479Z",
+          "sha256": "b1705537ed760b60f645abee5c5576ccf183683954ab0c9aa75d2fe3bd513d5b"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-028",
+      "slug": "lugano-filtre-kahve-250-gr-strong-paket-excel-28",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        28
+      ],
+      "assets": [
+        "assets/products/lugano/lugano-filtre-kahve-250-gr-strong-paket-excel-28/web-58ce2ce11a01.webp",
+        "assets/products/lugano/lugano-filtre-kahve-250-gr-strong-paket-excel-28/web-58ce2ce11a01-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://luganocaffe.com/wp-content/uploads/2025/04/Lugano-Caffe-Strong-Filter-Coffee-250-Gr-Vacuum-Pack.png",
+          "sourceUrl": "https://luganocaffe.com/product/strong-filter-coffee-250gr/",
+          "checkedAt": "2026-08-29T07:42:13.479Z",
+          "sha256": "58ce2ce11a0171fdfd9a2d1a1e8ee3c4257731553f2516978803e6b6fea5818a"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-029",
+      "slug": "lugano-filtre-kahve-250-gr-elite-life-paket-excel-29",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        29
+      ],
+      "assets": [
+        "assets/products/lugano/lugano-filtre-kahve-250-gr-elite-life-paket-excel-29/web-4f8b3b5ff14c.webp",
+        "assets/products/lugano/lugano-filtre-kahve-250-gr-elite-life-paket-excel-29/web-4f8b3b5ff14c-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://luganocaffe.com/wp-content/uploads/2025/04/Lugano-Caffe-Elite-Life-Filter-Coffee-250-Gr-Vacuum-Pack.png",
+          "sourceUrl": "https://luganocaffe.com/product/elite-life-filter-coffee-250gr/",
+          "checkedAt": "2026-08-29T07:42:13.479Z",
+          "sha256": "4f8b3b5ff14c158f7e34b23a2d507952f7d945ea522276f3c76c7e1cfe9eb73c"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-035",
+      "slug": "mehmet-efendi-turk-kahvesi-500-gr-excel-35",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        35
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/mehmet-efendi-turk-kahvesi-500-gr-excel-35/web-e146940fbce7.webp",
+        "assets/products/karahanli-gida/mehmet-efendi-turk-kahvesi-500-gr-excel-35/web-e146940fbce7-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.mehmetefendi.com/images/content/jpg/kmem-500-g-turk-kahvesi.jpg",
+          "sourceUrl": "https://www.mehmetefendi.com/urunler/turk-kahvesi",
+          "checkedAt": "2026-08-29T07:42:13.479Z",
+          "sha256": "e146940fbce72e79f422932d00a0abf8dc7e4265dacd84ead8880e8d19d3cd60"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-036",
+      "slug": "mehmet-efendi-turk-kahvesi-100-gr-folyo-excel-36",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        36
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/mehmet-efendi-turk-kahvesi-100-gr-folyo-excel-36/web-39438c693a85.webp",
+        "assets/products/karahanli-gida/mehmet-efendi-turk-kahvesi-100-gr-folyo-excel-36/web-39438c693a85-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.mehmetefendi.com/images/content/jpg/kmem-100-g-turk-kahvesi.jpg",
+          "sourceUrl": "https://www.mehmetefendi.com/urunler/turk-kahvesi",
+          "checkedAt": "2026-08-29T07:42:13.479Z",
+          "sha256": "39438c693a85d34b3ef67ef9be7f3357a3766ea523d280b96c5cedc07a809e18"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-145",
+      "slug": "hariboo-ayicik-excel-145",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        145
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/hariboo-ayicik-excel-145/web-1359bfd6fcc8.webp",
+        "assets/products/karahanli-gida/hariboo-ayicik-excel-145/web-1359bfd6fcc8-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://assets.haribo.com/image/upload/s--YALfpdUG--/ar_2700:3542,c_fill,f_auto,q_60/w_1678/v1/consumer-sites/en-gb/Products/goldbears-uk.png",
+          "sourceUrl": "https://www.haribo.com/en-gb/products/haribo/goldbears",
+          "checkedAt": "2026-08-29T07:48:17.913Z",
+          "sha256": "1359bfd6fcc854585e9c1f320af02bba1a14f4546acd428d1d4ae5b6ea2b9ed8",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-152",
+      "slug": "pelegrino-maden-suyu-250-ml-excel-152",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        152
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/pelegrino-maden-suyu-250-ml-excel-152/web-379be56a258c.webp",
+        "assets/products/karahanli-gida/pelegrino-maden-suyu-250-ml-excel-152/web-379be56a258c-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.sanpellegrino.com/us/sites/g/files/xknfdk2166/files/2022-06/sp-250ml-glass-principale.jpg",
+          "sourceUrl": "https://www.sanpellegrino.com/us/water/250-ml-glass-bottle",
+          "checkedAt": "2026-08-29T07:48:17.913Z",
+          "sha256": "379be56a258c4d7dd25e9eac088854564dcfb3c00ed0c23e2c72f3168de571a5",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-153",
+      "slug": "pelegrino-maden-suyu-750-ml-excel-153",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        153
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/pelegrino-maden-suyu-750-ml-excel-153/web-d7b45d801e20.webp",
+        "assets/products/karahanli-gida/pelegrino-maden-suyu-750-ml-excel-153/web-d7b45d801e20-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.sanpellegrino.com/us/sites/g/files/xknfdk2166/files/2022-06/sp-750ml-glass-principale_0.jpg",
+          "sourceUrl": "https://www.sanpellegrino.com/us/water/750-ml-glass-bottle",
+          "checkedAt": "2026-08-29T07:48:17.913Z",
+          "sha256": "d7b45d801e20bfcd1b9b9e0702517a7f52a619642c81accc6d96ea48c3e35899",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-208",
+      "slug": "bravilor-bonamat-110-360-filtre-kahve-kagidi-excel-208",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        208
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/bravilor-bonamat-110-360-filtre-kahve-kagidi-excel-208/web-4bf1d8f6afcd.webp",
+        "assets/products/karahanli-gida/bravilor-bonamat-110-360-filtre-kahve-kagidi-excel-208/web-4bf1d8f6afcd-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://admin.b2b.bravilor.com/files/1061794/HD",
+          "sourceUrl": "https://www.bravilor.com/sv/products/accessories-sv/b5-hw-korgfilter/",
+          "checkedAt": "2026-08-29T07:48:17.913Z",
+          "sha256": "4bf1d8f6afcdbed8d404f3a19115469f092009eaafe04758f22e9a2cb9518bda",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-209",
+      "slug": "bravilor-bonamat-85-245-filtre-kahve-kagidi-excel-209",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        209
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/bravilor-bonamat-85-245-filtre-kahve-kagidi-excel-209/web-4bf1d8f6afcd.webp",
+        "assets/products/karahanli-gida/bravilor-bonamat-85-245-filtre-kahve-kagidi-excel-209/web-4bf1d8f6afcd-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://admin.b2b.bravilor.com/files/621460/HD",
+          "sourceUrl": "https://www.bravilor.com/fr/products/accessories-fr/palette-de-63-boites-de-1000-filtres/",
+          "checkedAt": "2026-08-29T07:48:17.913Z",
+          "sha256": "4bf1d8f6afcdbed8d404f3a19115469f092009eaafe04758f22e9a2cb9518bda",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-216",
+      "slug": "puly-grind-kristal-excel-216",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        216
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/puly-grind-kristal-excel-216/web-3db8db1c471e.webp",
+        "assets/products/karahanli-gida/puly-grind-kristal-excel-216/web-3db8db1c471e-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "ai-enhanced",
+          "url": "https://www.asachimici.com/sites/default/files/PULYGRIND%2010%20DOSI.jpg",
+          "sourceUrl": "https://www.asachimici.com/it/prodotti/food-industry-cleaners/puly-grind/puly-grind-cristalli",
+          "checkedAt": "2026-08-29T07:48:17.913Z",
+          "sha256": "3db8db1c471eb5f3e62f2ea1b554b59b547126ac878dc6f2e1f11c82d9decf5c",
+          "processing": "ai-enhanced"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-033",
+      "slug": "kahve-alemi-turk-kahvesi-100-gr-excel-33",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        33
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/kahve-alemi-turk-kahvesi-100-gr-excel-33/web-259f1adda872.webp",
+        "assets/products/karahanli-gida/kahve-alemi-turk-kahvesi-100-gr-excel-33/web-259f1adda872-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202203/upload_621e1200a23df.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-turk-kahvesi-100-gr/59",
+          "checkedAt": "2026-08-29T07:49:53.597Z",
+          "sha256": "259f1adda8722e06facf6407011ab1580821f7a211b60e20a333cfea1d245640",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-136",
+      "slug": "lotus-kirinti-excel-136",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        136
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/lotus-kirinti-excel-136/web-8af949fee171.webp",
+        "assets/products/karahanli-gida/lotus-kirinti-excel-136/web-8af949fee171-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.lotusbiscoff.com/sites/default/files/p001/2023-10/Biscoff%20Pack%20Shot%202D%20Biscuit%20Crumbs%20750g.jpg",
+          "sourceUrl": "https://www.lotusbiscoff.com/en-gb/foodprofessionals/products/biscoff-cookie-crumbs-750-g",
+          "checkedAt": "2026-08-29T07:51:30.578Z",
+          "sha256": "8af949fee171a17a5f03ff8a8ad7ccbc682db11f38fd64acec6a1b256772f93c",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-138",
+      "slug": "delucca-biskuvi-kirintisi-excel-138",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        138
+      ],
+      "assets": [
+        "assets/products/de-lucca/delucca-biskuvi-kirintisi-excel-138/web-601ca2cf2b7f.webp",
+        "assets/products/de-lucca/delucca-biskuvi-kirintisi-excel-138/web-601ca2cf2b7f-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://delucca.com.tr/wp-content/uploads/2026/04/KARAMELLI-BISKUVI-TOZU.png",
+          "sourceUrl": "https://delucca.com.tr/urun/karamelize-biskuvi-tozu-parcacikli-1000g/",
+          "checkedAt": "2026-08-29T07:51:30.578Z",
+          "sha256": "601ca2cf2b7f2bd863f08d94327dc349a0408744966eab06247ed8a6d93d582b",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-139",
+      "slug": "delucca-kakolu-biskuvi-tozu-excel-139",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        139
+      ],
+      "assets": [
+        "assets/products/de-lucca/delucca-kakolu-biskuvi-tozu-excel-139/web-f34d00ad243c.webp",
+        "assets/products/de-lucca/delucca-kakolu-biskuvi-tozu-excel-139/web-f34d00ad243c-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://delucca.com.tr/wp-content/uploads/2026/04/KAKAOLU-BISKUVI-TOZU-1000-GR-scaled.png",
+          "sourceUrl": "https://delucca.com.tr/urun/kakaolu-biskuvi-tozu-parcacikli-1000g/",
+          "checkedAt": "2026-08-29T07:51:30.578Z",
+          "sha256": "f34d00ad243c8a968e836297325e73d955ccb183c8abeffd2cb5c05c91ca054a",
+          "processing": "source-preserved"
+        }
+      ]
     }
   ]
 }

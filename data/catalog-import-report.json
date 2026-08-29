@@ -9,7 +9,7 @@
   "newFamilyCount": 159,
   "publishedExcelRowCount": 201,
   "draftCount": 0,
-  "researchNeededCount": 159,
+  "researchNeededCount": 140,
   "archivedFamilyCount": 27,
   "duplicateGroups": [
     {
@@ -274,7 +274,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 13,
@@ -305,7 +306,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 15,
@@ -320,7 +322,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 16,
@@ -335,7 +338,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 17,
@@ -350,7 +354,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 18,
@@ -525,7 +530,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 29,
@@ -540,7 +546,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 30,
@@ -585,7 +592,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 34,
@@ -615,7 +623,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 36,
@@ -630,7 +639,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 37,
@@ -2136,7 +2146,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 137,
@@ -2166,7 +2177,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 139,
@@ -2181,7 +2193,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 140,
@@ -2275,7 +2288,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 146,
@@ -2381,7 +2395,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 153,
@@ -2396,7 +2411,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 154,
@@ -3219,7 +3235,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 209,
@@ -3234,7 +3251,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 210,
@@ -3339,7 +3357,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 217,
@@ -3402,5 +3421,6 @@
       "match": null,
       "decision": "new-family"
     }
-  ]
+  ],
+  "verifiedImageCount": 222
 }
