@@ -169,7 +169,14 @@ export async function encodeProductBuffers(prepared, input, { quality = 92 } = {
     .webp({ quality, alphaQuality: 100, effort: 5 })
     .toBuffer();
   const thumbnail = await sharp(full)
-    .resize(480, 360, { fit: "contain", withoutEnlargement: false })
+    // `contain` adds padding for transparent (usually square) product images.
+    // An opaque default background would become black in the browser, so keep
+    // the padding transparent as well.
+    .resize(480, 360, {
+      fit: "contain",
+      withoutEnlargement: false,
+      background: { r: 0, g: 0, b: 0, alpha: 0 },
+    })
     .webp({ quality: Math.max(75, quality - 8), alphaQuality: 100, effort: 5 })
     .toBuffer();
   return { full, thumbnail };

@@ -36,6 +36,9 @@ test("yüklenen görseli tam ve küçük WebP olarak üretir", async () => {
   assert.match(result.thumbnailSrc, /-thumb\.webp$/);
   const full = await readFile(join(mediaRoot, result.src.replace("/media/", "")));
   assert.equal((await sharp(full).metadata()).format, "webp");
+  const thumbnail = await readFile(join(mediaRoot, result.thumbnailSrc.replace("/media/", "")));
+  const thumbnailMetadata = await sharp(thumbnail).metadata();
+  assert.equal(thumbnailMetadata.format, "webp");
   assert.equal(result.source.originalName, undefined);
   assert.equal(result.alt, "Ürün görseli");
 });
@@ -47,11 +50,15 @@ test("beyaz kenarlı PNG yüklemesinde şeffaf alfa korunur", async () => {
   }).composite([{ input: await sharp({ create: { width: 240, height: 220, channels: 4, background: { r: 30, g: 70, b: 50, alpha: 1 } } }).png().toBuffer(), left: 200, top: 130 }]).png().toBuffer();
   const result = await processUpload({ buffer, productId: "family-media-test", mediaRoot, mimeType: "image/png" });
   const full = await readFile(join(mediaRoot, result.src.replace("/media/", "")));
+  const thumbnail = await readFile(join(mediaRoot, result.thumbnailSrc.replace("/media/", "")));
   const raw = await sharp(full).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const thumbnailRaw = await sharp(thumbnail).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
   const alphaValues = new Set();
   for (let index = 3; index < raw.data.length; index += 4) alphaValues.add(raw.data[index]);
   assert.ok(alphaValues.has(0), "kenar alfa değeri 0 olmalı");
   assert.ok(alphaValues.has(255), "ürün alfa değeri 255 olmalı");
+  const cornerAlpha = thumbnailRaw.data[3];
+  assert.equal(cornerAlpha, 0, "şeffaf ürün küçük görselinin kenarı opak siyah olmamalı");
   assert.equal(result.source.backgroundRemoval, "transparent");
 });
 
