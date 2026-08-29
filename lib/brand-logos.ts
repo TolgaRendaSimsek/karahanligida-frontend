@@ -14,14 +14,26 @@ export type BrandLogo = {
 
 export const brandLogos: Record<string, BrandLogo> = {
   "Cafe Hill": { wordmark: "CAFE HILL" },
-  "Coffe Hill": { wordmark: "COFFE HILL" },
-  "De Lucca": { wordmark: "DE LUCCA" },
+  "Coffe Hill": {
+    src: "/brands/coffe-hill-official.webp",
+    sourceUrl: "https://www.kahvealemi.com.tr/tr/markalar",
+  },
+  "De Lucca": {
+    src: "/brands/delucca-official.webp",
+    sourceUrl: "https://www.delucca.com.tr/",
+  },
   "Favori Fresh": {
     src: "/brands/favori-fresh-official.webp",
     sourceUrl: "https://favorifresh.com/",
   },
-  FO: { wordmark: "FO" },
-  "Güzel Çay": { wordmark: "GÜZEL ÇAY" },
+  FO: {
+    src: "/brands/fo-official.webp",
+    sourceUrl: "https://www.ozmer.com/",
+  },
+  "Güzel Çay": {
+    src: "/brands/guzel-cay-official.webp",
+    sourceUrl: "https://www.guzelcay.com.tr/",
+  },
   Kimbo: {
     src: "/brands/kimbo-official.svg",
     sourceUrl: "https://kimbo.it/",
@@ -32,8 +44,14 @@ export const brandLogos: Record<string, BrandLogo> = {
   },
   Lugano: { wordmark: "LUGANO", sourceUrl: "https://www.luganocaffe.it/en/" },
   Miskin: { wordmark: "MİSKİN" },
-  "Monte Cristo": { wordmark: "MONTE CRISTO" },
-  Morning: { wordmark: "MORNING" },
+  "Monte Cristo": {
+    src: "/brands/monte-cristo-official.webp",
+    sourceUrl: "https://montecristoflavour.com/",
+  },
+  Morning: {
+    src: "/brands/morning-official.webp",
+    sourceUrl: "https://www.kahvealemi.com.tr/tr/markalar",
+  },
   Repo: { wordmark: "REPO" },
   Toschi: {
     src: "/brands/toschi-official.svg",

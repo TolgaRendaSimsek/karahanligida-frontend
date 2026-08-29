@@ -31,3 +31,11 @@ tmp/
 # Untrusted logo probes; only reviewed brand assets are committed.
 public/brands/*-favicon.*
 public/brands/*-source.*
+public/brands/*-candidate.*
+public/brands/morning-official.ico
+public/brands/fo-official.jpg
+public/brands/guzel-cay-official.png
+public/brands/delucca-official.png
+public/brands/monte-cristo-official.png
+public/brands/coffe-hill-official.png
+public/brands/morning-official.png
