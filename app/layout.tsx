@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   description:
     "Kahve, çay, içecek ürünleri ve profesyonel mutfak ekipmanları için Karahanlı Gıda ürün kataloğu.",
   applicationName: "Karahanlı Gıda",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     type: "website",
     locale: "tr_TR",

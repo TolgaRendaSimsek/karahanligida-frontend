@@ -3,11 +3,13 @@ import Link from "next/link";
 import { ProductCard } from "@/components/product-card";
 import { publishedProducts } from "@/lib/catalog-repository";
 import { publicAssetPath, toCatalogCard } from "@/lib/catalog-schema";
+import { getBrandLogo } from "@/lib/brand-logos";
 
 export default async function HomePage() {
   const products = await publishedProducts();
   const featured = products.filter((product) => product.featured).slice(0, 4);
   const brands = [...new Set(products.map((product) => product.brand))];
+  const partnerBrands = brands.filter((brand) => brand !== "Karahanlı Gıda");
   const heroCoffee = products.find((product) => product.slug === "kimbo-horeca-cekirdek-kahveler")
     ?? products.find((product) => product.category === "Kahve");
   const accentCoffee = products.find((product) => product.slug === "kimbo-retail-cekirdek-kahveler")
@@ -30,7 +32,7 @@ export default async function HomePage() {
             </div>
             <div className="hero-stats">
               <div><strong>{products.length}</strong><span>Ürün ailesi</span></div>
-              <div><strong>{brands.length}</strong><span>Seçkin marka</span></div>
+              <div><strong>{partnerBrands.length}</strong><span>Seçkin marka</span></div>
               <div><strong>HORECA</strong><span>Uzmanlığı</span></div>
             </div>
           </div>
@@ -82,7 +84,26 @@ export default async function HomePage() {
             <div><span className="eyebrow">MARKALARIMIZ</span><h2>Güvenilir global ve yerel markalar</h2></div>
           </div>
           <div className="brand-cloud">
-            {brands.map((brand) => <Link href={`/urunler?brand=${encodeURIComponent(brand)}`} key={brand}>{brand}</Link>)}
+            {partnerBrands.map((brand) => {
+              const logo = getBrandLogo(brand);
+              return (
+                <Link
+                  className="brand-tile"
+                  href={`/urunler?brand=${encodeURIComponent(brand)}`}
+                  key={brand}
+                  title={`${brand} ürünlerini incele`}
+                >
+                  <span className={`brand-logo-frame${logo.darkFrame ? " dark" : ""}`}>
+                    {logo.src ? (
+                      <Image src={logo.src} width={190} height={76} alt={`${brand} logosu`} />
+                    ) : (
+                      <span className="brand-wordmark">{logo.wordmark ?? brand}</span>
+                    )}
+                  </span>
+                  <span className="brand-tile-label">{brand} ürünleri <span aria-hidden="true">→</span></span>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -28,3 +28,6 @@ assets/research/repo-085.jpg
 assets/research/*
 assets/research/*.pdf
 tmp/
+# Untrusted logo probes; only reviewed brand assets are committed.
+public/brands/*-favicon.*
+public/brands/*-source.*

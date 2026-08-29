@@ -126,9 +126,15 @@ button { color: inherit; }
 .card-actions .button { padding-inline: 9px; font-size: 11px; }
 
 .brand-section { padding-block: 75px; background: white; border-block: 1px solid var(--line); }
-.brand-cloud { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; margin-top: 34px; }
-.brand-cloud a { min-height: 90px; display: grid; place-items: center; padding: 12px; border: 1px solid var(--line); border-radius: 14px; font-family: Georgia, serif; font-size: 17px; font-weight: 700; text-align: center; transition: border .2s, background .2s; }
-.brand-cloud a:hover { border-color: var(--gold); background: var(--cream); }
+.brand-cloud { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin-top: 34px; }
+.brand-tile { min-height: 144px; display: grid; grid-template-rows: 1fr auto; gap: 12px; padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: #fff; transition: border .2s, background .2s, transform .2s; }
+.brand-tile:hover { border-color: var(--gold); background: var(--cream); transform: translateY(-2px); }
+.brand-logo-frame { min-height: 78px; display: grid; place-items: center; padding: 10px 14px; border-radius: 10px; background: #faf9f6; }
+.brand-logo-frame.dark { background: var(--green); }
+.brand-logo-frame img { width: 100%; height: 62px; object-fit: contain; }
+.brand-wordmark { color: var(--green); font-family: Georgia, serif; font-size: clamp(14px, 1.55vw, 22px); font-weight: 700; letter-spacing: .03em; line-height: 1.1; text-align: center; }
+.brand-tile-label { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: .02em; }
+.brand-tile-label span { color: var(--gold); font-size: 14px; }
 .story-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; align-items: center; padding-block: 95px; }
 .story-visual { min-height: 370px; display: grid; place-items: center; align-content: center; gap: 22px; padding: 45px; color: white; border-radius: 30px; background: var(--green); text-align: center; }
 .story-mark { width: 150px; height: 150px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.3); border-radius: 50%; font-family: Georgia, serif; font-size: 48px; }
@@ -422,7 +428,7 @@ button { color: inherit; }
   .header-main { grid-template-columns: 230px 1fr auto; gap: 14px; }
   .contact-action { display: none; }
   .product-grid { grid-template-columns: repeat(3, 1fr); }
-  .brand-cloud { grid-template-columns: repeat(4, 1fr); }
+  .brand-cloud { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .hero-grid { gap: 35px; }
   .hero-image-card.accent { right: 0; }
   .catalog-toolbar { grid-template-columns: 1fr 200px 230px; }
