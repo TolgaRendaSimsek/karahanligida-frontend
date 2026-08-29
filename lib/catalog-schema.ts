@@ -57,6 +57,11 @@ export type ProductVariant = z.infer<typeof productVariantSchema>;
 export type ProductFamily = z.infer<typeof productFamilySchema>;
 export type CatalogPayload = z.infer<typeof catalogPayloadSchema>;
 
+// Media responses are intentionally immutable at the edge. Bump this value
+// when an existing media file is repaired in-place (for example, after a
+// thumbnail processing fix) so browsers do not keep an older cached bitmap.
+const MEDIA_CACHE_VERSION = process.env.NEXT_PUBLIC_MEDIA_CACHE_VERSION || "thumb-alpha-1";
+
 export type CatalogCard = Pick<
   ProductFamily,
   "id" | "slug" | "brand" | "name" | "category" | "subcategory" | "summary" | "images"
@@ -81,6 +86,9 @@ export function toCatalogCard(product: ProductFamily): CatalogCard {
 }
 
 export function publicAssetPath(path: string): string {
-  if (!path || /^https?:\/\//.test(path) || path.startsWith("/")) return path;
-  return `/${path}`;
+  if (!path || /^https?:\/\//.test(path)) return path;
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  if (!normalized.startsWith("/media/")) return normalized;
+  const separator = normalized.includes("?") ? "&" : "?";
+  return `${normalized}${separator}v=${encodeURIComponent(MEDIA_CACHE_VERSION)}`;
 }

@@ -40,7 +40,7 @@ describe("katalog sözleşmesi", () => {
 
   it("asset yollarını güvenli mutlak URL yoluna çevirir", () => {
     expect(publicAssetPath("assets/products/a/b/image-01.webp")).toBe("/assets/products/a/b/image-01.webp");
-    expect(publicAssetPath("/media/products/a.webp")).toBe("/media/products/a.webp");
+    expect(publicAssetPath("/media/products/a.webp")).toBe("/media/products/a.webp?v=thumb-alpha-1");
   });
 });
 
