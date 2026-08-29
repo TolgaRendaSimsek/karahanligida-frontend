@@ -116,14 +116,21 @@ function parseSpecifications(value: string) {
   }));
 }
 
-function parseVariants(value: string) {
+function parseVariants(value: string, previous: AdminProduct["variants"] = []) {
   const used = new Set<string>();
   return value.split("\n").map((line) => line.trim()).filter(Boolean).map((line, index) => {
     const [name, code = "", imageId = ""] = line.split("|").map((part) => part.trim());
     let id = slugify(code || name) || `variant-${index + 1}`;
     while (used.has(id)) id = `${id}-${index + 1}`;
     used.add(id);
-    return { id, name, code, attributes: {}, ...(imageId ? { imageId } : {}) };
+    const old = previous.find((variant) => variant.id === id || (variant.name === name && variant.code === code));
+    return {
+      id,
+      name,
+      code,
+      attributes: old?.attributes || {},
+      ...(imageId || old?.imageId ? { imageId: imageId || old?.imageId } : {}),
+    };
   });
 }
 
@@ -416,7 +423,7 @@ export function AdminClient({
       ...current.product,
       features: current.featuresText.split("\n").map((line) => line.trim()).filter(Boolean),
       specifications: parseSpecifications(current.specificationsText),
-      variants: parseVariants(current.variantsText),
+      variants: parseVariants(current.variantsText, current.product.variants),
       images: current.product.images.map((image, index) => ({ ...image, order: index + 1 })),
       imageStatus: current.product.images.length ? "verified" : "research-needed",
       status: "published",
@@ -555,18 +562,17 @@ export function AdminClient({
     }
   }
 
-  async function deleteProduct() {
-    if (!editor) return;
+  async function deleteProductById(product: AdminProduct, closeEditor = false) {
     // Ürün adını tekrar yazdırmak, mobilde ve Türkçe karakter içeren adlarda
     // gereksiz bir hata kaynağı oluşturuyordu. Yıkıcı işlem için tek ve açık
     // bir onay yeterli; API de artık isim eşleştirmesi beklemiyor.
-    if (!window.confirm(`“${editor.product.name}” ürünü kalıcı olarak silinsin mi? Bu işlem geri alınamaz.`)) return;
+    if (!window.confirm(`“${product.name}” ürünü kalıcı olarak silinsin mi? Bu işlem geri alınamaz.`)) return;
     setBusy(true);
     try {
-      const result = await api(`/products/${encodeURIComponent(editor.product.id)}`, {
+      const result = await api(`/products/${encodeURIComponent(product.id)}`, {
         method: "DELETE",
       });
-      setEditor(null);
+      if (closeEditor || editor?.product.id === product.id) setEditor(null);
       await loadCatalog();
       setNotice(result.warning || "Ürün kalıcı olarak silindi; medya dosyaları 30 günlük çöp alanına taşındı.");
     } catch (error) {
@@ -574,6 +580,11 @@ export function AdminClient({
     } finally {
       setBusy(false);
     }
+  }
+
+  async function deleteProduct() {
+    if (!editor) return;
+    await deleteProductById(editor.product, true);
   }
 
   async function removeAdmin(admin: AdminUser) {
@@ -735,7 +746,10 @@ export function AdminClient({
               </div>
               <footer>
                 {product.displayStatus === "archived" ? <span className="admin-muted-link">Canlıdan kaldırıldı</span> : <Link href={`/urunler/${product.slug}`} target="_blank" rel="noopener noreferrer" aria-label={`${product.name} canlı ürün sayfasını aç`}>Canlı sayfa ↗</Link>}
-                {product.displayStatus === "archived" ? <button type="button" className="admin-edit" disabled={busy} onClick={() => void restoreProduct(product)}>Geri Getir</button> : <button type="button" className="admin-edit" onClick={() => openEditor(product)}>Ürünü Düzenle</button>}
+                <div className="admin-card-actions">
+                  {product.displayStatus === "archived" ? <button type="button" className="admin-edit" disabled={busy} onClick={() => void restoreProduct(product)}>Geri Getir</button> : <button type="button" className="admin-edit" onClick={() => openEditor(product)}>Ürünü Düzenle</button>}
+                  {product.displayStatus === "archived" && <button type="button" className="admin-danger admin-card-delete" disabled={busy} onClick={() => void deleteProductById(product)}>Kalıcı Sil</button>}
+                </div>
               </footer>
             </article>
           ))}</div> : <div className="admin-empty-products"><h3>Eşleşen ürün bulunamadı</h3><p>Aramayı veya kategori filtrelerini temizleyin.</p><button type="button" onClick={() => { setQuery(""); setBrandFilter(""); setCategoryFilter(""); setStatus(""); }}>Tüm ürünleri göster</button></div>}

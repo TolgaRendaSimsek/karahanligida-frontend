@@ -55,6 +55,20 @@ app.use(createAdminCors(allowedOrigin));
 const requireAdmin = createRequireAdmin(auth);
 const requireGoogleUser = createRequireGoogleUser(auth);
 
+async function assertUniqueSlug(productId, slug) {
+  const [families, drafts] = await Promise.all([
+    db.collection("productFamilies").where("slug", "==", slug).get(),
+    db.collection("productDrafts").where("slug", "==", slug).get(),
+  ]);
+  const conflict = [...families.docs, ...drafts.docs].find((document) => document.id !== productId);
+  if (conflict) {
+    const error = new Error("Bu slug başka bir ürün tarafından kullanılıyor.");
+    error.status = 409;
+    error.code = "slug-conflict";
+    throw error;
+  }
+}
+
 app.get("/health", (_request, response) => {
   response.json({ ok: true, service: "karahanli-admin-api" });
 });
@@ -116,6 +130,7 @@ app.get("/api/admin/catalog", async (_request, response, next) => {
 app.put("/api/admin/products/:id/draft", async (request, response, next) => {
   try {
     const product = validateDraft({ ...request.body.product, id: request.params.id, status: "draft" });
+    await assertUniqueSlug(product.id, product.slug);
     const expectedRevision = Number(request.body.expectedRevision || 0);
     const draftRef = db.collection("productDrafts").doc(product.id);
     const familyRef = db.collection("productFamilies").doc(product.id);

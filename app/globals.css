@@ -336,7 +336,9 @@ button { color: inherit; }
 .admin-product-card > footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 13px 18px; border-top: 1px solid var(--line); background: #fcfcfa; }
 .admin-product-card > footer a { color: var(--muted); font-size: 11px; font-weight: 700; }
 .admin-product-card > footer a:hover { color: var(--green); }
+.admin-card-actions { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 7px; }
 .admin-edit { padding: 8px 11px; border: 1px solid var(--green); border-radius: 8px; color: white; background: var(--green); font-size: 11px; font-weight: 800; cursor: pointer; }
+.admin-card-delete { padding: 8px 11px; font-size: 11px; }
 .admin-empty-products { padding: 60px 24px; text-align: center; background: #f7f8f5; }
 .admin-empty-products h3 { margin: 0; font-family: Georgia,serif; font-size: 25px; }
 .admin-empty-products p { color: var(--muted); }

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/server.mjs",
-    "test": "node --test test/admin-invites.test.mjs test/admin-users.test.mjs test/auth.test.mjs test/catalog.test.mjs test/catalog-import.test.mjs test/cors.test.mjs test/media.test.mjs test/media-audit.test.mjs"
+    "test": "node --test test/admin-invites.test.mjs test/admin-users.test.mjs test/auth.test.mjs test/catalog.test.mjs test/catalog-import.test.mjs test/cors.test.mjs test/media.test.mjs test/media-audit.test.mjs test/publisher.test.mjs"
   },
   "engines": {
     "node": ">=20"
