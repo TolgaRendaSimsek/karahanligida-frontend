@@ -444,14 +444,7 @@ app.delete("/api/admin/products/:id", async (request, response, next) => {
       error.status = 404;
       throw error;
     }
-    const expectedName = String(request.body?.confirmation || "").trim();
     const actualName = String((draft.exists ? draft.data() : family.data()).name || "").trim();
-    if (!actualName || expectedName !== actualName) {
-      const error = new Error("Kalıcı silme için ürün adını eksiksiz yazın.");
-      error.status = 400;
-      error.code = "confirmation-mismatch";
-      throw error;
-    }
     previousFamily = family.exists ? family.data() : null;
     previousDraft = draft.exists ? draft.data() : null;
     await db.runTransaction(async (transaction) => {
@@ -468,7 +461,19 @@ app.delete("/api/admin/products/:id", async (request, response, next) => {
       });
       throw error;
     }
-    const trashedMediaPath = await trashProductMedia({ productId: request.params.id, mediaRoot });
+    // Firestore ve canlı snapshot başarıyla güncellendikten sonra medya çöpü
+    // yalnızca fiziksel arşivleme adımıdır. Dizin izinleri yanlışsa silme
+    // isteğini 500 ile başarısız göstermemeliyiz; aksi halde ürün silinmiş
+    // olmasına rağmen panel kullanıcıya hata gösterir. Hata audit kaydına
+    // yazılır ve sunucu yöneticisi medya denetiminden tekrar işleyebilir.
+    let trashedMediaPath = null;
+    let mediaTrashError = null;
+    try {
+      trashedMediaPath = await trashProductMedia({ productId: request.params.id, mediaRoot });
+    } catch (error) {
+      mediaTrashError = error instanceof Error ? error.message : String(error);
+      console.error(`Ürün medyası çöp alanına taşınamadı (${request.params.id}):`, error);
+    }
     await db.collection("auditLogs").add({
       action: "delete-product",
       productId: request.params.id,
@@ -476,9 +481,15 @@ app.delete("/api/admin/products/:id", async (request, response, next) => {
       actorUid: request.admin.uid,
       actorEmail: request.admin.email,
       mediaTrashed: Boolean(trashedMediaPath),
+      ...(mediaTrashError ? { mediaTrashError } : {}),
       createdAt: new Date(),
     });
-    response.json({ ok: true, productCount: payload.products.length });
+    response.json({
+      ok: true,
+      productCount: payload.products.length,
+      mediaTrashed: Boolean(trashedMediaPath),
+      ...(mediaTrashError ? { warning: "Ürün silindi ancak medya dosyaları çöp alanına taşınamadı." } : {}),
+    });
   } catch (error) {
     next(error);
   }

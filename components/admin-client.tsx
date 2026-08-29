@@ -174,7 +174,7 @@ export function AdminClient({
     const send = async (forceRefresh = false) => fetch(`${baseUrl}/api/admin${path}`, {
       ...options,
       headers: {
-        ...(options.body instanceof FormData ? {} : { "Content-Type": "application/json" }),
+        ...(options.body !== undefined && !(options.body instanceof FormData) ? { "Content-Type": "application/json" } : {}),
         Authorization: `Bearer ${await user.getIdToken(forceRefresh)}`,
         ...options.headers,
       },
@@ -557,17 +557,18 @@ export function AdminClient({
 
   async function deleteProduct() {
     if (!editor) return;
-    const confirmation = window.prompt(`Bu işlem geri alınamaz. Kalıcı silmek için ürün adını yazın:\n${editor.product.name}`);
-    if (confirmation === null) return;
+    // Ürün adını tekrar yazdırmak, mobilde ve Türkçe karakter içeren adlarda
+    // gereksiz bir hata kaynağı oluşturuyordu. Yıkıcı işlem için tek ve açık
+    // bir onay yeterli; API de artık isim eşleştirmesi beklemiyor.
+    if (!window.confirm(`“${editor.product.name}” ürünü kalıcı olarak silinsin mi? Bu işlem geri alınamaz.`)) return;
     setBusy(true);
     try {
-      await api(`/products/${encodeURIComponent(editor.product.id)}`, {
+      const result = await api(`/products/${encodeURIComponent(editor.product.id)}`, {
         method: "DELETE",
-        body: JSON.stringify({ confirmation }),
       });
       setEditor(null);
       await loadCatalog();
-      setNotice("Ürün kalıcı olarak silindi; medya dosyaları 30 günlük çöp alanına taşındı.");
+      setNotice(result.warning || "Ürün kalıcı olarak silindi; medya dosyaları 30 günlük çöp alanına taşındı.");
     } catch (error) {
       setNotice((error as Error).message);
     } finally {
