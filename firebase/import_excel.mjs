@@ -49,7 +49,6 @@ for (const product of allProducts) {
       status: product.status === "archived" ? "archived" : "published",
       imageStatus: product.imageStatus || (product.images?.length ? "verified" : "research-needed"),
       ...(importMetaFor(product) ? { importMeta: importMetaFor(product) } : {}),
-      revision: 1,
       updatedAt: now,
       updatedBy: "excel-import",
     },

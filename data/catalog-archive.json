@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "generatedAt": "2026-08-29T07:05:18.533Z",
+  "generatedAt": "2026-08-29T14:42:24.899Z",
   "source": "Excel catalog import",
   "products": [
     {
@@ -16,9 +16,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-meyveli-suruplar/web-bdb1d66ba07d.webp",
-          "thumbnailSrc": "assets/products/fo/fo-meyveli-suruplar/web-bdb1d66ba07d-thumb.webp",
+          "id": "image-bdb1d66ba07dc80b",
+          "src": "/media/products/family-0003/bdb1d66ba07dc80b-full.webp",
+          "thumbnailSrc": "/media/products/family-0003/bdb1d66ba07dc80b-thumb.webp",
           "alt": "FO Meyveli Şuruplar",
           "order": 1,
           "variantIds": []
@@ -240,9 +240,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-soguk-cay-suruplari/web-0e8fb1650a9f.webp",
-          "thumbnailSrc": "assets/products/fo/fo-soguk-cay-suruplari/web-0e8fb1650a9f-thumb.webp",
+          "id": "image-0e8fb1650a9f9dee",
+          "src": "/media/products/family-0004/0e8fb1650a9f9dee-full.webp",
+          "thumbnailSrc": "/media/products/family-0004/0e8fb1650a9f9dee-thumb.webp",
           "alt": "FO Soğuk Çay Şurupları",
           "order": 1,
           "variantIds": []
@@ -293,9 +293,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-aromali-kokteyl-bazlari/web-1103435537e5.webp",
-          "thumbnailSrc": "assets/products/fo/fo-aromali-kokteyl-bazlari/web-1103435537e5-thumb.webp",
+          "id": "image-1103435537e585f5",
+          "src": "/media/products/family-0005/1103435537e585f5-full.webp",
+          "thumbnailSrc": "/media/products/family-0005/1103435537e585f5-thumb.webp",
           "alt": "FO Aromalı Kokteyl Bazları",
           "order": 1,
           "variantIds": []
@@ -355,9 +355,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-simli-suruplar/web-4f4b641cc2e9.webp",
-          "thumbnailSrc": "assets/products/fo/fo-simli-suruplar/web-4f4b641cc2e9-thumb.webp",
+          "id": "image-4f4b641cc2e9d484",
+          "src": "/media/products/family-0006/4f4b641cc2e9d484-full.webp",
+          "thumbnailSrc": "/media/products/family-0006/4f4b641cc2e9d484-thumb.webp",
           "alt": "FO Simli Şuruplar",
           "order": 1,
           "variantIds": []
@@ -450,9 +450,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-botanical-cordial-serisi/web-a1e21ed0dbbc.webp",
-          "thumbnailSrc": "assets/products/fo/fo-botanical-cordial-serisi/web-a1e21ed0dbbc-thumb.webp",
+          "id": "image-a1e21ed0dbbc3724",
+          "src": "/media/products/family-0007/a1e21ed0dbbc3724-full.webp",
+          "thumbnailSrc": "/media/products/family-0007/a1e21ed0dbbc3724-thumb.webp",
           "alt": "FO Botanical Cordial Serisi",
           "order": 1,
           "variantIds": []
@@ -488,9 +488,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-aromatik-bitter-sos/web-1db518f2faae.webp",
-          "thumbnailSrc": "assets/products/fo/fo-aromatik-bitter-sos/web-1db518f2faae-thumb.webp",
+          "id": "image-1db518f2faaeb885",
+          "src": "/media/products/family-0008/1db518f2faaeb885-full.webp",
+          "thumbnailSrc": "/media/products/family-0008/1db518f2faaeb885-thumb.webp",
           "alt": "FO Aromatik Bitter Sos",
           "order": 1,
           "variantIds": []
@@ -526,9 +526,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-vegan-kokteyl-kopurtucu/web-028ffc5bc8e7.webp",
-          "thumbnailSrc": "assets/products/fo/fo-vegan-kokteyl-kopurtucu/web-028ffc5bc8e7-thumb.webp",
+          "id": "image-028ffc5bc8e703d6",
+          "src": "/media/products/family-0009/028ffc5bc8e703d6-full.webp",
+          "thumbnailSrc": "/media/products/family-0009/028ffc5bc8e703d6-thumb.webp",
           "alt": "FO Vegan Kokteyl Köpürtücü",
           "order": 1,
           "variantIds": []
@@ -564,9 +564,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-premium-soslar/web-3611c611f7c6.webp",
-          "thumbnailSrc": "assets/products/fo/fo-premium-soslar/web-3611c611f7c6-thumb.webp",
+          "id": "image-3611c611f7c64640",
+          "src": "/media/products/family-0011/3611c611f7c64640-full.webp",
+          "thumbnailSrc": "/media/products/family-0011/3611c611f7c64640-thumb.webp",
           "alt": "FO Premium Soslar",
           "order": 1,
           "variantIds": []
@@ -605,9 +605,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-ozel-soslar/web-3df50b73bc6b.webp",
-          "thumbnailSrc": "assets/products/fo/fo-ozel-soslar/web-3df50b73bc6b-thumb.webp",
+          "id": "image-3df50b73bc6b9380",
+          "src": "/media/products/family-0012/3df50b73bc6b9380-full.webp",
+          "thumbnailSrc": "/media/products/family-0012/3df50b73bc6b9380-thumb.webp",
           "alt": "FO Özel Soslar",
           "order": 1,
           "variantIds": []
@@ -860,9 +860,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-topping-soslari/web-30590c1a1d27.webp",
-          "thumbnailSrc": "assets/products/fo/fo-topping-soslari/web-30590c1a1d27-thumb.webp",
+          "id": "image-30590c1a1d27e00b",
+          "src": "/media/products/family-0014/30590c1a1d27e00b-full.webp",
+          "thumbnailSrc": "/media/products/family-0014/30590c1a1d27e00b-thumb.webp",
           "alt": "FO Topping Sosları",
           "order": 1,
           "variantIds": []
@@ -1060,9 +1060,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-mocktail-karisimlari/web-887db69e734f.webp",
-          "thumbnailSrc": "assets/products/fo/fo-mocktail-karisimlari/web-887db69e734f-thumb.webp",
+          "id": "image-887db69e734f05b1",
+          "src": "/media/products/family-0015/887db69e734f05b1-full.webp",
+          "thumbnailSrc": "/media/products/family-0015/887db69e734f05b1-thumb.webp",
           "alt": "FO Mocktail Karışımları",
           "order": 1,
           "variantIds": []
@@ -1098,9 +1098,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-meyveli-suruplar-serisi/web-c65344cd4e37.webp",
-          "thumbnailSrc": "assets/products/fo/fo-meyveli-suruplar-serisi/web-c65344cd4e37-thumb.webp",
+          "id": "image-c65344cd4e370099",
+          "src": "/media/products/family-0016/c65344cd4e370099-full.webp",
+          "thumbnailSrc": "/media/products/family-0016/c65344cd4e370099-thumb.webp",
           "alt": "FO Meyveli Şuruplar Serisi",
           "order": 1,
           "variantIds": []
@@ -1274,9 +1274,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-donuk-meyveli-icecekler/web-524261d811ae.webp",
-          "thumbnailSrc": "assets/products/fo/fo-donuk-meyveli-icecekler/web-524261d811ae-thumb.webp",
+          "id": "image-524261d811aed3a5",
+          "src": "/media/products/family-0018/524261d811aed3a5-full.webp",
+          "thumbnailSrc": "/media/products/family-0018/524261d811aed3a5-thumb.webp",
           "alt": "FO Donuk Meyveli İçecekler",
           "order": 1,
           "variantIds": []
@@ -1504,9 +1504,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-aromali-icecek-bazlari/web-524261d811ae.webp",
-          "thumbnailSrc": "assets/products/fo/fo-aromali-icecek-bazlari/web-524261d811ae-thumb.webp",
+          "id": "image-524261d811aed3a5",
+          "src": "/media/products/family-0019/524261d811aed3a5-full.webp",
+          "thumbnailSrc": "/media/products/family-0019/524261d811aed3a5-thumb.webp",
           "alt": "FO Aromalı İçecek Bazları",
           "order": 1,
           "variantIds": []
@@ -1603,9 +1603,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-surulebilir-kremalar/web-b7fe8e6664ef.webp",
-          "thumbnailSrc": "assets/products/fo/fo-surulebilir-kremalar/web-b7fe8e6664ef-thumb.webp",
+          "id": "image-b7fe8e6664ef8b7f",
+          "src": "/media/products/family-0020/b7fe8e6664ef8b7f-full.webp",
+          "thumbnailSrc": "/media/products/family-0020/b7fe8e6664ef8b7f-thumb.webp",
           "alt": "FO Sürülebilir Kremalar",
           "order": 1,
           "variantIds": []
@@ -1672,9 +1672,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-eclipse-sos/web-c9957dce33d9.webp",
-          "thumbnailSrc": "assets/products/fo/fo-eclipse-sos/web-c9957dce33d9-thumb.webp",
+          "id": "image-c9957dce33d9e66c",
+          "src": "/media/products/family-0021/c9957dce33d9e66c-full.webp",
+          "thumbnailSrc": "/media/products/family-0021/c9957dce33d9e66c-thumb.webp",
           "alt": "FO Eclipse Sos",
           "order": 1,
           "variantIds": []
@@ -1711,9 +1711,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-yogunlastirilmis-sut/web-8e1ea15cb066.webp",
-          "thumbnailSrc": "assets/products/fo/fo-yogunlastirilmis-sut/web-8e1ea15cb066-thumb.webp",
+          "id": "image-8e1ea15cb066610d",
+          "src": "/media/products/family-0022/8e1ea15cb066610d-full.webp",
+          "thumbnailSrc": "/media/products/family-0022/8e1ea15cb066610d-thumb.webp",
           "alt": "FO Yoğunlaştırılmış Süt",
           "order": 1,
           "variantIds": []
@@ -1751,9 +1751,9 @@
       },
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/kimbo/kimbo-retail-cekirdek-kahveler/web-89a4d1700216.webp",
-          "thumbnailSrc": "assets/products/kimbo/kimbo-retail-cekirdek-kahveler/web-89a4d1700216-thumb.webp",
+          "id": "image-89a4d1700216972e",
+          "src": "/media/products/family-0027/89a4d1700216972e-full.webp",
+          "thumbnailSrc": "/media/products/family-0027/89a4d1700216972e-thumb.webp",
           "alt": "Kimbo Retail Çekirdek Kahveler",
           "order": 1,
           "variantIds": []
@@ -1798,9 +1798,9 @@
       },
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/kimbo/kimbo-retail-filtre-kahveler/web-ed42db9ade17.webp",
-          "thumbnailSrc": "assets/products/kimbo/kimbo-retail-filtre-kahveler/web-ed42db9ade17-thumb.webp",
+          "id": "image-ed42db9ade175abb",
+          "src": "/media/products/family-0028/ed42db9ade175abb-full.webp",
+          "thumbnailSrc": "/media/products/family-0028/ed42db9ade175abb-thumb.webp",
           "alt": "Kimbo Retail Filtre Kahveler",
           "order": 1,
           "variantIds": []
@@ -1848,9 +1848,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/ocay/ocay-klasik-bitki-caylari/web-13cd54019963.webp",
-          "thumbnailSrc": "assets/products/ocay/ocay-klasik-bitki-caylari/web-13cd54019963-thumb.webp",
+          "id": "image-f6ba99a71751fbb5",
+          "src": "/media/products/family-0029/f6ba99a71751fbb5-full.webp",
+          "thumbnailSrc": "/media/products/family-0029/f6ba99a71751fbb5-thumb.webp",
           "alt": "Oçay Klasik Bitki Çayları",
           "order": 1,
           "variantIds": []
@@ -1951,9 +1951,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/ocay/ocay-fonksiyonel-caylar/web-5e079458bb20.webp",
-          "thumbnailSrc": "assets/products/ocay/ocay-fonksiyonel-caylar/web-5e079458bb20-thumb.webp",
+          "id": "image-e5125a6e9be845ac",
+          "src": "/media/products/family-0030/e5125a6e9be845ac-full.webp",
+          "thumbnailSrc": "/media/products/family-0030/e5125a6e9be845ac-thumb.webp",
           "alt": "Oçay Fonksiyonel Çaylar",
           "order": 1,
           "variantIds": []
@@ -2035,9 +2035,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/ocay/ocay-rooibos-caylari/web-faf5440c2f7b.webp",
-          "thumbnailSrc": "assets/products/ocay/ocay-rooibos-caylari/web-faf5440c2f7b-thumb.webp",
+          "id": "image-a267552124a80bc4",
+          "src": "/media/products/family-0031/a267552124a80bc4-full.webp",
+          "thumbnailSrc": "/media/products/family-0031/a267552124a80bc4-thumb.webp",
           "alt": "Oçay Rooibos Çayları",
           "order": 1,
           "variantIds": []
@@ -2105,9 +2105,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/ocay/ocay-matcha-caylari/web-4ea920db9b78.webp",
-          "thumbnailSrc": "assets/products/ocay/ocay-matcha-caylari/web-4ea920db9b78-thumb.webp",
+          "id": "image-4ea920db9b788cee",
+          "src": "/media/products/family-0032/4ea920db9b788cee-full.webp",
+          "thumbnailSrc": "/media/products/family-0032/4ea920db9b788cee-thumb.webp",
           "alt": "Oçay Matcha Çayları",
           "order": 1,
           "variantIds": []
@@ -2169,9 +2169,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/toschi/toschi-soslar-1-kg/web-58e552c08996.webp",
-          "thumbnailSrc": "assets/products/toschi/toschi-soslar-1-kg/web-58e552c08996-thumb.webp",
+          "id": "image-58e552c089968cf2",
+          "src": "/media/products/family-0034/58e552c089968cf2-full.webp",
+          "thumbnailSrc": "/media/products/family-0034/58e552c089968cf2-thumb.webp",
           "alt": "Toschi Soslar 1 kg",
           "order": 1,
           "variantIds": []
@@ -2285,9 +2285,9 @@
       "specifications": {},
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/toschi/toschi-barista-sos-500-g/web-0c6ac77bb6ae.webp",
-          "thumbnailSrc": "assets/products/toschi/toschi-barista-sos-500-g/web-0c6ac77bb6ae-thumb.webp",
+          "id": "image-0c6ac77bb6ae8495",
+          "src": "/media/products/family-0036/0c6ac77bb6ae8495-full.webp",
+          "thumbnailSrc": "/media/products/family-0036/0c6ac77bb6ae8495-thumb.webp",
           "alt": "Toschi Barista Sos 500 g",
           "order": 1,
           "variantIds": []
@@ -2337,9 +2337,9 @@
       },
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/yook/yook-vitamin-ve-kalsiyumlu-yulaf-icecegi/web-ee48cbb93e3e.webp",
-          "thumbnailSrc": "assets/products/yook/yook-vitamin-ve-kalsiyumlu-yulaf-icecegi/web-ee48cbb93e3e-thumb.webp",
+          "id": "image-ee48cbb93e3eb7cb",
+          "src": "/media/products/family-0039/ee48cbb93e3eb7cb-full.webp",
+          "thumbnailSrc": "/media/products/family-0039/ee48cbb93e3eb7cb-thumb.webp",
           "alt": "YOOK Vitamin ve Kalsiyumlu Yulaf İçeceği",
           "order": 1,
           "variantIds": []
@@ -2379,9 +2379,9 @@
       },
       "images": [
         {
-          "id": "image-web-01",
-          "src": "assets/products/yook/yook-aromali-yulaf-icecekleri/web-1cc02b5d4de0.webp",
-          "thumbnailSrc": "assets/products/yook/yook-aromali-yulaf-icecekleri/web-1cc02b5d4de0-thumb.webp",
+          "id": "image-1cc02b5d4de0cae8",
+          "src": "/media/products/family-0040/1cc02b5d4de0cae8-full.webp",
+          "thumbnailSrc": "/media/products/family-0040/1cc02b5d4de0cae8-thumb.webp",
           "alt": "YOOK Aromalı Yulaf İçecekleri",
           "order": 1,
           "variantIds": []
@@ -2410,5 +2410,6 @@
       "featured": false,
       "status": "archived"
     }
-  ]
+  ],
+  "generatedFrom": "Asset-to-Linux-media migration"
 }
