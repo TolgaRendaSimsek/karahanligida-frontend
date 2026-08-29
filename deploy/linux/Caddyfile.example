@@ -49,7 +49,7 @@ api.karahanligida.com {
 		X-Frame-Options "DENY"
 	}
 
-	@adminApi path /api/admin/* /health
+	@adminApi path /api/admin/* /health /health/ready
 	handle @adminApi {
 		reverse_proxy 127.0.0.1:3100
 	}
