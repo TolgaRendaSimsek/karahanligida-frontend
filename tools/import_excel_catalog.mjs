@@ -32,6 +32,14 @@ function machineCategory(product) {
   return ["Endüstriyel Mutfak Ekipmanları", product.subcategory || "Endüstriyel Mutfak Ekipmanları"];
 }
 
+// A prior import accidentally applied the Excel row-185 placeholder to the
+// Kroom product whose source PDF also happens to be page 185.  Keep this
+// one-time correction in the repeatable importer so future runs cannot carry
+// that accidental label forward.
+const KROOM_NAME_CORRECTIONS = {
+  "kroom-sebze-kesme-makineleri-sayfa-185": "SEBZE KESME MAKİNELERİ",
+};
+
 function stripCommercialText(product) {
   const clean = (value) => String(value ?? "")
     .replace(/Fiyatlarımıza\s*KDV\s*dahil\s*değildir\.?/gi, "")
@@ -167,7 +175,14 @@ const archivedProducts = [];
 for (const product of allFamilies) {
   if (product.brand === "Kroom") {
     const [category, subcategory] = machineCategory(product);
-    nextProducts.push(stripCommercialText({ ...product, category, subcategory, imageStatus: product.images?.length ? "verified" : "research-needed", status: "published" }));
+    nextProducts.push(stripCommercialText({
+      ...product,
+      ...(KROOM_NAME_CORRECTIONS[product.slug] ? { name: KROOM_NAME_CORRECTIONS[product.slug] } : {}),
+      category,
+      subcategory,
+      imageStatus: product.images?.length ? "verified" : "research-needed",
+      status: "published",
+    }));
   } else if (String(product.id).startsWith("family-excel-")) {
     // Excel families are rebuilt from the authoritative source on every run;
     // never leave stale generated families in the archive when a row is now
@@ -185,9 +200,10 @@ const report = {
 };
 const publicProducts = nextProducts.map(({ importMeta: _internal, ...product }) => {
   const clean = stripCommercialText(product);
+  const excelRow = String(clean.id).startsWith("family-excel-") ? Number(clean.source?.pages?.[0]) : 0;
   return {
     ...clean,
-    name: displayName(clean.name, Number(clean.source?.pages?.[0])),
+    name: displayName(clean.name, excelRow),
     source: { ...clean.source, catalog: sanitizeCommercialText(clean.source?.catalog) || "Karahanlı Gıda kataloğu" },
   };
 });
