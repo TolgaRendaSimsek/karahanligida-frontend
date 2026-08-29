@@ -16,8 +16,8 @@ const payload = catalogPayloadSchema.parse(
 const products = payload.products.filter((product) => product.status === "published");
 
 describe("katalog sözleşmesi", () => {
-  it("Excel geçişi sonrası 202 yayımlanmış ürün ailesini doğrular", () => {
-    expect(products).toHaveLength(202);
+  it("Excel geçişi sonrası tüm Excel ve Kroom ürün ailelerini doğrular", () => {
+    expect(products).toHaveLength(362);
     expect(products.filter((product) => product.category === "Kahve Makineleri").length).toBeGreaterThan(0);
   });
 

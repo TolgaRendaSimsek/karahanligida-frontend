@@ -46,6 +46,8 @@ type TaxonomyCategory = {
 
 type Taxonomy = { categories: TaxonomyCategory[]; brands: Array<{ id: string; name: string; productCount?: number }> };
 type CatalogImportSummary = { status?: string; sourceFile?: string; sourceHash?: string | null; rowCount?: number; publishedExcelRowCount?: number; uniqueFamilyCount?: number; draftCount?: number; archivedFamilyCount?: number; researchNeededCount?: number; appliedAt?: unknown };
+type MediaAuditSummary = { products: number; images: number; missingFiles: number; invalidFiles: number; hashMismatches: number; orphanFiles: number; verifiedProducts: number; researchNeeded: number };
+type MediaAuditReport = { summary: MediaAuditSummary; products: Array<{ id: string; status: string; imageCount: number }>; orphanFiles: string[] };
 
 type AdminUser = {
   uid: string;
@@ -140,6 +142,8 @@ export function AdminClient({
   const [drafts, setDrafts] = useState<AdminProduct[]>([]);
   const [archived, setArchived] = useState<AdminProduct[]>([]);
   const [latestImport, setLatestImport] = useState<CatalogImportSummary | null>(null);
+  const [mediaAudit, setMediaAudit] = useState<MediaAuditReport | null>(null);
+  const [failedImageIds, setFailedImageIds] = useState<Set<string>>(new Set());
   const [taxonomy, setTaxonomy] = useState<Taxonomy>({ categories: [], brands: [] });
   const [query, setQuery] = useState("");
   const [status, setStatus] = useState("");
@@ -217,6 +221,15 @@ export function AdminClient({
     }
   }, [api]);
 
+  const loadMediaAudit = useCallback(async () => {
+    try {
+      const payload = await api("/media/audit");
+      setMediaAudit({ summary: payload.summary, products: payload.products || [], orphanFiles: payload.orphanFiles || [] });
+    } catch (error) {
+      setNotice(`Medya denetimi alınamadı: ${(error as Error).message}`);
+    }
+  }, [api]);
+
   const loadAdmins = useCallback(async () => {
     try {
       const payload = await api("/admins");
@@ -268,7 +281,7 @@ export function AdminClient({
       void (async () => {
         try {
           await api("/session");
-          await Promise.all([loadCatalog(), loadAdmins(), loadTaxonomy()]);
+          await Promise.all([loadCatalog(), loadAdmins(), loadTaxonomy(), loadMediaAudit()]);
         } catch (error) {
           setDashboardState("error");
           setNotice(`Admin oturumu doğrulanamadı: ${(error as Error).message}`);
@@ -279,12 +292,14 @@ export function AdminClient({
       setDrafts([]);
       setArchived([]);
       setLatestImport(null);
+      setMediaAudit(null);
+      setFailedImageIds(new Set());
       setTaxonomy({ categories: [], brands: [] });
       setAdmins([]);
       setInvites([]);
       setDashboardState("idle");
     }
-  }, [user, api, loadCatalog, loadAdmins, loadTaxonomy]);
+  }, [user, api, loadCatalog, loadAdmins, loadTaxonomy, loadMediaAudit]);
 
   const effectiveProducts = useMemo(() => {
     const byId = new Map<string, AdminProduct>(products.map((product) => [
@@ -306,6 +321,7 @@ export function AdminClient({
     counts[product.category] = (counts[product.category] || 0) + 1;
     return counts;
   }, {}), [effectiveProducts]);
+  const auditByProduct = useMemo(() => new Map((mediaAudit?.products || []).map((item) => [item.id, item])), [mediaAudit]);
 
   const filtered = effectiveProducts.filter((product) => {
     const text = [
@@ -650,7 +666,7 @@ export function AdminClient({
           <span>{notice}</span>
           {dashboardState === "error" && user && <button type="button" onClick={() => {
             setDashboardState("loading");
-            void api("/session").then(() => Promise.all([loadCatalog(), loadAdmins(), loadTaxonomy()])).catch((error) => {
+            void api("/session").then(() => Promise.all([loadCatalog(), loadAdmins(), loadTaxonomy(), loadMediaAudit()])).catch((error) => {
               setDashboardState("error");
               setNotice(`Admin oturumu doğrulanamadı: ${error.message}`);
             });
@@ -661,7 +677,21 @@ export function AdminClient({
           <article><span>Taslak</span><strong>{drafts.length}</strong></article>
           <article><span>Görsel</span><strong>{imageCount}</strong></article>
           <article><span>Varyant / model</span><strong>{variantCount}</strong></article>
+          <article><span>Eksik medya dosyası</span><strong>{mediaAudit?.summary.missingFiles ?? "—"}</strong></article>
         </section>
+        {mediaAudit && <section className="admin-panel admin-media-audit-panel" id="medya-denetimi">
+          <header>
+            <div><span className="eyebrow">MEDYA DENETİMİ</span><h2>Görsel dosyaları</h2><p>Firebase yolları ile Linux diskindeki tam boy ve küçük WebP dosyaları karşılaştırıldı.</p></div>
+            <button type="button" className="admin-secondary" disabled={busy} onClick={() => void loadMediaAudit()}>Denetimi yenile</button>
+          </header>
+          <div className="admin-import-summary">
+            <div><dt>Doğrulanmış ürün</dt><dd>{mediaAudit.summary.verifiedProducts}</dd></div>
+            <div><dt>İnceleme gerekli</dt><dd>{mediaAudit.summary.researchNeeded}</dd></div>
+            <div><dt>Geçersiz dosya</dt><dd>{mediaAudit.summary.invalidFiles}</dd></div>
+            <div><dt>Hash uyuşmazlığı</dt><dd>{mediaAudit.summary.hashMismatches}</dd></div>
+            <div><dt>Sahipsiz medya</dt><dd>{mediaAudit.summary.orphanFiles}</dd></div>
+          </div>
+        </section>}
         <section className="admin-panel" id="urunler">
           <header className="admin-catalog-heading">
             <div><span className="eyebrow">{adminView === "archive" ? "ARŞİV" : "ÜRÜN SINIFLARI"}</span><h2>{adminView === "archive" ? "Arşivlenmiş ürünler" : "Katalog görünümü"}</h2><p>{adminView === "archive" ? "Canlı katalogdan kaldırılmış ürünleri eski kategorileri ve görselleriyle inceleyip geri getirin." : "Ürünleri canlı sitedeki gibi fotoğraflarıyla inceleyin; marka, kategori veya duruma göre süzün."}</p></div>
@@ -686,9 +716,10 @@ export function AdminClient({
           {filtered.length ? <div className="admin-product-grid">{filtered.map((product) => (
             <article className="admin-product-card" key={product.id}>
               <div className="admin-product-media">
-                {product.images[0] ? <Image src={publicAssetPath(product.images[0].thumbnailSrc || product.images[0].src)} fill sizes="(max-width: 800px) 100vw, 300px" alt={product.images[0].alt || `${product.brand} ${product.name}`} /> : <span>Görsel doğrulanıyor</span>}
+                {product.images[0] && !failedImageIds.has(product.images[0].id) ? <Image src={publicAssetPath(product.images[0].thumbnailSrc || product.images[0].src)} fill sizes="(max-width: 800px) 100vw, 300px" alt={product.images[0].alt || `${product.brand} ${product.name}`} onError={() => setFailedImageIds((current) => new Set(current).add(product.images[0].id))} /> : <span>Görsel doğrulanıyor</span>}
                 <span className={`admin-status ${product.displayStatus}`}>{product.displayStatus === "draft" ? "Taslak" : product.displayStatus === "archived" ? "Arşiv" : "Yayında"}</span>
                 <span className="admin-image-count" aria-label={`${product.images.length} görsel`}>▧ {product.images.length}</span>
+                <span className={`admin-image-status ${auditByProduct.get(product.id)?.status || (product.images.length ? "verified" : "research-needed")}`}>{auditByProduct.get(product.id)?.status === "file-missing" ? "Dosya eksik" : product.images.length ? "Doğrulandı" : "İnceleme gerekli"}</span>
               </div>
               <div className="admin-product-content">
                 <div className="admin-product-labels"><span>{product.brand}</span><span>{product.category}</span></div>
@@ -815,7 +846,7 @@ export function AdminClient({
                 <input ref={replacementInput} hidden type="file" accept="image/jpeg,image/png,image/webp,image/avif" onChange={(event) => void replaceImage(event.target.files)} />
                 <div className="admin-media-list">{editor.product.images.length ? editor.product.images.map((image, index) => (
                   <article className="admin-media-row" key={image.id}>
-                    <div><Image src={publicAssetPath(image.thumbnailSrc || image.src)} fill sizes="82px" alt="" /></div>
+                    <div>{!failedImageIds.has(image.id) ? <Image src={publicAssetPath(image.thumbnailSrc || image.src)} fill sizes="82px" alt={image.alt || "Ürün görseli"} onError={() => setFailedImageIds((current) => new Set(current).add(image.id))} /> : <span className="product-image-placeholder"><span>Dosya eksik</span></span>}</div>
                     <div className="admin-media-fields">
                       <input value={image.alt} onChange={(e) => updateImage(image.id, { alt: e.target.value })} placeholder="Görsel açıklaması" />
                       <input value={image.variantIds.join(", ")} onChange={(e) => updateImage(image.id, { variantIds: e.target.value.split(",").map((value) => value.trim()).filter(Boolean) })} placeholder="Varyant ID: a, b" />
@@ -833,7 +864,8 @@ export function AdminClient({
               {wizardStep === 5 && <section className="admin-preview-step"><span className="eyebrow">YAYINA HAZIRLIK</span><h3>{editor.product.name || "Yeni ürün ailesi"}</h3><p>{editor.product.summary || "Kısa özet eklenmedi."}</p><dl><div><dt>Marka</dt><dd>{editor.product.brand || "—"}</dd></div><div><dt>Kategori</dt><dd>{editor.product.category || "—"} / {editor.product.subcategory || "—"}</dd></div><div><dt>Varyant</dt><dd>{parseVariants(editor.variantsText).length}</dd></div><div><dt>Görsel</dt><dd>{editor.product.images.length ? `${editor.product.images.length} doğrulanmış` : "Araştırılıyor"}</dd></div></dl>{!editor.product.variants.length && <p className="admin-warning">Yayınlamak için en az bir varyant/model gerekir.</p>}{!editor.product.images.length && <p className="admin-note">Görsel olmadan da yayınlanabilir; ürün kartında “Görsel doğrulanıyor” alanı gösterilir.</p>}</section>}
             </div>
             <footer>
-              {products.some((item) => item.id === editor.product.id) && <><button className="admin-danger" type="button" onClick={() => void archive()}>Arşivle</button><button className="admin-danger" type="button" onClick={() => void deleteProduct()}>Kalıcı Sil</button></>}
+              {effectiveProducts.some((item) => item.id === editor.product.id) && editor.product.status !== "archived" && <button className="admin-danger" type="button" onClick={() => void archive()}>Arşivle</button>}
+              {effectiveProducts.some((item) => item.id === editor.product.id) && <button className="admin-danger" type="button" onClick={() => void deleteProduct()}>Kalıcı Sil</button>}
               <span />
               {wizardStep > 1 && <button className="admin-secondary" type="button" disabled={busy} onClick={() => setWizardStep((step) => step - 1)}>‹ Geri</button>}
               {wizardStep < 5 && <button className="admin-secondary" type="button" disabled={busy} onClick={nextWizardStep}>İleri ›</button>}

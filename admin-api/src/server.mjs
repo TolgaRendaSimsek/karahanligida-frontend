@@ -1,5 +1,6 @@
 import { mkdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import express from "express";
 import helmet from "helmet";
 import multer from "multer";
@@ -18,11 +19,13 @@ import { createAdminCors } from "./cors.mjs";
 import { publicProduct, slugify, validateDraft, validateProduct } from "./catalog.mjs";
 import { buildImportPreview, catalogTaxonomy, draftFromImportRow } from "./catalog-import.mjs";
 import { cleanupExpiredTrash, processUpload, trashProductMedia } from "./media.mjs";
+import { auditCatalogMedia } from "./media-audit.mjs";
 import { publishDraft, rebuildPublicSnapshot } from "./publisher.mjs";
 
 const port = Number(process.env.PORT || 3100);
 const projectId = process.env.FIREBASE_PROJECT_ID;
 const mediaRoot = resolve(process.env.MEDIA_ROOT || "./var/media");
+const assetsRoot = resolve(process.env.ASSETS_ROOT || fileURLToPath(new URL("../../assets", import.meta.url)));
 const catalogPath = resolve(process.env.CATALOG_PATH || "./var/catalog/products.json");
 const allowedOrigin = process.env.ADMIN_ORIGIN || "https://karahanligida.com";
 
@@ -239,6 +242,24 @@ app.post("/api/admin/media", upload.array("images", 8), async (request, response
       ),
     );
     response.status(201).json({ images });
+  } catch (error) {
+    next(error);
+  }
+});
+
+app.get("/api/admin/media/audit", async (_request, response, next) => {
+  try {
+    const [families, drafts] = await Promise.all([
+      db.collection("productFamilies").get(),
+      db.collection("productDrafts").get(),
+    ]);
+    const report = await auditCatalogMedia({
+      families: families.docs.map((document) => ({ id: document.id, ...document.data() })),
+      drafts: drafts.docs.map((document) => ({ id: document.id, ...document.data() })),
+      mediaRoot,
+      assetsRoot,
+    });
+    response.json({ ok: true, ...report });
   } catch (error) {
     next(error);
   }

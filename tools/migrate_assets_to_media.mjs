@@ -11,6 +11,7 @@ const repositoryRoot = resolve(import.meta.dirname, "..");
 const input = resolve(argument("--input", join(repositoryRoot, "data", "products.json")));
 const mediaRoot = resolve(argument("--media-root", join(repositoryRoot, ".media-migration")));
 const output = resolve(argument("--output", join(mediaRoot, "products.json")));
+const manifestOutput = argument("--manifest-output", "");
 const payload = JSON.parse(await readFile(input, "utf8"));
 
 for (const product of payload.products) {
@@ -40,4 +41,14 @@ payload.generatedAt = new Date().toISOString();
 payload.generatedFrom = "Asset-to-Linux-media migration";
 await mkdir(dirname(output), { recursive: true });
 await writeFile(output, `${JSON.stringify(payload, null, 2)}\n`);
+if (manifestOutput) {
+  const manifestPath = resolve(manifestOutput);
+  const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
+  const byId = new Map(payload.products.map((product) => [product.id, product]));
+  manifest.items = (manifest.items || []).map((item) => {
+    const product = byId.get(item.productId);
+    return product ? { ...item, assets: product.images.flatMap((image) => [image.src, image.thumbnailSrc]) } : item;
+  });
+  await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
+}
 console.log(JSON.stringify({ products: payload.products.length, mediaRoot, output }));

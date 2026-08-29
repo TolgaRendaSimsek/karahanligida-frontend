@@ -11,6 +11,7 @@ services:
       PORT: "3000"
       HOSTNAME: "0.0.0.0"
       CATALOG_PATH: "/data/catalog/products.json"
+      MEDIA_ROOT: "/data/media"
       SITE_URL: "${SITE_URL:-https://karahanligida.com}"
       WHATSAPP_NUMBER: "${WHATSAPP_NUMBER:-}"
       ADMIN_API_ORIGIN: "${ADMIN_API_ORIGIN:-https://api.karahanligida.com}"
@@ -21,6 +22,7 @@ services:
       APP_RELEASE: "${APP_RELEASE:-local}"
     volumes:
       - ${KARAHANLI_BASE_DIR:-/srv/karahanli}/data/catalog:/data/catalog:ro
+      - ${KARAHANLI_BASE_DIR:-/srv/karahanli}/data/media:/data/media:ro
     healthcheck:
       test:
         - CMD
@@ -51,10 +53,12 @@ services:
       GOOGLE_APPLICATION_CREDENTIALS: "/run/secrets/firebase_service_account"
       ADMIN_ORIGIN: "${ADMIN_ORIGIN}"
       MEDIA_ROOT: "/data/media"
+      ASSETS_ROOT: "/app/assets"
       CATALOG_PATH: "/data/catalog/products.json"
     volumes:
       - ${KARAHANLI_BASE_DIR:-/srv/karahanli}/data/media:/data/media
       - ${KARAHANLI_BASE_DIR:-/srv/karahanli}/data/catalog:/data/catalog
+      - ${KARAHANLI_BASE_DIR:-/srv/karahanli}/app/current/assets:/app/assets:ro
     secrets:
       - firebase_service_account
     healthcheck:

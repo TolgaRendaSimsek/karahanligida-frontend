@@ -40,6 +40,21 @@ test("yüklenen görseli tam ve küçük WebP olarak üretir", async () => {
   assert.equal(result.alt, "Ürün görseli");
 });
 
+test("beyaz kenarlı PNG yüklemesinde şeffaf alfa korunur", async () => {
+  const mediaRoot = await mkdtemp(join(tmpdir(), "karahanli-"));
+  const buffer = await sharp({
+    create: { width: 640, height: 480, channels: 4, background: { r: 255, g: 255, b: 255, alpha: 1 } },
+  }).composite([{ input: await sharp({ create: { width: 240, height: 220, channels: 4, background: { r: 30, g: 70, b: 50, alpha: 1 } } }).png().toBuffer(), left: 200, top: 130 }]).png().toBuffer();
+  const result = await processUpload({ buffer, productId: "family-media-test", mediaRoot, mimeType: "image/png" });
+  const full = await readFile(join(mediaRoot, result.src.replace("/media/", "")));
+  const raw = await sharp(full).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const alphaValues = new Set();
+  for (let index = 3; index < raw.data.length; index += 4) alphaValues.add(raw.data[index]);
+  assert.ok(alphaValues.has(0), "kenar alfa değeri 0 olmalı");
+  assert.ok(alphaValues.has(255), "ürün alfa değeri 255 olmalı");
+  assert.equal(result.source.backgroundRemoval, "transparent");
+});
+
 test("MIME türü ile dosya imzası eşleşmeyen görseli reddeder", async () => {
   const buffer = await sharp({
     create: { width: 320, height: 320, channels: 3, background: "#ffffff" },

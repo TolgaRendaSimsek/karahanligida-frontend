@@ -1,7 +1,8 @@
 import { createHash, randomUUID } from "node:crypto";
-import { mkdir, readdir, rename, rm, stat } from "node:fs/promises";
+import { mkdir, readdir, rename, rm, stat, writeFile } from "node:fs/promises";
 import { basename, join } from "node:path";
 import sharp from "sharp";
+import { encodeProductBuffers, prepareTransparentBuffer } from "./transparency.mjs";
 
 const PRODUCT_ID = /^family-[a-z0-9-]{3,80}$/;
 const WEBP_FILE = /^[a-f0-9]{16}-(?:full|thumb)\.webp$/;
@@ -90,25 +91,26 @@ export async function processUpload({
     throw error;
   }
 
-  const digest = createHash("sha256").update(buffer).digest("hex").slice(0, 16);
+  let prepared;
+  try {
+    prepared = await prepareTransparentBuffer(buffer);
+  } catch {
+    const error = new Error("Görsel işlenemedi.");
+    error.status = 415;
+    throw error;
+  }
+  const { full: fullBuffer, thumbnail: thumbnailBuffer } = await encodeProductBuffers(prepared, buffer);
+  const digest = createHash("sha256").update(fullBuffer).digest("hex").slice(0, 16);
   const directory = join(mediaRoot, "products", productId);
   await mkdir(directory, { recursive: true });
   const fullName = `${digest}-full.webp`;
   const thumbName = `${digest}-thumb.webp`;
   const fullTemp = join(directory, `.${randomUUID()}.tmp`);
   const thumbTemp = join(directory, `.${randomUUID()}.tmp`);
-  await sharp(buffer)
-    .rotate()
-    .resize(1600, 1200, { fit: "inside", withoutEnlargement: true })
-    .flatten({ background: "#ffffff" })
-    .webp({ quality: 86, effort: 5 })
-    .toFile(fullTemp);
-  await sharp(buffer)
-    .rotate()
-    .resize(480, 360, { fit: "contain", background: "#ffffff", withoutEnlargement: false })
-    .flatten({ background: "#ffffff" })
-    .webp({ quality: 80, effort: 5 })
-    .toFile(thumbTemp);
+  await Promise.all([
+    writeFile(fullTemp, fullBuffer),
+    writeFile(thumbTemp, thumbnailBuffer),
+  ]);
   await rename(fullTemp, join(directory, fullName));
   await rename(thumbTemp, join(directory, thumbName));
   return {
@@ -118,7 +120,13 @@ export async function processUpload({
     alt: "Ürün görseli",
     order: 0,
     variantIds: [],
-    source: { type: "admin-upload", uploadedAt: new Date().toISOString() },
+    source: {
+      type: "admin-upload",
+      uploadedAt: new Date().toISOString(),
+      backgroundRemoval: prepared.status,
+      edgeNeutralRatio: Number(prepared.edgeNeutralRatio.toFixed(4)),
+      transparency: Number(prepared.transparency.toFixed(4)),
+    },
   };
 }
 

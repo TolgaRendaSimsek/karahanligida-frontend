@@ -66,6 +66,7 @@ def main() -> int:
     ids: set[str] = set()
     slugs: set[str] = set()
     assets: set[str] = set()
+    media_refs: set[str] = set()
     covered_catalogs: set[str] = set()
 
     for product in [*products, *archived_products]:
@@ -106,7 +107,13 @@ def main() -> int:
                 fail(errors, f"{slug}: public görselde bilinmeyen alanlar {sorted(unknown_image_fields)}")
             for field in ("src", "thumbnailSrc"):
                 asset = image.get(field, "")
-                if asset.startswith(("http://", "https://", "/media/")):
+                if asset.startswith(("http://", "https://")):
+                    continue
+                if asset.startswith("/media/"):
+                    media_path = ROOT / "data" / "media" / asset.removeprefix("/media/")
+                    if not media_path.is_file():
+                        fail(errors, f"{slug}: medya dosyası bulunamadı {media_path}")
+                    media_refs.add(asset)
                     continue
                 path = ROOT / asset
                 if not path.is_file():
@@ -130,6 +137,8 @@ def main() -> int:
     }
     if not assets.issubset(manifest_assets):
         fail(errors, "Ürün verisindeki bir görsel kaynak manifestte bulunmuyor")
+    if not media_refs.issubset(manifest_assets):
+        fail(errors, "Ürün verisindeki bir medya kaynağı manifestte bulunmuyor")
     disk_assets = {
         path.relative_to(ROOT).as_posix()
         for path in (ROOT / "assets" / "products").rglob("*")
@@ -176,7 +185,7 @@ def main() -> int:
     print(
         f"OK: {len(products)} aile, "
         f"{sum(len(p['variants']) for p in products)} varyant/model, "
-        f"{len(assets)} optimize görsel, 7 katalog doğrulandı."
+        f"{sum(len(p.get('images', [])) for p in products)} ürün görseli, 7 katalog doğrulandı."
     )
     return 0
 

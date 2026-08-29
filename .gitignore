@@ -17,6 +17,8 @@ playwright-report/
 test-results/
 coverage/
 data/backups/
+data/media/
+output/image-audit/
 *.tsbuildinfo
 # Unused source probes kept out of the catalog commit.
 assets/research/monte-sauce.webp
