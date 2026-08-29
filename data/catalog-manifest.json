@@ -8515,6 +8515,623 @@
           "processing": "source-preserved"
         }
       ]
+    },
+    {
+      "productId": "family-excel-080",
+      "slug": "karadut-pure-excel-80",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        80
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/karadut-pure-excel-80/web-31c491a85720.webp",
+        "assets/products/karahanli-gida/karadut-pure-excel-80/web-31c491a85720-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://montecristoflavour.com/wp-content/uploads/2022/11/fr-karadut.webp",
+          "sourceUrl": "https://montecristoflavour.com/urunler/black-mulberry-fruit-puree/",
+          "checkedAt": "2026-08-29T08:03:09.587Z",
+          "sha256": "31c491a857203cb1adcb9a2569aa397d2daac1cd40b4424d1f7b95b00a13bfa9",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-099",
+      "slug": "monte-cristo-beyaz-cikolata-bar-sos-2-5-kg-excel-99",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        99
+      ],
+      "assets": [
+        "assets/products/monte-cristo/monte-cristo-beyaz-cikolata-bar-sos-2-5-kg-excel-99/web-ed39ec21abbd.webp",
+        "assets/products/monte-cristo/monte-cristo-beyaz-cikolata-bar-sos-2-5-kg-excel-99/web-ed39ec21abbd-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://montecristoflavour.com/wp-content/uploads/2022/11/b-cikolata-sos.webp",
+          "sourceUrl": "https://montecristoflavour.com/urunler/beyaz-cikolata-kafe-ve-bar-sosu/",
+          "checkedAt": "2026-08-29T08:03:09.587Z",
+          "sha256": "ed39ec21abbd56ff0b08a3a57bc213998f8842fb3c65648c3a966fcca6397d67",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-100",
+      "slug": "monte-cristo-karamel-bar-sos-2-5-kg-excel-100",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        100
+      ],
+      "assets": [
+        "assets/products/monte-cristo/monte-cristo-karamel-bar-sos-2-5-kg-excel-100/web-d82122b83066.webp",
+        "assets/products/monte-cristo/monte-cristo-karamel-bar-sos-2-5-kg-excel-100/web-d82122b83066-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://montecristoflavour.com/wp-content/uploads/2022/11/karamel-sos.webp",
+          "sourceUrl": "https://montecristoflavour.com/urunler/karamel-kafe-ve-bar-sosu/",
+          "checkedAt": "2026-08-29T08:03:09.587Z",
+          "sha256": "d82122b83066b3db1b7ce22f2b7df40d144738d716675992f1d940e6bbda9a13",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-013",
+      "slug": "coffe-hill-filter-kahve-1000-gr-excel-13",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        13,
+        27
+      ],
+      "assets": [
+        "assets/products/coffe-hill/coffe-hill-filter-kahve-1000-gr-excel-13/web-90ffe54c7fad.webp",
+        "assets/products/coffe-hill/coffe-hill-filter-kahve-1000-gr-excel-13/web-90ffe54c7fad-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202107/upload_60e6da9e61c1b.jpg",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-filtre-kahve-1000gr/2",
+          "checkedAt": "2026-08-29T08:07:43.469Z",
+          "sha256": "90ffe54c7fadaa21286305cab01493f2c38469f0287cd515936fc0abf5594417",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-103",
+      "slug": "cafe-hill-kis-cayi-250-gr-excel-103",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        103
+      ],
+      "assets": [
+        "assets/products/cafe-hill/cafe-hill-kis-cayi-250-gr-excel-103/web-cd8035897280.webp",
+        "assets/products/cafe-hill/cafe-hill-kis-cayi-250-gr-excel-103/web-cd8035897280-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efbb140fe0a.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-250-gr-kis-cayi/52",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "cd8035897280a1f89cd27d58b5140783e7dbaa33a3729a7727176261106569c3",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-105",
+      "slug": "cafe-hill-elma-tarcin-cayi-250-gr-excel-105",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        105
+      ],
+      "assets": [
+        "assets/products/cafe-hill/cafe-hill-elma-tarcin-cayi-250-gr-excel-105/web-133db36fe57d.webp",
+        "assets/products/cafe-hill/cafe-hill-elma-tarcin-cayi-250-gr-excel-105/web-133db36fe57d-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efbae338d03.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-250-gr-elma-tarcin-cayi/51",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "133db36fe57d5a89e200701a381c852fa871159433a1b60e5f3be508f99b4b31",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-106",
+      "slug": "cafe-hill-kirmizi-orman-mey-cayi-250-gr-excel-106",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        106
+      ],
+      "assets": [
+        "assets/products/cafe-hill/cafe-hill-kirmizi-orman-mey-cayi-250-gr-excel-106/web-288b56c103c8.webp",
+        "assets/products/cafe-hill/cafe-hill-kirmizi-orman-mey-cayi-250-gr-excel-106/web-288b56c103c8-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efbbb29ee44.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-250-gr-kirmizi-orman-cayi/55",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "288b56c103c8111d4e280d39de7d8b1d50211630de54f671ab4e457265155519",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-107",
+      "slug": "cafe-hill-papatya-cayi-100-gr-excel-107",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        107
+      ],
+      "assets": [
+        "assets/products/cafe-hill/cafe-hill-papatya-cayi-100-gr-excel-107/web-c1903179111e.webp",
+        "assets/products/cafe-hill/cafe-hill-papatya-cayi-100-gr-excel-107/web-c1903179111e-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efb8aec4b03.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-100-gr-papatya-cayi/44",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "c1903179111e8fa0ebf30530896ee3505edab6412741be8bc2f5c9e1ec477e40",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-108",
+      "slug": "cafe-hill-yaseminli-yesil-cay-250-gr-excel-108",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        108
+      ],
+      "assets": [
+        "assets/products/cafe-hill/cafe-hill-yaseminli-yesil-cay-250-gr-excel-108/web-46f5cdb6f8d2.webp",
+        "assets/products/cafe-hill/cafe-hill-yaseminli-yesil-cay-250-gr-excel-108/web-46f5cdb6f8d2-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efbc480c6d4.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-250-gr-yaseminli-yesilcay/57",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "46f5cdb6f8d2320e5576d181995b1a1797cc582a8a76a81471c12e6b8ccbb359",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-109",
+      "slug": "cafe-hill-limon-zencefil-cayi-250-gr-excel-109",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        109
+      ],
+      "assets": [
+        "assets/products/cafe-hill/cafe-hill-limon-zencefil-cayi-250-gr-excel-109/web-3dcba7fb7b5d.webp",
+        "assets/products/cafe-hill/cafe-hill-limon-zencefil-cayi-250-gr-excel-109/web-3dcba7fb7b5d-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efbbf5dda3d.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-250-gr-limon-zencefil-cayi/56",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "3dcba7fb7b5d797201a89dc93a227adc85254bf8c796850f5669efaf66004642",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-110",
+      "slug": "cafe-hill-elma-cayi-250-gr-excel-110",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        110
+      ],
+      "assets": [
+        "assets/products/cafe-hill/cafe-hill-elma-cayi-250-gr-excel-110/web-77a7f48cc0b1.webp",
+        "assets/products/cafe-hill/cafe-hill-elma-cayi-250-gr-excel-110/web-77a7f48cc0b1-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efbaa712018.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-250-gr-elma-cayi/50",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "77a7f48cc0b1b8cfd36e70fe17094fab598ec573be0e3374fbda0d472b97ef77",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-111",
+      "slug": "cafe-hill-yesil-cay-250-gr-excel-111",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        111
+      ],
+      "assets": [
+        "assets/products/cafe-hill/cafe-hill-yesil-cay-250-gr-excel-111/web-e53410bafb2a.webp",
+        "assets/products/cafe-hill/cafe-hill-yesil-cay-250-gr-excel-111/web-e53410bafb2a-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efbc7cde806.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-250-gr-yesilcay/58",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "e53410bafb2a914251309783ee66d8b1dab7fa72e29cbccac0ba4384e3e1ea0f",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-112",
+      "slug": "cafe-hill-kusburnu-cayi-250-gr-excel-112",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        112
+      ],
+      "assets": [
+        "assets/products/cafe-hill/cafe-hill-kusburnu-cayi-250-gr-excel-112/web-6c5fdd1c85b4.webp",
+        "assets/products/cafe-hill/cafe-hill-kusburnu-cayi-250-gr-excel-112/web-6c5fdd1c85b4-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efbb7aa1105.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-250-gr-kusburnu/54",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "6c5fdd1c85b4a4d1be2470408929f05911af54a0470b71f1a9c76dee40398f9a",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-113",
+      "slug": "cafe-hill-bogurtlen-cayi-250-gr-excel-113",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        113
+      ],
+      "assets": [
+        "assets/products/cafe-hill/cafe-hill-bogurtlen-cayi-250-gr-excel-113/web-6c6ed4ffecb3.webp",
+        "assets/products/cafe-hill/cafe-hill-bogurtlen-cayi-250-gr-excel-113/web-6c6ed4ffecb3-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efb9db7bab8.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-250-gr-bogurtlen-cayi/48",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "6c6ed4ffecb3eafea725ef6c5e76487fc6a7a813775c50168f51a70c73babe00",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-114",
+      "slug": "cafe-hill-melisa-cayi-50-gr-excel-114",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        114
+      ],
+      "assets": [
+        "assets/products/cafe-hill/cafe-hill-melisa-cayi-50-gr-excel-114/web-e614b77d8736.webp",
+        "assets/products/cafe-hill/cafe-hill-melisa-cayi-50-gr-excel-114/web-e614b77d8736-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efb514527cf.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-50-gr-melisa-cayi/25",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "e614b77d8736773f2888e841ce9bc0666b1c776ceae314e7ccfd7ca8dd57b729",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-115",
+      "slug": "cilek-bitki-cayi-250-gr-excel-115",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        115
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/cilek-bitki-cayi-250-gr-excel-115/web-70130afc47b5.webp",
+        "assets/products/karahanli-gida/cilek-bitki-cayi-250-gr-excel-115/web-70130afc47b5-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efba60827cd.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-250-gr-cilek-meyve-cayi/49",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "70130afc47b523dcf6e90078ebe6364158d9f630a61def9c383ae066d8f14e44",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-116",
+      "slug": "cafe-hill-ada-cayi-100-gr-excel-116",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        116
+      ],
+      "assets": [
+        "assets/products/cafe-hill/cafe-hill-ada-cayi-100-gr-excel-116/web-e2370528ee6b.webp",
+        "assets/products/cafe-hill/cafe-hill-ada-cayi-100-gr-excel-116/web-e2370528ee6b-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efb8e60b206.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-100-gr-adacayi/45",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "e2370528ee6b50a5cd614c6e6928e2d05fdd0a613cda958cb900b703bc38f8a7",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-117",
+      "slug": "rezene-cayi-250-gr-excel-117",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        117
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/rezene-cayi-250-gr-excel-117/web-893a82ae21ea.webp",
+        "assets/products/karahanli-gida/rezene-cayi-250-gr-excel-117/web-893a82ae21ea-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efbb48a1384.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-250-gr-rezene-cayi/53",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "893a82ae21ea66dbe57b449a64e24d3f9cb83fad2a4428237ad79f85b5002a07",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-123",
+      "slug": "cafe-hill-ihlamur-cayi-100-gr-excel-123",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        123
+      ],
+      "assets": [
+        "assets/products/cafe-hill/cafe-hill-ihlamur-cayi-100-gr-excel-123/web-bedb74ebc178.webp",
+        "assets/products/cafe-hill/cafe-hill-ihlamur-cayi-100-gr-excel-123/web-bedb74ebc178-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202201/upload_61efb75fc66ba.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-ch-100-gr-ihlamur/43",
+          "checkedAt": "2026-08-29T08:10:52.803Z",
+          "sha256": "bedb74ebc178f42cd54d5f9eeedae20c057cd5a8d5fa199102d5466c0aa96520",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-032",
+      "slug": "kahve-alemi-turk-kahvesi-500-gr-excel-32",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        32
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/kahve-alemi-turk-kahvesi-500-gr-excel-32/web-241f7675edce.webp",
+        "assets/products/karahanli-gida/kahve-alemi-turk-kahvesi-500-gr-excel-32/web-241f7675edce-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.kahvealemi.com.tr/uploads/images/202203/upload_6220914502a5a.png",
+          "sourceUrl": "https://www.kahvealemi.com.tr/tr/urun-turk-kahvesi-500-gr/85",
+          "checkedAt": "2026-08-29T08:13:44.261Z",
+          "sha256": "241f7675edcef2f174397f642990fac842b42a43f675585cda788644d154cefe",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-090",
+      "slug": "de-lucca-kurabiye-biskuvi-excel-90",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        90
+      ],
+      "assets": [
+        "assets/products/de-lucca/de-lucca-kurabiye-biskuvi-excel-90/web-442e38556d12.webp",
+        "assets/products/de-lucca/de-lucca-kurabiye-biskuvi-excel-90/web-442e38556d12-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://delucca.com.tr/wp-content/uploads/2026/04/KARAMELIZE-BISKUVI-%E2%80%93-55-GR-x-204-ADET.png",
+          "sourceUrl": "https://www.delucca.com.tr/urun/karamelize-biskuvi-55-gr-x-204-adet/",
+          "checkedAt": "2026-08-29T08:13:44.261Z",
+          "sha256": "442e38556d12d158e714cc0799c904e125c20338392ccd98d9dd8235bc3be1d8",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-150",
+      "slug": "versaty-sicak-yemek-kremasi-pro-excel-150",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        150
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/versaty-sicak-yemek-kremasi-pro-excel-150/web-0de199393b51.webp",
+        "assets/products/karahanli-gida/versaty-sicak-yemek-kremasi-pro-excel-150/web-0de199393b51-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://bynder.onerichs.com/m/48b48c030bdbfd3d/Original-22058_TR_Packaging.jpg",
+          "sourceUrl": "https://www.richs.com.tr/product/versatie-professional-cream/",
+          "checkedAt": "2026-08-29T08:16:12.540Z",
+          "sha256": "0de199393b517348e3e70e3d8b6bcbaf42f5e318960b90dfba0a8e1ac7d4017a",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-151",
+      "slug": "dr-gusto-sprey-tava-yag-excel-151",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        151
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/dr-gusto-sprey-tava-yag-excel-151/web-791ca982da8f.webp",
+        "assets/products/karahanli-gida/dr-gusto-sprey-tava-yag-excel-151/web-791ca982da8f-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "ai-enhanced",
+          "url": "https://www.firincimarket.com/idea/hv/46/myassets/products/156/ygg.PNG?revision=1758955078",
+          "sourceUrl": "https://www.drgusto.com/en/product/dr-gusto-spray-pan-oil-600-ml-1951",
+          "checkedAt": "2026-08-29T08:19:03.476Z",
+          "sha256": "791ca982da8f3508e47a06cbcaa74205401cd22dc4c5c822d995185ad80fb92b",
+          "processing": "ai-enhanced"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-192",
+      "slug": "hutamaki-400-cc-soguk-seffaf-pet-bardak-excel-192",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        192
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/hutamaki-400-cc-soguk-seffaf-pet-bardak-excel-192/web-a5152906538f.webp",
+        "assets/products/karahanli-gida/hutamaki-400-cc-soguk-seffaf-pet-bardak-excel-192/web-a5152906538f-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "ai-enhanced",
+          "url": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf",
+          "sourceUrl": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf#page=25",
+          "checkedAt": "2026-08-29T08:25:00.909Z",
+          "sha256": "a5152906538f7ff3098fa7d9bcb92d0847e92a4abf8b35c6bd8564863fd2cec4",
+          "processing": "ai-enhanced"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-194",
+      "slug": "hutamaki-500-cc-soguk-seffaf-pet-bardak-excel-194",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        194
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/hutamaki-500-cc-soguk-seffaf-pet-bardak-excel-194/web-36a0ee9d2397.webp",
+        "assets/products/karahanli-gida/hutamaki-500-cc-soguk-seffaf-pet-bardak-excel-194/web-36a0ee9d2397-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "ai-enhanced",
+          "url": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf",
+          "sourceUrl": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf#page=25",
+          "checkedAt": "2026-08-29T08:25:00.909Z",
+          "sha256": "36a0ee9d2397851384423781f686f0345aa9902ada8028cedffb78564d5df963",
+          "processing": "ai-enhanced"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-196",
+      "slug": "hutamaki-16-oz-sicak-karton-bardak-cift-katli-excel-196",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        196
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/hutamaki-16-oz-sicak-karton-bardak-cift-katli-excel-196/web-dde1b5404541.webp",
+        "assets/products/karahanli-gida/hutamaki-16-oz-sicak-karton-bardak-cift-katli-excel-196/web-dde1b5404541-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://huhtamaki.com.au/wp-content/uploads/2026/08/PR11425BI4642_HTP_16TPDWW_True_Fill_Double_Wall_PLA_Hot_Cup_White_16oz_SZ4.png",
+          "sourceUrl": "https://assets.huhtamaki.com/datasheets/htp/en/16TPDWW.pdf",
+          "checkedAt": "2026-08-29T08:32:46.935Z",
+          "sha256": "dde1b5404541aa1d0585629418d293fcfb0cafe5665029d65e6ed6afe1d9a723",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-198",
+      "slug": "hutamaki-12-oz-sicak-karton-bardak-cift-katli-excel-198",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        198
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/hutamaki-12-oz-sicak-karton-bardak-cift-katli-excel-198/web-3af463a45194.webp",
+        "assets/products/karahanli-gida/hutamaki-12-oz-sicak-karton-bardak-cift-katli-excel-198/web-3af463a45194-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://assets.huhtamaki.com/datasheets/htp/en/12TPDWW.pdf",
+          "sourceUrl": "https://assets.huhtamaki.com/datasheets/htp/en/12TPDWW.pdf",
+          "checkedAt": "2026-08-29T08:32:46.935Z",
+          "sha256": "3af463a45194a6443626d2d86f664eb8bee99af461258b5670448696241b6e8e",
+          "processing": "pdf-crop"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-146",
+      "slug": "finduk-kakaolu-findik-kremasi-excel-146",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        146
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/finduk-kakaolu-findik-kremasi-excel-146/web-b833cfc99352.webp",
+        "assets/products/karahanli-gida/finduk-kakaolu-findik-kremasi-excel-146/web-b833cfc99352-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://delucca.com.tr/wp-content/uploads/2026/04/KAKOLU-FINDIK-EZMESI-800x800.jpg",
+          "sourceUrl": "https://delucca.com.tr/urun/kakaolu-findik-ezmesi-350g/",
+          "checkedAt": "2026-08-29T08:34:33.991Z",
+          "sha256": "b833cfc993523ac3acf5895056ac9af37a6c782df9b385a8182010a8f5433bd9",
+          "processing": "source-preserved"
+        }
+      ]
     }
   ]
 }

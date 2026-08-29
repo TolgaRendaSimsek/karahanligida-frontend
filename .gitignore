@@ -3,12 +3,15 @@ admin-api/var/
 __pycache__/
 *.pyc
 .env
+.env.*
+!.env.example
 secrets/
 .firebase/
 .firebaserc
 firebase-debug.log
 firebase/*service-account*.json
 firebase/*.key.json
+firebase/*adminsdk*.json
 .next/
 playwright-report/
 test-results/
