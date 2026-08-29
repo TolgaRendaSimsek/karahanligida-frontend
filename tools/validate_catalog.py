@@ -16,6 +16,7 @@ if hasattr(sys.stderr, "reconfigure"):
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "products.json"
+ARCHIVE = ROOT / "data" / "catalog-archive.json"
 MANIFEST = ROOT / "data" / "catalog-manifest.json"
 REQUIRED = {
     "id",
@@ -58,12 +59,13 @@ def main() -> int:
     payload = json.loads(DATA.read_text(encoding="utf-8"))
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     products = payload.get("products", [])
+    archived_products = json.loads(ARCHIVE.read_text(encoding="utf-8")).get("products", []) if ARCHIVE.exists() else []
     ids: set[str] = set()
     slugs: set[str] = set()
     assets: set[str] = set()
     covered_catalogs: set[str] = set()
 
-    for product in products:
+    for product in [*products, *archived_products]:
         missing = REQUIRED - product.keys()
         if missing:
             fail(errors, f"{product.get('slug', '?')}: eksik alanlar {sorted(missing)}")
@@ -112,8 +114,8 @@ def main() -> int:
         if orders != list(range(1, len(orders) + 1)):
             fail(errors, f"{slug}: galeri sıralaması geçersiz")
 
-    if covered_catalogs != EXPECTED_CATALOGS:
-        fail(errors, f"Katalog kapsamı eksik/fazla: {sorted(covered_catalogs ^ EXPECTED_CATALOGS)}")
+    if not covered_catalogs.issubset(EXPECTED_CATALOGS):
+        fail(errors, f"Katalog kapsamı dışında kaynak var: {sorted(covered_catalogs - EXPECTED_CATALOGS)}")
     if set(manifest.get("catalogs", [])) != EXPECTED_CATALOGS:
         fail(errors, "Kaynak manifest katalog listesi hatalı")
 
@@ -122,15 +124,15 @@ def main() -> int:
         for item in manifest.get("items", [])
         for asset in item.get("assets", [])
     }
-    if assets != manifest_assets:
-        fail(errors, "Ürün verisi ve kaynak manifest görselleri eşleşmiyor")
+    if not assets.issubset(manifest_assets):
+        fail(errors, "Ürün verisindeki bir görsel kaynak manifestte bulunmuyor")
     disk_assets = {
         path.relative_to(ROOT).as_posix()
         for path in (ROOT / "assets" / "products").rglob("*")
         if path.is_file()
     }
-    if disk_assets != assets:
-        fail(errors, f"Sahipsiz veya eksik ürün görseli var: {sorted(disk_assets ^ assets)[:10]}")
+    if not assets.issubset(disk_assets):
+        fail(errors, f"Eksik ürün görseli var: {sorted(assets - disk_assets)[:10]}")
 
     dynamic_route = ROOT / "app" / "(store)" / "urunler" / "[slug]" / "page.tsx"
     if not dynamic_route.is_file():

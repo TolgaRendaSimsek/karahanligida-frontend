@@ -7,12 +7,20 @@
       "slug": "favori-fresh-donuk-meyve-sulari-ve-limonatalar",
       "brand": "Favori Fresh",
       "name": "Donuk Meyve Suları ve Limonatalar",
-      "category": "İçecekler",
-      "subcategory": "Donuk meyve içecekleri",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk İçecekler",
       "summary": "Soğuk sıkım ve dondurma yöntemiyle hazırlanan meyve suyu ve limonata seçenekleri.",
       "description": "Soğuk sıkım ve dondurma yöntemiyle hazırlanan meyve suyu ve limonata seçenekleri.",
       "features": [],
-      "specifications": {},
+      "specifications": {
+        "Ambalaj Excel 169": "6 ADET",
+        "Ambalaj Excel 170": "6 ADET",
+        "Ambalaj Excel 171": "6 ADET",
+        "Ambalaj Excel 172": "6 ADET",
+        "Ambalaj Excel 173": "6 ADET",
+        "Ambalaj Excel 174": "6 ADET",
+        "Ambalaj Excel 175": "6 ADET"
+      },
       "images": [
         {
           "id": "image-web-01",
@@ -65,6 +73,62 @@
           "name": "Bodrum Mandalina Limonatası",
           "code": "",
           "attributes": {}
+        },
+        {
+          "id": "excel-169",
+          "name": "FAVORİ NAR SUYU 1 LİT DONUK X 6 LI PAKET",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6 ADET"
+          }
+        },
+        {
+          "id": "excel-170",
+          "name": "FAVORİ PORTAKAL SUYU 1 LİT DONUK X6 LI PAKET",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6 ADET"
+          }
+        },
+        {
+          "id": "excel-171",
+          "name": "FAVORİ BODRUM MANDALİNASI DONOK",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6 ADET"
+          }
+        },
+        {
+          "id": "excel-172",
+          "name": "FAVORİ LİMON SUYU 1 LİTDONUK X 6 LI PAKET",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6 ADET"
+          }
+        },
+        {
+          "id": "excel-173",
+          "name": "FAVORİ GRAYFUR SUYU 1 LİT DONUK 6 LI PAKET",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6 ADET"
+          }
+        },
+        {
+          "id": "excel-174",
+          "name": "FAVORİ KARADUT ÖZÜ 1 LİT DONUK 6 LI PAKER",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6 ADET"
+          }
+        },
+        {
+          "id": "excel-175",
+          "name": "FAVORİ LİMONATA 2 LİT DONUK X 6 LI PAKET",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6 ADET"
+          }
         }
       ],
       "source": {
@@ -82,11 +146,15 @@
       "brand": "FO",
       "name": "Kokteyl Şurupları",
       "category": "Şurup ve Püreler",
-      "subcategory": "Kokteyl şurupları",
+      "subcategory": "Kokteyl Şurupları",
       "summary": "FO Kokteyl Şurupları ürün ailesi ve katalogda yer alan seçenekleri.",
       "description": "FO Kokteyl Şurupları ürün ailesi ve katalogda yer alan seçenekleri.",
       "features": [],
-      "specifications": {},
+      "specifications": {
+        "Ambalaj Excel 67": "6",
+        "Ambalaj Excel 68": "6",
+        "Ambalaj Excel 69": "1"
+      },
       "images": [
         {
           "id": "image-web-01",
@@ -829,6 +897,30 @@
           "name": "132 Kinds Çeşit - 700ml",
           "code": "132 Kinds Çeşit",
           "attributes": {}
+        },
+        {
+          "id": "excel-67",
+          "name": "FO ŞURUP ÇEŞİTLERİ 700 ML",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-68",
+          "name": "FO PREMIUM ŞURUP ÇEŞİTLERİ",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-69",
+          "name": "FO ŞURUP POMPASI",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "1"
+          }
         }
       ],
       "source": {
@@ -842,564 +934,25 @@
       "status": "published"
     },
     {
-      "id": "family-0003",
-      "slug": "fo-meyveli-suruplar",
-      "brand": "FO",
-      "name": "Meyveli Şuruplar",
-      "category": "Şurup ve Püreler",
-      "subcategory": "Meyveli şuruplar",
-      "summary": "FO Meyveli Şuruplar ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Meyveli Şuruplar ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-meyveli-suruplar/web-bdb1d66ba07d.webp",
-          "thumbnailSrc": "assets/products/fo/fo-meyveli-suruplar/web-bdb1d66ba07d-thumb.webp",
-          "alt": "FO Meyveli Şuruplar",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "black-currant",
-          "name": "Black Currant - Frenk Üzümü",
-          "code": "Black Currant",
-          "attributes": {}
-        },
-        {
-          "id": "caramel",
-          "name": "Caramel - Karamel",
-          "code": "Caramel",
-          "attributes": {}
-        },
-        {
-          "id": "chocolate",
-          "name": "Chocolate - Çikolata",
-          "code": "Chocolate",
-          "attributes": {}
-        },
-        {
-          "id": "coconut",
-          "name": "Coconut - Hindistan Cevizi",
-          "code": "Coconut",
-          "attributes": {}
-        },
-        {
-          "id": "cranberry",
-          "name": "Cranberry - Kızılcık",
-          "code": "Cranberry",
-          "attributes": {}
-        },
-        {
-          "id": "elderflower",
-          "name": "Elderflower - Mürver Çiçeği",
-          "code": "Elderflower",
-          "attributes": {}
-        },
-        {
-          "id": "grapefruit",
-          "name": "Grapefruit - Greyfurt",
-          "code": "Grapefruit",
-          "attributes": {}
-        },
-        {
-          "id": "green-apple",
-          "name": "Green Apple - Yeşil Elma",
-          "code": "Green Apple",
-          "attributes": {}
-        },
-        {
-          "id": "grenadine",
-          "name": "Grenadine - Nar",
-          "code": "Grenadine",
-          "attributes": {}
-        },
-        {
-          "id": "hazelnut",
-          "name": "Hazelnut - Fındık",
-          "code": "Hazelnut",
-          "attributes": {}
-        },
-        {
-          "id": "lime",
-          "name": "Lime - Misket Limonu",
-          "code": "Lime",
-          "attributes": {}
-        },
-        {
-          "id": "mango",
-          "name": "Mango - Mango",
-          "code": "Mango",
-          "attributes": {}
-        },
-        {
-          "id": "passion",
-          "name": "Passion - Çarkıfelek",
-          "code": "Passion",
-          "attributes": {}
-        },
-        {
-          "id": "peach",
-          "name": "Peach - Şeftali",
-          "code": "Peach",
-          "attributes": {}
-        },
-        {
-          "id": "raspberry",
-          "name": "Raspberry - Frambuaz",
-          "code": "Raspberry",
-          "attributes": {}
-        },
-        {
-          "id": "strawberry",
-          "name": "Strawberry - Çilek",
-          "code": "Strawberry",
-          "attributes": {}
-        },
-        {
-          "id": "vanilla",
-          "name": "Vanilla - Vanilya",
-          "code": "Vanilla",
-          "attributes": {}
-        },
-        {
-          "id": "white-chocolate",
-          "name": "White Chocolate - Beyaz Çikolata",
-          "code": "White Chocolate",
-          "attributes": {}
-        },
-        {
-          "id": "red-pepper",
-          "name": "Red Pepper - Kırmızı Biber",
-          "code": "Red Pepper",
-          "attributes": {}
-        },
-        {
-          "id": "watermelon",
-          "name": "Watermelon - Karpuz",
-          "code": "Watermelon",
-          "attributes": {}
-        },
-        {
-          "id": "red-grape",
-          "name": "Red Grape - Kırmızı Üzüm",
-          "code": "Red Grape",
-          "attributes": {}
-        },
-        {
-          "id": "fig",
-          "name": "Fig - İncir",
-          "code": "Fig",
-          "attributes": {}
-        },
-        {
-          "id": "black-mulberry",
-          "name": "Black Mulberry - Karadut",
-          "code": "Black Mulberry",
-          "attributes": {}
-        },
-        {
-          "id": "date",
-          "name": "Date - Hurma",
-          "code": "Date",
-          "attributes": {}
-        },
-        {
-          "id": "blueberry",
-          "name": "Blueberry - Yaban Mersini",
-          "code": "Blueberry",
-          "attributes": {}
-        },
-        {
-          "id": "blackberry",
-          "name": "Blackberry - Böğürtlen",
-          "code": "Blackberry",
-          "attributes": {}
-        },
-        {
-          "id": "lychee",
-          "name": "Lychee - Liçi",
-          "code": "Lychee",
-          "attributes": {}
-        },
-        {
-          "id": "sweet-almond",
-          "name": "Sweet Almond - Tatlı Badem",
-          "code": "Sweet Almond",
-          "attributes": {}
-        },
-        {
-          "id": "mint",
-          "name": "Mint - Nane",
-          "code": "Mint",
-          "attributes": {}
-        },
-        {
-          "id": "aronia",
-          "name": "Aronia - Aronya",
-          "code": "Aronia",
-          "attributes": {}
-        },
-        {
-          "id": "banana",
-          "name": "Banana - Muz",
-          "code": "Banana",
-          "attributes": {}
-        },
-        {
-          "id": "31-kinds-cesit",
-          "name": "31 Kinds Çeşit - 700ml",
-          "code": "31 Kinds Çeşit",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          7
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0004",
-      "slug": "fo-soguk-cay-suruplari",
-      "brand": "FO",
-      "name": "Soğuk Çay Şurupları",
-      "category": "Şurup ve Püreler",
-      "subcategory": "Soğuk çay şurupları",
-      "summary": "FO Soğuk Çay Şurupları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Soğuk Çay Şurupları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-soguk-cay-suruplari/web-0e8fb1650a9f.webp",
-          "thumbnailSrc": "assets/products/fo/fo-soguk-cay-suruplari/web-0e8fb1650a9f-thumb.webp",
-          "alt": "FO Soğuk Çay Şurupları",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "peach-flavored-ice-tea-syrup",
-          "name": "Peach Flavored Ice Tea Syrup - Şeftali Aromalı Soğuk Çay Şurubu",
-          "code": "Peach Flavored Ice Tea Syrup",
-          "attributes": {}
-        },
-        {
-          "id": "lemon-flavored-ice-tea-syrup",
-          "name": "Lemon Flavored Ice Tea Syrup - Limon Aromalı Soğuk Çay Şurubu",
-          "code": "Lemon Flavored Ice Tea Syrup",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          8,
-          10,
-          14
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0005",
-      "slug": "fo-aromali-kokteyl-bazlari",
-      "brand": "FO",
-      "name": "Aromalı Kokteyl Bazları",
-      "category": "Şurup ve Püreler",
-      "subcategory": "Kokteyl bazları",
-      "summary": "FO Aromalı Kokteyl Bazları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Aromalı Kokteyl Bazları ürün ailesi ve katalogda yer alan seçenekleri. Katalogda öne çıkan nitelikler: Nane ve Misket Limonu; Mandalina ve Tonik; Hibiskus ve Orman Meyvesi.",
-      "features": [
-        "Nane ve Misket Limonu",
-        "Mandalina ve Tonik",
-        "Hibiskus ve Orman Meyvesi",
-        "Portakal ve Mango",
-        "Yaban Mersini ve Liçi",
-        "Çilek ve Açai"
-      ],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-aromali-kokteyl-bazlari/web-1103435537e5.webp",
-          "thumbnailSrc": "assets/products/fo/fo-aromali-kokteyl-bazlari/web-1103435537e5-thumb.webp",
-          "alt": "FO Aromalı Kokteyl Bazları",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "cactus",
-          "name": "Cactus - Kaktüs",
-          "code": "Cactus",
-          "attributes": {}
-        },
-        {
-          "id": "bitter-aperitivo",
-          "name": "Bitter Aperitivo - Acı Portakal",
-          "code": "Bitter Aperitivo",
-          "attributes": {}
-        },
-        {
-          "id": "strawberry",
-          "name": "Strawberry - Çilek",
-          "code": "Strawberry",
-          "attributes": {}
-        },
-        {
-          "id": "grenadine",
-          "name": "Grenadine - Nar",
-          "code": "Grenadine",
-          "attributes": {}
-        },
-        {
-          "id": "14-kinds-cesit",
-          "name": "14 Kinds Çeşit - 700ml",
-          "code": "14 Kinds Çeşit",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          9
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0006",
-      "slug": "fo-simli-suruplar",
-      "brand": "FO",
-      "name": "Simli Şuruplar",
-      "category": "Şurup ve Püreler",
-      "subcategory": "Simli şuruplar",
-      "summary": "FO Simli Şuruplar ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Simli Şuruplar ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-simli-suruplar/web-4f4b641cc2e9.webp",
-          "thumbnailSrc": "assets/products/fo/fo-simli-suruplar/web-4f4b641cc2e9-thumb.webp",
-          "alt": "FO Simli Şuruplar",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "peach-iced-tea-syrup",
-          "name": "Peach Iced Tea Syrup - Şeftalili Soğuk Çay Şurubu",
-          "code": "Peach Iced Tea Syrup",
-          "attributes": {}
-        },
-        {
-          "id": "lemon-iced-tea-syrup",
-          "name": "Lemon Iced Tea Syrup - Limonlu Soğuk Çay Şurubu",
-          "code": "Lemon Iced Tea Syrup",
-          "attributes": {}
-        },
-        {
-          "id": "mango-flavored-ice-tea-syrup",
-          "name": "Mango Flavored Ice Tea Syrup - Mango Aromalı Soğuk Çay Şurubu",
-          "code": "Mango Flavored Ice Tea Syrup",
-          "attributes": {}
-        },
-        {
-          "id": "raspberry-flavored-ice-tea-syrup",
-          "name": "Raspberry Flavored Ice Tea Syrup - Ahududu Aromalı Soğuk Çay Şurubu",
-          "code": "Raspberry Flavored Ice Tea Syrup",
-          "attributes": {}
-        },
-        {
-          "id": "4-kinds-cesit",
-          "name": "4 Kinds Çeşit - 700ml",
-          "code": "4 Kinds Çeşit",
-          "attributes": {}
-        },
-        {
-          "id": "pomelo-flavored-silvery-syrup",
-          "name": "Pomelo Flavored Silvery Syrup - Pomelo Aromalı Simli Şurup",
-          "code": "Pomelo Flavored Silvery Syrup",
-          "attributes": {}
-        },
-        {
-          "id": "mangosteen-flavored-silvery-syrup",
-          "name": "Mangosteen Flavored Silvery Syrup - Mangostan Aromalı Simli Şurup",
-          "code": "Mangosteen Flavored Silvery Syrup",
-          "attributes": {}
-        },
-        {
-          "id": "golden-kiwi-flavored-silvery-syrup",
-          "name": "Golden Kiwi Flavored Silvery Syrup - Altın Kivi Aromalı Simli Şurup",
-          "code": "Golden Kiwi Flavored Silvery Syrup",
-          "attributes": {}
-        },
-        {
-          "id": "aronia-flavored-silvery-syrup",
-          "name": "Aronia Flavored Silvery Syrup - Aronya Aromalı Simli Şurup",
-          "code": "Aronia Flavored Silvery Syrup",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          11,
-          12,
-          13
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0007",
-      "slug": "fo-botanical-cordial-serisi",
-      "brand": "FO",
-      "name": "Botanical Cordial Serisi",
-      "category": "Şurup ve Püreler",
-      "subcategory": "Botanik cordial",
-      "summary": "FO Botanical Cordial Serisi ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Botanical Cordial Serisi ürün ailesi ve katalogda yer alan seçenekleri. Katalogda öne çıkan nitelikler: Dill, Thyme, Sea Buckthorn, and Clove; Dereotu, Kekik, İğde ve Karanfil; Lavender, Elderflower, and Orange Blossom.",
-      "features": [
-        "Dill, Thyme, Sea Buckthorn, and Clove",
-        "Dereotu, Kekik, İğde ve Karanfil",
-        "Lavender, Elderflower, and Orange Blossom",
-        "Lavanta, Mürver ve Portakal Çiçeği",
-        "Celery, Carrot, Cumin, and Garlic",
-        "Kereviz, Havuç, Kimyon ve Sarımsak"
-      ],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-botanical-cordial-serisi/web-a1e21ed0dbbc.webp",
-          "thumbnailSrc": "assets/products/fo/fo-botanical-cordial-serisi/web-a1e21ed0dbbc-thumb.webp",
-          "alt": "FO Botanical Cordial Serisi",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "5-kinds-cesit",
-          "name": "5 Kinds Çeşit - 700ml",
-          "code": "5 Kinds Çeşit",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          15
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0008",
-      "slug": "fo-aromatik-bitter-sos",
-      "brand": "FO",
-      "name": "Aromatik Bitter Sos",
-      "category": "Soslar",
-      "subcategory": "Bitter sos",
-      "summary": "FO Aromatik Bitter Sos ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Aromatik Bitter Sos ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-aromatik-bitter-sos/web-1db518f2faae.webp",
-          "thumbnailSrc": "assets/products/fo/fo-aromatik-bitter-sos/web-1db518f2faae-thumb.webp",
-          "alt": "FO Aromatik Bitter Sos",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "aromatik-bitter-sos",
-          "name": "Katalog seçeneği",
-          "code": "",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          16
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0009",
-      "slug": "fo-vegan-kokteyl-kopurtucu",
-      "brand": "FO",
-      "name": "Vegan Kokteyl Köpürtücü",
-      "category": "Bar Ürünleri",
-      "subcategory": "Kokteyl köpürtücü",
-      "summary": "FO Vegan Kokteyl Köpürtücü ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Vegan Kokteyl Köpürtücü ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-vegan-kokteyl-kopurtucu/web-028ffc5bc8e7.webp",
-          "thumbnailSrc": "assets/products/fo/fo-vegan-kokteyl-kopurtucu/web-028ffc5bc8e7-thumb.webp",
-          "alt": "FO Vegan Kokteyl Köpürtücü",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "vegan-kokteyl-kopurtucu",
-          "name": "Katalog seçeneği",
-          "code": "",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          17
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
       "id": "family-0010",
       "slug": "fo-profesyonel-soslar",
       "brand": "FO",
       "name": "Profesyonel Soslar",
-      "category": "Soslar",
-      "subcategory": "Profesyonel soslar",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
       "summary": "FO Profesyonel Soslar ürün ailesi ve katalogda yer alan seçenekleri.",
       "description": "FO Profesyonel Soslar ürün ailesi ve katalogda yer alan seçenekleri.",
       "features": [],
-      "specifications": {},
+      "specifications": {
+        "Ambalaj Excel 75": "6",
+        "Ambalaj Excel 77": "6",
+        "Ambalaj Excel 88": "12",
+        "Ambalaj Excel 89": "6",
+        "Ambalaj Excel 95": "6",
+        "Ambalaj Excel 96": "6",
+        "Ambalaj Excel 97": "6",
+        "Ambalaj Excel 98": "6"
+      },
       "images": [
         {
           "id": "image-web-01",
@@ -1488,6 +1041,70 @@
           "name": "11 Kinds Çeşit - 2500 g",
           "code": "11 Kinds Çeşit",
           "attributes": {}
+        },
+        {
+          "id": "excel-75",
+          "name": "FO PATLAYAN ŞEKER SOS 1 LİT",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-77",
+          "name": "FO ANTEP FISTIĞI SOS 1 LİT",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-88",
+          "name": "FO VANİLYA DEKOR",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "12"
+          }
+        },
+        {
+          "id": "excel-89",
+          "name": "FO DEKOR SOS ÇEŞİTLERİ 750 GR",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-95",
+          "name": "FO BAR SOS KARAMEL 2500 GR",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-96",
+          "name": "FO BAR SOS BEYAZ ÇİKOLATA 2500 GR",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-97",
+          "name": "FO BAR SOS DARK ÇİKOLATA 2500 GR",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-98",
+          "name": "FO PREMIUM BAR SOS ÇEŞİTLERİ",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
         }
       ],
       "source": {
@@ -1501,312 +1118,23 @@
       "status": "published"
     },
     {
-      "id": "family-0011",
-      "slug": "fo-premium-soslar",
-      "brand": "FO",
-      "name": "Premium Soslar",
-      "category": "Soslar",
-      "subcategory": "Premium soslar",
-      "summary": "FO Premium Soslar ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Premium Soslar ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-premium-soslar/web-3611c611f7c6.webp",
-          "thumbnailSrc": "assets/products/fo/fo-premium-soslar/web-3611c611f7c6-thumb.webp",
-          "alt": "FO Premium Soslar",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "5-kinds-cesit",
-          "name": "5 Kinds Çeşit - 2500 g",
-          "code": "5 Kinds Çeşit",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          21
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0012",
-      "slug": "fo-ozel-soslar",
-      "brand": "FO",
-      "name": "Özel Soslar",
-      "category": "Soslar",
-      "subcategory": "Özel soslar",
-      "summary": "FO Özel Soslar ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Özel Soslar ürün ailesi ve katalogda yer alan seçenekleri. Katalogda öne çıkan nitelikler: Tuzlu Karamel Aromalı; Karamelize Bisküvili Krema Sos.",
-      "features": [
-        "Tuzlu Karamel Aromalı",
-        "Karamelize Bisküvili Krema Sos"
-      ],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-ozel-soslar/web-3df50b73bc6b.webp",
-          "thumbnailSrc": "assets/products/fo/fo-ozel-soslar/web-3df50b73bc6b-thumb.webp",
-          "alt": "FO Özel Soslar",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "pistachio-verde",
-          "name": "Pistachio Verde - Yeşil Antep Fıstıklı",
-          "code": "Pistachio Verde",
-          "attributes": {}
-        },
-        {
-          "id": "peanut-flavored",
-          "name": "Peanut Flavored - Yer Fıstığı Aromalı",
-          "code": "Peanut Flavored",
-          "attributes": {}
-        },
-        {
-          "id": "popping-candy",
-          "name": "Popping Candy - Patlayan Şeker",
-          "code": "Popping Candy",
-          "attributes": {}
-        },
-        {
-          "id": "speculoos",
-          "name": "Speculoos - Speculoos Biskuvi",
-          "code": "Speculoos",
-          "attributes": {}
-        },
-        {
-          "id": "taro-flavored",
-          "name": "Taro Flavored - Taro Aromalı",
-          "code": "Taro Flavored",
-          "attributes": {}
-        },
-        {
-          "id": "blue-velvet",
-          "name": "Blue Velvet - Mavi Pan Kek Aromalı",
-          "code": "Blue Velvet",
-          "attributes": {}
-        },
-        {
-          "id": "caramelized-biscuit",
-          "name": "Caramelized Biscuit - Karamelize Bisküvili",
-          "code": "Caramelized Biscuit",
-          "attributes": {}
-        },
-        {
-          "id": "hazelnut-oil-base",
-          "name": "Hazelnut (Oil Base) - Fındıklı (Yağ Bazlı)",
-          "code": "Hazelnut (Oil Base)",
-          "attributes": {}
-        },
-        {
-          "id": "pink-cotton-candy-flavored",
-          "name": "Pink Cotton Candy Flavored - Pembe Pamuk Şekeri Aromalı",
-          "code": "Pink Cotton Candy Flavored",
-          "attributes": {}
-        },
-        {
-          "id": "pistachio",
-          "name": "Pistachio - Antep Fıstıklı",
-          "code": "Pistachio",
-          "attributes": {}
-        },
-        {
-          "id": "rose",
-          "name": "Rose - Gül Aromalı",
-          "code": "Rose",
-          "attributes": {}
-        },
-        {
-          "id": "saffron-flavored",
-          "name": "Saffron Flavored - Safran Aromalı",
-          "code": "Saffron Flavored",
-          "attributes": {}
-        },
-        {
-          "id": "toffee-caramel",
-          "name": "Toffee Caramel - Toffee Karamelli",
-          "code": "Toffee Caramel",
-          "attributes": {}
-        },
-        {
-          "id": "white-chocolate-flavored",
-          "name": "White Chocolate Flavored - Beyaz Çikolata Aromalı",
-          "code": "White Chocolate Flavored",
-          "attributes": {}
-        },
-        {
-          "id": "white-hazelnut",
-          "name": "White Hazelnut - Beyaz Fındıklı",
-          "code": "White Hazelnut",
-          "attributes": {}
-        },
-        {
-          "id": "banana-flavored",
-          "name": "Banana Flavored - Muz Aromalı",
-          "code": "Banana Flavored",
-          "attributes": {}
-        },
-        {
-          "id": "blue-curacao-flavored",
-          "name": "Blue Curacao Flavored - Turunç Aromalı",
-          "code": "Blue Curacao Flavored",
-          "attributes": {}
-        },
-        {
-          "id": "caramel-flavored",
-          "name": "Caramel Flavored - Karamel Aromalı",
-          "code": "Caramel Flavored",
-          "attributes": {}
-        },
-        {
-          "id": "chocolate-flavored",
-          "name": "Chocolate Flavored - Çikolata Aromalı",
-          "code": "Chocolate Flavored",
-          "attributes": {}
-        },
-        {
-          "id": "kiwi-flavored",
-          "name": "Kiwi Flavored - Kivi Aromalı",
-          "code": "Kiwi Flavored",
-          "attributes": {}
-        },
-        {
-          "id": "maple",
-          "name": "Maple - Akçaağaç Aromalı",
-          "code": "Maple",
-          "attributes": {}
-        },
-        {
-          "id": "strawberry-flavored",
-          "name": "Strawberry Flavored - Çilek Aromalı",
-          "code": "Strawberry Flavored",
-          "attributes": {}
-        },
-        {
-          "id": "vanilla-flavored",
-          "name": "Vanilla Flavored - Vanilya Aromalı",
-          "code": "Vanilla Flavored",
-          "attributes": {}
-        },
-        {
-          "id": "cocoa-cream-sauce-dark",
-          "name": "Cocoa Cream Sauce (Dark) - Kakaolu Krema Sos (Bitter)",
-          "code": "Cocoa Cream Sauce (Dark)",
-          "attributes": {}
-        },
-        {
-          "id": "hazelnut-cream-sauce",
-          "name": "Hazelnut Cream Sauce - Fındıklı Krema Sos",
-          "code": "Hazelnut Cream Sauce",
-          "attributes": {}
-        },
-        {
-          "id": "milky-cacao-cream-sauce",
-          "name": "Milky Cacao Cream Sauce - Sütlü Kakaolu Krema Sos",
-          "code": "Milky Cacao Cream Sauce",
-          "attributes": {}
-        },
-        {
-          "id": "pistachio-cream-sauce",
-          "name": "Pistachio Cream Sauce - Antep Fıstıklı Krema Sos",
-          "code": "Pistachio Cream Sauce",
-          "attributes": {}
-        },
-        {
-          "id": "white-cream-sauce",
-          "name": "White Cream Sauce - Beyaz Krema Sos",
-          "code": "White Cream Sauce",
-          "attributes": {}
-        },
-        {
-          "id": "banana-cream-sauce",
-          "name": "Banana Cream Sauce - Muz Krema Sos",
-          "code": "Banana Cream Sauce",
-          "attributes": {}
-        },
-        {
-          "id": "caramel-flavored-cream-sauce",
-          "name": "Caramel Flavored Cream Sauce - Karamel Aromalı Krema Sos",
-          "code": "Caramel Flavored Cream Sauce",
-          "attributes": {}
-        },
-        {
-          "id": "mango-cream-sauce",
-          "name": "Mango Cream Sauce - Mango Krema Sos",
-          "code": "Mango Cream Sauce",
-          "attributes": {}
-        },
-        {
-          "id": "raspberry-cream-sauce",
-          "name": "Raspberry Cream Sauce - Frambuaz Krema Sos",
-          "code": "Raspberry Cream Sauce",
-          "attributes": {}
-        },
-        {
-          "id": "strawberry-cream-sauce",
-          "name": "Strawberry Cream Sauce - Çilek Krema Sos",
-          "code": "Strawberry Cream Sauce",
-          "attributes": {}
-        },
-        {
-          "id": "walnut-cream-sauce",
-          "name": "Walnut Cream Sauce - Cevizli Krema Sos",
-          "code": "Walnut Cream Sauce",
-          "attributes": {}
-        },
-        {
-          "id": "8-kinds-cesit",
-          "name": "8 Kinds Çeşit - 750 g",
-          "code": "8 Kinds Çeşit",
-          "attributes": {}
-        },
-        {
-          "id": "12-kinds-cesit",
-          "name": "12 Kinds Çeşit - 940 g",
-          "code": "12 Kinds Çeşit",
-          "attributes": {}
-        },
-        {
-          "id": "14-kinds-cesit",
-          "name": "14 Kinds Çeşit - 940 g - 350 g",
-          "code": "14 Kinds Çeşit",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          23,
-          27
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
       "id": "family-0013",
       "slug": "fo-meyve-pureleri",
       "brand": "FO",
       "name": "Meyve Püreleri",
-      "category": "Şurup ve Püreler",
-      "subcategory": "Meyve püreleri",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
       "summary": "FO Meyve Püreleri ürün ailesi ve katalogda yer alan seçenekleri.",
       "description": "FO Meyve Püreleri ürün ailesi ve katalogda yer alan seçenekleri.",
       "features": [],
-      "specifications": {},
+      "specifications": {
+        "Ambalaj Excel 73": "6",
+        "Ambalaj Excel 74": "6",
+        "Ambalaj Excel 78": "6",
+        "Ambalaj Excel 81": "6",
+        "Ambalaj Excel 82": "6",
+        "Ambalaj Excel 83": "6"
+      },
       "images": [
         {
           "id": "image-web-01",
@@ -1967,6 +1295,54 @@
           "name": "24 Kinds Çeşit - 1000 g",
           "code": "24 Kinds Çeşit",
           "attributes": {}
+        },
+        {
+          "id": "excel-73",
+          "name": "FO ÇİLEK PÜRE 1 LİTRE NORMAL PÜRE ÇEŞİTLERİ",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-74",
+          "name": "FO NAR PÜRE 1000",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-78",
+          "name": "FO TROPİKAL PÜRE ÇEŞİTLERİ 1000 GR",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-81",
+          "name": "FO BÖĞÜRTLEN PÜRE 1000 GR",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-82",
+          "name": "FO FRAMBUGAZ PÜRE 1000 GR",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-83",
+          "name": "FO YABANMERSİNİ PÜRE 1000 GR",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
         }
       ],
       "source": {
@@ -1980,430 +1356,18 @@
       "status": "published"
     },
     {
-      "id": "family-0014",
-      "slug": "fo-topping-soslari",
-      "brand": "FO",
-      "name": "Topping Sosları",
-      "category": "Soslar",
-      "subcategory": "Topping sosları",
-      "summary": "FO Topping Sosları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Topping Sosları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-topping-soslari/web-30590c1a1d27.webp",
-          "thumbnailSrc": "assets/products/fo/fo-topping-soslari/web-30590c1a1d27-thumb.webp",
-          "alt": "FO Topping Sosları",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "banana",
-          "name": "Banana - Muzlu",
-          "code": "Banana",
-          "attributes": {}
-        },
-        {
-          "id": "blackberry",
-          "name": "Blackberry - Böğürtlenli",
-          "code": "Blackberry",
-          "attributes": {}
-        },
-        {
-          "id": "black-mulberry",
-          "name": "Black Mulberry - Karadutlu",
-          "code": "Black Mulberry",
-          "attributes": {}
-        },
-        {
-          "id": "blueberry",
-          "name": "Blueberry - Yaban Mersinli",
-          "code": "Blueberry",
-          "attributes": {}
-        },
-        {
-          "id": "caramel-flavored",
-          "name": "Caramel Flavored - Karamel Aromalı",
-          "code": "Caramel Flavored",
-          "attributes": {}
-        },
-        {
-          "id": "chocolate",
-          "name": "Chocolate - Çikolatalı",
-          "code": "Chocolate",
-          "attributes": {}
-        },
-        {
-          "id": "green-apple",
-          "name": "Green Apple - Yeşil Elmalı",
-          "code": "Green Apple",
-          "attributes": {}
-        },
-        {
-          "id": "hazelnut-water-base",
-          "name": "Hazelnut (Water Base) - Fındıklı (Su Bazlı)",
-          "code": "Hazelnut (Water Base)",
-          "attributes": {}
-        },
-        {
-          "id": "kiwi",
-          "name": "Kiwi - Kivili",
-          "code": "Kiwi",
-          "attributes": {}
-        },
-        {
-          "id": "lemon",
-          "name": "Lemon - Limonlu",
-          "code": "Lemon",
-          "attributes": {}
-        },
-        {
-          "id": "mango",
-          "name": "Mango - Mangolu",
-          "code": "Mango",
-          "attributes": {}
-        },
-        {
-          "id": "melon",
-          "name": "Melon - Kavunlu",
-          "code": "Melon",
-          "attributes": {}
-        },
-        {
-          "id": "milky-caramel",
-          "name": "Milky Caramel - Sütlü Karamelli",
-          "code": "Milky Caramel",
-          "attributes": {}
-        },
-        {
-          "id": "milky-chocolate",
-          "name": "Milky Chocolate - Sütlü Çikolatalı",
-          "code": "Milky Chocolate",
-          "attributes": {}
-        },
-        {
-          "id": "orange",
-          "name": "Orange - Portakallı",
-          "code": "Orange",
-          "attributes": {}
-        },
-        {
-          "id": "peach",
-          "name": "Peach - Şeftalili",
-          "code": "Peach",
-          "attributes": {}
-        },
-        {
-          "id": "pistachio",
-          "name": "Pistachio - Antep Fıstıklı",
-          "code": "Pistachio",
-          "attributes": {}
-        },
-        {
-          "id": "raspberry",
-          "name": "Raspberry - Frambuazlı",
-          "code": "Raspberry",
-          "attributes": {}
-        },
-        {
-          "id": "strawberry",
-          "name": "Strawberry - Çilekli",
-          "code": "Strawberry",
-          "attributes": {}
-        },
-        {
-          "id": "sour-cherry",
-          "name": "Sour Cherry - Vişneli",
-          "code": "Sour Cherry",
-          "attributes": {}
-        },
-        {
-          "id": "walnut",
-          "name": "Walnut - Cevizli",
-          "code": "Walnut",
-          "attributes": {}
-        },
-        {
-          "id": "watermelon",
-          "name": "Watermelon - Karpuzlu",
-          "code": "Watermelon",
-          "attributes": {}
-        },
-        {
-          "id": "white-chocolate",
-          "name": "White Chocolate - Beyaz Çikolatalı",
-          "code": "White Chocolate",
-          "attributes": {}
-        },
-        {
-          "id": "wildberries",
-          "name": "Wildberries - Orman Meyveli",
-          "code": "Wildberries",
-          "attributes": {}
-        },
-        {
-          "id": "caramel",
-          "name": "Caramel - Karamelli",
-          "code": "Caramel",
-          "attributes": {}
-        },
-        {
-          "id": "hazelnut",
-          "name": "Hazelnut - Fındıklı",
-          "code": "Hazelnut",
-          "attributes": {}
-        },
-        {
-          "id": "24-kinds-cesit",
-          "name": "24 Kinds Çeşit - 1000 g",
-          "code": "24 Kinds Çeşit",
-          "attributes": {}
-        },
-        {
-          "id": "10-kinds-cesit",
-          "name": "10 Kinds Çeşit - 350 g",
-          "code": "10 Kinds Çeşit",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          26
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0015",
-      "slug": "fo-mocktail-karisimlari",
-      "brand": "FO",
-      "name": "Mocktail Karışımları",
-      "category": "Bar Ürünleri",
-      "subcategory": "Mocktail karışımları",
-      "summary": "FO Mocktail Karışımları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Mocktail Karışımları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-mocktail-karisimlari/web-887db69e734f.webp",
-          "thumbnailSrc": "assets/products/fo/fo-mocktail-karisimlari/web-887db69e734f-thumb.webp",
-          "alt": "FO Mocktail Karışımları",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "mocktail-karisimlari",
-          "name": "Katalog seçeneği",
-          "code": "",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          28
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0016",
-      "slug": "fo-meyveli-suruplar-serisi",
-      "brand": "FO",
-      "name": "Meyveli Şuruplar Serisi",
-      "category": "Şurup ve Püreler",
-      "subcategory": "Meyveli şuruplar",
-      "summary": "FO Meyveli Şuruplar Serisi ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Meyveli Şuruplar Serisi ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-meyveli-suruplar-serisi/web-c65344cd4e37.webp",
-          "thumbnailSrc": "assets/products/fo/fo-meyveli-suruplar-serisi/web-c65344cd4e37-thumb.webp",
-          "alt": "FO Meyveli Şuruplar Serisi",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "kiwi",
-          "name": "Kiwi - Kivi %20",
-          "code": "Kiwi",
-          "attributes": {}
-        },
-        {
-          "id": "lemon",
-          "name": "Lemon - Limon %20",
-          "code": "Lemon",
-          "attributes": {}
-        },
-        {
-          "id": "orange",
-          "name": "Orange - Portakal %20",
-          "code": "Orange",
-          "attributes": {}
-        },
-        {
-          "id": "sour-cherry",
-          "name": "Sour Cherry - Vişne %20",
-          "code": "Sour Cherry",
-          "attributes": {}
-        },
-        {
-          "id": "strawberry",
-          "name": "Strawberry - Çilek %20",
-          "code": "Strawberry",
-          "attributes": {}
-        },
-        {
-          "id": "bergamut",
-          "name": "Bergamut - Bergamot",
-          "code": "Bergamut",
-          "attributes": {}
-        },
-        {
-          "id": "chai-concentre",
-          "name": "Chai Concentre - Chai Konsantre",
-          "code": "Chai Concentre",
-          "attributes": {}
-        },
-        {
-          "id": "mango",
-          "name": "Mango - Mango",
-          "code": "Mango",
-          "attributes": {}
-        },
-        {
-          "id": "peach",
-          "name": "Peach - Şeftali",
-          "code": "Peach",
-          "attributes": {}
-        },
-        {
-          "id": "caramel",
-          "name": "Caramel - Karamel",
-          "code": "Caramel",
-          "attributes": {}
-        },
-        {
-          "id": "chocolate",
-          "name": "Chocolate - Çikolata",
-          "code": "Chocolate",
-          "attributes": {}
-        },
-        {
-          "id": "hazelnut",
-          "name": "Hazelnut - Fındık",
-          "code": "Hazelnut",
-          "attributes": {}
-        },
-        {
-          "id": "tiramisu",
-          "name": "Tiramisu - Tiramisu",
-          "code": "Tiramisu",
-          "attributes": {}
-        },
-        {
-          "id": "vanilla",
-          "name": "Vanilla - Vanilya",
-          "code": "Vanilla",
-          "attributes": {}
-        },
-        {
-          "id": "white-chocolate",
-          "name": "White Chocolate - Beyaz Çikolata",
-          "code": "White Chocolate",
-          "attributes": {}
-        },
-        {
-          "id": "blue-hawaii",
-          "name": "Blue Hawaii - Hindistan Cevizi",
-          "code": "Blue Hawaii",
-          "attributes": {}
-        },
-        {
-          "id": "cosmopolitan",
-          "name": "Cosmopolitan - Nar ve Portakal",
-          "code": "Cosmopolitan",
-          "attributes": {}
-        },
-        {
-          "id": "margarita",
-          "name": "Margarita - Misket Limon",
-          "code": "Margarita",
-          "attributes": {}
-        },
-        {
-          "id": "pina-colada",
-          "name": "Pina Colada - Hindistan Cevizi ve Ananas",
-          "code": "Pina Colada",
-          "attributes": {}
-        },
-        {
-          "id": "sea-garden",
-          "name": "Sea Garden - Mango",
-          "code": "Sea Garden",
-          "attributes": {}
-        },
-        {
-          "id": "x-on-the-beach",
-          "name": "X On The Beach - Portakal, Şeftali ve Nar",
-          "code": "X On The Beach",
-          "attributes": {}
-        },
-        {
-          "id": "6-kinds-cesit",
-          "name": "6 Kinds Çeşit - 700 ml",
-          "code": "6 Kinds Çeşit",
-          "attributes": {}
-        },
-        {
-          "id": "5-kinds-cesit",
-          "name": "5 Kinds Çeşit - 700 ml",
-          "code": "5 Kinds Çeşit",
-          "attributes": {}
-        },
-        {
-          "id": "1-2-kinds-cesit",
-          "name": "1 2 Kinds Çeşit - 750 ml",
-          "code": "1 2 Kinds Çeşit",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          29
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
       "id": "family-0017",
       "slug": "fo-aromali-icecek-tozlari",
       "brand": "FO",
       "name": "Aromalı İçecek Tozları",
-      "category": "İçecekler",
-      "subcategory": "İçecek tozları",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Toz İçecekler",
       "summary": "FO Aromalı İçecek Tozları ürün ailesi ve katalogda yer alan seçenekleri.",
       "description": "FO Aromalı İçecek Tozları ürün ailesi ve katalogda yer alan seçenekleri.",
       "features": [],
-      "specifications": {},
+      "specifications": {
+        "Ambalaj Excel 142": "1 ADET"
+      },
       "images": [
         {
           "id": "image-web-01",
@@ -2588,6 +1552,14 @@
           "name": "4 Kinds Çeşit - 1000 g",
           "code": "4 Kinds Çeşit",
           "attributes": {}
+        },
+        {
+          "id": "excel-142",
+          "name": "FO QUATRO TOZ İÇECEK",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "1 ADET"
+          }
         }
       ],
       "source": {
@@ -2600,492 +1572,22 @@
       "status": "published"
     },
     {
-      "id": "family-0018",
-      "slug": "fo-donuk-meyveli-icecekler",
-      "brand": "FO",
-      "name": "Donuk Meyveli İçecekler",
-      "category": "İçecekler",
-      "subcategory": "Donuk içecekler",
-      "summary": "FO Donuk Meyveli İçecekler ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Donuk Meyveli İçecekler ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-donuk-meyveli-icecekler/web-524261d811ae.webp",
-          "thumbnailSrc": "assets/products/fo/fo-donuk-meyveli-icecekler/web-524261d811ae-thumb.webp",
-          "alt": "FO Donuk Meyveli İçecekler",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "frozen-black-mullberry",
-          "name": "Frozen Black Mullberry - Donuk Karadut",
-          "code": "Frozen Black Mullberry",
-          "attributes": {}
-        },
-        {
-          "id": "frozen-lemon",
-          "name": "Frozen Lemon - Donuk Limonata",
-          "code": "Frozen Lemon",
-          "attributes": {}
-        },
-        {
-          "id": "frozen-orange",
-          "name": "Frozen Orange - Donuk Portakal",
-          "code": "Frozen Orange",
-          "attributes": {}
-        },
-        {
-          "id": "frozen-strawberry",
-          "name": "Frozen Strawberry - Donuk Çilek",
-          "code": "Frozen Strawberry",
-          "attributes": {}
-        },
-        {
-          "id": "frozen-wildberry",
-          "name": "Frozen Wildberry - Donuk Orman Meyvesi",
-          "code": "Frozen Wildberry",
-          "attributes": {}
-        },
-        {
-          "id": "banana",
-          "name": "Banana - Muz",
-          "code": "Banana",
-          "attributes": {}
-        },
-        {
-          "id": "blackberry",
-          "name": "Blackberry - Böğürtlen",
-          "code": "Blackberry",
-          "attributes": {}
-        },
-        {
-          "id": "black-mulberry",
-          "name": "Black Mulberry - Karadut",
-          "code": "Black Mulberry",
-          "attributes": {}
-        },
-        {
-          "id": "blueberry",
-          "name": "Blueberry - Yaban Mersini",
-          "code": "Blueberry",
-          "attributes": {}
-        },
-        {
-          "id": "blueberry-blue",
-          "name": "Blueberry (Blue) - Yaban Mersini (Mavi)",
-          "code": "Blueberry (Blue)",
-          "attributes": {}
-        },
-        {
-          "id": "blue-curacao",
-          "name": "Blue Curacao - Turunç",
-          "code": "Blue Curacao",
-          "attributes": {}
-        },
-        {
-          "id": "blueberry-raspberry",
-          "name": "Blueberry Raspberry - Mavi Frambuaz",
-          "code": "Blueberry Raspberry",
-          "attributes": {}
-        },
-        {
-          "id": "caramel",
-          "name": "Caramel - Karamel",
-          "code": "Caramel",
-          "attributes": {}
-        },
-        {
-          "id": "caramel-blue-angel",
-          "name": "Caramel (Blue Angel) - Karamel",
-          "code": "Caramel (Blue Angel)",
-          "attributes": {}
-        },
-        {
-          "id": "caramel-pink-angel",
-          "name": "Caramel (Pink Angel) - Karamel",
-          "code": "Caramel (Pink Angel)",
-          "attributes": {}
-        },
-        {
-          "id": "coco",
-          "name": "Coco - Hindistan Cevizi",
-          "code": "Coco",
-          "attributes": {}
-        },
-        {
-          "id": "kiwi",
-          "name": "Kiwi - Kivi",
-          "code": "Kiwi",
-          "attributes": {}
-        },
-        {
-          "id": "lemon",
-          "name": "Lemon - Limon",
-          "code": "Lemon",
-          "attributes": {}
-        },
-        {
-          "id": "mandarin",
-          "name": "Mandarin - Mandalina",
-          "code": "Mandarin",
-          "attributes": {}
-        },
-        {
-          "id": "mango",
-          "name": "Mango - Mango",
-          "code": "Mango",
-          "attributes": {}
-        },
-        {
-          "id": "mastic",
-          "name": "Mastic - Damla Sakızı",
-          "code": "Mastic",
-          "attributes": {}
-        },
-        {
-          "id": "melon",
-          "name": "Melon - Kavun",
-          "code": "Melon",
-          "attributes": {}
-        },
-        {
-          "id": "orange",
-          "name": "Orange - Portakal",
-          "code": "Orange",
-          "attributes": {}
-        },
-        {
-          "id": "pineapple",
-          "name": "Pineapple - Ananas",
-          "code": "Pineapple",
-          "attributes": {}
-        },
-        {
-          "id": "grenadine",
-          "name": "Grenadine - Nar",
-          "code": "Grenadine",
-          "attributes": {}
-        },
-        {
-          "id": "sour-cherry",
-          "name": "Sour Cherry - Vişne",
-          "code": "Sour Cherry",
-          "attributes": {}
-        },
-        {
-          "id": "strawberry",
-          "name": "Strawberry - Çilek",
-          "code": "Strawberry",
-          "attributes": {}
-        },
-        {
-          "id": "watermelon",
-          "name": "Watermelon - Karpuz",
-          "code": "Watermelon",
-          "attributes": {}
-        },
-        {
-          "id": "wildberries",
-          "name": "Wildberries - Orman Meyve",
-          "code": "Wildberries",
-          "attributes": {}
-        },
-        {
-          "id": "1-kindcesit",
-          "name": "1 KindÇeşit - 1000 g",
-          "code": "1 KindÇeşit",
-          "attributes": {}
-        },
-        {
-          "id": "26-maple",
-          "name": "26 Maple - Akçaağaç",
-          "code": "26 Maple",
-          "attributes": {}
-        },
-        {
-          "id": "26-kinds-cesit",
-          "name": "26 Kinds Çeşit - 6000 g",
-          "code": "26 Kinds Çeşit",
-          "attributes": {}
-        },
-        {
-          "id": "5-kinds-cesit",
-          "name": "5 Kinds Çeşit - 900 g",
-          "code": "5 Kinds Çeşit",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          31
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0019",
-      "slug": "fo-aromali-icecek-bazlari",
-      "brand": "FO",
-      "name": "Aromalı İçecek Bazları",
-      "category": "İçecekler",
-      "subcategory": "İçecek bazları",
-      "summary": "FO Aromalı İçecek Bazları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Aromalı İçecek Bazları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-aromali-icecek-bazlari/web-524261d811ae.webp",
-          "thumbnailSrc": "assets/products/fo/fo-aromali-icecek-bazlari/web-524261d811ae-thumb.webp",
-          "alt": "FO Aromalı İçecek Bazları",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "cactus",
-          "name": "Cactus - Kaktüs",
-          "code": "Cactus",
-          "attributes": {}
-        },
-        {
-          "id": "berry-hibiscus",
-          "name": "Berry Hibiscus - Hibiskus ve Orman Meyvesi",
-          "code": "Berry Hibiscus",
-          "attributes": {}
-        },
-        {
-          "id": "orange-mango",
-          "name": "Orange & Mango - Portakal ve Mango",
-          "code": "Orange & Mango",
-          "attributes": {}
-        },
-        {
-          "id": "blueberry-lychee",
-          "name": "Blueberry & Lychee - Yaban Mersini ve Liçi",
-          "code": "Blueberry & Lychee",
-          "attributes": {}
-        },
-        {
-          "id": "strawberry-acai",
-          "name": "Strawberry & Acai - Çilek ve Açai",
-          "code": "Strawberry & Acai",
-          "attributes": {}
-        },
-        {
-          "id": "mango-dragon-fruit",
-          "name": "Mango & Dragon Fruit - Mango ve Ejder Meyvesi",
-          "code": "Mango & Dragon Fruit",
-          "attributes": {}
-        },
-        {
-          "id": "sakura-and-white-peach",
-          "name": "Sakura and White Peach - Sakura ve Beyaz Şeftali",
-          "code": "Sakura and White Peach",
-          "attributes": {}
-        },
-        {
-          "id": "grenadine",
-          "name": "Grenadine - Nar",
-          "code": "Grenadine",
-          "attributes": {}
-        },
-        {
-          "id": "passion-and-guava",
-          "name": "Passion and Guava - Çarkıfelek ve Guava",
-          "code": "Passion and Guava",
-          "attributes": {}
-        },
-        {
-          "id": "mangosteen",
-          "name": "Mangosteen - Mangostan",
-          "code": "Mangosteen",
-          "attributes": {}
-        },
-        {
-          "id": "11-kinds-cesit",
-          "name": "11 Kinds Çeşit - 250 ml",
-          "code": "11 Kinds Çeşit",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          32,
-          33
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0020",
-      "slug": "fo-surulebilir-kremalar",
-      "brand": "FO",
-      "name": "Sürülebilir Kremalar",
-      "category": "Soslar",
-      "subcategory": "Sürülebilir krema",
-      "summary": "FO Sürülebilir Kremalar ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Sürülebilir Kremalar ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-surulebilir-kremalar/web-b7fe8e6664ef.webp",
-          "thumbnailSrc": "assets/products/fo/fo-surulebilir-kremalar/web-b7fe8e6664ef-thumb.webp",
-          "alt": "FO Sürülebilir Kremalar",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "pistachio-spread",
-          "name": "Pistachio Spread - Antep Fıstıklı Sürülebilir Krema",
-          "code": "Pistachio Spread",
-          "attributes": {}
-        },
-        {
-          "id": "black-biscuit-spread",
-          "name": "Black Biscuit Spread - Siyah Bisküvili Sürülebilir Krema",
-          "code": "Black Biscuit Spread",
-          "attributes": {}
-        },
-        {
-          "id": "biscuit-spread",
-          "name": "Biscuit Spread - Karamelize Bisküvili Sürülebilir Krema",
-          "code": "Biscuit Spread",
-          "attributes": {}
-        },
-        {
-          "id": "nutty-chocolate-spread",
-          "name": "Nutty Chocolate Spread - Kakaolu Fındık Kreması",
-          "code": "Nutty Chocolate Spread",
-          "attributes": {}
-        },
-        {
-          "id": "peanut-butter-spread",
-          "name": "Peanut Butter Spread - Yer Fıstıklı Sürülebilir Krema",
-          "code": "Peanut Butter Spread",
-          "attributes": {}
-        },
-        {
-          "id": "caramelized-biscuit-spread",
-          "name": "Caramelized Biscuit Spread - Karamelize Bisküvili",
-          "code": "Caramelized Biscuit Spread",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          34,
-          35
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0021",
-      "slug": "fo-eclipse-sos",
-      "brand": "FO",
-      "name": "Eclipse Sos",
-      "category": "Soslar",
-      "subcategory": "Özel seri",
-      "summary": "FO Eclipse Sos ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Eclipse Sos ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-eclipse-sos/web-c9957dce33d9.webp",
-          "thumbnailSrc": "assets/products/fo/fo-eclipse-sos/web-c9957dce33d9-thumb.webp",
-          "alt": "FO Eclipse Sos",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "eclipse-sos",
-          "name": "Katalog seçeneği",
-          "code": "",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          36,
-          37
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0022",
-      "slug": "fo-yogunlastirilmis-sut",
-      "brand": "FO",
-      "name": "Yoğunlaştırılmış Süt",
-      "category": "İçecekler",
-      "subcategory": "Yoğunlaştırılmış süt",
-      "summary": "FO Yoğunlaştırılmış Süt ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "FO Yoğunlaştırılmış Süt ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/fo/fo-yogunlastirilmis-sut/web-8e1ea15cb066.webp",
-          "thumbnailSrc": "assets/products/fo/fo-yogunlastirilmis-sut/web-8e1ea15cb066-thumb.webp",
-          "alt": "FO Yoğunlaştırılmış Süt",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "yogunlastirilmis-sut",
-          "name": "Katalog seçeneği",
-          "code": "",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "FO HORECA 37 .yıl.pdf",
-        "pages": [
-          38
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
       "id": "family-0023",
       "slug": "kimbo-horeca-cekirdek-kahveler",
       "brand": "Kimbo",
       "name": "Horeca Çekirdek Kahveler",
       "category": "Kahve",
-      "subcategory": "Çekirdek kahve",
+      "subcategory": "Çekirdek Kahve",
       "summary": "Kimbo Horeca Çekirdek Kahveler ürün ailesi ve katalogda yer alan seçenekleri.",
       "description": "Kimbo Horeca Çekirdek Kahveler ürün ailesi ve katalogda yer alan seçenekleri.",
       "features": [],
       "specifications": {
-        "Ürün Kodu": "14003 / Koli İçeriği: 6 Adet Ürün Kodu: 14088 / Koli İçeriği: 6 Adet"
+        "Ürün Kodu": "14003 / Koli İçeriği: 6 Adet Ürün Kodu: 14088 / Koli İçeriği: 6 Adet",
+        "Ambalaj Excel 10": "6",
+        "Ambalaj Excel 11": "6",
+        "Ambalaj Excel 12": "6",
+        "Ambalaj Excel 21": "20",
+        "Ambalaj Excel 22": "20"
       },
       "images": [
         {
@@ -3121,6 +1623,46 @@
           "name": "Model 14841",
           "code": "14841",
           "attributes": {}
+        },
+        {
+          "id": "excel-10",
+          "name": "KİMBO İNTENSO ÇEKİRDEK KAHVE 1 KG",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-11",
+          "name": "KİMBO EXTRA CREAM ÇEKİRDEK KAHVE 1 KG",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-12",
+          "name": "KİMBO AUDACE LİGHT ROSAT 1 KG",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-21",
+          "name": "KİMBO İNTENSO FİLİTRE KAHVE 250 GR",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "20"
+          }
+        },
+        {
+          "id": "excel-22",
+          "name": "KİMBO İTALİNO FİLİTRE KAHVE 205 GR",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "20"
+          }
         }
       ],
       "source": {
@@ -3134,63 +1676,20 @@
       "status": "published"
     },
     {
-      "id": "family-0024",
-      "slug": "kimbo-horeca-filtre-kahveler",
-      "brand": "Kimbo",
-      "name": "Horeca Filtre Kahveler",
-      "category": "Kahve",
-      "subcategory": "Filtre kahve",
-      "summary": "Kimbo Horeca Filtre Kahveler ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "Kimbo Horeca Filtre Kahveler ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {
-        "Ürün Kodu": "10180 / Koli İçeriği: 20 Adet"
-      },
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/kimbo/kimbo-horeca-filtre-kahveler/web-54e979bb7273.webp",
-          "thumbnailSrc": "assets/products/kimbo/kimbo-horeca-filtre-kahveler/web-54e979bb7273-thumb.webp",
-          "alt": "Kimbo Horeca Filtre Kahveler",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "model-10180",
-          "name": "Model 10180",
-          "code": "10180",
-          "attributes": {}
-        },
-        {
-          "id": "model-10023",
-          "name": "Model 10023",
-          "code": "10023",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "Kimbo 2025 New Katalog.pdf",
-        "pages": [
-          8
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
       "id": "family-0025",
       "slug": "kimbo-nespresso-uyumlu-kapsuller",
       "brand": "Kimbo",
       "name": "Nespresso Uyumlu Kapsüller",
-      "category": "Kahve",
-      "subcategory": "Kapsül kahve",
+      "category": "Kahve Makineleri",
+      "subcategory": "Espresso Kahve Makineleri",
       "summary": "Kimbo Nespresso Uyumlu Kapsüller ürün ailesi ve katalogda yer alan seçenekleri.",
       "description": "Kimbo Nespresso Uyumlu Kapsüller ürün ailesi ve katalogda yer alan seçenekleri.",
       "features": [],
       "specifications": {
-        "Ürün Kodu": "14492 Ürün Kodu: 14494 Ürün Kodu: 14493"
+        "Ürün Kodu": "14492 Ürün Kodu: 14494 Ürün Kodu: 14493",
+        "Ambalaj Excel 23": "100",
+        "Ambalaj Excel 24": "100",
+        "Ambalaj Excel 26": "100"
       },
       "images": [
         {
@@ -3220,6 +1719,30 @@
           "name": "Model 14493",
           "code": "14493",
           "attributes": {}
+        },
+        {
+          "id": "excel-23",
+          "name": "KİMBO ARMONİA KAPSUL KAHVE NESPRESSO",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "100"
+          }
+        },
+        {
+          "id": "excel-24",
+          "name": "KİMBO İNTENSO KAPSUL KAHVE NESPRESSO",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "100"
+          }
+        },
+        {
+          "id": "excel-26",
+          "name": "KİMBO NAPOLİ KAPSUL KAHVE NESPRESSO",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "100"
+          }
         }
       ],
       "source": {
@@ -3236,13 +1759,14 @@
       "slug": "kimbo-blue-uyumlu-kapsuller",
       "brand": "Kimbo",
       "name": "Blue Uyumlu Kapsüller",
-      "category": "Kahve",
-      "subcategory": "Kapsül kahve",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
       "summary": "Kimbo Blue Uyumlu Kapsüller ürün ailesi ve katalogda yer alan seçenekleri.",
       "description": "Kimbo Blue Uyumlu Kapsüller ürün ailesi ve katalogda yer alan seçenekleri.",
       "features": [],
       "specifications": {
-        "Ürün Kodu": "14198 Ürün Kodu: 14199"
+        "Ürün Kodu": "14198 Ürün Kodu: 14199",
+        "Ambalaj Excel 25": "100"
       },
       "images": [
         {
@@ -3266,6 +1790,14 @@
           "name": "Model 14199",
           "code": "14199",
           "attributes": {}
+        },
+        {
+          "id": "excel-25",
+          "name": "KİMBO BLUE NAPOLİ KAPSUL KAHVE",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "100"
+          }
         }
       ],
       "source": {
@@ -3278,436 +1810,20 @@
       "status": "published"
     },
     {
-      "id": "family-0027",
-      "slug": "kimbo-retail-cekirdek-kahveler",
-      "brand": "Kimbo",
-      "name": "Retail Çekirdek Kahveler",
-      "category": "Kahve",
-      "subcategory": "Çekirdek kahve",
-      "summary": "Kimbo Retail Çekirdek Kahveler ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "Kimbo Retail Çekirdek Kahveler ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {
-        "Ürün Kodu": "14096 / Koli İçeriği: 12 Adet Ürün Kodu: 14099 / Koli İçeriği: 12 Adet"
-      },
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/kimbo/kimbo-retail-cekirdek-kahveler/web-89a4d1700216.webp",
-          "thumbnailSrc": "assets/products/kimbo/kimbo-retail-cekirdek-kahveler/web-89a4d1700216-thumb.webp",
-          "alt": "Kimbo Retail Çekirdek Kahveler",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "model-14096",
-          "name": "Model 14096",
-          "code": "14096",
-          "attributes": {}
-        },
-        {
-          "id": "model-14099",
-          "name": "Model 14099",
-          "code": "14099",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "Kimbo 2025 New Katalog.pdf",
-        "pages": [
-          12
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0028",
-      "slug": "kimbo-retail-filtre-kahveler",
-      "brand": "Kimbo",
-      "name": "Retail Filtre Kahveler",
-      "category": "Kahve",
-      "subcategory": "Filtre kahve",
-      "summary": "Kimbo Retail Filtre Kahveler ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "Kimbo Retail Filtre Kahveler ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {
-        "Ürün Kodu": "14046",
-        "Koli İçeriği": "12 Adet"
-      },
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/kimbo/kimbo-retail-filtre-kahveler/web-ed42db9ade17.webp",
-          "thumbnailSrc": "assets/products/kimbo/kimbo-retail-filtre-kahveler/web-ed42db9ade17-thumb.webp",
-          "alt": "Kimbo Retail Filtre Kahveler",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "model-14046",
-          "name": "Model 14046",
-          "code": "14046",
-          "attributes": {}
-        },
-        {
-          "id": "model-14047",
-          "name": "Model 14047",
-          "code": "14047",
-          "attributes": {}
-        },
-        {
-          "id": "model-14048",
-          "name": "Model 14048",
-          "code": "14048",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "Kimbo 2025 New Katalog.pdf",
-        "pages": [
-          13
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0029",
-      "slug": "ocay-klasik-bitki-caylari",
-      "brand": "Oçay",
-      "name": "Klasik Bitki Çayları",
-      "category": "Çay",
-      "subcategory": "Bitki çayı",
-      "summary": "Oçay Klasik Bitki Çayları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "Oçay Klasik Bitki Çayları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/ocay/ocay-klasik-bitki-caylari/web-13cd54019963.webp",
-          "thumbnailSrc": "assets/products/ocay/ocay-klasik-bitki-caylari/web-13cd54019963-thumb.webp",
-          "alt": "Oçay Klasik Bitki Çayları",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "ihlamur-cayi",
-          "name": "Ihlamur Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "adacayi",
-          "name": "Adaçayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "mavi-kelebek-cayi",
-          "name": "Mavi Kelebek Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "hibiskus-cayi",
-          "name": "Hibiskus Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "melisa-cayi",
-          "name": "Melisa Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "kusburnu-cayi",
-          "name": "Kuşburnu Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "rezene-cayi",
-          "name": "Rezene Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "papatya-cayi",
-          "name": "Papatya Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "yesil-cay",
-          "name": "Yeşil Çay",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "beyaz-cay",
-          "name": "Beyaz Çay",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "oolong-cayi",
-          "name": "Oolong Çayı",
-          "code": "",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "OCHAY TANITIM.pdf",
-        "pages": [
-          2,
-          3,
-          4,
-          5,
-          6,
-          7
-        ]
-      },
-      "featured": true,
-      "status": "published"
-    },
-    {
-      "id": "family-0030",
-      "slug": "ocay-fonksiyonel-caylar",
-      "brand": "Oçay",
-      "name": "Fonksiyonel Çaylar",
-      "category": "Çay",
-      "subcategory": "Fonksiyonel çay",
-      "summary": "Oçay Fonksiyonel Çaylar ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "Oçay Fonksiyonel Çaylar ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/ocay/ocay-fonksiyonel-caylar/web-5e079458bb20.webp",
-          "thumbnailSrc": "assets/products/ocay/ocay-fonksiyonel-caylar/web-5e079458bb20-thumb.webp",
-          "alt": "Oçay Fonksiyonel Çaylar",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "relax-cayi",
-          "name": "Relax Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "kis-cayi",
-          "name": "Kış Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "nefes-cayi",
-          "name": "Nefes Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "mide-dostu-cayi",
-          "name": "Mide Dostu Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "detox-cayi",
-          "name": "Detox Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "fit-cayi",
-          "name": "Fit Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "enerji-cayi",
-          "name": "Enerji Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "uyku-cayi",
-          "name": "Uyku Çayı",
-          "code": "",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "OCHAY TANITIM.pdf",
-        "pages": [
-          8,
-          9,
-          10,
-          11,
-          12
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0031",
-      "slug": "ocay-rooibos-caylari",
-      "brand": "Oçay",
-      "name": "Rooibos Çayları",
-      "category": "Çay",
-      "subcategory": "Rooibos",
-      "summary": "Oçay Rooibos Çayları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "Oçay Rooibos Çayları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/ocay/ocay-rooibos-caylari/web-faf5440c2f7b.webp",
-          "thumbnailSrc": "assets/products/ocay/ocay-rooibos-caylari/web-faf5440c2f7b-thumb.webp",
-          "alt": "Oçay Rooibos Çayları",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "rooibos-cayi",
-          "name": "Rooibos Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "bergamotlu-rooibos",
-          "name": "Bergamotlu Rooibos",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "elmali-rooibos",
-          "name": "Elmalı Rooibos",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "vanilyali-rooibos",
-          "name": "Vanilyalı Rooibos",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "vanilyali-cikolatali-rooibos",
-          "name": "Vanilyalı & Çikolatalı Rooibos",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "balkabakli-tarcinli-rooibos",
-          "name": "Balkabaklı & Tarçınlı Rooibos",
-          "code": "",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "OCHAY TANITIM.pdf",
-        "pages": [
-          13,
-          14,
-          15
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0032",
-      "slug": "ocay-matcha-caylari",
-      "brand": "Oçay",
-      "name": "Matcha Çayları",
-      "category": "Çay",
-      "subcategory": "Matcha",
-      "summary": "Oçay Matcha Çayları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "Oçay Matcha Çayları ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/ocay/ocay-matcha-caylari/web-4ea920db9b78.webp",
-          "thumbnailSrc": "assets/products/ocay/ocay-matcha-caylari/web-4ea920db9b78-thumb.webp",
-          "alt": "Oçay Matcha Çayları",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "matcha-cayi",
-          "name": "Matcha Çayı",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "naneli-matcha",
-          "name": "Naneli Matcha",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "hindistan-cevizli-matcha",
-          "name": "Hindistan Cevizli Matcha",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "cilekli-matcha",
-          "name": "Çilekli Matcha",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "seftalili-matcha",
-          "name": "Şeftalili Matcha",
-          "code": "",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "OCHAY TANITIM.pdf",
-        "pages": [
-          16,
-          17,
-          18
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
       "id": "family-0033",
       "slug": "toschi-suruplar-1-l",
       "brand": "Toschi",
       "name": "Şuruplar 1 L",
       "category": "Şurup ve Püreler",
-      "subcategory": "Şurup",
+      "subcategory": "Kokteyl Şurupları",
       "summary": "Toschi Şuruplar 1 L ürün ailesi ve katalogda yer alan seçenekleri.",
       "description": "Toschi Şuruplar 1 L ürün ailesi ve katalogda yer alan seçenekleri.",
       "features": [],
-      "specifications": {},
+      "specifications": {
+        "Ambalaj Excel 62": "6",
+        "Ambalaj Excel 63": "1",
+        "Ambalaj Excel 72": "6"
+      },
       "images": [
         {
           "id": "image-web-01",
@@ -3988,6 +2104,30 @@
           "name": "CHAI TEA",
           "code": "P89",
           "attributes": {}
+        },
+        {
+          "id": "excel-62",
+          "name": "TOSCHİ ŞURUP ÇEŞİTLERİ 1,32 LİT",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
+        },
+        {
+          "id": "excel-63",
+          "name": "TOSCHİ ŞURUPPOMPASI",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "1"
+          }
+        },
+        {
+          "id": "excel-72",
+          "name": "TOSCHİ TOPİNG ÇEŞİTLERİ 1 KG",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
         }
       ],
       "source": {
@@ -4002,132 +2142,20 @@
       "status": "published"
     },
     {
-      "id": "family-0034",
-      "slug": "toschi-soslar-1-kg",
-      "brand": "Toschi",
-      "name": "Soslar 1 kg",
-      "category": "Soslar",
-      "subcategory": "Sos",
-      "summary": "Toschi Soslar 1 kg ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "Toschi Soslar 1 kg ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/toschi/toschi-soslar-1-kg/web-58e552c08996.webp",
-          "thumbnailSrc": "assets/products/toschi/toschi-soslar-1-kg/web-58e552c08996-thumb.webp",
-          "alt": "Toschi Soslar 1 kg",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "l87",
-          "name": "RASPBERRY (Ahududu)",
-          "code": "L87",
-          "attributes": {}
-        },
-        {
-          "id": "l91",
-          "name": "HAZELNUT (Fındık)",
-          "code": "L91",
-          "attributes": {}
-        },
-        {
-          "id": "l98",
-          "name": "PEANUT BUTTER (Yer Fıstıhı)",
-          "code": "L98",
-          "attributes": {}
-        },
-        {
-          "id": "l102",
-          "name": "AMARENA (Kiraz)",
-          "code": "L102",
-          "attributes": {}
-        },
-        {
-          "id": "l103",
-          "name": "MILK CHOCOLATE (Sütlü Çikolata)",
-          "code": "L103",
-          "attributes": {}
-        },
-        {
-          "id": "l1014",
-          "name": "CHOCOLATE (Çikolata)",
-          "code": "L1014",
-          "attributes": {}
-        },
-        {
-          "id": "l106",
-          "name": "CARAMEL (Karamel)",
-          "code": "L106",
-          "attributes": {}
-        },
-        {
-          "id": "l108",
-          "name": "STRAWBERRY (Çilek)",
-          "code": "L108",
-          "attributes": {}
-        },
-        {
-          "id": "l110",
-          "name": "WILD FRUITS (Orman Meyveleri)",
-          "code": "L110",
-          "attributes": {}
-        },
-        {
-          "id": "l111",
-          "name": "BLUEBERRY (Yaban Mersini)",
-          "code": "L111",
-          "attributes": {}
-        },
-        {
-          "id": "l116",
-          "name": "TOFFEE (Şekerleme)",
-          "code": "L116",
-          "attributes": {}
-        },
-        {
-          "id": "l119",
-          "name": "PISTACHIO (Antep Fıstıhı)",
-          "code": "L119",
-          "attributes": {}
-        },
-        {
-          "id": "l126",
-          "name": "ANTONELLA",
-          "code": "L126",
-          "attributes": {}
-        },
-        {
-          "id": "l127",
-          "name": "WHİTE CHOCOLATE (B. Çikolata)",
-          "code": "L127",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "Toschi 2025 New Katalog.pdf",
-        "pages": [
-          15
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
       "id": "family-0035",
       "slug": "toschi-barista-sos-2-kg",
       "brand": "Toschi",
       "name": "Barista Sos 2 kg",
       "category": "Soslar",
-      "subcategory": "Barista sos",
+      "subcategory": "Profesyonel Soslar",
       "summary": "Toschi Barista Sos 2 kg ürün ailesi ve katalogda yer alan seçenekleri.",
       "description": "Toschi Barista Sos 2 kg ürün ailesi ve katalogda yer alan seçenekleri.",
       "features": [],
-      "specifications": {},
+      "specifications": {
+        "Ambalaj Excel 92": "4",
+        "Ambalaj Excel 93": "4",
+        "Ambalaj Excel 94": "4"
+      },
       "images": [
         {
           "id": "image-web-01",
@@ -4156,6 +2184,30 @@
           "name": "WHITE CHOCOLATE (B. Çikolata)",
           "code": "LP84N",
           "attributes": {}
+        },
+        {
+          "id": "excel-92",
+          "name": "TOSCHİ BARİSTA SOSU 2 KG/ÇİKOLATA",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "4"
+          }
+        },
+        {
+          "id": "excel-93",
+          "name": "TOSCHİ BARİSTA SOSU 2 KG/KARAMEL",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "4"
+          }
+        },
+        {
+          "id": "excel-94",
+          "name": "TOSCHİ BARİSTA SOSU 2 KG/BEYAZ ÇİKOLATA",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "4"
+          }
         }
       ],
       "source": {
@@ -4168,66 +2220,18 @@
       "status": "published"
     },
     {
-      "id": "family-0036",
-      "slug": "toschi-barista-sos-500-g",
-      "brand": "Toschi",
-      "name": "Barista Sos 500 g",
-      "category": "Soslar",
-      "subcategory": "Barista sos",
-      "summary": "Toschi Barista Sos 500 g ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "Toschi Barista Sos 500 g ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {},
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/toschi/toschi-barista-sos-500-g/web-0c6ac77bb6ae.webp",
-          "thumbnailSrc": "assets/products/toschi/toschi-barista-sos-500-g/web-0c6ac77bb6ae-thumb.webp",
-          "alt": "Toschi Barista Sos 500 g",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "lp56n",
-          "name": "CARAMEL (Karamel)",
-          "code": "LP56N",
-          "attributes": {}
-        },
-        {
-          "id": "lp58n",
-          "name": "CHOCOLATE (Çikolata)",
-          "code": "LP58N",
-          "attributes": {}
-        },
-        {
-          "id": "lp54n",
-          "name": "WHITE CHOCOLATE (B. Çikolata)",
-          "code": "LP54N",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "Toschi 2025 New Katalog.pdf",
-        "pages": [
-          17
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
       "id": "family-0037",
       "slug": "toschi-pureler-1-3-kg",
       "brand": "Toschi",
       "name": "Püreler 1,3 kg",
-      "category": "Şurup ve Püreler",
-      "subcategory": "Püre",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
       "summary": "Toschi Püreler 1,3 kg ürün ailesi ve katalogda yer alan seçenekleri.",
       "description": "Toschi Püreler 1,3 kg ürün ailesi ve katalogda yer alan seçenekleri.",
       "features": [],
-      "specifications": {},
+      "specifications": {
+        "Ambalaj Excel 71": "6"
+      },
       "images": [
         {
           "id": "image-web-01",
@@ -4280,6 +2284,14 @@
           "name": "MANGO",
           "code": "S13",
           "attributes": {}
+        },
+        {
+          "id": "excel-71",
+          "name": "TOSCHİ PÜRE ÇEŞİTLERİ 1,300 KG",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6"
+          }
         }
       ],
       "source": {
@@ -4296,13 +2308,14 @@
       "slug": "yook-barista-yulaf-icecekleri",
       "brand": "YOOK",
       "name": "Barista Yulaf İçecekleri",
-      "category": "Bitkisel İçecekler",
-      "subcategory": "Barista yulaf içeceği",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Süt ve Krema",
       "summary": "YOOK Barista Yulaf İçecekleri ürün ailesi ve katalogda yer alan seçenekleri.",
       "description": "YOOK Barista Yulaf İçecekleri ürün ailesi ve katalogda yer alan seçenekleri.",
       "features": [],
       "specifications": {
-        "EAN code": "4745010449017"
+        "EAN code": "4745010449017",
+        "Ambalaj Excel 135": "6 ADET"
       },
       "images": [
         {
@@ -4332,6 +2345,14 @@
           "name": "Portakal ve Kakule Aromalı Barista Yulaf İçeceği",
           "code": "",
           "attributes": {}
+        },
+        {
+          "id": "excel-135",
+          "name": "YOOK BARİSTA SÜT ÇEŞİTLERİ 1 LİT",
+          "code": "",
+          "attributes": {
+            "Ambalaj": "6 ADET"
+          }
         }
       ],
       "source": {
@@ -4342,94 +2363,6 @@
         ]
       },
       "featured": true,
-      "status": "published"
-    },
-    {
-      "id": "family-0039",
-      "slug": "yook-vitamin-ve-kalsiyumlu-yulaf-icecegi",
-      "brand": "YOOK",
-      "name": "Vitamin ve Kalsiyumlu Yulaf İçeceği",
-      "category": "Bitkisel İçecekler",
-      "subcategory": "Yulaf içeceği",
-      "summary": "YOOK Vitamin ve Kalsiyumlu Yulaf İçeceği ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "YOOK Vitamin ve Kalsiyumlu Yulaf İçeceği ürün ailesi ve katalogda yer alan seçenekleri.",
-      "features": [],
-      "specifications": {
-        "EAN code": "4745010449062"
-      },
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/yook/yook-vitamin-ve-kalsiyumlu-yulaf-icecegi/web-ee48cbb93e3e.webp",
-          "thumbnailSrc": "assets/products/yook/yook-vitamin-ve-kalsiyumlu-yulaf-icecegi/web-ee48cbb93e3e-thumb.webp",
-          "alt": "YOOK Vitamin ve Kalsiyumlu Yulaf İçeceği",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "vitamin-ve-kalsiyumlu-yulaf-icecegi",
-          "name": "Katalog seçeneği",
-          "code": "",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "YOOK_Brochure.pdf",
-        "pages": [
-          6
-        ]
-      },
-      "featured": false,
-      "status": "published"
-    },
-    {
-      "id": "family-0040",
-      "slug": "yook-aromali-yulaf-icecekleri",
-      "brand": "YOOK",
-      "name": "Aromalı Yulaf İçecekleri",
-      "category": "Bitkisel İçecekler",
-      "subcategory": "Aromalı yulaf içeceği",
-      "summary": "YOOK Aromalı Yulaf İçecekleri ürün ailesi ve katalogda yer alan seçenekleri.",
-      "description": "YOOK Aromalı Yulaf İçecekleri ürün ailesi ve katalogda yer alan seçenekleri. Katalogda öne çıkan nitelikler: fruit sugars.",
-      "features": [
-        "fruit sugars"
-      ],
-      "specifications": {
-        "EAN code": "4745010449055"
-      },
-      "images": [
-        {
-          "id": "image-web-01",
-          "src": "assets/products/yook/yook-aromali-yulaf-icecekleri/web-1cc02b5d4de0.webp",
-          "thumbnailSrc": "assets/products/yook/yook-aromali-yulaf-icecekleri/web-1cc02b5d4de0-thumb.webp",
-          "alt": "YOOK Aromalı Yulaf İçecekleri",
-          "order": 1,
-          "variantIds": []
-        }
-      ],
-      "variants": [
-        {
-          "id": "chocolate",
-          "name": "Çikolatalı Yulaf İçeceği",
-          "code": "",
-          "attributes": {}
-        },
-        {
-          "id": "mango",
-          "name": "Mangolu Yulaf İçeceği",
-          "code": "",
-          "attributes": {}
-        }
-      ],
-      "source": {
-        "catalog": "YOOK_Brochure.pdf",
-        "pages": [
-          7
-        ]
-      },
-      "featured": false,
       "status": "published"
     },
     {
@@ -5132,8 +3065,8 @@
       "slug": "kroom-grubu-isitma-sistemi-sayfa-17",
       "brand": "Kroom",
       "name": "grubu ısıtma sistemi",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Espresso Makineleri ve Değirmenler",
+      "category": "Kahve Makineleri",
+      "subcategory": "Kahve Değirmenleri",
       "summary": "Espresso Makineleri ve Değirmenler grubundaki profesyonel kullanım modelleri.",
       "description": "Espresso Makineleri ve Değirmenler grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: 11 lt. bakır boyler kapasitesi; Yüksek bardak kullanımı için gövde tasarımı (tall cup); Dijital gösterge ile boyler sıcaklığı ve espresso akış (shot timer) süresi takibi.",
       "features": [
@@ -5187,8 +3120,8 @@
       "slug": "kroom-ng-c-2-gruplu-dozaj-ayarli-espresso-makinesi-sayfa-18",
       "brand": "Kroom",
       "name": "NG-C 2 GRUPLU DOZAJ AYARLI ESPRESSO MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Espresso Makineleri ve Değirmenler",
+      "category": "Kahve Makineleri",
+      "subcategory": "Kahve Değirmenleri",
       "summary": "Espresso Makineleri ve Değirmenler grubundaki profesyonel kullanım modelleri.",
       "description": "Espresso Makineleri ve Değirmenler grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: 10 lt. yalıtımlı bakır boyler kapasitesi; 2 adet el yakmayan (Cool Touch) buhar çubuğu ve 1 adet dozaj kontrollü sıcak; Yenilenmiş tasarım ve led aydınlatmalı dış gövde.",
       "features": [
@@ -5236,8 +3169,8 @@
       "slug": "kroom-x-one-tci-tc-evo-3-gruplu-dozaj-ayarli-espresso-makinesi-sayfa-19",
       "brand": "Kroom",
       "name": "X-ONE TCI TC EVO 3 GRUPLU DOZAJ AYARLI ESPRESSO MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Espresso Makineleri ve Değirmenler",
+      "category": "Kahve Makineleri",
+      "subcategory": "Kahve Değirmenleri",
       "summary": "Espresso Makineleri ve Değirmenler grubundaki profesyonel kullanım modelleri.",
       "description": "Espresso Makineleri ve Değirmenler grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: 20 lt. bakır boyler kapasitesi; TCI teknolojisi ile kahve gruplarının sıcaklığı ayrı ayrı mekanik olarak ayarlanabilir; TCI teknolojisine bağlı soğuk su enjeksiyon sistemi buhar kazanı verimini en üst.",
       "features": [
@@ -5285,8 +3218,8 @@
       "slug": "kroom-mc-ultima-2-gruplu-dozaj-ayarli-espresso-makinesi-sayfa-20",
       "brand": "Kroom",
       "name": "MC ULTIMA 2 GRUPLU DOZAJ AYARLI ESPRESSO MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Espresso Makineleri ve Değirmenler",
+      "category": "Kahve Makineleri",
+      "subcategory": "Kahve Değirmenleri",
       "summary": "Espresso Makineleri ve Değirmenler grubundaki profesyonel kullanım modelleri.",
       "description": "Espresso Makineleri ve Değirmenler grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: 10 lt. + 2x0.9 lt. bakır boyler kapasitesi; Çoklu boyler sistemi ve her kahve grubu için bağımsız ayarlanabilir sıcaklık; Renkli dokunmatik kolay kontrol paneli.",
       "features": [
@@ -5334,8 +3267,8 @@
       "slug": "kroom-cg-200-od-espresso-degirmeni-sayfa-21",
       "brand": "Kroom",
       "name": "CG 200 OD ESPRESSO DEĞİRMENİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Espresso Makineleri ve Değirmenler",
+      "category": "Kahve Makineleri",
+      "subcategory": "Kahve Değirmenleri",
       "summary": "Espresso Makineleri ve Değirmenler grubundaki profesyonel kullanım modelleri.",
       "description": "Espresso Makineleri ve Değirmenler grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Hazne Kapasitesi: 1,2 kg; Düşük/orta düzeyde tüketime uygun 64 mm düz (Flat) sertleştirilmiş çelik bıçak; Kademeli hassas öğütme ayarı.",
       "features": [
@@ -5384,7 +3317,7 @@
       "slug": "kroom-mini-filter-kahve-degirmeni-sayfa-23",
       "brand": "Kroom",
       "name": "MINI FILTER KAHVE DEĞİRMENİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
+      "category": "Kahve Makineleri",
       "subcategory": "Kahve Değirmenleri",
       "summary": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri.",
       "description": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Hazne Kapasitesi: 0,32 kg; Filtre kahveye uygun 64 mm düz (Flat) bıçak (189 D); Kademesiz mikrometrik öğütme ayarı.",
@@ -5434,7 +3367,7 @@
       "slug": "kroom-lux-manuel-espresso-degirmeni-sayfa-24",
       "brand": "Kroom",
       "name": "LUX MANUEL ESPRESSO DEĞİRMENİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
+      "category": "Kahve Makineleri",
       "subcategory": "Kahve Değirmenleri",
       "summary": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri.",
       "description": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Hazne Kapasitesi: 1,2 kg; Dispenser Kapasitesi: 0,2 kg; Düşük düzeyde tüketime uygun 61 mm düz (Flat) çelik bıçak.",
@@ -5484,7 +3417,7 @@
       "slug": "kroom-super-jolly-v-up-manuel-espresso-degirmeni-sayfa-25",
       "brand": "Kroom",
       "name": "SUPER JOLLY V UP MANUEL ESPRESSO DEĞİRMENİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
+      "category": "Kahve Makineleri",
       "subcategory": "Kahve Değirmenleri",
       "summary": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri.",
       "description": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Hazne Kapasitesi: 1,1 kg; Dispenser Kapasitesi: 0,3 kg; Orta düzeyde tüketime uygun 64 mm yüksek karbonlu düz (Flat) bıçak.",
@@ -5534,7 +3467,7 @@
       "slug": "kroom-super-jolly-v-pro-electronic-espresso-degirmeni-sayfa-26",
       "brand": "Kroom",
       "name": "SUPER JOLLY V PRO ELECTRONIC ESPRESSO DEĞİRMENİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
+      "category": "Kahve Makineleri",
       "subcategory": "Kahve Değirmenleri",
       "summary": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri.",
       "description": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Hazne Kapasitesi: 1,1 kg; Orta düzeyde tüketime uygun 64 mm yüksek karbonlu düz (Flat) bıçak; Gelişmiş kullanıcı özellikleri sunan dijital ekran.",
@@ -5584,7 +3517,7 @@
       "slug": "kroom-major-v-electronic-espresso-degirmeni-sayfa-27",
       "brand": "Kroom",
       "name": "MAJOR V ELECTRONIC ESPRESSO DEĞİRMENİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
+      "category": "Kahve Makineleri",
       "subcategory": "Kahve Değirmenleri",
       "summary": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri.",
       "description": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Hazne Kapasitesi: 1,6 kg; Orta düzeyde tüketime uygun 83 mm yüksek karbonlu düz (Flat) bıçak (251 A); Gelişmiş kullanıcı özellikleri sunan dijital ekran.",
@@ -5634,7 +3567,7 @@
       "slug": "kroom-kold-s-electronic-espresso-degirmeni-sayfa-28",
       "brand": "Kroom",
       "name": "KOLD S ELECTRONIC ESPRESSO DEĞİRMENİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
+      "category": "Kahve Makineleri",
       "subcategory": "Kahve Değirmenleri",
       "summary": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri.",
       "description": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Hazne Kapasitesi: 1,6 kg; Yüksek düzeyde tüketime uygun 71 mm konik bıçak ve düşük devirli dönüş hızı; Gelişmiş kullanıcı özellikleri sunan dijital ekran.",
@@ -5684,7 +3617,7 @@
       "slug": "kroom-philos-tek-doz-kahve-degirmeni-sayfa-29",
       "brand": "Kroom",
       "name": "PHILOS TEK DOZ KAHVE DEĞİRMENİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
+      "category": "Kahve Makineleri",
       "subcategory": "Kahve Değirmenleri",
       "summary": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri.",
       "description": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Hazne Kapasitesi: 60 gr.; Türk Kahvesi’nden filtre kahveye kadar öğütebilen 64 mm düz (Flat) bıçak (I200D); Kademeli veya kademesiz ayarlanabilen hassas öğütme ayarı.",
@@ -5734,7 +3667,7 @@
       "slug": "kroom-omega-el-degirmeni-sayfa-30",
       "brand": "Kroom",
       "name": "OMEGA EL DEĞİRMENİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
+      "category": "Kahve Makineleri",
       "subcategory": "Kahve Değirmenleri",
       "summary": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri.",
       "description": "Kahve Değirmenleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Öğütülmüş kahveyi otomatik olarak dağıtır, düzleştirir ve sıkıştırır; Kahve sıkıştırma işlemini her seferinde tutarlı hale getirerek kahve kalitesini artırır; Manyetik ve mekanik kilitleme sistemleri ile baristaların ellerini tam koruma sağlar.",
@@ -5784,8 +3717,8 @@
       "slug": "kroom-cameo-classic-c2-s-1-gruplu-super-otomatik-espresso-makinesi-sayfa-32",
       "brand": "Kroom",
       "name": "CAMEO CLASSIC C2’S - 1 GRUPLU SÜPER OTOMATİK ESPRESSO MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Süper Otomatik Espresso Makineleri",
+      "category": "Kahve Makineleri",
+      "subcategory": "Süper Otomatik Kahve Makineleri",
       "summary": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri.",
       "description": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: 1,6 lt. buhar boyleri + 0,8 lt. kahve boyleri; 1 adet ikili kahve çıkışı, 1 adet buhar çubuğu, 1 adet sıcak su musluğu; Sıcak su ısı kontrolü ve hassas dozajlama.",
       "features": [
@@ -5839,8 +3772,8 @@
       "slug": "kroom-cameo-st-c2-s-1-gruplu-super-otomatik-espresso-makinesi-sayfa-33",
       "brand": "Kroom",
       "name": "CAMEO ST / C2’S - 1 GRUPLU SÜPER OTOMATİK ESPRESSO MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Süper Otomatik Espresso Makineleri",
+      "category": "Kahve Makineleri",
+      "subcategory": "Süper Otomatik Kahve Makineleri",
       "summary": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri.",
       "description": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: 1,6 lt. buhar boyleri + 0,8 lt. kahve boyleri; 1 adet ikili kahve çıkışı, 1 adet buhar çubuğu, 1 adet sıcak su musluğu; Özel tasarım ‘Super Traditional (ST)’ gövde tasarımı.",
       "features": [
@@ -5894,8 +3827,8 @@
       "slug": "kroom-enigma-classic-e2-s-1-gruplu-super-otomatik-espresso-makinesi-sayfa-34",
       "brand": "Kroom",
       "name": "ENIGMA CLASSIC E2’S - 1 GRUPLU SÜPER OTOMATİK ESPRESSO MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Süper Otomatik Espresso Makineleri",
+      "category": "Kahve Makineleri",
+      "subcategory": "Süper Otomatik Kahve Makineleri",
       "summary": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri.",
       "description": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: 5,4 lt. buhar boyleri + 1,5 lt. kahve boyleri; 1 adet ikili kahve çıkışı, 1 adet buhar çubuğu, 1 adet sıcak su musluğu; Sıcak su ısı kontrolü ve hassas dozajlama.",
       "features": [
@@ -5949,8 +3882,8 @@
       "slug": "kroom-enigma-classic-e4-s-2-gruplu-super-otomatik-espresso-makinesi-sayfa-35",
       "brand": "Kroom",
       "name": "ENIGMA CLASSIC E4’S - 2 GRUPLU SÜPER OTOMATİK ESPRESSO MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Süper Otomatik Espresso Makineleri",
+      "category": "Kahve Makineleri",
+      "subcategory": "Süper Otomatik Kahve Makineleri",
       "summary": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri.",
       "description": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: 5,4 lt. buhar boyleri + 2x1,5 lt. kahve boyleri; 2 adet ikili kahve çıkışı, 2 adet buhar çubuğu, 1 adet sıcak su musluğu; Sıcak su ısı kontrolü ve hassas dozajlama.",
       "features": [
@@ -6004,8 +3937,8 @@
       "slug": "kroom-enigma-classic-e4-s-x-wide-2-gruplu-super-otomatik-espresso-makinesi-buhar-sayfa-36",
       "brand": "Kroom",
       "name": "ENIGMA CLASSIC E4’S X WIDE - 2 GRUPLU SÜPER OTOMATİK ESPRESSO MAKİNESİ (BUHAR",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Süper Otomatik Espresso Makineleri",
+      "category": "Kahve Makineleri",
+      "subcategory": "Süper Otomatik Kahve Makineleri",
       "summary": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri.",
       "description": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: 5,4 lt. buhar boyleri + 2x1,5 lt. kahve boyleri; 2 adet ikili kahve çıkışı, 2 adet buhar çubuğu, 1 adet sıcak su musluğu; Sıcak su ısı kontrolü ve hassas dozajlama.",
       "features": [
@@ -6059,8 +3992,8 @@
       "slug": "kroom-enigma-classic-e6-s-3-gruplu-super-otomatik-espresso-makinesi-sayfa-37",
       "brand": "Kroom",
       "name": "ENIGMA CLASSIC E6’S - 3 GRUPLU SÜPER OTOMATİK ESPRESSO MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Süper Otomatik Espresso Makineleri",
+      "category": "Kahve Makineleri",
+      "subcategory": "Süper Otomatik Kahve Makineleri",
       "summary": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri.",
       "description": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: 5,4 lt. buhar boyleri + 3x1,5 lt. kahve boyleri; 3 adet ikili kahve çıkışı, 2 adet buhar çubuğu, 1 adet sıcak su musluğu; Sıcak su ısı kontrolü ve hassas dozajlama.",
       "features": [
@@ -6114,8 +4047,8 @@
       "slug": "kroom-shotmaster-s-pro-st-4-gruplu-super-otomatik-espresso-makinesi-sayfa-38",
       "brand": "Kroom",
       "name": "SHOTMASTER S-PRO / ST - 4 GRUPLU SÜPER OTOMATİK ESPRESSO MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Süper Otomatik Espresso Makineleri",
+      "category": "Kahve Makineleri",
+      "subcategory": "Süper Otomatik Kahve Makineleri",
       "summary": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri.",
       "description": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: 5,4 lt. buhar boyleri + 4x1,5 lt. kahve boyleri; 4 adet ikili kahve çıkışı, 2 adet buhar çubuğu, 1 adet sıcak su musluğu; Sıcak su ısı kontrolü ve hassas dozajlama.",
       "features": [
@@ -6169,8 +4102,8 @@
       "slug": "kroom-legacy-l2-m-1-gruplu-super-otomatik-espresso-makinesi-sayfa-39",
       "brand": "Kroom",
       "name": "LEGACY L2’M - 1 GRUPLU SÜPER OTOMATİK ESPRESSO MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Süper Otomatik Espresso Makineleri",
+      "category": "Kahve Makineleri",
+      "subcategory": "Süper Otomatik Kahve Makineleri",
       "summary": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri.",
       "description": "Süper Otomatik Espresso Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: 0,8 lt. buhar boyleri + 0,6 lt. kahve boyleri; 1 adet ikili kahve çıkışı, 1 adet ikili süt çıkışı; Aynı anda iki ürün yapabilir.",
       "features": [
@@ -6267,8 +4200,8 @@
       "slug": "kroom-novo-filtre-kahve-makinesi-sayfa-43",
       "brand": "Kroom",
       "name": "NOVO - FİLTRE KAHVE MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Filtre Kahve Makineleri",
+      "category": "Kahve Makineleri",
+      "subcategory": "Espresso Kahve Makineleri",
       "summary": "Filtre Kahve Makineleri grubundaki profesyonel kullanım modelleri.",
       "description": "Filtre Kahve Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: 2,2 lt. su + 300 gr çekirdek hazne kapasitesi; Bravilor Bonamat tasarımı ve patentli “CIRCO” demleme ünitesi ile profesyonel; Sağlam ve yüksek kaliteli paslanmaz çelik, BPA içermeyen plastik malzemeler.",
       "features": [
@@ -6333,8 +4266,8 @@
       "slug": "kroom-th-filtre-kahve-makinesi-sayfa-44",
       "brand": "Kroom",
       "name": "TH - FİLTRE KAHVE MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Filtre Kahve Makineleri",
+      "category": "Kahve Makineleri",
+      "subcategory": "Espresso Kahve Makineleri",
       "summary": "Filtre Kahve Makineleri grubundaki profesyonel kullanım modelleri.",
       "description": "Filtre Kahve Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Manuel su doldurma, kolay kullanım ve bakım; Kahve direkt olarak ayrıca temin edilen Airpot termosa demlenir; Kireç çözme ve kahve hazır sinyalleri.",
       "features": [
@@ -6399,8 +4332,8 @@
       "slug": "kroom-rlx-5-filtre-kahve-makinesi-sayfa-45",
       "brand": "Kroom",
       "name": "RLX 5 - FİLTRE KAHVE MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Filtre Kahve Makineleri",
+      "category": "Kahve Makineleri",
+      "subcategory": "Espresso Kahve Makineleri",
       "summary": "Filtre Kahve Makineleri grubundaki profesyonel kullanım modelleri.",
       "description": "Filtre Kahve Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Su bağlantısı mevcut olan alanlarda kullanılabilir; 1 adet demleme sistemi, 2 litrelik hazne; Kireç çözme ve kahve hazır sinyalleri.",
       "features": [
@@ -6465,8 +4398,8 @@
       "slug": "kroom-aurora-single-high-sgh-filtre-kahve-makinesi-ve-su-isitici-sayfa-46",
       "brand": "Kroom",
       "name": "AURORA SINGLE HIGH (SGH) - FİLTRE KAHVE MAKİNESİ VE SU ISITICI",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Filtre Kahve Makineleri",
+      "category": "Kahve Makineleri",
+      "subcategory": "Espresso Kahve Makineleri",
       "summary": "Filtre Kahve Makineleri grubundaki profesyonel kullanım modelleri.",
       "description": "Filtre Kahve Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Su bağlantısı mevcut olan alanlarda kullanılabilir; Aurora Single High kahveyi doğrudan 5,7 litrelik taşınabilir bir termosa demler; Dokunmatik ekranın kullanımı kolaydır.",
       "features": [
@@ -6525,8 +4458,8 @@
       "slug": "kroom-b10-filtre-kahve-makinesi-sayfa-47",
       "brand": "Kroom",
       "name": "B10 - FİLTRE KAHVE MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Filtre Kahve Makineleri",
+      "category": "Kahve Makineleri",
+      "subcategory": "Espresso Kahve Makineleri",
       "summary": "Filtre Kahve Makineleri grubundaki profesyonel kullanım modelleri.",
       "description": "Filtre Kahve Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Su bağlantısı mevcut olan alanlarda kullanılabilir; Dijital ekran, toplam ve gün sayaçları, kireç çözme sistemi, kahve hazır sinyali,; VHG konteynerler, filtre üniteleri ve damlama tepsisi dahildir.",
       "features": [
@@ -6579,8 +4512,8 @@
       "slug": "kroom-b40-filtre-kahve-makinesi-sayfa-48",
       "brand": "Kroom",
       "name": "B40 - FİLTRE KAHVE MAKİNESİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Filtre Kahve Makineleri",
+      "category": "Kahve Makineleri",
+      "subcategory": "Espresso Kahve Makineleri",
       "summary": "Filtre Kahve Makineleri grubundaki profesyonel kullanım modelleri.",
       "description": "Filtre Kahve Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Su bağlantısı mevcut olan alanlarda kullanılabilir; Dijital ekran, toplam ve gün sayaçları, kireç çözme sistemi, kahve hazır sinyali,; VHG konteynerler, filtre üniteleri ve damlama tepsisi dahildir.",
       "features": [
@@ -6894,8 +4827,7 @@
       "features": [
         "Tıkanmayı önler, kahve ve çay kalıntılarını kolayca temizler",
         "1 kutu 15 paket (Paket: 15 gr)",
-        "Krom Mutfak San. Tic. A.Ş. ve Bravilor Bonamat BV sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Bravilor Bonamat BV sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı"
       ],
       "specifications": {},
       "images": [
@@ -7178,8 +5110,8 @@
       "slug": "kroom-no-59-espresso-degirmeni-sayfa-60",
       "brand": "Kroom",
       "name": "NO 59 - ESPRESSO DEĞİRMENİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Bar Ekipmanları",
+      "category": "Kahve Makineleri",
+      "subcategory": "Kahve Değirmenleri",
       "summary": "Bar Ekipmanları grubundaki profesyonel kullanım modelleri.",
       "description": "Bar Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Hazne Kapasitesi: 1 kg; Orta düzeyde tüketime uygun 63,5 mm düz (Flat) bıçak; Gelişmiş kullanıcı özellikleri sunan LCD ekran.",
       "features": [
@@ -7240,8 +5172,8 @@
       "slug": "kroom-no-01-bar-kahve-degirmeni-sayfa-61",
       "brand": "Kroom",
       "name": "NO 01-BAR - KAHVE DEĞİRMENİ",
-      "category": "Endüstriyel Mutfak Ekipmanları",
-      "subcategory": "Bar Ekipmanları",
+      "category": "Kahve Makineleri",
+      "subcategory": "Kahve Değirmenleri",
       "summary": "Bar Ekipmanları grubundaki profesyonel kullanım modelleri.",
       "description": "Bar Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Hazne Kapasitesi: 1 kg; Orta düzeyde tüketime uygun yatay konumlandırılmış 63,5 mm düz (Flat) bıçak; Tek doz öğütümler veya paket kahve satışı için kullanılabilir.",
       "features": [
@@ -8489,10 +6421,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Fırınlar",
       "summary": "Fırınlar grubundaki profesyonel kullanım modelleri.",
-      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak"
       ],
       "specifications": {},
       "images": [
@@ -8530,10 +6461,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Fırınlar",
       "summary": "Fırınlar grubundaki profesyonel kullanım modelleri.",
-      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak"
       ],
       "specifications": {},
       "images": [
@@ -9243,10 +7173,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Fırınlar",
       "summary": "Fırınlar grubundaki profesyonel kullanım modelleri.",
-      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak"
       ],
       "specifications": {},
       "images": [
@@ -9284,10 +7213,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Fırınlar",
       "summary": "Fırınlar grubundaki profesyonel kullanım modelleri.",
-      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak"
       ],
       "specifications": {},
       "images": [
@@ -9325,10 +7253,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Fırınlar",
       "summary": "Fırınlar grubundaki profesyonel kullanım modelleri.",
-      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak"
       ],
       "specifications": {},
       "images": [
@@ -9366,10 +7293,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Fırınlar",
       "summary": "Fırınlar grubundaki profesyonel kullanım modelleri.",
-      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak"
       ],
       "specifications": {},
       "images": [
@@ -9737,8 +7663,7 @@
         "Boyutlar: 784x907x255 mm",
         "AğırlıK: 42 kg",
         "EKF 464 ve EKF 411 seri fırın modellerinin tamamı ile uyumludur",
-        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak"
       ],
       "specifications": {
         "Boyutlar": "784x907x255 mm",
@@ -9779,10 +7704,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Fırınlar",
       "summary": "Fırınlar grubundaki profesyonel kullanım modelleri.",
-      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Tecnoeka Srl. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak"
       ],
       "specifications": {},
       "images": [
@@ -10519,10 +8443,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Fırınlar",
       "summary": "Fırınlar grubundaki profesyonel kullanım modelleri.",
-      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Fırınlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -11097,10 +9020,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -11204,10 +9126,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -11299,10 +9220,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -11394,10 +9314,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -11489,10 +9408,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -11572,10 +9490,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -11673,11 +9590,10 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Not: Makarna pişiricilerin içerisine sepetler, sepet desteği ve hazne kapağı dahil değildir. Ayrıca eklenmesi gerekmektedir.; Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Not: Makarna pişiricilerin içerisine sepetler, sepet desteği ve hazne kapağı dahil değildir. Ayrıca eklenmesi gerekmektedir.; Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
         "Not: Makarna pişiricilerin içerisine sepetler, sepet desteği ve hazne kapağı dahil değildir. Ayrıca eklenmesi gerekmektedir.",
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -11763,10 +9679,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -11858,10 +9773,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -11941,10 +9855,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -12018,10 +9931,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -12077,10 +9989,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -12154,11 +10065,10 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Not: Açık dolaplara kapak ve kapak desteği dahil değildir. Ayrıca eklenmesi gerekmektedir.; Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Not: Açık dolaplara kapak ve kapak desteği dahil değildir. Ayrıca eklenmesi gerekmektedir.; Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
         "Not: Açık dolaplara kapak ve kapak desteği dahil değildir. Ayrıca eklenmesi gerekmektedir.",
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -12279,8 +10189,7 @@
         "Bir destekleyici şase kullanılarak estetik",
         "Cihazların çoğu, konsol tip montaj",
         "Not: Daha ayrıntılı bilgi için lütfen Kroom satış temsilcisine danışın.",
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -12426,10 +10335,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -12509,10 +10417,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -12604,10 +10511,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -12669,10 +10575,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -12806,11 +10711,10 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Not: Makarna pişiricilerin içerisine sepetler, sepet desteği ve hazne kapağı dahil değildir. Ayrıca eklenmesi gerekmektedir.; Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Not: Makarna pişiricilerin içerisine sepetler, sepet desteği ve hazne kapağı dahil değildir. Ayrıca eklenmesi gerekmektedir.; Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
         "Not: Makarna pişiricilerin içerisine sepetler, sepet desteği ve hazne kapağı dahil değildir. Ayrıca eklenmesi gerekmektedir.",
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -12896,10 +10800,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -12991,10 +10894,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -13074,10 +10976,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -13169,10 +11070,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -13228,10 +11128,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -13365,10 +11264,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -13466,10 +11364,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -13596,8 +11493,7 @@
         "Bir destekleyici şase kullanılarak estetik",
         "Cihazların çoğu, konsol tip montaj",
         "Not: Daha ayrıntılı bilgi için lütfen Kroom satış temsilcisine danışın.",
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -13848,11 +11744,10 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Not: Bacalı gazlı üniteler üzerine veya kapağın açılmasını engelleyebileceğinden kapaklı üniteler üzerine tencere rafı monte; Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Not: Bacalı gazlı üniteler üzerine veya kapağın açılmasını engelleyebileceğinden kapaklı üniteler üzerine tencere rafı monte; Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
         "Not: Bacalı gazlı üniteler üzerine veya kapağın açılmasını engelleyebileceğinden kapaklı üniteler üzerine tencere rafı monte",
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -13890,11 +11785,10 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Pişirme Üniteleri",
       "summary": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Not: Daha ayrıntılı bilgi için lütfen Kroom satış temsilcisine danışın.; Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Pişirme Üniteleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Not: Daha ayrıntılı bilgi için lütfen Kroom satış temsilcisine danışın.; Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
         "Not: Daha ayrıntılı bilgi için lütfen Kroom satış temsilcisine danışın.",
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -13980,10 +11874,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Soğutucular",
       "summary": "Soğutucular grubundaki profesyonel kullanım modelleri.",
-      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -14027,10 +11920,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Soğutucular",
       "summary": "Soğutucular grubundaki profesyonel kullanım modelleri.",
-      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -14344,10 +12236,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Soğutucular",
       "summary": "Soğutucular grubundaki profesyonel kullanım modelleri.",
-      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -14673,10 +12564,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Soğutucular",
       "summary": "Soğutucular grubundaki profesyonel kullanım modelleri.",
-      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -14780,10 +12670,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Soğutucular",
       "summary": "Soğutucular grubundaki profesyonel kullanım modelleri.",
-      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -14881,10 +12770,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Soğutucular",
       "summary": "Soğutucular grubundaki profesyonel kullanım modelleri.",
-      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -14976,11 +12864,10 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Soğutucular",
       "summary": "Soğutucular grubundaki profesyonel kullanım modelleri.",
-      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Not: Uzaktan hava soğutma ünitelerinde 5 metreye kadar boru döşeme ve gaz şarjı fiyata dahildir. 5 metreden sonraki bakır; Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Not: Uzaktan hava soğutma ünitelerinde 5 metreye kadar boru döşeme ve gaz şarjı fiyata dahildir. 5 metreden sonraki bakır; Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
         "Not: Uzaktan hava soğutma ünitelerinde 5 metreye kadar boru döşeme ve gaz şarjı fiyata dahildir. 5 metreden sonraki bakır",
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -15096,10 +12983,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Soğutucular",
       "summary": "Soğutucular grubundaki profesyonel kullanım modelleri.",
-      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Soğutucular grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -15167,10 +13053,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Bulaşık Makineleri",
       "summary": "Bulaşık Makineleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Bulaşık Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Bulaşık Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -15250,10 +13135,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Bulaşık Makineleri",
       "summary": "Bulaşık Makineleri grubundaki profesyonel kullanım modelleri.",
-      "description": "Bulaşık Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Bulaşık Makineleri grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -16076,10 +13960,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Hazırlık Ekipmanları",
       "summary": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri.",
-      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -16207,10 +14090,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Hazırlık Ekipmanları",
       "summary": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri.",
-      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -16296,10 +14178,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Hazırlık Ekipmanları",
       "summary": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri.",
-      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -16379,10 +14260,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Hazırlık Ekipmanları",
       "summary": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri.",
-      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -16456,10 +14336,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Hazırlık Ekipmanları",
       "summary": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri.",
-      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -16557,10 +14436,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Hazırlık Ekipmanları",
       "summary": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri.",
-      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -16622,10 +14500,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Hazırlık Ekipmanları",
       "summary": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri.",
-      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -16753,10 +14630,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Hazırlık Ekipmanları",
       "summary": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri.",
-      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -16939,10 +14815,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Hazırlık Ekipmanları",
       "summary": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri.",
-      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -17100,10 +14975,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Hazırlık Ekipmanları",
       "summary": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri.",
-      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Hazırlık Ekipmanları grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. ve Electrolux Profesyonel A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme"
       ],
       "specifications": {},
       "images": [
@@ -18777,10 +16651,9 @@
       "category": "Endüstriyel Mutfak Ekipmanları",
       "subcategory": "Diğer Ekipmanlar",
       "summary": "Diğer Ekipmanlar grubundaki profesyonel kullanım modelleri.",
-      "description": "Diğer Ekipmanlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak teknik ve tasarım; Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir..",
+      "description": "Diğer Ekipmanlar grubundaki profesyonel kullanım modelleri. Katalogda öne çıkan nitelikler: Krom Mutfak San. Tic. A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak teknik ve tasarım; .",
       "features": [
-        "Krom Mutfak San. Tic. A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak teknik ve tasarım",
-        "Fiyatlarımıza KDV dahil değildir. Kırmızı yıldızlı ürünler sürekli stokta olup, hemen teslim edilebilir."
+        "Krom Mutfak San. Tic. A.Ş. sorumluluğunda olmaksızın, bu katalogdaki ürünleri temel özelliklerinden ödün vermeden, geliştirme amaçlı olarak teknik ve tasarım"
       ],
       "specifications": {},
       "images": [
@@ -19039,5 +16912,6 @@
   "security": {
     "publicSchema": "allowlist-v1",
     "generatedAt": "2026-07-26T19:47:59.895Z"
-  }
+  },
+  "generatedAt": "2026-08-29T06:01:00.044Z"
 }

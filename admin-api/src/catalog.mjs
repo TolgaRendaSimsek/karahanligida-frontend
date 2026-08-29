@@ -146,3 +146,38 @@ export function publicProduct(product) {
     status: product.status === "archived" ? "archived" : "published",
   };
 }
+
+// Excel aktarımında kaynağı veya görseli henüz doğrulanmamış kayıtlar taslak
+// olarak saklanabilir. Yayınlama aşamasında validateProduct ile tam sözleşme
+// kontrolü yine zorunludur.
+export function validateDraft(input) {
+  const raw = structuredClone(input ?? {});
+  const forbidden = findForbiddenKey(raw);
+  if (forbidden) {
+    const error = new Error(`Yasaklı veri alanı: ${forbidden}`);
+    error.status = 422;
+    throw error;
+  }
+  const errors = [];
+  for (const field of ["id", "slug", "brand", "name", "category", "summary", "description"]) {
+    if (!(field in raw) || !String(raw[field] ?? "").trim()) errors.push(`${field} boş bırakılamaz.`);
+  }
+  if (!/^family-[a-z0-9-]{3,80}$/.test(raw.id ?? "")) errors.push("Geçersiz ürün kimliği.");
+  if (slugify(raw.slug) !== raw.slug) errors.push("Geçersiz ürün slug değeri.");
+  if (errors.length) {
+    const error = new Error(errors.join(" "));
+    error.status = 422;
+    throw error;
+  }
+  return {
+    ...raw,
+    subcategory: String(raw.subcategory ?? ""),
+    features: Array.isArray(raw.features) ? raw.features.map(String) : [],
+    specifications: raw.specifications && typeof raw.specifications === "object" ? raw.specifications : {},
+    images: Array.isArray(raw.images) ? raw.images : [],
+    variants: Array.isArray(raw.variants) ? raw.variants : [],
+    source: raw.source && typeof raw.source === "object" ? raw.source : { catalog: "Admin paneli", pages: [] },
+    featured: Boolean(raw.featured),
+    status: "draft",
+  };
+}

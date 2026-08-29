@@ -16,8 +16,9 @@ const payload = catalogPayloadSchema.parse(
 const products = payload.products.filter((product) => product.status === "published");
 
 describe("katalog sözleşmesi", () => {
-  it("230 yayımlanmış ürün ailesini doğrular", () => {
-    expect(products).toHaveLength(230);
+  it("Excel geçişi sonrası 202 yayımlanmış ürün ailesini doğrular", () => {
+    expect(products).toHaveLength(202);
+    expect(products.filter((product) => product.category === "Kahve Makineleri").length).toBeGreaterThan(0);
   });
 
   it("Türkçe ve model kodu aramasını normalize eder", () => {

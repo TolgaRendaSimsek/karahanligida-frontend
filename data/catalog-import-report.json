@@ -1,0 +1,3208 @@
+{
+  "sourceFile": "KARAHANLI FİYAT LİSTESİ - Kopya (1).xlsx",
+  "sheet": "Sayfa1",
+  "importedAt": "2026-08-29T06:01:00.040Z",
+  "rowCount": 201,
+  "matchedFamilyCount": 12,
+  "draftCount": 159,
+  "archivedFamilyCount": 28,
+  "duplicateGroups": [
+    {
+      "rows": [
+        13,
+        27
+      ],
+      "name": "COFFE HİLL FİLTER KAHVE 1000 GR"
+    },
+    {
+      "rows": [
+        149,
+        219
+      ],
+      "name": "ŞANTİ SİFONU"
+    }
+  ],
+  "needsReview": [
+    {
+      "row": 13,
+      "name": "COFFE HİLL FİLTER KAHVE 1000 GR"
+    },
+    {
+      "row": 27,
+      "name": "COFFE HİLL FİLTER KAHVE 1000 GR"
+    },
+    {
+      "row": 149,
+      "name": "ŞANTİ SİFONU"
+    },
+    {
+      "row": 185,
+      "name": "15"
+    },
+    {
+      "row": 219,
+      "name": "ŞANTİ SİFONU"
+    }
+  ],
+  "categories": [
+    {
+      "id": "kahve",
+      "name": "Kahve",
+      "slug": "kahve",
+      "subcategories": [
+        {
+          "name": "Çekirdek Kahve",
+          "slug": "cekirdek-kahve"
+        },
+        {
+          "name": "Filtre Kahve",
+          "slug": "filtre-kahve"
+        },
+        {
+          "name": "Kapsül Kahve",
+          "slug": "kapsul-kahve"
+        },
+        {
+          "name": "Türk Kahvesi ve Yöresel",
+          "slug": "turk-kahvesi-ve-yoresel"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "cay",
+      "name": "Çay",
+      "slug": "cay",
+      "subcategories": [
+        {
+          "name": "Siyah Çay",
+          "slug": "siyah-cay"
+        },
+        {
+          "name": "Bitki Çayları",
+          "slug": "bitki-caylari"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "surup-ve-pureler",
+      "name": "Şurup ve Püreler",
+      "slug": "surup-ve-pureler",
+      "subcategories": [
+        {
+          "name": "Kokteyl Şurupları",
+          "slug": "kokteyl-suruplari"
+        },
+        {
+          "name": "Meyve Püreleri",
+          "slug": "meyve-pureleri"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "soslar",
+      "name": "Soslar",
+      "slug": "soslar",
+      "subcategories": [
+        {
+          "name": "Profesyonel Soslar",
+          "slug": "profesyonel-soslar"
+        },
+        {
+          "name": "Topping ve Dekor Sosları",
+          "slug": "topping-ve-dekor-soslari"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "gida-urunleri",
+      "name": "Gıda Ürünleri",
+      "slug": "gida-urunleri",
+      "subcategories": [
+        {
+          "name": "Toz İçecekler",
+          "slug": "toz-icecekler"
+        },
+        {
+          "name": "Süt ve Krema",
+          "slug": "sut-ve-krema"
+        },
+        {
+          "name": "Tatlı/Topping Ürünleri",
+          "slug": "tatli-topping-urunleri"
+        },
+        {
+          "name": "Diğer Gıda Ürünleri",
+          "slug": "diger-gida-urunleri"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "donuk-urunler",
+      "name": "Donuk Ürünler",
+      "slug": "donuk-urunler",
+      "subcategories": [
+        {
+          "name": "Donuk Meyveler",
+          "slug": "donuk-meyveler"
+        },
+        {
+          "name": "Donuk İçecekler",
+          "slug": "donuk-icecekler"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "gida-disi-urunler",
+      "name": "Gıda Dışı Ürünler",
+      "slug": "gida-disi-urunler",
+      "subcategories": [
+        {
+          "name": "Bardak ve Kapak",
+          "slug": "bardak-ve-kapak"
+        },
+        {
+          "name": "Pipet ve Karıştırıcı",
+          "slug": "pipet-ve-karistirici"
+        },
+        {
+          "name": "Servis Sarfı",
+          "slug": "servis-sarfi"
+        },
+        {
+          "name": "Temizlik Ürünleri",
+          "slug": "temizlik-urunleri"
+        },
+        {
+          "name": "Diğer Sarf Ürünleri",
+          "slug": "diger-sarf-urunleri"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "kahve-makineleri",
+      "name": "Kahve Makineleri",
+      "slug": "kahve-makineleri",
+      "subcategories": [
+        {
+          "name": "Espresso Kahve Makineleri",
+          "slug": "espresso-kahve-makineleri"
+        },
+        {
+          "name": "Süper Otomatik Kahve Makineleri",
+          "slug": "super-otomatik-kahve-makineleri"
+        },
+        {
+          "name": "Filtre Kahve Makineleri",
+          "slug": "filtre-kahve-makineleri"
+        },
+        {
+          "name": "Kahve Değirmenleri",
+          "slug": "kahve-degirmenleri"
+        }
+      ],
+      "status": "published"
+    },
+    {
+      "id": "endustriyel-mutfak-ekipmanlari",
+      "name": "Endüstriyel Mutfak Ekipmanları",
+      "slug": "endustriyel-mutfak-ekipmanlari",
+      "subcategories": [],
+      "status": "published"
+    }
+  ],
+  "rows": [
+    {
+      "row": 10,
+      "name": "KİMBO İNTENSO ÇEKİRDEK KAHVE 1 KG",
+      "brand": "Kimbo",
+      "category": "Kahve",
+      "subcategory": "Çekirdek Kahve",
+      "packaging": "6",
+      "duplicateRows": [
+        10
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0023",
+        "name": "Horeca Çekirdek Kahveler",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 11,
+      "name": "KİMBO EXTRA CREAM ÇEKİRDEK KAHVE 1 KG",
+      "brand": "Kimbo",
+      "category": "Kahve",
+      "subcategory": "Çekirdek Kahve",
+      "packaging": "6",
+      "duplicateRows": [
+        11
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0023",
+        "name": "Horeca Çekirdek Kahveler",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 12,
+      "name": "KİMBO AUDACE LİGHT ROSAT 1 KG",
+      "brand": "Kimbo",
+      "category": "Kahve",
+      "subcategory": "Çekirdek Kahve",
+      "packaging": "6",
+      "duplicateRows": [
+        12
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0023",
+        "name": "Horeca Çekirdek Kahveler",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 13,
+      "name": "COFFE HİLL FİLTER KAHVE 1000 GR",
+      "brand": "Coffe Hill",
+      "category": "Kahve",
+      "subcategory": "Çekirdek Kahve",
+      "packaging": "8",
+      "duplicateRows": [
+        13,
+        27
+      ],
+      "ambiguous": true,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 14,
+      "name": "LUGANO ÇEKİRDEK KAHVE 1 KG STRONG PAKET",
+      "brand": "Lugano",
+      "category": "Kahve",
+      "subcategory": "Çekirdek Kahve",
+      "packaging": "6",
+      "duplicateRows": [
+        14
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 15,
+      "name": "LUGANO ÇEKİRDEK KAHVE ARABİCA 1 KG",
+      "brand": "Lugano",
+      "category": "Kahve",
+      "subcategory": "Çekirdek Kahve",
+      "packaging": "18",
+      "duplicateRows": [
+        15
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 16,
+      "name": "LUGANO ÇEKİRDEK KAHVE 1 KG BLACK",
+      "brand": "Lugano",
+      "category": "Kahve",
+      "subcategory": "Çekirdek Kahve",
+      "packaging": "12",
+      "duplicateRows": [
+        16
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 17,
+      "name": "LUGANO ÇEKİRDEK KAHVE 1 KG ELİTE LİFE",
+      "brand": "Lugano",
+      "category": "Kahve",
+      "subcategory": "Çekirdek Kahve",
+      "packaging": "6",
+      "duplicateRows": [
+        17
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 18,
+      "name": "MİSKIN ÇEKİRDEK KAHVE",
+      "brand": "Miskin",
+      "category": "Kahve",
+      "subcategory": "Çekirdek Kahve",
+      "packaging": "6",
+      "duplicateRows": [
+        18
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 19,
+      "name": "MORNİNG ÇEKİRDEK KAHVE 1 KG",
+      "brand": "Morning",
+      "category": "Kahve",
+      "subcategory": "Çekirdek Kahve",
+      "packaging": "6",
+      "duplicateRows": [
+        19
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 21,
+      "name": "KİMBO İNTENSO FİLİTRE KAHVE 250 GR",
+      "brand": "Kimbo",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "20",
+      "duplicateRows": [
+        21
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0023",
+        "name": "Horeca Çekirdek Kahveler",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 22,
+      "name": "KİMBO İTALİNO FİLİTRE KAHVE 205 GR",
+      "brand": "Kimbo",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "20",
+      "duplicateRows": [
+        22
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0023",
+        "name": "Horeca Çekirdek Kahveler",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 23,
+      "name": "KİMBO ARMONİA KAPSUL KAHVE NESPRESSO",
+      "brand": "Kimbo",
+      "category": "Kahve Makineleri",
+      "subcategory": "Espresso Kahve Makineleri",
+      "packaging": "100",
+      "duplicateRows": [
+        23
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0025",
+        "name": "Nespresso Uyumlu Kapsüller",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 24,
+      "name": "KİMBO İNTENSO KAPSUL KAHVE NESPRESSO",
+      "brand": "Kimbo",
+      "category": "Kahve Makineleri",
+      "subcategory": "Espresso Kahve Makineleri",
+      "packaging": "100",
+      "duplicateRows": [
+        24
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0025",
+        "name": "Nespresso Uyumlu Kapsüller",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 25,
+      "name": "KİMBO BLUE NAPOLİ KAPSUL KAHVE",
+      "brand": "Kimbo",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "100",
+      "duplicateRows": [
+        25
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0026",
+        "name": "Blue Uyumlu Kapsüller",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 26,
+      "name": "KİMBO NAPOLİ KAPSUL KAHVE NESPRESSO",
+      "brand": "Kimbo",
+      "category": "Kahve Makineleri",
+      "subcategory": "Espresso Kahve Makineleri",
+      "packaging": "100",
+      "duplicateRows": [
+        26
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0025",
+        "name": "Nespresso Uyumlu Kapsüller",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 27,
+      "name": "COFFE HİLL FİLTER KAHVE 1000 GR",
+      "brand": "Coffe Hill",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        13,
+        27
+      ],
+      "ambiguous": true,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 28,
+      "name": "LUGANO FİLİTRE KAHVE 250 GR STRONG PAKET",
+      "brand": "Lugano",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        28
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 29,
+      "name": "LUGANO FİLİTRE KAHVE 250 GR ELİTE LIFE PAKET",
+      "brand": "Lugano",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        29
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 30,
+      "name": "MORNİNG FİLİTRE KAHVE 1 kg",
+      "brand": "Morning",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        30
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 32,
+      "name": "KAHVE ALEMİ TÜRK KAHVESİ 500 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "20",
+      "duplicateRows": [
+        32
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 33,
+      "name": "KAHVE ALEMİ TÜRK KAHVESİ 100 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "24",
+      "duplicateRows": [
+        33
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 34,
+      "name": "KAHVE ALEMİ ÇİFTE KAVR TÜRK KAHVESİ 500 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "20",
+      "duplicateRows": [
+        34
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 35,
+      "name": "MEHMET EFENDİ TÜRK KAHVESİ 500 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "6",
+      "duplicateRows": [
+        35
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 36,
+      "name": "MEHMET EFENDİ TÜRK KAHVESİ 100 GR FOLYO",
+      "brand": "Karahanlı Gıda",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "25",
+      "duplicateRows": [
+        36
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 37,
+      "name": "ŞEKEROĞLU SIVI MENENGİÇ KAHVESİ 600 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "12",
+      "duplicateRows": [
+        37
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 38,
+      "name": "CAFE HİLL TOZ MENENGİÇ 500 GR",
+      "brand": "Cafe Hill",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "12",
+      "duplicateRows": [
+        38
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 39,
+      "name": "CAFE HİLL DAMLA SAKIZLI TÜRK KAHVESİ 400 GR",
+      "brand": "Cafe Hill",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "12",
+      "duplicateRows": [
+        39
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 40,
+      "name": "CAFE HİLL DİBEK KAHVESİ 500 GR",
+      "brand": "Cafe Hill",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "12",
+      "duplicateRows": [
+        40
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 41,
+      "name": "CAFE HİLL SICAK BEYAZ ÇİKOLATA 1000 GR",
+      "brand": "Cafe Hill",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "12",
+      "duplicateRows": [
+        41
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 42,
+      "name": "CAFE HİLL SICAK ÇİKOLATA 1000 GR",
+      "brand": "Cafe Hill",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "12",
+      "duplicateRows": [
+        42
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 43,
+      "name": "CAFE HİLL SAHLEP 1000 GR",
+      "brand": "Cafe Hill",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "12",
+      "duplicateRows": [
+        43
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 44,
+      "name": "CAFEC HİLL OREO MİLKŞAHEK 1000 GR",
+      "brand": "Cafe Hill",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "12",
+      "duplicateRows": [
+        44
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 45,
+      "name": "ÇİKOLLATA MİLKŞHAK 1 KG",
+      "brand": "Karahanlı Gıda",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "15",
+      "duplicateRows": [
+        45
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 46,
+      "name": "VANİLYA MILKSHAKE 1000 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "15",
+      "duplicateRows": [
+        46
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 47,
+      "name": "KARAMEL MİLKŞHAKE 1000 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "15",
+      "duplicateRows": [
+        47
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 48,
+      "name": "SADE FRAPPE 1 KG",
+      "brand": "Karahanlı Gıda",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "15",
+      "duplicateRows": [
+        48
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 49,
+      "name": "KIRMIZI MEYVE MİLKSHAKE 1000 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "15",
+      "duplicateRows": [
+        49
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 50,
+      "name": "ÇİLEK MİLKŞHAK 1 KG",
+      "brand": "Karahanlı Gıda",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "15",
+      "duplicateRows": [
+        50
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 51,
+      "name": "RUBİY ÇİKOLATA 1000 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "12",
+      "duplicateRows": [
+        51
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 52,
+      "name": "CAFE HİLL CHAİ TEA LATTE 1000 GR",
+      "brand": "Cafe Hill",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "12",
+      "duplicateRows": [
+        52
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 53,
+      "name": "CAFE HİLL GOLD KAHVE 500",
+      "brand": "Cafe Hill",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "10",
+      "duplicateRows": [
+        53
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 54,
+      "name": "CAFE HİLL SÜT KREMESI 1000 GR",
+      "brand": "Cafe Hill",
+      "category": "Kahve",
+      "subcategory": "Türk Kahvesi ve Yöresel",
+      "packaging": "12",
+      "duplicateRows": [
+        54
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 56,
+      "name": "GÜZEL ÇAY TAM TADINDA DEMLİK POŞET 40X25",
+      "brand": "Güzel Çay",
+      "category": "Çay",
+      "subcategory": "Siyah Çay",
+      "packaging": "10",
+      "duplicateRows": [
+        56
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 57,
+      "name": "GÜZEL ÇAY KARADENİZ BERGAMOTLU 30X35 GR",
+      "brand": "Güzel Çay",
+      "category": "Çay",
+      "subcategory": "Siyah Çay",
+      "packaging": "10",
+      "duplicateRows": [
+        57
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 58,
+      "name": "GÜZEL ÇAY FİLİZ DEMLİK POŞET 30X35 GR",
+      "brand": "Güzel Çay",
+      "category": "Çay",
+      "subcategory": "Siyah Çay",
+      "packaging": "10",
+      "duplicateRows": [
+        58
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 59,
+      "name": "ŞENPA KAÇAK ÇAY 5 KG",
+      "brand": "Karahanlı Gıda",
+      "category": "Çay",
+      "subcategory": "Siyah Çay",
+      "packaging": "1",
+      "duplicateRows": [
+        59
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 60,
+      "name": "GÜZEL ÇAY CEATRİNG 4 X 3 GK",
+      "brand": "Güzel Çay",
+      "category": "Çay",
+      "subcategory": "Siyah Çay",
+      "packaging": "12 KG",
+      "duplicateRows": [
+        60
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 62,
+      "name": "TOSCHİ ŞURUP ÇEŞİTLERİ 1,32 LİT",
+      "brand": "Toschi",
+      "category": "Şurup ve Püreler",
+      "subcategory": "Kokteyl Şurupları",
+      "packaging": "6",
+      "duplicateRows": [
+        62
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0033",
+        "name": "Şuruplar 1 L",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 63,
+      "name": "TOSCHİ ŞURUPPOMPASI",
+      "brand": "Toschi",
+      "category": "Şurup ve Püreler",
+      "subcategory": "Kokteyl Şurupları",
+      "packaging": "1",
+      "duplicateRows": [
+        63
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0033",
+        "name": "Şuruplar 1 L",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 64,
+      "name": "MONTE CRISTO ŞURUP ÇEŞİTLERİ 700 ML",
+      "brand": "Monte Cristo",
+      "category": "Şurup ve Püreler",
+      "subcategory": "Kokteyl Şurupları",
+      "packaging": "6",
+      "duplicateRows": [
+        64
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 65,
+      "name": "MONTE CRİSTO PÜRE ÇEŞİTLERİ",
+      "brand": "Monte Cristo",
+      "category": "Şurup ve Püreler",
+      "subcategory": "Kokteyl Şurupları",
+      "packaging": "6",
+      "duplicateRows": [
+        65
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 66,
+      "name": "MONTE CRISTO ŞURUP POMPASI",
+      "brand": "Monte Cristo",
+      "category": "Şurup ve Püreler",
+      "subcategory": "Kokteyl Şurupları",
+      "packaging": "1",
+      "duplicateRows": [
+        66
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 67,
+      "name": "FO ŞURUP ÇEŞİTLERİ 700 ML",
+      "brand": "FO",
+      "category": "Şurup ve Püreler",
+      "subcategory": "Kokteyl Şurupları",
+      "packaging": "6",
+      "duplicateRows": [
+        67
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0002",
+        "name": "Kokteyl Şurupları",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 68,
+      "name": "FO PREMIUM ŞURUP ÇEŞİTLERİ",
+      "brand": "FO",
+      "category": "Şurup ve Püreler",
+      "subcategory": "Kokteyl Şurupları",
+      "packaging": "6",
+      "duplicateRows": [
+        68
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0002",
+        "name": "Kokteyl Şurupları",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 69,
+      "name": "FO ŞURUP POMPASI",
+      "brand": "FO",
+      "category": "Şurup ve Püreler",
+      "subcategory": "Kokteyl Şurupları",
+      "packaging": "1",
+      "duplicateRows": [
+        69
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0002",
+        "name": "Kokteyl Şurupları",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 71,
+      "name": "TOSCHİ PÜRE ÇEŞİTLERİ 1,300 KG",
+      "brand": "Toschi",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        71
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0037",
+        "name": "Püreler 1,3 kg",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 72,
+      "name": "TOSCHİ TOPİNG ÇEŞİTLERİ 1 KG",
+      "brand": "Toschi",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        72
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0033",
+        "name": "Şuruplar 1 L",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 73,
+      "name": "FO ÇİLEK PÜRE 1 LİTRE NORMAL PÜRE ÇEŞİTLERİ",
+      "brand": "FO",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        73
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0013",
+        "name": "Meyve Püreleri",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 74,
+      "name": "FO NAR PÜRE 1000",
+      "brand": "FO",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        74
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0013",
+        "name": "Meyve Püreleri",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 75,
+      "name": "FO PATLAYAN ŞEKER SOS 1 LİT",
+      "brand": "FO",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        75
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0010",
+        "name": "Profesyonel Soslar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 76,
+      "name": "CALLEE ANTEP FISTIK WAFLEE SOS",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "8",
+      "duplicateRows": [
+        76
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 77,
+      "name": "FO ANTEP FISTIĞI SOS 1 LİT",
+      "brand": "FO",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        77
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0010",
+        "name": "Profesyonel Soslar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 78,
+      "name": "FO TROPİKAL PÜRE ÇEŞİTLERİ 1000 GR",
+      "brand": "FO",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        78
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0013",
+        "name": "Meyve Püreleri",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 79,
+      "name": "KUZU KILAĞI PÜRESİ 1000 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        79
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 80,
+      "name": "KARADUT PÜRE",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        80
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 81,
+      "name": "FO BÖĞÜRTLEN PÜRE 1000 GR",
+      "brand": "FO",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        81
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0013",
+        "name": "Meyve Püreleri",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 82,
+      "name": "FO FRAMBUGAZ PÜRE 1000 GR",
+      "brand": "FO",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        82
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0013",
+        "name": "Meyve Püreleri",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 83,
+      "name": "FO YABANMERSİNİ PÜRE 1000 GR",
+      "brand": "FO",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        83
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0013",
+        "name": "Meyve Püreleri",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 84,
+      "name": "REPO BEYAZ ÇİKOLATA TOPPİNG 1000 GR",
+      "brand": "Repo",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        84
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 85,
+      "name": "REPO TOPPİNG ÇEŞİTLERİ 1000 GR",
+      "brand": "Repo",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        85
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 86,
+      "name": "REPO ÇİLEK TOPİNG 1000 GR",
+      "brand": "Repo",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        86
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 87,
+      "name": "REPO KOKTEYL KÖPÜK",
+      "brand": "Repo",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "12",
+      "duplicateRows": [
+        87
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 88,
+      "name": "FO VANİLYA DEKOR",
+      "brand": "FO",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "12",
+      "duplicateRows": [
+        88
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0010",
+        "name": "Profesyonel Soslar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 89,
+      "name": "FO DEKOR SOS ÇEŞİTLERİ 750 GR",
+      "brand": "FO",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "6",
+      "duplicateRows": [
+        89
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0010",
+        "name": "Profesyonel Soslar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 90,
+      "name": "DE LUCCA KURABİYE /BİSKÜVİ",
+      "brand": "De Lucca",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "1",
+      "duplicateRows": [
+        90
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 92,
+      "name": "TOSCHİ BARİSTA SOSU 2 KG/ÇİKOLATA",
+      "brand": "Toschi",
+      "category": "Soslar",
+      "subcategory": "Profesyonel Soslar",
+      "packaging": "4",
+      "duplicateRows": [
+        92
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0035",
+        "name": "Barista Sos 2 kg",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 93,
+      "name": "TOSCHİ BARİSTA SOSU 2 KG/KARAMEL",
+      "brand": "Toschi",
+      "category": "Soslar",
+      "subcategory": "Profesyonel Soslar",
+      "packaging": "4",
+      "duplicateRows": [
+        93
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0035",
+        "name": "Barista Sos 2 kg",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 94,
+      "name": "TOSCHİ BARİSTA SOSU 2 KG/BEYAZ ÇİKOLATA",
+      "brand": "Toschi",
+      "category": "Soslar",
+      "subcategory": "Profesyonel Soslar",
+      "packaging": "4",
+      "duplicateRows": [
+        94
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0035",
+        "name": "Barista Sos 2 kg",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 95,
+      "name": "FO BAR SOS KARAMEL 2500 GR",
+      "brand": "FO",
+      "category": "Soslar",
+      "subcategory": "Profesyonel Soslar",
+      "packaging": "6",
+      "duplicateRows": [
+        95
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0010",
+        "name": "Profesyonel Soslar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 96,
+      "name": "FO BAR SOS BEYAZ ÇİKOLATA 2500 GR",
+      "brand": "FO",
+      "category": "Soslar",
+      "subcategory": "Profesyonel Soslar",
+      "packaging": "6",
+      "duplicateRows": [
+        96
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0010",
+        "name": "Profesyonel Soslar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 97,
+      "name": "FO BAR SOS DARK ÇİKOLATA 2500 GR",
+      "brand": "FO",
+      "category": "Soslar",
+      "subcategory": "Profesyonel Soslar",
+      "packaging": "6",
+      "duplicateRows": [
+        97
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0010",
+        "name": "Profesyonel Soslar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 98,
+      "name": "FO PREMIUM BAR SOS ÇEŞİTLERİ",
+      "brand": "FO",
+      "category": "Soslar",
+      "subcategory": "Profesyonel Soslar",
+      "packaging": "6",
+      "duplicateRows": [
+        98
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0010",
+        "name": "Profesyonel Soslar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 99,
+      "name": "MONTE CRİSTO BEYAZ ÇİKOLATA BAR SOS 2,5 KG",
+      "brand": "Monte Cristo",
+      "category": "Soslar",
+      "subcategory": "Profesyonel Soslar",
+      "packaging": "6",
+      "duplicateRows": [
+        99
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 100,
+      "name": "MONTE CRİSTO KARAMEL BAR SOS 2,5 KG",
+      "brand": "Monte Cristo",
+      "category": "Soslar",
+      "subcategory": "Profesyonel Soslar",
+      "packaging": "6",
+      "duplicateRows": [
+        100
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 101,
+      "name": "MONTE CRISTO ÇİKOLATA BAR SOS 2,5 KG",
+      "brand": "Monte Cristo",
+      "category": "Soslar",
+      "subcategory": "Profesyonel Soslar",
+      "packaging": "6",
+      "duplicateRows": [
+        101
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 103,
+      "name": "CAFE HİLL KIŞ ÇAYI 250 GR",
+      "brand": "Cafe Hill",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "12",
+      "duplicateRows": [
+        103
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 104,
+      "name": "CAFE HİLL NANE LİMON ÇAYI 250 GR",
+      "brand": "Cafe Hill",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "12",
+      "duplicateRows": [
+        104
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 105,
+      "name": "CAFE HİLL ELMA TARÇIN ÇAYI 250 GR",
+      "brand": "Cafe Hill",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "12",
+      "duplicateRows": [
+        105
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 106,
+      "name": "CAFE HİLL KIRMIZI ORMAN MEY ÇAYI 250 GR",
+      "brand": "Cafe Hill",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "12",
+      "duplicateRows": [
+        106
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 107,
+      "name": "CAFE HİLL PAPATYA ÇAYI 100 GR",
+      "brand": "Cafe Hill",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "12",
+      "duplicateRows": [
+        107
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 108,
+      "name": "CAFE HİLL YASEMİNLİ YEŞİL ÇAY 250 GR",
+      "brand": "Cafe Hill",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "12",
+      "duplicateRows": [
+        108
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 109,
+      "name": "CAFE HİLL LİMON ZENCEFİL ÇAYI 250 GR",
+      "brand": "Cafe Hill",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "12",
+      "duplicateRows": [
+        109
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 110,
+      "name": "CAFE HİLL ELMA ÇAYI 250 GR",
+      "brand": "Cafe Hill",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "12",
+      "duplicateRows": [
+        110
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 111,
+      "name": "CAFE HİLL YEŞİL ÇAY 250 GR",
+      "brand": "Cafe Hill",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "12",
+      "duplicateRows": [
+        111
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 112,
+      "name": "CAFE HİLL KUŞBURNU ÇAYI 250 GR",
+      "brand": "Cafe Hill",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "12",
+      "duplicateRows": [
+        112
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 113,
+      "name": "CAFE HİLL BÖGÜRTLEN ÇAYI 250 GR",
+      "brand": "Cafe Hill",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "24",
+      "duplicateRows": [
+        113
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 114,
+      "name": "CAFE HİLL MELİSA ÇAYI 50 GR",
+      "brand": "Cafe Hill",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "12",
+      "duplicateRows": [
+        114
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 115,
+      "name": "ÇİLEK BİTKİ ÇAYI 250 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "12",
+      "duplicateRows": [
+        115
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 116,
+      "name": "CAFE HİLL ADA ÇAYI 100 GR",
+      "brand": "Cafe Hill",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "12",
+      "duplicateRows": [
+        116
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 117,
+      "name": "REZENE ÇAYI 250 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "1",
+      "duplicateRows": [
+        117
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 118,
+      "name": "KATLA BAL",
+      "brand": "Karahanlı Gıda",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "1",
+      "duplicateRows": [
+        118
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 119,
+      "name": "HİBİSKÜS ÇAYI 250 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "1",
+      "duplicateRows": [
+        119
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 120,
+      "name": "KABUK TARÇIN 500 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "500 GR",
+      "duplicateRows": [
+        120
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 121,
+      "name": "MAVİ KELEBEK ÇAYI 100 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "1 ADET",
+      "duplicateRows": [
+        121
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 122,
+      "name": "MAÇHA OZU 200 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "1 ADET",
+      "duplicateRows": [
+        122
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 123,
+      "name": "CAFE HİLL IHLAMUR ÇAYI 100 GR",
+      "brand": "Cafe Hill",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "12",
+      "duplicateRows": [
+        123
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 124,
+      "name": "GÜZELÇAY BİTKİ ELMA ÇAYI 100 LÜ",
+      "brand": "Güzel Çay",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "5 PAKET",
+      "duplicateRows": [
+        124
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 125,
+      "name": "GÜZELÇAY BİTKİ FORM KAYSI ÇAYI 100 LÜ",
+      "brand": "Güzel Çay",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "5 PAKET",
+      "duplicateRows": [
+        125
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 126,
+      "name": "GÜZELÇAY BİTKİ IHLAMUR ÇAYI 100 LÜ",
+      "brand": "Güzel Çay",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "5 PAKET",
+      "duplicateRows": [
+        126
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 127,
+      "name": "GÜZELÇAY BİTKİ KUŞBURNU ÇAYI 100 LÜ",
+      "brand": "Güzel Çay",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "5 PAKET",
+      "duplicateRows": [
+        127
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 128,
+      "name": "GÜZELÇAY BİTKİ PAPATYA ÇAYI 100 LÜ",
+      "brand": "Güzel Çay",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "5 PAKET",
+      "duplicateRows": [
+        128
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 129,
+      "name": "GÜZELÇAY BİTKİ YEŞİLÇAY 100 LÜ",
+      "brand": "Güzel Çay",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "5 PAKET",
+      "duplicateRows": [
+        129
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 130,
+      "name": "GÜZELÇAY BİTKİ LİMONLU YEŞİLÇAY 100 LÜ",
+      "brand": "Güzel Çay",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "5 PAKET",
+      "duplicateRows": [
+        130
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 131,
+      "name": "GÜZELÇAY GOLD SELECTİON SÜZEN POŞET 25 Lİ",
+      "brand": "Güzel Çay",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "24 PAKET",
+      "duplicateRows": [
+        131
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 132,
+      "name": "GÜZELÇAY ERLİGREY DEMLİK POŞET 100 LÜ",
+      "brand": "Güzel Çay",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "8 AD",
+      "duplicateRows": [
+        132
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 133,
+      "name": "GÜZELÇAY FİLİZ TABLET 100 LÜ",
+      "brand": "Güzel Çay",
+      "category": "Çay",
+      "subcategory": "Bitki Çayları",
+      "packaging": "8 AD",
+      "duplicateRows": [
+        133
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 135,
+      "name": "YOOK BARİSTA SÜT ÇEŞİTLERİ 1 LİT",
+      "brand": "YOOK",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Süt ve Krema",
+      "packaging": "6 ADET",
+      "duplicateRows": [
+        135
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0038",
+        "name": "Barista Yulaf İçecekleri",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 136,
+      "name": "LOTUS KIRINTI",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "1 KG",
+      "duplicateRows": [
+        136
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 137,
+      "name": "ÇAKIL TAŞI KOMANDO",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "1 KG",
+      "duplicateRows": [
+        137
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 138,
+      "name": "DELUCCA BİSKÜVİ KIRINTISI",
+      "brand": "De Lucca",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Tatlı/Topping Ürünleri",
+      "packaging": "1KG",
+      "duplicateRows": [
+        138
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 139,
+      "name": "DELUCCA KAKOLU BİSKÜVİ TOZU",
+      "brand": "De Lucca",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Tatlı/Topping Ürünleri",
+      "packaging": "1KG",
+      "duplicateRows": [
+        139
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 140,
+      "name": "DELUCCA KAKAOLU BİSKÜVİ KURABİYE",
+      "brand": "De Lucca",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Tatlı/Topping Ürünleri",
+      "packaging": "1 PAKET",
+      "duplicateRows": [
+        140
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 141,
+      "name": "NAPOLİTEN ÇİKOLATA",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Tatlı/Topping Ürünleri",
+      "packaging": "1 ADET",
+      "duplicateRows": [
+        141
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 142,
+      "name": "FO QUATRO TOZ İÇECEK",
+      "brand": "FO",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Toz İçecekler",
+      "packaging": "1 ADET",
+      "duplicateRows": [
+        142
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0017",
+        "name": "Aromalı İçecek Tozları",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 143,
+      "name": "OREO KREMALI BİSKÜVİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Süt ve Krema",
+      "packaging": "1 ADET",
+      "duplicateRows": [
+        143
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 144,
+      "name": "BROWNİ GOLD MİNİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "12 PAKET",
+      "duplicateRows": [
+        144
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 145,
+      "name": "HARİBOO AYICIK",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "1KG",
+      "duplicateRows": [
+        145
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 146,
+      "name": "FİNDUK KAKAOLU FINDIK KREMASI",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Süt ve Krema",
+      "packaging": "5 KG",
+      "duplicateRows": [
+        146
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 147,
+      "name": "PRALİN ÇİKOLATA 12 KG",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Tatlı/Topping Ürünleri",
+      "packaging": "1 KG",
+      "duplicateRows": [
+        147
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 148,
+      "name": "RİCH KREM ŞANTİ 250 GR KIRMIZI",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Tatlı/Topping Ürünleri",
+      "packaging": "12",
+      "duplicateRows": [
+        148
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 149,
+      "name": "ŞANTİ SİFONU",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Tatlı/Topping Ürünleri",
+      "packaging": "10",
+      "duplicateRows": [
+        149,
+        219
+      ],
+      "ambiguous": true,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 150,
+      "name": "VERSATY SICAK YEMEK KREMASI-PRO",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Süt ve Krema",
+      "packaging": "12",
+      "duplicateRows": [
+        150
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 151,
+      "name": "DR-GUSTO SPREY TAVA YAG",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "600 ML",
+      "duplicateRows": [
+        151
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 152,
+      "name": "PELEGRİNO MADEN SUYU 250, ML",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "24",
+      "duplicateRows": [
+        152
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 153,
+      "name": "PELEGRİNO MADEN SUYU 750, ML",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "12",
+      "duplicateRows": [
+        153
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 154,
+      "name": "STİK TUZ 800 GR",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "1",
+      "duplicateRows": [
+        154
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 155,
+      "name": "ERKOÇ STİK ŞEKER 4 GR 1.250 ADET",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "5 KG",
+      "duplicateRows": [
+        155
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 156,
+      "name": "ERKOÇ KESME ŞEKER SARGILI",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "4 KG",
+      "duplicateRows": [
+        156
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 157,
+      "name": "ROSS ÇAKIL TAŞI KOMANDO",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "3 KG",
+      "duplicateRows": [
+        157
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 158,
+      "name": "ROSS DAMLA DROP BİTTER",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Ürünleri",
+      "subcategory": "Diğer Gıda Ürünleri",
+      "packaging": "1 KG",
+      "duplicateRows": [
+        158
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 160,
+      "name": "DONUK YABAN MERSİNİ MEYVESİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk Meyveler",
+      "packaging": "1 KG",
+      "duplicateRows": [
+        160
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 161,
+      "name": "DONUK FRAMBUGAZ MEYVESİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk Meyveler",
+      "packaging": "1 KG",
+      "duplicateRows": [
+        161
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 162,
+      "name": "DONUK KARIŞIK ORMAN MEYVESİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk Meyveler",
+      "packaging": "1 KG",
+      "duplicateRows": [
+        162
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 163,
+      "name": "DONUK BÖGÜRTLEN MEYMESİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk İçecekler",
+      "packaging": "1 KG",
+      "duplicateRows": [
+        163
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 164,
+      "name": "DONUK KARADUT MEYVESİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk Meyveler",
+      "packaging": "1 KG",
+      "duplicateRows": [
+        164
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 165,
+      "name": "DONUK VİŞNE MEYVESİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk Meyveler",
+      "packaging": "1 KG",
+      "duplicateRows": [
+        165
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 166,
+      "name": "DONUK ÇİLEK MEYVESİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk Meyveler",
+      "packaging": "1 KG",
+      "duplicateRows": [
+        166
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 167,
+      "name": "KURUTULMUŞ PORTAKAL",
+      "brand": "Karahanlı Gıda",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk İçecekler",
+      "packaging": "1 KG",
+      "duplicateRows": [
+        167
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 168,
+      "name": "KURUTULMUŞ YEŞİL LİMON",
+      "brand": "Karahanlı Gıda",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk İçecekler",
+      "packaging": "1 KG",
+      "duplicateRows": [
+        168
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 169,
+      "name": "FAVORİ NAR SUYU 1 LİT DONUK X 6 LI PAKET",
+      "brand": "Favori Fresh",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk İçecekler",
+      "packaging": "6 ADET",
+      "duplicateRows": [
+        169
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0001",
+        "name": "Donuk Meyve Suları ve Limonatalar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 170,
+      "name": "FAVORİ PORTAKAL SUYU 1 LİT DONUK X6 LI PAKET",
+      "brand": "Favori Fresh",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk İçecekler",
+      "packaging": "6 ADET",
+      "duplicateRows": [
+        170
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0001",
+        "name": "Donuk Meyve Suları ve Limonatalar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 171,
+      "name": "FAVORİ BODRUM MANDALİNASI DONOK",
+      "brand": "Favori Fresh",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk İçecekler",
+      "packaging": "6 ADET",
+      "duplicateRows": [
+        171
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0001",
+        "name": "Donuk Meyve Suları ve Limonatalar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 172,
+      "name": "FAVORİ LİMON SUYU 1 LİTDONUK X 6 LI PAKET",
+      "brand": "Favori Fresh",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk İçecekler",
+      "packaging": "6 ADET",
+      "duplicateRows": [
+        172
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0001",
+        "name": "Donuk Meyve Suları ve Limonatalar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 173,
+      "name": "FAVORİ GRAYFUR SUYU 1 LİT DONUK 6 LI PAKET",
+      "brand": "Favori Fresh",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk İçecekler",
+      "packaging": "6 ADET",
+      "duplicateRows": [
+        173
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0001",
+        "name": "Donuk Meyve Suları ve Limonatalar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 174,
+      "name": "FAVORİ KARADUT ÖZÜ 1 LİT DONUK 6 LI PAKER",
+      "brand": "Favori Fresh",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk İçecekler",
+      "packaging": "6 ADET",
+      "duplicateRows": [
+        174
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0001",
+        "name": "Donuk Meyve Suları ve Limonatalar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 175,
+      "name": "FAVORİ LİMONATA 2 LİT DONUK X 6 LI PAKET",
+      "brand": "Favori Fresh",
+      "category": "Donuk Ürünler",
+      "subcategory": "Donuk İçecekler",
+      "packaging": "6 ADET",
+      "duplicateRows": [
+        175
+      ],
+      "ambiguous": false,
+      "match": {
+        "id": "family-0001",
+        "name": "Donuk Meyve Suları ve Limonatalar",
+        "score": 99
+      },
+      "decision": "matched"
+    },
+    {
+      "row": 177,
+      "name": "CHEF STAR FRENCH PRESS 350 ML",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Servis Sarfı",
+      "packaging": "1",
+      "duplicateRows": [
+        177
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 178,
+      "name": "V60 FİLİTRE KAHVE KAADI",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Diğer Sarf Ürünleri",
+      "packaging": "100 AD",
+      "duplicateRows": [
+        178
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 179,
+      "name": "ORTABOY GRAFT TAŞIMA ÇANTASI",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Diğer Sarf Ürünleri",
+      "packaging": "1 ADET",
+      "duplicateRows": [
+        179
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 180,
+      "name": "DOLPİN JUMBO ARTİSTİK PİPET 50 ADETLİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Pipet ve Karıştırıcı",
+      "packaging": "PAKET:50 AD \nKOLİ :50 PAKET",
+      "duplicateRows": [
+        180
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 181,
+      "name": "DOLPİN FROZEN JELATİNLİ SİYAH DÜZ PİPET 250 LİLİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Pipet ve Karıştırıcı",
+      "packaging": "PAKET:250 AD \nKOLİ :20 PAKET",
+      "duplicateRows": [
+        181
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 182,
+      "name": "JİLATİNSİZ SİYAH PİPET 50X 100 LÜ PAKET",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Pipet ve Karıştırıcı",
+      "packaging": "KOLİ İÇİ 50",
+      "duplicateRows": [
+        182
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 183,
+      "name": "DOLPİN FROZEN JELATİLİ SİYAH DÜZ PİPET 100 LÜ",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Pipet ve Karıştırıcı",
+      "packaging": "PAKET:100 AD \nKOLİ :50 PAKET",
+      "duplicateRows": [
+        183
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 184,
+      "name": "İNCE KIL PİPERT 500 ADETLİ JİLATİNSİZ",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Diğer Sarf Ürünleri",
+      "packaging": "500 ADET",
+      "duplicateRows": [
+        184
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 185,
+      "name": "15",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Diğer Sarf Ürünleri",
+      "packaging": "25 PAKET",
+      "duplicateRows": [
+        185
+      ],
+      "ambiguous": true,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 186,
+      "name": "GRAFT POŞET KG FİYATI",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Diğer Sarf Ürünleri",
+      "packaging": "1 KG",
+      "duplicateRows": [
+        186
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 187,
+      "name": "BARDAK TIPAÇI KOLİ İÇİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "500 LÜ PAKET",
+      "duplicateRows": [
+        187
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 188,
+      "name": "SARGISIZ TAHTA KARIŞTIRICI 500 ADETLİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Pipet ve Karıştırıcı",
+      "packaging": "1 PAKET",
+      "duplicateRows": [
+        188
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 189,
+      "name": "SARGILI TAHTA KARIŞTIRICI 500 ADETLİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Pipet ve Karıştırıcı",
+      "packaging": "1 PAKET",
+      "duplicateRows": [
+        189
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 190,
+      "name": "350 CC PET BARDAK 50 Lİ KOLİ İÇİ 1000",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "1 000 AD",
+      "duplicateRows": [
+        190
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 191,
+      "name": "350 CC PET BARDAK KAPAĞI 100 LÜ KOLİ İÇİ 1000",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "1000 AD",
+      "duplicateRows": [
+        191
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 192,
+      "name": "HUTAMAKİ-400 CC SOĞUK ŞEFFAF PET BARDAK",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "1000 AD",
+      "duplicateRows": [
+        192
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 193,
+      "name": "HUTAMAKİ-400 CC DOM ŞEFFAF KAPAK",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "1000 AD",
+      "duplicateRows": [
+        193
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 194,
+      "name": "HUTAMAKİ-500 CC SOĞUK ŞEFFAF PET BARDAK",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "1000 AD",
+      "duplicateRows": [
+        194
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 195,
+      "name": "HUTAMAKİ 500 CC PLASTİK KAPAK",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "1000 AD",
+      "duplicateRows": [
+        195
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 196,
+      "name": "HUTAMAKİ 16 OZ SICAK KARTON BARDAK(ÇİFT KATLI)",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "1000 AD",
+      "duplicateRows": [
+        196
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 197,
+      "name": "HUTAMAKİ 16 OZ KAPAK",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "1000 AD",
+      "duplicateRows": [
+        197
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 198,
+      "name": "HUTAMAKİ 12 OZ SICAK KARTON BARDAK(ÇİFT KATLI)",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "1000 AD",
+      "duplicateRows": [
+        198
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 199,
+      "name": "HUTAMAKİ 12 OZ KAPAK",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "1000 AD",
+      "duplicateRows": [
+        199
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 200,
+      "name": "HUTAMAKİ 9 OZ SICAK KARTON BARDAK(ÇİFT KATLI)",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "1000 AD",
+      "duplicateRows": [
+        200
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 201,
+      "name": "HUTAMAKİ 9 OZ KAPAK",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "1000 AD",
+      "duplicateRows": [
+        201
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 202,
+      "name": "HUTAMAKİ 7 OZ SICAK KARTON BARDAK",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "3000 AD",
+      "duplicateRows": [
+        202
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 203,
+      "name": "HUTAMAKİ 4-OZ SICAK KARTON BARDAK",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "3000 AD",
+      "duplicateRows": [
+        203
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 204,
+      "name": "BOUBLE PED BARDAK-",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "1000 ADET",
+      "duplicateRows": [
+        204
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 205,
+      "name": "HUTAMAKİ TAŞIMA KILIFI 2Lİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "480 AD",
+      "duplicateRows": [
+        205
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 206,
+      "name": "BOUBLE PED BARDAK-KAPAĞI KİLİTLİ EMZİKLİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "10000",
+      "duplicateRows": [
+        206
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 207,
+      "name": "HUTAMAKİ SLEEVE BARDAK TUTAMACI",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "1000 AD",
+      "duplicateRows": [
+        207
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 208,
+      "name": "BRAVİLOR BONAMAT 110/360 FİLİTRE KAHVE KAADI",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Diğer Sarf Ürünleri",
+      "packaging": "250 ADET",
+      "duplicateRows": [
+        208
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 209,
+      "name": "BRAVİLOR BONAMAT 85/245 FİLİTRE KAHVE KAADI",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Diğer Sarf Ürünleri",
+      "packaging": "20X50 ADET",
+      "duplicateRows": [
+        209
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 210,
+      "name": "OMK BAR BLENDER",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Servis Sarfı",
+      "packaging": "1 ADET",
+      "duplicateRows": [
+        210
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 211,
+      "name": "KÖPÜKSAN KARTON BARDAK 4 OZ TÜRK KAHVESİ",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Bardak ve Kapak",
+      "packaging": "3000 ADET",
+      "duplicateRows": [
+        211
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 212,
+      "name": "CHS LÜX ÇATAL&KAŞIK ŞEFFAF",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Diğer Sarf Ürünleri",
+      "packaging": "50 ADET",
+      "duplicateRows": [
+        212
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 213,
+      "name": "DOLPHİN SİYAH NİTRİL 100 LÜ L/M BEDEN",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Diğer Sarf Ürünleri",
+      "packaging": "100 LÜ",
+      "duplicateRows": [
+        213
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 214,
+      "name": "POLİY MİX TEMİZLEME SUYU",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Temizlik Ürünleri",
+      "packaging": "1 ADET",
+      "duplicateRows": [
+        214
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 215,
+      "name": "POLİGAF TEMİZLEME TOZU",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Temizlik Ürünleri",
+      "packaging": "1 ADET",
+      "duplicateRows": [
+        215
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 216,
+      "name": "PULY GRİND KIRIİTAL",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Temizlik Ürünleri",
+      "packaging": "1ADET",
+      "duplicateRows": [
+        216
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 217,
+      "name": "POLİGAF TABLET",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Temizlik Ürünleri",
+      "packaging": "1 ADET",
+      "duplicateRows": [
+        217
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 218,
+      "name": "1 LİT SİFON METAL",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Servis Sarfı",
+      "packaging": "1 ADET",
+      "duplicateRows": [
+        218
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 219,
+      "name": "ŞANTİ SİFONU",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Servis Sarfı",
+      "packaging": "1 KUTU",
+      "duplicateRows": [
+        149,
+        219
+      ],
+      "ambiguous": true,
+      "match": null,
+      "decision": "research-needed"
+    },
+    {
+      "row": 220,
+      "name": "KÖR TAPA METAL",
+      "brand": "Karahanlı Gıda",
+      "category": "Gıda Dışı Ürünler",
+      "subcategory": "Diğer Sarf Ürünleri",
+      "packaging": "1 ADET",
+      "duplicateRows": [
+        220
+      ],
+      "ambiguous": false,
+      "match": null,
+      "decision": "research-needed"
+    }
+  ]
+}

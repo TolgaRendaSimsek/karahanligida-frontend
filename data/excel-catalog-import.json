@@ -1,0 +1,1213 @@
+{
+  "sourceFile": "KARAHANLI FİYAT LİSTESİ - Kopya (1).xlsx",
+  "sheet": "Sayfa1",
+  "note": "A sütunu ve anlamlı ambalaj bilgisi; fiyat/stok/C-D alanları bilerek çıkarılmıştır.",
+  "rows": [
+    {
+      "row": 10,
+      "section": "ÇEKİRDEK KAHVE GRUBU",
+      "name": "KİMBO İNTENSO ÇEKİRDEK KAHVE 1 KG",
+      "pack": 6
+    },
+    {
+      "row": 11,
+      "section": "ÇEKİRDEK KAHVE GRUBU",
+      "name": "KİMBO EXTRA CREAM ÇEKİRDEK KAHVE 1 KG",
+      "pack": 6
+    },
+    {
+      "row": 12,
+      "section": "ÇEKİRDEK KAHVE GRUBU",
+      "name": "KİMBO AUDACE LİGHT ROSAT 1 KG",
+      "pack": 6
+    },
+    {
+      "row": 13,
+      "section": "ÇEKİRDEK KAHVE GRUBU",
+      "name": "COFFE HİLL FİLTER KAHVE 1000 GR",
+      "pack": 8
+    },
+    {
+      "row": 14,
+      "section": "ÇEKİRDEK KAHVE GRUBU",
+      "name": "LUGANO ÇEKİRDEK KAHVE 1 KG STRONG PAKET",
+      "pack": 6
+    },
+    {
+      "row": 15,
+      "section": "ÇEKİRDEK KAHVE GRUBU",
+      "name": "LUGANO ÇEKİRDEK KAHVE ARABİCA 1 KG",
+      "pack": 18
+    },
+    {
+      "row": 16,
+      "section": "ÇEKİRDEK KAHVE GRUBU",
+      "name": "LUGANO ÇEKİRDEK KAHVE 1 KG BLACK",
+      "pack": 12
+    },
+    {
+      "row": 17,
+      "section": "ÇEKİRDEK KAHVE GRUBU",
+      "name": "LUGANO ÇEKİRDEK KAHVE 1 KG ELİTE LİFE",
+      "pack": 6
+    },
+    {
+      "row": 18,
+      "section": "ÇEKİRDEK KAHVE GRUBU",
+      "name": "MİSKIN ÇEKİRDEK KAHVE",
+      "pack": 6
+    },
+    {
+      "row": 19,
+      "section": "ÇEKİRDEK KAHVE GRUBU",
+      "name": "MORNİNG ÇEKİRDEK KAHVE 1 KG",
+      "pack": 6
+    },
+    {
+      "row": 21,
+      "section": "FİLİTRE KAHVE & DÜNYA KAHVELERİ GRUBU",
+      "name": "KİMBO İNTENSO FİLİTRE KAHVE 250 GR",
+      "pack": 20
+    },
+    {
+      "row": 22,
+      "section": "FİLİTRE KAHVE & DÜNYA KAHVELERİ GRUBU",
+      "name": "KİMBO İTALİNO FİLİTRE KAHVE 205 GR",
+      "pack": 20
+    },
+    {
+      "row": 23,
+      "section": "FİLİTRE KAHVE & DÜNYA KAHVELERİ GRUBU",
+      "name": "KİMBO ARMONİA KAPSUL KAHVE NESPRESSO",
+      "pack": 100
+    },
+    {
+      "row": 24,
+      "section": "FİLİTRE KAHVE & DÜNYA KAHVELERİ GRUBU",
+      "name": "KİMBO İNTENSO KAPSUL KAHVE NESPRESSO",
+      "pack": 100
+    },
+    {
+      "row": 25,
+      "section": "FİLİTRE KAHVE & DÜNYA KAHVELERİ GRUBU",
+      "name": "KİMBO BLUE NAPOLİ KAPSUL KAHVE",
+      "pack": 100
+    },
+    {
+      "row": 26,
+      "section": "FİLİTRE KAHVE & DÜNYA KAHVELERİ GRUBU",
+      "name": "KİMBO NAPOLİ KAPSUL KAHVE NESPRESSO",
+      "pack": 100
+    },
+    {
+      "row": 27,
+      "section": "FİLİTRE KAHVE & DÜNYA KAHVELERİ GRUBU",
+      "name": "COFFE HİLL FİLTER KAHVE 1000 GR",
+      "pack": 6
+    },
+    {
+      "row": 28,
+      "section": "FİLİTRE KAHVE & DÜNYA KAHVELERİ GRUBU",
+      "name": "LUGANO FİLİTRE KAHVE 250 GR STRONG PAKET",
+      "pack": 6
+    },
+    {
+      "row": 29,
+      "section": "FİLİTRE KAHVE & DÜNYA KAHVELERİ GRUBU",
+      "name": "LUGANO FİLİTRE KAHVE 250 GR ELİTE LIFE PAKET",
+      "pack": 6
+    },
+    {
+      "row": 30,
+      "section": "FİLİTRE KAHVE & DÜNYA KAHVELERİ GRUBU",
+      "name": "MORNİNG FİLİTRE KAHVE 1 kg",
+      "pack": 6
+    },
+    {
+      "row": 32,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "KAHVE ALEMİ TÜRK KAHVESİ 500 GR",
+      "pack": 20
+    },
+    {
+      "row": 33,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "KAHVE ALEMİ TÜRK KAHVESİ 100 GR",
+      "pack": 24
+    },
+    {
+      "row": 34,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "KAHVE ALEMİ ÇİFTE KAVR TÜRK KAHVESİ 500 GR",
+      "pack": 20
+    },
+    {
+      "row": 35,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "MEHMET EFENDİ TÜRK KAHVESİ 500 GR",
+      "pack": 6
+    },
+    {
+      "row": 36,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "MEHMET EFENDİ TÜRK KAHVESİ 100 GR FOLYO",
+      "pack": 25
+    },
+    {
+      "row": 37,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "ŞEKEROĞLU SIVI MENENGİÇ KAHVESİ 600 GR",
+      "pack": 12
+    },
+    {
+      "row": 38,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "CAFE HİLL TOZ MENENGİÇ 500 GR",
+      "pack": 12
+    },
+    {
+      "row": 39,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "CAFE HİLL DAMLA SAKIZLI TÜRK KAHVESİ 400 GR",
+      "pack": 12
+    },
+    {
+      "row": 40,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "CAFE HİLL DİBEK KAHVESİ 500 GR",
+      "pack": 12
+    },
+    {
+      "row": 41,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "CAFE HİLL SICAK BEYAZ ÇİKOLATA 1000 GR",
+      "pack": 12
+    },
+    {
+      "row": 42,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "CAFE HİLL SICAK ÇİKOLATA 1000 GR",
+      "pack": 12
+    },
+    {
+      "row": 43,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "CAFE HİLL SAHLEP 1000 GR",
+      "pack": 12
+    },
+    {
+      "row": 44,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "CAFEC HİLL OREO MİLKŞAHEK 1000 GR",
+      "pack": 12
+    },
+    {
+      "row": 45,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "ÇİKOLLATA MİLKŞHAK 1 KG",
+      "pack": 15
+    },
+    {
+      "row": 46,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "VANİLYA MILKSHAKE 1000 GR",
+      "pack": 15
+    },
+    {
+      "row": 47,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "KARAMEL MİLKŞHAKE 1000 GR",
+      "pack": 15
+    },
+    {
+      "row": 48,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "SADE FRAPPE 1 KG",
+      "pack": 15
+    },
+    {
+      "row": 49,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "KIRMIZI MEYVE MİLKSHAKE 1000 GR",
+      "pack": 15
+    },
+    {
+      "row": 50,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "ÇİLEK MİLKŞHAK 1 KG",
+      "pack": 15
+    },
+    {
+      "row": 51,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "RUBİY ÇİKOLATA 1000 GR",
+      "pack": 12
+    },
+    {
+      "row": 52,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "CAFE HİLL CHAİ TEA LATTE 1000 GR",
+      "pack": 12
+    },
+    {
+      "row": 53,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "CAFE HİLL GOLD KAHVE 500",
+      "pack": 10
+    },
+    {
+      "row": 54,
+      "section": "TÜRK KAHVESİ&YÖRESEL KAHVE GRUBU",
+      "name": "CAFE HİLL SÜT KREMESI 1000 GR",
+      "pack": 12
+    },
+    {
+      "row": 56,
+      "section": "ÇAY GRUBU",
+      "name": "GÜZEL ÇAY TAM TADINDA DEMLİK POŞET 40X25",
+      "pack": 10
+    },
+    {
+      "row": 57,
+      "section": "ÇAY GRUBU",
+      "name": "GÜZEL ÇAY KARADENİZ BERGAMOTLU 30X35 GR",
+      "pack": 10
+    },
+    {
+      "row": 58,
+      "section": "ÇAY GRUBU",
+      "name": "GÜZEL ÇAY FİLİZ DEMLİK POŞET 30X35 GR",
+      "pack": 10
+    },
+    {
+      "row": 59,
+      "section": "ÇAY GRUBU",
+      "name": "ŞENPA KAÇAK ÇAY 5 KG",
+      "pack": 1
+    },
+    {
+      "row": 60,
+      "section": "ÇAY GRUBU",
+      "name": "GÜZEL ÇAY CEATRİNG 4 X 3 GK",
+      "pack": "12 KG "
+    },
+    {
+      "row": 62,
+      "section": "KOKTEYL ŞURUBLAR",
+      "name": "TOSCHİ ŞURUP ÇEŞİTLERİ 1,32 LİT",
+      "pack": 6
+    },
+    {
+      "row": 63,
+      "section": "KOKTEYL ŞURUBLAR",
+      "name": "TOSCHİ ŞURUPPOMPASI",
+      "pack": 1
+    },
+    {
+      "row": 64,
+      "section": "KOKTEYL ŞURUBLAR",
+      "name": "MONTE CRISTO ŞURUP ÇEŞİTLERİ 700 ML",
+      "pack": 6
+    },
+    {
+      "row": 65,
+      "section": "KOKTEYL ŞURUBLAR",
+      "name": "MONTE CRİSTO PÜRE ÇEŞİTLERİ",
+      "pack": 6
+    },
+    {
+      "row": 66,
+      "section": "KOKTEYL ŞURUBLAR",
+      "name": "MONTE CRISTO ŞURUP POMPASI",
+      "pack": 1
+    },
+    {
+      "row": 67,
+      "section": "KOKTEYL ŞURUBLAR",
+      "name": "FO ŞURUP ÇEŞİTLERİ 700 ML",
+      "pack": 6
+    },
+    {
+      "row": 68,
+      "section": "KOKTEYL ŞURUBLAR",
+      "name": "FO PREMIUM ŞURUP ÇEŞİTLERİ",
+      "pack": 6
+    },
+    {
+      "row": 69,
+      "section": "KOKTEYL ŞURUBLAR",
+      "name": "FO ŞURUP POMPASI",
+      "pack": 1
+    },
+    {
+      "row": 71,
+      "section": "MEYVE PÜRELERİ",
+      "name": "TOSCHİ PÜRE ÇEŞİTLERİ 1,300 KG",
+      "pack": 6
+    },
+    {
+      "row": 72,
+      "section": "MEYVE PÜRELERİ",
+      "name": "TOSCHİ TOPİNG ÇEŞİTLERİ 1 KG",
+      "pack": 6
+    },
+    {
+      "row": 73,
+      "section": "MEYVE PÜRELERİ",
+      "name": "FO ÇİLEK PÜRE 1 LİTRE NORMAL PÜRE ÇEŞİTLERİ",
+      "pack": 6
+    },
+    {
+      "row": 74,
+      "section": "MEYVE PÜRELERİ",
+      "name": "FO NAR PÜRE 1000",
+      "pack": 6
+    },
+    {
+      "row": 75,
+      "section": "MEYVE PÜRELERİ",
+      "name": "FO PATLAYAN ŞEKER SOS 1 LİT",
+      "pack": 6
+    },
+    {
+      "row": 76,
+      "section": "MEYVE PÜRELERİ",
+      "name": "CALLEE ANTEP FISTIK WAFLEE SOS",
+      "pack": 8
+    },
+    {
+      "row": 77,
+      "section": "MEYVE PÜRELERİ",
+      "name": "FO ANTEP FISTIĞI SOS 1 LİT",
+      "pack": 6
+    },
+    {
+      "row": 78,
+      "section": "MEYVE PÜRELERİ",
+      "name": "FO TROPİKAL PÜRE ÇEŞİTLERİ 1000 GR",
+      "pack": 6
+    },
+    {
+      "row": 79,
+      "section": "MEYVE PÜRELERİ",
+      "name": "KUZU KILAĞI PÜRESİ 1000 GR",
+      "pack": 6
+    },
+    {
+      "row": 80,
+      "section": "MEYVE PÜRELERİ",
+      "name": "KARADUT PÜRE",
+      "pack": 6
+    },
+    {
+      "row": 81,
+      "section": "MEYVE PÜRELERİ",
+      "name": "FO BÖĞÜRTLEN PÜRE 1000 GR",
+      "pack": 6
+    },
+    {
+      "row": 82,
+      "section": "MEYVE PÜRELERİ",
+      "name": "FO FRAMBUGAZ PÜRE 1000 GR",
+      "pack": 6
+    },
+    {
+      "row": 83,
+      "section": "MEYVE PÜRELERİ",
+      "name": "FO YABANMERSİNİ PÜRE 1000 GR",
+      "pack": 6
+    },
+    {
+      "row": 84,
+      "section": "MEYVE PÜRELERİ",
+      "name": "REPO BEYAZ ÇİKOLATA TOPPİNG 1000 GR",
+      "pack": 6
+    },
+    {
+      "row": 85,
+      "section": "MEYVE PÜRELERİ",
+      "name": "REPO TOPPİNG ÇEŞİTLERİ 1000 GR",
+      "pack": 6
+    },
+    {
+      "row": 86,
+      "section": "MEYVE PÜRELERİ",
+      "name": "REPO ÇİLEK TOPİNG 1000 GR",
+      "pack": 6
+    },
+    {
+      "row": 87,
+      "section": "MEYVE PÜRELERİ",
+      "name": "REPO KOKTEYL KÖPÜK",
+      "pack": 12
+    },
+    {
+      "row": 88,
+      "section": "MEYVE PÜRELERİ",
+      "name": "FO VANİLYA DEKOR",
+      "pack": 12
+    },
+    {
+      "row": 89,
+      "section": "MEYVE PÜRELERİ",
+      "name": "FO DEKOR SOS ÇEŞİTLERİ 750 GR",
+      "pack": 6
+    },
+    {
+      "row": 90,
+      "section": "MEYVE PÜRELERİ",
+      "name": "DE LUCCA KURABİYE /BİSKÜVİ",
+      "pack": 1
+    },
+    {
+      "row": 92,
+      "section": "PROFOSYONEL SOSLAR",
+      "name": "TOSCHİ BARİSTA SOSU 2 KG/ÇİKOLATA",
+      "pack": 4
+    },
+    {
+      "row": 93,
+      "section": "PROFOSYONEL SOSLAR",
+      "name": "TOSCHİ BARİSTA SOSU 2 KG/KARAMEL",
+      "pack": 4
+    },
+    {
+      "row": 94,
+      "section": "PROFOSYONEL SOSLAR",
+      "name": "TOSCHİ BARİSTA SOSU 2 KG/BEYAZ ÇİKOLATA",
+      "pack": 4
+    },
+    {
+      "row": 95,
+      "section": "PROFOSYONEL SOSLAR",
+      "name": "FO BAR SOS KARAMEL 2500 GR",
+      "pack": 6
+    },
+    {
+      "row": 96,
+      "section": "PROFOSYONEL SOSLAR",
+      "name": "FO BAR SOS BEYAZ ÇİKOLATA 2500 GR",
+      "pack": 6
+    },
+    {
+      "row": 97,
+      "section": "PROFOSYONEL SOSLAR",
+      "name": "FO BAR SOS DARK ÇİKOLATA 2500 GR",
+      "pack": 6
+    },
+    {
+      "row": 98,
+      "section": "PROFOSYONEL SOSLAR",
+      "name": "FO PREMIUM BAR SOS ÇEŞİTLERİ",
+      "pack": 6
+    },
+    {
+      "row": 99,
+      "section": "PROFOSYONEL SOSLAR",
+      "name": "MONTE CRİSTO BEYAZ ÇİKOLATA BAR SOS 2,5 KG",
+      "pack": 6
+    },
+    {
+      "row": 100,
+      "section": "PROFOSYONEL SOSLAR",
+      "name": "MONTE CRİSTO KARAMEL BAR SOS 2,5 KG",
+      "pack": 6
+    },
+    {
+      "row": 101,
+      "section": "PROFOSYONEL SOSLAR",
+      "name": "MONTE CRISTO ÇİKOLATA BAR SOS 2,5 KG",
+      "pack": 6
+    },
+    {
+      "row": 103,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "CAFE HİLL KIŞ ÇAYI 250 GR",
+      "pack": 12
+    },
+    {
+      "row": 104,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "CAFE HİLL NANE LİMON ÇAYI 250 GR",
+      "pack": 12
+    },
+    {
+      "row": 105,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "CAFE HİLL ELMA TARÇIN ÇAYI 250 GR",
+      "pack": 12
+    },
+    {
+      "row": 106,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "CAFE HİLL KIRMIZI ORMAN MEY ÇAYI 250 GR",
+      "pack": 12
+    },
+    {
+      "row": 107,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "CAFE HİLL PAPATYA ÇAYI 100 GR",
+      "pack": 12
+    },
+    {
+      "row": 108,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "CAFE HİLL YASEMİNLİ YEŞİL ÇAY 250 GR",
+      "pack": 12
+    },
+    {
+      "row": 109,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "CAFE HİLL LİMON ZENCEFİL ÇAYI 250 GR",
+      "pack": 12
+    },
+    {
+      "row": 110,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "CAFE HİLL ELMA ÇAYI 250 GR",
+      "pack": 12
+    },
+    {
+      "row": 111,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "CAFE HİLL YEŞİL ÇAY 250 GR",
+      "pack": 12
+    },
+    {
+      "row": 112,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "CAFE HİLL KUŞBURNU ÇAYI 250 GR",
+      "pack": 12
+    },
+    {
+      "row": 113,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "CAFE HİLL BÖGÜRTLEN ÇAYI 250 GR",
+      "pack": 24
+    },
+    {
+      "row": 114,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "CAFE HİLL MELİSA ÇAYI 50 GR",
+      "pack": 12
+    },
+    {
+      "row": 115,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "ÇİLEK BİTKİ ÇAYI 250 GR",
+      "pack": 12
+    },
+    {
+      "row": 116,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "CAFE HİLL ADA ÇAYI 100 GR",
+      "pack": 12
+    },
+    {
+      "row": 117,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "REZENE ÇAYI 250 GR",
+      "pack": 1
+    },
+    {
+      "row": 118,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "KATLA BAL",
+      "pack": 1
+    },
+    {
+      "row": 119,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "HİBİSKÜS ÇAYI 250 GR",
+      "pack": 1
+    },
+    {
+      "row": 120,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "KABUK TARÇIN 500 GR",
+      "pack": "500 GR"
+    },
+    {
+      "row": 121,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "MAVİ KELEBEK ÇAYI 100 GR",
+      "pack": "1 ADET"
+    },
+    {
+      "row": 122,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "MAÇHA OZU 200 GR",
+      "pack": "1 ADET"
+    },
+    {
+      "row": 123,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "CAFE HİLL IHLAMUR ÇAYI 100 GR",
+      "pack": 12
+    },
+    {
+      "row": 124,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "GÜZELÇAY BİTKİ ELMA ÇAYI 100 LÜ",
+      "pack": "5 PAKET"
+    },
+    {
+      "row": 125,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "GÜZELÇAY BİTKİ FORM KAYSI ÇAYI 100 LÜ",
+      "pack": "5 PAKET"
+    },
+    {
+      "row": 126,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "GÜZELÇAY BİTKİ IHLAMUR ÇAYI 100 LÜ",
+      "pack": "5 PAKET"
+    },
+    {
+      "row": 127,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "GÜZELÇAY BİTKİ KUŞBURNU ÇAYI 100 LÜ",
+      "pack": "5 PAKET"
+    },
+    {
+      "row": 128,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "GÜZELÇAY BİTKİ PAPATYA ÇAYI 100 LÜ",
+      "pack": "5 PAKET"
+    },
+    {
+      "row": 129,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "GÜZELÇAY BİTKİ YEŞİLÇAY 100 LÜ",
+      "pack": "5 PAKET"
+    },
+    {
+      "row": 130,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "GÜZELÇAY BİTKİ LİMONLU YEŞİLÇAY 100 LÜ",
+      "pack": "5 PAKET"
+    },
+    {
+      "row": 131,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "GÜZELÇAY GOLD SELECTİON SÜZEN POŞET 25 Lİ",
+      "pack": "24 PAKET"
+    },
+    {
+      "row": 132,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "GÜZELÇAY ERLİGREY DEMLİK POŞET 100 LÜ",
+      "pack": "8 AD"
+    },
+    {
+      "row": 133,
+      "section": "BİTKİ ÇAYLARI GURUBU",
+      "name": "GÜZELÇAY FİLİZ TABLET 100 LÜ",
+      "pack": "8 AD"
+    },
+    {
+      "row": 135,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "YOOK BARİSTA SÜT ÇEŞİTLERİ 1 LİT",
+      "pack": "6 ADET"
+    },
+    {
+      "row": 136,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "LOTUS KIRINTI",
+      "pack": "1 KG"
+    },
+    {
+      "row": 137,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "ÇAKIL TAŞI KOMANDO",
+      "pack": "1 KG"
+    },
+    {
+      "row": 138,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "DELUCCA BİSKÜVİ KIRINTISI",
+      "pack": "1KG"
+    },
+    {
+      "row": 139,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "DELUCCA KAKOLU BİSKÜVİ TOZU",
+      "pack": "1KG"
+    },
+    {
+      "row": 140,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "DELUCCA KAKAOLU BİSKÜVİ KURABİYE",
+      "pack": "1 PAKET"
+    },
+    {
+      "row": 141,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "NAPOLİTEN ÇİKOLATA",
+      "pack": "1 ADET"
+    },
+    {
+      "row": 142,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "FO QUATRO TOZ İÇECEK",
+      "pack": "1 ADET"
+    },
+    {
+      "row": 143,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "OREO KREMALI BİSKÜVİ",
+      "pack": "1 ADET"
+    },
+    {
+      "row": 144,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "BROWNİ GOLD MİNİ",
+      "pack": "12 PAKET"
+    },
+    {
+      "row": 145,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "HARİBOO AYICIK",
+      "pack": "1KG"
+    },
+    {
+      "row": 146,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "FİNDUK KAKAOLU FINDIK KREMASI",
+      "pack": "5 KG"
+    },
+    {
+      "row": 147,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "PRALİN ÇİKOLATA 12 KG",
+      "pack": "1 KG"
+    },
+    {
+      "row": 148,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "RİCH KREM ŞANTİ 250 GR KIRMIZI",
+      "pack": 12
+    },
+    {
+      "row": 149,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "ŞANTİ SİFONU",
+      "pack": 10
+    },
+    {
+      "row": 150,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "VERSATY SICAK YEMEK KREMASI-PRO",
+      "pack": 12
+    },
+    {
+      "row": 151,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "DR-GUSTO SPREY TAVA YAG",
+      "pack": "600 ML"
+    },
+    {
+      "row": 152,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "PELEGRİNO MADEN SUYU 250, ML",
+      "pack": 24
+    },
+    {
+      "row": 153,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "PELEGRİNO MADEN SUYU 750, ML",
+      "pack": 12
+    },
+    {
+      "row": 154,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "STİK TUZ 800 GR",
+      "pack": 1
+    },
+    {
+      "row": 155,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "ERKOÇ STİK ŞEKER 4 GR 1.250 ADET",
+      "pack": "5 KG"
+    },
+    {
+      "row": 156,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "ERKOÇ KESME ŞEKER SARGILI",
+      "pack": "4 KG"
+    },
+    {
+      "row": 157,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "ROSS ÇAKIL TAŞI KOMANDO",
+      "pack": "3 KG"
+    },
+    {
+      "row": 158,
+      "section": "GIDA ÜRÜNLERİ",
+      "name": "ROSS DAMLA DROP BİTTER",
+      "pack": "1 KG"
+    },
+    {
+      "row": 160,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "DONUK YABAN MERSİNİ MEYVESİ",
+      "pack": "1 KG"
+    },
+    {
+      "row": 161,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "DONUK FRAMBUGAZ MEYVESİ",
+      "pack": "1 KG"
+    },
+    {
+      "row": 162,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "DONUK KARIŞIK ORMAN MEYVESİ",
+      "pack": "1 KG"
+    },
+    {
+      "row": 163,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "DONUK BÖGÜRTLEN MEYMESİ",
+      "pack": "1 KG"
+    },
+    {
+      "row": 164,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "DONUK KARADUT MEYVESİ",
+      "pack": "1 KG"
+    },
+    {
+      "row": 165,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "DONUK VİŞNE MEYVESİ",
+      "pack": "1 KG"
+    },
+    {
+      "row": 166,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "DONUK ÇİLEK MEYVESİ",
+      "pack": "1 KG"
+    },
+    {
+      "row": 167,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "KURUTULMUŞ PORTAKAL",
+      "pack": "1 KG"
+    },
+    {
+      "row": 168,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "KURUTULMUŞ YEŞİL LİMON",
+      "pack": "1 KG"
+    },
+    {
+      "row": 169,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "FAVORİ NAR SUYU 1 LİT DONUK X 6 LI PAKET",
+      "pack": "6 ADET"
+    },
+    {
+      "row": 170,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "FAVORİ PORTAKAL SUYU 1 LİT DONUK X6 LI PAKET",
+      "pack": "6 ADET"
+    },
+    {
+      "row": 171,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "FAVORİ BODRUM MANDALİNASI DONOK",
+      "pack": "6 ADET"
+    },
+    {
+      "row": 172,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "FAVORİ LİMON SUYU 1 LİTDONUK X 6 LI PAKET",
+      "pack": "6 ADET"
+    },
+    {
+      "row": 173,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "FAVORİ GRAYFUR SUYU 1 LİT DONUK 6 LI PAKET",
+      "pack": "6 ADET"
+    },
+    {
+      "row": 174,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "FAVORİ KARADUT ÖZÜ 1 LİT DONUK 6 LI PAKER",
+      "pack": "6 ADET"
+    },
+    {
+      "row": 175,
+      "section": "DONUK ÜRÜNLER GURUBU",
+      "name": "FAVORİ LİMONATA 2 LİT DONUK X 6 LI PAKET",
+      "pack": "6 ADET"
+    },
+    {
+      "row": 177,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "CHEF STAR FRENCH PRESS 350 ML",
+      "pack": 1
+    },
+    {
+      "row": 178,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "V60 FİLİTRE KAHVE KAADI",
+      "pack": "100 AD"
+    },
+    {
+      "row": 179,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "ORTABOY GRAFT TAŞIMA ÇANTASI",
+      "pack": "1 ADET"
+    },
+    {
+      "row": 180,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "DOLPİN JUMBO ARTİSTİK PİPET 50 ADETLİ",
+      "pack": "PAKET:50 AD \nKOLİ :50 PAKET "
+    },
+    {
+      "row": 181,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "DOLPİN FROZEN JELATİNLİ SİYAH DÜZ PİPET 250 LİLİ",
+      "pack": "PAKET:250 AD \nKOLİ :20 PAKET "
+    },
+    {
+      "row": 182,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "JİLATİNSİZ SİYAH PİPET 50X 100 LÜ PAKET",
+      "pack": "KOLİ İÇİ 50 "
+    },
+    {
+      "row": 183,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "DOLPİN FROZEN JELATİLİ SİYAH DÜZ PİPET 100 LÜ",
+      "pack": "PAKET:100 AD \nKOLİ :50 PAKET "
+    },
+    {
+      "row": 184,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "İNCE KIL PİPERT 500 ADETLİ JİLATİNSİZ",
+      "pack": "500 ADET"
+    },
+    {
+      "row": 185,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": 15,
+      "pack": "25 PAKET"
+    },
+    {
+      "row": 186,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "GRAFT POŞET KG FİYATI",
+      "pack": "1 KG"
+    },
+    {
+      "row": 187,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "BARDAK TIPAÇI KOLİ İÇİ",
+      "pack": "500 LÜ PAKET"
+    },
+    {
+      "row": 188,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "SARGISIZ TAHTA KARIŞTIRICI 500 ADETLİ",
+      "pack": "1 PAKET"
+    },
+    {
+      "row": 189,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "SARGILI TAHTA KARIŞTIRICI 500 ADETLİ",
+      "pack": "1 PAKET"
+    },
+    {
+      "row": 190,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "350 CC PET BARDAK 50 Lİ KOLİ İÇİ 1000",
+      "pack": "1 000 AD"
+    },
+    {
+      "row": 191,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "350 CC PET BARDAK KAPAĞI 100 LÜ KOLİ İÇİ 1000",
+      "pack": "1000 AD"
+    },
+    {
+      "row": 192,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "HUTAMAKİ-400 CC SOĞUK ŞEFFAF PET BARDAK",
+      "pack": "1000 AD"
+    },
+    {
+      "row": 193,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "HUTAMAKİ-400 CC DOM ŞEFFAF KAPAK",
+      "pack": "1000 AD"
+    },
+    {
+      "row": 194,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "HUTAMAKİ-500 CC SOĞUK ŞEFFAF PET BARDAK",
+      "pack": "1000 AD"
+    },
+    {
+      "row": 195,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "HUTAMAKİ 500 CC PLASTİK KAPAK",
+      "pack": "1000 AD"
+    },
+    {
+      "row": 196,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "HUTAMAKİ 16 OZ SICAK KARTON BARDAK(ÇİFT KATLI)",
+      "pack": "1000 AD"
+    },
+    {
+      "row": 197,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "HUTAMAKİ 16 OZ KAPAK",
+      "pack": "1000 AD"
+    },
+    {
+      "row": 198,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "HUTAMAKİ 12 OZ SICAK KARTON BARDAK(ÇİFT KATLI)",
+      "pack": "1000 AD"
+    },
+    {
+      "row": 199,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "HUTAMAKİ 12 OZ KAPAK",
+      "pack": "1000 AD"
+    },
+    {
+      "row": 200,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "HUTAMAKİ 9 OZ SICAK KARTON BARDAK(ÇİFT KATLI)",
+      "pack": "1000 AD"
+    },
+    {
+      "row": 201,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "HUTAMAKİ 9 OZ KAPAK",
+      "pack": "1000 AD"
+    },
+    {
+      "row": 202,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "HUTAMAKİ 7 OZ SICAK KARTON BARDAK",
+      "pack": "3000 AD"
+    },
+    {
+      "row": 203,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "HUTAMAKİ 4-OZ SICAK KARTON BARDAK",
+      "pack": "3000 AD"
+    },
+    {
+      "row": 204,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "BOUBLE PED BARDAK-",
+      "pack": "1000 ADET"
+    },
+    {
+      "row": 205,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "HUTAMAKİ TAŞIMA KILIFI 2Lİ",
+      "pack": "480 AD"
+    },
+    {
+      "row": 206,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "BOUBLE PED BARDAK-KAPAĞI KİLİTLİ EMZİKLİ",
+      "pack": 10000
+    },
+    {
+      "row": 207,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "HUTAMAKİ SLEEVE BARDAK TUTAMACI",
+      "pack": "1000 AD"
+    },
+    {
+      "row": 208,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "BRAVİLOR BONAMAT 110/360 FİLİTRE KAHVE KAADI",
+      "pack": "250 ADET"
+    },
+    {
+      "row": 209,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "BRAVİLOR BONAMAT 85/245 FİLİTRE KAHVE KAADI",
+      "pack": "20X50 ADET"
+    },
+    {
+      "row": 210,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "OMK BAR BLENDER",
+      "pack": "1 ADET"
+    },
+    {
+      "row": 211,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "KÖPÜKSAN KARTON BARDAK 4 OZ TÜRK KAHVESİ",
+      "pack": "3000 ADET"
+    },
+    {
+      "row": 212,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "CHS LÜX ÇATAL&KAŞIK ŞEFFAF",
+      "pack": "50 ADET"
+    },
+    {
+      "row": 213,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "DOLPHİN SİYAH NİTRİL 100 LÜ L/M BEDEN",
+      "pack": "100 LÜ"
+    },
+    {
+      "row": 214,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "POLİY MİX TEMİZLEME SUYU",
+      "pack": "1 ADET"
+    },
+    {
+      "row": 215,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "POLİGAF TEMİZLEME TOZU",
+      "pack": "1 ADET"
+    },
+    {
+      "row": 216,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "PULY GRİND KIRIİTAL",
+      "pack": "1ADET"
+    },
+    {
+      "row": 217,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "POLİGAF TABLET",
+      "pack": "1 ADET"
+    },
+    {
+      "row": 218,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "1 LİT SİFON METAL",
+      "pack": "1 ADET"
+    },
+    {
+      "row": 219,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "ŞANTİ SİFONU",
+      "pack": "1 KUTU"
+    },
+    {
+      "row": 220,
+      "section": "GIDA DIŞI ÜRÜNLER",
+      "name": "KÖR TAPA METAL",
+      "pack": "1 ADET"
+    }
+  ]
+}

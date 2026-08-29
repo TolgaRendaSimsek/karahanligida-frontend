@@ -13,4 +13,5 @@ firebase/*.key.json
 playwright-report/
 test-results/
 coverage/
+data/backups/
 *.tsbuildinfo
