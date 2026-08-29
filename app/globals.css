@@ -430,7 +430,7 @@ button { color: inherit; }
   .header-action small { display: none; }
   .header-action > span { font-size: 20px; }
   .category-nav { position: absolute; top: 100%; left: 0; right: 0; max-height: 0; overflow: hidden; border: 0; background: white; box-shadow: var(--shadow); transition: max-height .25s; }
-  .category-nav.open { max-height: 430px; border-top: 1px solid var(--line); }
+  .category-nav.open { max-height: 520px; border-top: 1px solid var(--line); }
   .nav-inner { display: grid; gap: 0; padding-block: 8px; }
   .nav-inner a { padding: 12px 6px; border-bottom: 1px solid var(--line); }
   .nav-inner a.active::after { display: none; }

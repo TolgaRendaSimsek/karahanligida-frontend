@@ -9,6 +9,7 @@ import { useStore } from "./store-provider";
 const navigation = [
   { href: "/urunler", label: "Tüm Ürünler" },
   { href: "/urunler?category=Kahve", label: "Kahve" },
+  { href: "/urunler?category=Kahve Makineleri", label: "Kahve Makineleri" },
   { href: "/urunler?category=Çay", label: "Çay" },
   { href: "/urunler?category=Şurup ve Püreler", label: "Şurup & Püre" },
   { href: "/urunler?category=Endüstriyel Mutfak Ekipmanları", label: "Ekipman" },
@@ -53,7 +54,7 @@ export function SiteHeader() {
     <>
       <div className="announcement">
         <span>Karahanlı Gıda profesyonel ürün kataloğu</span>
-        <Link href="/urunler">230 ürün ailesini keşfedin <span aria-hidden>→</span></Link>
+        <Link href="/urunler">202 yayınlanmış ürün ailesini keşfedin <span aria-hidden>→</span></Link>
       </div>
       <header className="site-header">
         <div className="header-main container">

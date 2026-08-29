@@ -14,6 +14,7 @@ export function SiteFooter() {
           <Link href="/urunler">Tüm ürünler</Link>
           <Link href="/favoriler">Favoriler</Link>
           <Link href="/urunler?category=Kahve">Kahve</Link>
+          <Link href="/urunler?category=Kahve Makineleri">Kahve makineleri</Link>
         </div>
         <div>
           <h3>Kurumsal</h3>
