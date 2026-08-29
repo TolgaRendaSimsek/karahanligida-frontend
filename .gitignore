@@ -22,3 +22,7 @@ data/backups/
 assets/research/monte-sauce.webp
 assets/research/monte-syrup.webp
 assets/research/repo-085.jpg
+# Source PDFs and temporary extraction work are not deployable catalog assets.
+assets/research/*
+assets/research/*.pdf
+tmp/

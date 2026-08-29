@@ -77,6 +77,7 @@ for (const [productId, source] of Object.entries(sourceMap)) {
     source.height = metadata.height;
     source.appliedAt = now;
     source.status = "applied";
+    delete source.error;
     const rowNumbers = product.variants.filter((variant) => String(variant.id).startsWith("excel-")).map((variant) => Number(String(variant.id).slice(6))).filter(Number.isFinite);
     for (const row of report.rows) if (rowNumbers.includes(Number(row.row))) row.imageStatus = "verified";
     const oldItem = manifest.items.find((item) => item.productId === product.id);

@@ -2729,12 +2729,21 @@
       "category": "Kahve",
       "subcategory": "Çekirdek Kahve",
       "summary": "MİSKIN ÇEKİRDEK KAHVE için Karahanlı Gıda katalog kaydı.",
-      "description": "MİSKIN ÇEKİRDEK KAHVE ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "MİSKIN ÇEKİRDEK KAHVE ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 18": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-a7aaaba12c",
+          "src": "assets/products/miskin/miskin-cekirdek-kahve-excel-18/web-a7aaaba12cc3.webp",
+          "thumbnailSrc": "assets/products/miskin/miskin-cekirdek-kahve-excel-18/web-a7aaaba12cc3-thumb.webp",
+          "alt": "MİSKIN ÇEKİRDEK KAHVE",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-18",
@@ -2754,7 +2763,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-019",
@@ -2764,12 +2773,21 @@
       "category": "Kahve",
       "subcategory": "Çekirdek Kahve",
       "summary": "MORNİNG ÇEKİRDEK KAHVE 1 KG için Karahanlı Gıda katalog kaydı.",
-      "description": "MORNİNG ÇEKİRDEK KAHVE 1 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "MORNİNG ÇEKİRDEK KAHVE 1 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 19": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-a7aaaba12c",
+          "src": "assets/products/morning/morning-cekirdek-kahve-1-kg-excel-19/web-a7aaaba12cc3.webp",
+          "thumbnailSrc": "assets/products/morning/morning-cekirdek-kahve-1-kg-excel-19/web-a7aaaba12cc3-thumb.webp",
+          "alt": "MORNİNG ÇEKİRDEK KAHVE 1 KG",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-19",
@@ -2789,7 +2807,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-028",
@@ -2887,12 +2905,21 @@
       "category": "Kahve",
       "subcategory": "Filtre Kahve",
       "summary": "MORNİNG FİLTRE KAHVE 1 kg için Karahanlı Gıda katalog kaydı.",
-      "description": "MORNİNG FİLTRE KAHVE 1 kg ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "MORNİNG FİLTRE KAHVE 1 kg ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 30": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-6dcb646b22",
+          "src": "assets/products/morning/morning-filtre-kahve-1-kg-excel-30/web-6dcb646b225b.webp",
+          "thumbnailSrc": "assets/products/morning/morning-filtre-kahve-1-kg-excel-30/web-6dcb646b225b-thumb.webp",
+          "alt": "MORNİNG FİLTRE KAHVE 1 kg",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-30",
@@ -2912,7 +2939,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-032",
@@ -3010,12 +3037,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "KAHVE ALEMİ ÇİFTE KAVR TÜRK KAHVESİ 500 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "KAHVE ALEMİ ÇİFTE KAVR TÜRK KAHVESİ 500 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "KAHVE ALEMİ ÇİFTE KAVR TÜRK KAHVESİ 500 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 34": "20"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-241f7675ed",
+          "src": "assets/products/karahanli-gida/kahve-alemi-cifte-kavr-turk-kahvesi-500-gr-excel-34/web-241f7675edce.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/kahve-alemi-cifte-kavr-turk-kahvesi-500-gr-excel-34/web-241f7675edce-thumb.webp",
+          "alt": "KAHVE ALEMİ ÇİFTE KAVR TÜRK KAHVESİ 500 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-34",
@@ -3035,7 +3071,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-035",
@@ -3133,12 +3169,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "ŞEKEROĞLU SIVI MENENGİÇ KAHVESİ 600 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "ŞEKEROĞLU SIVI MENENGİÇ KAHVESİ 600 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "ŞEKEROĞLU SIVI MENENGİÇ KAHVESİ 600 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 37": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-88c8b57790",
+          "src": "assets/products/karahanli-gida/sekeroglu-sivi-menengic-kahvesi-600-gr-excel-37/web-88c8b5779014.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/sekeroglu-sivi-menengic-kahvesi-600-gr-excel-37/web-88c8b5779014-thumb.webp",
+          "alt": "ŞEKEROĞLU SIVI MENENGİÇ KAHVESİ 600 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-37",
@@ -3158,7 +3203,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-038",
@@ -3168,12 +3213,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "CAFE HİLL TOZ MENENGİÇ 500 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "CAFE HİLL TOZ MENENGİÇ 500 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "CAFE HİLL TOZ MENENGİÇ 500 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 38": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-d6356228a5",
+          "src": "assets/products/cafe-hill/cafe-hill-toz-menengic-500-gr-excel-38/web-d6356228a56d.webp",
+          "thumbnailSrc": "assets/products/cafe-hill/cafe-hill-toz-menengic-500-gr-excel-38/web-d6356228a56d-thumb.webp",
+          "alt": "CAFE HİLL TOZ MENENGİÇ 500 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-38",
@@ -3193,7 +3247,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-039",
@@ -3203,12 +3257,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "CAFE HİLL DAMLA SAKIZLI TÜRK KAHVESİ 400 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "CAFE HİLL DAMLA SAKIZLI TÜRK KAHVESİ 400 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "CAFE HİLL DAMLA SAKIZLI TÜRK KAHVESİ 400 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 39": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-fa4c8c3f5d",
+          "src": "assets/products/cafe-hill/cafe-hill-damla-sakizli-turk-kahvesi-400-gr-excel-39/web-fa4c8c3f5da3.webp",
+          "thumbnailSrc": "assets/products/cafe-hill/cafe-hill-damla-sakizli-turk-kahvesi-400-gr-excel-39/web-fa4c8c3f5da3-thumb.webp",
+          "alt": "CAFE HİLL DAMLA SAKIZLI TÜRK KAHVESİ 400 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-39",
@@ -3228,7 +3291,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-040",
@@ -3238,12 +3301,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "CAFE HİLL DİBEK KAHVESİ 500 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "CAFE HİLL DİBEK KAHVESİ 500 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "CAFE HİLL DİBEK KAHVESİ 500 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 40": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-55e449932a",
+          "src": "assets/products/cafe-hill/cafe-hill-dibek-kahvesi-500-gr-excel-40/web-55e449932a6d.webp",
+          "thumbnailSrc": "assets/products/cafe-hill/cafe-hill-dibek-kahvesi-500-gr-excel-40/web-55e449932a6d-thumb.webp",
+          "alt": "CAFE HİLL DİBEK KAHVESİ 500 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-40",
@@ -3263,7 +3335,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-041",
@@ -3273,12 +3345,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "CAFE HİLL SICAK BEYAZ ÇİKOLATA 1000 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "CAFE HİLL SICAK BEYAZ ÇİKOLATA 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "CAFE HİLL SICAK BEYAZ ÇİKOLATA 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 41": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-a1aeae523a",
+          "src": "assets/products/cafe-hill/cafe-hill-sicak-beyaz-cikolata-1000-gr-excel-41/web-a1aeae523a65.webp",
+          "thumbnailSrc": "assets/products/cafe-hill/cafe-hill-sicak-beyaz-cikolata-1000-gr-excel-41/web-a1aeae523a65-thumb.webp",
+          "alt": "CAFE HİLL SICAK BEYAZ ÇİKOLATA 1000 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-41",
@@ -3298,7 +3379,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-042",
@@ -3308,12 +3389,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "CAFE HİLL SICAK ÇİKOLATA 1000 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "CAFE HİLL SICAK ÇİKOLATA 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "CAFE HİLL SICAK ÇİKOLATA 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 42": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-a59f9cbb5a",
+          "src": "assets/products/cafe-hill/cafe-hill-sicak-cikolata-1000-gr-excel-42/web-a59f9cbb5a96.webp",
+          "thumbnailSrc": "assets/products/cafe-hill/cafe-hill-sicak-cikolata-1000-gr-excel-42/web-a59f9cbb5a96-thumb.webp",
+          "alt": "CAFE HİLL SICAK ÇİKOLATA 1000 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-42",
@@ -3333,7 +3423,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-043",
@@ -3343,12 +3433,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "CAFE HİLL SAHLEP 1000 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "CAFE HİLL SAHLEP 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "CAFE HİLL SAHLEP 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 43": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-715cbf9225",
+          "src": "assets/products/cafe-hill/cafe-hill-sahlep-1000-gr-excel-43/web-715cbf9225c3.webp",
+          "thumbnailSrc": "assets/products/cafe-hill/cafe-hill-sahlep-1000-gr-excel-43/web-715cbf9225c3-thumb.webp",
+          "alt": "CAFE HİLL SAHLEP 1000 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-43",
@@ -3368,7 +3467,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-044",
@@ -3378,12 +3477,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "CAFEC HİLL OREO MİLKŞAHEK 1000 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "CAFEC HİLL OREO MİLKŞAHEK 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "CAFEC HİLL OREO MİLKŞAHEK 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanmış kaynak üzerinden iyileştirildi.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 44": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-62e8073af0",
+          "src": "assets/products/cafe-hill/cafec-hill-oreo-milksahek-1000-gr-excel-44/web-62e8073af090.webp",
+          "thumbnailSrc": "assets/products/cafe-hill/cafec-hill-oreo-milksahek-1000-gr-excel-44/web-62e8073af090-thumb.webp",
+          "alt": "CAFEC HİLL OREO MİLKŞAHEK 1000 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-44",
@@ -3403,7 +3511,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-045",
@@ -3413,12 +3521,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "ÇİKOLATA MILKSHAKE 1 KG için Karahanlı Gıda katalog kaydı.",
-      "description": "ÇİKOLATA MILKSHAKE 1 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "ÇİKOLATA MILKSHAKE 1 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 45": "15"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-53cd6d772c",
+          "src": "assets/products/karahanli-gida/cikolata-milkshake-1-kg-excel-45/web-53cd6d772c6c.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/cikolata-milkshake-1-kg-excel-45/web-53cd6d772c6c-thumb.webp",
+          "alt": "ÇİKOLATA MILKSHAKE 1 KG",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-45",
@@ -3438,7 +3555,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-046",
@@ -3448,12 +3565,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "VANİLYA MILKSHAKE 1000 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "VANİLYA MILKSHAKE 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "VANİLYA MILKSHAKE 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 46": "15"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-8dae435234",
+          "src": "assets/products/karahanli-gida/vanilya-milkshake-1000-gr-excel-46/web-8dae435234d0.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/vanilya-milkshake-1000-gr-excel-46/web-8dae435234d0-thumb.webp",
+          "alt": "VANİLYA MILKSHAKE 1000 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-46",
@@ -3473,7 +3599,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-047",
@@ -3483,12 +3609,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "KARAMEL MILKSHAKEE 1000 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "KARAMEL MILKSHAKEE 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "KARAMEL MILKSHAKEE 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 47": "15"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-96802962a2",
+          "src": "assets/products/karahanli-gida/karamel-milkshakee-1000-gr-excel-47/web-96802962a2af.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/karamel-milkshakee-1000-gr-excel-47/web-96802962a2af-thumb.webp",
+          "alt": "KARAMEL MILKSHAKEE 1000 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-47",
@@ -3508,7 +3643,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-048",
@@ -3518,12 +3653,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "SADE FRAPPE 1 KG için Karahanlı Gıda katalog kaydı.",
-      "description": "SADE FRAPPE 1 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "SADE FRAPPE 1 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 48": "15"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-aa0cb04767",
+          "src": "assets/products/karahanli-gida/sade-frappe-1-kg-excel-48/web-aa0cb04767cb.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/sade-frappe-1-kg-excel-48/web-aa0cb04767cb-thumb.webp",
+          "alt": "SADE FRAPPE 1 KG",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-48",
@@ -3543,7 +3687,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-049",
@@ -3553,12 +3697,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "KIRMIZI MEYVE MİLKSHAKE 1000 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "KIRMIZI MEYVE MİLKSHAKE 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "KIRMIZI MEYVE MİLKSHAKE 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanmış kaynak üzerinden iyileştirildi.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 49": "15"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-432d28657f",
+          "src": "assets/products/karahanli-gida/kirmizi-meyve-milkshake-1000-gr-excel-49/web-432d28657f74.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/kirmizi-meyve-milkshake-1000-gr-excel-49/web-432d28657f74-thumb.webp",
+          "alt": "KIRMIZI MEYVE MİLKSHAKE 1000 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-49",
@@ -3578,7 +3731,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-050",
@@ -3588,12 +3741,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "ÇİLEK MILKSHAKE 1 KG için Karahanlı Gıda katalog kaydı.",
-      "description": "ÇİLEK MILKSHAKE 1 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "ÇİLEK MILKSHAKE 1 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 50": "15"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-9f44f5de2f",
+          "src": "assets/products/karahanli-gida/cilek-milkshake-1-kg-excel-50/web-9f44f5de2ff4.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/cilek-milkshake-1-kg-excel-50/web-9f44f5de2ff4-thumb.webp",
+          "alt": "ÇİLEK MILKSHAKE 1 KG",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-50",
@@ -3613,7 +3775,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-051",
@@ -3623,12 +3785,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "RUBİY ÇİKOLATA 1000 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "RUBİY ÇİKOLATA 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "RUBİY ÇİKOLATA 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 51": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-b3dea291b8",
+          "src": "assets/products/karahanli-gida/rubiy-cikolata-1000-gr-excel-51/web-b3dea291b8c0.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/rubiy-cikolata-1000-gr-excel-51/web-b3dea291b8c0-thumb.webp",
+          "alt": "RUBİY ÇİKOLATA 1000 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-51",
@@ -3648,7 +3819,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-052",
@@ -3658,12 +3829,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "CAFE HİLL CHAİ TEA LATTE 1000 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "CAFE HİLL CHAİ TEA LATTE 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "CAFE HİLL CHAİ TEA LATTE 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 52": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-45ff913a9e",
+          "src": "assets/products/cafe-hill/cafe-hill-chai-tea-latte-1000-gr-excel-52/web-45ff913a9e59.webp",
+          "thumbnailSrc": "assets/products/cafe-hill/cafe-hill-chai-tea-latte-1000-gr-excel-52/web-45ff913a9e59-thumb.webp",
+          "alt": "CAFE HİLL CHAİ TEA LATTE 1000 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-52",
@@ -3683,7 +3863,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-053",
@@ -3693,12 +3873,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "CAFE HİLL GOLD KAHVE 500 için Karahanlı Gıda katalog kaydı.",
-      "description": "CAFE HİLL GOLD KAHVE 500 ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "CAFE HİLL GOLD KAHVE 500 ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanmış kaynak üzerinden iyileştirildi.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 53": "10"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-c5023c6442",
+          "src": "assets/products/cafe-hill/cafe-hill-gold-kahve-500-excel-53/web-c5023c644255.webp",
+          "thumbnailSrc": "assets/products/cafe-hill/cafe-hill-gold-kahve-500-excel-53/web-c5023c644255-thumb.webp",
+          "alt": "CAFE HİLL GOLD KAHVE 500",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-53",
@@ -3718,7 +3907,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-054",
@@ -3728,12 +3917,21 @@
       "category": "Kahve",
       "subcategory": "Türk Kahvesi ve Yöresel",
       "summary": "CAFE HİLL SÜT KREMESI 1000 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "CAFE HİLL SÜT KREMESI 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "CAFE HİLL SÜT KREMESI 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanmış kaynak üzerinden iyileştirildi.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 54": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-2382c47b2e",
+          "src": "assets/products/cafe-hill/cafe-hill-sut-kremesi-1000-gr-excel-54/web-2382c47b2ed6.webp",
+          "thumbnailSrc": "assets/products/cafe-hill/cafe-hill-sut-kremesi-1000-gr-excel-54/web-2382c47b2ed6-thumb.webp",
+          "alt": "CAFE HİLL SÜT KREMESI 1000 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-54",
@@ -3753,7 +3951,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-056",
@@ -3763,12 +3961,21 @@
       "category": "Çay",
       "subcategory": "Siyah Çay",
       "summary": "GÜZEL ÇAY TAM TADINDA DE MLİK POŞET 40X25 için Karahanlı Gıda katalog kaydı.",
-      "description": "GÜZEL ÇAY TAM TADINDA DE MLİK POŞET 40X25 ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "GÜZEL ÇAY TAM TADINDA DE MLİK POŞET 40X25 ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 56": "10"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-933f37a065",
+          "src": "assets/products/guzel-cay/guzel-cay-tam-tadinda-de-mlik-poset-40x25-excel-56/web-933f37a065a6.webp",
+          "thumbnailSrc": "assets/products/guzel-cay/guzel-cay-tam-tadinda-de-mlik-poset-40x25-excel-56/web-933f37a065a6-thumb.webp",
+          "alt": "GÜZEL ÇAY TAM TADINDA DE MLİK POŞET 40X25",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-56",
@@ -3788,7 +3995,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-057",
@@ -3798,12 +4005,21 @@
       "category": "Çay",
       "subcategory": "Siyah Çay",
       "summary": "GÜZEL ÇAY KARADENİZ BERGAMOTLU 30X35 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "GÜZEL ÇAY KARADENİZ BERGAMOTLU 30X35 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "GÜZEL ÇAY KARADENİZ BERGAMOTLU 30X35 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 57": "10"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-c6d4e32d68",
+          "src": "assets/products/guzel-cay/guzel-cay-karadeniz-bergamotlu-30x35-gr-excel-57/web-c6d4e32d6841.webp",
+          "thumbnailSrc": "assets/products/guzel-cay/guzel-cay-karadeniz-bergamotlu-30x35-gr-excel-57/web-c6d4e32d6841-thumb.webp",
+          "alt": "GÜZEL ÇAY KARADENİZ BERGAMOTLU 30X35 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-57",
@@ -3823,7 +4039,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-058",
@@ -3833,12 +4049,21 @@
       "category": "Çay",
       "subcategory": "Siyah Çay",
       "summary": "GÜZEL ÇAY FİLİZ DE MLİK POŞET 30X35 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "GÜZEL ÇAY FİLİZ DE MLİK POŞET 30X35 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "GÜZEL ÇAY FİLİZ DE MLİK POŞET 30X35 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 58": "10"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-cd7f753573",
+          "src": "assets/products/guzel-cay/guzel-cay-filiz-de-mlik-poset-30x35-gr-excel-58/web-cd7f75357339.webp",
+          "thumbnailSrc": "assets/products/guzel-cay/guzel-cay-filiz-de-mlik-poset-30x35-gr-excel-58/web-cd7f75357339-thumb.webp",
+          "alt": "GÜZEL ÇAY FİLİZ DE MLİK POŞET 30X35 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-58",
@@ -3858,7 +4083,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-059",
@@ -3868,12 +4093,21 @@
       "category": "Çay",
       "subcategory": "Siyah Çay",
       "summary": "ŞENPA KAÇAK ÇAY 5 KG için Karahanlı Gıda katalog kaydı.",
-      "description": "ŞENPA KAÇAK ÇAY 5 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "ŞENPA KAÇAK ÇAY 5 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 59": "1"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-c6d4e32d68",
+          "src": "assets/products/karahanli-gida/senpa-kacak-cay-5-kg-excel-59/web-c6d4e32d6841.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/senpa-kacak-cay-5-kg-excel-59/web-c6d4e32d6841-thumb.webp",
+          "alt": "ŞENPA KAÇAK ÇAY 5 KG",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-59",
@@ -3893,7 +4127,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-060",
@@ -3903,12 +4137,21 @@
       "category": "Çay",
       "subcategory": "Siyah Çay",
       "summary": "GÜZEL ÇAY CATERING 4 X 3 GK için Karahanlı Gıda katalog kaydı.",
-      "description": "GÜZEL ÇAY CATERING 4 X 3 GK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "GÜZEL ÇAY CATERING 4 X 3 GK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanmış kaynak üzerinden iyileştirildi.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 60": "12 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-4b68736c88",
+          "src": "assets/products/guzel-cay/guzel-cay-catering-4-x-3-gk-excel-60/web-4b68736c88d8.webp",
+          "thumbnailSrc": "assets/products/guzel-cay/guzel-cay-catering-4-x-3-gk-excel-60/web-4b68736c88d8-thumb.webp",
+          "alt": "GÜZEL ÇAY CATERING 4 X 3 GK",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-60",
@@ -3928,7 +4171,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-064",
@@ -3938,12 +4181,21 @@
       "category": "Şurup ve Püreler",
       "subcategory": "Kokteyl Şurupları",
       "summary": "MONTE CRISTO ŞURUP ÇEŞİTLERİ 700 ML için Karahanlı Gıda katalog kaydı.",
-      "description": "MONTE CRISTO ŞURUP ÇEŞİTLERİ 700 ML ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "MONTE CRISTO ŞURUP ÇEŞİTLERİ 700 ML ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 64": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-8d6d2a64ae",
+          "src": "assets/products/monte-cristo/monte-cristo-surup-cesitleri-700-ml-excel-64/web-8d6d2a64ae3d.webp",
+          "thumbnailSrc": "assets/products/monte-cristo/monte-cristo-surup-cesitleri-700-ml-excel-64/web-8d6d2a64ae3d-thumb.webp",
+          "alt": "MONTE CRISTO ŞURUP ÇEŞİTLERİ 700 ML",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-64",
@@ -3963,7 +4215,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-065",
@@ -3973,12 +4225,21 @@
       "category": "Şurup ve Püreler",
       "subcategory": "Kokteyl Şurupları",
       "summary": "MONTE CRİSTO PÜRE ÇEŞİTLERİ için Karahanlı Gıda katalog kaydı.",
-      "description": "MONTE CRİSTO PÜRE ÇEŞİTLERİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "MONTE CRİSTO PÜRE ÇEŞİTLERİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 65": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-72bd55f358",
+          "src": "assets/products/monte-cristo/monte-cristo-pure-cesitleri-excel-65/web-72bd55f35851.webp",
+          "thumbnailSrc": "assets/products/monte-cristo/monte-cristo-pure-cesitleri-excel-65/web-72bd55f35851-thumb.webp",
+          "alt": "MONTE CRİSTO PÜRE ÇEŞİTLERİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-65",
@@ -3998,7 +4259,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-066",
@@ -4008,12 +4269,21 @@
       "category": "Şurup ve Püreler",
       "subcategory": "Kokteyl Şurupları",
       "summary": "MONTE CRISTO ŞURUP POMPASI için Karahanlı Gıda katalog kaydı.",
-      "description": "MONTE CRISTO ŞURUP POMPASI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "MONTE CRISTO ŞURUP POMPASI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 66": "1"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-3cac96f2d3",
+          "src": "assets/products/monte-cristo/monte-cristo-surup-pompasi-excel-66/web-3cac96f2d305.webp",
+          "thumbnailSrc": "assets/products/monte-cristo/monte-cristo-surup-pompasi-excel-66/web-3cac96f2d305-thumb.webp",
+          "alt": "MONTE CRISTO ŞURUP POMPASI",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-66",
@@ -4033,7 +4303,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-072",
@@ -4043,12 +4313,21 @@
       "category": "Şurup ve Püreler",
       "subcategory": "Meyve Püreleri",
       "summary": "TOSCHİ TOPİNG ÇEŞİTLERİ 1 KG için Karahanlı Gıda katalog kaydı.",
-      "description": "TOSCHİ TOPİNG ÇEŞİTLERİ 1 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "TOSCHİ TOPİNG ÇEŞİTLERİ 1 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 72": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-f375e073a1",
+          "src": "assets/products/toschi/toschi-toping-cesitleri-1-kg-excel-72/web-f375e073a1b8.webp",
+          "thumbnailSrc": "assets/products/toschi/toschi-toping-cesitleri-1-kg-excel-72/web-f375e073a1b8-thumb.webp",
+          "alt": "TOSCHİ TOPİNG ÇEŞİTLERİ 1 KG",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-72",
@@ -4068,7 +4347,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-076",
@@ -4078,12 +4357,21 @@
       "category": "Soslar",
       "subcategory": "Topping ve Dekor Sosları",
       "summary": "CALLEE ANTEP FISTIK WAFLEE SOS için Karahanlı Gıda katalog kaydı.",
-      "description": "CALLEE ANTEP FISTIK WAFLEE SOS ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "CALLEE ANTEP FISTIK WAFLEE SOS ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 76": "8"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-7dc58f2c62",
+          "src": "assets/products/karahanli-gida/callee-antep-fistik-waflee-sos-excel-76/web-7dc58f2c6264.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/callee-antep-fistik-waflee-sos-excel-76/web-7dc58f2c6264-thumb.webp",
+          "alt": "CALLEE ANTEP FISTIK WAFLEE SOS",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-76",
@@ -4103,7 +4391,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-079",
@@ -4113,12 +4401,21 @@
       "category": "Şurup ve Püreler",
       "subcategory": "Meyve Püreleri",
       "summary": "KUZU KILAĞI PÜRESİ 1000 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "KUZU KILAĞI PÜRESİ 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "KUZU KILAĞI PÜRESİ 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanmış kaynak üzerinden iyileştirildi.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 79": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-1165c0fe25",
+          "src": "assets/products/karahanli-gida/kuzu-kilagi-puresi-1000-gr-excel-79/web-1165c0fe25dd.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/kuzu-kilagi-puresi-1000-gr-excel-79/web-1165c0fe25dd-thumb.webp",
+          "alt": "KUZU KILAĞI PÜRESİ 1000 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-79",
@@ -4138,7 +4435,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-080",
@@ -4236,12 +4533,21 @@
       "category": "Soslar",
       "subcategory": "Topping ve Dekor Sosları",
       "summary": "REPO TOPPİNG ÇEŞİTLERİ 1000 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "REPO TOPPİNG ÇEŞİTLERİ 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "REPO TOPPİNG ÇEŞİTLERİ 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 85": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-544fd253c2",
+          "src": "assets/products/repo/repo-topping-cesitleri-1000-gr-excel-85/web-544fd253c2f9.webp",
+          "thumbnailSrc": "assets/products/repo/repo-topping-cesitleri-1000-gr-excel-85/web-544fd253c2f9-thumb.webp",
+          "alt": "REPO TOPPİNG ÇEŞİTLERİ 1000 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-85",
@@ -4261,7 +4567,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-086",
@@ -4579,12 +4885,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "CAFE HİLL NANE LİMON ÇAYI 250 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "CAFE HİLL NANE LİMON ÇAYI 250 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "CAFE HİLL NANE LİMON ÇAYI 250 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanmış kaynak üzerinden iyileştirildi.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 104": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-c448b89297",
+          "src": "assets/products/cafe-hill/cafe-hill-nane-limon-cayi-250-gr-excel-104/web-c448b8929784.webp",
+          "thumbnailSrc": "assets/products/cafe-hill/cafe-hill-nane-limon-cayi-250-gr-excel-104/web-c448b8929784-thumb.webp",
+          "alt": "CAFE HİLL NANE LİMON ÇAYI 250 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-104",
@@ -4604,7 +4919,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-105",
@@ -5186,12 +5501,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "KATLA BAL için Karahanlı Gıda katalog kaydı.",
-      "description": "KATLA BAL ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "KATLA BAL ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 118": "1"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-177a017964",
+          "src": "assets/products/karahanli-gida/katla-bal-excel-118/web-177a017964e8.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/katla-bal-excel-118/web-177a017964e8-thumb.webp",
+          "alt": "KATLA BAL",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-118",
@@ -5211,7 +5535,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-119",
@@ -5221,12 +5545,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "HİBİSKÜS ÇAYI 250 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "HİBİSKÜS ÇAYI 250 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "HİBİSKÜS ÇAYI 250 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 119": "1"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-65b39cc9d4",
+          "src": "assets/products/karahanli-gida/hibiskus-cayi-250-gr-excel-119/web-65b39cc9d4e9.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/hibiskus-cayi-250-gr-excel-119/web-65b39cc9d4e9-thumb.webp",
+          "alt": "HİBİSKÜS ÇAYI 250 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-119",
@@ -5246,7 +5579,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-120",
@@ -5256,12 +5589,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "KABUK TARÇIN 500 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "KABUK TARÇIN 500 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "KABUK TARÇIN 500 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 120": "500 GR"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-59035c4448",
+          "src": "assets/products/karahanli-gida/kabuk-tarcin-500-gr-excel-120/web-59035c44483b.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/kabuk-tarcin-500-gr-excel-120/web-59035c44483b-thumb.webp",
+          "alt": "KABUK TARÇIN 500 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-120",
@@ -5281,7 +5623,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-121",
@@ -5291,12 +5633,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "MAVİ KELEBEK ÇAYI 100 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "MAVİ KELEBEK ÇAYI 100 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "MAVİ KELEBEK ÇAYI 100 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 121": "1 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-74c399cb10",
+          "src": "assets/products/karahanli-gida/mavi-kelebek-cayi-100-gr-excel-121/web-74c399cb1020.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/mavi-kelebek-cayi-100-gr-excel-121/web-74c399cb1020-thumb.webp",
+          "alt": "MAVİ KELEBEK ÇAYI 100 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-121",
@@ -5316,7 +5667,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-122",
@@ -5326,12 +5677,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "MAÇHA OZU 200 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "MAÇHA OZU 200 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "MAÇHA OZU 200 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanmış kaynak üzerinden iyileştirildi.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 122": "1 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-fa18f4f736",
+          "src": "assets/products/karahanli-gida/macha-ozu-200-gr-excel-122/web-fa18f4f73672.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/macha-ozu-200-gr-excel-122/web-fa18f4f73672-thumb.webp",
+          "alt": "MAÇHA OZU 200 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-122",
@@ -5351,7 +5711,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-123",
@@ -5405,12 +5765,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "GÜZELÇAY BİTKİ ELMA ÇAYI 100 LÜ için Karahanlı Gıda katalog kaydı.",
-      "description": "GÜZELÇAY BİTKİ ELMA ÇAYI 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "GÜZELÇAY BİTKİ ELMA ÇAYI 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 124": "5 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-33aa7752f8",
+          "src": "assets/products/guzel-cay/guzelcay-bitki-elma-cayi-100-lu-excel-124/web-33aa7752f8b8.webp",
+          "thumbnailSrc": "assets/products/guzel-cay/guzelcay-bitki-elma-cayi-100-lu-excel-124/web-33aa7752f8b8-thumb.webp",
+          "alt": "GÜZELÇAY BİTKİ ELMA ÇAYI 100 LÜ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-124",
@@ -5430,7 +5799,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-125",
@@ -5440,12 +5809,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "GÜZELÇAY BİTKİ FORM KAYSI ÇAYI 100 LÜ için Karahanlı Gıda katalog kaydı.",
-      "description": "GÜZELÇAY BİTKİ FORM KAYSI ÇAYI 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "GÜZELÇAY BİTKİ FORM KAYSI ÇAYI 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 125": "5 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-0b28ac3b67",
+          "src": "assets/products/guzel-cay/guzelcay-bitki-form-kaysi-cayi-100-lu-excel-125/web-0b28ac3b673a.webp",
+          "thumbnailSrc": "assets/products/guzel-cay/guzelcay-bitki-form-kaysi-cayi-100-lu-excel-125/web-0b28ac3b673a-thumb.webp",
+          "alt": "GÜZELÇAY BİTKİ FORM KAYSI ÇAYI 100 LÜ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-125",
@@ -5465,7 +5843,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-126",
@@ -5475,12 +5853,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "GÜZELÇAY BİTKİ IHLAMUR ÇAYI 100 LÜ için Karahanlı Gıda katalog kaydı.",
-      "description": "GÜZELÇAY BİTKİ IHLAMUR ÇAYI 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "GÜZELÇAY BİTKİ IHLAMUR ÇAYI 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 126": "5 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-896f86d531",
+          "src": "assets/products/guzel-cay/guzelcay-bitki-ihlamur-cayi-100-lu-excel-126/web-896f86d5312e.webp",
+          "thumbnailSrc": "assets/products/guzel-cay/guzelcay-bitki-ihlamur-cayi-100-lu-excel-126/web-896f86d5312e-thumb.webp",
+          "alt": "GÜZELÇAY BİTKİ IHLAMUR ÇAYI 100 LÜ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-126",
@@ -5500,7 +5887,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-127",
@@ -5510,12 +5897,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "GÜZELÇAY BİTKİ KUŞBURNU ÇAYI 100 LÜ için Karahanlı Gıda katalog kaydı.",
-      "description": "GÜZELÇAY BİTKİ KUŞBURNU ÇAYI 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "GÜZELÇAY BİTKİ KUŞBURNU ÇAYI 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 127": "5 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-e3cac6d9ef",
+          "src": "assets/products/guzel-cay/guzelcay-bitki-kusburnu-cayi-100-lu-excel-127/web-e3cac6d9efb2.webp",
+          "thumbnailSrc": "assets/products/guzel-cay/guzelcay-bitki-kusburnu-cayi-100-lu-excel-127/web-e3cac6d9efb2-thumb.webp",
+          "alt": "GÜZELÇAY BİTKİ KUŞBURNU ÇAYI 100 LÜ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-127",
@@ -5535,7 +5931,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-128",
@@ -5545,12 +5941,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "GÜZELÇAY BİTKİ PAPATYA ÇAYI 100 LÜ için Karahanlı Gıda katalog kaydı.",
-      "description": "GÜZELÇAY BİTKİ PAPATYA ÇAYI 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "GÜZELÇAY BİTKİ PAPATYA ÇAYI 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 128": "5 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-4539aac0fa",
+          "src": "assets/products/guzel-cay/guzelcay-bitki-papatya-cayi-100-lu-excel-128/web-4539aac0fae0.webp",
+          "thumbnailSrc": "assets/products/guzel-cay/guzelcay-bitki-papatya-cayi-100-lu-excel-128/web-4539aac0fae0-thumb.webp",
+          "alt": "GÜZELÇAY BİTKİ PAPATYA ÇAYI 100 LÜ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-128",
@@ -5570,7 +5975,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-129",
@@ -5580,12 +5985,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "GÜZELÇAY BİTKİ YEŞİLÇAY 100 LÜ için Karahanlı Gıda katalog kaydı.",
-      "description": "GÜZELÇAY BİTKİ YEŞİLÇAY 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "GÜZELÇAY BİTKİ YEŞİLÇAY 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 129": "5 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-944b035a41",
+          "src": "assets/products/guzel-cay/guzelcay-bitki-yesilcay-100-lu-excel-129/web-944b035a4103.webp",
+          "thumbnailSrc": "assets/products/guzel-cay/guzelcay-bitki-yesilcay-100-lu-excel-129/web-944b035a4103-thumb.webp",
+          "alt": "GÜZELÇAY BİTKİ YEŞİLÇAY 100 LÜ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-129",
@@ -5605,7 +6019,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-130",
@@ -5615,12 +6029,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "GÜZELÇAY BİTKİ LİMONLU YEŞİLÇAY 100 LÜ için Karahanlı Gıda katalog kaydı.",
-      "description": "GÜZELÇAY BİTKİ LİMONLU YEŞİLÇAY 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "GÜZELÇAY BİTKİ LİMONLU YEŞİLÇAY 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 130": "5 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-20d1c0c485",
+          "src": "assets/products/guzel-cay/guzelcay-bitki-limonlu-yesilcay-100-lu-excel-130/web-20d1c0c48597.webp",
+          "thumbnailSrc": "assets/products/guzel-cay/guzelcay-bitki-limonlu-yesilcay-100-lu-excel-130/web-20d1c0c48597-thumb.webp",
+          "alt": "GÜZELÇAY BİTKİ LİMONLU YEŞİLÇAY 100 LÜ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-130",
@@ -5640,7 +6063,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-131",
@@ -5650,12 +6073,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "GÜZELÇAY GOLD SELECTİON SÜZEN POŞET 25 Lİ için Karahanlı Gıda katalog kaydı.",
-      "description": "GÜZELÇAY GOLD SELECTİON SÜZEN POŞET 25 Lİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "GÜZELÇAY GOLD SELECTİON SÜZEN POŞET 25 Lİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 131": "24 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-11a8b0dd6a",
+          "src": "assets/products/guzel-cay/guzelcay-gold-selection-suzen-poset-25-li-excel-131/web-11a8b0dd6a68.webp",
+          "thumbnailSrc": "assets/products/guzel-cay/guzelcay-gold-selection-suzen-poset-25-li-excel-131/web-11a8b0dd6a68-thumb.webp",
+          "alt": "GÜZELÇAY GOLD SELECTİON SÜZEN POŞET 25 Lİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-131",
@@ -5675,7 +6107,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-132",
@@ -5685,12 +6117,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "GÜZELÇAY ERLİGREY DE MLİK POŞET 100 LÜ için Karahanlı Gıda katalog kaydı.",
-      "description": "GÜZELÇAY ERLİGREY DE MLİK POŞET 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "GÜZELÇAY ERLİGREY DE MLİK POŞET 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 132": "8 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-99b45d3622",
+          "src": "assets/products/guzel-cay/guzelcay-erligrey-de-mlik-poset-100-lu-excel-132/web-99b45d362212.webp",
+          "thumbnailSrc": "assets/products/guzel-cay/guzelcay-erligrey-de-mlik-poset-100-lu-excel-132/web-99b45d362212-thumb.webp",
+          "alt": "GÜZELÇAY ERLİGREY DE MLİK POŞET 100 LÜ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-132",
@@ -5710,7 +6151,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-133",
@@ -5720,12 +6161,21 @@
       "category": "Çay",
       "subcategory": "Bitki Çayları",
       "summary": "GÜZELÇAY FİLİZ TABLET 100 LÜ için Karahanlı Gıda katalog kaydı.",
-      "description": "GÜZELÇAY FİLİZ TABLET 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "GÜZELÇAY FİLİZ TABLET 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 133": "8 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-f94cacef20",
+          "src": "assets/products/guzel-cay/guzelcay-filiz-tablet-100-lu-excel-133/web-f94cacef20fb.webp",
+          "thumbnailSrc": "assets/products/guzel-cay/guzelcay-filiz-tablet-100-lu-excel-133/web-f94cacef20fb-thumb.webp",
+          "alt": "GÜZELÇAY FİLİZ TABLET 100 LÜ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-133",
@@ -5745,7 +6195,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-136",
@@ -5799,12 +6249,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Diğer Gıda Ürünleri",
       "summary": "ÇAKIL TAŞI KOMANDO için Karahanlı Gıda katalog kaydı.",
-      "description": "ÇAKIL TAŞI KOMANDO ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "ÇAKIL TAŞI KOMANDO ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 137": "1 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-18d52672c2",
+          "src": "assets/products/karahanli-gida/cakil-tasi-komando-excel-137/web-18d52672c2a9.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/cakil-tasi-komando-excel-137/web-18d52672c2a9-thumb.webp",
+          "alt": "ÇAKIL TAŞI KOMANDO",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-137",
@@ -5824,7 +6283,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-138",
@@ -5922,12 +6381,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Tatlı/Topping Ürünleri",
       "summary": "DELUCCA KAKAOLU BİSKÜVİ KURABİYE için Karahanlı Gıda katalog kaydı.",
-      "description": "DELUCCA KAKAOLU BİSKÜVİ KURABİYE ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "DELUCCA KAKAOLU BİSKÜVİ KURABİYE ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 140": "1 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-7c9c2090eb",
+          "src": "assets/products/de-lucca/delucca-kakaolu-biskuvi-kurabiye-excel-140/web-7c9c2090ebf2.webp",
+          "thumbnailSrc": "assets/products/de-lucca/delucca-kakaolu-biskuvi-kurabiye-excel-140/web-7c9c2090ebf2-thumb.webp",
+          "alt": "DELUCCA KAKAOLU BİSKÜVİ KURABİYE",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-140",
@@ -5947,7 +6415,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-141",
@@ -5957,12 +6425,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Tatlı/Topping Ürünleri",
       "summary": "NAPOLİTEN ÇİKOLATA için Karahanlı Gıda katalog kaydı.",
-      "description": "NAPOLİTEN ÇİKOLATA ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "NAPOLİTEN ÇİKOLATA ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 141": "1 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-2a14043e29",
+          "src": "assets/products/karahanli-gida/napoliten-cikolata-excel-141/web-2a14043e29bc.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/napoliten-cikolata-excel-141/web-2a14043e29bc-thumb.webp",
+          "alt": "NAPOLİTEN ÇİKOLATA",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-141",
@@ -5982,7 +6459,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-143",
@@ -5992,12 +6469,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Süt ve Krema",
       "summary": "OREO KREMALI BİSKÜVİ için Karahanlı Gıda katalog kaydı.",
-      "description": "OREO KREMALI BİSKÜVİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "OREO KREMALI BİSKÜVİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 143": "1 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-6663dd8a6c",
+          "src": "assets/products/karahanli-gida/oreo-kremali-biskuvi-excel-143/web-6663dd8a6c59.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/oreo-kremali-biskuvi-excel-143/web-6663dd8a6c59-thumb.webp",
+          "alt": "OREO KREMALI BİSKÜVİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-143",
@@ -6017,7 +6503,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-144",
@@ -6027,12 +6513,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Diğer Gıda Ürünleri",
       "summary": "BROWNİ GOLD MİNİ için Karahanlı Gıda katalog kaydı.",
-      "description": "BROWNİ GOLD MİNİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "BROWNİ GOLD MİNİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 144": "12 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-35c6e00035",
+          "src": "assets/products/karahanli-gida/browni-gold-mini-excel-144/web-35c6e00035be.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/browni-gold-mini-excel-144/web-35c6e00035be-thumb.webp",
+          "alt": "BROWNİ GOLD MİNİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-144",
@@ -6052,7 +6547,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-145",
@@ -6150,12 +6645,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Tatlı/Topping Ürünleri",
       "summary": "PRALİN ÇİKOLATA 12 KG için Karahanlı Gıda katalog kaydı.",
-      "description": "PRALİN ÇİKOLATA 12 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "PRALİN ÇİKOLATA 12 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 147": "1 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-4047d5f6f7",
+          "src": "assets/products/karahanli-gida/pralin-cikolata-12-kg-excel-147/web-4047d5f6f730.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/pralin-cikolata-12-kg-excel-147/web-4047d5f6f730-thumb.webp",
+          "alt": "PRALİN ÇİKOLATA 12 KG",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-147",
@@ -6175,7 +6679,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-148",
@@ -6185,12 +6689,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Tatlı/Topping Ürünleri",
       "summary": "RİCH KREM ŞANTİ 250 GR KIRMIZI için Karahanlı Gıda katalog kaydı.",
-      "description": "RİCH KREM ŞANTİ 250 GR KIRMIZI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "RİCH KREM ŞANTİ 250 GR KIRMIZI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 148": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-6387bb5e50",
+          "src": "assets/products/karahanli-gida/rich-krem-santi-250-gr-kirmizi-excel-148/web-6387bb5e5025.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/rich-krem-santi-250-gr-kirmizi-excel-148/web-6387bb5e5025-thumb.webp",
+          "alt": "RİCH KREM ŞANTİ 250 GR KIRMIZI",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-148",
@@ -6210,7 +6723,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-149",
@@ -6220,13 +6733,22 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Tatlı/Topping Ürünleri",
       "summary": "ŞANTİ SİFONU için Karahanlı Gıda katalog kaydı.",
-      "description": "ŞANTİ SİFONU ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "ŞANTİ SİFONU ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 149": "10",
         "Ambalaj Excel 219": "1 KUTU"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-1241718afe",
+          "src": "assets/products/karahanli-gida/santi-sifonu-excel-149/web-1241718afe73.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/santi-sifonu-excel-149/web-1241718afe73-thumb.webp",
+          "alt": "ŞANTİ SİFONU",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-149",
@@ -6256,7 +6778,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-150",
@@ -6442,12 +6964,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Diğer Gıda Ürünleri",
       "summary": "STİK TUZ 800 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "STİK TUZ 800 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "STİK TUZ 800 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 154": "1"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-83b250e301",
+          "src": "assets/products/karahanli-gida/stik-tuz-800-gr-excel-154/web-83b250e3019b.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/stik-tuz-800-gr-excel-154/web-83b250e3019b-thumb.webp",
+          "alt": "STİK TUZ 800 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-154",
@@ -6467,7 +6998,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-155",
@@ -6477,12 +7008,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Diğer Gıda Ürünleri",
       "summary": "ERKOÇ STİK ŞEKER 4 GR 1.250 ADET için Karahanlı Gıda katalog kaydı.",
-      "description": "ERKOÇ STİK ŞEKER 4 GR 1.250 ADET ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "ERKOÇ STİK ŞEKER 4 GR 1.250 ADET ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 155": "5 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-8743f725cb",
+          "src": "assets/products/karahanli-gida/erkoc-stik-seker-4-gr-1-250-adet-excel-155/web-8743f725cbe6.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/erkoc-stik-seker-4-gr-1-250-adet-excel-155/web-8743f725cbe6-thumb.webp",
+          "alt": "ERKOÇ STİK ŞEKER 4 GR 1.250 ADET",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-155",
@@ -6502,7 +7042,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-156",
@@ -6512,12 +7052,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Diğer Gıda Ürünleri",
       "summary": "ERKOÇ KESME ŞEKER SARGILI için Karahanlı Gıda katalog kaydı.",
-      "description": "ERKOÇ KESME ŞEKER SARGILI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "ERKOÇ KESME ŞEKER SARGILI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 156": "4 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-7d3dd75078",
+          "src": "assets/products/karahanli-gida/erkoc-kesme-seker-sargili-excel-156/web-7d3dd7507877.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/erkoc-kesme-seker-sargili-excel-156/web-7d3dd7507877-thumb.webp",
+          "alt": "ERKOÇ KESME ŞEKER SARGILI",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-156",
@@ -6537,7 +7086,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-157",
@@ -6547,12 +7096,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Diğer Gıda Ürünleri",
       "summary": "ROSS ÇAKIL TAŞI KOMANDO için Karahanlı Gıda katalog kaydı.",
-      "description": "ROSS ÇAKIL TAŞI KOMANDO ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "ROSS ÇAKIL TAŞI KOMANDO ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 157": "3 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-18d52672c2",
+          "src": "assets/products/karahanli-gida/ross-cakil-tasi-komando-excel-157/web-18d52672c2a9.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/ross-cakil-tasi-komando-excel-157/web-18d52672c2a9-thumb.webp",
+          "alt": "ROSS ÇAKIL TAŞI KOMANDO",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-157",
@@ -6572,7 +7130,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-158",
@@ -6582,12 +7140,21 @@
       "category": "Gıda Ürünleri",
       "subcategory": "Diğer Gıda Ürünleri",
       "summary": "ROSS DAMLA DROP BİTTER için Karahanlı Gıda katalog kaydı.",
-      "description": "ROSS DAMLA DROP BİTTER ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "ROSS DAMLA DROP BİTTER ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 158": "1 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-f39b4d822f",
+          "src": "assets/products/karahanli-gida/ross-damla-drop-bitter-excel-158/web-f39b4d822f31.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/ross-damla-drop-bitter-excel-158/web-f39b4d822f31-thumb.webp",
+          "alt": "ROSS DAMLA DROP BİTTER",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-158",
@@ -6607,7 +7174,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-160",
@@ -6617,12 +7184,21 @@
       "category": "Donuk Ürünler",
       "subcategory": "Donuk Meyveler",
       "summary": "DONUK YABAN MERSİNİ MEYVESİ için Karahanlı Gıda katalog kaydı.",
-      "description": "DONUK YABAN MERSİNİ MEYVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "DONUK YABAN MERSİNİ MEYVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 160": "1 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-52a7c0730b",
+          "src": "assets/products/karahanli-gida/donuk-yaban-mersini-meyvesi-excel-160/web-52a7c0730bba.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/donuk-yaban-mersini-meyvesi-excel-160/web-52a7c0730bba-thumb.webp",
+          "alt": "DONUK YABAN MERSİNİ MEYVESİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-160",
@@ -6642,7 +7218,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-161",
@@ -6652,12 +7228,21 @@
       "category": "Donuk Ürünler",
       "subcategory": "Donuk Meyveler",
       "summary": "DONUK FRAMBUAZ MEYVESİ için Karahanlı Gıda katalog kaydı.",
-      "description": "DONUK FRAMBUAZ MEYVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "DONUK FRAMBUAZ MEYVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 161": "1 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-570fb73dfc",
+          "src": "assets/products/karahanli-gida/donuk-frambuaz-meyvesi-excel-161/web-570fb73dfc38.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/donuk-frambuaz-meyvesi-excel-161/web-570fb73dfc38-thumb.webp",
+          "alt": "DONUK FRAMBUAZ MEYVESİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-161",
@@ -6677,7 +7262,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-162",
@@ -6687,12 +7272,21 @@
       "category": "Donuk Ürünler",
       "subcategory": "Donuk Meyveler",
       "summary": "DONUK KARIŞIK ORMAN MEYVESİ için Karahanlı Gıda katalog kaydı.",
-      "description": "DONUK KARIŞIK ORMAN MEYVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "DONUK KARIŞIK ORMAN MEYVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 162": "1 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-132e355a00",
+          "src": "assets/products/karahanli-gida/donuk-karisik-orman-meyvesi-excel-162/web-132e355a0097.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/donuk-karisik-orman-meyvesi-excel-162/web-132e355a0097-thumb.webp",
+          "alt": "DONUK KARIŞIK ORMAN MEYVESİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-162",
@@ -6712,7 +7306,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-163",
@@ -6722,12 +7316,21 @@
       "category": "Donuk Ürünler",
       "subcategory": "Donuk İçecekler",
       "summary": "DONUK BÖĞÜRTLEN MEYVESİ için Karahanlı Gıda katalog kaydı.",
-      "description": "DONUK BÖĞÜRTLEN MEYVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "DONUK BÖĞÜRTLEN MEYVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 163": "1 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-37b1a61f65",
+          "src": "assets/products/karahanli-gida/donuk-bogurtlen-meyvesi-excel-163/web-37b1a61f6502.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/donuk-bogurtlen-meyvesi-excel-163/web-37b1a61f6502-thumb.webp",
+          "alt": "DONUK BÖĞÜRTLEN MEYVESİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-163",
@@ -6747,7 +7350,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-164",
@@ -6757,12 +7360,21 @@
       "category": "Donuk Ürünler",
       "subcategory": "Donuk Meyveler",
       "summary": "DONUK KARADUT MEYVESİ için Karahanlı Gıda katalog kaydı.",
-      "description": "DONUK KARADUT MEYVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "DONUK KARADUT MEYVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 164": "1 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-3d3db98a5f",
+          "src": "assets/products/karahanli-gida/donuk-karadut-meyvesi-excel-164/web-3d3db98a5fe0.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/donuk-karadut-meyvesi-excel-164/web-3d3db98a5fe0-thumb.webp",
+          "alt": "DONUK KARADUT MEYVESİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-164",
@@ -6782,7 +7394,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-165",
@@ -6792,12 +7404,21 @@
       "category": "Donuk Ürünler",
       "subcategory": "Donuk Meyveler",
       "summary": "DONUK VİŞNE MEYVESİ için Karahanlı Gıda katalog kaydı.",
-      "description": "DONUK VİŞNE MEYVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "DONUK VİŞNE MEYVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 165": "1 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-a9e91b8811",
+          "src": "assets/products/karahanli-gida/donuk-visne-meyvesi-excel-165/web-a9e91b8811f4.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/donuk-visne-meyvesi-excel-165/web-a9e91b8811f4-thumb.webp",
+          "alt": "DONUK VİŞNE MEYVESİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-165",
@@ -6817,7 +7438,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-166",
@@ -6827,12 +7448,21 @@
       "category": "Donuk Ürünler",
       "subcategory": "Donuk Meyveler",
       "summary": "DONUK ÇİLEK MEYVESİ için Karahanlı Gıda katalog kaydı.",
-      "description": "DONUK ÇİLEK MEYVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "DONUK ÇİLEK MEYVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 166": "1 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-fdb00db419",
+          "src": "assets/products/karahanli-gida/donuk-cilek-meyvesi-excel-166/web-fdb00db4198e.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/donuk-cilek-meyvesi-excel-166/web-fdb00db4198e-thumb.webp",
+          "alt": "DONUK ÇİLEK MEYVESİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-166",
@@ -6852,7 +7482,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-167",
@@ -6862,12 +7492,21 @@
       "category": "Donuk Ürünler",
       "subcategory": "Donuk İçecekler",
       "summary": "KURUTULMUŞ PORTAKAL için Karahanlı Gıda katalog kaydı.",
-      "description": "KURUTULMUŞ PORTAKAL ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "KURUTULMUŞ PORTAKAL ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 167": "1 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-a76812a0eb",
+          "src": "assets/products/karahanli-gida/kurutulmus-portakal-excel-167/web-a76812a0eb2a.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/kurutulmus-portakal-excel-167/web-a76812a0eb2a-thumb.webp",
+          "alt": "KURUTULMUŞ PORTAKAL",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-167",
@@ -6887,7 +7526,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-168",
@@ -6897,12 +7536,21 @@
       "category": "Donuk Ürünler",
       "subcategory": "Donuk İçecekler",
       "summary": "KURUTULMUŞ YEŞİL LİMON için Karahanlı Gıda katalog kaydı.",
-      "description": "KURUTULMUŞ YEŞİL LİMON ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "KURUTULMUŞ YEŞİL LİMON ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 168": "1 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-39a58d9f2a",
+          "src": "assets/products/karahanli-gida/kurutulmus-yesil-limon-excel-168/web-39a58d9f2ab5.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/kurutulmus-yesil-limon-excel-168/web-39a58d9f2ab5-thumb.webp",
+          "alt": "KURUTULMUŞ YEŞİL LİMON",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-168",
@@ -6922,7 +7570,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-177",
@@ -6932,12 +7580,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Servis Sarfı",
       "summary": "CHEF STAR FRENCH PRESS 350 ML için Karahanlı Gıda katalog kaydı.",
-      "description": "CHEF STAR FRENCH PRESS 350 ML ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "CHEF STAR FRENCH PRESS 350 ML ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 177": "1"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-d6de206d37",
+          "src": "assets/products/karahanli-gida/chef-star-french-press-350-ml-excel-177/web-d6de206d3790.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/chef-star-french-press-350-ml-excel-177/web-d6de206d3790-thumb.webp",
+          "alt": "CHEF STAR FRENCH PRESS 350 ML",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-177",
@@ -6957,7 +7614,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-178",
@@ -6967,12 +7624,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Diğer Sarf Ürünleri",
       "summary": "V60 FİLTRE KAHVE KAĞIDI için Karahanlı Gıda katalog kaydı.",
-      "description": "V60 FİLTRE KAHVE KAĞIDI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "V60 FİLTRE KAHVE KAĞIDI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 178": "100 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-489774ab23",
+          "src": "assets/products/karahanli-gida/v60-filtre-kahve-kagidi-excel-178/web-489774ab23aa.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/v60-filtre-kahve-kagidi-excel-178/web-489774ab23aa-thumb.webp",
+          "alt": "V60 FİLTRE KAHVE KAĞIDI",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-178",
@@ -6992,7 +7658,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-179",
@@ -7002,12 +7668,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Diğer Sarf Ürünleri",
       "summary": "ORTABOY KRAFT TAŞIMA ÇANTASI için Karahanlı Gıda katalog kaydı.",
-      "description": "ORTABOY KRAFT TAŞIMA ÇANTASI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "ORTABOY KRAFT TAŞIMA ÇANTASI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 179": "1 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-08841879c1",
+          "src": "assets/products/karahanli-gida/ortaboy-kraft-tasima-cantasi-excel-179/web-08841879c1a9.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/ortaboy-kraft-tasima-cantasi-excel-179/web-08841879c1a9-thumb.webp",
+          "alt": "ORTABOY KRAFT TAŞIMA ÇANTASI",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-179",
@@ -7027,7 +7702,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-180",
@@ -7037,12 +7712,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Pipet ve Karıştırıcı",
       "summary": "DOLPİN JUMBO ARTİSTİK PİPET 50 ADETLİ için Karahanlı Gıda katalog kaydı.",
-      "description": "DOLPİN JUMBO ARTİSTİK PİPET 50 ADETLİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "DOLPİN JUMBO ARTİSTİK PİPET 50 ADETLİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanmış kaynak üzerinden iyileştirildi.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 180": "PAKET:50 AD KOLİ :50 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-52ef994175",
+          "src": "assets/products/karahanli-gida/dolpin-jumbo-artistik-pipet-50-adetli-excel-180/web-52ef994175ed.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/dolpin-jumbo-artistik-pipet-50-adetli-excel-180/web-52ef994175ed-thumb.webp",
+          "alt": "DOLPİN JUMBO ARTİSTİK PİPET 50 ADETLİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-180",
@@ -7062,7 +7746,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-181",
@@ -7072,12 +7756,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Pipet ve Karıştırıcı",
       "summary": "DOLPİN FROZEN JELATİNLİ SİYAH DÜZ PİPET 250 LİLİ için Karahanlı Gıda katalog kaydı.",
-      "description": "DOLPİN FROZEN JELATİNLİ SİYAH DÜZ PİPET 250 LİLİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "DOLPİN FROZEN JELATİNLİ SİYAH DÜZ PİPET 250 LİLİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 181": "PAKET:250 AD KOLİ :20 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-387b4a7bc4",
+          "src": "assets/products/karahanli-gida/dolpin-frozen-jelatinli-siyah-duz-pipet-250-lili-excel-181/web-387b4a7bc440.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/dolpin-frozen-jelatinli-siyah-duz-pipet-250-lili-excel-181/web-387b4a7bc440-thumb.webp",
+          "alt": "DOLPİN FROZEN JELATİNLİ SİYAH DÜZ PİPET 250 LİLİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-181",
@@ -7097,7 +7790,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-182",
@@ -7107,12 +7800,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Pipet ve Karıştırıcı",
       "summary": "JİLATİNSİZ SİYAH PİPET 50X 100 LÜ PAKET için Karahanlı Gıda katalog kaydı.",
-      "description": "JİLATİNSİZ SİYAH PİPET 50X 100 LÜ PAKET ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "JİLATİNSİZ SİYAH PİPET 50X 100 LÜ PAKET ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 182": "KOLİ İÇİ 50"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-7c9396a2aa",
+          "src": "assets/products/karahanli-gida/jilatinsiz-siyah-pipet-50x-100-lu-paket-excel-182/web-7c9396a2aa01.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/jilatinsiz-siyah-pipet-50x-100-lu-paket-excel-182/web-7c9396a2aa01-thumb.webp",
+          "alt": "JİLATİNSİZ SİYAH PİPET 50X 100 LÜ PAKET",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-182",
@@ -7132,7 +7834,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-183",
@@ -7142,12 +7844,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Pipet ve Karıştırıcı",
       "summary": "DOLPİN FROZEN JELATİLİ SİYAH DÜZ PİPET 100 LÜ için Karahanlı Gıda katalog kaydı.",
-      "description": "DOLPİN FROZEN JELATİLİ SİYAH DÜZ PİPET 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "DOLPİN FROZEN JELATİLİ SİYAH DÜZ PİPET 100 LÜ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 183": "PAKET:100 AD KOLİ :50 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-7cd493be87",
+          "src": "assets/products/karahanli-gida/dolpin-frozen-jelatili-siyah-duz-pipet-100-lu-excel-183/web-7cd493be876c.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/dolpin-frozen-jelatili-siyah-duz-pipet-100-lu-excel-183/web-7cd493be876c-thumb.webp",
+          "alt": "DOLPİN FROZEN JELATİLİ SİYAH DÜZ PİPET 100 LÜ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-183",
@@ -7167,7 +7878,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-184",
@@ -7177,12 +7888,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Diğer Sarf Ürünleri",
       "summary": "İNCE KIL PİPET 500 ADETLİ JİLATİNSİZ için Karahanlı Gıda katalog kaydı.",
-      "description": "İNCE KIL PİPET 500 ADETLİ JİLATİNSİZ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "İNCE KIL PİPET 500 ADETLİ JİLATİNSİZ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 184": "500 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-8d609f22be",
+          "src": "assets/products/karahanli-gida/ince-kil-pipet-500-adetli-jilatinsiz-excel-184/web-8d609f22be09.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/ince-kil-pipet-500-adetli-jilatinsiz-excel-184/web-8d609f22be09-thumb.webp",
+          "alt": "İNCE KIL PİPET 500 ADETLİ JİLATİNSİZ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-184",
@@ -7202,7 +7922,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-185",
@@ -7247,12 +7967,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Diğer Sarf Ürünleri",
       "summary": "KRAFT POŞET KG için Karahanlı Gıda katalog kaydı.",
-      "description": "KRAFT POŞET KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "KRAFT POŞET KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 186": "1 KG"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-1fa7c3d53e",
+          "src": "assets/products/karahanli-gida/kraft-poset-kg-excel-186/web-1fa7c3d53e44.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/kraft-poset-kg-excel-186/web-1fa7c3d53e44-thumb.webp",
+          "alt": "KRAFT POŞET KG",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-186",
@@ -7272,7 +8001,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-187",
@@ -7282,12 +8011,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "BARDAK TIPAÇI KOLİ İÇİ için Karahanlı Gıda katalog kaydı.",
-      "description": "BARDAK TIPAÇI KOLİ İÇİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "BARDAK TIPAÇI KOLİ İÇİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 187": "500 LÜ PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-d48d8577c7",
+          "src": "assets/products/karahanli-gida/bardak-tipaci-koli-ici-excel-187/web-d48d8577c77b.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/bardak-tipaci-koli-ici-excel-187/web-d48d8577c77b-thumb.webp",
+          "alt": "BARDAK TIPAÇI KOLİ İÇİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-187",
@@ -7307,7 +8045,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-188",
@@ -7317,12 +8055,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Pipet ve Karıştırıcı",
       "summary": "SARGISIZ TAHTA KARIŞTIRICI 500 ADETLİ için Karahanlı Gıda katalog kaydı.",
-      "description": "SARGISIZ TAHTA KARIŞTIRICI 500 ADETLİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "SARGISIZ TAHTA KARIŞTIRICI 500 ADETLİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 188": "1 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-f95d1f6da7",
+          "src": "assets/products/karahanli-gida/sargisiz-tahta-karistirici-500-adetli-excel-188/web-f95d1f6da792.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/sargisiz-tahta-karistirici-500-adetli-excel-188/web-f95d1f6da792-thumb.webp",
+          "alt": "SARGISIZ TAHTA KARIŞTIRICI 500 ADETLİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-188",
@@ -7342,7 +8089,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-189",
@@ -7352,12 +8099,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Pipet ve Karıştırıcı",
       "summary": "SARGILI TAHTA KARIŞTIRICI 500 ADETLİ için Karahanlı Gıda katalog kaydı.",
-      "description": "SARGILI TAHTA KARIŞTIRICI 500 ADETLİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "SARGILI TAHTA KARIŞTIRICI 500 ADETLİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 189": "1 PAKET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-8dab7457d7",
+          "src": "assets/products/karahanli-gida/sargili-tahta-karistirici-500-adetli-excel-189/web-8dab7457d713.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/sargili-tahta-karistirici-500-adetli-excel-189/web-8dab7457d713-thumb.webp",
+          "alt": "SARGILI TAHTA KARIŞTIRICI 500 ADETLİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-189",
@@ -7377,7 +8133,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-190",
@@ -7387,12 +8143,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "350 CC PET BARDAK 50 Lİ KOLİ İÇİ 1000 için Karahanlı Gıda katalog kaydı.",
-      "description": "350 CC PET BARDAK 50 Lİ KOLİ İÇİ 1000 ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "350 CC PET BARDAK 50 Lİ KOLİ İÇİ 1000 ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 190": "1 000 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-154e8db61b",
+          "src": "assets/products/karahanli-gida/350-cc-pet-bardak-50-li-koli-ici-1000-excel-190/web-154e8db61bb4.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/350-cc-pet-bardak-50-li-koli-ici-1000-excel-190/web-154e8db61bb4-thumb.webp",
+          "alt": "350 CC PET BARDAK 50 Lİ KOLİ İÇİ 1000",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-190",
@@ -7412,7 +8177,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-191",
@@ -7422,12 +8187,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "350 CC PET BARDAK KAPAĞI 100 LÜ KOLİ İÇİ 1000 için Karahanlı Gıda katalog kaydı.",
-      "description": "350 CC PET BARDAK KAPAĞI 100 LÜ KOLİ İÇİ 1000 ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "350 CC PET BARDAK KAPAĞI 100 LÜ KOLİ İÇİ 1000 ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 191": "1000 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-1b0d892b44",
+          "src": "assets/products/karahanli-gida/350-cc-pet-bardak-kapagi-100-lu-koli-ici-1000-excel-191/web-1b0d892b4457.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/350-cc-pet-bardak-kapagi-100-lu-koli-ici-1000-excel-191/web-1b0d892b4457-thumb.webp",
+          "alt": "350 CC PET BARDAK KAPAĞI 100 LÜ KOLİ İÇİ 1000",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-191",
@@ -7447,7 +8221,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-192",
@@ -7985,12 +8759,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "BOUBLE PED BARDAK- için Karahanlı Gıda katalog kaydı.",
-      "description": "BOUBLE PED BARDAK- ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "BOUBLE PED BARDAK- ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 204": "1000 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-add6d5ccff",
+          "src": "assets/products/karahanli-gida/bouble-ped-bardak-excel-204/web-add6d5ccff49.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/bouble-ped-bardak-excel-204/web-add6d5ccff49-thumb.webp",
+          "alt": "BOUBLE PED BARDAK-",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-204",
@@ -8010,7 +8793,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-205",
@@ -8020,12 +8803,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "HUTAMAKİ TAŞIMA KILIFI 2Lİ için Karahanlı Gıda katalog kaydı.",
-      "description": "HUTAMAKİ TAŞIMA KILIFI 2Lİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "HUTAMAKİ TAŞIMA KILIFI 2Lİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 205": "480 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-b9f135dfe6",
+          "src": "assets/products/karahanli-gida/hutamaki-tasima-kilifi-2li-excel-205/web-b9f135dfe6e0.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/hutamaki-tasima-kilifi-2li-excel-205/web-b9f135dfe6e0-thumb.webp",
+          "alt": "HUTAMAKİ TAŞIMA KILIFI 2Lİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-205",
@@ -8045,7 +8837,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-206",
@@ -8055,12 +8847,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "BOUBLE PED BARDAK-KAPAĞI KİLİTLİ EMZİKLİ için Karahanlı Gıda katalog kaydı.",
-      "description": "BOUBLE PED BARDAK-KAPAĞI KİLİTLİ EMZİKLİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "BOUBLE PED BARDAK-KAPAĞI KİLİTLİ EMZİKLİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 206": "10000"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-17e89b74dc",
+          "src": "assets/products/karahanli-gida/bouble-ped-bardak-kapagi-kilitli-emzikli-excel-206/web-17e89b74dcb0.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/bouble-ped-bardak-kapagi-kilitli-emzikli-excel-206/web-17e89b74dcb0-thumb.webp",
+          "alt": "BOUBLE PED BARDAK-KAPAĞI KİLİTLİ EMZİKLİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-206",
@@ -8080,7 +8881,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-207",
@@ -8090,12 +8891,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "HUTAMAKİ SLEEVE BARDAK TUTAMACI için Karahanlı Gıda katalog kaydı.",
-      "description": "HUTAMAKİ SLEEVE BARDAK TUTAMACI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "HUTAMAKİ SLEEVE BARDAK TUTAMACI ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 207": "1000 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-b9f135dfe6",
+          "src": "assets/products/karahanli-gida/hutamaki-sleeve-bardak-tutamaci-excel-207/web-b9f135dfe6e0.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/hutamaki-sleeve-bardak-tutamaci-excel-207/web-b9f135dfe6e0-thumb.webp",
+          "alt": "HUTAMAKİ SLEEVE BARDAK TUTAMACI",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-207",
@@ -8115,7 +8925,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-208",
@@ -8213,12 +9023,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Servis Sarfı",
       "summary": "OMK BAR BLENDER için Karahanlı Gıda katalog kaydı.",
-      "description": "OMK BAR BLENDER ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "OMK BAR BLENDER ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 210": "1 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-b04f5109a2",
+          "src": "assets/products/karahanli-gida/omk-bar-blender-excel-210/web-b04f5109a228.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/omk-bar-blender-excel-210/web-b04f5109a228-thumb.webp",
+          "alt": "OMK BAR BLENDER",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-210",
@@ -8238,7 +9057,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-211",
@@ -8248,12 +9067,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "KÖPÜKSAN KARTON BARDAK 4 OZ TÜRK KAHVESİ için Karahanlı Gıda katalog kaydı.",
-      "description": "KÖPÜKSAN KARTON BARDAK 4 OZ TÜRK KAHVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "KÖPÜKSAN KARTON BARDAK 4 OZ TÜRK KAHVESİ ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 211": "3000 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-c2dbed00c9",
+          "src": "assets/products/karahanli-gida/kopuksan-karton-bardak-4-oz-turk-kahvesi-excel-211/web-c2dbed00c9a9.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/kopuksan-karton-bardak-4-oz-turk-kahvesi-excel-211/web-c2dbed00c9a9-thumb.webp",
+          "alt": "KÖPÜKSAN KARTON BARDAK 4 OZ TÜRK KAHVESİ",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-211",
@@ -8273,7 +9101,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-212",
@@ -8283,12 +9111,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Diğer Sarf Ürünleri",
       "summary": "CHS LÜX ÇATAL&KAŞIK ŞEFFAF için Karahanlı Gıda katalog kaydı.",
-      "description": "CHS LÜX ÇATAL&KAŞIK ŞEFFAF ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "CHS LÜX ÇATAL&KAŞIK ŞEFFAF ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 212": "50 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-b01e40864c",
+          "src": "assets/products/karahanli-gida/chs-lux-catal-kasik-seffaf-excel-212/web-b01e40864c8a.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/chs-lux-catal-kasik-seffaf-excel-212/web-b01e40864c8a-thumb.webp",
+          "alt": "CHS LÜX ÇATAL&KAŞIK ŞEFFAF",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-212",
@@ -8308,7 +9145,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-213",
@@ -8318,12 +9155,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Diğer Sarf Ürünleri",
       "summary": "DOLPHİN SİYAH NİTRİL 100 LÜ L/M BEDEN için Karahanlı Gıda katalog kaydı.",
-      "description": "DOLPHİN SİYAH NİTRİL 100 LÜ L/M BEDEN ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "DOLPHİN SİYAH NİTRİL 100 LÜ L/M BEDEN ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 213": "100 LÜ"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-06bb0b1557",
+          "src": "assets/products/karahanli-gida/dolphin-siyah-nitril-100-lu-l-m-beden-excel-213/web-06bb0b1557ff.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/dolphin-siyah-nitril-100-lu-l-m-beden-excel-213/web-06bb0b1557ff-thumb.webp",
+          "alt": "DOLPHİN SİYAH NİTRİL 100 LÜ L/M BEDEN",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-213",
@@ -8343,7 +9189,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-214",
@@ -8353,12 +9199,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Temizlik Ürünleri",
       "summary": "POLİY MİX TEMİZLEME SUYU için Karahanlı Gıda katalog kaydı.",
-      "description": "POLİY MİX TEMİZLEME SUYU ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "POLİY MİX TEMİZLEME SUYU ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 214": "1 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-fc9e1e5eab",
+          "src": "assets/products/karahanli-gida/poliy-mix-temizleme-suyu-excel-214/web-fc9e1e5eab18.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/poliy-mix-temizleme-suyu-excel-214/web-fc9e1e5eab18-thumb.webp",
+          "alt": "POLİY MİX TEMİZLEME SUYU",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-214",
@@ -8378,7 +9233,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-215",
@@ -8388,12 +9243,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Temizlik Ürünleri",
       "summary": "POLİGAF TEMİZLEME TOZU için Karahanlı Gıda katalog kaydı.",
-      "description": "POLİGAF TEMİZLEME TOZU ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "POLİGAF TEMİZLEME TOZU ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 215": "1 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-fdb3d27a35",
+          "src": "assets/products/karahanli-gida/poligaf-temizleme-tozu-excel-215/web-fdb3d27a35e9.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/poligaf-temizleme-tozu-excel-215/web-fdb3d27a35e9-thumb.webp",
+          "alt": "POLİGAF TEMİZLEME TOZU",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-215",
@@ -8413,7 +9277,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-216",
@@ -8467,12 +9331,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Temizlik Ürünleri",
       "summary": "POLİGAF TABLET için Karahanlı Gıda katalog kaydı.",
-      "description": "POLİGAF TABLET ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "POLİGAF TABLET ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 217": "1 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-e2bdf554d7",
+          "src": "assets/products/karahanli-gida/poligaf-tablet-excel-217/web-e2bdf554d73f.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/poligaf-tablet-excel-217/web-e2bdf554d73f-thumb.webp",
+          "alt": "POLİGAF TABLET",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-217",
@@ -8492,7 +9365,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-218",
@@ -8502,12 +9375,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Servis Sarfı",
       "summary": "1 LİT SİFON METAL için Karahanlı Gıda katalog kaydı.",
-      "description": "1 LİT SİFON METAL ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "1 LİT SİFON METAL ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 218": "1 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-3600c06575",
+          "src": "assets/products/karahanli-gida/1-lit-sifon-metal-excel-218/web-3600c0657583.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/1-lit-sifon-metal-excel-218/web-3600c0657583-thumb.webp",
+          "alt": "1 LİT SİFON METAL",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-218",
@@ -8527,7 +9409,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-220",
@@ -8537,12 +9419,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Diğer Sarf Ürünleri",
       "summary": "KÖR TAPA METAL için Karahanlı Gıda katalog kaydı.",
-      "description": "KÖR TAPA METAL ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "KÖR TAPA METAL ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 220": "1 ADET"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-7bb1cc4c2c",
+          "src": "assets/products/karahanli-gida/kor-tapa-metal-excel-220/web-7bb1cc4c2c61.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/kor-tapa-metal-excel-220/web-7bb1cc4c2c61-thumb.webp",
+          "alt": "KÖR TAPA METAL",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-220",
@@ -8562,7 +9453,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-0041",
