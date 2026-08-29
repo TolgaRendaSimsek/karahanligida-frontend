@@ -9,7 +9,7 @@
   "newFamilyCount": 159,
   "publishedExcelRowCount": 201,
   "draftCount": 0,
-  "researchNeededCount": 112,
+  "researchNeededCount": 100,
   "archivedFamilyCount": 27,
   "duplicateGroups": [
     {
@@ -1375,7 +1375,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 85,
@@ -1405,7 +1406,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 87,
@@ -1420,7 +1422,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 88,
@@ -1654,7 +1657,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 103,
@@ -3036,7 +3040,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 194,
@@ -3067,7 +3072,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 196,
@@ -3098,7 +3104,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 198,
@@ -3129,7 +3136,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 200,
@@ -3144,7 +3152,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 201,
@@ -3159,7 +3168,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 202,
@@ -3174,7 +3184,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 203,
@@ -3189,7 +3200,8 @@
       ],
       "ambiguous": false,
       "match": null,
-      "decision": "new-family"
+      "decision": "new-family",
+      "imageStatus": "verified"
     },
     {
       "row": 204,
@@ -3451,5 +3463,5 @@
       "decision": "new-family"
     }
   ],
-  "verifiedImageCount": 250
+  "verifiedImageCount": 262
 }

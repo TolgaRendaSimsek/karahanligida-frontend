@@ -9132,6 +9132,270 @@
           "processing": "source-preserved"
         }
       ]
+    },
+    {
+      "productId": "family-excel-202",
+      "slug": "hutamaki-7-oz-sicak-karton-bardak-excel-202",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        202
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/hutamaki-7-oz-sicak-karton-bardak-excel-202/web-77f3a4d8702a.webp",
+        "assets/products/karahanli-gida/hutamaki-7-oz-sicak-karton-bardak-excel-202/web-77f3a4d8702a-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf",
+          "sourceUrl": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf#page=13",
+          "checkedAt": "2026-08-29T08:54:16.817Z",
+          "sha256": "77f3a4d8702a463cc650c63cab0cd567b2731b37a6a50776808c850551ac4b41",
+          "processing": "pdf-crop"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-203",
+      "slug": "hutamaki-4-oz-sicak-karton-bardak-excel-203",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        203
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/hutamaki-4-oz-sicak-karton-bardak-excel-203/web-38611fe853bd.webp",
+        "assets/products/karahanli-gida/hutamaki-4-oz-sicak-karton-bardak-excel-203/web-38611fe853bd-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf",
+          "sourceUrl": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf#page=13",
+          "checkedAt": "2026-08-29T08:54:16.817Z",
+          "sha256": "38611fe853bdcdc105e51fb8a5c5da979b211ea9c94fa34f6041a9cfc379e056",
+          "processing": "pdf-crop"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-193",
+      "slug": "hutamaki-400-cc-dom-seffaf-kapak-excel-193",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        193
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/hutamaki-400-cc-dom-seffaf-kapak-excel-193/web-f6e1ae6c9051.webp",
+        "assets/products/karahanli-gida/hutamaki-400-cc-dom-seffaf-kapak-excel-193/web-f6e1ae6c9051-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf",
+          "sourceUrl": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf#page=25",
+          "checkedAt": "2026-08-29T09:05:53.905Z",
+          "sha256": "f6e1ae6c9051f0a0b9d531f1fcef33611a0b56358d25771d398150f1e322d332",
+          "processing": "pdf-crop"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-195",
+      "slug": "hutamaki-500-cc-plastik-kapak-excel-195",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        195
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/hutamaki-500-cc-plastik-kapak-excel-195/web-2d72ad01cb5b.webp",
+        "assets/products/karahanli-gida/hutamaki-500-cc-plastik-kapak-excel-195/web-2d72ad01cb5b-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf",
+          "sourceUrl": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf#page=25",
+          "checkedAt": "2026-08-29T09:05:53.905Z",
+          "sha256": "2d72ad01cb5baf84a0af020004c7038546ef763231b4d976627c24de9c2e1c74",
+          "processing": "pdf-crop"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-197",
+      "slug": "hutamaki-16-oz-kapak-excel-197",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        197
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/hutamaki-16-oz-kapak-excel-197/web-22656748d751.webp",
+        "assets/products/karahanli-gida/hutamaki-16-oz-kapak-excel-197/web-22656748d751-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf",
+          "sourceUrl": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf#page=17",
+          "checkedAt": "2026-08-29T09:05:53.905Z",
+          "sha256": "22656748d751ba0f9da5e923469d778f7e7860ef133477961c8821ad87282f15",
+          "processing": "pdf-crop"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-199",
+      "slug": "hutamaki-12-oz-kapak-excel-199",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        199
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/hutamaki-12-oz-kapak-excel-199/web-d2eb6c7124c6.webp",
+        "assets/products/karahanli-gida/hutamaki-12-oz-kapak-excel-199/web-d2eb6c7124c6-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf",
+          "sourceUrl": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf#page=17",
+          "checkedAt": "2026-08-29T09:05:53.905Z",
+          "sha256": "d2eb6c7124c64d02dfe404c62fda4ce30694f7bf2850dbf5711e1092570b5cde",
+          "processing": "pdf-crop"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-200",
+      "slug": "hutamaki-9-oz-sicak-karton-bardak-cift-katli-excel-200",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        200
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/hutamaki-9-oz-sicak-karton-bardak-cift-katli-excel-200/web-add6d5ccff49.webp",
+        "assets/products/karahanli-gida/hutamaki-9-oz-sicak-karton-bardak-cift-katli-excel-200/web-add6d5ccff49-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf",
+          "sourceUrl": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf#page=14",
+          "checkedAt": "2026-08-29T09:10:32.945Z",
+          "sha256": "add6d5ccff49f7414404b8c132145d431826b2488c4ad2eab1a3ea59d07cacf2",
+          "processing": "pdf-crop"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-201",
+      "slug": "hutamaki-9-oz-kapak-excel-201",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        201
+      ],
+      "assets": [
+        "assets/products/karahanli-gida/hutamaki-9-oz-kapak-excel-201/web-7c25ae6cbb8f.webp",
+        "assets/products/karahanli-gida/hutamaki-9-oz-kapak-excel-201/web-7c25ae6cbb8f-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf",
+          "sourceUrl": "https://www.huhtamaki.com/globalassets/foodservice-eao/foodservice-germany/product-catalog/huh_product-catalogue_2026_q1.pdf#page=17",
+          "checkedAt": "2026-08-29T09:13:46.025Z",
+          "sha256": "7c25ae6cbb8fb7cb5b6a97dd5863abec281b8bdd8df1693f1bdcb20d325385fc",
+          "processing": "pdf-crop"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-084",
+      "slug": "repo-beyaz-cikolata-topping-1000-gr-excel-84",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        84
+      ],
+      "assets": [
+        "assets/products/repo/repo-beyaz-cikolata-topping-1000-gr-excel-84/web-544fd253c2f9.webp",
+        "assets/products/repo/repo-beyaz-cikolata-topping-1000-gr-excel-84/web-544fd253c2f9-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://www.selanikliticaret.com.tr/idea/cx/56/myassets/products/288/repo-beyaz-cikolata-topping-dondurma-ve-tatli-sosu-1-kg-7149.jpeg?revision=1787668761",
+          "sourceUrl": "https://www.selanikliticaret.com.tr/urun/repo-beyaz-cikolata-topping-dondurma-ve-tatli-sosu-1-kg",
+          "checkedAt": "2026-08-29T09:17:35.569Z",
+          "sha256": "544fd253c2f9258b69278b2863eb11931132c0831f88ee7cbdec7cce92ecacb0",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-101",
+      "slug": "monte-cristo-cikolata-bar-sos-2-5-kg-excel-101",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        101
+      ],
+      "assets": [
+        "assets/products/monte-cristo/monte-cristo-cikolata-bar-sos-2-5-kg-excel-101/web-1ae8b72d54ff.webp",
+        "assets/products/monte-cristo/monte-cristo-cikolata-bar-sos-2-5-kg-excel-101/web-1ae8b72d54ff-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "official",
+          "url": "https://montecristoflavour.com/wp-content/uploads/2022/11/cikolata-sos-scaled.webp",
+          "sourceUrl": "https://montecristoflavour.com/urun-kategorileri/cafe-and-bar-sauces/",
+          "checkedAt": "2026-08-29T09:17:35.569Z",
+          "sha256": "1ae8b72d54ff9c7e78640561d8824d1c87b5d9719c1c550e4c16a55299c91bfb",
+          "processing": "source-preserved"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-086",
+      "slug": "repo-cilek-toping-1000-gr-excel-86",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        86
+      ],
+      "assets": [
+        "assets/products/repo/repo-cilek-toping-1000-gr-excel-86/web-290b98d21ad3.webp",
+        "assets/products/repo/repo-cilek-toping-1000-gr-excel-86/web-290b98d21ad3-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "ai-enhanced",
+          "url": "https://www.selanikliticaret.com.tr/idea/cx/56/myassets/products/290/repo-cilek-topping-dondurma-ve-tatli-sosu-1-kg-7137.jpeg?revision=1787668780",
+          "sourceUrl": "https://www.selanikliticaret.com.tr/urun/repo-cilek-topping-dondurma-ve-tatli-sosu-1-kg",
+          "checkedAt": "2026-08-29T09:20:33.436Z",
+          "sha256": "290b98d21ad3f51bd1ecf9ed9a1c8b90097658ef802ec5a52b16aece9738560b",
+          "processing": "ai-enhanced"
+        }
+      ]
+    },
+    {
+      "productId": "family-excel-087",
+      "slug": "repo-kokteyl-kopuk-excel-87",
+      "catalog": "Karahanlı Gıda Excel Kataloğu",
+      "pages": [
+        87
+      ],
+      "assets": [
+        "assets/products/repo/repo-kokteyl-kopuk-excel-87/web-9200457890f3.webp",
+        "assets/products/repo/repo-kokteyl-kopuk-excel-87/web-9200457890f3-thumb.webp"
+      ],
+      "originalImages": [
+        {
+          "type": "ai-enhanced",
+          "url": "https://www.selanikliticaret.com.tr/idea/cx/56/myassets/products/360/repo-kokteyl-kopurtucu-300-g-7118.jpeg?revision=1787061782",
+          "sourceUrl": "https://www.selanikliticaret.com.tr/urun/repo-kokteyl-kopurtucu-300-g-3374",
+          "checkedAt": "2026-08-29T09:20:33.436Z",
+          "sha256": "9200457890f395f49b2f2595682c49c69f5b37413a3942192962c01ae02b8b8b",
+          "processing": "ai-enhanced"
+        }
+      ]
     }
   ]
 }

@@ -4192,12 +4192,21 @@
       "category": "Soslar",
       "subcategory": "Topping ve Dekor Sosları",
       "summary": "REPO BEYAZ ÇİKOLATA TOPPİNG 1000 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "REPO BEYAZ ÇİKOLATA TOPPİNG 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "REPO BEYAZ ÇİKOLATA TOPPİNG 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 84": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-544fd253c2",
+          "src": "assets/products/repo/repo-beyaz-cikolata-topping-1000-gr-excel-84/web-544fd253c2f9.webp",
+          "thumbnailSrc": "assets/products/repo/repo-beyaz-cikolata-topping-1000-gr-excel-84/web-544fd253c2f9-thumb.webp",
+          "alt": "REPO BEYAZ ÇİKOLATA TOPPİNG 1000 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-84",
@@ -4217,7 +4226,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-085",
@@ -4262,12 +4271,21 @@
       "category": "Şurup ve Püreler",
       "subcategory": "Meyve Püreleri",
       "summary": "REPO ÇİLEK TOPİNG 1000 GR için Karahanlı Gıda katalog kaydı.",
-      "description": "REPO ÇİLEK TOPİNG 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "REPO ÇİLEK TOPİNG 1000 GR ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanmış kaynak üzerinden iyileştirildi.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 86": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-290b98d21a",
+          "src": "assets/products/repo/repo-cilek-toping-1000-gr-excel-86/web-290b98d21ad3.webp",
+          "thumbnailSrc": "assets/products/repo/repo-cilek-toping-1000-gr-excel-86/web-290b98d21ad3-thumb.webp",
+          "alt": "REPO ÇİLEK TOPİNG 1000 GR",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-86",
@@ -4287,7 +4305,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-087",
@@ -4297,12 +4315,21 @@
       "category": "Şurup ve Püreler",
       "subcategory": "Meyve Püreleri",
       "summary": "REPO KOKTEYL KÖPÜK için Karahanlı Gıda katalog kaydı.",
-      "description": "REPO KOKTEYL KÖPÜK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "REPO KOKTEYL KÖPÜK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanmış kaynak üzerinden iyileştirildi.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 87": "12"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-9200457890",
+          "src": "assets/products/repo/repo-kokteyl-kopuk-excel-87/web-9200457890f3.webp",
+          "thumbnailSrc": "assets/products/repo/repo-kokteyl-kopuk-excel-87/web-9200457890f3-thumb.webp",
+          "alt": "REPO KOKTEYL KÖPÜK",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-87",
@@ -4322,7 +4349,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-090",
@@ -4464,12 +4491,21 @@
       "category": "Soslar",
       "subcategory": "Profesyonel Soslar",
       "summary": "MONTE CRISTO ÇİKOLATA BAR SOS 2,5 KG için Karahanlı Gıda katalog kaydı.",
-      "description": "MONTE CRISTO ÇİKOLATA BAR SOS 2,5 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "MONTE CRISTO ÇİKOLATA BAR SOS 2,5 KG ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 101": "6"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-1ae8b72d54",
+          "src": "assets/products/monte-cristo/monte-cristo-cikolata-bar-sos-2-5-kg-excel-101/web-1ae8b72d54ff.webp",
+          "thumbnailSrc": "assets/products/monte-cristo/monte-cristo-cikolata-bar-sos-2-5-kg-excel-101/web-1ae8b72d54ff-thumb.webp",
+          "alt": "MONTE CRISTO ÇİKOLATA BAR SOS 2,5 KG",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-101",
@@ -4489,7 +4525,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-103",
@@ -7465,12 +7501,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "HUTAMAKİ-400 CC DOM ŞEFFAF KAPAK için Karahanlı Gıda katalog kaydı.",
-      "description": "HUTAMAKİ-400 CC DOM ŞEFFAF KAPAK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "HUTAMAKİ-400 CC DOM ŞEFFAF KAPAK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 193": "1000 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-f6e1ae6c90",
+          "src": "assets/products/karahanli-gida/hutamaki-400-cc-dom-seffaf-kapak-excel-193/web-f6e1ae6c9051.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/hutamaki-400-cc-dom-seffaf-kapak-excel-193/web-f6e1ae6c9051-thumb.webp",
+          "alt": "HUTAMAKİ-400 CC DOM ŞEFFAF KAPAK",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-193",
@@ -7490,7 +7535,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-194",
@@ -7544,12 +7589,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "HUTAMAKİ 500 CC PLASTİK KAPAK için Karahanlı Gıda katalog kaydı.",
-      "description": "HUTAMAKİ 500 CC PLASTİK KAPAK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "HUTAMAKİ 500 CC PLASTİK KAPAK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 195": "1000 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-2d72ad01cb",
+          "src": "assets/products/karahanli-gida/hutamaki-500-cc-plastik-kapak-excel-195/web-2d72ad01cb5b.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/hutamaki-500-cc-plastik-kapak-excel-195/web-2d72ad01cb5b-thumb.webp",
+          "alt": "HUTAMAKİ 500 CC PLASTİK KAPAK",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-195",
@@ -7569,7 +7623,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-196",
@@ -7623,12 +7677,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "HUTAMAKİ 16 OZ KAPAK için Karahanlı Gıda katalog kaydı.",
-      "description": "HUTAMAKİ 16 OZ KAPAK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "HUTAMAKİ 16 OZ KAPAK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 197": "1000 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-22656748d7",
+          "src": "assets/products/karahanli-gida/hutamaki-16-oz-kapak-excel-197/web-22656748d751.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/hutamaki-16-oz-kapak-excel-197/web-22656748d751-thumb.webp",
+          "alt": "HUTAMAKİ 16 OZ KAPAK",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-197",
@@ -7648,7 +7711,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-198",
@@ -7702,12 +7765,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "HUTAMAKİ 12 OZ KAPAK için Karahanlı Gıda katalog kaydı.",
-      "description": "HUTAMAKİ 12 OZ KAPAK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "HUTAMAKİ 12 OZ KAPAK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 199": "1000 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-d2eb6c7124",
+          "src": "assets/products/karahanli-gida/hutamaki-12-oz-kapak-excel-199/web-d2eb6c7124c6.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/hutamaki-12-oz-kapak-excel-199/web-d2eb6c7124c6-thumb.webp",
+          "alt": "HUTAMAKİ 12 OZ KAPAK",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-199",
@@ -7727,7 +7799,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-200",
@@ -7737,12 +7809,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "HUTAMAKİ 9 OZ SICAK KARTON BARDAK(ÇİFT KATLI) için Karahanlı Gıda katalog kaydı.",
-      "description": "HUTAMAKİ 9 OZ SICAK KARTON BARDAK(ÇİFT KATLI) ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "HUTAMAKİ 9 OZ SICAK KARTON BARDAK(ÇİFT KATLI) ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 200": "1000 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-add6d5ccff",
+          "src": "assets/products/karahanli-gida/hutamaki-9-oz-sicak-karton-bardak-cift-katli-excel-200/web-add6d5ccff49.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/hutamaki-9-oz-sicak-karton-bardak-cift-katli-excel-200/web-add6d5ccff49-thumb.webp",
+          "alt": "HUTAMAKİ 9 OZ SICAK KARTON BARDAK(ÇİFT KATLI)",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-200",
@@ -7762,7 +7843,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-201",
@@ -7772,12 +7853,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "HUTAMAKİ 9 OZ KAPAK için Karahanlı Gıda katalog kaydı.",
-      "description": "HUTAMAKİ 9 OZ KAPAK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "HUTAMAKİ 9 OZ KAPAK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 201": "1000 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-7c25ae6cbb",
+          "src": "assets/products/karahanli-gida/hutamaki-9-oz-kapak-excel-201/web-7c25ae6cbb8f.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/hutamaki-9-oz-kapak-excel-201/web-7c25ae6cbb8f-thumb.webp",
+          "alt": "HUTAMAKİ 9 OZ KAPAK",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-201",
@@ -7797,7 +7887,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-202",
@@ -7807,12 +7897,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "HUTAMAKİ 7 OZ SICAK KARTON BARDAK için Karahanlı Gıda katalog kaydı.",
-      "description": "HUTAMAKİ 7 OZ SICAK KARTON BARDAK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "HUTAMAKİ 7 OZ SICAK KARTON BARDAK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 202": "3000 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-77f3a4d870",
+          "src": "assets/products/karahanli-gida/hutamaki-7-oz-sicak-karton-bardak-excel-202/web-77f3a4d8702a.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/hutamaki-7-oz-sicak-karton-bardak-excel-202/web-77f3a4d8702a-thumb.webp",
+          "alt": "HUTAMAKİ 7 OZ SICAK KARTON BARDAK",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-202",
@@ -7832,7 +7931,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-203",
@@ -7842,12 +7941,21 @@
       "category": "Gıda Dışı Ürünler",
       "subcategory": "Bardak ve Kapak",
       "summary": "HUTAMAKİ 4-OZ SICAK KARTON BARDAK için Karahanlı Gıda katalog kaydı.",
-      "description": "HUTAMAKİ 4-OZ SICAK KARTON BARDAK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulanıyor.",
+      "description": "HUTAMAKİ 4-OZ SICAK KARTON BARDAK ürünü Karahanlı Gıda Excel kataloğunda yer almaktadır. Resmî ürün görseli doğrulandı.",
       "features": [],
       "specifications": {
         "Ambalaj Excel 203": "3000 AD"
       },
-      "images": [],
+      "images": [
+        {
+          "id": "image-web-38611fe853",
+          "src": "assets/products/karahanli-gida/hutamaki-4-oz-sicak-karton-bardak-excel-203/web-38611fe853bd.webp",
+          "thumbnailSrc": "assets/products/karahanli-gida/hutamaki-4-oz-sicak-karton-bardak-excel-203/web-38611fe853bd-thumb.webp",
+          "alt": "HUTAMAKİ 4-OZ SICAK KARTON BARDAK",
+          "order": 1,
+          "variantIds": []
+        }
+      ],
       "variants": [
         {
           "id": "excel-203",
@@ -7867,7 +7975,7 @@
       },
       "featured": false,
       "status": "published",
-      "imageStatus": "research-needed"
+      "imageStatus": "verified"
     },
     {
       "id": "family-excel-204",
