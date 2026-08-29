@@ -18,3 +18,7 @@ test-results/
 coverage/
 data/backups/
 *.tsbuildinfo
+# Unused source probes kept out of the catalog commit.
+assets/research/monte-sauce.webp
+assets/research/monte-syrup.webp
+assets/research/repo-085.jpg
